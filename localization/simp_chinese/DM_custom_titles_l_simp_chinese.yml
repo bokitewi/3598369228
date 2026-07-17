@@ -7,6 +7,12 @@
  d_weizhi:0 "未定区域"
 
  e_huaxia:0 "华夏"
+ e_chaoxian:0 "朝鲜"
+ e_chaoxian_adj:0 "朝鲜"
+ e_fusang:0 "扶桑"
+ e_fusang_adj:0 "扶桑"
+ e_rigaojian:0 "日高见"
+ e_rigaojian_adj:0 "日高见"
  k_qiguo:0 "齊"  
  k_tanguo:0 "譚"  
  d_gongdushi:0 "公堵"  
