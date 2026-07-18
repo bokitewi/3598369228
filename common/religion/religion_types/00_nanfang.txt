@@ -60,6 +60,7 @@
 
 	localization = {
 		HighGodName = nanfangzongjiao_high_god_name
+		HighGodName2 = nanfangzongjiao_high_god_name
 		HighGodNamePossessive = nanfangzongjiao_high_god_name_possessive
 		HighGodNameSheHe = CHARACTER_SHEHE_HE
 		HighGodHerselfHimself = CHARACTER_HIMSELF
@@ -147,6 +148,8 @@
 
 
 		PantheonTerm = nanfangzongjiao_high_god_name
+		PantheonTerm2 = nanfangzongjiao_high_god_name
+		PantheonTerm3 = nanfangzongjiao_high_god_name
 		PantheonTermHasHave = pantheon_term_has
 		GoodGodNames = { nanfangzongjiao_good_god_eje nanfangzongjiao_good_god_ulgen nanfangzongjiao_high_god_name }
 		DevilName = nanfangzongjiao_devil_name
@@ -156,9 +159,15 @@
 		DevilHerselfHimself = CHARACTER_HIMSELF
 		EvilGodNames = { nanfangzongjiao_evil_god_karash nanfangzongjiao_evil_god_shyngay nanfangzongjiao_evil_god_komur nanfangzongjiao_evil_god_badysh nanfangzongjiao_evil_god_yabash nanfangzongjiao_evil_god_kerey }
 		HouseOfWorship = paganism_house_of_worship
+		HouseOfWorship2 = paganism_house_of_worship
+		HouseOfWorship3 = paganism_house_of_worship
 		HouseOfWorshipPlural = paganism_house_of_worship_plural
 		ReligiousSymbol = nanfangzongjiao_religious_symbol
+		ReligiousSymbol2 = nanfangzongjiao_religious_symbol
+		ReligiousSymbol3 = nanfangzongjiao_religious_symbol
 		ReligiousText = nanfangzongjiao_religious_text
+		ReligiousText2 = nanfangzongjiao_religious_text
+		ReligiousText3 = nanfangzongjiao_religious_text
 		ReligiousHeadName = paganism_religious_head_title
 		ReligiousHeadTitleName = paganism_religious_head_title_name
 		DevoteeMale = paganism_devotee
@@ -181,13 +190,21 @@
 		BishopNeuter = paganism_priest
 		BishopNeuterPlural = paganism_priest_plural
 		DivineRealm = nanfangzongjiao_divine_realm
+		DivineRealm2 = nanfangzongjiao_divine_realm
+		DivineRealm3 = nanfangzongjiao_divine_realm
 		PositiveAfterLife = nanfangzongjiao_divine_realm
+		PositiveAfterLife2 = nanfangzongjiao_divine_realm
+		PositiveAfterLife3 = nanfangzongjiao_divine_realm
 		NegativeAfterLife = nanfangzongjiao_afterlife_negative
+		NegativeAfterLife2 = nanfangzongjiao_afterlife_negative
+		NegativeAfterLife3 = nanfangzongjiao_afterlife_negative
 		DeathDeityName = nanfangzongjiao_devil_name
 		DeathDeityNamePossessive = nanfangzongjiao_devil_name_possessive
 		DeathDeitySheHe = CHARACTER_SHEHE_HE
 		DeathDeityHerHis = CHARACTER_HERSHIS_HIS
+		DeathDeityHerHim = CHARACTER_HERHIM_HIM
 		WitchGodName = witchgodname_nanfangzongjiao_the_irshi
+		WitchGodNamePossessive = witchgodname_nanfangzongjiao_the_irshi
 		WitchGodSheHe = CHARACTER_SHEHE_HE
 		WitchGodHerHim = CHARACTER_HERHIM_HER
 		WitchGodMistressMaster = mistress

@@ -3,14 +3,20 @@
 ### c_yafu
 # YAFU
 3844 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # CHANGPINGXIAN
 3847 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # HUI1
 3845 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -21,7 +27,9 @@
 ### c_wangping
 # WANGPING
 3474 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # CHILV
 3853 = {
@@ -29,6 +37,8 @@
 }
 # XINAN
 3850 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # ERMIAN
@@ -52,7 +62,9 @@
 ### c_quechuan
 # QUECHUAN
 3849 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -65,14 +77,20 @@
 ### c_ermian
 # YUGU
 3851 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # DABO
 3855 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # BUDUO
 3848 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -80,14 +98,20 @@
 ### c_chilv
 # QIANGSHI
 3854 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # XIEPI
 3846 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # NANSU
 3477 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

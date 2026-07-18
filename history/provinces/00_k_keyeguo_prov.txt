@@ -6,10 +6,14 @@
 ### c_xinnong
 # XINNONG
 2848 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # JIAFEI
 2889 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -20,10 +24,14 @@
 ### c_yina
 # YINA
 3552 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # ZOUFANG
 3551 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # SHEYE
@@ -52,6 +60,8 @@
 ### c_gaojin
 # KEYE
 2965 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

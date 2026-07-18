@@ -431,7 +431,7 @@ tushanshi6={
   dynasty=xin462
 	religion="yili" 
 	culture="dongyi"
-  father=tushanshi5
+  mother=tushanshi5
 
   2624.1.1 = {
 		birth = yes

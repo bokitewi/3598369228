@@ -3,63 +3,81 @@
 ### c_mao1
 # MAO1
 502 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_zhuixiang
 # ZHUIXIANG
 583 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_shansang
 # SHANSANG
 584 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_dun1
 # DUN1
 2380 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_yongcheng
 # YONGCHENG
 2381 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_mian1
 # MIAN1
 2382 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_ke1
 # KE1
 2383 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_lu7
 # LU7
 2384 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_lian2
 # LIAN2
 2385 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 

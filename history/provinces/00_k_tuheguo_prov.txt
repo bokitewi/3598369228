@@ -6,14 +6,20 @@
 ### c_tuhe
 # TUHE
 3488 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # BINTU
 3487 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # TALU
 3780 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -21,10 +27,14 @@
 ### c_changli
 # CHANGLI
 3486 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # JIAOLI
 3776 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -38,6 +48,8 @@
 ### c_husu
 # YOUCHENG
 3777 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -54,7 +66,9 @@
 ### c_sixuan
 # SIXUAN
 3782 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -67,10 +81,14 @@
 ### c_fuli1
 # FULI1
 3485 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # FANGXIAN
 3476 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -78,22 +96,32 @@
 ### c_taian
 # TAIAN
 3498 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # DAWA
 3499 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # LIAOZHONG
 3500 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # WULVE1
 3475 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # HUNNAN
 3501 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -113,18 +141,26 @@
 ### c_xiandu1
 # XIANDU1
 3784 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # FANGXIAN1
 3783 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # ZHISHIDAI
 3800 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # SHEDIE
 3799 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -132,18 +168,26 @@
 ### c_pilou
 # PILOU
 3785 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # BALI1
 3786 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # YILU2
 3839 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # YINAN1
 3838 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

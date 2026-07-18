@@ -3,35 +3,45 @@
 ### c_quean
 # 
 2006 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_zhugao
 # 
 2007 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_zhegao
 # 
 2008 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_shujiu
 # 
 2011 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_yue1
 # 
 2019 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 

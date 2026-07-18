@@ -1,4 +1,4 @@
-############冉駹羌
+﻿############冉駹羌
 ranmangqian1={
   name="bfyznan286"
   dynasty=baijia301

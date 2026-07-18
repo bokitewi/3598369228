@@ -3,70 +3,90 @@
 ### c_minglu
 # MINGLU
 603 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_ku
 # KU
 605 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_li4
 # LI4
 606 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_ziwu
 # ZIWU
 607 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_xin1
 # XIN1
 609 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_xinqi
 # XINQI
 612 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_ningping
 # NINGPING
 2347 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_yan10
 # YAN10
 2348 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_xinyang
 # XINYANG
 2349 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_xiang7
 # XIANG7
 2351 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 

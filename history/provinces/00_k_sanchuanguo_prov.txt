@@ -17,6 +17,8 @@
 ### c_sheye
 # SANHE1
 2842 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -24,6 +26,8 @@
 ### c_baohai1
 # YUANDANHAI
 2960 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

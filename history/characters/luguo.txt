@@ -539,7 +539,7 @@ han6086={
 }
 ### 鲁国公族--展氏--孝公之子###
 luguo1={
-  name="nanming65"公子展
+  name="nanming65" # 公子展
   dynasty_house=house_baijia49
 	religion="xizhouli" 
 	culture="lu"
@@ -553,7 +553,7 @@ luguo1={
   }
 }
 luguo2={
-  name="nanming1084"公子展之子
+  name="nanming1084" # 公子展之子
   dynasty_house=house_baijia49
 	religion="xizhouli" 
 	culture="lu"

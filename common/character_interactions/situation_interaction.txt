@@ -47,7 +47,6 @@ saas_demand_tianzi_tribute_interaction = {
 		saas_establish_tributary_effect = {
 			SUZERAIN = scope:actor
 			TRIBUTARY = scope:recipient
-			WAR = no
 		}
 		saas_trigger_catalyst_effect = {
 			CATALYST = saas_catalyst_tribute_established

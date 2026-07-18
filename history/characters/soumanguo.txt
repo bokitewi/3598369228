@@ -901,7 +901,7 @@ qiaorushi10={
 		}
   }
 }
-qiaorushi10={
+dm_hist_qiaorushi10_2={
   name="nanming893"
   dynasty_house=house_xin594
 	religion="beidifangling" 

@@ -6,14 +6,20 @@
 ### c_guyang3
 # GUYANG3
 2608 = {
-	holding = none
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
 }
 # BAOQIU1
 2609 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # HUGUAN1
 2607 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 
@@ -27,18 +33,26 @@
 ### c_modaoyu
 # MODAOYU
 2611 = {
-	holding = none
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
 }
 # JIANGJUNSHIGUAN
 2613 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # JUNMI
 2612 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # BAIMACHUAN
 2633 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 
@@ -58,18 +72,26 @@
 ### c_yaoyang
 # YAIYANG
 2616 = {
-	holding = none
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
 }
 # XIAOXINGZHOU
 2614 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # HUTUSAI
 2619 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # LUYE
 2620 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 
@@ -80,14 +102,20 @@
 ### c_mantaoer
 # MANTAOER
 2618 = {
-	holding = none
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
 }
 # MIYUN
 2617 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # HADANG
 2621 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 
@@ -107,7 +135,9 @@
 ### c_tixi
 # TIXI
 1260 = {
-	holding = none
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
 }
 # GUANGPING
 1259 = {
@@ -117,14 +147,20 @@
 }
 # HUYAN1
 2615 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # HUAYAN
 1254 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # BAITAN
 2610 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 
@@ -141,18 +177,26 @@
 ### c_juyong
 # JUYONG
 1285 = {
-	holding = none
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
 }
 # JUYONGGUAN
 1283 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # YIYU
 1284 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # JUYANG2
 1286 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 
@@ -172,33 +216,47 @@
 ### c_pang1
 # PANG1
 1290 = {
-	holding = none
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_ru
 # RU
 1291 = {
-	holding = none
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
 }
 # GUANGNING
 1293 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # WENDE
 1292 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # XIALUO
 1289 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # QIEJU
 1288 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # QUANSHANG
 1287 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 
@@ -212,14 +270,20 @@
 ### c_nvqi
 # NVQI
 1299 = {
-	holding = none
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
 }
 # WANGYUN
 2605 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # SONGXING
 2606 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 

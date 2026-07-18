@@ -1,0 +1,104 @@
+culture_era_tribal = {
+	year = 3850
+}
+
+culture_era_early_medieval = {
+	year = 4170
+	invalid_for_government = tribal_government
+	invalid_for_government = nomad_government
+	invalid_for_government = herder_government
+	invalid_for_government = wanua_government
+
+	culture_modifier = {
+		culture_tradition_max_add = 1
+	}
+
+	custom = more_expensive_court_positions
+	custom = increased_activity_cost
+
+	maa_upgrade = {
+		men_at_arms = longbowmen
+		damage = 10
+		toughness = 2
+	}
+
+	maa_upgrade = {
+		men_at_arms = gakgung_archers
+		damage = 5
+		toughness = 2
+	}
+}
+
+culture_era_high_medieval = {
+	year = 4410
+	invalid_for_government = tribal_government
+	invalid_for_government = nomad_government
+	invalid_for_government = herder_government
+	invalid_for_government = wanua_government
+
+	culture_modifier = {
+		culture_tradition_max_add = 1
+	}
+
+	character_modifier = {
+		mercenary_hire_cost_mult = 0.15
+	}
+
+	custom = more_expensive_court_positions
+	custom = increased_activity_cost
+
+	maa_upgrade = {
+		men_at_arms = longbowmen
+		damage = 10
+		toughness = 2
+	}
+
+	maa_upgrade = {
+		men_at_arms = gakgung_archers
+		damage = 6
+		toughness = 2
+	}
+
+	maa_upgrade = {
+		men_at_arms = fire_lancers
+		damage = 5
+		screen = 3
+	}
+}
+
+culture_era_late_medieval = {
+	year = 4620
+	invalid_for_government = tribal_government
+	invalid_for_government = nomad_government
+	invalid_for_government = herder_government
+	invalid_for_government = wanua_government
+
+	culture_modifier = {
+		culture_tradition_max_add = 1
+	}
+
+	character_modifier = {
+		mercenary_hire_cost_mult = 0.15
+	}
+
+	custom = more_expensive_court_positions
+	custom = increased_activity_cost
+
+	maa_upgrade = {
+		men_at_arms = longbowmen
+		damage = 10
+		toughness = 2
+	}
+
+	maa_upgrade = {
+		men_at_arms = gakgung_archers
+		damage = 8
+		toughness = 2
+	}
+
+	maa_upgrade = {
+		men_at_arms = fire_lancers
+		damage = 8
+		screen = 5
+	}
+}

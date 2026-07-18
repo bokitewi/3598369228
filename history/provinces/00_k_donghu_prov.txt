@@ -12,22 +12,32 @@
 ### c_zhulou
 # ZHULOU
 3808 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # SHIBEN
 3807 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # PINGBU
 3806 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # BILICHEN
 3805 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # NIANGWAN
 3809 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -41,14 +51,20 @@
 ### c_sagu
 # YISHI
 3810 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # FUDI
 3829 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # DIELA
 3814 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -62,18 +78,26 @@
 ### c_ruokouyin
 # RUOKOUYIN
 3816 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # TUJU
 3817 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # NIELA
 3818 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # XIANGQIU1
 3815 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -90,14 +114,20 @@
 ### c_nawei
 # NAWEI
 3820 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # JIJIE
 3821 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # TULVBU
 3819 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

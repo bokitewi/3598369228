@@ -468,7 +468,7 @@ jieguo12={
   }
 }
 jieguo13={
-  name=" nanming769"
+  name="nanming769"
   dynasty_house=house_xin392
 	religion="xiali" 
 	culture="xiaren"

@@ -88,6 +88,9 @@ dragon_kiln_02 = {
 	can_construct_potential = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		building_requirement_tribal = no
+	}
+
+	can_construct_showing_failures_only = {
 		county.holder.culture = { has_innovation = innovation_windmills }
 	}
 	
@@ -131,6 +134,9 @@ dragon_kiln_03 = {
 	can_construct_potential = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		building_requirement_tribal = no
+	}
+
+	can_construct_showing_failures_only = {
 		county.holder.culture = { has_innovation = innovation_cranes }
 	}
 	
@@ -661,8 +667,6 @@ burial_site_01 = {
 	}
 
 	next_building = burial_site_02
-
-	type_icon = "icon_building_graveyard.dds"
 
 	type = duchy_capital
 	

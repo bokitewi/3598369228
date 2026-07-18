@@ -8,7 +8,9 @@
 ### c_beihoupinzhi
 # BEIHOUPINZHI
 2942 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -30,6 +32,8 @@
 ### c_nuke
 # JIBEIXUE
 2943 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -57,7 +61,9 @@
 ### c_jibeizhong
 # JIBEIZHONG
 2944 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -78,6 +84,8 @@
 ### c_xiadao
 # BEIZHONG
 2863 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -91,6 +99,8 @@
 ### c_azhi
 # GAODAOGONG
 2905 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -103,6 +113,8 @@
 ### c_yubaowubo
 # MEIZUO
 2888 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -133,6 +145,8 @@
 ### c_shangdao1
 # BEIQIAN
 2880 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -145,10 +159,14 @@
 ### c_aqi
 # AQI
 2941 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # ANYUN
 2861 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -156,7 +174,9 @@
 ### c_aigong
 # AIGONG
 2904 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 

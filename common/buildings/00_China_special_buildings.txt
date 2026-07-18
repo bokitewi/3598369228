@@ -700,7 +700,7 @@ yaan_golden_mines_03 = {
 	flag = special_mine_gold
 }
 
-lishui_golden_mines_04 = {
+yaan_golden_mines_04 = {
 	effect_desc = mines_effect_desc
 
 	asset = {
@@ -768,11 +768,13 @@ jiaodong_crystal_mines_01 = {
 	cost_gold = expensive_building_tier_3_cost
 	province_modifier = {
 		monthly_income =gold_mine_generic_building_tax_tier_1
-		 monthly_prestige = 0.5
-		 monthly_influence = 0.5
 	}
 	county_modifier = {
 		development_growth_factor = 0.05
+	}
+	character_modifier = {
+		monthly_prestige = 0.5
+		monthly_influence = 0.5
 	}
 	next_building = jiaodong_crystal_mines_02
 	ai_value = {
@@ -801,12 +803,14 @@ jiaodong_crystal_mines_02 = {
 	}
 	cost_gold = expensive_building_tier_4_cost
 	province_modifier = {
-		monthly_influence = 1
-		monthly_prestige = 1
 		monthly_income = gold_mine_generic_building_tax_tier_2
 	}
 	county_modifier = {
 		development_growth_factor = 0.1
+	}
+	character_modifier = {
+		monthly_influence = 1
+		monthly_prestige = 1
 	}
 	ai_value = {
 		base = 100
@@ -836,11 +840,13 @@ linzi_iron_mines_01 = {
 	cost_gold = expensive_building_tier_3_cost
 	province_modifier = {
 		monthly_income = silver_mine_generic_building_tax_tier_1
-		men_at_arms_maintenance = 0.05
 		stationed_maa_damage_mult = 0.05
 	}
 	county_modifier = {
 		development_growth_factor = 0.1
+	}
+	character_modifier = {
+		men_at_arms_maintenance = 0.05
 	}
 	ai_value = {
 		base = 100
@@ -870,11 +876,13 @@ xuzhou_iron_mines_01 = {
 	cost_gold = expensive_building_tier_3_cost
 	province_modifier = {
 		monthly_income = silver_mine_generic_building_tax_tier_1
-		men_at_arms_maintenance = 0.05
 		stationed_maa_damage_mult = 0.05
 	}
 	county_modifier = {
 		development_growth_factor = 0.05
+	}
+	character_modifier = {
+		men_at_arms_maintenance = 0.05
 	}
 	next_building = xuzhou_iron_mines_02
 	ai_value = {
@@ -905,12 +913,14 @@ xuzhou_iron_mines_02 = {
 	cost_gold = expensive_building_tier_4_cost
 	province_modifier = {
 		monthly_income = silver_mine_generic_building_tax_tier_1
-		men_at_arms_maintenance = 0.1
 		stationed_maa_damage_mult = 0.05
 		stationed_maa_toughness_mult = 0.05
 	}
 	county_modifier = {
 		development_growth_factor = 0.1
+	}
+	character_modifier = {
+		men_at_arms_maintenance = 0.1
 	}
 	ai_value = {
 		base = 100
@@ -946,13 +956,15 @@ xuzhou_iron_mines_03 = {
 	
 	province_modifier = {
 		monthly_income =  gold_mine_generic_building_tax_tier_2
-		 men_at_arms_maintenance = 0.15
 		stationed_maa_damage_mult = 0.1
 		stationed_maa_toughness_mult = 0.05
 
 	}
 	county_modifier = {
 		development_growth_factor = 0.15
+	}
+	character_modifier = {
+		men_at_arms_maintenance = 0.15
 	}
 	
 	next_building = xuzhou_iron_mines_04
@@ -998,13 +1010,15 @@ xuzhou_iron_mines_04 = {
 	
 	province_modifier = {
 		monthly_income =  gold_mine_generic_building_tax_tier_3
-		 men_at_arms_maintenance = 0.2
 		stationed_maa_damage_mult = 0.15
 		stationed_maa_toughness_mult = 0.15
 		
 	}
 	county_modifier = {
 		development_growth_factor = 0.2
+	}
+	character_modifier = {
+		men_at_arms_maintenance = 0.2
 	}
 	
 	province_culture_modifier = {
@@ -1191,7 +1205,7 @@ zhouwanggong_01 = {
 		monthly_prestige_gain_mult = 0.25
 		owned_legend_spread_mult = 0.3
 		opinion_of_same_culture = 15
-		active_accolades = 2
+		accolades = 2
  	}
 	on_complete = {
 		on_big_t1_regular_building_built_effect = yes
@@ -1904,7 +1918,7 @@ wushengguan_01 = {
 		garrison_size = 0.1
 		stationed_maa_toughness_mult = 0.1
 		defender_holding_advantage = 5
-		travel_speed_mult = 0.2
+		travel_danger = -20
 	}
 	on_complete = {
 		on_big_t1_regular_building_built_effect = yes
@@ -1934,7 +1948,7 @@ dasuisai_01 = {
 		garrison_size = 0.1
 		stationed_maa_toughness_mult = 0.07
 		defender_holding_advantage = 5
-		travel_speed_mult = 0.1
+		travel_danger = -10
 	}
 	on_complete = {
 		on_big_t1_regular_building_built_effect = yes
@@ -1964,7 +1978,7 @@ mineguan_01 = {
 		garrison_size = 0.1
 		stationed_maa_toughness_mult = 0.08
 		defender_holding_advantage = 6
-		travel_speed_mult = 0.1
+		travel_danger = -10
 	}
 	on_complete = {
 		on_big_t1_regular_building_built_effect = yes
@@ -2168,9 +2182,13 @@ zhennan_01 = {
 		garrison_size = 0.25
 		stationed_maa_toughness_mult = 0.12
 		defender_holding_advantage = 12
-		supply_capacity_mult = 0.5
+		travel_danger = -10
+	}
+	county_modifier = {
 		monthly_county_control_growth_factor = 0.2
-		travel_safety = 10
+	}
+	character_modifier = {
+		supply_capacity_mult = 0.5
 	}
 	on_complete = {
 		on_big_t1_regular_building_built_effect = yes
@@ -2201,12 +2219,13 @@ dujiangyan_01 = {
 		development_growth_factor = 0.3
 		development_growth = 0.3
 		tax_mult = 0.2
-		
+		monthly_county_control_growth_factor = 0.2
 	}
-		province_modifier = {
-supply_capacity_mult = 0.5
-monthly_county_control_growth_factor = 0.2
-travel_safety = 10
+	province_modifier = {
+		travel_danger = -10
+	}
+	character_modifier = {
+		supply_capacity_mult = 0.5
 	}
 		
 	on_complete = {
@@ -2238,8 +2257,7 @@ lingqu_01 = {
 		development_growth_factor = 0.25
 		development_growth = 0.05
 		supply_limit = 1500
-		travel_safety = 8
-		travel_speed_mult = 0.15
+		travel_danger = -15
 	}
 	on_complete = {
 		on_big_t1_regular_building_built_effect = yes
@@ -2270,7 +2288,7 @@ tax_mult = -0.2
 	}
 		character_modifier = {
 opinion_of_vassal = 5
-active_accolades = 1
+accolades = 1
 attraction_opinion = 5
 councillor_opinion = 5
 guest_opinion = 15

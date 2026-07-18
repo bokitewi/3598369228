@@ -9,14 +9,20 @@
 ### c_pikou
 # PIKOU
 3469 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # HONGJU
 3468 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # SHICHENG5
 3456 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -24,17 +30,23 @@
 ### c_huanggudao
 # HUANGUDAO
 3470 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_daxing
 # DAXING
 3452 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # BOZHUO
 3453 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -45,7 +57,9 @@
 ### c_wugu
 # WUGU
 3454 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -58,6 +72,8 @@
 ### c_ruoluo
 # JUJIU
 3465 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

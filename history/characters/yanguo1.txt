@@ -645,7 +645,7 @@ yan14={
     death = yes
   }
 }
-yan14={
+dm_hist_yan14_2={
   name="nvming58"
   dynasty_house=house_baijia460
 	religion="xizhouli" 

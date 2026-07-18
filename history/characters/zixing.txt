@@ -268,9 +268,8 @@ han1976={ #第2任商帝
 	religion="yinli" 
 	culture="yinshang"
 	father=han1974
-	mother=han5877
 
-  2994.1.1 = {
+	2994.1.1 = {
 		birth = yes
 	}
   3034.12.31 = {
@@ -286,9 +285,8 @@ han1977={ #第3任商帝
 	religion="yinli" 
 	culture="yinshang"
 	father=han1974
-	mother=han5877
 
-  2995.1.1 = {
+	2995.1.1 = {
 		birth = yes
 	}
   3038.1.1 = {

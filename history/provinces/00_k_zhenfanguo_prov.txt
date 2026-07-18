@@ -3,22 +3,32 @@
 ### c_youxiumoutun
 # YOUXIUMOUTUN
 3353 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # DASHISUO
 3352 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # XIAOSHISUO
 3351 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # SANGWAI
 3350 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # MOUSHUI
 3349 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -41,10 +51,14 @@
 ### c_pingshi1
 # GULI1
 3357 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # JIAPING
 3447 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -55,7 +69,9 @@
 ### c_boji
 # BOJI
 3354 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 

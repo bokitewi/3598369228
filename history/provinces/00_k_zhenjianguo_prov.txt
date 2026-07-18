@@ -15,6 +15,8 @@
 ### c_shiwan
 # ZHENJIANYA
 2949 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -27,13 +29,17 @@
 ### c_zhenjian
 # ZHENJIAN
 2948 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_xuehe
 # BOMO
 2883 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

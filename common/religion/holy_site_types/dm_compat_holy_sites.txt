@@ -1,0 +1,1603 @@
+﻿# Compatibility-only holy-site database keys.
+# Their faith links are deliberately removed; the shared anchor only satisfies
+# the 1.19 holy_site_type schema and cannot activate them in gameplay.
+
+adur_burzen_mihr = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+adur_farnbag = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ahvaz = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ajanta = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+akkel = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+aksum = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+albi = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+alexandria = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+alxa = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+amandee = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+amaravati = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+amparita = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+aneto = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+angkor = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ani = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+anlong = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+antioch = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ar_kol = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+armagh = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+aswan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+atamasthana = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+athens = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ava = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+awa = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+awkar = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ayodhya = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+baalbek = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+babylon = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+badd = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+badrinath = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+baekdu = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+baghdad = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+bahrein = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+balkh = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+bantey_srei = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+barlad = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+basra = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+bayon = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+beirut = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+bianliang = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+biri_larosa = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+bodh_gaya = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+bono = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+bordeaux = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+borobudur = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+bost = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+braslau = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+bulguksa = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+bumiayu = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+bupaya = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+cao_bang = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+cartagena = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+carthage = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+carthage_adoptionist = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+chakla = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+chang_an = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+cheongju = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+chupka = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+cologne = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+colonea = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+constantinople = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+cordoba = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+cotabato = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ctesiphon = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+dagon = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+dali = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+damascus = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+danai = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+danakil = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+daozhou = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+dashtestan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+daura = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+donggang = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+dongting = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+dunhuang = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+dvin = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+dwarka = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+el_fasher = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ellora = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+emei = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+esztergom = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+farz = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+fes = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+fuji = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+gaeseong = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+gangganegara = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+garumele = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+garwhal = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+gerizim = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+gilgit = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+goseong = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+gyaitang = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+hachimangu = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+haguro = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+haku = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+halla = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+hamadan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+hangzhou = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+harar = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+haridwar = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+haripunjaya = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+heiankyo = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+hiei = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+hiiumaa = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+hitakami = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+hoanya = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+hsenwi = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+iban = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ife = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+igbo = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ilam = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+iona = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ise_jingu = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ishizuchi = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+itanagar = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+itil = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+itsukushima = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ivatan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+jenne = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+jerusalem = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+jianchang = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+jinglong = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+jiuhua = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+jorvik = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+jumla = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kabul = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kaffa = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kalasan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kamuykotan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kanchipuram = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kara_khorum = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kasa = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kashima = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kathmandu = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kayor = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kent = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kepala_burung = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kerala = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kerch = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+khao_khlang_nai = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+khotan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kiev = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kilimanjaro = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kirinyaga = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kisi = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kizuki = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kochi = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+konarak = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+konugardr = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+koya = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kudat = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kufa = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kukiya = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kumasi = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kusinagara = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+kutai = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+lalish = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+lejre = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+lhasa = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+luoyang = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+luyi = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+lyon = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+madiera = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+magadha = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+makhir = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+makkarinupuri = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mangea = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mani = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+manipur = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mantalingajan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+maowun = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mathura = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mecca = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+medina = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+memphis = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mizdahqan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mogadishu = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mogao = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+molihewen = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mount_damavand = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mount_heng = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mount_kunyu = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mount_longhu = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mount_lu = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mount_mian = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mount_qingcheng = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mount_qiyung = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mount_tai = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+mount_wudang = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+muara_takus = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+multan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+muze = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+my_son = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+nadjaf = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+nakkavaram = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+nanhua = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+nanning = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+napata = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+naqis = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+nara = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ngawa = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+nguu_hong = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+niani = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+nikki = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+nishapur = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+nizwa = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+nok_kundi = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+novgorod = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+nutapkauspe = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ob = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+olkhon = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+olvia = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+olympus = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+paderborn = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+pagan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+palitana = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+panticapaeum = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+papua_selatan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+pemako = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+perm = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+pest = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+pinatubo = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+plock = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+pokaini = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+poszony = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+prambanan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+preah_vihear = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+preslav = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+purang = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+puri = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+putuo = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+qayaliq = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+qiongzhou = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+qom = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+quanzhou = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+quzhou = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ragusa = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+raivola = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ranaheim = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ranakpur = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+rebgong = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+riak_nan_berbedur = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+rima = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+rome = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+rugen = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sagya = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+samarkand = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sanchi = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+santiago = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sarasvati = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sarnath = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sarysyn = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sefa_utaki = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+semien = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sennar = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+seorak = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+shaolin = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sherbro = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+shicheng = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+shikharj = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+shringeri = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+siang = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+siffa = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sijilmasa = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sikong = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sinai = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sinjar = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sittannavasal = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sittaung = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sizhou = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sonba_i = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sparta = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+suenik = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sufed = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sukadana = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+sukhothai = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+surgut = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+suzhou = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+taebaek = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+taiao = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+tarayka = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+tate = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+tavan_bogd = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+tenerife = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+tengchong = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+tezu = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+tiantai = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+tinmallal = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+toledo = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+toledo_mozarabic = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+torun = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+turpan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+tyumen = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+udabhanda = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+ujjayini = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+uppsala = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+vaishali = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+varanasi = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+vien_chan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+viscaya = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+visoki = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+wadan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+wadi_el_milk = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+wandala = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+wehale = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+wenang = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+wutai = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+xingqing = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+xuhen = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+yam_alin = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+yamama = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+yangtze = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+yazd = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+yijinai = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+yizhou = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+zeeland = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+zhaotong = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+zhuolu = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+zozan = {
+	county = c_wangcheng
+	barony = b_793_0
+}
+
+zunyi = {
+	county = c_wangcheng
+	barony = b_793_0
+}

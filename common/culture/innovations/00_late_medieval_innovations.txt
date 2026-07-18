@@ -1,5 +1,4 @@
-﻿
-#### Local Types ####
+﻿#### Local Types ####
 @administration_1 = "gfx/interface/icons/culture_innovations/innovation_administration_01.dds"
 @administration_2 = "gfx/interface/icons/culture_innovations/innovation_administration_02.dds"
 @administration_3 = "gfx/interface/icons/culture_innovations/innovation_administration_03.dds"
@@ -29,69 +28,50 @@
 @innovation_farm = "gfx/interface/icons/culture_innovations/innovation_farm.dds"
 @coins = "gfx/interface/icons/culture_innovations/innovation_welfare_01.dds"
 @misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
-@quilted_armor = "gfx/interface/icons/culture_innovations/innovation_quilted_armor.dds"
-@currency = "gfx/interface/icons/culture_innovations/innovation_currency.dds"
-@farm = "gfx/interface/icons/culture_innovations/innovation_farm.dds"
-@plenary_assemblies = "gfx/interface/icons/culture_innovations/innovation_plenary_assemblies.dds"
-@siege_crossbow = "gfx/interface/icons/culture_innovations/innovation_auh_ballista.dds"
-
+@gunpowder_02 = "gfx/interface/icons/culture_innovations/innovation_bombards.dds"
+@sappers = "gfx/interface/icons/culture_innovations/innovation_sappers.dds"
+@plate_armor = "gfx/interface/icons/culture_innovations/innovation_plate_armor.dds"
+@fire_dragon = "gfx/interface/icons/culture_innovations/innovation_auh_cannon.dds"
 
 @camel = "gfx/interface/icons/culture_innovations/innovation_camel.dds"
 @elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
 @special_maa_01 = "gfx/interface/icons/culture_innovations/innovation_special_maa_01.dds"
 @special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
 
-
 #culture_group_military
-innovation_motte = { # Earthworks in-game
+innovation_machicolations = {
 	skill = stewardship
 	group = culture_group_military
 	culture_era = culture_era_late_medieval
 	icon = @fortifications
-
-	asset = {
-		trigger = {
-			OR = {
-				has_cultural_pillar = heritage_frankish
-				has_cultural_pillar = heritage_central_germanic
-				has_cultural_pillar = heritage_west_germanic
-				has_cultural_pillar = heritage_north_germanic
-				has_cultural_pillar = heritage_iberian
-				has_cultural_pillar = heritage_brythonic
-				has_cultural_pillar = heritage_goidelic
-				has_cultural_pillar = heritage_latin
-				has_cultural_pillar = heritage_west_slavic
-			}
-		}
-		icon = @fortifications
-		name = innovation_motte_actual_motte
-	}
-
-	asset = {
-		trigger = {
-			has_cultural_pillar = heritage_chinese
-		}
-		icon = @fortifications
-		name = innovation_motte_chinese
-	}
-
-	custom = unlock_tribal_fortification_buildings
-
-	parameters = {
-		nomad_motte_innovation_bonus = yes
-	}
+	custom = unlock_late_medieval_fortification_buildings
 
 	flag = global_regular
-	flag = culture_era_late_medieval
+	flag = late_medieval_era_regular
+	
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
 }
 
-innovation_catapult = {
+innovation_gunpowder = {
 	skill = learning
 	group = culture_group_military
 	culture_era = culture_era_late_medieval
-	icon = @siege_weapons
+	icon = @gunpowder_02
 
-	custom = unlock_siege_maa_first_level
+	parameters = {
+		unlock_late_medieval_gunpowder_units = yes
+		unlock_powder_magazines = yes
+	}
 
 	asset = {
 		trigger = {
@@ -101,31 +81,56 @@ innovation_catapult = {
 				has_cultural_pillar = heritage_korean
 			}
 		}
-		icon = @siege_crossbow
-		name = innovation_catapult_chinese
+		icon = @fire_dragon
 	}
 
+	custom = unlock_siege_maa_fourth_level
+
 	flag = global_regular
-	flag = culture_era_late_medieval
+	flag = late_medieval_era_regular
+	
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
 }
 
-innovation_barracks = {
+innovation_royal_armory = {
 	skill = martial
 	group = culture_group_military
 	culture_era = culture_era_late_medieval
 	icon = @levy_building
 
-	custom = unlock_tribal_military_buildings
+	custom = unlock_late_medieval_military_buildings
 
 	character_modifier = {
-		herd_capacity_mult = 0.05
+		levy_reinforcement_rate = 0.15
 	}
 
 	flag = global_regular
-	flag = culture_era_late_medieval
+	flag = late_medieval_era_regular
+	
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
 }
 
-innovation_mustering_grounds = {
+innovation_standing_armies = {
 	skill = martial
 	group = culture_group_military
 	culture_era = culture_era_late_medieval
@@ -133,291 +138,409 @@ innovation_mustering_grounds = {
 
 	character_modifier = {
 		men_at_arms_cap = 1
-		men_at_arms_limit = 2
+		men_at_arms_limit = 5
+		men_at_arms_title_limit = 1
 	}
+	custom = more_belligerents
 
 	flag = global_regular
-	flag = culture_era_late_medieval
+	flag = late_medieval_era_regular
+	
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
 }
 
-innovation_bannus = {
+innovation_sappers = {
 	skill = martial
 	group = culture_group_military
 	culture_era = culture_era_late_medieval
-	icon = @raised_banner
-
-	custom = unlock_march_contract
-	custom = unlock_castellan_contract
+	icon = @sappers
 
 	character_modifier = {
-		levy_reinforcement_rate = 0.15
-		active_accolades = 1
-		herd_conversion = 0.005
+		siege_phase_time = -0.1
 	}
 
 	flag = global_regular
-	flag = culture_era_late_medieval
+	flag = late_medieval_era_regular
+	
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
 }
 
-innovation_quilted_armor = {
+innovation_plate_armor = {
 	skill = martial
 	group = culture_group_military
 	culture_era = culture_era_late_medieval
-	icon = @quilted_armor
+	icon =  @plate_armor
 
-	custom = unlock_maa_armored_footmen
-	custom = eligible_accolade_vanguard_attribute
-
-	character_modifier = {
-		nomadic_horde_toughness_mult = 0.02
+	maa_upgrade = {
+		type = heavy_infantry
+		toughness = 10
+	}
+	maa_upgrade = {
+		type = heavy_cavalry
+		toughness = 20
 	}
 
 	flag = global_regular
-	flag = culture_era_late_medieval
+	flag = late_medieval_era_regular
+	
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
 }
 
-innovation_development_01 = {
+#culture_group_civic
+innovation_primogeniture = {
+	skill = diplomacy
+	group = culture_group_civic
+	culture_era = culture_era_late_medieval
+	icon = @majesty_01
+
+	unlock_law = single_heir_succession_law
+	unlock_law = single_heir_succession_law_youngest
+
+	custom = more_zealot
+
+	flag = global_regular
+	flag = late_medieval_era_regular
+	
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
+}
+
+innovation_cranes = {
 	skill = stewardship
 	group = culture_group_civic
 	culture_era = culture_era_late_medieval
 	icon = @civil_construction_1
 
-	custom = reduce_develop_county_penalty_01
+	custom = unlock_late_medieval_economic_buildings
 
 	character_modifier = {
-		county_fertility_growth_mult = 0.05
+		build_speed = -0.15
 	}
 
 	flag = global_regular
-	flag = culture_era_late_medieval
-}
-
-innovation_currency_01 = {
-	skill = stewardship
-	group = culture_group_civic
-	culture_era = culture_era_late_medieval
-	icon = @currency
-
-	character_modifier = {
-		development_growth_factor = 0.1
-		monthly_income_from_herd_mult = 0.05
+	flag = late_medieval_era_regular
+	
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
 	}
-
-	flag = global_regular
-	flag = culture_era_late_medieval
 }
 
-#culture_group_civic
-innovation_gavelkind = {
+innovation_noblesse_oblige = {
 	skill = diplomacy
 	group = culture_group_civic
 	culture_era = culture_era_late_medieval
-	icon = @administration_3
+	icon = @nobility_03
 
-	unlock_law = confederate_partition_succession_law
+	character_modifier = {
+		courtly_opinion = 5
+		parochial_opinion = 5
+		fellow_vassal_opinion = 5
+		accolade_glory_gain_mult = 0.1
+	}
+
+	flag = global_regular
+	flag = late_medieval_era_regular
 	
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
+}
+
+innovation_rightful_ownership = {
+	skill = diplomacy
+	group = culture_group_civic
+	culture_era = culture_era_late_medieval
+	icon = @leadership_1
+
+	character_modifier = {
+		title_creation_cost_mult = -0.2
+	}
+	custom = cb_discount_prestige_10
+	custom = more_glory_hounds
+	
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
+}
+
+innovation_ermine_cloaks = { # now 'Exotic Regalia' in-game
+	skill = stewardship
+	group = culture_group_civic
+	culture_era = culture_era_late_medieval
+	icon = @majesty_03
+
+	asset = {
+		trigger = {
+			OR = {
+				has_cultural_pillar = heritage_frankish
+				has_cultural_pillar = heritage_iberian
+				has_cultural_pillar = heritage_latin
+				has_cultural_pillar = heritage_central_germanic
+				has_cultural_pillar = heritage_west_germanic
+				has_cultural_pillar = heritage_north_germanic
+				has_cultural_pillar = heritage_brythonic
+				has_cultural_pillar = heritage_goidelic
+				has_cultural_pillar = heritage_west_slavic
+				has_cultural_pillar = heritage_east_slavic
+				has_cultural_pillar = heritage_south_slavic
+				has_cultural_pillar = heritage_magyar
+				has_cultural_pillar = heritage_baltic
+			}
+		}
+		icon = @majesty_03
+		name = innovation_ermine_cloaks_ermine
+	}
+
+	character_modifier = {
+		vassal_limit = 20
+	}
+
+	flag = global_regular
+	flag = late_medieval_era_regular
+	
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
+}
+
+innovation_court_officials = {
+	skill = stewardship
+	group = culture_group_civic
+	culture_era = culture_era_late_medieval
+	icon = @nobility_02
+
 	character_modifier = {
 		domain_limit = 1
+		tax_slot_add = 1
 	}
 
+	custom = more_courtly
+
 	flag = global_regular
-	flag = culture_era_late_medieval
+	flag = late_medieval_era_regular
+	
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
 }
 
-innovation_crop_rotation = {
+innovation_development_04 = {
 	skill = stewardship
 	group = culture_group_civic
 	culture_era = culture_era_late_medieval
-	icon = @farm
+	icon = @misc_inventions
 
-	custom = unlock_tribal_economic_buildings
-
-	character_modifier = {
-		county_fertility_growth_mult = 0.05
-	}
+	custom = reduce_develop_county_penalty_04
+	custom = more_parochial
 
 	flag = global_regular
-	flag = culture_era_late_medieval
+	flag = late_medieval_era_regular
+	
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
 }
 
-innovation_city_planning = {
+innovation_currency_04 = {
 	skill = stewardship
-	group = culture_group_civic
-	culture_era = culture_era_late_medieval
-	icon = @civil_construction_2
-
-	unlock_building = city_01
-	unlock_building = temple_01
-	unlock_building = monastic_schools_01
-	unlock_building = megalith_01
-	unlock_building = market_villages_01
-
-	character_modifier = {
-		herd_capacity_mult = 0.05
-	}
-
-	flag = global_regular
-	flag = culture_era_late_medieval
-}
-
-innovation_casus_belli = {
-	skill = diplomacy
 	group = culture_group_civic
 	culture_era = culture_era_late_medieval
 	icon = @administration_1
 
-	unlock_casus_belli = individual_county_de_jure_cb
-	unlock_casus_belli = individual_duchy_de_jure_cb
-
-	flag = global_regular
-	flag = culture_era_late_medieval
-}
-
-innovation_plenary_assemblies = {
-	skill = diplomacy
-	group = culture_group_civic
-	culture_era = culture_era_late_medieval
-	icon = @plenary_assemblies
-
-	unlock_law = crown_authority_1
-
-	unlock_building = tribe_02
-
 	character_modifier = {
-		vassal_herd_contribution_mult = 0.02
+		development_growth_factor = 0.1
 	}
 
 	flag = global_regular
-	flag = culture_era_late_medieval
-}
-
-innovation_ledger = {
-	skill = stewardship
-	group = culture_group_civic
-	culture_era = culture_era_late_medieval
-	icon = @administration_2
-
-	county_modifier = {
-		building_slot_add = 1
+	flag = late_medieval_era_regular
+	
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
 	}
-	character_modifier = {
-		monthly_income_from_herd_mult = 0.05
-	}
-
-	flag = global_regular
-	flag = culture_era_late_medieval
 }
 
 ### culture_group_regional ###
 
-innovation_table_of_princes = {
+innovation_wierdijks = {
+	skill = stewardship
+	group = culture_group_civic
+	culture_era = culture_era_late_medieval
+	region = custom_netherlands
+	icon = @civil_construction_2
+
+	character_modifier = {
+		levy_size = 0.01 #Not that kind of levee!
+		city_holding_build_speed = -0.1
+		city_holding_holding_build_speed = -0.1
+		development_growth_factor = 0.1
+
+	}
+
+	flag = global_regional
+	flag = late_medieval_era_regional
+	
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
+}
+
+innovation_condottieri = {
+	skill = intrigue
+	group = culture_group_military
+	culture_era = culture_era_late_medieval
+	region = world_europe_south_italy
+	icon = @maa_01
+
+	character_modifier = {
+		same_culture_mercenary_hire_cost_mult = -0.25
+	}
+
+	culture_modifier = {
+		mercenary_count_mult = 1
+	}
+
+	flag = global_regional
+	flag = late_medieval_era_regional
+	
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
+		}
+	}
+}
+
+innovation_deccan_unity = {
 	skill = diplomacy
 	group = culture_group_civic
 	culture_era = culture_era_late_medieval
-	icon = @nobility_01
+	region = world_india_deccan
+	icon = @nobility_04
+
+	character_modifier = {
+		same_faith_opinion = 5
+	}
+
+	flag = global_regional
+	flag = late_medieval_era_regional
 	
-	potential = {
-		OR = {
-			#West Slavic
-			this = culture:czech
-			this = culture:slovien
+	ai_weight_for_fascination = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					has_cultural_era_or_later = culture_era_late_medieval
+				}
+			}
+			multiply = 0
 		}
 	}
-	
-	unlock_law = single_heir_dynasty_house
-	custom = unlock_single_heir_dynasty_house_changing
-	
-	flag = global_regional
-	flag = tribal_era_regional
 }
-
-innovation_longboats = {
-	skill = martial
-	group = culture_group_military
-	culture_era = culture_era_late_medieval
-	region = world_europe_north
-	icon = @longboats
-
-	character_modifier = {
-		embarkation_cost_mult = -0.75
-		naval_movement_speed_mult = 0.25
-	}
-
-	custom = unlocks_naval_raiding
-	custom = unlocks_sailable_major_rivers
-	custom = unlocks_adventure_intent
-
-	flag = global_regional
-	flag = tribal_era_regional
-}
-
-innovation_elephantry = {
-	skill = stewardship
-	group = culture_group_military
-	culture_era = culture_era_late_medieval
-	region = world_innovation_elephants
-	icon = @elephant
-
-	unlock_building = elephant_pens_01
-
-	custom = eligible_accolade_elephantry_attribute
-	custom = domicile_building_parameter_camp_reinforce_elephant_regiments_anywhere
-
-	flag = global_regional
-	flag = tribal_era_regional
-}
-
-innovation_war_camels = {
-	skill = stewardship
-	group = culture_group_military
-	culture_era = culture_era_late_medieval
-	region = world_innovation_camels
-	icon = @camel
-
-	unlock_maa = camel_rider
-	unlock_building = camel_farms_01
-
-	custom = eligible_accolade_camelry_attribute
-
-	flag = global_regional
-	flag = tribal_era_regional
-}
-
-innovation_wootz_steel = {
-	skill = learning
-	group = culture_group_civic
-	culture_era = culture_era_late_medieval
-	region = world_india_deccan
-	icon = @weapons_and_armor_01
-
-	character_modifier = {
-		prowess = 1
-	}
-	custom = unlock_wind_furnaces
-
-	flag = global_regional
-	flag = tribal_era_regional
-}
-
-innovation_african_canoes = {
-	skill = martial
-	group = culture_group_military
-	culture_era = culture_era_late_medieval
-	region = world_africa_west
-	icon = @majesty_01
-
-	character_modifier = {
-		embarkation_cost_mult = -0.25
-		raid_speed = 0.1
-	}
-	
-	custom = unlocks_naval_raiding
-	custom = unlocks_sailable_major_rivers
-
-	flag = global_regional
-	flag = tribal_era_regional
-}
-
-
-
-

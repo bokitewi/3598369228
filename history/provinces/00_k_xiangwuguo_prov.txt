@@ -15,10 +15,14 @@
 ### c_ayoujiabo
 # ZHIFU
 3560 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # JIANGHU
 3561 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

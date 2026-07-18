@@ -145,7 +145,7 @@ jixingfanzhongpu9={
 		}
   }
 }
-jixingfanzhongpu9={
+dm_hist_jixingfanzhongpu9_2={
   name="nanming967"
   dynasty_house=house_xin698
 	religion="dongzhouli" 

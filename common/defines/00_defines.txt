@@ -54,7 +54,7 @@ NSetup = {
 		"pool_repopulate_stewardship"
 		"pool_repopulate_intrigue"
 		"pool_repopulate_learning"
-		"pool_repopulate_local_flavor"
+		"pool_repopulate_stewardship"
 	}
 	GENERATED_POOL_CHARACTER_TEMPLATE_WEIGHTS = {
 		2

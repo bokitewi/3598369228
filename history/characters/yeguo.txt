@@ -372,7 +372,7 @@ jixingyeguo23={
 		}
   }
 }
-jixingyeguo23={
+dm_hist_jixingyeguo23_2={
   name="nvming220"
   dynasty_house=house_xin578
 	religion="dongzhouli" 
@@ -389,7 +389,7 @@ jixingyeguo23={
 		}
   }
 }
-jixingyeguo23={
+dm_hist_jixingyeguo23_3={
   name="nvming240"
   dynasty_house=house_xin578
 	religion="dongzhouli" 

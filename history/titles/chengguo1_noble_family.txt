@@ -16,7 +16,7 @@
 c_simashi = {
 	3849.12.31 = {
 		liege = k_chengguo1
-		holder = han3155
+		holder = han3157
 		government = feudal_admin_government
 		succession_laws = { noble_family_succession_law }
 	}

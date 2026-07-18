@@ -151,7 +151,10 @@ effect_setup_new_vassals_contracts = {
 			type = feudal_government_succession_rights
 			level = feudal_succession_rights_hereditary
 		}
-		add_realm_law = law_vassal_succession_rights_policy_hereditary
+		if = {
+			limit = { NOT = { has_realm_law = law_vassal_succession_rights_policy_hereditary } }
+			add_realm_law = law_vassal_succession_rights_policy_hereditary
+		}
 	}
 	# 【强制分割】
 	else_if = {
@@ -162,7 +165,10 @@ effect_setup_new_vassals_contracts = {
 			type = feudal_government_succession_rights
 			level = feudal_succession_rights_forced_partition
 		}
-		add_realm_law = law_vassal_succession_rights_policy_forced_partition
+		if = {
+			limit = { NOT = { has_realm_law = law_vassal_succession_rights_policy_forced_partition } }
+			add_realm_law = law_vassal_succession_rights_policy_forced_partition
+		}
 	}
 	# 【御赐承认】
 	else_if = {
@@ -173,7 +179,10 @@ effect_setup_new_vassals_contracts = {
 			type = feudal_government_succession_rights
 			level = feudal_succession_rights_grant_recognition
 		}
-		add_realm_law = law_vassal_succession_rights_policy_grant_recognition
+		if = {
+			limit = { NOT = { has_realm_law = law_vassal_succession_rights_policy_grant_recognition } }
+			add_realm_law = law_vassal_succession_rights_policy_grant_recognition
+		}
 	}
 	# 【宫廷监察】
 	else_if = {
@@ -184,7 +193,10 @@ effect_setup_new_vassals_contracts = {
 			type = feudal_government_succession_rights
 			level = feudal_succession_rights_court_supervision
 		}
-		add_realm_law = law_vassal_succession_rights_policy_court_supervision
+		if = {
+			limit = { NOT = { has_realm_law = law_vassal_succession_rights_policy_court_supervision } }
+			add_realm_law = law_vassal_succession_rights_policy_court_supervision
+		}
 		effect_establish_feudal_subject_supervisor = {
 			TARGET_SUBJECT = this
 		}
@@ -199,7 +211,10 @@ effect_setup_new_vassals_contracts = {
 			type = feudal_government_succession_rights
 			level = feudal_succession_rights_governor_appointment
 		}
-		add_realm_law = law_vassal_succession_rights_policy_governor_appointment
+		if = {
+			limit = { NOT = { has_realm_law = law_vassal_succession_rights_policy_governor_appointment } }
+			add_realm_law = law_vassal_succession_rights_policy_governor_appointment
+		}
 	}
 
 	## 候选人偏好 ##
@@ -212,7 +227,10 @@ effect_setup_new_vassals_contracts = {
 			type = feudal_admin_government_candidate_preference
 			level = candidate_preference_powerful_gentry
 		}
-		add_realm_law = law_candidate_preference_policy_powerful_gentry
+		if = {
+			limit = { NOT = { has_realm_law = law_candidate_preference_policy_powerful_gentry } }
+			add_realm_law = law_candidate_preference_policy_powerful_gentry
+		}
 	}
 	# 【宫廷贤能】
 	else_if = {
@@ -223,7 +241,10 @@ effect_setup_new_vassals_contracts = {
 			type = feudal_admin_government_candidate_preference
 			level = candidate_preference_local_talent
 		}
-		add_realm_law = law_candidate_preference_policy_local_talent
+		if = {
+			limit = { NOT = { has_realm_law = law_candidate_preference_policy_local_talent } }
+			add_realm_law = law_candidate_preference_policy_local_talent
+		}
 	}
 	# 【任人唯亲】
 	else_if = {
@@ -234,7 +255,10 @@ effect_setup_new_vassals_contracts = {
 			type = feudal_admin_government_candidate_preference
 			level = candidate_preference_favor_nepotism
 		}
-		add_realm_law = law_candidate_preference_policy_favor_nepotism
+		if = {
+			limit = { NOT = { has_realm_law = law_candidate_preference_policy_favor_nepotism } }
+			add_realm_law = law_candidate_preference_policy_favor_nepotism
+		}
 	}
 	# 【唯才是举】
 	else_if = {
@@ -245,7 +269,10 @@ effect_setup_new_vassals_contracts = {
 			type = feudal_admin_government_candidate_preference
 			level = candidate_preference_talent_only
 		}
-		add_realm_law = law_candidate_preference_policy_talent_only
+		if = {
+			limit = { NOT = { has_realm_law = law_candidate_preference_policy_talent_only } }
+			add_realm_law = law_candidate_preference_policy_talent_only
+		}
 	}
 	# 【官僚选拔】
 	else_if = {
@@ -256,7 +283,10 @@ effect_setup_new_vassals_contracts = {
 			type = feudal_admin_government_candidate_preference
 			level = candidate_preference_bureaucrat_promotion
 		}
-		add_realm_law = law_candidate_preference_policy_bureaucrat_promotion
+		if = {
+			limit = { NOT = { has_realm_law = law_candidate_preference_policy_bureaucrat_promotion } }
+			add_realm_law = law_candidate_preference_policy_bureaucrat_promotion
+		}
 	}
 }
 

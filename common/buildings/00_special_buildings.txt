@@ -1,4 +1,25 @@
-﻿###########
+﻿#Special Buildings:
+#When adding Special Buildings also always add an entry in the following custom loc:
+#GetSpecialBuildingNameFromProvince
+#GetSpecialBuildingTouristDescriptor
+
+
+#Special Building Flags:
+
+#Effects, adding the flag is enough to have it working but you also need to add a tooltip using effect_desc
+#special_university = unlocks effects for tournaments and book inspiration, as well other mechanical effects of universities
+#holy_building = unlocks funeral bonuses
+
+#Point of Interest flags (no further implementation needed after adding the flag)
+#travel_point_of_interest_religious = this location will be a religious point of interest
+#travel_point_of_interest_economic = this location will be an economic point of interest
+#travel_point_of_interest_martial = this location will be a martial point of interest
+#travel_point_of_interest_wonder = this location will be a wonder point of interest
+#travel_point_of_interest_natural_feature = this location will be a natural feature point of interest
+#travel_point_of_interest_diplomatic = this location will be a diplomatic point of interest
+#travel_point_of_interest_learning = this location will be a learning point of interest
+
+###########
 ## Generic Holy Site Buildings
 ###########
 
@@ -10,6 +31,11 @@ holy_site_cathedral_01 = {
 		}
 	}
 
+	asset = {
+		type = pdxmesh
+		name = "cp6_building_special_grand_cathedral_mesh"
+		requires_dlc_flag = holy_buildings
+	}
 	asset = {
 		type = pdxmesh
 		name = "building_special_cathedral_generic_mesh"
@@ -83,6 +109,8 @@ holy_site_cathedral_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 holy_site_mosque_01 = {
@@ -161,6 +189,8 @@ holy_site_mosque_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 holy_site_fire_temple_01 = {
@@ -245,6 +275,7 @@ holy_site_fire_temple_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 holy_site_pagan_grand_temple_01 = {
@@ -331,6 +362,8 @@ holy_site_pagan_grand_temple_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 holy_site_indian_grand_temple_01 = {
@@ -415,6 +448,8 @@ holy_site_indian_grand_temple_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 holy_site_buddhist_grand_temple_01 = {
@@ -438,7 +473,12 @@ holy_site_buddhist_grand_temple_01 = {
 	asset = {
 		type = pdxmesh
 		name = "building_special_brihadeeswarar_temple_mesh"
-		graphical_cultures = { indian_building_gfx }
+		graphical_cultures = { indian_building_gfx  }
+	}
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_brihadeeswarar_temple_mesh"
 	}
 
 	construction_time = very_slow_construction_time
@@ -507,6 +547,8 @@ holy_site_buddhist_grand_temple_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 holy_site_japanese_temple_01 = {
@@ -588,6 +630,8 @@ holy_site_japanese_temple_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 holy_site_chinese_temple_01 = {
@@ -669,6 +713,8 @@ holy_site_chinese_temple_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 holy_site_se_asia_pagan_temple_01 = {
@@ -750,6 +796,8 @@ holy_site_se_asia_pagan_temple_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 holy_site_other_grand_temple_01 = {
@@ -833,6 +881,8 @@ holy_site_other_grand_temple_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 
@@ -906,6 +956,8 @@ holy_site_mahabodhi_temple_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -934,7 +986,7 @@ holy_site_imam_ali_mosque_01 = {
 			barony = {
 				is_holy_site_of = scope:holder.faith
 			}
-			scope:holder.faith = { religion_tag = islam_religion }
+			islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:holder }
 		}
 	}
 	
@@ -975,6 +1027,8 @@ holy_site_imam_ali_mosque_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -1048,6 +1102,8 @@ holy_site_great_mosque_of_mecca_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -1079,12 +1135,8 @@ holy_site_great_mosque_of_cordoba_01 = {
 		custom_description = {
 			text = holy_site_muslim_christian_or_holy_site_trigger
 			OR = {
-				scope:holder = {
-					religion = religion:islam_religion
-				}
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
+				islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:holder }
+				christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -1132,6 +1184,8 @@ holy_site_great_mosque_of_cordoba_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -1161,9 +1215,7 @@ holy_site_great_mosque_of_djenne_01 = {
 	
 	can_construct = {
 		OR = {
-			scope:holder = {
-				religion = religion:islam_religion
-			}
+			islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:holder }
 			custom_description = {
 				text = holy_site_building_trigger
 				barony = {
@@ -1177,9 +1229,7 @@ holy_site_great_mosque_of_djenne_01 = {
 		custom_description = {
 			text = holy_site_muslim_or_holy_site_trigger
 			OR = {
-				scope:holder = {
-					religion = religion:islam_religion
-				}
+				islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:holder }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -1224,6 +1274,8 @@ holy_site_great_mosque_of_djenne_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -1253,9 +1305,7 @@ holy_site_great_mosque_of_samarra_01 = {
 	
 	can_construct = {
 		OR = {
-			scope:holder = {
-				religion = religion:islam_religion
-			}
+			islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:holder }
 			custom_description = {
 				text = holy_site_building_trigger
 				barony = {
@@ -1269,9 +1319,7 @@ holy_site_great_mosque_of_samarra_01 = {
 		custom_description = {
 			text = holy_site_muslim_or_holy_site_trigger
 			OR = {
-				scope:holder = {
-					religion = religion:islam_religion
-				}
+				islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:holder }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -1316,6 +1364,8 @@ holy_site_great_mosque_of_samarra_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -1329,6 +1379,13 @@ holy_site_cologne_cathedral_01 = {
 			desc = building_funeral_effect_desc
 		}
 	}
+	
+	asset = {
+		type = pdxmesh
+		name = "cp6_building_special_grand_cathedral_mesh"
+		requires_dlc_flag = holy_buildings
+	}
+	
 	construction_time = very_slow_construction_time
 
 	type_icon = "icon_structure_cologne_cathedral.dds"
@@ -1339,9 +1396,7 @@ holy_site_cologne_cathedral_01 = {
 	
 	can_construct = {
 		OR = {
-			scope:holder = {
-				religion = religion:christianity_religion
-			}
+			christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 			custom_description = {
 				text = holy_site_building_trigger
 				barony = {
@@ -1360,9 +1415,7 @@ holy_site_cologne_cathedral_01 = {
 		custom_description = {
 			text = holy_site_christian_or_holy_site_trigger
 			OR = {
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
+				christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -1412,6 +1465,8 @@ holy_site_cologne_cathedral_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -1440,9 +1495,7 @@ holy_site_canterbury_cathedral_01 = {
 	
 	can_construct = {
 		OR = {
-			scope:holder = {
-				religion = religion:christianity_religion
-			}
+			christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 			custom_description = {
 				text = holy_site_building_trigger
 				barony = {
@@ -1461,9 +1514,7 @@ holy_site_canterbury_cathedral_01 = {
 		custom_description = {
 			text = holy_site_christian_or_holy_site_trigger
 			OR = {
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
+				christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -1514,6 +1565,8 @@ holy_site_canterbury_cathedral_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 holy_site_canterbury_cathedral_02 = {
@@ -1538,9 +1591,7 @@ holy_site_canterbury_cathedral_02 = {
 	
 	can_construct = {
 		OR = {
-			scope:holder = {
-				religion = religion:christianity_religion
-			}
+			christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 			custom_description = {
 				text = holy_site_building_trigger
 				barony = {
@@ -1559,9 +1610,7 @@ holy_site_canterbury_cathedral_02 = {
 		custom_description = {
 			text = holy_site_christian_or_holy_site_trigger
 			OR = {
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
+				christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -1612,6 +1661,8 @@ holy_site_canterbury_cathedral_02 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 holy_site_canterbury_cathedral_03 = {
@@ -1636,9 +1687,7 @@ holy_site_canterbury_cathedral_03 = {
 	
 	can_construct = {
 		OR = {
-			scope:holder = {
-				religion = religion:christianity_religion
-			}
+			christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 			custom_description = {
 				text = holy_site_building_trigger
 				barony = {
@@ -1657,9 +1706,7 @@ holy_site_canterbury_cathedral_03 = {
 		custom_description = {
 			text = holy_site_christian_or_holy_site_trigger
 			OR = {
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
+				christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -1709,6 +1756,8 @@ holy_site_canterbury_cathedral_03 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 
@@ -1733,9 +1782,7 @@ holy_site_prophetic_mosque_01 = {
 	
 	can_construct = {
 		OR = {
-			scope:holder = {
-				religion = religion:islam_religion
-			}
+			islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:holder }
 			custom_description = {
 				text = holy_site_building_trigger
 				barony = {
@@ -1749,9 +1796,7 @@ holy_site_prophetic_mosque_01 = {
 		custom_description = {
 			text = holy_site_muslim_or_holy_site_trigger
 			OR = {
-				scope:holder = {
-					religion = religion:islam_religion
-				}
+				islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:holder }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -1798,6 +1843,8 @@ holy_site_prophetic_mosque_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -2003,8 +2050,7 @@ theodosian_walls_01 = {
 	type_icon = "icon_structure_theodosian_walls.dds"
 	
 	can_construct_potential = {
-		barony ?= title:b_constantinople
-		building_requirement_tribal = no
+		always = no
 	}
 	
 	cost_gold = 3000
@@ -2038,6 +2084,7 @@ theodosian_walls_01 = {
 	}
 	
 	type = duchy_capital
+	flag = duchy_building
 }
 
 ##########
@@ -2050,8 +2097,7 @@ aurelian_walls_01 = {
 	type_icon = "icon_structure_aurelian_walls.dds"
 	
 	can_construct_potential = {
-		barony ?= title:b_roma
-		building_requirement_tribal = no
+		always = no
 	}
 	
 	cost_gold = 3000
@@ -2083,6 +2129,7 @@ aurelian_walls_01 = {
 	}
 	
 	type = duchy_capital
+	flag = duchy_building
 }
 
 ##########
@@ -2421,9 +2468,7 @@ buddhas_of_bamian_01 = {
 	is_enabled = {
 		custom_description = {
 			text = buddhas_of_bamian_trigger
-			scope:holder = {
-				religion = { is_in_family = rf_eastern }
-			}
+			eastern_or_syncretic_with_eastern_trigger = { CHARACTER = scope:holder }
 		}
 	}
 	
@@ -2456,6 +2501,7 @@ buddhas_of_bamian_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -2851,8 +2897,8 @@ notre_dame_01 = {
 	}
 	
 	can_construct = {
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 		scope:holder = {
-			religion = religion:christianity_religion
 			culture = {
 				has_innovation = innovation_windmills
 			}
@@ -2860,9 +2906,7 @@ notre_dame_01 = {
 	}
 	
 	is_enabled = {
-		scope:holder = {
-			religion = religion:christianity_religion
-		}
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 	
 	show_disabled = yes
@@ -2902,6 +2946,8 @@ notre_dame_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -2940,9 +2986,7 @@ brihadeeswarar_temple_01 = {
 	is_enabled = {
 		custom_description = {
 			text = buddhas_of_bamian_trigger
-			scope:holder = {
-				religion = { is_in_family = rf_eastern }
-			}
+			eastern_or_syncretic_with_eastern_trigger = { CHARACTER = scope:holder }
 		}
 	}
 	
@@ -2980,6 +3024,8 @@ brihadeeswarar_temple_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -3007,9 +3053,7 @@ shwedagon_pagoda_01 = {
 	is_enabled = {
 		custom_description = {
 			text = buddhas_of_bamian_trigger
-			scope:holder = {
-				religion = { is_in_family = rf_eastern }
-			}
+			eastern_or_syncretic_with_eastern_trigger = { CHARACTER = scope:holder }
 		}
 	}
 	
@@ -3049,6 +3093,8 @@ shwedagon_pagoda_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -3076,9 +3122,7 @@ ananda_temple_01 = {
 	is_enabled = {
 		custom_description = {
 			text = buddhas_of_bamian_trigger
-			scope:holder = {
-				religion = { is_in_family = rf_eastern }
-			}
+			eastern_or_syncretic_with_eastern_trigger = { CHARACTER = scope:holder }
 		}
 	}
 	
@@ -3118,6 +3162,8 @@ ananda_temple_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -3140,21 +3186,15 @@ the_friday_mosque_01 = {
 	}
 	
 	can_construct = {
-		scope:holder = {
-			religion = religion:islam_religion
-		}
+		islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:holder } 
 	}
 	
 	is_enabled = {
 		custom_description = {
 			text = holy_site_muslim_or_zoroastrian_or_holy_site_trigger
 			OR = {
-				scope:holder = {
-					religion = religion:islam_religion
-				}
-				scope:holder = {
-					religion = religion:zoroastrianism_religion
-				}
+				islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:holder } 
+				zoroastrian_or_syncretic_with_eastern_trigger = { CHARACTER = scope:holder }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -3196,6 +3236,8 @@ the_friday_mosque_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -3217,9 +3259,7 @@ khajuraho_01 = {
 	is_enabled = {
 		custom_description = {
 			text = buddhas_of_bamian_trigger
-			scope:holder = {
-				religion = { is_in_family = rf_eastern }
-			}
+			eastern_or_syncretic_with_eastern_trigger = { CHARACTER = scope:holder }
 		}
 	}
 	
@@ -3258,6 +3298,8 @@ khajuraho_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -3378,6 +3420,8 @@ hagia_sophia_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 hagia_sophia_02 = {
@@ -3402,18 +3446,14 @@ hagia_sophia_02 = {
 	}
 	
 	can_construct = {
-		scope:holder = {
-			religion = religion:islam_religion
-		}
+		islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:holder }
 	}
 	
 	is_enabled = {
 		custom_description = {
 			text = holy_site_muslim_or_holy_site_trigger
 			OR = {
-				scope:holder = {
-					religion = religion:islam_religion
-				}
+				islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:holder }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -3451,6 +3491,8 @@ hagia_sophia_02 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -3479,7 +3521,9 @@ dome_of_the_rock_01 = {
 				is_holy_site_of = scope:holder.faith
 			}
 		}
-		NOT = { scope:holder.religion = religion:judaism_religion }
+		NOT = { 
+			judaism_or_syncretic_with_judaism_trigger = { CHARACTER = scope:holder }
+		}
 	}
 	
 	show_disabled = yes
@@ -3523,6 +3567,7 @@ dome_of_the_rock_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 temple_in_jerusalem_01 = {
@@ -3547,7 +3592,7 @@ temple_in_jerusalem_01 = {
 				is_holy_site_of = scope:holder.faith
 			}
 		}
-		scope:holder.religion = religion:judaism_religion
+		judaism_or_syncretic_with_judaism_trigger = { CHARACTER = scope:holder }
 	}
 	
 	is_enabled = {
@@ -3560,9 +3605,7 @@ temple_in_jerusalem_01 = {
 						is_holy_site_of = scope:holder.faith
 					}
 				}
-				scope:holder = {
-					religion = religion:judaism_religion
-				}
+				judaism_or_syncretic_with_judaism_trigger = { CHARACTER = scope:holder }
 			}
 		}
 	}
@@ -3609,6 +3652,8 @@ temple_in_jerusalem_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -3944,6 +3989,12 @@ sankore_university = {
 			desc = university_roco_effect_desc
 		}
 		desc = university_effect_desc
+	}
+	
+	asset = {
+		type = pdxmesh
+		name = "cp6_building_special_sankore_university_mesh"
+		requires_dlc_flag = holy_buildings
 	}
 
 	type_icon = "icon_structure_the_university_of_sankore.dds"
@@ -4382,6 +4433,7 @@ heddal_stave_church_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -4398,9 +4450,7 @@ temple_of_uppsala_01 = {
 	
 	can_construct = {
 		OR = {
-			scope:holder = {
-				religion = religion:christianity_religion
-			}
+			christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 			custom_description = {
 				text = holy_site_building_trigger
 				barony = {
@@ -4419,9 +4469,7 @@ temple_of_uppsala_01 = {
 		custom_description = {
 			text = holy_site_christian_or_holy_site_trigger
 			OR = {
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
+				christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -4468,6 +4516,8 @@ temple_of_uppsala_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 temple_of_uppsala_02 = {
@@ -4475,14 +4525,18 @@ temple_of_uppsala_02 = {
 	
 	type_icon = "icon_structure_cologne_cathedral.dds"
 	
+	asset = {
+		type = pdxmesh
+		name = "cp6_building_special_grand_cathedral_mesh"
+		requires_dlc_flag = holy_buildings
+	}
+	
 	can_construct_potential = {
 	}
 	
 	can_construct = {
 		OR = {
-			scope:holder = {
-				religion = religion:christianity_religion
-			}
+			christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 			custom_description = {
 				text = holy_site_building_trigger
 				barony = {
@@ -4501,9 +4555,7 @@ temple_of_uppsala_02 = {
 		custom_description = {
 			text = holy_site_christian_or_holy_site_trigger
 			OR = {
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
+				christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -4545,6 +4597,8 @@ temple_of_uppsala_02 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -4562,9 +4616,7 @@ lund_cathedral_01 = {
 	
 	can_construct = {
 		OR = {
-			scope:holder = {
-				religion = religion:christianity_religion
-			}
+			christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 			custom_description = {
 				text = holy_site_building_trigger
 				barony = {
@@ -4583,9 +4635,7 @@ lund_cathedral_01 = {
 		custom_description = {
 			text = holy_site_christian_or_holy_site_trigger
 			OR = {
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
+				christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -4629,6 +4679,8 @@ lund_cathedral_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -4682,11 +4734,6 @@ roman_wall_of_lugo_01 = {
 	}
 	
 	cost_gold = 300
-	
-	character_modifier = {
-		learning = 1 
-		monthly_dynasty_prestige_mult = 0.05
-	}
 
 	county_holder_character_modifier = {
 		learning = 1
@@ -4985,12 +5032,8 @@ holy_site_basilica_santiago_01 = {
 		custom_description = {
 			text = holy_site_muslim_christian_or_holy_site_trigger
 			OR = {
-				scope:holder = {
-					religion = religion:islam_religion
-				}
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
+				islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:holder }
+				christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -5038,6 +5081,8 @@ holy_site_basilica_santiago_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -5065,9 +5110,7 @@ imam_reza_shrine_01 = {
 		custom_description = {
 			text = holy_site_muslim_or_holy_site_trigger
 			OR = {
-				scope:holder = {
-					religion = religion:islam_religion
-				}
+				islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:holder }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -5117,6 +5160,8 @@ imam_reza_shrine_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious # religious tomb/complex
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -5178,6 +5223,7 @@ soltaniyeh_01 = {
 	type = special
 
 	flag = travel_point_of_interest_wonder # monumental tomb
+	flag = holy_building
 }
 
 ##########
@@ -5239,7 +5285,7 @@ palace_of_ctesiphon_02 = {
 		scope:holder = {
 			AND = {
 				OR = {
-					religion = religion:zoroastrianism_religion
+					zoroastrian_or_syncretic_with_eastern_trigger = { CHARACTER = scope:holder }
 					faith = faith:manichean
 					faith = faith:nestorian
 					faith = faith:hellenic_pagan
@@ -5300,8 +5346,8 @@ falak_ol_aflak_citadel_01 = {
 	construction_time = very_slow_construction_time
 	
 	type_icon = "icon_structure_falak_ol_aflak_citadel.dds" 
-	
-	can_construct_potential = {
+
+	can_construct_showing_failures_only = {
 		scope:holder.culture = {
 			has_innovation = innovation_hoardings 
 		}
@@ -5353,18 +5399,14 @@ minarets_and_remains_of_jam_01 = {
 	type_icon = "icon_structure_minaret_and_remains_of_jam.dds" 
 
 	can_construct = {
-		scope:holder = {
-			religion = religion:islam_religion
-		}
+		islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:holder }
 	}
 	
 	is_enabled = {
 		custom_description = {
 			text = holy_site_muslim_or_holy_site_trigger
 			OR = {
-				scope:holder = {
-					religion = religion:islam_religion
-				}
+				islam_or_syncretic_with_islam_trigger = { CHARACTER = scope:holder }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -5403,6 +5445,7 @@ minarets_and_remains_of_jam_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious # religious monument
+	flag = holy_building
 }
 
 ##########
@@ -6013,11 +6056,11 @@ church_of_the_theotokos = {
 	cost_gold = 1000 
 
 	can_construct = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 	
 	is_enabled = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 	
 	cost_gold = 1000
@@ -6057,6 +6100,7 @@ church_of_the_theotokos = {
 	next_building = parthenon
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 parthenon = {
@@ -6136,11 +6180,11 @@ hagios_demetrios = {
 	cost_gold = 1000
 
 	can_construct = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 	
 	is_enabled = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 
 	character_modifier = {
@@ -6175,6 +6219,7 @@ hagios_demetrios = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -6250,7 +6295,7 @@ saint_lazarus = {
 	}
 	
 	is_enabled = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 
 	character_modifier = {
@@ -6286,6 +6331,7 @@ saint_lazarus = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -6307,7 +6353,7 @@ sumela_monastery_01 = {
 	}
 	
 	is_enabled = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 
 	character_modifier = {
@@ -6347,6 +6393,7 @@ sumela_monastery_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 sumela_monastery_02 = {
@@ -6365,11 +6412,11 @@ sumela_monastery_02 = {
 	}
 
 	can_construct = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 	
 	is_enabled = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 
 	character_modifier = {
@@ -6408,6 +6455,7 @@ sumela_monastery_02 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -6637,6 +6685,7 @@ meteora_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 meteora_02 = {
@@ -6698,6 +6747,7 @@ meteora_02 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -6749,6 +6799,7 @@ mount_athos_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 mount_athos_02 = {
@@ -6807,6 +6858,7 @@ mount_athos_02 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 mount_athos_03 = {
@@ -6867,6 +6919,7 @@ mount_athos_03 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -6888,7 +6941,7 @@ apollinare_nuovo = {
 	}
 	
 	is_enabled = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 
 	character_modifier = {
@@ -6927,6 +6980,7 @@ apollinare_nuovo = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -6948,7 +7002,7 @@ saint_catherine = {
 	}
 	
 	is_enabled = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 
 	character_modifier = {
@@ -6989,6 +7043,7 @@ saint_catherine = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -7010,7 +7065,7 @@ jvari_monastery = {
 	}
 	
 	is_enabled = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 
 	character_modifier = {
@@ -7049,6 +7104,7 @@ jvari_monastery = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -7110,6 +7166,7 @@ etchmiadzin_cathedral = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -7127,11 +7184,11 @@ cattolica_stilo = {
 	cost_gold = 750
 
 	can_construct = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 	
 	is_enabled = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 
 	character_modifier = {
@@ -7170,6 +7227,7 @@ cattolica_stilo = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -7183,11 +7241,11 @@ hosios_loukas = {
 	cost_gold = 1000
 
 	can_construct = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 	
 	is_enabled = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 
 	character_modifier = {
@@ -7227,6 +7285,7 @@ hosios_loukas = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -7244,11 +7303,11 @@ sofia_ohrid = {
 	cost_gold = 1000
 
 	can_construct = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 	
 	is_enabled = {
-		scope:holder.faith.religion = religion:christianity_religion
+		christianity_or_syncretic_with_christianity_trigger = { CHARACTER = scope:holder }
 	}
 
 	character_modifier = {
@@ -7287,6 +7346,7 @@ sofia_ohrid = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -7743,8 +7803,8 @@ leshan_giant_buddha_01 = {
 			text = buddhas_of_bamian_trigger
 			scope:holder = {
 				OR = {
-					religion = { is_in_family = rf_eastern }
-					religion = { is_in_family = rf_sinitic }
+					eastern_or_syncretic_with_eastern_trigger = { CHARACTER = scope:holder }
+					sinitic_or_syncretic_with_sinitic_trigger = { CHARACTER = scope:holder }
 				}
 			}
 		}
@@ -7779,6 +7839,7 @@ leshan_giant_buddha_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -7799,8 +7860,8 @@ yungang_grottoes_01 = {
 			text = buddhas_of_bamian_trigger
 			scope:holder = {
 				OR = {
-					religion = { is_in_family = rf_eastern }
-					religion = { is_in_family = rf_sinitic }
+					eastern_or_syncretic_with_eastern_trigger = { CHARACTER = scope:holder }
+					sinitic_or_syncretic_with_sinitic_trigger = { CHARACTER = scope:holder }
 				}
 			}
 		}
@@ -7835,6 +7896,7 @@ yungang_grottoes_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -7858,11 +7920,9 @@ wudang_mountain_temples_01 = {
 	is_enabled = {
 		custom_description = {
 			text = buddhas_of_bamian_trigger
-			scope:holder = {
-				OR = {
-					religion = { is_in_family = rf_eastern }
-					religion = { is_in_family = rf_sinitic }
-				}
+			OR = {
+				eastern_or_syncretic_with_eastern_trigger = { CHARACTER = scope:holder }
+				sinitic_or_syncretic_with_sinitic_trigger = { CHARACTER = scope:holder }
 			}
 		}
 	}
@@ -7889,6 +7949,7 @@ wudang_mountain_temples_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -7907,11 +7968,9 @@ shaolin_monastery_01 = {
 	is_enabled = {
 		custom_description = {
 			text = buddhas_of_bamian_trigger
-			scope:holder = {
-				OR = {
-					religion = { is_in_family = rf_eastern }
-					religion = { is_in_family = rf_sinitic }
-				}
+			OR = {
+				eastern_or_syncretic_with_eastern_trigger = { CHARACTER = scope:holder }
+				sinitic_or_syncretic_with_sinitic_trigger = { CHARACTER = scope:holder }
 			}
 		}
 	}
@@ -7947,6 +8006,7 @@ shaolin_monastery_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -7967,8 +8027,8 @@ lingyin_temple_01 = {
 			text = buddhas_of_bamian_trigger
 			scope:holder = {
 				OR = {
-					religion = { is_in_family = rf_eastern }
-					religion = { is_in_family = rf_sinitic }
+					eastern_or_syncretic_with_eastern_trigger = { CHARACTER = scope:holder }
+					sinitic_or_syncretic_with_sinitic_trigger = { CHARACTER = scope:holder }
 				}
 			}
 		}
@@ -8007,6 +8067,7 @@ lingyin_temple_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -8027,8 +8088,8 @@ giant_wild_goose_pagoda_01 = {
 			text = buddhas_of_bamian_trigger
 			scope:holder = {
 				OR = {
-					religion = { is_in_family = rf_eastern }
-					religion = { is_in_family = rf_sinitic }
+					eastern_or_syncretic_with_eastern_trigger = { CHARACTER = scope:holder }
+					sinitic_or_syncretic_with_sinitic_trigger = { CHARACTER = scope:holder }
 				}
 			}
 		}
@@ -8068,6 +8129,8 @@ giant_wild_goose_pagoda_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -8295,7 +8358,7 @@ angkor_wat_01 = {
 		custom_description = {
 			text = buddhas_of_bamian_trigger
 			scope:holder = {
-				religion = { is_in_family = rf_eastern }
+				eastern_or_syncretic_with_eastern_trigger = { CHARACTER = scope:holder }
 			}
 		}
 	}
@@ -8335,6 +8398,7 @@ angkor_wat_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -8457,9 +8521,7 @@ po_klong_garai_01 = {
 	is_enabled = {
 		custom_description = {
 			text = buddhas_of_bamian_trigger
-			scope:holder = {
-				religion = { is_in_family = rf_eastern }
-			}
+			eastern_or_syncretic_with_eastern_trigger = { CHARACTER = scope:holder }
 		}
 	}
 	
@@ -8491,6 +8553,7 @@ po_klong_garai_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -8557,9 +8620,7 @@ borobudur_01 = {
 	is_enabled = {
 		custom_description = {
 			text = buddhas_of_bamian_trigger
-			scope:holder = {
-				religion = { is_in_family = rf_eastern }
-			}
+			eastern_or_syncretic_with_eastern_trigger = { CHARACTER = scope:holder }
 		}
 	}
 	
@@ -8597,6 +8658,8 @@ borobudur_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -8641,6 +8704,7 @@ hoshi_ryokan_01 = {
 	type = special
 
 	flag = travel_point_of_interest_stress_relief
+
 }
 
 ##########
@@ -9574,6 +9638,7 @@ mount_fuji_01 = {
 
 	flag = travel_point_of_interest_religious
 	flag = is_mountain
+	flag = holy_building
 }
 
 ##########
@@ -9644,6 +9709,7 @@ itsukushima_jinja_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 itsukushima_jinja_02 = {
@@ -9708,6 +9774,7 @@ itsukushima_jinja_02 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -9798,6 +9865,7 @@ ise_jingu_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -9807,7 +9875,7 @@ ise_jingu_01 = {
 kofuku_ji_01 = {
 	construction_time = very_slow_construction_time
 	
-	type_icon = "icon_structure_torii_gate.dds"
+	type_icon = "icon_structure_cathedral_buddhist.dds"
 	
 	show_disabled = yes
 	
@@ -9840,6 +9908,8 @@ kofuku_ji_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -9849,7 +9919,7 @@ kofuku_ji_01 = {
 enryaku_ji_01 = {
 	construction_time = very_slow_construction_time
 	
-	type_icon = "icon_structure_torii_gate.dds"
+	type_icon = "icon_structure_cathedral_buddhist.dds"
 	
 	show_disabled = yes
 	
@@ -9882,6 +9952,8 @@ enryaku_ji_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -9891,7 +9963,7 @@ enryaku_ji_01 = {
 dazaifu_01 = {
 	construction_time = very_slow_construction_time
 	
-	type_icon = "icon_structure_torii_gate.dds"
+	type_icon = "icon_structure_shaolin_monastery.dds"
 	
 	show_disabled = yes
 	
@@ -9910,14 +9982,13 @@ dazaifu_01 = {
 	}
 	
 	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.2
-		development_growth = 0.15
+		tax_mult = 0.1
+		development_growth_factor = 0.15
+		development_growth = 0.1
 	}
 	
 	province_modifier = {
 		fort_level = 2
-		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -9940,7 +10011,7 @@ dazaifu_01 = {
 chinjufu_01 = {
 	construction_time = very_slow_construction_time
 	
-	type_icon = "icon_structure_torii_gate.dds"
+	type_icon = "icon_structure_shaolin_monastery.dds"
 	
 	show_disabled = yes
 	
@@ -9989,62 +10060,21 @@ hakata_port_01 = {
 	
 	cost_gold = 1000
 
-	next_building = hakata_port_02
+	#next_building = hakata_port_02
 
 	character_modifier = {
-		monthly_income = 1
 		parochial_opinion = 5
 		naval_movement_speed_mult = 0.1
 		embarkation_cost_mult = -0.1
 	}
 	
 	county_modifier = {
-		tax_mult = 0.15
 		development_growth_factor = 0.15
 		development_growth = 0.1
 	}
 	
 	province_modifier = {
 		monthly_income = 2
-	}
-	
-	ai_value = {
-		base = 100
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
-	
-	type = special
-
-	flag = travel_point_of_interest_economic
-}
-
-hakata_port_02 = {
-	construction_time = very_slow_construction_time
-	
-	type_icon = "icon_structure_quanzhou_seaport.dds"
-	
-	show_disabled = yes
-	
-	cost_gold = 1000
-
-	character_modifier = {
-		monthly_income = 2
-		parochial_opinion = 10
-		naval_movement_speed_mult = 0.2
-		embarkation_cost_mult = -0.2
-	}
-	
-	county_modifier = {
-		tax_mult = 0.3
-		development_growth_factor = 0.3
-		development_growth = 0.2
-	}
-	
-	province_modifier = {
-		monthly_income = 4
 	}
 	
 	ai_value = {
@@ -10106,6 +10136,8 @@ hwangnyongsa_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
+	flag = religious_studies_location
 }
 
 ##########
@@ -10196,6 +10228,7 @@ mount_baekdu_01 = {
 	flag = travel_point_of_interest_stress_relief
 	flag = travel_point_of_interest_natural_feature # mountain
 	flag = is_mountain
+	flag = holy_building
 }
 
 ##########
@@ -10246,6 +10279,7 @@ dau_temple_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -10298,6 +10332,7 @@ liuhe_pagoda_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -10346,6 +10381,7 @@ muaro_jambi_01 = {
 
 	flag = travel_point_of_interest_religious
 	flag = travel_point_of_interest_martial
+	flag = holy_building
 }
 
 ##########
@@ -10370,9 +10406,9 @@ hanging_temple_01 = {
 	character_modifier = {
 		piety_level_impact_mult = 0.1
 		monthly_piety_gain_per_legitimacy_level_mult = 0.05
-		taoism_religion_opinion = 15
-		buddhism_religion_opinion = 15
-		confucianism_religion_opinion = 15
+		taoism_religion_opinion = 5
+		buddhism_religion_opinion = 5
+		confucianism_religion_opinion = 5
 	}
 
 	province_modifier = {
@@ -10395,6 +10431,7 @@ hanging_temple_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -10451,6 +10488,7 @@ pagoda_of_fogong_temple_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -10498,6 +10536,7 @@ plain_of_jars_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -10546,6 +10585,7 @@ dieng_plateau_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -10587,6 +10627,7 @@ mount_apo_01 = {
 	flag = travel_point_of_interest_stress_relief
 	flag = travel_point_of_interest_natural_feature # mountain
 	flag = is_mountain
+	flag = holy_building
 }
 
 ##########
@@ -10641,6 +10682,7 @@ besakih_temple_01 = {
 	type = special
 
 	flag = travel_point_of_interest_religious
+	flag = holy_building
 }
 
 ##########
@@ -10682,7 +10724,7 @@ gongsanseong_fortress_01 = {
 		}
 	}
 	
-	type = special 
+	type = special
 
 	flag = travel_point_of_interest_martial
 }
@@ -11006,6 +11048,7 @@ maoshan_academy_01 = {
 	flag = travel_point_of_interest_religious
 	flag = travel_point_of_interest_learning
 	flag = special_university
+	flag = religious_studies_location
 }
 
 ##########
@@ -11061,7 +11104,9 @@ tiantai_monasteries_01 = {
 
 	flag = travel_point_of_interest_religious
 	flag = travel_point_of_interest_learning
+	flag = holy_building
 	flag = special_university
+	flag = religious_studies_location
 }
 
 ##########
@@ -11117,7 +11162,9 @@ jizu_shan_temples_01 = {
 
 	flag = travel_point_of_interest_religious
 	flag = travel_point_of_interest_learning
+	flag = holy_building
 	flag = special_university
+	flag = religious_studies_location
 }
 
 ##########
@@ -11173,5 +11220,105 @@ nanhua_temple_01 = {
 
 	flag = travel_point_of_interest_religious
 	flag = travel_point_of_interest_learning
+	flag = holy_building
 	flag = special_university
+	flag = religious_studies_location
+}
+
+##########
+# Mozu Tombs
+##########
+
+mozu_tombs = {
+
+	asset = {
+		type = pdxmesh
+		name = "tgp_kofun_decal_mesh"
+	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_kofun.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	county_modifier = {
+		county_opinion_add = 5
+		defender_holding_advantage = normal_building_advantage_tier_1
+	}
+	
+	cost_gold = 2000
+
+	character_modifier = {
+		monthly_dynasty_prestige_mult = 0.05
+		short_reign_duration_mult = -0.1
+		monthly_piety = 0.15
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_wonder
+}
+
+##########
+# Trosky Castle
+##########
+
+trosky_castle_01 = {
+	construction_time = very_slow_construction_time
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_trosky_castle_01_mesh"
+	}
+	type_icon = "icon_building_hill_forts.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_battlements
+		}
+	}
+	
+	cost_gold = 500
+	
+	county_modifier = {
+		defender_holding_advantage = 5
+		county_opinion_add = 5
+		hostile_raid_time = 0.5
+		travel_danger = -10
+	}
+	
+	province_modifier = {
+		garrison_size = 0.25
+		fort_level = 1
+		stationed_maa_toughness_mult = 0.05
+		stationed_maa_damage_mult = 0.05
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_martial
 }

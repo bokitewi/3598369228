@@ -791,7 +791,6 @@ cangshi50={
   dynasty_house=house_xin491
 	religion="xizhouli" 
 	culture="zhou"
-  father=cangshi39
 
   3609.1.1 = {
 		birth = yes

@@ -10,6 +10,9 @@ spring_and_autumn_situation = {
 	gui_window_name = "window_spring_and_autumn_situation"
 	gui_participation_window_name = "window_situation_participation"
 	illustration = "gfx/interface/illustrations/terrain_types/mpo_season_abudant_grazing.dds"
+	icon = {
+		reference = "gfx/interface/icons/situation_types/dynastic_cycle.dds"
+	}
 	situation_group_type = major
 	map_mode = sub_regions
 	gui_tooltip_group_focused = no

@@ -1,0 +1,17 @@
+﻿# Temporarily disabled for the Spring-Autumn total-conversion map.
+# The stable decision key is retained for script compatibility.
+
+visit_silk_road_market_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/tgp_silk_road.dds"
+	}
+	desc = visit_silk_road_market_decision_desc
+	selection_tooltip = visit_silk_road_market_decision_tooltip
+	ai_check_interval = 0
+	is_shown = { always = no }
+	is_valid = { always = no }
+	is_valid_showing_failures_only = { always = no }
+	effect = { }
+	ai_potential = { always = no }
+	ai_will_do = { value = 0 }
+}

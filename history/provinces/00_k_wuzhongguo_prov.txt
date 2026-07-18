@@ -3,10 +3,14 @@
 ### c_yongnu
 # YONGNU
 1242 = {
-	holding = none
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
 }
 # XIANGHE
 1256 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # HUOYIN
@@ -29,10 +33,14 @@
 ### c_sanhe
 # SANHE
 1257 = {
-	holding = none
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
 }
 # DULIANG
 2553 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 
@@ -40,10 +48,14 @@
 ### c_wuzhong
 # WUZHONG
 1258 = {
-	holding = none
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
 }
 # LUTAI
 2552 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 
@@ -51,10 +63,14 @@
 ### c_xuwu1
 # XUWU1
 2551 = {
-	holding = none
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
 }
 # XINCANG
 1243 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 
@@ -68,14 +84,20 @@
 ### c_genjin
 # GENJIN
 2554 = {
-	holding = none
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
 }
 # GENGYING
 2555 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # RIGEN
 2556 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 
@@ -95,14 +117,20 @@
 ### c_zhongyu
 # ZHONGYU
 2560 = {
-	holding = none
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
 }
 # SHANYOU
 2558 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # XIYANG3
 2557 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 

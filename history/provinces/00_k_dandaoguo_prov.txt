@@ -6,6 +6,8 @@
 ### c_jinming1
 # DANLU
 2864 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

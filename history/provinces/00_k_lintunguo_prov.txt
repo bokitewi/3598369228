@@ -3,22 +3,32 @@
 ### c_dongyi
 # DONGYI
 3432 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # CANTAI
 3433 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # SANZHI
 3440 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # QIANMO
 3434 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # WEIZHEN
 3438 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -32,10 +42,14 @@
 ### c_xietouwei
 # XIETOUWEI
 3435 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # BUNAI
 3436 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -58,14 +72,20 @@
 ### c_qicheng
 # QICHENG
 3443 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # YICHENG3
 3444 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # DAYANG
 3442 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -79,10 +99,14 @@
 ### c_yanglu
 # YANGLU
 3446 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # LANGCHUAN
 3445 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

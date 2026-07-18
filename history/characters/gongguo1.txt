@@ -144,7 +144,7 @@ jixinggongguo9={
 		}
   }
 }
-jixinggongguo10={
+dm_hist_jixinggongguo10_1={
   name="nvming30"
   dynasty_house=house_xin692
 	religion="dongzhouli" 

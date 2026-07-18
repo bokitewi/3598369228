@@ -1,0 +1,76 @@
+﻿# Synced from vanilla 1.19 travel_point_of_interest_types.txt.
+# Baghdad, Rome, and Constantinople map to Wangcheng, Linzi, and Xianyang.
+
+poi_grand_city = {
+	build_province_list = {
+		province:793 = { add_to_list = provinces } # Wangcheng
+		province:8 = { add_to_list = provinces } # Linzi
+		province:900 = { add_to_list = provinces } # Xianyang
+	}
+
+	on_visit = {
+		trigger_event = {
+			on_action = on_visited_grand_city
+		}
+		if = {
+			limit = {
+				scope:province.county.holder != root #If I own it then it does not make sense to visit it.
+			}
+			custom_tooltip = poi_grand_city_visit_event_tt
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_trait = lifestyle_traveler
+				}
+			}
+			add_trait = lifestyle_traveler
+			traveler_travel_xp_effect = {
+				MIN = 1
+				MAX = 3
+			}
+			if = {
+				limit = {
+					is_landless_adventurer = yes
+					has_perk = organized_muster_rolls_perk
+				}
+				send_interface_toast = {
+					title = poi_grand_city.visit
+					left_icon = root
+					
+					add_gold = minor_gold_laamps_value
+				}
+			}
+		}
+		else = {
+			send_interface_toast = {
+				title = poi_grand_city.visit
+				left_icon = root
+
+				traveler_travel_xp_effect = {
+					MIN = 3
+					MAX = 5
+				}
+				if = {
+					limit = {
+						has_government = landless_adventurer_government
+						has_perk = organized_muster_rolls_perk
+					}
+					add_gold = minor_gold_laamps_value
+				}
+			}
+		}
+		# Prestige for Wanderers
+		wanderer_lifestyle_destination_effect = yes
+
+		visiting_poi_effect = yes
+	}
+}
+
+poi_battles_historical = {
+	build_province_list = {
+		# Vanilla historical battle links are outside the Spring map.
+	}
+	on_visit = {
+	}
+}

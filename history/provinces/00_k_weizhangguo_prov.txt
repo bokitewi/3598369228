@@ -3,14 +3,18 @@
 ### c_weizhang
 # WEIZHANG
 2840 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_zhiduo
 # ZHIDUO
 3558 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 

@@ -3,7 +3,9 @@
 ### c_xuemen
 # XUEMEN
 2937 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -13,13 +15,17 @@
 ### c_changmen
 # CHANGMEN
 2881 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_shamopu
 # ZHOUFANG
 2874 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -27,7 +33,9 @@
 ### c_awu1
 # AWU1
 2939 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # SHAMOPU
 2938 = {
@@ -44,6 +52,8 @@
 }
 # 
 2886 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -68,7 +78,9 @@
 ### c_shijian
 # SHIJIAN
 2860 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 

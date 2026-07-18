@@ -1,0 +1,73 @@
+﻿# 原版 1.19.0.6 mpo_yearly_events_nomads，增加宅邸存在性保护。
+# 春秋游牧玩法仍为具有合法毡帐宅邸的角色保留全部原版年度事件。
+mpo_yearly_events_nomads = {
+	trigger = {
+		has_mpo_dlc_trigger = yes
+		government_has_flag = government_is_nomadic
+		exists = domicile
+	}
+
+	random_events = {
+		chance_to_happen = 100
+
+		100 = nomad_events.0001
+
+		150 = mpo_nomad_events.1030
+		200 = mpo_nomad_events.1020
+		250 = court_astrologer_events.0002
+		250 = nomad_events.0100
+		250 = nomad_events.0120
+		200 = nomad_events.0130
+		150 = nomad_events.0140
+		250 = nomad_events.0150
+		300 = nomad_events.0160
+		300 = nomad_events.0170
+		250 = nomad_events.0180
+		250 = nomad_events.0190
+		250 = nomad_events.0200
+		250 = nomad_events.0220
+		250 = nomad_events.0230
+		200 = nomad_events.0240
+		100 = nomad_events.0250
+		100 = nomad_events.0260
+		100 = mpo_nomad_events.1050
+		300 = mpo_nomad_events.1060
+		50 = mpo_nomad_events.1070
+		200 = mpo_nomad_events.1080
+		150 = mpo_nomad_events.1100
+		150 = mpo_nomad_events.1110
+		200 = mpo_events_tova.0025
+		200 = mpo_events_tova.0030
+		200 = mpo_events_tova.0035
+		200 = mpo_events_tova.0045
+		250 = nomad_events_oltner.0001
+		250 = nomad_events_oltner.0002
+		250 = nomad_events_oltner.0003
+		150 = nomad_events_oltner.0004
+		250 = nomad_events_oltner.0005
+		200 = nomad_events_oltner.0006
+		200 = nomad_events_oltner.0007
+		50 = mpo_bb_events.0001
+		100 = mpo_events_anna.0001
+		200 = mpo_events_anna.0005
+		200 = mpo_events_anna.0010
+		250 = mpo_events_ariana.0001
+		50 = mpo_events_ariana.0010
+		250 = mpo_events_ariana.0020
+		250 = mpo_events_ariana.0050
+		150 = mpo_events_ariana.0060
+		250 = mpo_events_ariana.0080
+		150 = pet_animal.3050
+		250 = mpo_events_ariana.0090
+		250 = mpo_events_ariana.0100
+		150 = mpo_events_ariana.0110
+
+		300 = mpo_nomads_season_events.0001
+		300 = mpo_nomads_season_events.0005
+		300 = mpo_nomads_season_events.0010
+		300 = mpo_nomads_season_events.0015
+		150 = nomad_events.0110
+		300 = nomad_events.0210
+		150 = mpo_nomad_events.1120
+	}
+}

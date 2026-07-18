@@ -16,14 +16,20 @@
 ### c_yueqian
 # YUEQIAN
 2875 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # SANYEHOU
 2959 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # WUYI
 3549 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -36,6 +42,8 @@
 ### c_jiangzhao
 # SANGUO
 2956 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -43,10 +51,14 @@
 ### c_jiahe
 # JIAHE
 2825 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # YIMITOU
 2957 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -62,6 +74,8 @@
 ### c_fengzhi
 # NENGDENG
 2884 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -82,10 +96,14 @@
 ### c_yuezhong
 # YUEZHONG
 2827 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # JIUBIQI
 2964 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -101,7 +119,9 @@
 ### c_gaozhi
 # GAOZHI
 2967 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -113,10 +133,14 @@
 ### c_gaozhishenjiang
 # GAOZHISHENJIANG
 2968 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # ZUODU
 2966 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -124,21 +148,27 @@
 ### c_yuehou
 # YUEHOU
 2854 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_puyuan
 # PUYUAN
 2995 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_yanzhou
 # YANZHOU
 2994 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -147,10 +177,14 @@
 ### c_feiyi
 # FEIYI
 2832 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # FEITUO
 2958 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

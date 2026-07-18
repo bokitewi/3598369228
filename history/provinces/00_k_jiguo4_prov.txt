@@ -88,6 +88,8 @@
 }
 # LU1
 1255 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 # PINGGU

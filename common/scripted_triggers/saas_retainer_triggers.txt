@@ -1,0 +1,206 @@
+﻿saas_courtier_stipend_ruler_trigger = {
+	is_landed = yes
+	highest_held_title_tier >= tier_county
+	has_realm_law_flag = saas_courtier_stipend_law
+}
+
+saas_retainer_available_trigger = {
+	is_alive = yes
+	is_adult = yes
+	is_ruler = no
+	is_imprisoned = no
+	is_available = yes
+	NOT = { has_character_flag = saas_retainer_event_cooldown }
+}
+
+saas_retainer_project_phase_valid_trigger = {
+	OR = {
+		AND = {
+			has_character_flag = saas_retainer_project_restoration_phase
+			saas_is_ritual_restoration_phase_trigger = yes
+		}
+		AND = {
+			has_character_flag = saas_retainer_project_collapse_phase
+			saas_is_ritual_collapse_phase_trigger = yes
+		}
+		AND = {
+			has_character_flag = saas_retainer_project_warring_phase
+			saas_is_warring_states_phase_trigger = yes
+		}
+	}
+}
+
+saas_has_diplomacy_education_trigger = {
+	OR = {
+		has_trait = education_diplomacy_1
+		has_trait = education_diplomacy_2
+		has_trait = education_diplomacy_3
+		has_trait = education_diplomacy_4
+		has_trait = education_diplomacy_5
+	}
+}
+
+saas_has_martial_education_trigger = {
+	OR = {
+		has_trait = education_martial_1
+		has_trait = education_martial_2
+		has_trait = education_martial_3
+		has_trait = education_martial_4
+		has_trait = education_martial_5
+	}
+}
+
+saas_has_stewardship_education_trigger = {
+	OR = {
+		has_trait = education_stewardship_1
+		has_trait = education_stewardship_2
+		has_trait = education_stewardship_3
+		has_trait = education_stewardship_4
+		has_trait = education_stewardship_5
+	}
+}
+
+saas_has_intrigue_education_trigger = {
+	OR = {
+		has_trait = education_intrigue_1
+		has_trait = education_intrigue_2
+		has_trait = education_intrigue_3
+		has_trait = education_intrigue_4
+		has_trait = education_intrigue_5
+	}
+}
+
+saas_has_learning_education_trigger = {
+	OR = {
+		has_trait = education_learning_1
+		has_trait = education_learning_2
+		has_trait = education_learning_3
+		has_trait = education_learning_4
+		has_trait = education_learning_5
+	}
+}
+
+saas_retainer_diplomacy_candidate_trigger = {
+	saas_retainer_available_trigger = yes
+	saas_has_diplomacy_education_trigger = yes
+	OR = {
+		has_trait = diligent
+		has_trait = ambitious
+		has_trait = gregarious
+		has_trait = calm
+	}
+}
+
+saas_retainer_martial_candidate_trigger = {
+	saas_retainer_available_trigger = yes
+	saas_has_martial_education_trigger = yes
+	OR = {
+		has_trait = diligent
+		has_trait = ambitious
+		has_trait = brave
+		has_trait = stubborn
+	}
+}
+
+saas_retainer_stewardship_candidate_trigger = {
+	saas_retainer_available_trigger = yes
+	saas_has_stewardship_education_trigger = yes
+	OR = {
+		has_trait = diligent
+		has_trait = ambitious
+		has_trait = patient
+		has_trait = greedy
+	}
+}
+
+saas_retainer_intrigue_candidate_trigger = {
+	saas_retainer_available_trigger = yes
+	saas_has_intrigue_education_trigger = yes
+	OR = {
+		has_trait = diligent
+		has_trait = ambitious
+		has_trait = deceitful
+		has_trait = callous
+	}
+}
+
+saas_retainer_learning_candidate_trigger = {
+	saas_retainer_available_trigger = yes
+	saas_has_learning_education_trigger = yes
+	OR = {
+		has_trait = diligent
+		has_trait = ambitious
+		has_trait = zealous
+		has_trait = patient
+		has_trait = scholar
+	}
+}
+
+saas_retainer_salary_request_candidate_trigger = {
+	saas_retainer_available_trigger = yes
+	is_courtier_of = root
+	root = { NOT = { has_realm_law = saas_no_stipend_law } }
+	NOR = {
+		has_character_modifier = saas_personal_salary_raise_modifier
+		has_character_flag = saas_salary_request_cooldown
+	}
+	OR = {
+		has_trait = greedy
+		has_trait = arrogant
+		has_trait = ambitious
+	}
+}
+
+saas_high_talent_trigger = {
+	saas_retainer_available_trigger = yes
+	NOT = { has_character_flag = saas_recently_recruited_talent }
+	has_any_court_position = no
+	OR = {
+		has_trait = education_diplomacy_4
+		has_trait = education_diplomacy_5
+		has_trait = education_martial_4
+		has_trait = education_martial_5
+		has_trait = education_stewardship_4
+		has_trait = education_stewardship_5
+		has_trait = education_intrigue_4
+		has_trait = education_intrigue_5
+		has_trait = education_learning_4
+		has_trait = education_learning_5
+		diplomacy >= 15
+		martial >= 15
+		stewardship >= 15
+		intrigue >= 15
+		learning >= 15
+		prowess >= 18
+	}
+}
+
+saas_talent_can_leave_host_trigger = {
+	saas_high_talent_trigger = yes
+	trigger_if = {
+		limit = {
+			OR = {
+				has_trait = content
+				has_trait = loyal
+			}
+		}
+		opinion = { target = $HOST$ value < 50 }
+	}
+	OR = {
+		is_pool_guest_of = $HOST$
+		AND = {
+			is_courtier_of = $HOST$
+			$HOST$ = { save_temporary_scope_as = liege }
+			courtier_allowed_to_leave_trigger = yes
+		}
+	}
+}
+
+saas_recruitment_target_trigger = {
+	is_alive = yes
+	is_landed = yes
+	is_independent_ruler = yes
+	highest_held_title_tier >= tier_county
+	saas_capital_in_huaxia_trigger = yes
+	exists = capital_province
+}

@@ -145,7 +145,10 @@ copf_change_heir_government_to_admin = {
 		save_scope_as = scope_dead_ruler
 		primary_heir = {
 			if = {
-				limit = { is_landed = no }
+				limit = {
+					is_landed = no
+					NOT = { employer ?= scope:scope_dead_ruler }
+				}
 				set_employer = scope:scope_dead_ruler
 			}
 			if = {

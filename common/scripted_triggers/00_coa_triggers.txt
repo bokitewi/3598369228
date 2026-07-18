@@ -207,24 +207,8 @@ coa_leonese_trigger = {
 }
 
 coa_manx_trigger = {
-	OR = {
-		scope:title ?= {
-			any_this_title_or_de_jure_above = {
-				this = title:d_the_isles # Mann
-			}
-		}
-		AND = {
-			exists = root
-			any_liege_or_above = {
-				primary_title = {
-					OR = {
-						this = title:c_isle_of_man
-						this = title:d_the_isles # Mann
-					}
-				}
-			}
-		}
-	}
+	# Absent vanilla-map title links isolated.
+	always = no
 }
 
 coa_mena_trigger = {

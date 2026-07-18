@@ -3,31 +3,41 @@
 ### c_xiongye
 # XIONGYE
 2921 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_xiaye1
 # XIAYE1
 2911 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_xiongyeshenyi
 # XIONGYESHENYI
 2910 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_douji
 # DOUJI
 2916 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # HUANGBANJIN
 2909 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

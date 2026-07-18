@@ -4,7 +4,6 @@ han572={
   dynasty=xin668
 	religion="xizhouli" 
 	culture="jin"
-  father=han548
 
   3523.1.1 = {
 		birth = yes

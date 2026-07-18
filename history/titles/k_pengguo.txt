@@ -79,7 +79,16 @@
 		holder = han1504
 	}
 	3411.1.1 = {
-		holder = 0
+		holder = han1505
+	}
+	3466.1.1 = {
+		holder = han1506
+	}
+	3510.1.1 = {
+		holder = han1507
+	}
+	3547.1.1 = {
+		holder = han1508
 	}
 	3574.1.1 = {
 		holder = han1508

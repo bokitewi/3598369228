@@ -12,17 +12,23 @@
 ### c_diaoling
 # DIAOLING
 3441 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_nanjiang
 # NANJIANG
 3502 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # WOJU
 3576 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # JIUYAN
@@ -34,10 +40,14 @@
 ### c_jiuyan
 # LONGSHAN
 3578 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # BINHAI
 3579 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -54,10 +64,14 @@
 ### c_fusida
 # HUALI
 3437 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # FUZHU
 3410 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

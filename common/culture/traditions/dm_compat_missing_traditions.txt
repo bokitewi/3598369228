@@ -1,0 +1,26 @@
+# Compatibility shells for legacy culture identities still used by Spring and Autumn cultures.
+# These keys intentionally carry no modifiers until their original mechanics are rebuilt.
+
+tradition_fractious = {
+	category = realm
+	layers = {
+		0 = martial
+		1 = western
+	}
+}
+
+tradition_religious_festivities = {
+	category = ritual
+	layers = {
+		0 = ritual
+		1 = western
+	}
+}
+
+tradition_legendary_noble_families = {
+	category = societal
+	layers = {
+		0 = social
+		1 = western
+	}
+}

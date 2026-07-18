@@ -27,7 +27,10 @@ deny_title_succession = {
 	}
 	# 是否高亮：
 	is_highlighted = {
-		has_any_criminal_trait_in_faith_trigger = { CHARACTER = scope:recipient }
+		has_any_criminal_trait_in_faith_trigger = {
+			CHARACTER = scope:recipient
+			FAITH = scope:actor.faith
+		}
 	}
 	# 是否可用：
 	is_valid = {
@@ -399,8 +402,14 @@ deny_title_succession = {
 		modifier = {
 			scope:recipient = {
 				OR = {
-					has_any_criminal_trait_in_faith_trigger = { CHARACTER = this }
-					has_any_shunned_trait_in_faith_trigger = { CHARACTER = this }
+					has_any_criminal_trait_in_faith_trigger = {
+						CHARACTER = this
+						FAITH = scope:actor.faith
+					}
+					has_any_shunned_trait_in_faith_trigger = {
+						CHARACTER = this
+						FAITH = scope:actor.faith
+					}
 				}
 			}
 

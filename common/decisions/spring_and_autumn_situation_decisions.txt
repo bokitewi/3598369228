@@ -37,7 +37,10 @@ switch_to_supporters = {
 		}
 		saas_clear_participant_stance_effect = yes
 		add_trait = character_involve_supporters_of_zhou_dynasty
-		add_legitimacy = -15
+		if = {
+			limit = { has_legitimacy = yes }
+			add_legitimacy = -15
+		}
 		add_character_flag = { flag = recently_switched_faction_flag years = 5 }
 		saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_wangdao_gains_member CHARACTER = root }
 		custom_tooltip = switch_faction_penalty_tooltip
@@ -88,7 +91,10 @@ switch_to_opponents = {
 		}
 		saas_clear_participant_stance_effect = yes
 		add_trait = character_involve_opponents_of_zhou_dynasty
-		add_legitimacy = -15
+		if = {
+			limit = { has_legitimacy = yes }
+			add_legitimacy = -15
+		}
 		add_character_flag = { flag = recently_switched_faction_flag years = 5 }
 		custom_tooltip = switch_faction_penalty_tooltip
 	}
@@ -139,7 +145,10 @@ switch_to_neutral = {
 		}
 		saas_clear_participant_stance_effect = yes
 		add_trait = character_involve_neutral_of_zhou_dynasty
-		add_legitimacy = -15
+		if = {
+			limit = { has_legitimacy = yes }
+			add_legitimacy = -15
+		}
 		add_character_flag = { flag = recently_switched_faction_flag years = 5 }
 		custom_tooltip = switch_faction_penalty_tooltip
 	}

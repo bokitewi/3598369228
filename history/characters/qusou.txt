@@ -1295,7 +1295,7 @@ jusoushi81={
 		}
   }
 }
-jusoushi81={
+dm_hist_jusoushi81_2={
   name="bfyznv69"
   dynasty=xin783
 	religion="xirongfangling" 
@@ -1312,7 +1312,7 @@ jusoushi81={
 		}
   }
 }
-jusoushi81={
+dm_hist_jusoushi81_3={
   name="bfyznv112"
   dynasty=xin783
 	religion="xirongfangling" 

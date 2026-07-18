@@ -3670,12 +3670,12 @@ xin337 = {
 
 xin338 = {
 	name = "dynn_xin338"
-	culture = "ji"
+	culture = "zhou"
 }
 
 xin339 = {
 	name = "dynn_xin339"
-	culture = "ji"
+	culture = "zhou"
 }
 
 xin340 = {
@@ -3690,32 +3690,32 @@ xin341 = {
 
 xin342 = {
 	name = "dynn_xin342"
-	culture = "ji"
+	culture = "zhou"
 }
 
 xin343 = {
 	name = "dynn_xin343"
-	culture = "ji"
+	culture = "zhou"
 }
 
 xin344 = {
 	name = "dynn_xin344"
-	culture = "ji"
+	culture = "zhou"
 }
 
 xin345 = {
 	name = "dynn_xin345"
-	culture = "ji"
+	culture = "zhou"
 }
 
 xin346 = {
 	name = "dynn_xin346"
-	culture = "ji"
+	culture = "zhou"
 }
 
 xin347 = {
 	name = "dynn_xin347"
-	culture = "ji"
+	culture = "zhou"
 }
 
 xin348 = {
@@ -3780,27 +3780,27 @@ xin359 = {
 
 xin360 = {
 	name = "dynn_xin360"
-	culture = "feng"
+	culture = "shennongshi"
 }
 
 xin361 = {
 	name = "dynn_xin361"
-	culture = "feng"
+	culture = "shennongshi"
 }
 
 xin362 = {
 	name = "dynn_xin362"
-	culture = "feng"
+	culture = "shennongshi"
 }
 
 xin363 = {
 	name = "dynn_xin363"
-	culture = "feng"
+	culture = "shennongshi"
 }
 
 xin364 = {
 	name = "dynn_xin364"
-	culture = "feng"
+	culture = "shennongshi"
 }
 
 xin365 = {
@@ -6470,7 +6470,7 @@ xin896 = {
 
 xin897 = {
 	name = "dynn_xin897"
-	culture = "diren"
+	culture = "beidi"
 }
 
 xin898 = {
@@ -6480,7 +6480,7 @@ xin898 = {
 
 xin899 = {
 	name = "dynn_xin899"
-	culture = "diren"
+	culture = "beidi"
 }
 
 xin900 = {

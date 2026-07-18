@@ -232,7 +232,6 @@ yuwurong16={
   dynasty_house=house_xin549
   culture="chidi"
   religion="beidifangling"
-  father=yuwurong13
   female=yes
 
   3836.1.1 = {

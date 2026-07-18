@@ -72,7 +72,6 @@ han974={
   dynasty_house=house_xin36 
 	religion="xizhouli" 
 	culture="qi"
-  father=han973
 
   3700.6.6 = {
 		birth = yes

@@ -1,0 +1,2 @@
+﻿# Deliberate total-conversion override.
+# Roads to Power decisions in this file require Byzantium and European titles.

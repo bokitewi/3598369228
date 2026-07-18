@@ -25,7 +25,7 @@ hao = {
 }
 
 luo = {
-	county = c_chengzhou
+	county = c_wangcheng
 	barony = b_786_0
 	
 	character_modifier = {
@@ -74,7 +74,7 @@ shangqiu = { #商丘
 }
 
 chaoge = { #朝歌
-	county = c_zhaoge
+	county = c_mei4
 	barony = b_1109_0
 	
 	character_modifier = {
@@ -107,7 +107,7 @@ bo = { #亳
 }
 
 guzhu = { #孤竹
-	county = c_lulong
+	county = c_jieshi
 	barony = b_3493_0
 	
 	character_modifier = {
@@ -303,7 +303,7 @@ yiqu = {
 }
 
 zhangye = {
-	county = c_zhangye
+	county = c_luanniao
 	barony = b_1566_0
 
 	character_modifier = {
@@ -333,7 +333,7 @@ xaunwei = {
 }
 
 yiwulv = {	#The ecclesiastic capital of Ireland, and site of St. Patrick's primary church.
-	county = c_wulu1
+	county = c_taian
 	barony = b_3475_0
 
 	character_modifier = {
@@ -356,7 +356,7 @@ tuhe = {	#Monastery of Colm Cille, directly responsible for converting Scotland 
 # Bosnian Church
 
 bailang = {	#The heart of rural Bosnia, and so of the faith.
-	county = c_bailang
+	county = c_qianan
 	barony = b_3491_0
 
 	character_modifier = {

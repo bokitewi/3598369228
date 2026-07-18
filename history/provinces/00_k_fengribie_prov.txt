@@ -9,7 +9,9 @@
 ### c_haibu
 # HAIBU
 3525 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # SUXIMEN
 2903 = {
@@ -20,14 +22,18 @@
 ### c_fenghou
 # FENGHOU
 2868 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_guoqian
 # GUOQIAN
 2931 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -40,10 +46,14 @@
 ### c_yuzuoguozao
 # YUZUO
 2919 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # TUXIA
 2902 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -54,7 +64,9 @@
 ### c_gangshuimen
 # GANGSHUIMEN
 2901 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -64,10 +76,14 @@
 ### c_fengqian
 # FENGQIAN
 2824 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # FENG7
 2930 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -75,10 +91,14 @@
 ### c_ritian
 # RITIAN
 3524 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # XI6
 2932 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

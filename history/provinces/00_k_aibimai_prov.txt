@@ -16,14 +16,20 @@
 ### c_yiyu1
 # YUMO
 3532 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # FENGTIAN
 3537 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # ZANQI
 2892 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

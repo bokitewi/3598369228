@@ -384,7 +384,7 @@ han2703={
     death = yes
   }
 }
-loufanguo5={
+dm_hist_loufanguo5_2={
   name="bfyznan338"
   dynasty=xin777
 	religion="saman" 

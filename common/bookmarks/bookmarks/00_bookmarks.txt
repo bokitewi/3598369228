@@ -158,13 +158,3 @@ bm770_rise_from_end = {
 
 }
 
-###################BC450
-bm_group_pmrta450 = {
-	default_start_date = 4170.1.1
-	is_playable = no
-	group = bm_group_pmrta450
-	recommended = no
-	weight = {
-		value = 10
-	}
-}

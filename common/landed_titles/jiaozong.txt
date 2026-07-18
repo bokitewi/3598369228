@@ -1,3 +1,5 @@
+@correct_culture_primary_score = 100
+
 e_zhoutianzi = {
 	color = { 168 32 32 }
 
@@ -10,7 +12,7 @@ e_zhoutianzi = {
 	ai_primary_priority = {
 		if = {
 			limit = {
-				culture = { has_cultural_pillar = heritage_heritage_zhouren }
+				culture = { has_cultural_pillar = heritage_zhouren }
 			}
 			add = @correct_culture_primary_score
 		}
@@ -47,7 +49,7 @@ e_shangdi = {
 	ai_primary_priority = {
 		if = {
 			limit = {
-				culture = { has_cultural_pillar = heritage_heritage_zhouren }
+				culture = { has_cultural_pillar = heritage_zhouren }
 			}
 			add = @correct_culture_primary_score
 		}
@@ -84,7 +86,7 @@ e_zhoutianzi1 = {
 	ai_primary_priority = {
 		if = {
 			limit = {
-				culture = { has_cultural_pillar = heritage_heritage_zhouren }
+				culture = { has_cultural_pillar = heritage_zhouren }
 			}
 			add = @correct_culture_primary_score
 		}

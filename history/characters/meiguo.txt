@@ -5,7 +5,6 @@ mei1={
   dynasty=xin386
 	religion="yinli" 
 	culture="yinshang"
-  father=han1238
 
   3442.10.1 = {
 		birth = yes

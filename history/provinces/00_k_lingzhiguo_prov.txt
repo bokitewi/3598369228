@@ -3,10 +3,14 @@
 ### c_yanze
 # YANZE
 2559 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # PINGYIN2
 2570 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -17,14 +21,20 @@
 ### c_lingpisai
 # LINGPISAI
 2562 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # WANQIU1
 2569 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # LEI
 2572 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -35,14 +45,20 @@
 ### c_haiyang2
 # HAIYANG2
 2564 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # ZHIZHONG
 2563 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # LINGZHI
 2561 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -50,10 +66,14 @@
 ### c_lean2
 # LEAN2
 2565 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # NUANJIN
 2566 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -64,14 +84,20 @@
 ### c_changcheng1
 # CHANGCHENG1
 2567 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # RONGJIA
 2568 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # LI24
 2571 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -94,10 +120,14 @@
 ### c_shicheng2
 # SHICHENG2
 2573 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # TUYIN
 2574 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -108,7 +138,9 @@
 ### c_hanerzhuang
 # HANERZHUANG
 2634 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 

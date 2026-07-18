@@ -62,6 +62,7 @@
 
 	localization = {
 		HighGodName = beifangzongjiao_high_god_name
+		HighGodName2 = beifangzongjiao_high_god_name
 		HighGodNamePossessive = beifangzongjiao_high_god_name_possessive
 		HighGodNameSheHe = CHARACTER_SHEHE_HE
 		HighGodHerselfHimself = CHARACTER_HIMSELF
@@ -149,6 +150,8 @@
 
 
 		PantheonTerm = beifangzongjiao_high_god_name
+		PantheonTerm2 = beifangzongjiao_high_god_name
+		PantheonTerm3 = beifangzongjiao_high_god_name
 		PantheonTermHasHave = pantheon_term_has
 		GoodGodNames = { beifangzongjiao_good_god_eje beifangzongjiao_good_god_ulgen beifangzongjiao_high_god_name }
 		DevilName = beifangzongjiao_devil_name
@@ -158,9 +161,15 @@
 		DevilHerselfHimself = CHARACTER_HIMSELF
 		EvilGodNames = { beifangzongjiao_evil_god_karash beifangzongjiao_evil_god_shyngay beifangzongjiao_evil_god_komur beifangzongjiao_evil_god_badysh beifangzongjiao_evil_god_yabash beifangzongjiao_evil_god_kerey }
 		HouseOfWorship = paganism_house_of_worship
+		HouseOfWorship2 = paganism_house_of_worship
+		HouseOfWorship3 = paganism_house_of_worship
 		HouseOfWorshipPlural = paganism_house_of_worship_plural
 		ReligiousSymbol = beifangzongjiao_religious_symbol
+		ReligiousSymbol2 = beifangzongjiao_religious_symbol
+		ReligiousSymbol3 = beifangzongjiao_religious_symbol
 		ReligiousText = beifangzongjiao_religious_text
+		ReligiousText2 = beifangzongjiao_religious_text
+		ReligiousText3 = beifangzongjiao_religious_text
 		ReligiousHeadName = paganism_religious_head_title
 		ReligiousHeadTitleName = paganism_religious_head_title_name
 		DevoteeMale = paganism_devotee
@@ -183,13 +192,21 @@
 		BishopNeuter = paganism_priest
 		BishopNeuterPlural = paganism_priest_plural
 		DivineRealm = beifangzongjiao_divine_realm
+		DivineRealm2 = beifangzongjiao_divine_realm
+		DivineRealm3 = beifangzongjiao_divine_realm
 		PositiveAfterLife = beifangzongjiao_divine_realm
+		PositiveAfterLife2 = beifangzongjiao_divine_realm
+		PositiveAfterLife3 = beifangzongjiao_divine_realm
 		NegativeAfterLife = beifangzongjiao_afterlife_negative
+		NegativeAfterLife2 = beifangzongjiao_afterlife_negative
+		NegativeAfterLife3 = beifangzongjiao_afterlife_negative
 		DeathDeityName = beifangzongjiao_devil_name
 		DeathDeityNamePossessive = beifangzongjiao_devil_name_possessive
 		DeathDeitySheHe = CHARACTER_SHEHE_HE
 		DeathDeityHerHis = CHARACTER_HERSHIS_HIS
+		DeathDeityHerHim = CHARACTER_HERHIM_HIM
 		WitchGodName = witchgodname_beifangzongjiao_the_irshi
+		WitchGodNamePossessive = witchgodname_beifangzongjiao_the_irshi
 		WitchGodSheHe = CHARACTER_SHEHE_HE
 		WitchGodHerHim = CHARACTER_HERHIM_HER
 		WitchGodMistressMaster = mistress

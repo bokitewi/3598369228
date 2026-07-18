@@ -1,6 +1,7 @@
 ﻿coronation_trigger = {
 	has_ach_dlc_trigger = yes
 	is_landed = yes
+	is_ai = no
 	highest_held_title_tier >= tier_kingdom
 	OR = {
 		trigger_if = { #COPF

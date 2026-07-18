@@ -1,0 +1,2 @@
+﻿# Deliberate total-conversion override.
+# The Iberian struggle is pure vanilla map history and is not started on the Spring and Autumn map.

@@ -6,14 +6,18 @@
 ### c_yinfan
 # YINFAN
 2896 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_daoye
 # DAOYE
 2945 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 

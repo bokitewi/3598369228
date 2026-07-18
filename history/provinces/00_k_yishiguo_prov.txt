@@ -12,14 +12,20 @@
 ### c_zhuyi
 # ZHIMO
 2882 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # DAOJIN
 2924 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # YISHI2
 2876 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -27,6 +33,8 @@
 ### c_yizhi3
 # LINGLUGUAN
 2899 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

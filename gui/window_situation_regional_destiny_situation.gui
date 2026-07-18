@@ -72,7 +72,7 @@ window = {
 								vbox = {
 									portrait_head = {
 										position = { 0 0 }
-										datacontext = "[GetPlayer.PdxGetWidgetScreenSize(PdxGuiWidget.Self)]"
+										datacontext = "[GetPlayer]"
 									}
 
 									button_standard = {

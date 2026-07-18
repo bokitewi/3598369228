@@ -13893,6 +13893,8 @@ e_huaxia = {
 				}
 			}
 			c_huoyin = {
+				capital = c_youdu
+				landless = yes
 				color={ 169 111 22 }
 										
 			}
@@ -13937,6 +13939,8 @@ e_huaxia = {
 			capital = c_hunu
 			
 			c_guangping = {
+				capital = c_hunu
+				landless = yes
 				color={ 169 156 157 }
 										
 			}
@@ -26812,11 +26816,15 @@ e_huaxia = {
 			capital = c_daojin
 
       c_zhimo = {
+      	capital = c_juding
+      	landless = yes
         color = { 103 41 31 }
 
 
       }
       c_daojin = {
+      	capital = c_juding
+      	landless = yes
         color = { 177 75 131 }
 
 
@@ -26872,22 +26880,32 @@ e_huaxia = {
 			}
 
 			c_suicheng = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 248 183 116 }
 			}
 
 			c_chaoxian = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 81 195 208 }
 			}
 
 			c_manfanhan = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 45 171 173 }
 			}
 
 			c_weicheng1 = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 87 174 46 }
 			}
 
 			c_langshui = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 251 198 107 }
 			}
 
@@ -26925,14 +26943,20 @@ e_huaxia = {
 			}
 
 			c_renxingli = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 97 49 248 }
 			}
 
 			c_randan = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 151 100 199 }
 			}
 
 			c_hunmi = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 94 64 233 }
 			}
 
@@ -26956,14 +26980,20 @@ e_huaxia = {
 			}
 
 			c_tixi1 = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 104 27 254 }
 			}
 
 			c_loufang = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 161 201 33 }
 			}
 
 			c_ledu1 = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 126 246 133 }
 			}
 
@@ -26992,18 +27022,26 @@ e_huaxia = {
 			}
 
 			c_beijiang = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 82 190 213 }
 			}
 
 			c_wuguan1 = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 150 103 196 }
 			}
 
 			c_haiming = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 93 69 228 }
 			}
 
 			c_zhaoming = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 222 207 224 }
 			}
 
@@ -27051,6 +27089,8 @@ e_huaxia = {
 			}
 
 			c_daifang = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 103 32 249 }
 			}
 
@@ -27084,14 +27124,20 @@ e_huaxia = {
 			}
 
 			c_hanzi = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 139 162 224 }
 			}
 
 			c_xiyan = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 95 59 238 }
 			}
 
 			c_aixiang = {
+				capital = c_zhanchan
+				landless = yes
 				color = { 241 148 137 }
 			}
 		}
@@ -27135,22 +27181,32 @@ e_huaxia = {
 			}
 
 			c_moushui = {
+				capital = c_youxiumoutun
+				landless = yes
 				color = { 74 230 173 }
 			}
 
 			c_sangwai = {
+				capital = c_youxiumoutun
+				landless = yes
 				color = { 158 79 220 }
 			}
 
 			c_xiaoshisuo = {
+				capital = c_youxiumoutun
+				landless = yes
 				color = { 87 99 198 }
 			}
 
 			c_dashisuo = {
+				capital = c_youxiumoutun
+				landless = yes
 				color = { 46 1 208 }
 			}
 
 			c_zhenfan = {
+				capital = c_youxiumoutun
+				landless = yes
 				color = { 129 177 174 }
 			}
 
@@ -27184,6 +27240,8 @@ e_huaxia = {
 			}
 
 			c_qichong = {
+				capital = c_youxiumoutun
+				landless = yes
 				color = { 3 183 175 }
 			}
 
@@ -27212,26 +27270,38 @@ e_huaxia = {
 			}
 
 			c_lianggu = {
+				capital = c_youxiumoutun
+				landless = yes
 				color = { 45 186 48 }
 			}
 
 			c_sengliang = {
+				capital = c_youxiumoutun
+				landless = yes
 				color = { 58 134 213 }
 			}
 
 			c_gongmuda = {
+				capital = c_youxiumoutun
+				landless = yes
 				color = { 129 192 49 }
 			}
 
 			c_yusinei = {
+				capital = c_youxiumoutun
+				landless = yes
 				color = { 171 195 177 }
 			}
 
 			c_guli1 = {
+				capital = c_youxiumoutun
+				landless = yes
 				color = { 119 227 112 }
 			}
 
 			c_jiaping = {
+				capital = c_youxiumoutun
+				landless = yes
 				color = { 128 236 139 }
 			}
 		}
@@ -27246,10 +27316,14 @@ e_huaxia = {
 			capital = c_pikou
 
 			c_shicheng5 = {
+				capital = c_pikou
+				landless = yes
 				color = { 158 213 18 }
 			}
 
 			c_hongju = {
+				capital = c_pikou
+				landless = yes
 				color = { 253 208 101 }
 			}
 
@@ -27306,6 +27380,8 @@ e_huaxia = {
 			}
 
 			c_bozhuo = {
+				capital = c_pikou
+				landless = yes
 				color = { 75 58 166 }
 			}
 
@@ -27329,10 +27405,14 @@ e_huaxia = {
 			}
 
 			c_jili = {
+				capital = c_pikou
+				landless = yes
 				color = { 107 12 243 }
 			}
 
 			c_yizhi = {
+				capital = c_pikou
+				landless = yes
 				color = { 45 111 163 }
 			}
 
@@ -27370,14 +27450,20 @@ e_huaxia = {
 			}
 
 			c_zhili = {
+				capital = c_pikou
+				landless = yes
 				color = { 171 120 37 }
 			}
 
 			c_houpu = {
+				capital = c_pikou
+				landless = yes
 				color = { 3 123 165 }
 			}
 
 			c_sixian = {
+				capital = c_pikou
+				landless = yes
 				color = { 45 126 38 }
 			}
 
@@ -27406,14 +27492,20 @@ e_huaxia = {
 			}
 
 			c_wuci = {
+				capital = c_pikou
+				landless = yes
 				color = { 129 132 39 }
 			}
 
 			c_hudu = {
+				capital = c_pikou
+				landless = yes
 				color = { 171 135 167 }
 			}
 
 			c_xilou = {
+				capital = c_pikou
+				landless = yes
 				color = { 3 138 40 }
 			}
 		}
@@ -27462,22 +27554,32 @@ e_huaxia = {
 			}
 
 			c_gaizhou = {
+				capital = c_gaogouli
+				landless = yes
 				color = { 100 34 243 }
 			}
 
 			c_yulin2 = {
+				capital = c_gaogouli
+				landless = yes
 				color = { 229 242 245 }
 			}
 
 			c_zaona = {
+				capital = c_gaogouli
+				landless = yes
 				color = { 45 141 168 }
 			}
 
 			c_henna = {
+				capital = c_gaogouli
+				landless = yes
 				color = { 87 144 41 }
 			}
 
 			c_bunai1 = {
+				capital = c_gaogouli
+				landless = yes
 				color = { 129 147 169 }
 			}
 
@@ -27511,22 +27613,32 @@ e_huaxia = {
 			}
 
 			c_xigaima = {
+				capital = c_gaogouli
+				landless = yes
 				color = { 3 153 170 }
 			}
 
 			c_shangyintai = {
+				capital = c_gaogouli
+				landless = yes
 				color = { 45 156 43 }
 			}
 
 			c_chuanna = {
+				capital = c_gaogouli
+				landless = yes
 				color = { 87 159 171 }
 			}
 
 			c_guanna = {
+				capital = c_gaogouli
+				landless = yes
 				color = { 129 162 44 }
 			}
 
 			c_feiliu = {
+				capital = c_gaogouli
+				landless = yes
 				color = { 171 165 172 }
 			}
 
@@ -27565,6 +27677,8 @@ e_huaxia = {
 			capital = c_fushun
 
 			c_fushun = {
+				capital = c_xiandu
+				landless = yes
 				color = { 133 192 206 }
 			}
 
@@ -27583,34 +27697,50 @@ e_huaxia = {
 			}
 
 			c_liaoyang1 = {
+				capital = c_xiandu
+				landless = yes
 				color = { 77 48 172 }
 			}
 
 			c_wangpingxian = {
+				capital = c_xiandu
+				landless = yes
 				color = { 155 66 28 }
 			}
 
 			c_xincheng6 = {
+				capital = c_xiandu
+				landless = yes
 				color = { 87 69 156 }
 			}
 
 			c_houcheng = {
+				capital = c_xiandu
+				landless = yes
 				color = { 129 72 29 }
 			}
 
 			c_momi = {
+				capital = c_xiandu
+				landless = yes
 				color = { 87 165 238 }
 			}
 
 			c_hou2 = {
+				capital = c_xiandu
+				landless = yes
 				color = { 145 118 181 }
 			}
 
 			c_liangmo = {
+				capital = c_xiandu
+				landless = yes
 				color = { 171 75 157 }
 			}
 
 			c_mofu = {
+				capital = c_xiandu
+				landless = yes
 				color = { 45 81 158 }
 			}
 
@@ -27668,18 +27798,26 @@ e_huaxia = {
 			}
 
 			c_zhuangqiu = {
+				capital = c_xiandu
+				landless = yes
 				color = { 171 90 32 }
 			}
 
 			c_gaimou = {
+				capital = c_xiandu
+				landless = yes
 				color = { 254 213 98 }
 			}
 
 			c_mudi = {
+				capital = c_xiandu
+				landless = yes
 				color = { 3 143 30 }
 			}
 
 			c_dongna = {
+				capital = c_xiandu
+				landless = yes
 				color = { 3 93 160 }
 			}
 		}
@@ -27694,14 +27832,20 @@ e_huaxia = {
 			capital = c_fuzhou
 
 			c_fuzhou = {
+				capital = c_anshi
+				landless = yes
 				color = { 130 226 145 }
 			}
 
 			c_pingguo = {
+				capital = c_anshi
+				landless = yes
 				color = { 147 112 187 }
 			}
 
 			c_wen1 = {
+				capital = c_anshi
+				landless = yes
 				color = { 98 44 253 }
 			}
 
@@ -27725,14 +27869,20 @@ e_huaxia = {
 			}
 
 			c_xinchang1 = {
+				capital = c_anshi
+				landless = yes
 				color = { 76 53 169 }
 			}
 
 			c_xiangping = {
+				capital = c_anshi
+				landless = yes
 				color = { 135 182 212 }
 			}
 
 			c_jujiu = {
+				capital = c_anshi
+				landless = yes
 				color = { 108 7 238 }
 			}
 
@@ -27775,10 +27925,14 @@ e_huaxia = {
 			}
 
 			c_changshengdao = {
+				capital = c_anshi
+				landless = yes
 				color = { 129 102 34 }
 			}
 
 			c_zhongdaoshan = {
+				capital = c_anshi
+				landless = yes
 				color = { 171 105 162 }
 			}
 
@@ -27807,14 +27961,20 @@ e_huaxia = {
 			}
 
 			c_beifeng = {
+				capital = c_anshi
+				landless = yes
 				color = { 129 231 142 }
 			}
 
 			c_beisha = {
+				capital = c_anshi
+				landless = yes
 				color = { 252 203 104 }
 			}
 
 			c_douli = {
+				capital = c_anshi
+				landless = yes
 				color = { 85 175 228 }
 			}
 
@@ -27848,6 +28008,8 @@ e_huaxia = {
 			}
 
 			c_lianyun = {
+				capital = c_anshi
+				landless = yes
 				color = { 78 43 175 }
 			}
 		}
@@ -27881,6 +28043,8 @@ e_huaxia = {
 			}
 
 			c_hui1 = {
+				capital = c_yafu
+				landless = yes
 				color = { 3 33 150 }
 			}
 
@@ -27909,18 +28073,26 @@ e_huaxia = {
 			}
 
 			c_nansu = {
+				capital = c_yafu
+				landless = yes
 				color = { 131 221 148 }
 			}
 
 			c_xiepi = {
+				capital = c_yafu
+				landless = yes
 				color = { 201 36 23 }
 			}
 
 			c_changpingxian = {
+				capital = c_yafu
+				landless = yes
 				color = { 87 39 151 }
 			}
 
 			c_buduo = {
+				capital = c_yafu
+				landless = yes
 				color = { 129 42 24 }
 			}
 
@@ -27934,10 +28106,14 @@ e_huaxia = {
 			}
 
 			c_xinan = {
+				capital = c_yafu
+				landless = yes
 				color = { 3 48 25 }
 			}
 
 			c_yugu = {
+				capital = c_yafu
+				landless = yes
 				color = { 45 51 153 }
 			}
 
@@ -27980,10 +28156,14 @@ e_huaxia = {
 			}
 
 			c_qiangshi = {
+				capital = c_yafu
+				landless = yes
 				color = { 0 121 136 }
 			}
 
 			c_dabo = {
+				capital = c_yafu
+				landless = yes
 				color = { 3 63 155 }
 			}
 		}
@@ -27998,22 +28178,32 @@ e_huaxia = {
 			capital = c_yilv
 
 			c_shedie = {
+				capital = c_kexi
+				landless = yes
 				color = { 88 233 190 }
 			}
 
 			c_zhishidai = {
+				capital = c_kexi
+				landless = yes
 				color = { 53 177 200 }
 			}
 
 			c_duwei = {
+				capital = c_kexi
+				landless = yes
 				color = { 87 177 11 }
 			}
 
 			c_wuwei2 = {
+				capital = c_kexi
+				landless = yes
 				color = { 129 180 139 }
 			}
 
 			c_afuyu = {
+				capital = c_kexi
+				landless = yes
 				color = { 171 183 12 }
 			}
 
@@ -28037,22 +28227,32 @@ e_huaxia = {
 			}
 
 			c_chekun = {
+				capital = c_kexi
+				landless = yes
 				color = { 87 192 141 }
 			}
 
 			c_chiyun = {
+				capital = c_kexi
+				landless = yes
 				color = { 129 195 14 }
 			}
 
 			c_shiyun = {
+				capital = c_kexi
+				landless = yes
 				color = { 3 201 15 }
 			}
 
 			c_yilv = {
+				capital = c_kexi
+				landless = yes
 				color = { 45 204 143 }
 			}
 
 			c_yiyi1 = {
+				capital = c_kexi
+				landless = yes
 				color = { 87 207 16 }
 			}
 
@@ -28129,6 +28329,8 @@ e_huaxia = {
 			}
 
 			c_qiulin = {
+				capital = c_kexi
+				landless = yes
 				color = { 174 6 18 }
 			}
 
@@ -28157,26 +28359,38 @@ e_huaxia = {
 			}
 
 			c_yinan1 = {
+				capital = c_kexi
+				landless = yes
 				color = { 129 12 19 }
 			}
 
 			c_yilu2 = {
+				capital = c_kexi
+				landless = yes
 				color = { 171 15 147 }
 			}
 
 			c_moyu = {
+				capital = c_kexi
+				landless = yes
 				color = { 3 18 20 }
 			}
 
 			c_tuoluoji = {
+				capital = c_kexi
+				landless = yes
 				color = { 45 21 148 }
 			}
 
 			c_yinian = {
+				capital = c_kexi
+				landless = yes
 				color = { 87 24 21 }
 			}
 
 			c_nanqiu = {
+				capital = c_kexi
+				landless = yes
 				color = { 129 27 149 }
 			}
 		}
@@ -28191,14 +28405,20 @@ e_huaxia = {
 			capital = c_bilichen
 
 			c_bilichen = {
+				capital = c_zhulou
+				landless = yes
 				color = { 3 126 130 }
 			}
 
 			c_pinbu = {
+				capital = c_zhulou
+				landless = yes
 				color = { 45 129 3 }
 			}
 
 			c_shiben = {
+				capital = c_zhulou
+				landless = yes
 				color = { 87 132 131 }
 			}
 
@@ -28232,10 +28452,14 @@ e_huaxia = {
 			}
 
 			c_niangwan = {
+				capital = c_zhulou
+				landless = yes
 				color = { 171 138 132 }
 			}
 
 			c_yishi3 = {
+				capital = c_zhulou
+				landless = yes
 				color = { 3 141 5 }
 			}
 
@@ -28259,10 +28483,14 @@ e_huaxia = {
 			}
 
 			c_diela = {
+				capital = c_zhulou
+				landless = yes
 				color = { 171 153 7 }
 			}
 
 			c_xiangqiu1 = {
+				capital = c_zhulou
+				landless = yes
 				color = { 3 156 135 }
 			}
 
@@ -28291,14 +28519,20 @@ e_huaxia = {
 			}
 
 			c_tuju = {
+				capital = c_zhulou
+				landless = yes
 				color = { 87 162 136 }
 			}
 
 			c_niela = {
+				capital = c_zhulou
+				landless = yes
 				color = { 129 165 9 }
 			}
 
 			c_tulvbu = {
+				capital = c_zhulou
+				landless = yes
 				color = { 171 168 137 }
 			}
 
@@ -28322,14 +28556,20 @@ e_huaxia = {
 			}
 
 			c_jijie = {
+				capital = c_zhulou
+				landless = yes
 				color = { 45 174 138 }
 			}
 
 			c_piban = {
+				capital = c_zhulou
+				landless = yes
 				color = { 3 186 140 }
 			}
 
 			c_fudi = {
+				capital = c_zhulou
+				landless = yes
 				color = { 171 198 142 }
 			}
 		}
@@ -28344,6 +28584,8 @@ e_huaxia = {
 			capital = c_tuhe
 
 			c_bintu = {
+				capital = c_tuhe
+				landless = yes
 				color = { 132 216 151 }
 			}
 
@@ -28381,10 +28623,14 @@ e_huaxia = {
 			}
 
 			c_jiaoli = {
+				capital = c_tuhe
+				landless = yes
 				color = { 71 67 238 }
 			}
 
 			c_youcheng = {
+				capital = c_tuhe
+				landless = yes
 				color = { 43 170 73 }
 			}
 
@@ -28408,14 +28654,20 @@ e_huaxia = {
 			}
 
 			c_dieyun = {
+				capital = c_tuhe
+				landless = yes
 				color = { 148 13 8 }
 			}
 
 			c_talu = {
+				capital = c_tuhe
+				landless = yes
 				color = { 248 226 140 }
 			}
 
 			c_yitu = {
+				capital = c_tuhe
+				landless = yes
 				color = { 64 75 162 }
 			}
 
@@ -28434,10 +28686,14 @@ e_huaxia = {
 			}
 
 			c_wulu1 = {
+				capital = c_tuhe
+				landless = yes
 				color = { 109 2 233 }
 			}
 
 			c_fangxian = {
+				capital = c_tuhe
+				landless = yes
 				color = { 156 221 8 }
 			}
 
@@ -28485,18 +28741,26 @@ e_huaxia = {
 			}
 
 			c_dawa = {
+				capital = c_tuhe
+				landless = yes
 				color = { 89 155 248 }
 			}
 
 			c_liaozhong = {
+				capital = c_tuhe
+				landless = yes
 				color = { 143 124 175 }
 			}
 
 			c_hunnan = {
+				capital = c_tuhe
+				landless = yes
 				color = { 102 24 233 }
 			}
 
 			c_fangxian1 = {
+				capital = c_tuhe
+				landless = yes
 				color = { 157 15 60 }
 			}
 
@@ -28549,6 +28813,8 @@ e_huaxia = {
 			}
 
 			c_bali1 = {
+				capital = c_tuhe
+				landless = yes
 				color = { 167 37 77 }
 			}
 
@@ -28572,6 +28838,8 @@ e_huaxia = {
 			capital = c_lulong
 
 			c_lulong = {
+				capital = c_jieshi
+				landless = yes
 				color = { 79 38 178 }
 			}
 
@@ -28619,6 +28887,8 @@ e_huaxia = {
 			}
 
 			c_jiujiang = {
+				capital = c_jieshi
+				landless = yes
 				color = { 133 211 154 }
 			}
 
@@ -28642,6 +28912,8 @@ e_huaxia = {
 			}
 
 			c_fengrun = {
+				capital = c_jieshi
+				landless = yes
 				color = { 232 251 254 }
 			}
 
@@ -28670,6 +28942,8 @@ e_huaxia = {
 			}
 
 			c_chengde1 = {
+				capital = c_jieshi
+				landless = yes
 				color = { 90 150 253 }
 			}
 
@@ -28693,6 +28967,8 @@ e_huaxia = {
 			}
 
 			c_xinglong = {
+				capital = c_jieshi
+				landless = yes
 				color = { 81 28 184 }
 			}
 
@@ -28721,34 +28997,50 @@ e_huaxia = {
 			}
 
 			c_ningyuan = {
+				capital = c_jieshi
+				landless = yes
 				color = { 154 229 154 }
 			}
 
 			c_fusu = {
+				capital = c_jieshi
+				landless = yes
 				color = { 131 202 200 }
 			}
 
 			c_liping = {
+				capital = c_jieshi
+				landless = yes
 				color = { 112 243 218 }
 			}
 
 			c_bailang = {
+				capital = c_jieshi
+				landless = yes
 				color = { 101 29 238 }
 			}
 
 			c_ande1 = {
+				capital = c_jieshi
+				landless = yes
 				color = { 80 33 181 }
 			}
 
 			c_lingyuan = {
+				capital = c_jieshi
+				landless = yes
 				color = { 153 233 249 }
 			}
 
 			c_kedan = {
+				capital = c_jieshi
+				landless = yes
 				color = { 245 192 174 }
 			}
 
 			c_luolei = {
+				capital = c_jieshi
+				landless = yes
 				color = { 162 61 22 }
 			}
 
@@ -28777,10 +29069,14 @@ e_huaxia = {
 			}
 
 			c_shuluogan = {
+				capital = c_jieshi
+				landless = yes
 				color = { 233 52 45 }
 			}
 
 			c_mashou1 = {
+				capital = c_jieshi
+				landless = yes
 				color = { 26 240 122 }
 			}
 
@@ -28799,10 +29095,14 @@ e_huaxia = {
 			}
 
 			c_yanfu = {
+				capital = c_jieshi
+				landless = yes
 				color = { 148 113 45 }
 			}
 
 			c_daba = {
+				capital = c_jieshi
+				landless = yes
 				color = { 166 175 57 }
 			}
 		}
@@ -28817,6 +29117,8 @@ e_huaxia = {
 			capital = c_qielv
 
 			c_jicheng = {
+				capital = c_zhaoyang
+				landless = yes
 				color = { 230 247 248 }
 			}
 
@@ -28840,10 +29142,14 @@ e_huaxia = {
 			}
 
 			c_yinliangchuan = {
+				capital = c_zhaoyang
+				landless = yes
 				color = { 113 238 213 }
 			}
 
 			c_tuhuzhen = {
+				capital = c_zhaoyang
+				landless = yes
 				color = { 152 237 244 }
 			}
 
@@ -28872,26 +29178,38 @@ e_huaxia = {
 			}
 
 			c_yangan = {
+				capital = c_zhaoyang
+				landless = yes
 				color = { 0 89 133 }
 			}
 
 			c_chuhe = {
+				capital = c_zhaoyang
+				landless = yes
 				color = { 89 238 226 }
 			}
 
 			c_damogan = {
+				capital = c_zhaoyang
+				landless = yes
 				color = { 10 155 176 }
 			}
 
 			c_qielv = {
+				capital = c_zhaoyang
+				landless = yes
 				color = { 17 147 38 }
 			}
 
 			c_poyetou = {
+				capital = c_zhaoyang
+				landless = yes
 				color = { 119 160 194 }
 			}
 
 			c_yuedai = {
+				capital = c_zhaoyang
+				landless = yes
 				color = { 20 148 92 }
 			}
 
@@ -28925,6 +29243,8 @@ e_huaxia = {
 			}
 
 			c_yujia = {
+				capital = c_zhaoyang
+				landless = yes
 				color = { 148 246 134 }
 			}
 
@@ -28948,14 +29268,20 @@ e_huaxia = {
 			}
 
 			c_chili1 = {
+				capital = c_zhaoyang
+				landless = yes
 				color = { 215 91 227 }
 			}
 
 			c_bihan = {
+				capital = c_zhaoyang
+				landless = yes
 				color = { 17 128 131 }
 			}
 
 			c_gouze = {
+				capital = c_zhaoyang
+				landless = yes
 				color = { 84 219 79 }
 			}
 
@@ -28984,14 +29310,20 @@ e_huaxia = {
 			}
 
 			c_guizhu = {
+				capital = c_zhaoyang
+				landless = yes
 				color = { 170 101 51 }
 			}
 
 			c_yufen = {
+				capital = c_zhaoyang
+				landless = yes
 				color = { 171 123 2 }
 			}
 
 			c_xianping1 = {
+				capital = c_zhaoyang
+				landless = yes
 				color = { 45 144 133 }
 			}
 
@@ -29029,14 +29361,20 @@ e_huaxia = {
 			capital = c_gangcheng
 
 			c_gangcheng = {
+				capital = c_yehuling
+				landless = yes
 				color = { 127 60 49 }
 			}
 
 			c_zaoyang = {
+				capital = c_yehuling
+				landless = yes
 				color = { 1 66 50 }
 			}
 
 			c_qieru = {
+				capital = c_yehuling
+				landless = yes
 				color = { 1 186 70 }
 			}
 
@@ -29065,10 +29403,14 @@ e_huaxia = {
 			}
 
 			c_beiyang1 = {
+				capital = c_yehuling
+				landless = yes
 				color = { 86 138 1 }
 			}
 
 			c_dushi = {
+				capital = c_yehuling
+				landless = yes
 				color = { 128 141 129 }
 			}
 
@@ -29092,6 +29434,8 @@ e_huaxia = {
 			}
 
 			c_zaoyang2 = {
+				capital = c_yehuling
+				landless = yes
 				color = { 128 33 19 }
 			}
 
@@ -29125,14 +29469,20 @@ e_huaxia = {
 			}
 
 			c_kongsang = {
+				capital = c_yehuling
+				landless = yes
 				color = { 2 39 20 }
 			}
 
 			c_rouxuan = {
+				capital = c_yehuling
+				landless = yes
 				color = { 128 78 154 }
 			}
 
 			c_rixiang = {
+				capital = c_yehuling
+				landless = yes
 				color = { 247 232 152 }
 			}
 
@@ -29156,6 +29506,8 @@ e_huaxia = {
 			}
 
 			c_bupoguan = {
+				capital = c_yehuling
+				landless = yes
 				color = { 167 72 89 }
 			}
 
@@ -29184,10 +29536,14 @@ e_huaxia = {
 			}
 
 			c_yinshan = {
+				capital = c_yehuling
+				landless = yes
 				color = { 196 96 158 }
 			}
 
 			c_sangang = {
+				capital = c_yehuling
+				landless = yes
 				color = { 173 34 247 }
 			}
 
@@ -29211,18 +29567,26 @@ e_huaxia = {
 			}
 
 			c_longan = {
+				capital = c_yehuling
+				landless = yes
 				color = { 236 123 152 }
 			}
 
 			c_feiwu = {
+				capital = c_yehuling
+				landless = yes
 				color = { 114 202 97 }
 			}
 
 			c_fanhan = {
+				capital = c_yehuling
+				landless = yes
 				color = { 72 73 157 }
 			}
 
 			c_liaoshui = {
+				capital = c_yehuling
+				landless = yes
 				color = { 99 39 248 }
 			}
 		}
@@ -29237,6 +29601,8 @@ e_huaxia = {
 			capital = c_yaoyang
 
 			c_huguan1 = {
+				capital = c_guyang3
+				landless = yes
 				color = { 86 153 131 }
 			}
 
@@ -29260,10 +29626,14 @@ e_huaxia = {
 			}
 
 			c_baoqiu1 = {
+				capital = c_guyang3
+				landless = yes
 				color = { 170 159 132 }
 			}
 
 			c_baitan = {
+				capital = c_guyang3
+				landless = yes
 				color = { 2 162 5 }
 			}
 
@@ -29292,18 +29662,26 @@ e_huaxia = {
 			}
 
 			c_junmi = {
+				capital = c_guyang3
+				landless = yes
 				color = { 86 168 6 }
 			}
 
 			c_jiangjunshiguan = {
+				capital = c_guyang3
+				landless = yes
 				color = { 128 171 134 }
 			}
 
 			c_xiaoxingzhou = {
+				capital = c_guyang3
+				landless = yes
 				color = { 170 174 7 }
 			}
 
 			c_huyan1 = {
+				capital = c_guyang3
+				landless = yes
 				color = { 2 177 135 }
 			}
 
@@ -29332,6 +29710,8 @@ e_huaxia = {
 			}
 
 			c_miyun = {
+				capital = c_guyang3
+				landless = yes
 				color = { 86 183 136 }
 			}
 
@@ -29355,18 +29735,26 @@ e_huaxia = {
 			}
 
 			c_hutusai = {
+				capital = c_guyang3
+				landless = yes
 				color = { 170 189 137 }
 			}
 
 			c_luye = {
+				capital = c_guyang3
+				landless = yes
 				color = { 2 192 10 }
 			}
 
 			c_hadang = {
+				capital = c_guyang3
+				landless = yes
 				color = { 44 195 138 }
 			}
 
 			c_huayan = {
+				capital = c_guyang3
+				landless = yes
 				color = { 169 141 27 }
 			}
 
@@ -29400,14 +29788,20 @@ e_huaxia = {
 			}
 
 			c_zhulu = {
+				capital = c_guyang3
+				landless = yes
 				color = { 85 12 41 }
 			}
 
 			c_juyongguan = {
+				capital = c_guyang3
+				landless = yes
 				color = { 127 15 169 }
 			}
 
 			c_yiyu = {
+				capital = c_guyang3
+				landless = yes
 				color = { 169 18 42 }
 			}
 
@@ -29436,18 +29830,26 @@ e_huaxia = {
 			}
 
 			c_juyang2 = {
+				capital = c_guyang3
+				landless = yes
 				color = { 43 24 43 }
 			}
 
 			c_quanshang = {
+				capital = c_guyang3
+				landless = yes
 				color = { 85 27 171 }
 			}
 
 			c_qieju = {
+				capital = c_guyang3
+				landless = yes
 				color = { 127 30 44 }
 			}
 
 			c_xialuo = {
+				capital = c_guyang3
+				landless = yes
 				color = { 169 33 172 }
 			}
 
@@ -29495,10 +29897,14 @@ e_huaxia = {
 			}
 
 			c_wende = {
+				capital = c_guyang3
+				landless = yes
 				color = { 85 42 46 }
 			}
 
 			c_guangning = {
+				capital = c_guyang3
+				landless = yes
 				color = { 127 45 174 }
 			}
 
@@ -29522,22 +29928,32 @@ e_huaxia = {
 			}
 
 			c_wangyun = {
+				capital = c_guyang3
+				landless = yes
 				color = { 2 147 130 }
 			}
 
 			c_songxing = {
+				capital = c_guyang3
+				landless = yes
 				color = { 44 150 3 }
 			}
 
 			c_halahetao = {
+				capital = c_guyang3
+				landless = yes
 				color = { 44 12 143 }
 			}
 
 			c_luanxing = {
+				capital = c_guyang3
+				landless = yes
 				color = { 213 15 16 }
 			}
 
 			c_baimachuan = {
+				capital = c_guyang3
+				landless = yes
 				color = { 128 18 144 }
 			}
 		}
@@ -29571,14 +29987,20 @@ e_huaxia = {
 			}
 
 			c_xincang = {
+				capital = c_yongnu
+				landless = yes
 				color = { 127 108 149 }
 			}
 
 			c_lu1 = {
+				capital = c_yongnu
+				landless = yes
 				color = { 1 144 155 }
 			}
 
 			c_xianghe = {
+				capital = c_yongnu
+				landless = yes
 				color = { 43 147 28 }
 			}
 
@@ -29625,10 +30047,14 @@ e_huaxia = {
 			}
 
 			c_lutai = {
+				capital = c_yongnu
+				landless = yes
 				color = { 86 201 76 }
 			}
 
 			c_duliang = {
+				capital = c_yongnu
+				landless = yes
 				color = { 128 204 204 }
 			}
 
@@ -29652,18 +30078,26 @@ e_huaxia = {
 			}
 
 			c_gengyin = {
+				capital = c_yongnu
+				landless = yes
 				color = { 2 210 205 }
 			}
 
 			c_rigen = {
+				capital = c_yongnu
+				landless = yes
 				color = { 44 0 78 }
 			}
 
 			c_xiyang3 = {
+				capital = c_yongnu
+				landless = yes
 				color = { 86 3 206 }
 			}
 
 			c_shanyou = {
+				capital = c_yongnu
+				landless = yes
 				color = { 128 6 79 }
 			}
 
@@ -29711,6 +30145,8 @@ e_huaxia = {
 			}
 
 			c_lingzhi = {
+				capital = c_yanze
+				landless = yes
 				color = { 44 15 208 }
 			}
 
@@ -29734,6 +30170,8 @@ e_huaxia = {
 			}
 
 			c_zhizhong = {
+				capital = c_yanze
+				landless = yes
 				color = { 128 21 209 }
 			}
 
@@ -29771,6 +30209,8 @@ e_huaxia = {
 			}
 
 			c_nuanjin = {
+				capital = c_yanze
+				landless = yes
 				color = { 44 186 83 }
 			}
 
@@ -29794,22 +30234,32 @@ e_huaxia = {
 			}
 
 			c_rongjia = {
+				capital = c_yanze
+				landless = yes
 				color = { 128 36 84 }
 			}
 
 			c_wanqiu1 = {
+				capital = c_yanze
+				landless = yes
 				color = { 170 39 212 }
 			}
 
 			c_pingyin2 = {
+				capital = c_yanze
+				landless = yes
 				color = { 2 42 128 }
 			}
 
 			c_li24 = {
+				capital = c_yanze
+				landless = yes
 				color = { 44 45 213 }
 			}
 
 			c_lei = {
+				capital = c_yanze
+				landless = yes
 				color = { 86 48 86 }
 			}
 
@@ -29828,6 +30278,8 @@ e_huaxia = {
 			}
 
 			c_tuyin = {
+				capital = c_yanze
+				landless = yes
 				color = { 170 54 84 }
 			}
 
@@ -29861,14 +30313,20 @@ e_chaoxian = {
 			capital = c_woju
 
 			c_chenfengu = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 97 62 219 }
 			}
 
 			c_sulubusi = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 168 173 68 }
 			}
 
 			c_nulan = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 242 153 134 }
 			}
 
@@ -29892,22 +30350,32 @@ e_chaoxian = {
 			}
 
 			c_yuezhi = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 157 82 217 }
 			}
 
 			c_rihua = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 88 94 203 }
 			}
 
 			c_zhiqin = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 217 182 209 }
 			}
 
 			c_jianxibeili = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 167 177 63 }
 			}
 
 			c_chenxin = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 243 158 131 }
 			}
 
@@ -29941,26 +30409,38 @@ e_chaoxian = {
 			}
 
 			c_chishan = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 187 21 56 }
 			}
 
 			c_hengchuan = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 129 24 184 }
 			}
 
 			c_hanshan1 = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 171 27 57 }
 			}
 
 			c_shafuhu = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 3 30 185 }
 			}
 
 			c_shuchuan = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 45 133 58 }
 			}
 
 			c_nuyinzhu = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 87 36 186 }
 			}
 
@@ -30042,10 +30522,14 @@ e_chaoxian = {
 			}
 
 			c_chuli1 = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 64 113 133 }
 			}
 
 			c_chenyunxin = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 96 67 214 }
 			}
 
@@ -30074,14 +30558,20 @@ e_chaoxian = {
 			}
 
 			c_daoxi = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 45 48 188 }
 			}
 
 			c_shangmao = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 155 51 61 }
 			}
 
 			c_changfeng = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 129 54 189 }
 			}
 
@@ -30105,14 +30595,20 @@ e_chaoxian = {
 			}
 
 			c_qingtang = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 3 60 190 }
 			}
 
 			c_zhanbeili = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 66 103 139 }
 			}
 
 			c_beili = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 145 132 242 }
 			}
 
@@ -30136,26 +30632,38 @@ e_chaoxian = {
 			}
 
 			c_pibeili = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 120 232 115 }
 			}
 
 			c_goulu = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 76 220 183 }
 			}
 
 			c_zhilijun = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 156 85 214 }
 			}
 
 			c_zilimoulu = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 89 89 208 }
 			}
 
 			c_suweigan = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 218 187 212 }
 			}
 
 			c_ganxi = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 67 98 142 }
 			}
 
@@ -30184,18 +30692,26 @@ e_chaoxian = {
 			}
 
 			c_erlin = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 99 52 229 }
 			}
 
 			c_molu = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 166 181 58 }
 			}
 
 			c_sielu = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 121 237 118 }
 			}
 
 			c_gupu = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 244 163 128 }
 			}
 
@@ -30248,14 +30764,20 @@ e_chaoxian = {
 			}
 
 			c_xuanpu = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 90 84 213 }
 			}
 
 			c_renshi = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 186 63 63 }
 			}
 
 			c_tuping = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 87 66 191 }
 			}
 
@@ -30298,10 +30820,14 @@ e_chaoxian = {
 			}
 
 			c_daokang = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 3 75 65 }
 			}
 
 			c_tushan1 = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 45 78 193 }
 			}
 
@@ -30330,6 +30856,8 @@ e_chaoxian = {
 			}
 
 			c_alao = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 129 84 194 }
 			}
 
@@ -30386,10 +30914,14 @@ e_chaoxian = {
 			}
 
 			c_linsuban = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 117 217 106 }
 			}
 
 			c_zhiban = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 240 143 140 }
 			}
 
@@ -30418,22 +30950,32 @@ e_chaoxian = {
 			}
 
 			c_yili = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 159 76 223 }
 			}
 
 			c_bumi = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 86 104 193 }
 			}
 
 			c_yinan = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 239 138 143 }
 			}
 
 			c_chensutu = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 72 240 163 }
 			}
 
 			c_gouxi = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 160 73 226 }
 			}
 
@@ -30462,18 +31004,26 @@ e_chaoxian = {
 			}
 
 			c_aichi = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 214 167 200 }
 			}
 
 			c_chushantuli = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 63 118 130 }
 			}
 
 			c_luyun = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 148 117 251 }
 			}
 
 			c_qianma = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 215 172 203 }
 			}
 
@@ -30497,10 +31047,14 @@ e_chaoxian = {
 			}
 
 			c_guai1 = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 118 222 109 }
 			}
 
 			c_jielu = {
+				capital = c_gudanzhe
+				landless = yes
 				color = { 219 192 215 }
 			}
 		}
@@ -30539,14 +31093,20 @@ e_chaoxian = {
 			}
 
 			c_youyou = {
+				capital = c_silu
+				landless = yes
 				color = { 100 47 234 }
 			}
 
 			c_weizhen = {
+				capital = c_silu
+				landless = yes
 				color = { 250 193 110 }
 			}
 
 			c_youling = {
+				capital = c_silu
+				landless = yes
 				color = { 83 185 218 }
 			}
 
@@ -30570,22 +31130,32 @@ e_chaoxian = {
 			}
 
 			c_bihuo = {
+				capital = c_silu
+				landless = yes
 				color = { 171 132 202 }
 			}
 
 			c_ezhi = {
+				capital = c_silu
+				landless = yes
 				color = { 3 135 75 }
 			}
 
 			c_jiezhibian = {
+				capital = c_silu
+				landless = yes
 				color = { 45 138 203 }
 			}
 
 			c_lipu = {
+				capital = c_silu
+				landless = yes
 				color = { 129 144 204 }
 			}
 
 			c_yuhuo = {
+				capital = c_silu
+				landless = yes
 				color = { 171 147 77 }
 			}
 
@@ -30614,26 +31184,38 @@ e_chaoxian = {
 			}
 
 			c_nanmilimidong = {
+				capital = c_silu
+				landless = yes
 				color = { 245 168 125 }
 			}
 
 			c_guzimidong = {
+				capital = c_silu
+				landless = yes
 				color = { 246 173 122 }
 			}
 
 			c_guchunshi = {
+				capital = c_silu
+				landless = yes
 				color = { 153 94 205 }
 			}
 
 			c_gaosigeyi = {
+				capital = c_silu
+				landless = yes
 				color = { 171 102 197 }
 			}
 
 			c_jiahai = {
+				capital = c_silu
+				landless = yes
 				color = { 73 105 70 }
 			}
 
 			c_jiayou = {
+				capital = c_silu
+				landless = yes
 				color = { 45 108 198 }
 			}
 
@@ -30657,10 +31239,14 @@ e_chaoxian = {
 			}
 
 			c_linfeng = {
+				capital = c_silu
+				landless = yes
 				color = { 129 114 199 }
 			}
 
 			c_maigu = {
+				capital = c_silu
+				landless = yes
 				color = { 171 117 72 }
 			}
 
@@ -30689,10 +31275,14 @@ e_chaoxian = {
 			}
 
 			c_yizhi1 = {
+				capital = c_silu
+				landless = yes
 				color = { 45 123 73 }
 			}
 
 			c_rexi = {
+				capital = c_silu
+				landless = yes
 				color = { 87 126 201 }
 			}
 
@@ -30721,10 +31311,14 @@ e_chaoxian = {
 			}
 
 			c_ranxi = {
+				capital = c_silu
+				landless = yes
 				color = { 165 185 53 }
 			}
 
 			c_daodonghuo = {
+				capital = c_silu
+				landless = yes
 				color = { 45 153 78 }
 			}
 
@@ -30758,10 +31352,14 @@ e_chaoxian = {
 			capital = c_gouyehan
 
 			c_gouyehan = {
+				capital = c_banlugu
+				landless = yes
 				color = { 101 42 239 }
 			}
 
 			c_choudao = {
+				capital = c_banlugu
+				landless = yes
 				color = { 129 159 79 }
 			}
 
@@ -30794,10 +31392,14 @@ e_chaoxian = {
 			}
 
 			c_mushan = {
+				capital = c_banlugu
+				landless = yes
 				color = { 45 168 208 }
 			}
 
 			c_nannei = {
+				capital = c_banlugu
+				landless = yes
 				color = { 87 171 81 }
 			}
 
@@ -30826,6 +31428,8 @@ e_chaoxian = {
 			}
 
 			c_mali = {
+				capital = c_banlugu
+				landless = yes
 				color = { 171 177 82 }
 			}
 
@@ -30844,6 +31448,8 @@ e_chaoxian = {
 			}
 
 			c_shanghuo = {
+				capital = c_banlugu
+				landless = yes
 				color = { 45 183 83 }
 			}
 
@@ -30872,10 +31478,14 @@ e_chaoxian = {
 			}
 
 			c_gupu1 = {
+				capital = c_banlugu
+				landless = yes
 				color = { 129 189 84 }
 			}
 
 			c_xiaoduosha = {
+				capital = c_banlugu
+				landless = yes
 				color = { 171 192 212 }
 			}
 
@@ -30894,14 +31504,20 @@ e_chaoxian = {
 			}
 
 			c_chicun = {
+				capital = c_banlugu
+				landless = yes
 				color = { 45 198 213 }
 			}
 
 			c_zhipinchuan = {
+				capital = c_banlugu
+				landless = yes
 				color = { 87 201 86 }
 			}
 
 			c_wenhuoliang = {
+				capital = c_banlugu
+				landless = yes
 				color = { 129 204 214 }
 			}
 
@@ -30920,14 +31536,20 @@ e_chaoxian = {
 			}
 
 			c_julao = {
+				capital = c_banlugu
+				landless = yes
 				color = { 45 0 88 }
 			}
 
 			c_maizhenyi = {
+				capital = c_banlugu
+				landless = yes
 				color = { 87 3 216 }
 			}
 
 			c_jiahuoliangu = {
+				capital = c_banlugu
+				landless = yes
 				color = { 3 150 205 }
 			}
 
@@ -30973,18 +31595,26 @@ e_chaoxian = {
 			}
 
 			c_banlu = {
+				capital = c_banlugu
+				landless = yes
 				color = { 79 205 198 }
 			}
 
 			c_miwuxiema = {
+				capital = c_banlugu
+				landless = yes
 				color = { 92 74 223 }
 			}
 
 			c_ganlu1 = {
+				capital = c_banlugu
+				landless = yes
 				color = { 221 202 221 }
 			}
 
 			c_zoucaoma = {
+				capital = c_banlugu
+				landless = yes
 				color = { 70 83 151 }
 			}
 
@@ -31026,7 +31656,7 @@ e_chaoxian = {
 				}
 			}
 
-			c_lenü = {
+			c_lenv = {
 				color = { 163 193 43 }
 
 				b_3406_0 = {
@@ -31065,10 +31695,14 @@ e_chaoxian = {
 			}
 
 			c_yidi = {
+				capital = c_banlugu
+				landless = yes
 				color = { 78 210 193 }
 			}
 
 			c_busi = {
+				capital = c_banlugu
+				landless = yes
 				color = { 154 91 208 }
 			}
 
@@ -31087,10 +31721,14 @@ e_chaoxian = {
 			}
 
 			c_rukan = {
+				capital = c_banlugu
+				landless = yes
 				color = { 220 197 218 }
 			}
 
 			c_bianchenjietu = {
+				capital = c_banlugu
+				landless = yes
 				color = { 247 178 119 }
 			}
 
@@ -31143,14 +31781,20 @@ e_chaoxian = {
 			}
 
 			c_liangyina = {
+				capital = c_danluo
+				landless = yes
 				color = { 194 93 68 }
 			}
 
 			c_fuyina = {
+				capital = c_danluo
+				landless = yes
 				color = { 87 96 196 }
 			}
 
 			c_gaoyina = {
+				capital = c_danluo
+				landless = yes
 				color = { 129 99 69 }
 			}
 		}
@@ -31194,10 +31838,14 @@ e_chaoxian = {
 			}
 
 			c_cantai = {
+				capital = c_dongyi
+				landless = yes
 				color = { 73 68 160 }
 			}
 
 			c_qianmo = {
+				capital = c_dongyi
+				landless = yes
 				color = { 138 167 221 }
 			}
 
@@ -31221,22 +31869,32 @@ e_chaoxian = {
 			}
 
 			c_bunai = {
+				capital = c_dongyi
+				landless = yes
 				color = { 160 205 28 }
 			}
 
 			c_shafeiqinyi = {
+				capital = c_dongyi
+				landless = yes
 				color = { 3 198 50 }
 			}
 
 			c_shouyitun = {
+				capital = c_dongyi
+				landless = yes
 				color = { 45 201 178 }
 			}
 
 			c_sanzhi = {
+				capital = c_dongyi
+				landless = yes
 				color = { 149 106 193 }
 			}
 
 			c_dayang = {
+				capital = c_dongyi
+				landless = yes
 				color = { 225 222 233 }
 			}
 
@@ -31270,10 +31928,14 @@ e_chaoxian = {
 			}
 
 			c_yicheng3 = {
+				capital = c_dongyi
+				landless = yes
 				color = { 137 172 218 }
 			}
 
 			c_langchuan = {
+				capital = c_dongyi
+				landless = yes
 				color = { 106 17 248 }
 			}
 
@@ -31302,18 +31964,26 @@ e_chaoxian = {
 			}
 
 			c_falichuan = {
+				capital = c_dongyi
+				landless = yes
 				color = { 171 12 182 }
 			}
 
 			c_yiwenjian = {
+				capital = c_dongyi
+				landless = yes
 				color = { 193 15 55 }
 			}
 
 			c_yulingdao = {
+				capital = c_dongyi
+				landless = yes
 				color = { 135 148 151 }
 			}
 
 			c_sanfengdao = {
+				capital = c_dongyi
+				landless = yes
 				color = { 3 90 195 }
 			}
 		}
@@ -31328,14 +31998,20 @@ e_chaoxian = {
 			capital = c_woju
 
 			c_woju = {
+				capital = c_diaoling
+				landless = yes
 				color = { 146 249 214 }
 			}
 
 			c_fuzu = {
+				capital = c_diaoling
+				landless = yes
 				color = { 152 97 202 }
 			}
 
 			c_huali = {
+				capital = c_diaoling
+				landless = yes
 				color = { 127 241 136 }
 			}
 
@@ -31402,14 +32078,20 @@ e_chaoxian = {
 			}
 
 			c_longshan = {
+				capital = c_diaoling
+				landless = yes
 				color = { 8 247 68 }
 			}
 
 			c_binhai = {
+				capital = c_diaoling
+				landless = yes
 				color = { 97 115 212 }
 			}
 
 			c_maishida = {
+				capital = c_diaoling
+				landless = yes
 				color = { 87 204 51 }
 			}
 
@@ -31443,22 +32125,32 @@ e_chaoxian = {
 			}
 
 			c_yanyuan = {
+				capital = c_diaoling
+				landless = yes
 				color = { 171 210 52 }
 			}
 
 			c_tianqing = {
+				capital = c_diaoling
+				landless = yes
 				color = { 3 0 180 }
 			}
 
 			c_lianchi = {
+				capital = c_diaoling
+				landless = yes
 				color = { 145 3 53 }
 			}
 
 			c_shengping = {
+				capital = c_diaoling
+				landless = yes
 				color = { 87 6 181 }
 			}
 
 			c_lingquan = {
+				capital = c_diaoling
+				landless = yes
 				color = { 129 9 54 }
 			}
 		}
@@ -31478,6 +32170,8 @@ e_fusang = {
 			capital = c_songpu
 
 			c_songpu = {
+				capital = c_weibei
+				landless = yes
 				color = { 3 238 83 }
 			}
 
@@ -31520,14 +32214,20 @@ e_fusang = {
 			}
 
 			c_tiancao = {
+				capital = c_weibei
+				landless = yes
 				color = { 139 41 171 }
 			}
 
 			c_chudao1 = {
+				capital = c_weibei
+				landless = yes
 				color = { 172 114 7 }
 			}
 
 			c_xiaocheng = {
+				capital = c_weibei
+				landless = yes
 				color = { 4 117 135 }
 			}
 
@@ -31580,6 +32280,8 @@ e_fusang = {
 			}
 
 			c_feiqian = {
+				capital = c_weibei
+				landless = yes
 				color = { 65 69 69 }
 			}
 
@@ -31613,14 +32315,20 @@ e_fusang = {
 			}
 
 			c_gejin = {
+				capital = c_weibei
+				landless = yes
 				color = { 186 61 108 }
 			}
 
 			c_shanlu = {
+				capital = c_weibei
+				landless = yes
 				color = { 46 135 138 }
 			}
 
 			c_futu = {
+				capital = c_weibei
+				landless = yes
 				color = { 88 138 11 }
 			}
 
@@ -31644,14 +32352,20 @@ e_fusang = {
 			}
 
 			c_baotian = {
+				capital = c_weibei
+				landless = yes
 				color = { 172 144 12 }
 			}
 
 			c_jiazhibo = {
+				capital = c_weibei
+				landless = yes
 				color = { 4 147 140 }
 			}
 
 			c_feihou = {
+				capital = c_weibei
+				landless = yes
 				color = { 182 111 58 }
 			}
 
@@ -31685,6 +32399,8 @@ e_fusang = {
 			}
 
 			c_huo2 = {
+				capital = c_weibei
+				landless = yes
 				color = { 191 59 157 }
 			}
 		}
@@ -31694,18 +32410,26 @@ e_fusang = {
 			capital = c_zhuzi
 
 			c_zhuzi = {
+				capital = c_yidu
+				landless = yes
 				color = { 136 48 194 }
 			}
 
 			c_yuanhegang = {
+				capital = c_yidu
+				landless = yes
 				color = { 130 81 129 }
 			}
 
 			c_anshou = {
+				capital = c_yidu
+				landless = yes
 				color = { 172 84 2 }
 			}
 
 			c_zongxiang = {
+				capital = c_yidu
+				landless = yes
 				color = { 4 87 130 }
 			}
 
@@ -31734,10 +32458,14 @@ e_fusang = {
 			}
 
 			c_zaoliang = {
+				capital = c_yidu
+				landless = yes
 				color = { 88 93 131 }
 			}
 
 			c_suibo = {
+				capital = c_yidu
+				landless = yes
 				color = { 130 96 4 }
 			}
 
@@ -31761,6 +32489,8 @@ e_fusang = {
 			}
 
 			c_zhuqian = {
+				capital = c_yidu
+				landless = yes
 				color = { 167 214 244 }
 			}
 
@@ -31794,18 +32524,26 @@ e_fusang = {
 			}
 
 			c_yangmie = {
+				capital = c_yidu
+				landless = yes
 				color = { 172 129 137 }
 			}
 
 			c_deyi = {
+				capital = c_yidu
+				landless = yes
 				color = { 4 132 10 }
 			}
 
 			c_zhouhou = {
+				capital = c_yidu
+				landless = yes
 				color = { 91 94 92 }
 			}
 
 			c_zhuzhimiduo = {
+				capital = c_yidu
+				landless = yes
 				color = { 189 74 126 }
 			}
 		}
@@ -31820,6 +32558,8 @@ e_fusang = {
 			capital = c_luerdao
 
 			c_sugu = {
+				capital = c_rizhi
+				landless = yes
 				color = { 45 15 218 }
 			}
 
@@ -31853,6 +32593,8 @@ e_fusang = {
 			}
 
 			c_luerdao = {
+				capital = c_rizhi
+				landless = yes
 				color = { 129 21 219 }
 			}
 
@@ -31881,14 +32623,20 @@ e_fusang = {
 			}
 
 			c_zengyu = {
+				capital = c_rizhi
+				landless = yes
 				color = { 3 27 220 }
 			}
 
 			c_samo = {
+				capital = c_rizhi
+				landless = yes
 				color = { 85 174 240 }
 			}
 
 			c_shiluo = {
+				capital = c_rizhi
+				landless = yes
 				color = { 91 145 242 }
 			}
 
@@ -31922,30 +32670,44 @@ e_fusang = {
 			}
 
 			c_chushui = {
+				capital = c_rizhi
+				landless = yes
 				color = { 151 241 239 }
 			}
 
 			c_yizuo = {
+				capital = c_rizhi
+				landless = yes
 				color = { 136 196 163 }
 			}
 
 			c_dayu = {
+				capital = c_rizhi
+				landless = yes
 				color = { 64 132 226 }
 			}
 
 			c_nake = {
+				capital = c_rizhi
+				landless = yes
 				color = { 233 246 251 }
 			}
 
 			c_zhuye1 = {
+				capital = c_rizhi
+				landless = yes
 				color = { 82 23 187 }
 			}
 
 			c_zhendao = {
+				capital = c_rizhi
+				landless = yes
 				color = { 45 30 93 }
 			}
 
 			c_meiyecuoqi = {
+				capital = c_rizhi
+				landless = yes
 				color = { 87 33 221 }
 			}
 
@@ -31969,6 +32731,8 @@ e_fusang = {
 			}
 
 			c_lingyi = {
+				capital = c_rizhi
+				landless = yes
 				color = { 171 39 222 }
 			}
 
@@ -32021,6 +32785,8 @@ e_fusang = {
 			}
 
 			c_yumo = {
+				capital = c_xiongmao
+				landless = yes
 				color = { 2 233 86 }
 			}
 		}
@@ -32035,10 +32801,14 @@ e_fusang = {
 			capital = c_feng7
 
 			c_feng7 = {
+				capital = c_haibu
+				landless = yes
 				color = { 163 55 118 }
 			}
 
 			c_xi6 = {
+				capital = c_haibu
+				landless = yes
 				color = { 174 32 142 }
 			}
 
@@ -32095,10 +32865,14 @@ e_fusang = {
 			}
 
 			c_zhisan = {
+				capital = c_haibu
+				landless = yes
 				color = { 45 160 98 }
 			}
 
 			c_sujinyuan = {
+				capital = c_haibu
+				landless = yes
 				color = { 129 66 99 }
 			}
 
@@ -32127,6 +32901,8 @@ e_fusang = {
 			}
 
 			c_yuzuo = {
+				capital = c_haibu
+				landless = yes
 				color = { 127 33 196 }
 			}
 
@@ -32155,6 +32931,8 @@ e_fusang = {
 			}
 
 			c_tuxia = {
+				capital = c_haibu
+				landless = yes
 				color = { 155 79 134 }
 			}
 
@@ -32202,6 +32980,8 @@ e_fusang = {
 			}
 
 			c_tianhe = {
+				capital = c_haibu
+				landless = yes
 				color = { 188 78 1 }
 			}
 		}
@@ -32230,6 +33010,8 @@ e_fusang = {
 			}
 
 			c_shangxian = {
+				capital = c_shangduima
+				landless = yes
 				color = { 182 54 153 }
 			}
 		}
@@ -32239,6 +33021,8 @@ e_fusang = {
 			capital = c_wenhuoliang1
 
 			c_wenhuoliang1 = {
+				capital = c_shangduima
+				landless = yes
 				color = { 171 207 87 }
 			}
 		}
@@ -32272,6 +33056,8 @@ e_fusang = {
 			}
 
 			c_houxia = {
+				capital = c_xuemen
+				landless = yes
 				color = { 130 48 159 }
 			}
 
@@ -32367,18 +33153,26 @@ e_fusang = {
 			}
 
 			c_dadao = {
+				capital = c_xiongmao1
+				landless = yes
 				color = { 100 58 51 }
 			}
 
 			c_shaba = {
+				capital = c_xiongmao1
+				landless = yes
 				color = { 46 72 163 }
 			}
 
 			c_dunu = {
+				capital = c_xiongmao1
+				landless = yes
 				color = { 174 75 36 }
 			}
 
 			c_zhoufang = {
+				capital = c_xiongmao1
+				landless = yes
 				color = { 101 75 98 }
 			}
 
@@ -32451,6 +33245,8 @@ e_fusang = {
 			}
 
 			c_jianaiazhi = {
+				capital = c_shijian
+				landless = yes
 				color = { 130 93 39 }
 			}
 
@@ -32484,14 +33280,20 @@ e_fusang = {
 			}
 
 			c_nahe = {
+				capital = c_shijian
+				landless = yes
 				color = { 46 102 168 }
 			}
 
 			c_ermo = {
+				capital = c_shijian
+				landless = yes
 				color = { 88 105 41 }
 			}
 
 			c_yizhi2 = {
+				capital = c_shijian
+				landless = yes
 				color = { 172 111 42 }
 			}
 		}
@@ -32506,6 +33308,8 @@ e_fusang = {
 			capital = c_xiaodoudao
 
 			c_xiaodoudao = {
+				capital = c_beihoupinzhi
+				landless = yes
 				color = { 46 27 28 }
 			}
 		}
@@ -32534,22 +33338,32 @@ e_fusang = {
 			}
 
 			c_sanci = {
+				capital = c_beihoupinzhi
+				landless = yes
 				color = { 88 195 56 }
 			}
 
 			c_yudiao = {
+				capital = c_beihoupinzhi
+				landless = yes
 				color = { 130 198 184 }
 			}
 
 			c_shiluo1 = {
+				capital = c_beihoupinzhi
+				landless = yes
 				color = { 172 201 57 }
 			}
 
 			c_sanxi = {
+				capital = c_beihoupinzhi
+				landless = yes
 				color = { 88 210 186 }
 			}
 
 			c_weitian = {
+				capital = c_beihoupinzhi
+				landless = yes
 				color = { 130 0 59 }
 			}
 
@@ -32588,6 +33402,8 @@ e_fusang = {
 			}
 
 			c_jibeixue = {
+				capital = c_beihoupinzhi
+				landless = yes
 				color = { 172 68 138 }
 			}
 
@@ -32621,10 +33437,14 @@ e_fusang = {
 			}
 
 			c_pinzhi = {
+				capital = c_beihoupinzhi
+				landless = yes
 				color = { 130 15 189 }
 			}
 
 			c_yexunai = {
+				capital = c_beihoupinzhi
+				landless = yes
 				color = { 4 21 190 }
 			}
 
@@ -32673,6 +33493,8 @@ e_fusang = {
 			capital = c_beizhong
 
 			c_yinghe = {
+				capital = c_jibeizhong
+				landless = yes
 				color = { 88 142 66 }
 			}
 
@@ -32706,6 +33528,8 @@ e_fusang = {
 			}
 
 			c_beizhong = {
+				capital = c_jibeizhong
+				landless = yes
 				color = { 120 73 116 }
 			}
 		}
@@ -32715,14 +33539,20 @@ e_fusang = {
 			capital = c_jiaye
 
 			c_jiaye = {
+				capital = c_xiadao
+				landless = yes
 				color = { 4 51 195 }
 			}
 
 			c_gaodaogong = {
+				capital = c_xiadao
+				landless = yes
 				color = { 144 38 166 }
 			}
 
 			c_wawu = {
+				capital = c_xiadao
+				landless = yes
 				color = { 46 54 68 }
 			}
 
@@ -32756,10 +33586,14 @@ e_fusang = {
 			}
 
 			c_houmu = {
+				capital = c_xiadao
+				landless = yes
 				color = { 172 63 197 }
 			}
 
 			c_xiaoduo = {
+				capital = c_xiadao
+				landless = yes
 				color = { 4 166 70 }
 			}
 
@@ -32798,6 +33632,8 @@ e_fusang = {
 			capital = c_meizuo
 
 			c_meizuo = {
+				capital = c_yubaowubo
+				landless = yes
 				color = { 121 65 116 }
 			}
 
@@ -32831,6 +33667,8 @@ e_fusang = {
 			}
 
 			c_kutian = {
+				capital = c_yubaowubo
+				landless = yes
 				color = { 88 87 201 }
 			}
 
@@ -32883,6 +33721,8 @@ e_fusang = {
 			}
 
 			c_yinduo = {
+				capital = c_yubaowubo
+				landless = yes
 				color = { 130 105 204 }
 			}
 		}
@@ -32892,14 +33732,20 @@ e_fusang = {
 			capital = c_taibo
 
 			c_beiqian = {
+				capital = c_shangdao1
+				landless = yes
 				color = { 136 45 128 }
 			}
 
 			c_sanye2 = {
+				capital = c_shangdao1
+				landless = yes
 				color = { 172 108 77 }
 			}
 
 			c_chiban = {
+				capital = c_shangdao1
+				landless = yes
 				color = { 4 111 205 }
 			}
 
@@ -33010,22 +33856,32 @@ e_fusang = {
 			}
 
 			c_shanxian = {
+				capital = c_aqi
+				landless = yes
 				color = { 130 123 44 }
 			}
 
 			c_gaotian = {
+				capital = c_aqi
+				landless = yes
 				color = { 172 126 172 }
 			}
 
 			c_zhaotian = {
+				capital = c_aqi
+				landless = yes
 				color = { 4 129 45 }
 			}
 
 			c_anyun = {
+				capital = c_aqi
+				landless = yes
 				color = { 177 37 162 }
 			}
 
 			c_fengtian1 = {
+				capital = c_aqi
+				landless = yes
 				color = { 88 135 46 }
 			}
 
@@ -33069,14 +33925,20 @@ e_fusang = {
 			capital = c_chuyun1
 
 			c_shenmen = {
+				capital = c_chuyun1
+				landless = yes
 				color = { 88 150 176 }
 			}
 
 			c_fanshi = {
+				capital = c_chuyun1
+				landless = yes
 				color = { 130 153 49 }
 			}
 
 			c_renduo = {
+				capital = c_chuyun1
+				landless = yes
 				color = { 172 156 177 }
 			}
 
@@ -33115,6 +33977,8 @@ e_fusang = {
 			}
 
 			c_dayuan = {
+				capital = c_chuyun1
+				landless = yes
 				color = { 130 168 179 }
 			}
 
@@ -33148,14 +34012,20 @@ e_fusang = {
 			}
 
 			c_xunfeng = {
+				capital = c_chuyun1
+				landless = yes
 				color = { 88 180 181 }
 			}
 
 			c_qiulu = {
+				capital = c_chuyun1
+				landless = yes
 				color = { 130 183 54 }
 			}
 
 			c_chuyun = {
+				capital = c_chuyun1
+				landless = yes
 				color = { 116 76 112 }
 			}
 		}
@@ -33199,10 +34069,14 @@ e_fusang = {
 			}
 
 			c_riye = {
+				capital = c_boqi
+				landless = yes
 				color = { 46 129 208 }
 			}
 
 			c_boshe = {
+				capital = c_boqi
+				landless = yes
 				color = { 136 65 130 }
 			}
 
@@ -33226,6 +34100,8 @@ e_fusang = {
 			}
 
 			c_jiumi2 = {
+				capital = c_boqi
+				landless = yes
 				color = { 88 147 211 }
 			}
 
@@ -33293,10 +34169,14 @@ e_fusang = {
 			}
 
 			c_xiduo = {
+				capital = c_yuhe
+				landless = yes
 				color = { 88 183 146 }
 			}
 
 			c_fuxue = {
+				capital = c_yuhe
+				landless = yes
 				color = { 130 186 19 }
 			}
 
@@ -33345,26 +34225,38 @@ e_fusang = {
 			}
 
 			c_jiumi = {
+				capital = c_yuhe
+				landless = yes
 				color = { 4 192 20 }
 			}
 
 			c_yumo2 = {
+				capital = c_yuhe
+				landless = yes
 				color = { 234 241 248 }
 			}
 
 			c_fengzao = {
+				capital = c_yuhe
+				landless = yes
 				color = { 46 195 148 }
 			}
 
 			c_numa = {
+				capital = c_yuhe
+				landless = yes
 				color = { 88 198 21 }
 			}
 
 			c_xiaoshi = {
+				capital = c_yuhe
+				landless = yes
 				color = { 130 201 149 }
 			}
 
 			c_shenye = {
+				capital = c_yuhe
+				landless = yes
 				color = { 172 204 22 }
 			}
 		}
@@ -33408,6 +34300,8 @@ e_fusang = {
 			}
 
 			c_boduo = {
+				capital = c_fanduo
+				landless = yes
 				color = { 143 28 181 }
 			}
 
@@ -33441,14 +34335,20 @@ e_fusang = {
 			}
 
 			c_tuzuo = {
+				capital = c_fanduo
+				landless = yes
 				color = { 147 46 31 }
 			}
 
 			c_duzuo = {
+				capital = c_fanduo
+				landless = yes
 				color = { 122 37 168 }
 			}
 
 			c_xiangwomei = {
+				capital = c_fanduo
+				landless = yes
 				color = { 88 168 16 }
 			}
 
@@ -33511,10 +34411,14 @@ e_fusang = {
 			}
 
 			c_danei = {
+				capital = c_zhang4
+				landless = yes
 				color = { 115 228 203 }
 			}
 
 			c_shengpu = {
+				capital = c_zhang4
+				landless = yes
 				color = { 88 0 151 }
 			}
 
@@ -33543,10 +34447,14 @@ e_fusang = {
 			}
 
 			c_hanchuan = {
+				capital = c_zhang4
+				landless = yes
 				color = { 150 245 234 }
 			}
 
 			c_meima = {
+				capital = c_zhang4
+				landless = yes
 				color = { 188 15 26 }
 			}
 
@@ -33590,18 +34498,26 @@ e_fusang = {
 			capital = c_zanqi
 
 			c_zanqi = {
+				capital = c_aye
+				landless = yes
 				color = { 86 27 17 }
 			}
 
 			c_daneijun = {
+				capital = c_aye
+				landless = yes
 				color = { 88 30 156 }
 			}
 
 			c_hanchuanjun = {
+				capital = c_aye
+				landless = yes
 				color = { 130 33 29 }
 			}
 
 			c_sanmu = {
+				capital = c_aye
+				landless = yes
 				color = { 172 36 157 }
 			}
 		}
@@ -33611,10 +34527,14 @@ e_fusang = {
 			capital = c_xiangchuan
 
 			c_fengtian = {
+				capital = c_aye
+				landless = yes
 				color = { 137 191 166 }
 			}
 
 			c_tizu = {
+				capital = c_aye
+				landless = yes
 				color = { 4 39 130 }
 			}
 
@@ -33653,6 +34573,8 @@ e_fusang = {
 			}
 
 			c_xiangchuan = {
+				capital = c_aye
+				landless = yes
 				color = { 194 45 31 }
 			}
 		}
@@ -33667,6 +34589,8 @@ e_fusang = {
 			capital = c_danlu
 
 			c_danlu = {
+				capital = c_jinming1
+				landless = yes
 				color = { 166 75 61 }
 			}
 
@@ -33695,14 +34619,20 @@ e_fusang = {
 			capital = c_zhenjianya
 
 			c_bomo = {
+				capital = c_yibao
+				landless = yes
 				color = { 115 39 108 }
 			}
 
 			c_zhenjianya = {
+				capital = c_yibao
+				landless = yes
 				color = { 134 64 129 }
 			}
 
 			c_chisui = {
+				capital = c_yibao
+				landless = yes
 				color = { 88 207 221 }
 			}
 
@@ -33765,6 +34695,8 @@ e_fusang = {
 			capital = c_tuohe
 
 			c_tuohe = {
+				capital = c_zhenjian
+				landless = yes
 				color = { 188 39 1 }
 			}
 
@@ -33832,6 +34764,8 @@ e_fusang = {
 			capital = c_chishi
 
 			c_chishi = {
+				capital = c_hemao
+				landless = yes
 				color = { 130 27 99 }
 			}
 
@@ -33855,6 +34789,8 @@ e_fusang = {
 			}
 
 			c_meinan = {
+				capital = c_hemao
+				landless = yes
 				color = { 46 36 128 }
 			}
 		}
@@ -33926,18 +34862,26 @@ e_fusang = {
 			}
 
 			c_shuiyi = {
+				capital = c_qiduo
+				landless = yes
 				color = { 46 159 213 }
 			}
 
 			c_bashang = {
+				capital = c_qiduo
+				landless = yes
 				color = { 88 162 86 }
 			}
 
 			c_zhitou = {
+				capital = c_qiduo
+				landless = yes
 				color = { 130 165 214 }
 			}
 
 			c_yimei = {
+				capital = c_qiduo
+				landless = yes
 				color = { 172 168 87 }
 			}
 		}
@@ -33990,10 +34934,14 @@ e_fusang = {
 			}
 
 			c_zhinaizuomu = {
+				capital = c_erfang
+				landless = yes
 				color = { 172 183 217 }
 			}
 
 			c_danma = {
+				capital = c_erfang
+				landless = yes
 				color = { 122 45 115 }
 			}
 		}
@@ -34003,6 +34951,8 @@ e_fusang = {
 			capital = c_qiduo1
 
 			c_qiduo1 = {
+				capital = c_balu
+				landless = yes
 				color = { 4 186 90 }
 			}
 
@@ -34036,10 +34986,14 @@ e_fusang = {
 			}
 
 			c_chaolai = {
+				capital = c_balu
+				landless = yes
 				color = { 130 195 219 }
 			}
 
 			c_ciyu = {
+				capital = c_balu
+				landless = yes
 				color = { 4 201 220 }
 			}
 		}
@@ -34078,6 +35032,8 @@ e_fusang = {
 			}
 
 			c_gaoye = {
+				capital = c_danchima
+				landless = yes
 				color = { 4 48 130 }
 			}
 
@@ -34130,6 +35086,8 @@ e_fusang = {
 			}
 
 			c_danhou = {
+				capital = c_danchima
+				landless = yes
 				color = { 95 32 89 }
 			}
 		}
@@ -34173,10 +35131,14 @@ e_fusang = {
 			}
 
 			c_bijiamei = {
+				capital = c_fuzhi
+				landless = yes
 				color = { 46 181 8 }
 			}
 
 			c_helu = {
+				capital = c_fuzhi
+				landless = yes
 				color = { 130 87 9 }
 			}
 		}
@@ -34234,6 +35196,8 @@ e_fusang = {
 			}
 
 			c_duoji = {
+				capital = c_guishan
+				landless = yes
 				color = { 93 135 232 }
 			}
 		}
@@ -34267,10 +35231,14 @@ e_fusang = {
 			}
 
 			c_xiangcaojin = {
+				capital = c_shejin
+				landless = yes
 				color = { 118 84 102 }
 			}
 
 			c_chuanbian = {
+				capital = c_shejin
+				landless = yes
 				color = { 4 108 140 }
 			}
 
@@ -34304,6 +35272,8 @@ e_fusang = {
 			}
 
 			c_langsu = {
+				capital = c_shejin
+				landless = yes
 				color = { 172 120 142 }
 			}
 		}
@@ -34337,10 +35307,14 @@ e_fusang = {
 			}
 
 			c_henei = {
+				capital = c_fanhenei
+				landless = yes
 				color = { 212 122 108 }
 			}
 
 			c_chuannei = {
+				capital = c_fanhenei
+				landless = yes
 				color = { 130 132 144 }
 			}
 
@@ -34369,6 +35343,8 @@ e_fusang = {
 			}
 
 			c_zhigui = {
+				capital = c_fanhenei
+				landless = yes
 				color = { 88 144 146 }
 			}
 		}
@@ -34392,6 +35368,8 @@ e_fusang = {
 			}
 
 			c_hequan1 = {
+				capital = c_jiangyuangong
+				landless = yes
 				color = { 130 147 19 }
 			}
 
@@ -34415,6 +35393,8 @@ e_fusang = {
 			}
 
 			c_shicuan = {
+				capital = c_jiangyuangong
+				landless = yes
 				color = { 46 156 148 }
 			}
 		}
@@ -34495,14 +35475,20 @@ e_fusang = {
 			}
 
 			c_gecheng1 = {
+				capital = c_dahe
+				landless = yes
 				color = { 46 186 153 }
 			}
 
 			c_renhai = {
+				capital = c_dahe
+				landless = yes
 				color = { 88 189 26 }
 			}
 
 			c_shishi1 = {
+				capital = c_dahe
+				landless = yes
 				color = { 130 192 154 }
 			}
 
@@ -34584,10 +35570,14 @@ e_fusang = {
 			}
 
 			c_sigui = {
+				capital = c_dahe
+				landless = yes
 				color = { 88 204 156 }
 			}
 
 			c_guanlai = {
+				capital = c_dahe
+				landless = yes
 				color = { 130 207 29 }
 			}
 		}
@@ -34597,18 +35587,26 @@ e_fusang = {
 			capital = c_yihe
 
 			c_yihe = {
+				capital = c_shejin
+				landless = yes
 				color = { 154 65 51 }
 			}
 
 			c_yingjun = {
+				capital = c_shejin
+				landless = yes
 				color = { 46 63 168 }
 			}
 
 			c_shandai = {
+				capital = c_shejin
+				landless = yes
 				color = { 88 166 41 }
 			}
 
 			c_anbei = {
+				capital = c_shejin
+				landless = yes
 				color = { 130 69 169 }
 			}
 		}
@@ -34647,10 +35645,14 @@ e_fusang = {
 			}
 
 			c_shancheng = {
+				capital = c_shanbei
+				landless = yes
 				color = { 190 117 106 }
 			}
 
 			c_fengbanguan = {
+				capital = c_shanbei
+				landless = yes
 				color = { 123 68 192 }
 			}
 
@@ -34684,6 +35686,8 @@ e_fusang = {
 			capital = c_sutai
 
 			c_yezhou = {
+				capital = c_sutai
+				landless = yes
 				color = { 235 236 245 }
 			}
 
@@ -34717,10 +35721,14 @@ e_fusang = {
 			}
 
 			c_jinjiang = {
+				capital = c_sutai
+				landless = yes
 				color = { 31 112 32 }
 			}
 
 			c_shuikou = {
+				capital = c_sutai
+				landless = yes
 				color = { 127 222 188 }
 			}
 
@@ -34754,18 +35762,26 @@ e_fusang = {
 			}
 
 			c_quanshang1 = {
+				capital = c_sutai
+				landless = yes
 				color = { 46 93 173 }
 			}
 
 			c_bantian = {
+				capital = c_sutai
+				landless = yes
 				color = { 88 96 46 }
 			}
 
 			c_qianjing = {
+				capital = c_sutai
+				landless = yes
 				color = { 130 99 174 }
 			}
 
 			c_yixiang1 = {
+				capital = c_sutai
+				landless = yes
 				color = { 172 102 47 }
 			}
 		}
@@ -34780,14 +35796,20 @@ e_fusang = {
 			capital = c_jiyi
 
 			c_jiyi = {
+				capital = c_andi
+				landless = yes
 				color = { 190 68 49 }
 			}
 
 			c_nahe1 = {
+				capital = c_andi
+				landless = yes
 				color = { 4 200 30 }
 			}
 
 			c_yidujun = {
+				capital = c_andi
+				landless = yes
 				color = { 46 3 158 }
 			}
 
@@ -34930,6 +35952,8 @@ e_fusang = {
 			}
 
 			c_huangbanjin = {
+				capital = c_xiongye
+				landless = yes
 				color = { 157 29 185 }
 			}
 		}
@@ -34944,14 +35968,20 @@ e_fusang = {
 			capital = c_lingluguan
 
 			c_yishi2 = {
+				capital = c_zhuyi
+				landless = yes
 				color = { 198 57 83 }
 			}
 
 			c_lingluguan = {
+				capital = c_zhuyi
+				landless = yes
 				color = { 198 57 83 }
 			}
 
 			c_fangao = {
+				capital = c_zhuyi
+				landless = yes
 				color = { 46 33 163 }
 			}
 
@@ -35014,6 +36044,8 @@ e_fusang = {
 			}
 
 			c_annong = {
+				capital = c_zhuyi
+				landless = yes
 				color = { 4 45 165 }
 			}
 
@@ -35042,18 +36074,26 @@ e_fusang = {
 			}
 
 			c_sanchong = {
+				capital = c_zhuyi
+				landless = yes
 				color = { 88 51 166 }
 			}
 
 			c_azuojie = {
+				capital = c_zhuyi
+				landless = yes
 				color = { 130 54 39 }
 			}
 
 			c_zhumingbu = {
+				capital = c_zhuyi
+				landless = yes
 				color = { 172 57 167 }
 			}
 
 			c_sanming = {
+				capital = c_zhuyi
+				landless = yes
 				color = { 4 60 140 }
 			}
 		}
@@ -35068,6 +36108,8 @@ e_fusang = {
 			capital = c_jiaolu
 
 			c_jiaolu = {
+				capital = c_dansheng
+				landless = yes
 				color = { 124 35 182 }
 			}
 
@@ -35106,6 +36148,8 @@ e_fusang = {
 			}
 
 			c_zuyu = {
+				capital = c_dansheng
+				landless = yes
 				color = { 172 117 177 }
 			}
 
@@ -35144,6 +36188,8 @@ e_fusang = {
 			}
 
 			c_sanguo = {
+				capital = c_dansheng
+				landless = yes
 				color = { 173 58 135 }
 			}
 		}
@@ -35221,10 +36267,14 @@ e_fusang = {
 			capital = c_nengdeng
 
 			c_nengdeng = {
+				capital = c_fengzhi
+				landless = yes
 				color = { 0 220 2 }
 			}
 
 			c_zhuzhou = {
+				capital = c_fengzhi
+				landless = yes
 				color = { 130 144 54 }
 			}
 
@@ -35248,6 +36298,8 @@ e_fusang = {
 			}
 
 			c_yucang = {
+				capital = c_fengzhi
+				landless = yes
 				color = { 4 150 55 }
 			}
 		}
@@ -35257,10 +36309,14 @@ e_fusang = {
 			capital = c_yimitou
 
 			c_yimitou = {
+				capital = c_dansheng
+				landless = yes
 				color = { 148 66 158 }
 			}
 
 			c_dibo = {
+				capital = c_dansheng
+				landless = yes
 				color = { 46 153 183 }
 			}
 		}
@@ -35299,6 +36355,8 @@ e_fusang = {
 			}
 
 			c_maibi = {
+				capital = c_yuezhong
+				landless = yes
 				color = { 88 156 56 }
 			}
 		}
@@ -35308,6 +36366,8 @@ e_fusang = {
 			capital = c_jiubiqi
 
 			c_jiubiqi = {
+				capital = c_gaozhi
+				landless = yes
 				color = { 161 75 152 }
 			}
 
@@ -35341,6 +36401,8 @@ e_fusang = {
 			}
 
 			c_zuodu = {
+				capital = c_gaozhi
+				landless = yes
 				color = { 194 63 108 }
 			}
 		}
@@ -35485,10 +36547,14 @@ e_fusang = {
 			}
 
 			c_feituo = {
+				capital = c_feiyi
+				landless = yes
 				color = { 186 44 111 }
 			}
 
 			c_yitian = {
+				capital = c_feiyi
+				landless = yes
 				color = { 130 6 194 }
 			}
 		}
@@ -35503,6 +36569,8 @@ e_fusang = {
 			capital = c_chuntiamen
 
 			c_ruoxia = {
+				capital = c_etian
+				landless = yes
 				color = { 17 169 17 }
 			}
 
@@ -35541,6 +36609,8 @@ e_fusang = {
 			}
 
 			c_danhai = {
+				capital = c_etian
+				landless = yes
 				color = { 141 46 169 }
 			}
 
@@ -35603,10 +36673,14 @@ e_fusang = {
 			}
 
 			c_xintian1 = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 46 27 133 }
 			}
 
 			c_duohu = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 188 30 6 }
 			}
 
@@ -35645,22 +36719,32 @@ e_fusang = {
 			}
 
 			c_zuowei = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 172 36 7 }
 			}
 
 			c_piangan = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 4 39 135 }
 			}
 
 			c_ligen = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 46 142 8 }
 			}
 
 			c_yuxubi = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 88 45 136 }
 			}
 
 			c_cheping = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 130 48 9 }
 			}
 
@@ -35704,30 +36788,44 @@ e_fusang = {
 			}
 
 			c_wuyezhi = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 188 78 123 }
 			}
 
 			c_yematuo = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 46 57 138 }
 			}
 
 			c_erduoduo = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 88 160 11 }
 			}
 
 			c_yubolianqi = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 130 63 139 }
 			}
 
 			c_bafan = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 172 66 12 }
 			}
 
 			c_zuhe = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 4 69 140 }
 			}
 
 			c_xiaye = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 81 125 41 }
 			}
 
@@ -35771,14 +36869,20 @@ e_fusang = {
 			}
 
 			c_zhubo = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 172 71 155 }
 			}
 
 			c_hanchuanjun1 = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 88 105 146 }
 			}
 
 			c_naxujun = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 130 108 19 }
 			}
 
@@ -35817,6 +36921,8 @@ e_fusang = {
 			}
 
 			c_heneijun = {
+				capital = c_zhizhifu
+				landless = yes
 				color = { 130 123 149 }
 			}
 		}
@@ -35831,14 +36937,20 @@ e_fusang = {
 			capital = c_duomo
 
 			c_wuzang = {
+				capital = c_jiuliangqi
+				landless = yes
 				color = { 95 25 45 }
 			}
 
 			c_zhifu = {
+				capital = c_jiuliangqi
+				landless = yes
 				color = { 137 142 157 }
 			}
 
 			c_jianghu = {
+				capital = c_jiuliangqi
+				landless = yes
 				color = { 108 250 203 }
 			}
 
@@ -35872,6 +36984,8 @@ e_fusang = {
 			}
 
 			c_duomo = {
+				capital = c_jiuliangqi
+				landless = yes
 				color = { 46 195 98 }
 			}
 
@@ -35910,30 +37024,44 @@ e_fusang = {
 			}
 
 			c_zhizhimo = {
+				capital = c_jiuliangqi
+				landless = yes
 				color = { 4 207 0 }
 			}
 
 			c_ataizhi = {
+				capital = c_jiuliangqi
+				landless = yes
 				color = { 46 210 128 }
 			}
 
 			c_bizhi = {
+				capital = c_jiuliangqi
+				landless = yes
 				color = { 88 0 201 }
 			}
 
 			c_yubaozuozhi = {
+				capital = c_jiuliangqi
+				landless = yes
 				color = { 130 3 129 }
 			}
 
 			c_banzuobo = {
+				capital = c_jiuliangqi
+				landless = yes
 				color = { 172 6 2 }
 			}
 
 			c_zhizhifuguo = {
+				capital = c_jiuliangqi
+				landless = yes
 				color = { 4 9 130 }
 			}
 
 			c_gutaiwan = {
+				capital = c_jiuliangqi
+				landless = yes
 				color = { 46 212 3 }
 			}
 
@@ -35967,6 +37095,8 @@ e_fusang = {
 			}
 
 			c_nahejun1 = {
+				capital = c_jiuliangqi
+				landless = yes
 				color = { 130 18 4 }
 			}
 		}
@@ -36005,18 +37135,26 @@ e_fusang = {
 			}
 
 			c_abo = {
+				capital = c_anfang
+				landless = yes
 				color = { 168 63 169 }
 			}
 
 			c_zhangma = {
+				capital = c_anfang
+				landless = yes
 				color = { 88 168 221 }
 			}
 
 			c_amobo = {
+				capital = c_anfang
+				landless = yes
 				color = { 130 171 94 }
 			}
 
 			c_malaitian1 = {
+				capital = c_anfang
+				landless = yes
 				color = { 172 174 222 }
 			}
 
@@ -36045,14 +37183,20 @@ e_fusang = {
 			}
 
 			c_yinbo = {
+				capital = c_anfang
+				landless = yes
 				color = { 46 180 223 }
 			}
 
 			c_xiangma = {
+				capital = c_anfang
+				landless = yes
 				color = { 88 183 96 }
 			}
 
 			c_zuodao = {
+				capital = c_anfang
+				landless = yes
 				color = { 130 186 224 }
 			}
 
@@ -36086,10 +37230,14 @@ e_fusang = {
 			}
 
 			c_xiazong = {
+				capital = c_anfang
+				landless = yes
 				color = { 156 50 80 }
 			}
 
 			c_shangzong = {
+				capital = c_anfang
+				landless = yes
 				color = { 129 13 47 }
 			}
 
@@ -36118,26 +37266,38 @@ e_fusang = {
 			}
 
 			c_malaitian = {
+				capital = c_anfang
+				landless = yes
 				color = { 123 29 193 }
 			}
 
 			c_shanghai = {
+				capital = c_anfang
+				landless = yes
 				color = { 199 85 118 }
 			}
 
 			c_jugong = {
+				capital = c_anfang
+				landless = yes
 				color = { 144 48 157 }
 			}
 
 			c_ma4 = {
+				capital = c_anfang
+				landless = yes
 				color = { 177 74 179 }
 			}
 
 			c_yishen = {
+				capital = c_anfang
+				landless = yes
 				color = { 132 35 126 }
 			}
 
 			c_wushe = {
+				capital = c_anfang
+				landless = yes
 				color = { 185 79 164 }
 			}
 		}
@@ -36152,18 +37312,26 @@ e_fusang = {
 			capital = c_ayoujiabo
 
 			c_xiangmo = {
+				capital = c_ayoujiabo
+				landless = yes
 				color = { 140 106 37 }
 			}
 
 			c_liancan = {
+				capital = c_ayoujiabo
+				landless = yes
 				color = { 4 117 85 }
 			}
 
 			c_yupu = {
+				capital = c_ayoujiabo
+				landless = yes
 				color = { 46 120 213 }
 			}
 
 			c_yubaoxumei = {
+				capital = c_ayoujiabo
+				landless = yes
 				color = { 88 123 86 }
 			}
 
@@ -36202,10 +37370,14 @@ e_fusang = {
 			capital = c_xiangwu1
 
 			c_xiangwu1 = {
+				capital = c_ayoujiabo
+				landless = yes
 				color = { 141 38 132 }
 			}
 
 			c_shizhang = {
+				capital = c_ayoujiabo
+				landless = yes
 				color = { 196 82 187 }
 			}
 		}
@@ -36220,6 +37392,8 @@ e_fusang = {
 			capital = c_zhumo
 
 			c_zhumo = {
+				capital = c_xinnong
+				landless = yes
 				color = { 138 139 160 }
 			}
 
@@ -36258,6 +37432,8 @@ e_fusang = {
 			}
 
 			c_zoufang = {
+				capital = c_xinnong
+				landless = yes
 				color = { 107 255 208 }
 			}
 
@@ -36286,6 +37462,8 @@ e_fusang = {
 			}
 
 			c_zuojiu = {
+				capital = c_xinnong
+				landless = yes
 				color = { 46 150 218 }
 			}
 		}
@@ -36295,18 +37473,26 @@ e_fusang = {
 			capital = c_anyun2
 
 			c_anyun2 = {
+				capital = c_gaojin
+				landless = yes
 				color = { 88 153 91 }
 			}
 
 			c_keye = {
+				capital = c_gaojin
+				landless = yes
 				color = { 135 57 172 }
 			}
 
 			c_gengji = {
+				capital = c_gaojin
+				landless = yes
 				color = { 130 156 219 }
 			}
 
 			c_keyepin = {
+				capital = c_gaojin
+				landless = yes
 				color = { 172 159 92 }
 			}
 
@@ -36345,6 +37531,8 @@ e_fusang = {
 			capital = c_junhejun
 
 			c_junhe = {
+				capital = c_junhejun
+				landless = yes
 				color = { 176 127 28 }
 			}
 
@@ -36388,6 +37576,8 @@ e_fusang = {
 			}
 
 			c_yidou = {
+				capital = c_junhejun
+				landless = yes
 				color = { 207 147 27 }
 			}
 
@@ -36416,6 +37606,8 @@ e_fusang = {
 			}
 
 			c_nahejun = {
+				capital = c_junhejun
+				landless = yes
 				color = { 172 114 212 }
 			}
 		}
@@ -36425,10 +37617,14 @@ e_fusang = {
 			capital = c_wubaiyuan
 
 			c_luyuan = {
+				capital = c_youdu1
+				landless = yes
 				color = { 183 69 127 }
 			}
 
 			c_zhuliuhe = {
+				capital = c_youdu1
+				landless = yes
 				color = { 142 38 193 }
 			}
 
@@ -36467,10 +37663,14 @@ e_fusang = {
 			}
 
 			c_yitou = {
+				capital = c_youdu1
+				landless = yes
 				color = { 130 96 209 }
 			}
 
 			c_wubaiyuan = {
+				capital = c_youdu1
+				landless = yes
 				color = { 172 99 82 }
 			}
 		}
@@ -36485,14 +37685,20 @@ e_fusang = {
 			capital = c_shanli
 
 			c_douliu = {
+				capital = c_badai
+				landless = yes
 				color = { 85 8 196 }
 			}
 
 			c_shanli = {
+				capital = c_badai
+				landless = yes
 				color = { 126 227 185 }
 			}
 
 			c_jiafei = {
+				capital = c_badai
+				landless = yes
 				color = { 212 158 48 }
 			}
 
@@ -36546,30 +37752,44 @@ e_fusang = {
 			capital = c_bupo
 
 			c_sanyehou = {
+				capital = c_huina
+				landless = yes
 				color = { 132 83 146 }
 			}
 
 			c_wuyi = {
+				capital = c_huina
+				landless = yes
 				color = { 94 130 227 }
 			}
 
 			c_anba = {
+				capital = c_huina
+				landless = yes
 				color = { 88 18 196 }
 			}
 
 			c_bupo = {
+				capital = c_huina
+				landless = yes
 				color = { 130 21 69 }
 			}
 
 			c_duoyun = {
+				capital = c_huina
+				landless = yes
 				color = { 172 24 197 }
 			}
 
 			c_gemou = {
+				capital = c_huina
+				landless = yes
 				color = { 4 27 170 }
 			}
 
 			c_meinong = {
+				capital = c_huina
+				landless = yes
 				color = { 32 106 33 }
 			}
 
@@ -36608,14 +37828,20 @@ e_fusang = {
 			}
 
 			c_tuqi = {
+				capital = c_huina
+				landless = yes
 				color = { 149 249 229 }
 			}
 
 			c_keye2 = {
+				capital = c_huina
+				landless = yes
 				color = { 138 186 169 }
 			}
 
 			c_gaoxu = {
+				capital = c_huina
+				landless = yes
 				color = { 5 248 77 }
 			}
 
@@ -36674,18 +37900,26 @@ e_fusang = {
 			capital = c_yuanjiang
 
 			c_fentian = {
+				capital = c_qinyuan
+				landless = yes
 				color = { 88 78 206 }
 			}
 
 			c_suhe = {
+				capital = c_qinyuan
+				landless = yes
 				color = { 161 69 124 }
 			}
 
 			c_jiunu = {
+				capital = c_qinyuan
+				landless = yes
 				color = { 151 31 164 }
 			}
 
 			c_yuanjiang = {
+				capital = c_qinyuan
+				landless = yes
 				color = { 145 125 84 }
 			}
 		}
@@ -36695,14 +37929,20 @@ e_fusang = {
 			capital = c_yichang3
 
 			c_yuandanhai = {
+				capital = c_qinyuan
+				landless = yes
 				color = { 167 52 179 }
 			}
 
 			c_yichang3 = {
+				capital = c_qinyuan
+				landless = yes
 				color = { 4 72 205 }
 			}
 
 			c_yinzuo = {
+				capital = c_qinyuan
+				landless = yes
 				color = { 46 175 78 }
 			}
 		}
@@ -36712,10 +37952,14 @@ e_fusang = {
 			capital = c_chengsi
 
 			c_zuoye = {
+				capital = c_qinyuan
+				landless = yes
 				color = { 172 84 207 }
 			}
 
 			c_chengsi = {
+				capital = c_qinyuan
+				landless = yes
 				color = { 130 81 79 }
 			}
 
@@ -36754,6 +37998,8 @@ e_fusang = {
 			}
 
 			c_zhouzhi = {
+				capital = c_qinyuan
+				landless = yes
 				color = { 4 187 80 }
 			}
 		}
@@ -36768,18 +38014,26 @@ e_fusang = {
 			capital = c_qingjian
 
 			c_sanhe1 = {
+				capital = c_sheye
+				landless = yes
 				color = { 112 168 113 }
 			}
 
 			c_qingjian = {
+				capital = c_sheye
+				landless = yes
 				color = { 88 48 201 }
 			}
 
 			c_jiamao1 = {
+				capital = c_sheye
+				landless = yes
 				color = { 130 51 74 }
 			}
 
 			c_etian1 = {
+				capital = c_sheye
+				landless = yes
 				color = { 172 54 202 }
 			}
 		}
@@ -36910,22 +38164,32 @@ e_fusang = {
 			}
 
 			c_zhongdaojun = {
+				capital = c_weizhang
+				landless = yes
 				color = { 46 30 198 }
 			}
 
 			c_yuli = {
+				capital = c_weizhang
+				landless = yes
 				color = { 188 33 71 }
 			}
 
 			c_danyu = {
+				capital = c_weizhang
+				landless = yes
 				color = { 130 36 199 }
 			}
 
 			c_nianyushi = {
+				capital = c_weizhang
+				landless = yes
 				color = { 172 39 72 }
 			}
 
 			c_chunbu = {
+				capital = c_weizhang
+				landless = yes
 				color = { 4 42 200 }
 			}
 		}
@@ -36940,6 +38204,8 @@ e_fusang = {
 			capital = c_cijun
 
 			c_yinqi = {
+				capital = c_cijun
+				landless = yes
 				color = { 140 133 166 }
 			}
 
@@ -36973,6 +38239,8 @@ e_fusang = {
 			}
 
 			c_zhifu1 = {
+				capital = c_cijun
+				landless = yes
 				color = { 4 189 55 }
 			}
 		}
@@ -37050,22 +38318,32 @@ e_rigaojian = {
 			}
 
 			c_xingxi = {
+				capital = c_henei1
+				landless = yes
 				color = { 172 81 142 }
 			}
 
 			c_baifa = {
+				capital = c_henei1
+				landless = yes
 				color = { 4 184 15 }
 			}
 
 			c_cicheng = {
+				capital = c_henei1
+				landless = yes
 				color = { 46 87 143 }
 			}
 
 			c_xinzhi1 = {
+				capital = c_henei1
+				landless = yes
 				color = { 88 90 16 }
 			}
 
 			c_jiuzi1 = {
+				capital = c_henei1
+				landless = yes
 				color = { 130 93 144 }
 			}
 
@@ -37099,10 +38377,14 @@ e_rigaojian = {
 			}
 
 			c_changlu = {
+				capital = c_henei1
+				landless = yes
 				color = { 106 21 45 }
 			}
 
 			c_jiuzhong = {
+				capital = c_henei1
+				landless = yes
 				color = { 151 52 138 }
 			}
 		}
@@ -37141,14 +38423,20 @@ e_rigaojian = {
 			}
 
 			c_yandai = {
+				capital = c_naxu
+				landless = yes
 				color = { 66 25 25 }
 			}
 
 			c_shibei = {
+				capital = c_naxu
+				landless = yes
 				color = { 194 83 172 }
 			}
 
 			c_hezhao = {
+				capital = c_naxu
+				landless = yes
 				color = { 130 138 24 }
 			}
 
@@ -37182,6 +38470,8 @@ e_rigaojian = {
 			}
 
 			c_achi1 = {
+				capital = c_naxu
+				landless = yes
 				color = { 46 147 153 }
 			}
 
@@ -37220,26 +38510,38 @@ e_rigaojian = {
 			capital = c_shicheng6
 
 			c_pancheng = {
+				capital = c_shichuan
+				landless = yes
 				color = { 143 147 57 }
 			}
 
 			c_gaozi = {
+				capital = c_shichuan
+				landless = yes
 				color = { 162 68 188 }
 			}
 
 			c_shicheng4 = {
+				capital = c_shichuan
+				landless = yes
 				color = { 158 59 135 }
 			}
 
 			c_achi = {
+				capital = c_shichuan
+				landless = yes
 				color = { 167 66 182 }
 			}
 
 			c_ranyu = {
+				capital = c_shichuan
+				landless = yes
 				color = { 153 55 148 }
 			}
 
 			c_gaoye1 = {
+				capital = c_shichuan
+				landless = yes
 				color = { 172 156 27 }
 			}
 
@@ -37273,6 +38575,8 @@ e_rigaojian = {
 			}
 
 			c_tiancun = {
+				capital = c_shichuan
+				landless = yes
 				color = { 46 162 28 }
 			}
 
@@ -37306,14 +38610,20 @@ e_rigaojian = {
 			}
 
 			c_xingfang = {
+				capital = c_shichuan
+				landless = yes
 				color = { 172 171 157 }
 			}
 
 			c_rili = {
+				capital = c_shichuan
+				landless = yes
 				color = { 4 174 30 }
 			}
 
 			c_yiju1 = {
+				capital = c_shichuan
+				landless = yes
 				color = { 46 177 158 }
 			}
 		}
@@ -37401,6 +38711,8 @@ e_rigaojian = {
 			}
 
 			c_mingqu = {
+				capital = c_xinfu
+				landless = yes
 				color = { 172 186 32 }
 			}
 		}
@@ -37410,18 +38722,26 @@ e_rigaojian = {
 			capital = c_yuzuo1
 
 			c_yijiu = {
+				capital = c_henei1
+				landless = yes
 				color = { 189 81 161 }
 			}
 
 			c_luqian = {
+				capital = c_henei1
+				landless = yes
 				color = { 59 61 21 }
 			}
 
 			c_yuzuo1 = {
+				capital = c_henei1
+				landless = yes
 				color = { 130 0 164 }
 			}
 
 			c_yizhi4 = {
+				capital = c_henei1
+				landless = yes
 				color = { 146 9 38 }
 			}
 		}
@@ -37431,6 +38751,8 @@ e_rigaojian = {
 			capital = c_taosheng
 
 			c_mulu = {
+				capital = c_taosheng
+				landless = yes
 				color = { 4 204 35 }
 			}
 
@@ -37459,6 +38781,8 @@ e_rigaojian = {
 			}
 
 			c_yuantian = {
+				capital = c_taosheng
+				landless = yes
 				color = { 4 6 165 }
 			}
 
@@ -37497,14 +38821,20 @@ e_rigaojian = {
 			}
 
 			c_benliang = {
+				capital = c_taosheng
+				landless = yes
 				color = { 172 18 167 }
 			}
 
 			c_jixianma = {
+				capital = c_taosheng
+				landless = yes
 				color = { 4 210 40 }
 			}
 
 			c_sitai = {
+				capital = c_taosheng
+				landless = yes
 				color = { 176 72 195 }
 			}
 		}
@@ -37538,14 +38868,20 @@ e_rigaojian = {
 			}
 
 			c_panjing = {
+				capital = c_yuqian
+				landless = yes
 				color = { 7 242 71 }
 			}
 
 			c_danze = {
+				capital = c_yuqian
+				landless = yes
 				color = { 188 27 41 }
 			}
 
 			c_hehejun = {
+				capital = c_yuqian
+				landless = yes
 				color = { 4 36 170 }
 			}
 
@@ -37584,6 +38920,8 @@ e_rigaojian = {
 			}
 
 			c_sibo = {
+				capital = c_yuqian
+				landless = yes
 				color = { 130 45 44 }
 			}
 
@@ -37641,6 +38979,8 @@ e_rigaojian = {
 			}
 
 			c_sanhu1 = {
+				capital = c_dounan
+				landless = yes
 				color = { 46 169 48 }
 			}
 
@@ -37717,10 +39057,14 @@ e_rigaojian = {
 			}
 
 			c_lujiao = {
+				capital = c_menyi
+				landless = yes
 				color = { 147 251 219 }
 			}
 
 			c_luao = {
+				capital = c_menyi
+				landless = yes
 				color = { 209 211 164 }
 			}
 		}
@@ -37749,6 +39093,8 @@ e_rigaojian = {
 			}
 
 			c_xianbei = {
+				capital = c_yuhou
+				landless = yes
 				color = { 109 245 198 }
 			}
 
@@ -37782,6 +39128,8 @@ e_rigaojian = {
 			}
 
 			c_fengdao = {
+				capital = c_yuhou
+				landless = yes
 				color = { 88 102 181 }
 			}
 		}
@@ -37825,6 +39173,8 @@ e_rigaojian = {
 			}
 
 			c_xiongsheng = {
+				capital = c_biliujia
+				landless = yes
 				color = { 136 145 154 }
 			}
 
@@ -37858,6 +39208,8 @@ e_rigaojian = {
 			}
 
 			c_baohai = {
+				capital = c_biliujia
+				landless = yes
 				color = { 96 120 217 }
 			}
 		}
@@ -37954,6 +39306,8 @@ e_rigaojian = {
 			}
 
 			c_zhici = {
+				capital = c_luzhong
+				landless = yes
 				color = { 119 208 183 }
 			}
 		}
@@ -38208,6 +39562,8 @@ e_rigaojian = {
 			}
 
 			c_beihou = {
+				capital = c_genshi
+				landless = yes
 				color = { 114 80 111 }
 			}
 		}

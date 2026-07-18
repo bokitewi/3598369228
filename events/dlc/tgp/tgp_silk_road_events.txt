@@ -1,0 +1,68 @@
+﻿namespace = tgp_silk_road_events
+
+# visit_silk_road_market_decision
+
+tgp_silk_road_events.0010 = {
+	# Absent vanilla-map title links isolated: c_dvin, c_jingzhao, c_lhasa, c_shazhou
+	type = character_event
+	hidden = yes
+	trigger = { always = no }
+}
+
+# yearly event for spreading innovations from markets to holder's culture
+
+scripted_effect silk_road_market_spread_innovation_effect = {
+	# Find relevant innovation
+	scope:market_temp ?= {
+		random_county_situation_sub_region = {
+			limit = {
+				situation_sub_region_has_county = scope:market_temp
+				OR = {
+					sub_region_current_phase = phase_exceptional_bounty
+					sub_region_current_phase = phase_steady_trading
+					sub_region_current_phase = phase_hardship
+				}
+			}
+			save_temporary_scope_as = sub_region_temp
+			var:innovation ?= { save_temporary_scope_as = innovation_temp }
+		}
+	}
+	# Unlock for culture if relevant
+	if = {
+		limit = {
+			NOR = {
+				scope:culture_temp = {
+					any_in_list = {
+						variable = silk_road_unlocked_innovations
+						this = scope:innovation_temp
+					}
+				}
+				scope:innovation_temp = { is_known_by_culture = scope:culture_temp }
+			}
+		}
+		every_player = {
+			limit = { culture = scope:culture_temp }
+			send_interface_message = {
+				type = msg_silk_road_innovation_spread
+				title = msg_silk_road_innovation_spread_title
+				desc = msg_silk_road_innovation_spread_desc
+				left_icon = scope:market_temp.holder
+				right_icon = scope:market_temp
+				custom_tooltip = msg_silk_road_innovation_spread_tt
+			}
+		}
+		scope:culture_temp = {
+			add_to_variable_list = {
+				name = silk_road_unlocked_innovations
+				target = scope:innovation_temp
+			}
+		}
+	}
+}
+
+tgp_silk_road_events.0100 = {
+	# Absent vanilla-map title links isolated: c_dvin, c_jingzhao, c_khiva, c_lahur, c_lhasa, c_shazhou
+	type = character_event
+	hidden = yes
+	trigger = { always = no }
+}

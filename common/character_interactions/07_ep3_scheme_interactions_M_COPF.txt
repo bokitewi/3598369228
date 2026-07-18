@@ -279,6 +279,7 @@ start_dispute_border_interaction = {
 	}
 
 	ai_potential = {
+		NOT = { has_government = feudal_admin_government }
 		NOT = {
 			any_scheme = { is_scheme_category = political }
 		}
@@ -609,6 +610,7 @@ start_subsume_province_interaction = {
 	}
 
 	ai_potential = {
+		NOT = { has_government = feudal_admin_government }
 		NOT = {
 			any_scheme = { is_scheme_category = political }
 		}

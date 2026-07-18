@@ -3,6 +3,8 @@
 ### c_henei1
 # CHANGLU
 2859 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -10,6 +12,8 @@
 ### c_zhubo1
 # XIAZONG
 2852 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -32,6 +36,8 @@
 ### c_duokejun
 # JIUZHONG
 2983 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -47,14 +53,20 @@
 ### c_naxu
 # NAXU
 2985 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # XIAYE
 2858 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # SHIBEI
 2986 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -71,6 +83,8 @@
 ### c_yamojun
 # YANDAI
 2857 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -81,6 +95,8 @@
 ### c_zhinaibu
 # ACHI
 2988 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # XINFU
@@ -112,6 +128,8 @@
 ### c_shichuan
 # PANCHENG
 2856 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -122,10 +140,14 @@
 ### c_shicheng6
 # SHICHENG4
 2987 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # GAOZI
 2984 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -144,6 +166,8 @@
 ### c_xinfu
 # RANYU
 2991 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -151,14 +175,20 @@
 ### c_futian
 # FUTIAN
 2993 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # YIJIU
 2990 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # SITAI
 2992 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -194,6 +224,8 @@
 ### c_yuanshan
 # PANJING
 3568 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -212,7 +244,9 @@
 ### c_yuqian
 # YUQIAN
 2821 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -243,7 +277,9 @@
 ### c_dounan
 # DOUNAN
 3563 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -253,7 +289,9 @@
 ### c_jinguai
 # JINGUAI
 3564 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -262,14 +300,18 @@
 ### c_menyi
 # MENYI
 3565 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_jiuhu
 # JIUHU
 3567 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -284,7 +326,9 @@
 ### c_yuhou
 # YUHOU
 2847 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -294,10 +338,14 @@
 ### c_qiutian
 # LUJIAO
 3566 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # XIANBEU
 3571 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -310,6 +358,8 @@
 ### c_biliujia
 # XIONGSHENG
 3570 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -320,7 +370,9 @@
 ### c_youli1
 # YOULI1
 3572 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -332,10 +384,14 @@
 ### c_luzhong
 # LUZHONG
 2855 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # ZHICI
 3575 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -343,10 +399,14 @@
 ### c_zuishang
 # ZUISHANG
 3573 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # LUQIAN
 2849 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -354,10 +414,14 @@
 ### c_tianchuan
 # TIANCHUAN
 3574 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # BAOHAI
 3569 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -370,42 +434,54 @@
 ### c_dudao
 # DUDAO
 2831 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_houzhi
 # HOUZHI
 2819 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_danzhang
 # DANZHANG
 2871 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_rigao
 # RIGAO
 2872 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_shishou
 # SHISHOU
 2826 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_tianyan
 # TIANYAN
 2820 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -421,7 +497,9 @@
 ### c_genshi
 # GENSHI
 2843 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # XIELI
 2829 = {
@@ -429,6 +507,8 @@
 }
 # BEIHOU
 2862 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -436,14 +516,18 @@
 ### c_chuanlu
 # CHUANLU
 2838 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_shisheng
 # SHISHENG
 2873 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 

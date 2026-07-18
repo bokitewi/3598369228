@@ -12,10 +12,14 @@
 ### c_jiuliangqi
 # JIULIANGQI
 3562 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # XIANGMO
 2890 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -26,6 +30,8 @@
 ### c_qianyu
 # WUZANG
 2851 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

@@ -541,14 +541,6 @@ han3617={
   3799.1.1 = {
 		birth = yes
 	}
-	3810.1.1 = {
-		 effect = {
-			vassal_contract_set_obligation_level = {
-				type = china_feudal_government_title
-				level = china_count
-			}
-		}
-	}
   3880.1.1 = {
     death = yes
   }

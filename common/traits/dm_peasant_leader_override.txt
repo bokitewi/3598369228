@@ -1,0 +1,115 @@
+﻿# Preserve the Spring-and-Autumn peasant leader progression on top of CK3 1.19.
+peasant_leader = {
+	category = fame
+
+	same_opinion = 25
+	general_opinion = -10
+	county_opinion_add = 10
+	army_maintenance_mult = -0.5
+
+	ruler_designer_cost = 100
+
+	culture_modifier = {
+		parameter = grants_to_lowborns_bonuses
+		development_growth_factor = 0.2
+		county_fertility_growth_mult = medium_county_fertility_growth_gain
+	}
+
+	track = {
+		33 = {
+			enemy_terrain_advantage = -0.25
+			county_opinion_add = 10
+			general_opinion = -10
+			levy_reinforcement_rate = 0.15
+		}
+		66 = {
+			advantage = 1
+			levy_siege = 0.1
+			dread_gain_mult = 0.8
+			supply_limit_mult = 1
+			county_opinion_add = 10
+		}
+		100 = {
+			advantage = 2
+			county_opinion_add = 20
+			peasant_militia_damage_add = 0.25
+			peasant_militia_toughness_add = 0.25
+			peasant_militia_pursuit_add = 0.2
+			general_opinion = -10
+			ignore_negative_culture_opinion = yes
+			ignore_different_faith_opinion = yes
+		}
+	}
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = peasant_leader
+						value >= 100
+					}
+				}
+				desc = trait_peasant_leader_3
+			}
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = peasant_leader
+						value >= 66
+					}
+				}
+				desc = trait_peasant_leader_2
+			}
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = peasant_leader
+						value >= 33
+					}
+				}
+				desc = trait_peasant_leader_1
+			}
+			desc = trait_peasant_leader
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = peasant_leader
+						value >= 100
+					}
+				}
+				desc = trait_peasant_leader_3_desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = peasant_leader
+						value >= 66
+					}
+				}
+				desc = trait_peasant_leader_2_desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = this
+					has_trait_xp = {
+						trait = peasant_leader
+						value >= 33
+					}
+				}
+				desc = trait_peasant_leader_1_desc
+			}
+			desc = trait_peasant_leader_character_desc
+		}
+	}
+}

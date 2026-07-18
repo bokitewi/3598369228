@@ -3,10 +3,14 @@
 ### c_erfang
 # ERFANG
 2946 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # DANMA
 2830 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

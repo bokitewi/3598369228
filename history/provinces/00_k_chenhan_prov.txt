@@ -3,7 +3,9 @@
 ### c_silu
 # SILU
 3384 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -19,10 +21,14 @@
 ### c_zhulan
 # YOUYOU
 3385 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # YOULING
 3439 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -45,14 +51,20 @@
 ### c_qinshe
 # QINSHE
 3387 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # NANMILIMIDONG
 3388 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # BANLU
 3399 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -87,10 +99,14 @@
 ### c_gusima
 # GUCHUNSHI
 3400 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # GUZIMIDONG
 3398 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -113,6 +129,8 @@
 ### c_xihuo
 # RANXI
 3386 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

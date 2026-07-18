@@ -115,7 +115,7 @@ jizhanshi8={
   }
 }
 jizhanshi9={
-  name="nvming83
+  name="nvming83"
   dynasty_house=house_xin498
 	religion="dongzhouli" 
 	culture="zhou"

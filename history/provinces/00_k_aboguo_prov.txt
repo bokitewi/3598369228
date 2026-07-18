@@ -3,7 +3,9 @@
 ### c_zhang4
 # ZHANG4
 2922 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -16,6 +18,8 @@
 ### c_suguo
 # DANEI
 3535 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -29,6 +33,8 @@
 ### c_sanye
 # HANCHUAN
 3536 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

@@ -3,7 +3,9 @@
 ### c_danchima
 # DANCHIMA
 2947 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -16,6 +18,8 @@
 ### c_yushe1
 # DANHOU
 2833 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -28,7 +32,9 @@
 ### c_fuzhi
 # FUZHI
 3538 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -43,17 +49,23 @@
 ### c_guishan
 # GUISHAN
 3540 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_danbo
 # DANBO
 2895 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # DUOJI
 3539 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

@@ -748,8 +748,9 @@ types Situation
 			onclick = "[PdxGuiTriggerAllAnimations('catalyst_refresh')]"
 
 			tooltipwidget = {
-				datacontext = "[FutureSituationPhase.GetType]"
-				using = situation_phase_type_tooltip
+				situation_phase_type_tooltip = {
+					datacontext = "[FutureSituationPhase.GetType]"
+				}
 			}
 
 			widget = {

@@ -6,14 +6,20 @@
 ### c_etian
 # ETIAN
 2952 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # JIAOLU
 2955 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # DANHAI
 2953 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -24,10 +30,14 @@
 ### c_chuntiamen
 # CHUNTIANMEN
 2954 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # RUOXIA
 2834 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

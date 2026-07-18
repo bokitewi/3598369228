@@ -12,6 +12,8 @@
 ### c_andi
 # JIYI
 2866 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -19,7 +21,9 @@
 ### c_mingcaoyi
 # MINGCAOYI
 2906 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # MOUAN
 3541 = {
@@ -30,7 +34,9 @@
 ### c_ji20
 # JI20
 2913 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 

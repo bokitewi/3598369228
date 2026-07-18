@@ -3,14 +3,20 @@
 ### c_zhanchan
 # ZHANCHAN
 3417 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # SUICHENG
 3418 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # RANDAN
 3420 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -33,17 +39,23 @@
 ### c_ruyi
 # RUYUI
 3449 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_donglin
 # DONGLIN
 3450 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # RENXINGLI
 3451 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -60,14 +72,20 @@
 ### c_zengchi
 # ZENGCHI
 3422 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # LANGSHUI
 3448 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # HUNMI
 3421 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -84,18 +102,26 @@
 ### c_siwang
 # SIWANG
 3428 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # LOUFANG
 3426 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # BEIJIANG
 3429 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # LEDU1
 3427 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -115,14 +141,20 @@
 ### c_changcen
 # CHANGCEN
 3413 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # HAIMING
 3411 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # AIXIANG
 3348 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -130,18 +162,26 @@
 ### c_liekou
 # LIEKOU
 3414 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # ZHAOMING
 3412 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # DAIFANG
 3415 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # HANZI
 3424 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -152,22 +192,32 @@
 ### c_tunyou
 # TUNYOU
 3416 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # XIYAN
 3431 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # WUGUAN1
 3430 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # TIXI1
 3425 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # CHAOXIAN
 3419 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

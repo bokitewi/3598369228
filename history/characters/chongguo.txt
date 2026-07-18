@@ -147,7 +147,6 @@ sixingchongshi10={
   dynasty_house=house_xin237
 	religion="xiali" 
 	culture="xiaren"
-  father=sixingchongshi9
 
   3825.1.1 = {
 		birth = yes
@@ -163,7 +162,6 @@ sixingchongshi11={
   dynasty_house=house_xin237
 	religion="xiali" 
 	culture="xiaren"
-  father=sixingchongshi9
 
   3827.1.1 = {
 		birth = yes
@@ -179,7 +177,6 @@ sixingchongshi12={
   dynasty_house=house_xin237
 	religion="xiali" 
 	culture="xiaren"
-  father=sixingchongshi9
   female=yes
 
   3827.1.1 = {
@@ -196,7 +193,6 @@ sixingchongshi13={
   dynasty_house=house_xin237
 	religion="xiali" 
 	culture="xiaren"
-  father=sixingchongshi9
   female=yes
 
   3827.1.1 = {

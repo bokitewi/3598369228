@@ -1,0 +1,1012 @@
+﻿namespace = saas_retainer
+
+# Stewardship retainer proposes a commercial investment.
+saas_retainer.1100 = {
+	type = character_event
+	title = saas_retainer.1100.t
+	desc = saas_retainer.1100.desc
+	theme = stewardship
+	left_portrait = {
+		character = scope:retainer
+		animation = personality_rational
+	}
+
+	trigger = {
+		is_landed = yes
+		NOT = { has_character_flag = saas_retainer_project_active }
+		any_courtier_or_guest = { saas_retainer_stewardship_candidate_trigger = yes }
+	}
+
+	immediate = {
+		add_character_flag = {
+			flag = saas_retainer_project_active
+			years = 2
+		}
+		random_courtier_or_guest = {
+			limit = { saas_retainer_stewardship_candidate_trigger = yes }
+			weight = {
+				base = 1
+				modifier = { add = stewardship }
+			}
+			save_scope_as = retainer
+		}
+	}
+
+	option = {
+		name = saas_retainer.1100.a
+		trigger = { gold >= 10 }
+		saas_accept_retainer_candidate_effect = { RETAINER = scope:retainer }
+		pay_short_term_gold = { target = scope:retainer gold = 10 }
+		set_variable = { name = saas_retainer_investment value = 10 }
+		trigger_event = { id = saas_retainer.1101 months = { 4 8 } }
+		ai_chance = { base = 50 modifier = { add = 25 gold >= 100 } }
+	}
+
+	option = {
+		name = saas_retainer.1100.b
+		trigger = { gold >= 25 }
+		saas_accept_retainer_candidate_effect = { RETAINER = scope:retainer }
+		pay_short_term_gold = { target = scope:retainer gold = 25 }
+		set_variable = { name = saas_retainer_investment value = 25 }
+		trigger_event = { id = saas_retainer.1101 months = { 4 8 } }
+		ai_chance = { base = 35 modifier = { add = 30 gold >= 250 } }
+	}
+
+	option = {
+		name = saas_retainer.1100.c
+		trigger = { gold >= 50 }
+		saas_accept_retainer_candidate_effect = { RETAINER = scope:retainer }
+		pay_short_term_gold = { target = scope:retainer gold = 50 }
+		set_variable = { name = saas_retainer_investment value = 50 }
+		trigger_event = { id = saas_retainer.1101 months = { 4 8 } }
+		ai_chance = { base = 15 modifier = { add = 50 gold >= 500 } }
+	}
+
+	option = {
+		name = saas_retainer.1100.d
+		saas_decline_retainer_candidate_effect = { RETAINER = scope:retainer }
+		ai_chance = { base = 25 modifier = { add = 100 gold < 10 } }
+	}
+}
+
+saas_retainer.1101 = {
+	type = character_event
+	title = saas_retainer.1101.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { has_character_flag = saas_retainer_project_success }
+				desc = saas_retainer.1101.desc.success
+			}
+			triggered_desc = {
+				trigger = { has_character_flag = saas_retainer_project_invalid }
+				desc = saas_retainer.1101.desc.invalid
+			}
+			desc = saas_retainer.1101.desc.failure
+		}
+	}
+	theme = stewardship
+	left_portrait = { character = scope:retainer animation = personality_rational }
+
+	immediate = {
+		if = {
+			limit = {
+				is_alive = yes
+				is_landed = yes
+				saas_retainer_project_phase_valid_trigger = yes
+				scope:retainer ?= {
+					is_alive = yes
+					is_courtier_of = root
+				}
+				has_variable = saas_retainer_investment
+			}
+			random = {
+				chance = {
+					value = saas_retainer_stewardship_success_value
+				}
+				add_character_flag = saas_retainer_project_success
+			}
+		}
+		else = { add_character_flag = saas_retainer_project_invalid }
+	}
+
+	option = {
+		name = saas_retainer.1101.a
+		trigger = { has_character_flag = saas_retainer_project_success }
+		if = {
+			limit = { var:saas_retainer_investment = 10 }
+			add_gold = 20
+		}
+		else_if = {
+			limit = { var:saas_retainer_investment = 25 }
+			add_gold = 50
+		}
+		else_if = {
+			limit = { var:saas_retainer_investment = 50 }
+			add_gold = 100
+		}
+		scope:retainer = {
+			add_opinion = {
+				target = root
+				modifier = saas_retainer_project_success_opinion
+			}
+		}
+		remove_character_flag = saas_retainer_project_success
+		saas_clear_retainer_project_effect = yes
+	}
+
+	option = {
+		name = saas_retainer.1101.b
+		trigger = {
+			NOR = {
+				has_character_flag = saas_retainer_project_success
+				has_character_flag = saas_retainer_project_invalid
+			}
+		}
+		scope:retainer = {
+			add_opinion = {
+				target = root
+				modifier = saas_retainer_project_failure_opinion
+			}
+		}
+		saas_clear_retainer_project_effect = yes
+	}
+
+	option = {
+		name = saas_retainer.1101.c
+		trigger = { has_character_flag = saas_retainer_project_invalid }
+		remove_character_flag = saas_retainer_project_invalid
+		saas_clear_retainer_project_effect = yes
+	}
+}
+
+# Diplomatic mission to a neighboring ruler.
+saas_retainer.1200 = {
+	type = character_event
+	title = saas_retainer.1200.t
+	desc = saas_retainer.1200.desc
+	theme = diplomacy
+	left_portrait = { character = scope:retainer animation = personality_rational }
+	right_portrait = { character = scope:neighboring_ruler animation = personality_rational }
+
+	trigger = {
+		is_landed = yes
+		NOT = { has_character_flag = saas_retainer_project_active }
+		any_courtier_or_guest = { saas_retainer_diplomacy_candidate_trigger = yes }
+		any_neighboring_top_liege_realm_owner = {
+			is_alive = yes
+			this != root
+		}
+	}
+
+	immediate = {
+		add_character_flag = { flag = saas_retainer_project_active years = 2 }
+		random_courtier_or_guest = {
+			limit = { saas_retainer_diplomacy_candidate_trigger = yes }
+			weight = { base = 1 modifier = { add = diplomacy } }
+			save_scope_as = retainer
+		}
+		random_neighboring_top_liege_realm_owner = {
+			limit = { is_alive = yes this != root }
+			save_scope_as = neighboring_ruler
+		}
+	}
+
+	option = {
+		name = saas_retainer.1200.a
+		trigger = { gold >= 15 }
+		saas_accept_retainer_candidate_effect = { RETAINER = scope:retainer }
+		pay_short_term_gold = { target = scope:retainer gold = 15 }
+		trigger_event = { id = saas_retainer.1201 months = { 6 12 } }
+		ai_chance = { base = 75 modifier = { factor = 0.1 gold < 30 } }
+	}
+
+	option = {
+		name = saas_retainer.1200.b
+		saas_decline_retainer_candidate_effect = { RETAINER = scope:retainer }
+		ai_chance = { base = 25 modifier = { add = 100 gold < 15 } }
+	}
+}
+
+saas_retainer.1201 = {
+	type = character_event
+	title = saas_retainer.1201.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { has_character_flag = saas_retainer_project_success }
+				desc = saas_retainer.1201.desc.success
+			}
+			triggered_desc = {
+				trigger = { has_character_flag = saas_retainer_project_invalid }
+				desc = saas_retainer.1201.desc.invalid
+			}
+			desc = saas_retainer.1201.desc.failure
+		}
+	}
+	theme = diplomacy
+	left_portrait = { character = scope:retainer animation = personality_rational }
+	right_portrait = { character = scope:neighboring_ruler animation = personality_rational }
+
+	immediate = {
+		if = {
+			limit = {
+				is_alive = yes
+				is_landed = yes
+				saas_retainer_project_phase_valid_trigger = yes
+				scope:retainer ?= { is_alive = yes is_courtier_of = root }
+				scope:neighboring_ruler ?= { is_alive = yes }
+			}
+			random = {
+				chance = {
+					value = saas_retainer_diplomacy_success_value
+				}
+				add_character_flag = saas_retainer_project_success
+			}
+		}
+		else = { add_character_flag = saas_retainer_project_invalid }
+	}
+
+	option = {
+		name = saas_retainer.1201.a
+		trigger = { has_character_flag = saas_retainer_project_success }
+		add_prestige = 150
+		add_opinion = {
+			target = scope:neighboring_ruler
+			modifier = saas_retainer_diplomatic_success_opinion
+		}
+		scope:neighboring_ruler = {
+			add_opinion = {
+				target = root
+				modifier = saas_retainer_diplomatic_success_opinion
+			}
+		}
+		scope:retainer = {
+			add_opinion = {
+				target = root
+				modifier = saas_retainer_project_success_opinion
+			}
+		}
+		remove_character_flag = saas_retainer_project_success
+		saas_clear_retainer_project_effect = yes
+	}
+
+	option = {
+		name = saas_retainer.1201.b
+		trigger = {
+			NOR = {
+				has_character_flag = saas_retainer_project_success
+				has_character_flag = saas_retainer_project_invalid
+			}
+		}
+		scope:retainer = {
+			add_opinion = {
+				target = root
+				modifier = saas_retainer_project_failure_opinion
+			}
+		}
+		saas_clear_retainer_project_effect = yes
+	}
+
+	option = {
+		name = saas_retainer.1201.c
+		trigger = { has_character_flag = saas_retainer_project_invalid }
+		remove_character_flag = saas_retainer_project_invalid
+		saas_clear_retainer_project_effect = yes
+	}
+}
+
+# Martial retainer reforms capital defenses.
+saas_retainer.1300 = {
+	type = character_event
+	title = saas_retainer.1300.t
+	desc = saas_retainer.1300.desc
+	theme = martial
+	left_portrait = { character = scope:retainer animation = personality_bold }
+
+	trigger = {
+		is_landed = yes
+		exists = capital_county
+		NOT = { has_character_flag = saas_retainer_project_active }
+		any_courtier_or_guest = { saas_retainer_martial_candidate_trigger = yes }
+	}
+
+	immediate = {
+		add_character_flag = { flag = saas_retainer_project_active years = 2 }
+		random_courtier_or_guest = {
+			limit = { saas_retainer_martial_candidate_trigger = yes }
+			weight = { base = 1 modifier = { add = martial } }
+			save_scope_as = retainer
+		}
+	}
+
+	option = {
+		name = saas_retainer.1300.a
+		trigger = { gold >= 15 }
+		saas_accept_retainer_candidate_effect = { RETAINER = scope:retainer }
+		pay_short_term_gold = { target = scope:retainer gold = 15 }
+		trigger_event = { id = saas_retainer.1301 months = { 4 8 } }
+		ai_chance = { base = 75 modifier = { factor = 0.1 gold < 30 } }
+	}
+
+	option = {
+		name = saas_retainer.1300.b
+		saas_decline_retainer_candidate_effect = { RETAINER = scope:retainer }
+		ai_chance = { base = 25 modifier = { add = 100 gold < 15 } }
+	}
+}
+
+saas_retainer.1301 = {
+	type = character_event
+	title = saas_retainer.1301.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { has_character_flag = saas_retainer_project_success }
+				desc = saas_retainer.1301.desc.success
+			}
+			triggered_desc = {
+				trigger = { has_character_flag = saas_retainer_project_invalid }
+				desc = saas_retainer.1301.desc.invalid
+			}
+			desc = saas_retainer.1301.desc.failure
+		}
+	}
+	theme = martial
+	left_portrait = { character = scope:retainer animation = personality_bold }
+
+	immediate = {
+		if = {
+			limit = {
+				is_alive = yes
+				is_landed = yes
+				saas_retainer_project_phase_valid_trigger = yes
+				exists = capital_county
+				scope:retainer ?= { is_alive = yes is_courtier_of = root }
+			}
+			random = {
+				chance = {
+					value = saas_retainer_martial_success_value
+				}
+				add_character_flag = saas_retainer_project_success
+			}
+		}
+		else = { add_character_flag = saas_retainer_project_invalid }
+	}
+
+	option = {
+		name = saas_retainer.1301.a
+		trigger = { has_character_flag = saas_retainer_project_success }
+		capital_county = {
+			change_county_control = 20
+			add_county_modifier = {
+				modifier = saas_retainer_defense_reform_modifier
+				years = 5
+			}
+		}
+		scope:retainer = {
+			add_opinion = {
+				target = root
+				modifier = saas_retainer_project_success_opinion
+			}
+		}
+		remove_character_flag = saas_retainer_project_success
+		saas_clear_retainer_project_effect = yes
+	}
+
+	option = {
+		name = saas_retainer.1301.b
+		trigger = {
+			NOR = {
+				has_character_flag = saas_retainer_project_success
+				has_character_flag = saas_retainer_project_invalid
+			}
+		}
+		scope:retainer = {
+			add_opinion = {
+				target = root
+				modifier = saas_retainer_project_failure_opinion
+			}
+		}
+		saas_clear_retainer_project_effect = yes
+	}
+
+	option = {
+		name = saas_retainer.1301.c
+		trigger = { has_character_flag = saas_retainer_project_invalid }
+		remove_character_flag = saas_retainer_project_invalid
+		saas_clear_retainer_project_effect = yes
+	}
+}
+
+# Intrigue retainer investigates embezzlement.
+saas_retainer.1400 = {
+	type = character_event
+	title = saas_retainer.1400.t
+	desc = saas_retainer.1400.desc
+	theme = intrigue
+	left_portrait = { character = scope:retainer animation = personality_dishonorable }
+
+	trigger = {
+		is_landed = yes
+		NOT = { has_character_flag = saas_retainer_project_active }
+		any_courtier_or_guest = { saas_retainer_intrigue_candidate_trigger = yes }
+	}
+
+	immediate = {
+		add_character_flag = { flag = saas_retainer_project_active years = 2 }
+		random_courtier_or_guest = {
+			limit = { saas_retainer_intrigue_candidate_trigger = yes }
+			weight = { base = 1 modifier = { add = intrigue } }
+			save_scope_as = retainer
+		}
+	}
+
+	option = {
+		name = saas_retainer.1400.a
+		trigger = { gold >= 15 }
+		saas_accept_retainer_candidate_effect = { RETAINER = scope:retainer }
+		pay_short_term_gold = { target = scope:retainer gold = 15 }
+		trigger_event = { id = saas_retainer.1401 months = { 3 6 } }
+		ai_chance = { base = 75 modifier = { factor = 0.1 gold < 30 } }
+	}
+
+	option = {
+		name = saas_retainer.1400.b
+		saas_decline_retainer_candidate_effect = { RETAINER = scope:retainer }
+		ai_chance = { base = 25 modifier = { add = 100 gold < 15 } }
+	}
+}
+
+saas_retainer.1401 = {
+	type = character_event
+	title = saas_retainer.1401.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { has_character_flag = saas_retainer_project_success }
+				desc = saas_retainer.1401.desc.success
+			}
+			triggered_desc = {
+				trigger = { has_character_flag = saas_retainer_project_invalid }
+				desc = saas_retainer.1401.desc.invalid
+			}
+			desc = saas_retainer.1401.desc.failure
+		}
+	}
+	theme = intrigue
+	left_portrait = { character = scope:retainer animation = personality_dishonorable }
+
+	immediate = {
+		if = {
+			limit = {
+				is_alive = yes
+				is_landed = yes
+				saas_retainer_project_phase_valid_trigger = yes
+				scope:retainer ?= { is_alive = yes is_courtier_of = root }
+			}
+			random = {
+				chance = {
+					value = saas_retainer_intrigue_success_value
+				}
+				add_character_flag = saas_retainer_project_success
+			}
+		}
+		else = { add_character_flag = saas_retainer_project_invalid }
+	}
+
+	option = {
+		name = saas_retainer.1401.a
+		trigger = { has_character_flag = saas_retainer_project_success }
+		add_gold = 30
+		add_dread = 10
+		scope:retainer = {
+			add_opinion = {
+				target = root
+				modifier = saas_retainer_project_success_opinion
+			}
+		}
+		remove_character_flag = saas_retainer_project_success
+		saas_clear_retainer_project_effect = yes
+	}
+
+	option = {
+		name = saas_retainer.1401.b
+		trigger = {
+			NOR = {
+				has_character_flag = saas_retainer_project_success
+				has_character_flag = saas_retainer_project_invalid
+			}
+		}
+		scope:retainer = {
+			add_opinion = {
+				target = root
+				modifier = saas_retainer_project_failure_opinion
+			}
+		}
+		random = {
+			chance = 50
+			random_courtier = {
+				limit = {
+					is_alive = yes
+					is_adult = yes
+					this != scope:retainer
+				}
+				add_opinion = {
+					target = root
+					modifier = saas_retainer_rejected_opinion
+				}
+			}
+		}
+		saas_clear_retainer_project_effect = yes
+	}
+
+	option = {
+		name = saas_retainer.1401.c
+		trigger = { has_character_flag = saas_retainer_project_invalid }
+		remove_character_flag = saas_retainer_project_invalid
+		saas_clear_retainer_project_effect = yes
+	}
+}
+
+# Learning retainer compiles rites and agrarian records.
+saas_retainer.1500 = {
+	type = character_event
+	title = saas_retainer.1500.t
+	desc = saas_retainer.1500.desc
+	theme = learning
+	left_portrait = { character = scope:retainer animation = personality_rational }
+
+	trigger = {
+		is_landed = yes
+		exists = capital_county
+		NOT = { has_character_flag = saas_retainer_project_active }
+		any_courtier_or_guest = { saas_retainer_learning_candidate_trigger = yes }
+	}
+
+	immediate = {
+		add_character_flag = { flag = saas_retainer_project_active years = 2 }
+		random_courtier_or_guest = {
+			limit = { saas_retainer_learning_candidate_trigger = yes }
+			weight = { base = 1 modifier = { add = learning } }
+			save_scope_as = retainer
+		}
+	}
+
+	option = {
+		name = saas_retainer.1500.a
+		trigger = { gold >= 15 }
+		saas_accept_retainer_candidate_effect = { RETAINER = scope:retainer }
+		pay_short_term_gold = { target = scope:retainer gold = 15 }
+		trigger_event = { id = saas_retainer.1501 months = { 6 12 } }
+		ai_chance = { base = 75 modifier = { factor = 0.1 gold < 30 } }
+	}
+
+	option = {
+		name = saas_retainer.1500.b
+		saas_decline_retainer_candidate_effect = { RETAINER = scope:retainer }
+		ai_chance = { base = 25 modifier = { add = 100 gold < 15 } }
+	}
+}
+
+saas_retainer.1501 = {
+	type = character_event
+	title = saas_retainer.1501.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { has_character_flag = saas_retainer_project_success }
+				desc = saas_retainer.1501.desc.success
+			}
+			triggered_desc = {
+				trigger = { has_character_flag = saas_retainer_project_invalid }
+				desc = saas_retainer.1501.desc.invalid
+			}
+			desc = saas_retainer.1501.desc.failure
+		}
+	}
+	theme = learning
+	left_portrait = { character = scope:retainer animation = personality_rational }
+
+	immediate = {
+		if = {
+			limit = {
+				is_alive = yes
+				is_landed = yes
+				saas_retainer_project_phase_valid_trigger = yes
+				exists = capital_county
+				scope:retainer ?= { is_alive = yes is_courtier_of = root }
+			}
+			random = {
+				chance = {
+					value = saas_retainer_learning_success_value
+				}
+				add_character_flag = saas_retainer_project_success
+			}
+		}
+		else = { add_character_flag = saas_retainer_project_invalid }
+	}
+
+	option = {
+		name = saas_retainer.1501.a
+		trigger = { has_character_flag = saas_retainer_project_success }
+		capital_county = { change_development_progress = 20 }
+		add_piety = 150
+		add_prestige = 75
+		scope:retainer = {
+			add_opinion = {
+				target = root
+				modifier = saas_retainer_project_success_opinion
+			}
+		}
+		remove_character_flag = saas_retainer_project_success
+		saas_clear_retainer_project_effect = yes
+	}
+
+	option = {
+		name = saas_retainer.1501.b
+		trigger = {
+			NOR = {
+				has_character_flag = saas_retainer_project_success
+				has_character_flag = saas_retainer_project_invalid
+			}
+		}
+		scope:retainer = {
+			add_opinion = {
+				target = root
+				modifier = saas_retainer_project_failure_opinion
+			}
+		}
+		saas_clear_retainer_project_effect = yes
+	}
+
+	option = {
+		name = saas_retainer.1501.c
+		trigger = { has_character_flag = saas_retainer_project_invalid }
+		remove_character_flag = saas_retainer_project_invalid
+		saas_clear_retainer_project_effect = yes
+	}
+}
+
+# Individual salary raise request.
+saas_retainer.1600 = {
+	type = character_event
+	title = saas_retainer.1600.t
+	desc = saas_retainer.1600.desc
+	theme = court
+	left_portrait = { character = scope:retainer animation = personality_bold }
+
+	trigger = {
+		is_landed = yes
+		NOT = { has_character_flag = saas_retainer_project_active }
+		any_courtier = { saas_retainer_salary_request_candidate_trigger = yes }
+	}
+
+	immediate = {
+		add_character_flag = { flag = saas_retainer_project_active days = 30 }
+		random_courtier = {
+			limit = { saas_retainer_salary_request_candidate_trigger = yes }
+			weight = {
+				base = 1
+				modifier = { add = 10 has_trait = greedy }
+				modifier = { add = 5 has_trait = ambitious }
+			}
+			save_scope_as = retainer
+		}
+	}
+
+	option = {
+		name = saas_retainer.1600.a
+		scope:retainer = {
+			add_character_modifier = {
+				modifier = saas_personal_salary_raise_modifier
+				years = 5
+			}
+			add_opinion = {
+				target = root
+				modifier = saas_salary_raise_granted_opinion
+			}
+			add_character_flag = {
+				flag = saas_salary_request_cooldown
+				years = 10
+			}
+		}
+		remove_character_flag = saas_retainer_project_active
+		saas_refresh_courtier_stipend_income_effect = yes
+		ai_chance = {
+			base = 50
+			modifier = { add = 40 has_trait = generous }
+			modifier = { factor = 0.1 gold < 0 }
+		}
+	}
+
+	option = {
+		name = saas_retainer.1600.b
+		scope:retainer = {
+			add_character_modifier = {
+				modifier = saas_salary_refused_modifier
+				years = 5
+			}
+			add_opinion = {
+				target = root
+				modifier = saas_salary_raise_refused_opinion
+			}
+			add_character_flag = {
+				flag = saas_salary_request_cooldown
+				years = 10
+			}
+		}
+		remove_character_flag = saas_retainer_project_active
+		ai_chance = {
+			base = 50
+			modifier = { add = 100 gold < 0 }
+			modifier = { add = 30 has_trait = greedy }
+		}
+	}
+}
+
+# Global talent competition and Warring States migration.
+saas_retainer.2000 = {
+	hidden = yes
+	scope = none
+
+	immediate = {
+		random_ruler = {
+			limit = {
+				is_landed = yes
+				exists = capital_province
+				saas_capital_in_huaxia_trigger = yes
+			}
+			capital_province = {
+				save_scope_as = saas_pool_search_province
+			}
+		}
+		if = {
+			limit = {
+				saas_is_ritual_collapse_phase_trigger = yes
+				any_ruler = {
+					saas_recruitment_target_trigger = yes
+					has_character_modifier = saas_recruit_talent_edict_modifier
+				}
+			}
+			while = {
+				count = 3
+				random_list = {
+					60 = {
+						trigger = {
+							exists = scope:saas_pool_search_province
+							any_pool_character = {
+								province = scope:saas_pool_search_province
+								saas_high_talent_trigger = yes
+								saas_location_in_huaxia_trigger = yes
+							}
+						}
+						random_pool_character = {
+							province = scope:saas_pool_search_province
+							limit = {
+								saas_high_talent_trigger = yes
+								saas_location_in_huaxia_trigger = yes
+							}
+							saas_compete_for_talent_effect = yes
+						}
+					}
+					100 = {
+						trigger = {
+							any_ruler = {
+								is_landed = yes
+								saas_capital_in_huaxia_trigger = yes
+								save_temporary_scope_as = saas_source_host
+								any_courtier_or_guest = {
+									saas_talent_can_leave_host_trigger = { HOST = scope:saas_source_host }
+								}
+							}
+						}
+						random_ruler = {
+							limit = {
+								is_landed = yes
+								saas_capital_in_huaxia_trigger = yes
+								save_temporary_scope_as = saas_source_host
+								any_courtier_or_guest = {
+									saas_talent_can_leave_host_trigger = { HOST = scope:saas_source_host }
+								}
+							}
+							save_temporary_scope_as = saas_source_host
+							random_courtier_or_guest = {
+								limit = {
+									saas_talent_can_leave_host_trigger = { HOST = scope:saas_source_host }
+								}
+								saas_compete_for_talent_effect = yes
+							}
+						}
+					}
+					1 = { }
+				}
+			}
+
+			if = {
+				limit = {
+					trigger_if = {
+						limit = { exists = scope:saas_pool_search_province }
+						NOT = {
+							any_pool_character = {
+								province = scope:saas_pool_search_province
+								saas_high_talent_trigger = yes
+								saas_location_in_huaxia_trigger = yes
+							}
+						}
+					}
+					NOT = {
+						any_ruler = {
+							is_landed = yes
+							saas_capital_in_huaxia_trigger = yes
+							save_temporary_scope_as = saas_source_host
+							any_courtier_or_guest = {
+								saas_talent_can_leave_host_trigger = { HOST = scope:saas_source_host }
+							}
+						}
+					}
+				}
+				random = {
+					chance = 10
+					random_independent_ruler = {
+						limit = {
+							saas_recruitment_target_trigger = yes
+							has_character_modifier = saas_recruit_talent_edict_modifier
+						}
+						save_scope_as = saas_fallback_patron
+					}
+					if = {
+						limit = { exists = scope:saas_fallback_patron }
+						create_character = {
+							location = scope:saas_fallback_patron.capital_province
+							age = { 18 40 }
+							gender_female_chance = 50
+							culture = scope:saas_fallback_patron.capital_county.culture
+							faith = scope:saas_fallback_patron.capital_county.faith
+							dynasty = none
+							random_traits = no
+							random_traits_list = {
+								count = 1
+								education_diplomacy_3 = {}
+								education_martial_3 = {}
+								education_stewardship_3 = {}
+								education_intrigue_3 = {}
+								education_learning_3 = {}
+							}
+							random_traits_list = {
+								count = 2
+								diligent = {}
+								ambitious = {}
+								patient = {}
+								brave = {}
+								gregarious = {}
+								just = {}
+								honest = {}
+								calm = {}
+								stubborn = {}
+							}
+							diplomacy = { 8 14 }
+							martial = { 8 14 }
+							stewardship = { 8 14 }
+							intrigue = { 8 14 }
+							learning = { 8 14 }
+							save_scope_as = saas_fallback_talent
+						}
+						scope:saas_fallback_talent = {
+							add_character_flag = {
+								flag = saas_recently_recruited_talent
+								years = 10
+							}
+							visit_court_of = scope:saas_fallback_patron
+						}
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				saas_is_warring_states_phase_trigger = yes
+				OR = {
+					AND = {
+						exists = scope:saas_pool_search_province
+						any_pool_character = {
+							province = scope:saas_pool_search_province
+							saas_high_talent_trigger = yes
+							saas_location_in_huaxia_trigger = yes
+						}
+					}
+					any_ruler = {
+						is_landed = yes
+						saas_capital_in_huaxia_trigger = yes
+						save_temporary_scope_as = saas_source_host
+						any_courtier_or_guest = {
+							saas_talent_can_leave_host_trigger = { HOST = scope:saas_source_host }
+						}
+					}
+				}
+			}
+			random = {
+				chance = 25
+				random_list = {
+					100 = {
+						trigger = {
+							exists = scope:saas_pool_search_province
+							any_pool_character = {
+								province = scope:saas_pool_search_province
+								saas_high_talent_trigger = yes
+								saas_location_in_huaxia_trigger = yes
+							}
+						}
+						random_pool_character = {
+							province = scope:saas_pool_search_province
+							limit = {
+								saas_high_talent_trigger = yes
+								saas_location_in_huaxia_trigger = yes
+							}
+							save_scope_as = saas_warring_talent
+						}
+						scope:saas_warring_talent = {
+							if = {
+								limit = {
+									has_dlc_feature = roads_to_power
+									is_physically_able_adult = yes
+									exists = location.county
+									ai_can_valid_to_create_laamp_trigger = yes
+								}
+								random_list = {
+									5 = {
+										add_gold = 500
+										create_landless_adventurer_title_effect = {
+											REASON = flag:voluntary
+											FLAVOR_CHAR = scope:saas_warring_talent
+										}
+										add_character_flag = {
+											flag = saas_recently_recruited_talent
+											years = 10
+										}
+									}
+									95 = {
+										saas_send_talent_to_strong_realm_effect = yes
+									}
+								}
+							}
+							else = {
+								saas_send_talent_to_strong_realm_effect = yes
+							}
+						}
+					}
+					100 = {
+						trigger = {
+							any_ruler = {
+								is_landed = yes
+								saas_capital_in_huaxia_trigger = yes
+								save_temporary_scope_as = saas_source_host
+								any_courtier_or_guest = {
+									saas_talent_can_leave_host_trigger = { HOST = scope:saas_source_host }
+								}
+							}
+						}
+						random_ruler = {
+							limit = {
+								is_landed = yes
+								saas_capital_in_huaxia_trigger = yes
+								save_temporary_scope_as = saas_source_host
+								any_courtier_or_guest = {
+									saas_talent_can_leave_host_trigger = { HOST = scope:saas_source_host }
+								}
+							}
+							save_temporary_scope_as = saas_source_host
+							random_courtier_or_guest = {
+								limit = {
+									saas_talent_can_leave_host_trigger = { HOST = scope:saas_source_host }
+								}
+								saas_send_talent_to_strong_realm_effect = yes
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

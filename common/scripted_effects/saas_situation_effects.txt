@@ -123,7 +123,6 @@ saas_establish_tributary_effect = {
 		break_subject_contract_and_establish_tributary_effect = {
 			SUZERAIN = $SUZERAIN$
 			TRIBUTARY = $TRIBUTARY$
-			WAR = $WAR$
 		}
 	}
 }

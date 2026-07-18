@@ -3,6 +3,8 @@
 ### c_shangduima
 # SHANGXIAN
 2918 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

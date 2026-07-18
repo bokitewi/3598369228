@@ -34,14 +34,20 @@
 ### c_qinyuan
 # YUANJIANG
 2844 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # SUHE
 2920 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # JIUNU
 2961 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

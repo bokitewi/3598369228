@@ -24,14 +24,20 @@
 ### c_huina
 # HUINA
 3545 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # ZHUMO
 3550 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # TUQI
 3546 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -48,18 +54,26 @@
 ### c_jiamao
 # JIAMAO
 3557 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # KEYE
 3547 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # MEINONG
 2837 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # GAOXU
 3548 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

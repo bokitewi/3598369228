@@ -89,7 +89,6 @@ han230={
   dynasty_house=house_baijia26
 	religion="xizhouli" 
 	culture="zhou"
-  father=han229
 
   3746.1.1 = {
 		birth = yes
@@ -107,7 +106,6 @@ han231={
   dynasty_house=house_baijia26
 	religion="xizhouli" 
 	culture="zhou"
-  father=han229
 
   3750.1.1 = {
 		birth = yes

@@ -1,4 +1,4 @@
-direnqiguo1={
+﻿direnqiguo1={
   name="baiyuenan506"
   dynasty=xin895
   religion="guiwu"

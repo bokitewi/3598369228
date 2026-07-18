@@ -16,7 +16,7 @@
 c_xishi4 = {
 	3849.12.31 = {
 		liege = k_yinguo
-		holder = han1924
+		holder = han1925
 		government = feudal_admin_government
 		succession_laws = { noble_family_succession_law }
 	}

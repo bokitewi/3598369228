@@ -12,6 +12,8 @@
 ### c_tuilianghuo
 # MIWUXIEMA
 3401 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -25,6 +27,8 @@
 ### c_jiazhao
 # YIDI
 3389 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -35,6 +39,8 @@
 ### c_wuyeshan
 # ZOUCAOMA
 3403 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -45,10 +51,14 @@
 ### c_qitu
 # GOUYEHAN
 3395 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # BIANCHENJIETU
 3408 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -86,28 +96,36 @@
 ### c_hulu
 # HULU
 3393 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_zhouxian
 # ZHOUXIAN
 3394 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_gongyan
 # GONGYAN
 3396 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_lidong
 # LIDONG
 3397 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -126,10 +144,14 @@
 ### c_anxie
 # ANXIE
 3404 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # RUKAN
 3392 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -137,21 +159,29 @@
 ### c_dulu
 # DULU
 3405 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
-### c_lenü
+### c_lenv
 # LENU
 3406 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # GANLU1
 3402 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # BUSI
 3390 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -159,7 +189,9 @@
 ### c_qixi
 # QIXI
 3407 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -172,7 +204,9 @@
 ### c_junmi1
 # JUNMI1
 3391 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -185,7 +219,9 @@
 ### c_wumihan
 # WUMIHAN
 3409 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 

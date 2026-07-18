@@ -12,7 +12,7 @@ world_huaxia_chaoxian = {
 }
 world_huaxia_jizhou = {
 	kingdoms = {                              k_baoguo k_zuoguo k_nanyanguo k_caoguo k_fengfuguo k_qinguo k_jishuizhirong k_weiguo k_guanguo k_cangguo k_fanguo1 k_xiaguo k_gongguo1 k_zhanguo1 k_yeguo k_sheguo k_jiguo3 k_xingguo k_diguo1 k_guguo k_feiguo1 k_duanguo k_lingfuguo k_beiguo k_wuluoguo k_moguo k_raoguo k_xianyu k_linguo }
-	provinces = {   379 395 }
+	provinces = { 395 }
 }
 world_huaxia_fusang = {
 	kingdoms = {                                            k_yizhiguo k_duomidao k_xiongxi k_huoguo2 k_fengribie k_zhuziguo k_jianyibie k_aibimai k_aboguo k_dandaoguo k_zanqiguo k_jibeiguo k_xuemenguo k_zhoufangguo k_shijianguo k_aqiguo k_chuyunguo k_yinqiguo k_mulaiguo k_daoyuguo k_duochimaguo k_zhenjianguo k_danboguo k_woguo k_muguo k_xiongyeguo k_daojinguo k_yishiguo k_ruozuoguo k_gaozhiguo k_feituoguo k_sanyeguo k_weizhangguo k_sanchuanguo k_yuandanhaiguo k_zhuliuheguo k_xiangwuguo k_jiafeiguo k_keyeguo k_zongguo1 k_wuxiezhiguo k_maoyeguo k_rigaojian }

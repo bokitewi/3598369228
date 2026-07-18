@@ -6,14 +6,20 @@
 ### c_zhaoyang
 # ZHAOYANG
 3490 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # JICHENG
 3492 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # YANGAN
 3788 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -27,18 +33,26 @@
 ### c_pinggang
 # PINGGANG
 3507 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # YINLIANGCHUAN
 3515 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # CHUHE
 3789 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # TUHUZHEN
 3516 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -64,22 +78,32 @@
 ### c_baozu
 # BAOZU
 3794 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # YUJIA
 3795 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # YUEDAI
 3793 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # POYETOU
 3792 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # QIELV
 3791 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -90,14 +114,20 @@
 ### c_wujie
 # WUJIE
 3796 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # CHILI1
 3797 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # BIHAN
 3798 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -114,18 +144,26 @@
 ### c_qiqiu
 # QIQIU
 3802 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # GOUZE
 3801 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # YUFEN
 3804 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # DAMOGAN
 3790 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -142,7 +180,9 @@
 ### c_huye
 # HUYE
 3813 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # SAGU
 3812 = {
@@ -150,10 +190,14 @@
 }
 # XIANPING1
 3811 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # GUIZHU
 3803 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

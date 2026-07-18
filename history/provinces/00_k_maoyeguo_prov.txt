@@ -3,7 +3,9 @@
 ### c_zhizhifu
 # ZHIZHIFU
 2969 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -16,6 +18,8 @@
 ### c_meizhinai
 # WUYEZHI
 2970 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -38,7 +42,9 @@
 ### c_shangye
 # SHANGYE
 2850 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -66,10 +72,14 @@
 ### c_xinzhi
 # XINZHI
 2971 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # ZHUBO
 2972 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

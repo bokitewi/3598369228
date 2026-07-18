@@ -4,7 +4,6 @@ zidai1={
   dynasty=xin508
 	religion="yinli" 
 	culture="song"
-  father=song1238
 
   3514.1.1 = {
 		birth = yes

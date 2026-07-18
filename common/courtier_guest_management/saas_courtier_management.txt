@@ -23,6 +23,28 @@ courtier_management = {
 			add = 20
 		}
 
+		# Stipend policy directly changes mobility in addition to its opinion effect.
+		modifier = {
+			liege = { has_realm_law = saas_no_stipend_law }
+			add = 10
+		}
+		modifier = {
+			liege = { has_realm_law = saas_limited_stipend_law }
+			add = 5
+		}
+		modifier = {
+			liege = { has_realm_law = saas_large_stipend_law }
+			add = -5
+		}
+		modifier = {
+			liege = { has_realm_law = saas_double_stipend_law }
+			add = -10
+		}
+		modifier = {
+			has_character_modifier = saas_salary_refused_modifier
+			add = 5
+		}
+
 		ai_value_modifier = {
 			ai_energy = { value = high_positive_ai_value_inverse multiply = 3 }
 			ai_boldness = { value = high_positive_ai_value_inverse multiply = 3 }
@@ -86,14 +108,10 @@ courtier_management = {
 			add = -5
 		}
 
-		min = { value = 10 }
+		min = { value = 2 }
 		max = {
 			value = {
-				value = 30
-				if = {
-					limit = { saas_is_warring_states_phase_trigger = yes }
-					add = 10
-				}
+				value = 50
 				if = {
 					limit = { is_adult = no }
 					multiply = 0

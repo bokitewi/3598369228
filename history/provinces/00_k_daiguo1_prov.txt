@@ -39,6 +39,8 @@
 }
 # ZHULU
 1282 = {
+	culture = yan
+	religion = xizhouli
 	holding = none
 }
 

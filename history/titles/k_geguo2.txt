@@ -70,6 +70,12 @@ c_yiyang2 = {
 		government = nomad_government
 	}
 }
+c_jingyang = {
+	3835.12.31 = {
+		liege = "d_geshi2"
+		holder = jixingdiaoguo1
+	}
+}
 d_geshi2 = {
 	3574.1.1 = {
 		liege = "k_geguo2"
@@ -159,6 +165,9 @@ k_geguo2 = {
 	}
 	3809.1.1 = {
 		holder = sixinggeguo9
+	}
+	3835.12.31 = {
+		holder = jixingdiaoguo1
 	}
 	3849.1.1 = {
 		change_development_level = 33

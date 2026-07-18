@@ -3,7 +3,9 @@
 ### c_shejin
 # SHEJIN
 2887 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -16,6 +18,8 @@
 ### c_tuyuan
 # XIANGCAOJIN
 2908 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -28,7 +32,9 @@
 ### c_fanhenei
 # FANHENEI
 2917 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -41,6 +47,8 @@
 ### c_shenbu
 # HENEI
 2879 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -53,7 +61,9 @@
 ### c_jiangyuangong
 # JIANGYUANGONG
 2912 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -71,7 +81,9 @@
 ### c_dahe
 # DAHE
 2867 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -84,7 +96,9 @@
 ### c_wo3
 # WO3
 2915 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -103,17 +117,23 @@
 ### c_shanbian
 # SHANBIAN
 2996 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
 ### c_zhongzhou
 # ZHONGZHOU
 2907 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # YIHE
 2891 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -143,7 +163,9 @@
 ### c_shanbei
 # SHANBEI
 2951 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 
@@ -156,10 +178,14 @@
 ### c_diguo
 # SHANCHENG
 2894 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # FENGBANGUAN
 2900 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -172,14 +198,20 @@
 ### c_sutai
 # SUTAI
 3543 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 # SHUIKOU
 3544 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 # YEZHOU
 3542 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 
@@ -193,6 +225,8 @@
 ### c_shenqian
 # JINJIANG
 2835 = {
+	culture = zhou
+	religion = xizhouli
 	holding = none
 }
 

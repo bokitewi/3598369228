@@ -3,7 +3,9 @@
 ### c_danluo
 # DANLUO
 3383 = {
-	holding = none
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
 }
 
 

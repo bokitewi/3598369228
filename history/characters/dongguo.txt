@@ -51,7 +51,6 @@ dongxinghuanlongshi1={
   dynasty_house=house_xin683
 	religion="xiali" 
 	culture="xiaren"
-  father=dongxing2
 
   2503.1.1 = {
 		birth = yes

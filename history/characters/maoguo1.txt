@@ -134,7 +134,6 @@ han460={
   dynasty_house=house_baijia106#姣?
 	religion="xizhouli" 
 	culture="zhou"
-  father=han459
 
   3783.1.1 = {
 		birth = yes
