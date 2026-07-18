@@ -239,6 +239,10 @@
 						}
 					}
 				}
+				saas_trigger_catalyst_effect = {
+					CATALYST = catalyst_grant_privilege_to_diff_faith_culture_vassal
+					CHARACTER = scope:actor
+				}
 			}
 		}
 
@@ -541,6 +545,10 @@ vassal_modify_vassal_contract_interaction = {
 							character = scope:actor
 						}
 					}
+				}
+				saas_trigger_catalyst_effect = {
+					CATALYST = catalyst_grant_privilege_to_diff_faith_culture_vassal
+					CHARACTER = scope:actor
 				}
 			}
 		}
@@ -918,6 +926,10 @@ admin_liege_modify_vassal_contract_interaction = {
 						}
 					}
 				}
+				saas_trigger_catalyst_effect = {
+					CATALYST = catalyst_grant_privilege_to_diff_faith_culture_vassal
+					CHARACTER = scope:actor
+				}
 			}
 		}
 
@@ -1246,6 +1258,10 @@ admin_vassal_modify_vassal_contract_interaction = {
 							character = scope:recipient
 						}
 					}
+				}
+				saas_trigger_catalyst_effect = {
+					CATALYST = catalyst_grant_privilege_to_diff_faith_culture_vassal
+					CHARACTER = scope:recipient
 				}
 			}
 		}

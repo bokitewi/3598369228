@@ -4,6 +4,16 @@
 @saas_cat_low = 50
 @saas_cat_minor = 25
 
+# Scaled from the vanilla 1.19.0.6 Iberian Struggle values while preserving
+# its 1:3:5:10:25 relative weighting. The Spring and Autumn situation uses
+# a 5,000 point takeover threshold, so the original values are multiplied by 20.
+@saas_fp2_cat_minimal = 20
+@saas_fp2_cat_minor = 60
+@saas_fp2_cat_medium = 100
+@saas_fp2_cat_major = 200
+@saas_fp2_cat_massive = 500
+@saas_fp2_cat_minimal_over_time = 20
+
 spring_and_autumn_situation = {
 	window = situation
 	is_unique = yes
@@ -149,6 +159,22 @@ spring_and_autumn_situation = {
 						saas_catalyst_lijiao_alliance = @saas_cat_medium
 						saas_catalyst_successful_huimeng = @saas_cat_high
 						saas_catalyst_long_peace = @saas_cat_low
+						# Vanilla Iberian catalysts leading to Conciliation.
+						catalyst_improve_development_vassal_diff_faith_culture = @saas_fp2_cat_minimal
+						catalyst_gift_independent_ruler = @saas_fp2_cat_minor
+						catalyst_became_friend_lover_with_character = @saas_fp2_cat_minor
+						catalyst_learned_new_language_important = @saas_fp2_cat_minor
+						catalyst_new_building_in_city = @saas_fp2_cat_minor
+						catalyst_sign_truce_outside_war = @saas_fp2_cat_minor
+						catalyst_formed_interreligious_alliance_with_important_character = @saas_fp2_cat_minor
+						catalyst_ransom_important = @saas_fp2_cat_medium
+						catalyst_grant_privilege_to_diff_faith_culture_vassal = @saas_fp2_cat_medium
+						catalyst_invite_diff_faith_culture_to_feast = @saas_fp2_cat_medium
+						catalyst_independence_from_non_dejure_vassal = @saas_fp2_cat_major
+						catalyst_grant_land_local_noble = @saas_fp2_cat_major
+						catalyst_became_best_friend_soulmate_with_very_important_character = @saas_fp2_cat_major
+						catalyst_convert_local_culture_faith = @saas_fp2_cat_major
+						catalyst_release_important = @saas_fp2_cat_massive
 					}
 				}
 				warring_states_phase = {
@@ -160,6 +186,18 @@ spring_and_autumn_situation = {
 						saas_catalyst_tianzi_defeat = @saas_cat_major
 						saas_catalyst_siyi_conquest = @saas_cat_high
 						saas_catalyst_adventurer_conquest = @saas_cat_high
+						# Vanilla Iberian catalysts leading to Hostility.
+						catalyst_passing_of_time = @saas_fp2_cat_minimal_over_time
+						catalyst_gain_claim_on_title_fp2 = @saas_fp2_cat_minor
+						catalyst_win_any_war_within_the_region = @saas_fp2_cat_minor
+						catalyst_new_building_in_castle = @saas_fp2_cat_minor
+						catalyst_becomes_rival_with_involved = @saas_fp2_cat_major
+						catalyst_using_a_hook_on_very_important_character = @saas_fp2_cat_medium
+						catalyst_unnatural_death_important_character = @saas_fp2_cat_medium
+						catalyst_usurp_title_fp2 = @saas_fp2_cat_major
+						catalyst_forced_conversion = @saas_fp2_cat_medium
+						catalyst_reveal_secret_important = @saas_fp2_cat_major
+						catalyst_broke_truce_against_important_character = @saas_fp2_cat_massive
 					}
 				}
 			}
@@ -241,6 +279,18 @@ spring_and_autumn_situation = {
 						saas_catalyst_tianzi_defeat = @saas_cat_major
 						saas_catalyst_tributary_lost = @saas_cat_high
 						saas_catalyst_title_usurped = @saas_cat_medium
+						# Vanilla Iberian catalysts leading to Opportunity.
+						catalyst_passing_of_time = @saas_fp2_cat_minimal_over_time
+						catalyst_gain_claim_on_title_fp2 = @saas_fp2_cat_minor
+						catalyst_win_any_war_within_the_region = @saas_fp2_cat_minor
+						catalyst_new_building_in_castle = @saas_fp2_cat_minor
+						catalyst_becomes_rival_with_involved = @saas_fp2_cat_major
+						catalyst_using_a_hook_on_very_important_character = @saas_fp2_cat_medium
+						catalyst_unnatural_death_important_character = @saas_fp2_cat_medium
+						catalyst_usurp_title_fp2 = @saas_fp2_cat_major
+						catalyst_forced_conversion = @saas_fp2_cat_medium
+						catalyst_reveal_secret_important = @saas_fp2_cat_major
+						catalyst_broke_truce_against_important_character = @saas_fp2_cat_massive
 					}
 				}
 			}
@@ -308,6 +358,18 @@ spring_and_autumn_situation = {
 						saas_catalyst_house_restored = @saas_cat_high
 						saas_catalyst_tribute_established = @saas_cat_medium
 						saas_catalyst_long_peace = @saas_cat_low
+						# Vanilla Iberian catalysts leading to Opportunity.
+						catalyst_passing_of_time = @saas_fp2_cat_minimal_over_time
+						catalyst_gain_claim_on_title_fp2 = @saas_fp2_cat_minor
+						catalyst_win_any_war_within_the_region = @saas_fp2_cat_minor
+						catalyst_new_building_in_castle = @saas_fp2_cat_minor
+						catalyst_becomes_rival_with_involved = @saas_fp2_cat_major
+						catalyst_using_a_hook_on_very_important_character = @saas_fp2_cat_medium
+						catalyst_unnatural_death_important_character = @saas_fp2_cat_medium
+						catalyst_usurp_title_fp2 = @saas_fp2_cat_major
+						catalyst_forced_conversion = @saas_fp2_cat_medium
+						catalyst_reveal_secret_important = @saas_fp2_cat_major
+						catalyst_broke_truce_against_important_character = @saas_fp2_cat_massive
 					}
 				}
 			}

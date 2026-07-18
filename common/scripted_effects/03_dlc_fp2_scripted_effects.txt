@@ -64,6 +64,16 @@ fp2_struggle_ending_faith_list_effect = {
 			}
 		}
 	}
+	if = {
+		limit = {
+			scope:actor = { saas_eligible_participant_trigger = yes }
+			scope:recipient = { saas_eligible_participant_trigger = yes }
+		}
+		saas_trigger_catalyst_effect = {
+			CATALYST = catalyst_sign_truce_outside_war
+			CHARACTER = scope:actor
+		}
+	}
 }
 
 # Set cultural acceptance between all Involved cultures
@@ -1407,6 +1417,16 @@ fp2_struggle_apply_ai_agenda_effect = {
 }
 
 gifting_leads_towards_friendship_effect = {
+	if = {
+		limit = {
+			scope:actor = { saas_eligible_participant_trigger = yes }
+			this = { saas_eligible_participant_trigger = yes }
+		}
+		saas_trigger_catalyst_effect = {
+			CATALYST = catalyst_gift_independent_ruler
+			CHARACTER = scope:actor
+		}
+	}
 	if = {
 		# then verify the right struggle phase
 		limit = {

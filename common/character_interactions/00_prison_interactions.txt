@@ -1896,6 +1896,16 @@ ransom_interaction = {
 						}
 					}
 				}
+				if = {
+					limit = {
+						scope:actor = { saas_eligible_participant_trigger = yes }
+						scope:secondary_recipient = { saas_eligible_participant_trigger = yes }
+					}
+					saas_trigger_catalyst_effect = {
+						CATALYST = catalyst_ransom_important
+						CHARACTER = scope:actor
+					}
+				}
 			}
 		}
 	}
@@ -2652,6 +2662,16 @@ pay_ransom_interaction = {
 							catalyst = catalyst_ransom_important
 							character = scope:imprisoner
 						}
+					}
+				}
+				if = {
+					limit = {
+						scope:imprisoner = { saas_eligible_participant_trigger = yes }
+						scope:prisoner = { saas_eligible_participant_trigger = yes }
+					}
+					saas_trigger_catalyst_effect = {
+						CATALYST = catalyst_ransom_important
+						CHARACTER = scope:imprisoner
 					}
 				}
 				if = {
@@ -3598,6 +3618,16 @@ ransom_me_interaction = {
 							catalyst = catalyst_ransom_important
 							character = scope:imprisoner
 						}
+					}
+				}
+				if = {
+					limit = {
+						scope:imprisoner = { saas_eligible_participant_trigger = yes }
+						scope:prisoner = { saas_eligible_participant_trigger = yes }
+					}
+					saas_trigger_catalyst_effect = {
+						CATALYST = catalyst_ransom_important
+						CHARACTER = scope:imprisoner
 					}
 				}
 			}

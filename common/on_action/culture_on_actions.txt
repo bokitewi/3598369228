@@ -306,6 +306,17 @@ on_county_auto_granted_to_liege_culture = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					scope:actor = { saas_eligible_participant_trigger = yes }
+					scope:recipient = { saas_eligible_participant_trigger = yes }
+					scope:landed_title.empire ?= title:e_huaxia
+				}
+				saas_trigger_catalyst_effect = {
+					CATALYST = catalyst_grant_land_local_noble
+					CHARACTER = scope:actor
+				}
+			}
 		}
 	}
 }
@@ -441,6 +452,17 @@ on_county_auto_granted_to_local_culture = {
 							character = scope:actor
 						}
 					}
+				}
+			}
+			if = {
+				limit = {
+					scope:actor = { saas_eligible_participant_trigger = yes }
+					scope:recipient = { saas_eligible_participant_trigger = yes }
+					scope:landed_title.empire ?= title:e_huaxia
+				}
+				saas_trigger_catalyst_effect = {
+					CATALYST = catalyst_grant_land_local_noble
+					CHARACTER = scope:actor
 				}
 			}
 		}

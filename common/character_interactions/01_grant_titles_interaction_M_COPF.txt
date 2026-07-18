@@ -1305,6 +1305,10 @@ grant_titles_interaction = {
 						}
 					}
 				}
+				saas_trigger_catalyst_effect = {
+					CATALYST = catalyst_grant_privilege_to_diff_faith_culture_vassal
+					CHARACTER = scope:actor
+				}
 			}
 		}
 
@@ -2317,6 +2321,10 @@ grant_governorship_interaction = {
 							character = scope:actor
 						}
 					}
+				}
+				saas_trigger_catalyst_effect = {
+					CATALYST = catalyst_grant_privilege_to_diff_faith_culture_vassal
+					CHARACTER = scope:actor
 				}
 			}
 		}

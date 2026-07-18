@@ -8,6 +8,22 @@ on_release_from_prison = { on_actions = { saas_catalyst_ruler_released } }
 on_death = { on_actions = { saas_catalyst_tianzi_killed } }
 on_war_won_attacker = { on_actions = { saas_catalyst_attacker_won } }
 on_war_won_defender = { on_actions = { saas_catalyst_defender_won } }
+yearly_global_pulse = { on_actions = { saas_fp2_catalyst_passing_time } }
+on_explicit_claim_gain = { on_actions = { saas_fp2_catalyst_claim_gained } }
+on_building_completed = { on_actions = { saas_fp2_catalyst_building_completed } }
+on_set_relation_rival = { on_actions = { saas_fp2_catalyst_rival } }
+on_set_relation_nemesis = { on_actions = { saas_fp2_catalyst_rival } }
+on_set_relation_friend = { on_actions = { saas_fp2_catalyst_friend_or_lover } }
+on_set_relation_lover = { on_actions = { saas_fp2_catalyst_friend_or_lover } }
+on_set_relation_best_friend = { on_actions = { saas_fp2_catalyst_best_friend_or_soulmate } }
+on_set_relation_soulmate = { on_actions = { saas_fp2_catalyst_best_friend_or_soulmate } }
+on_hook_used = { on_actions = { saas_fp2_catalyst_hook_used } }
+on_county_faith_change = { on_actions = { saas_fp2_catalyst_county_faith_changed } }
+on_faith_conversion = { on_actions = { saas_fp2_catalyst_faith_conversion } }
+learn_language_success = { on_actions = { saas_fp2_catalyst_language_learned } }
+on_war_started = { on_actions = { saas_fp2_catalyst_broken_truce } }
+on_vassal_change = { on_actions = { saas_fp2_catalyst_granted_independence } }
+feast_new_event_selection_tombola = { on_actions = { saas_fp2_catalyst_feast_guests } }
 
 saas_catalyst_alliance_added = {
 	effect = {
@@ -17,6 +33,17 @@ saas_catalyst_alliance_added = {
 				scope:second = { saas_eligible_participant_trigger = yes saas_is_lijiao_ruler_trigger = yes }
 			}
 			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_lijiao_alliance CHARACTER = scope:first }
+		}
+		if = {
+			limit = {
+				scope:first = { saas_eligible_participant_trigger = yes }
+				scope:second = { saas_eligible_participant_trigger = yes }
+				scope:first.faith != scope:second.faith
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_formed_interreligious_alliance_with_important_character
+				CHARACTER = scope:first
+			}
 		}
 	}
 }
@@ -42,6 +69,17 @@ saas_catalyst_title_usurped = {
 			limit = { root = { saas_eligible_participant_trigger = yes } scope:transfer_type = flag:usurped }
 			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_title_usurped CHARACTER = root }
 		}
+		if = {
+			limit = {
+				root = { saas_eligible_participant_trigger = yes }
+				scope:title.empire ?= title:e_huaxia
+				scope:transfer_type = flag:usurped
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_usurp_title_fp2
+				CHARACTER = root
+			}
+		}
 	}
 }
 
@@ -64,6 +102,16 @@ saas_catalyst_ruler_released = {
 			limit = { root = { saas_is_lijiao_ruler_trigger = yes highest_held_title_tier >= tier_kingdom } }
 			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_peace_restored CHARACTER = root }
 		}
+		if = {
+			limit = {
+				root = { saas_eligible_participant_trigger = yes }
+				scope:imprisoner = { saas_eligible_participant_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_release_important
+				CHARACTER = root
+			}
+		}
 	}
 }
 
@@ -80,6 +128,16 @@ saas_catalyst_tianzi_killed = {
 				root = { is_ruler = yes saas_eligible_participant_trigger = yes }
 			}
 			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_title_usurped CHARACTER = scope:killer }
+		}
+		if = {
+			limit = {
+				exists = scope:killer
+				root = { saas_eligible_participant_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_unnatural_death_important_character
+				CHARACTER = root
+			}
 		}
 	}
 }
@@ -103,6 +161,16 @@ saas_catalyst_attacker_won = {
 			}
 			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_adventurer_conquest CHARACTER = scope:attacker }
 		}
+		if = {
+			limit = {
+				scope:attacker = { saas_eligible_participant_trigger = yes }
+				scope:defender = { saas_eligible_participant_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_win_any_war_within_the_region
+				CHARACTER = scope:attacker
+			}
+		}
 	}
 }
 
@@ -115,6 +183,260 @@ saas_catalyst_defender_won = {
 		if = {
 			limit = { scope:attacker = { has_title = title:e_huaxia } }
 			saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_tianzi_defeat CHARACTER = scope:attacker }
+		}
+		if = {
+			limit = {
+				scope:attacker = { saas_eligible_participant_trigger = yes }
+				scope:defender = { saas_eligible_participant_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_win_any_war_within_the_region
+				CHARACTER = scope:defender
+			}
+		}
+	}
+}
+
+# The Iberian Struggle and situations use separate catalyst APIs. These child
+# on_actions mirror the original generic hooks without replacing vanilla effects.
+
+saas_fp2_catalyst_passing_time = {
+	effect = {
+		situation:spring_and_autumn_situation ?= {
+			if = {
+				limit = { situation_top_has_catalyst = catalyst_passing_of_time }
+				trigger_situation_catalyst = catalyst_passing_of_time
+			}
+		}
+	}
+}
+
+saas_fp2_catalyst_claim_gained = {
+	effect = {
+		if = {
+			limit = {
+				NOT = { scope:transfer_type = flag:inheritance }
+				scope:title.empire ?= title:e_huaxia
+				root = { saas_eligible_participant_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_gain_claim_on_title_fp2
+				CHARACTER = root
+			}
+		}
+	}
+}
+
+saas_fp2_catalyst_building_completed = {
+	effect = {
+		if = {
+			limit = {
+				root = { has_holding_type = castle_holding }
+				root.county.holder.top_liege = { saas_eligible_participant_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_new_building_in_castle
+				CHARACTER = root.county.holder.top_liege
+			}
+		}
+		else_if = {
+			limit = {
+				root = { has_holding_type = city_holding }
+				root.county.holder.top_liege = { saas_eligible_participant_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_new_building_in_city
+				CHARACTER = root.county.holder.top_liege
+			}
+		}
+	}
+}
+
+saas_fp2_catalyst_rival = {
+	effect = {
+		if = {
+			limit = {
+				root = { saas_eligible_participant_trigger = yes }
+				scope:target = { saas_eligible_participant_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_becomes_rival_with_involved
+				CHARACTER = root
+			}
+		}
+	}
+}
+
+saas_fp2_catalyst_friend_or_lover = {
+	effect = {
+		if = {
+			limit = {
+				root = { saas_eligible_participant_trigger = yes }
+				scope:target = { saas_eligible_participant_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_became_friend_lover_with_character
+				CHARACTER = root
+			}
+		}
+	}
+}
+
+saas_fp2_catalyst_best_friend_or_soulmate = {
+	effect = {
+		if = {
+			limit = {
+				root = { saas_eligible_participant_trigger = yes }
+				scope:target = { saas_eligible_participant_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_became_best_friend_soulmate_with_very_important_character
+				CHARACTER = root
+			}
+		}
+	}
+}
+
+saas_fp2_catalyst_hook_used = {
+	effect = {
+		if = {
+			limit = {
+				root = { saas_eligible_participant_trigger = yes }
+				scope:target = { saas_eligible_participant_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_using_a_hook_on_very_important_character
+				CHARACTER = root
+			}
+		}
+	}
+}
+
+saas_fp2_catalyst_county_faith_changed = {
+	effect = {
+		if = {
+			limit = {
+				root.holder.top_liege = { saas_eligible_participant_trigger = yes }
+				scope:old_faith != root.faith
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_forced_conversion
+				CHARACTER = root.holder.top_liege
+			}
+		}
+	}
+}
+
+saas_fp2_catalyst_faith_conversion = {
+	effect = {
+		if = {
+			limit = {
+				root = { saas_eligible_participant_trigger = yes }
+				exists = root.capital_province
+				root.capital_province.faith = root.faith
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_convert_local_culture_faith
+				CHARACTER = root
+			}
+		}
+		else_if = {
+			limit = {
+				root = { saas_eligible_participant_trigger = yes }
+				exists = scope:actor
+				scope:actor != root
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_forced_conversion
+				CHARACTER = scope:actor
+			}
+		}
+	}
+}
+
+saas_fp2_catalyst_language_learned = {
+	effect = {
+		if = {
+			limit = {
+				root = { saas_eligible_participant_trigger = yes }
+				scope:target = { saas_eligible_participant_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_learned_new_language_important
+				CHARACTER = root
+			}
+		}
+	}
+}
+
+saas_fp2_catalyst_broken_truce = {
+	effect = {
+		if = {
+			limit = {
+				scope:attacker = {
+					saas_eligible_participant_trigger = yes
+					has_character_modifier = broke_truce
+				}
+				scope:defender = { saas_eligible_participant_trigger = yes }
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_broke_truce_against_important_character
+				CHARACTER = scope:attacker
+			}
+		}
+	}
+}
+
+saas_fp2_catalyst_granted_independence = {
+	effect = {
+		if = {
+			limit = {
+				root = {
+					is_independent_ruler = yes
+					saas_eligible_participant_trigger = yes
+					has_opinion_modifier = {
+						target = scope:old_liege
+						modifier = granted_independence_opinion
+					}
+				}
+				scope:old_liege = {
+					saas_eligible_participant_trigger = yes
+					NOT = {
+						any_held_title = {
+							is_de_jure_liege_or_above_target = root.primary_title
+						}
+					}
+				}
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_independence_from_non_dejure_vassal
+				CHARACTER = scope:old_liege
+			}
+		}
+	}
+}
+
+saas_fp2_catalyst_feast_guests = {
+	effect = {
+		if = {
+			limit = {
+				scope:activity = {
+					NOT = { has_variable = saas_fp2_feast_catalyst_fired }
+					activity_host = { saas_eligible_participant_trigger = yes }
+					any_attending_character = {
+						saas_eligible_participant_trigger = yes
+						OR = {
+							faith != scope:activity.activity_host.faith
+							culture != scope:activity.activity_host.culture
+						}
+					}
+				}
+			}
+			scope:activity = { set_variable = saas_fp2_feast_catalyst_fired }
+			saas_trigger_catalyst_effect = {
+				CATALYST = catalyst_invite_diff_faith_culture_to_feast
+				CHARACTER = scope:activity.activity_host
+			}
 		}
 	}
 }

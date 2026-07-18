@@ -588,6 +588,21 @@ task_develop_county = {
 							}
 						}
 					}
+					if = {
+						limit = {
+							scope:councillor_liege = { saas_eligible_participant_trigger = yes }
+							scope:county = {
+								NAND = {
+									faith = scope:councillor_liege.faith
+									culture = scope:councillor_liege.culture
+								}
+							}
+						}
+						saas_trigger_catalyst_effect = {
+							CATALYST = catalyst_improve_development_vassal_diff_faith_culture
+							CHARACTER = scope:councillor_liege
+						}
+					}
 					# Struggle Parameter
 					if = {
 						limit = {
