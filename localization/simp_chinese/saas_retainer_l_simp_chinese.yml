@@ -41,7 +41,9 @@
  saas_recruit_talent_decision_effect: "获得持续#V 5年#!的[GetModifier('saas_recruit_talent_edict_modifier').GetNameWithTooltip]；此决议有#V 10年#!冷却。"
 
  saas_elite_guest_arrived_title: "名士来访"
- saas_elite_guest_arrived_desc: "[scope:saas_elite_guest.GetShortUIName]仰慕你的宫廷声望，已作为宾客前来拜访。"
+ saas_elite_guest_arrived_desc: "精英人才[scope:saas_elite_guest.GetShortUIName]已作为宾客投奔你的宫廷。"
+ saas_elite_adventurer_spawned_title: "名士踏上征途"
+ saas_elite_adventurer_spawned_desc: "精英人才[scope:saas_elite_guest.GetShortUIName]在你的领地现身，随后建立营地，成为了一名冒险者。"
 
  saas_retainer.1100.t: "门客自荐：投资理财"
  saas_retainer.1100.desc: "[scope:retainer.GetShortUIName]呈上一份经营财货的策书，声称只需数月便可使投入翻倍。其言辞颇有把握，但本钱若蚀尽，也只能由我承担。"

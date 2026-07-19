@@ -175,6 +175,10 @@ saas_high_talent_trigger = {
 	}
 }
 
+saas_is_elite_pool_character_trigger = {
+	has_character_flag = saas_elite_pool_character
+}
+
 saas_talent_can_leave_host_trigger = {
 	saas_high_talent_trigger = yes
 	trigger_if = {

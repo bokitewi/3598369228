@@ -144,36 +144,34 @@ saas_retainer_event_pool = {
 	}
 }
 
-five_year_playable_pulse = {
-	on_actions = {
-		saas_elite_guest_five_year_pulse
-	}
-}
-
-saas_elite_guest_five_year_pulse = {
-	trigger = {
-		has_royal_court = yes
-		has_dlc_feature = royal_court
-		is_landed = yes
-		exists = capital_county
-	}
-	effect = {
-		random = {
-			chance = {
-				value = 0.25
-				add = {
-					value = court_grandeur_current_level
-					multiply = 0.25
-				}
-			}
-			saas_create_elite_guest_effect = yes
-		}
-	}
-}
-
 yearly_global_pulse = {
 	on_actions = {
+		saas_elite_pool_global_pulse
 		saas_retainer_global_talent_pulse
+	}
+}
+
+saas_elite_pool_global_pulse = {
+	trigger = {
+		NOT = { exists = global_var:saas_elite_pool_cycle_lock }
+		any_independent_ruler = {
+			is_alive = yes
+			is_landed = yes
+			highest_held_title_tier >= tier_county
+			exists = capital_county
+			exists = capital_province
+		}
+	}
+	effect = {
+		set_global_variable = {
+			name = saas_elite_pool_cycle_lock
+			value = yes
+			years = 5
+		}
+		random = {
+			chance = 2
+			saas_create_global_elite_pool_character_effect = yes
+		}
 	}
 }
 

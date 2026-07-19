@@ -32,20 +32,14 @@ activity_huimeng = {
 			is_alive = yes
 			is_incapable = no
 			is_imprisoned = no
-			saas_can_host_huimeng_trigger = yes
-		}
-		trigger_if = {
-			limit = { is_current_phase_active = yes }
-			has_attending_activity_guests = yes
+			is_landed_or_landless_administrative = yes
 		}
 	}
 
 	on_invalidated = {
-		
-		if = {
-			limit = { has_attending_activity_guests = no }
-			scope:host = { trigger_event = activity_system.0100 }
-		}
+		invalidation_imprisoned_effect = yes
+		invalidation_incapable_effect = yes
+		invalidation_unlanded_effect = yes
 	}
 
 	on_host_death = {
@@ -128,17 +122,14 @@ activity_huimeng = {
 		activity_special_type_progression_variable = { NUM = 30 }
 	}
 
-	open_invite = yes
 	max_guests = { value = 60 }
 	reserved_guest_slots = 5
 	allow_zero_guest_invites = no
 
 	can_be_activity_guest = {
+		is_adult = yes
 		in_diplomatic_range = scope:host
-		is_available_adult = yes
-		is_landed = yes
-		highest_held_title_tier >= tier_duchy
-		religion = religion:lijiao_religion
+		is_pool_guest = no
 	}
 
 	host_intents = {
@@ -155,22 +146,58 @@ activity_huimeng = {
 		base_activity_modifier = yes
 		activity_guest_shared_ai_accept_modifier = yes
 		activity_guest_health_ai_accept_modifier = yes
-		modifier = { add = 25 opinion = { target = scope:host value >= 50 } }
+		modifier = {
+			add = 500
+			is_courtier_of = scope:host
+		}
+		modifier = {
+			add = 500
+			is_vassal_of = scope:host
+		}
+		modifier = {
+			add = 100
+			is_allied_to = scope:host
+		}
+		modifier = {
+			add = 75
+			has_relation_friend = scope:host
+		}
+		modifier = { add = 50 opinion = { target = scope:host value >= 50 } }
 		modifier = { add = -50 opinion = { target = scope:host value <= -50 } }
 	}
 
 	guest_invite_rules = {
 		rules = {
-			1 = activity_invite_rule_vassals
+			2 = activity_invite_rule_rivals
+			2 = activity_invite_rule_lovers
+			2 = activity_invite_rule_potential_lovers
+			6 = activity_invite_mp
 		}
 		defaults = {
-			4 = activity_invite_neighbouring_rulers
-			3 = activity_invite_rule_tributaries
+			1 = activity_invite_rule_close_family
+			1 = activity_invite_spouses_close_family
+			2 = activity_invite_rule_extended_family
+			2 = activity_invite_spouses_extended_family
+			2 = activity_invite_rule_friends
+			2 = activity_invite_rule_potential_friends
+			2 = activity_invite_rule_councillors
+			1 = activity_invite_rule_vassals
+			1 = activity_invite_rule_tributaries
+			1 = dm_activity_invite_rule_allies
+			1 = activity_invite_rule_bloc_house_heads
+			2 = activity_invite_rule_bloc_members
+			2 = activity_invite_rule_fellow_vassals
+			3 = activity_invite_rule_courtiers
+			3 = activity_invite_rule_knights
+			4 = activity_invite_rule_guests
+			2 = activity_invite_rule_all_lieges
+			2 = activity_invite_neighbouring_rulers
+			1 = activity_invite_rule_landless_adventurers_restricted_range
 		}
 	}
 
 	wait_time_before_start = { months = 4 }
-	max_guest_arrival_delay_time = { months = 1 }
+	max_guest_arrival_delay_time = { months = 5 }
 	cost = { gold = { value = 200 } }
 	ui_predicted_cost = { gold = { value = 200 } }
 	ai_will_do = { value = 20 }

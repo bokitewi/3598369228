@@ -283,74 +283,89 @@ saas_send_talent_to_strong_realm_effect = {
 	}
 }
 
+saas_create_global_elite_pool_character_effect = {
+	random_independent_ruler = {
+		limit = {
+			is_alive = yes
+			is_landed = yes
+			highest_held_title_tier >= tier_county
+			exists = capital_county
+			exists = capital_province
+		}
+		weight = {
+			base = 100
+			modifier = { add = 25 highest_held_title_tier = tier_duchy }
+			modifier = { add = 50 highest_held_title_tier = tier_kingdom }
+			modifier = { add = 80 highest_held_title_tier >= tier_empire }
+			modifier = { add = 25 realm_size >= 20 }
+			modifier = { add = 25 realm_size >= 50 }
+			modifier = { add = 25 realm_size >= 100 }
+			modifier = { add = 10 max_military_strength >= 1000 }
+			modifier = { add = 20 max_military_strength >= 3000 }
+			modifier = { add = 30 max_military_strength >= 8000 }
+			modifier = {
+				add = {
+					value = prestige_level
+					multiply = 10
+				}
+			}
+			modifier = {
+				add = {
+					value = court_grandeur_current_level
+					multiply = 5
+				}
+				has_royal_court = yes
+			}
+			modifier = { add = -50 has_realm_law = saas_no_stipend_law }
+			modifier = { add = -20 has_realm_law = saas_limited_stipend_law }
+			modifier = { add = 30 has_realm_law = saas_large_stipend_law }
+			modifier = { add = 60 has_realm_law = saas_double_stipend_law }
+		}
+		saas_create_elite_guest_effect = yes
+	}
+}
+
 saas_create_elite_guest_effect = {
+	save_scope_as = saas_elite_patron
 	create_character = {
+		template = saas_elite_pool_character
 		location = root.capital_province
-		age = { 20 40 }
-		gender_female_chance = root_faith_dominant_gender_female_chance
-		culture = root.capital_county.culture
-		faith = root.capital_county.faith
-		dynasty = none
-		random_traits = no
-		random_traits_list = {
-			count = 1
-			education_diplomacy_5 = {}
-			education_martial_5 = {}
-			education_stewardship_5 = {}
-			education_intrigue_5 = {}
-			education_learning_5 = {}
-		}
-		random_traits_list = {
-			count = 1
-			diligent = {}
-			ambitious = {}
-			patient = {}
-			brave = {}
-			calm = {}
-		}
-		random_traits_list = {
-			count = 1
-			gregarious = {}
-			just = {}
-			honest = {}
-			zealous = {}
-			stubborn = {}
-		}
-		diplomacy = { 12 19 }
-		martial = { 12 19 }
-		stewardship = { 12 19 }
-		intrigue = { 12 19 }
-		learning = { 12 19 }
-		prowess = { 8 16 }
 		save_scope_as = saas_elite_guest
 	}
 	scope:saas_elite_guest = {
-		if = {
-			limit = { has_trait = education_diplomacy_5 }
-			add_diplomacy_skill = 6
+		random_list = {
+			20 = {
+				trigger = {
+					has_dlc_feature = roads_to_power
+					is_physically_able_adult = yes
+					exists = location.county
+					ai_can_valid_to_create_laamp_trigger = yes
+				}
+				add_gold = 500
+				create_landless_adventurer_title_effect = {
+					REASON = flag:voluntary
+					FLAVOR_CHAR = scope:saas_elite_guest
+				}
+				scope:saas_elite_patron = {
+					send_interface_message = {
+						type = event_toast_effect_neutral
+						title = saas_elite_adventurer_spawned_title
+						left_icon = scope:saas_elite_guest
+						custom_tooltip = saas_elite_adventurer_spawned_desc
+					}
+				}
+			}
+			80 = {
+				visit_court_of = scope:saas_elite_patron
+				scope:saas_elite_patron = {
+					send_interface_message = {
+						type = event_toast_effect_neutral
+						title = saas_elite_guest_arrived_title
+						left_icon = scope:saas_elite_guest
+						custom_tooltip = saas_elite_guest_arrived_desc
+					}
+				}
+			}
 		}
-		else_if = {
-			limit = { has_trait = education_martial_5 }
-			add_martial_skill = 6
-		}
-		else_if = {
-			limit = { has_trait = education_stewardship_5 }
-			add_stewardship_skill = 6
-		}
-		else_if = {
-			limit = { has_trait = education_intrigue_5 }
-			add_intrigue_skill = 6
-		}
-		else_if = {
-			limit = { has_trait = education_learning_5 }
-			add_learning_skill = 6
-		}
-		visit_court_of = root
-	}
-	send_interface_message = {
-		type = event_toast_effect_neutral
-		title = saas_elite_guest_arrived_title
-		left_icon = scope:saas_elite_guest
-		custom_tooltip = saas_elite_guest_arrived_desc
 	}
 }
