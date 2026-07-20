@@ -478,7 +478,7 @@ han14={
 }
 han15={
   name="chu1"##霍叔处
-  dynasty_house=xin563
+  dynasty_house=house_xin563
 	religion="xizhouli" 
 	culture="zhou"
   father=han5

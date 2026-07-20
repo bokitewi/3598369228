@@ -1,6 +1,6 @@
 ﻿yunxinggaorong2={
   name="nanming885"
-  dynasty_house=xin736
+  dynasty_house=house_xin736
 	religion="xirongfangling" 
 	culture="yiluozhirong"
   father=yunxingquanrong1

@@ -7,7 +7,7 @@
 k_haoguo = {
 	color = { 42 189 93 }
 
-	capital = c_hu2
+	capital = c_feng2
 }
 
 k_hanguo3 = {

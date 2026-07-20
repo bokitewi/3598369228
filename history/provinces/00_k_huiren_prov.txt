@@ -21,7 +21,7 @@
 }
 
 
-### c_hui1
+### c_yafu
 
 
 ### c_wangping
@@ -47,16 +47,16 @@
 }
 
 
-### c_nansu
+### c_wangping
 
 
-### c_xiepi
+### c_wangping
 
 
-### c_changpingxian
+### c_quechuan
 
 
-### c_buduo
+### c_quechuan
 
 
 ### c_quechuan
@@ -68,10 +68,10 @@
 }
 
 
-### c_xinan
+### c_quechuan
 
 
-### c_yugu
+### c_ermian
 
 
 ### c_ermian
@@ -116,9 +116,9 @@
 }
 
 
-### c_qiangshi
+### c_chilv
 
 
-### c_dabo
+### c_chilv
 
 

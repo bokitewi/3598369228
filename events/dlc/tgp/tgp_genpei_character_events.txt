@@ -132,7 +132,7 @@ tgp_genpei_character.1010 = {
 				limit = {
 					holder = {
 						this != root
-						dynasty ?= dynasty:japanese_minamoto_seiwa
+						dynasty ?= { exists = var:minamoto_flag }
 						house ?= {
 							exists = house_confederation
 							confederation.leading_house ?= house
@@ -143,7 +143,7 @@ tgp_genpei_character.1010 = {
 				alternative_limit = {
 					holder = {
 						this != root 
-						dynasty ?= dynasty:japanese_minamoto_seiwa
+						dynasty ?= { exists = var:minamoto_flag }
 						house ?= {
 							exists = house_confederation
 							NOT = { house_confederation = root.top_liege.house.house_confederation }

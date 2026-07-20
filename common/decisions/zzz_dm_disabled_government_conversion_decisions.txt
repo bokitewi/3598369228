@@ -3,34 +3,34 @@
 # suppress the 24 vanilla conversion decisions and the former COPF conversion
 # decision without editing the installed game.
 
-convert_to_feudalism_liege_converted_decision = { is_shown = { always = no } }
-convert_clan_to_feudalism_through_liege_decision = { is_shown = { always = no } }
-convert_feudalism_to_clan_through_liege_decision = { is_shown = { always = no } }
-convert_whole_realm_to_feudalism_decision = { is_shown = { always = no } }
-convert_to_tribalism_decision = { is_shown = { always = no } }
-convert_whole_realm_to_feudalism_west_african_pagan_decision = { is_shown = { always = no } }
+convert_to_feudalism_liege_converted_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+convert_clan_to_feudalism_through_liege_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+convert_feudalism_to_clan_through_liege_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+convert_whole_realm_to_feudalism_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+convert_to_tribalism_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+convert_whole_realm_to_feudalism_west_african_pagan_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
 
-convert_to_administrative_decision = { is_shown = { always = no } }
-convert_to_feudalism_from_administrative_decision = { is_shown = { always = no } }
-fp3_become_clan_government_decision = { is_shown = { always = no } }
+convert_to_administrative_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+convert_to_feudalism_from_administrative_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+fp3_become_clan_government_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
 
-settle_people_decision = { is_shown = { always = no } }
-step_away_from_the_steppe_decision = { is_shown = { always = no } }
-confederation_kingdom_decision = { is_shown = { always = no } }
-settle_the_steppe_decision = { is_shown = { always = no } }
-become_nomadic_decision = { is_shown = { always = no } }
+settle_people_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+step_away_from_the_steppe_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+confederation_kingdom_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+settle_the_steppe_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+become_nomadic_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
 
-convert_to_mandala_government_decision = { is_shown = { always = no } }
-assimilate_to_mandala_decision = { is_shown = { always = no } }
-mandala_adopt_clan_government_decision = { is_shown = { always = no } }
+convert_to_mandala_government_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+assimilate_to_mandala_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+mandala_adopt_clan_government_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
 
-tgp_japan_establish_soryo_manor_decision = { is_shown = { always = no } }
-tgp_japan_establish_soryo_administration_decision = { is_shown = { always = no } }
-tgp_japan_restore_japanese_government_decision = { is_shown = { always = no } }
-tgp_japan_assert_regional_dominion_government_decision = { is_shown = { always = no } }
+tgp_japan_establish_soryo_manor_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+tgp_japan_establish_soryo_administration_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+tgp_japan_restore_japanese_government_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+tgp_japan_assert_regional_dominion_government_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
 
-adopt_steppe_administration = { is_shown = { always = no } }
-return_to_the_steppe_decision = { is_shown = { always = no } }
-convert_to_meritocratic_decision = { is_shown = { always = no } }
+adopt_steppe_administration = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+return_to_the_steppe_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
+convert_to_meritocratic_decision = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }
 
-decision_convert_to_feudal_admin = { is_shown = { always = no } }
+decision_convert_to_feudal_admin = { picture = { reference = "gfx/interface/illustrations/decisions/decision_realm.dds" } is_shown = { always = no } }

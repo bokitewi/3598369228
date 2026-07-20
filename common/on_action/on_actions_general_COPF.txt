@@ -90,14 +90,14 @@ setup_mod_copf_version = {
 				add_to_temporary_list = change_to_supervision
 			}
 		}
-		every_in_local_list = {
+		every_in_list = {
 			list = change_to_governor
 			vassal_contract_set_obligation_level = {
 				type = feudal_government_succession_rights
 				level = feudal_succession_rights_governor_appointment
 			}
 		}
-		every_in_local_list = {
+		every_in_list = {
 			list = change_to_supervision
 			vassal_contract_set_obligation_level = {
 				type = feudal_government_succession_rights

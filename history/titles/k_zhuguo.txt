@@ -30,9 +30,6 @@
 	3800.1.1 = {
 		holder = han844
 	}
-	3813.1.1 = {
-		holder = han851
-	}
 	3849.1.1 = {
 		change_development_level = 20
 		government = feudal_admin_government

@@ -714,7 +714,12 @@ declare_bloodline_holy_decision = {
 			faith.religion = faith:mazdayasna.religion #Must aim to become Saoshyant instead.
 			dynasty = {
 				exists = var:variable_made_bloodline_holy
-				dynasty:japanese_yamato ?= this # Already divine
+			}
+			trigger_if = {
+				limit = {
+					exists = title:k_chrysanthemum_throne.holder
+				}
+				dynasty = title:k_chrysanthemum_throne.holder.dynasty
 			}
 		}
 		OR = { #Should not be available to non-Temporal religious heads.
@@ -1171,8 +1176,7 @@ found_empire_decision = {
 			AND = {
 				exists = global_var:warring_states_active
 				any_character_situation = {
-					type = spring_and_autumn_situation
-					involvement = involved
+					situation_type = spring_and_autumn_situation
 				}
 			}
 		}

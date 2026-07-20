@@ -1045,7 +1045,6 @@ Jixiaxuegong_01 = {
 	show_disabled = yes
 	cost_gold = 2280
 	province_modifier = {
-culture_tradition_max_add = 2
 development_growth_factor = 0.15
 
 	}
@@ -1110,7 +1109,7 @@ zhanghuagong_01 = {
 	flag = travel_point_of_interest_diplomatic
 }
 ##############娓氬###################
-zhanghuagong_01 = {
+zhugong_01 = {
 	construction_time = very_slow_construction_time
 	type_icon = "icon_structure_wudang_mountain_temples.dds"
 	can_construct_potential = {
@@ -1148,7 +1147,7 @@ zhanghuagong_01 = {
 	flag = travel_point_of_interest_diplomatic
 }
 ##############濮戣嫃鍙?##################
-zhanghuagong_01 = {
+gusugong_01 = {
 	construction_time = very_slow_construction_time
 	type_icon = "icon_structure_wudang_mountain_temples.dds"
 	can_construct_potential = {
@@ -2282,7 +2281,6 @@ huangjintai_01 = {
 	show_disabled = yes
 	cost_gold = 2000
 	province_modifier = {
-culture_tradition_max_add = 1
 development_growth_factor = 0.08
 tax_mult = -0.2
 	}

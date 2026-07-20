@@ -1,6 +1,5 @@
 ﻿c_changshi = {
 	3849.12.31 = {
-		liege = k_weiguo
 		holder = kangshi6
 		government = feudal_admin_government
 		succession_laws = { noble_family_succession_law }
@@ -15,7 +14,6 @@
 }
 c_kangshi = {
 	3849.12.31 = {
-		liege = k_weiguo
 		holder = kangshi1
 		government = feudal_admin_government
 		succession_laws = { noble_family_succession_law }
@@ -30,7 +28,6 @@ c_kangshi = {
 }
 c_ningshi = {
 	3849.12.31 = {
-		liege = k_weiguo
 		holder = han200
 		government = feudal_admin_government
 		succession_laws = { noble_family_succession_law }
@@ -45,7 +42,6 @@ c_ningshi = {
 }
 c_shishi4 = {
 	3849.12.31 = {
-		liege = k_weiguo
 		holder = han206
 		government = feudal_admin_government
 		succession_laws = { noble_family_succession_law }
@@ -60,7 +56,6 @@ c_shishi4 = {
 }
 c_sunshi = {
 	3849.12.31 = {
-		liege = k_weiguo
 		holder = han199
 		government = feudal_admin_government
 		succession_laws = { noble_family_succession_law }
@@ -75,7 +70,6 @@ c_sunshi = {
 }
 c_weishi2 = {
 	3849.12.31 = {
-		liege = k_weiguo
 		holder = han185
 		government = feudal_admin_government
 		succession_laws = { noble_family_succession_law }

@@ -1,7 +1,6 @@
 ﻿d_guoshi4 = {
 	3810.1.1 = {
 		liege = "k_moguo"
-		holder = han34
 	}
 	3849.1.1 = {
 		change_development_level = 26

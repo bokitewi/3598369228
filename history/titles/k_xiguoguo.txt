@@ -34,7 +34,7 @@
 		change_development_level = 30
 		government = feudal_admin_government
 	}
-	33590.12.31 = {
+	3590.12.31 = {
 		holder = han596
 	}
 }
@@ -74,7 +74,7 @@ d_xiayangshi = {
 		change_development_level = 29
 		government = feudal_admin_government
 	}
-	33590.12.31 = {
+	3590.12.31 = {
 		holder = han596
 	}
 }
@@ -117,7 +117,7 @@ k_xiguoguo = {
 	3849.12.31 = {
 		holder = han605
 	}
-	33590.12.31 = {
+	3590.12.31 = {
 		holder = han596
 	}
 }

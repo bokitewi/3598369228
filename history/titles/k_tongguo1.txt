@@ -58,7 +58,6 @@
 }
 k_tongguo1 = {
 	3251.1.1 = {
-		liege = "e_zhoutianzi"
 		holder = han2953
 	}
 	3303.1.1 = {

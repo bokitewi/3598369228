@@ -1,0 +1,625 @@
+{
+  "method": "DDS header block-boundary correction",
+  "files": [
+    {
+      "path": "gfx/interface/icons/bookmark_big/bm_1066_canarias.dds",
+      "fourcc": "DXT1",
+      "old_width": 334,
+      "old_height": 150,
+      "new_width": 336,
+      "new_height": 152,
+      "original_sha256": "7d964ccf44447a0e814b0e40c75e7fdc5c7a1a422fb537a47b70495370b34efc",
+      "installed_sha256": "1c162be999549e40c294c189bc6facaaa7a7e5cba8afbc2645f136e1e3a2b59b"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_11_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "d85f36b968ffacf13edb26ee2d6701e636bfa1f17d26752b54d25cbe41c014a9",
+      "installed_sha256": "1ddadb12c43213951af62586fe990c10881178636fa9c59b8242b67d9b4f9eef"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_12_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "092baceecfb500d9b43dfa8446989c4921bad5be150da1e17bfbedf690f65df0",
+      "installed_sha256": "1576971e0fb1e74c09d666297f374fbc00945b521b68e710d3a9716de897963d"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_13_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "ba7a2ba4e3f00f7aee4bd8be3761f25ac977c2a31031c11e11cd15d327285581",
+      "installed_sha256": "8bf01586f59900acc645926cf3b343be5eade69d67768e2cd6fcc324590f98fd"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_14_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "51108eb97908da383b9b02be3181baedc00aab8c54cbb50a933a3bdc4f126464",
+      "installed_sha256": "2530efabd58f8d0217e49bc9aacd7c466e17d831255344cb8bea17d274ce1116"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_1681_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "3c20f4093fa44608862f9fe1e7bc5f80ab4f3a3e4a7a078c08c9b2812743b92f",
+      "installed_sha256": "2105d91153e50b252833699aac5ab3d1ebaf0b5c8401231d6e2acaa7ad40fd79"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_1682_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "4ada771ef62d0ee695c93a5b3253d413078739edf0953f0580ddc25e0bceb12c",
+      "installed_sha256": "6a719e63bbf0dd71c65d679cdfd0f37bf8ac49bbeb86ea385b6ef8e8133167e0"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_1683_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "558c4dab4000c3a8b78a4c0cf5a0446f1517de2b380ea5539573bb8a3e69f092",
+      "installed_sha256": "52949e3f0bac241cd2041644b8383eccba19e126514e68f7b27ab7786575c410"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_1684_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "1670140f4c615c49fd789e220666342e7a3af16e73b8ff759ba38a4c3a24b88d",
+      "installed_sha256": "19908529f3ff740168cb74aea1753f4ff011bbcbc182bb7b7ae476bf13374439"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_1685_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "f6f3898da6843dbfc37c08a202f6ced94f6b771c501710347f8ad41bb4e399fe",
+      "installed_sha256": "4badc05c4e8466a1a245053c23aa565dccfda783049fe6c473bc94cac94f4e5c"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_1686_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "a835db9595e26e3e66fded891c585a6aef2287295bc30b54c5fd84fd2aed18eb",
+      "installed_sha256": "67bcb15b47db4728769320fb589fae0f6af5cfe4e1a5ac5c371a166e7bfda492"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_1765_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "d816de4d00f4d4e057f41303b3aba4e804b50edfd2a977975529e54554040b23",
+      "installed_sha256": "d9a06d97c1985b18c958490fd720789517bdf9ca295c7c4f9e7590657d01f34c"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_1766_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "7e4dee4f69abc92c3e6f20a4f383ebf3d89811e269fafd5b982659f1a409054b",
+      "installed_sha256": "ad8695b60f645995ff5271fd73d614e443f80db8c05dba06772fd4d38dd9a0bf"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_1767_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "b2204c7c3d09450a4637b23030396202a2cdd29c6659ea0f473eae12470fa24d",
+      "installed_sha256": "07ef0f3ea598f1fd99d121a3ef4b6ee670a149328ccff1b58bedbfb5ae8ff478"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_1768_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "dd517c22adeb81c67a696f94438e01237a0cbe9437b0ea5e2ecd30740bf194e9",
+      "installed_sha256": "baf6c115c3c6a6432f04ffe204530ee504695650badfb96f99f677f3b9590425"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_1769_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "4954b9f83fe20cc0ed5c87762f913a5b944b1451f5681d6197598e26a871093a",
+      "installed_sha256": "6bd6c9c0c6fdd3c050a65347b700d2a4d58a46ceeb2ecab3bb417572ec3a4952"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_7_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "740ae847d0c501afe1ef331c4f7a5b7666a6561f0f47f0c5f44523f3b6911a15",
+      "installed_sha256": "0777fefb39e2f73054bf2a7522f6d0734b2cd3ecdfa3d2f8761353ce62734f54"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/b_8_0.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "e6df3b630ef49ed4b3cc4e0cc20a91d3a51c00b6fb24e3d3ce2480441109557d",
+      "installed_sha256": "e6ea5a81cd77976fc7f08028baef8144d99c9378e697b4ba4d6c84e0e0d7b5ea"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/c_anyang.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "18fa72856bb2bfe7982189b54dc9ec29a1c886ac4038d22e38c5f17ef6b041bd",
+      "installed_sha256": "9af0d246f93e446c56489f91603958c2204f22f8b578c46a7bf38099c660cb1c"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/c_aowei.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "502f176980bb8357a3f23734fcf1a9698671aa78c82ecca5730970b781be1b2b",
+      "installed_sha256": "bac0276c586cc83dbde2648cce632937d98a9326200f5e3dd9b36cc699d60e84"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/c_bai.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "aaa2e2393cba7335197f5a0a301e64b007514bf9427498daea549fde88054c6a",
+      "installed_sha256": "a4eb6e8b310774f6e2a8c20e8c50de5606bfc3fc25a64b751280f2dde230c161"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/c_baigen.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "3e203f839af541a1c7e5888f67b723744410b64a1037b498ae5f17edb4a50294",
+      "installed_sha256": "136bd0bd5611a6425afd0560db92170c182126098e02d3517cc0cff8f32e57ae"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/c_baigu.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "7821c721d0c660467e7fbbec39a9160e416adb7f696cdad1b4c51b91b22041be",
+      "installed_sha256": "7faa847d8587177b37c7302d3fc22c44d8f6fe2839439805dfea0f1d2f7736ce"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/c_baiju.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "1e9f4576a17d3ec97d8ef327656ad4822996907491ba935dd862c78c199fa773",
+      "installed_sha256": "060de3dac94a765bda6844197a56ecbb3e38e8cafee1e0f939ba0f7b83ef9485"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/c_bailang.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "20b62b429c00481f7fcde3248e1f502d2813ca7eef53889f181c3649a0e99377",
+      "installed_sha256": "de222cd7f241948b2c7affbd42ab3789c64cc413cf0ca963a9adee85b2e1e986"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/c_baoan.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "c51c9cab05829d8621ae8b1cc5db7e5446da8feaf53caad112012d56fdb196f8",
+      "installed_sha256": "55db611f22ec7faa47967a16c992bd750ed9328a25c12dc79a61bff50d17eb02"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/c_baosui.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "907d92dcc457a1ea5b66aea6cd6c07f59bf7d0878fd790c48a874d6d15b27c62",
+      "installed_sha256": "441f0a61048bc9c8d424fc3504e131e3b83d580fa246d60c823c6b19226bde24"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/c_beidian.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "9dcb9d5d2acdf5300f91ac5edc3359b57bd883cfab3c1544acfb2b9df6005abd",
+      "installed_sha256": "5c921d39a6be31eb197ef9cb05c67c65e3629c9254c1e79f7212c79b20b7c9db"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/c_beijian.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "cd4958fd313f0b63822273d739a57a4b60c60e2ded0b022ba65c5e3a4b5de8f2",
+      "installed_sha256": "4605a477536542b6cd27b4a036f4eb8fc1465b4709cf3c023d073deb4a79437d"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/c_zuoren.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "c7d7a054c89e20d285893bbef1a40a0ed5400986be866e184936db664aa03e24",
+      "installed_sha256": "31cfc8a41444316d0c70e37d642a8ca7f769598acb89f0914bbd101c166e28e2"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/d_biguo1.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "2a739a6464e33494eab2c421327b96ff82c61dbdc2dfaf9c50b23b96510c8054",
+      "installed_sha256": "df70fa2f980d62b062f47b652f9f285cbc9066141df11b2f8cc7c607584798d8"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/d_biyangguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "10ab1e378938c6fc105074ee494737568776738851b1fd510b648d2abaab109f",
+      "installed_sha256": "9b7ea02e7e874316656fd8829291ef73684f355cf4dba710a7c45c176a8bfbf6"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/d_boguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "738c911919b863db841b9844c5abd439fb3138220d88808516bac79caa9e7dfd",
+      "installed_sha256": "6c43421e40a447cc27da5e3e7415b4910b3f2c29791b0b784421f9eb9db305ed"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/d_caiguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "dd4a3afb667b9f79db0302b10d49eba6a85c655efd6fa542fe9ca10154242e1f",
+      "installed_sha256": "a5309a6da6920c8ff994aaec15a8b1145fd8099a9da8fd6b4c5be61134c1bc8c"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/d_caoguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "645d30700e510e01e1e59377ce9a6430644c88c788f05e1ed0fdec3189f39047",
+      "installed_sha256": "3e74fcc1b256665579b43c811a9cbbaec23226b0a35c66dc6ec0dd596a2d2671"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/d_chaoguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "47afec55f73e162fa27bb7207981fba5aca8e1f233f322ef7bd5e968e5f72399",
+      "installed_sha256": "26f886c685bc65a366b506664c0be64efbec08516e44a6e6ff401c65ab18d486"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/e_huaxia.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "896c745f8edb7bdc04549dccff5c42fddcc8aac8515adbfb8bdefb28c6574460",
+      "installed_sha256": "4549164ca21436587c4a37aa78b6776719d0c7e48832dd089716c7d258bf849f"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_baguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "bb52db5a307967e5934ebe59d90a7dd4f9bf57ecbd2e457034777b8db3e84ddd",
+      "installed_sha256": "e6a857aa123b96bd9d3ac3d355e8bfa6896e2a1d61297391cc7fb4d874661c27"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_baipu.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "b1ce64c2599549eeaa3a36ab8f564f6ebb8b921135318f32b78e230ee75df3c8",
+      "installed_sha256": "2443b4367209da9b48a52b20b138fbb00499f56671463a870be5a5623fa3c43f"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_chenguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "6236ed173e64816ac316a481f608156d91af6321e0f6fd96738d430d8240bf45",
+      "installed_sha256": "8d05de8622c14bb68f58ea5ef20155c3519234233d0d53687f5dd02575ccd118"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_chuguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "5db33aad633f79e6eca7bba7e51bc40afd4f4cabed2e5f7c650546efc624a7e6",
+      "installed_sha256": "f92f98532ac7b90c8a936c87434a65596f21edbdeaa905433d8bed04b8a44f84"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_daiguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "9691e5b09d125561502b52a8e4c7500ed1a9a7c15bc4632d8ff86f11ae4ec495",
+      "installed_sha256": "3823f6c442943f7949a61968cadf0523b14f8ae99dad99f79abf89c3a120d9a3"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_dianguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "6efdf48296116fb000982e891de906707dc0ee5cd5df04c25e61edf1d27b829a",
+      "installed_sha256": "e87a8c9033d37503ac67577b80ade2dfc7b30650966417eaf750aab9254dd8fa"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_dongzhou.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "8119075ffa67060044e1b9dc78e28cca8998366c1d33e0be1fa47e2a18b87600",
+      "installed_sha256": "cf4c6ae8fd43053212036931cd077184557c6733a545c7172fb70da6c22e7d96"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_jinguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "5d68a9db262399b88c6c817b7a49f24a6746844b97cad90bbff605540969c691",
+      "installed_sha256": "fb9c997ab81ae57847022c61d85274fec00336bba69634e8c04025b90880468f"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_qiguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "00057de9e36ea907b7a929d2ad1dc5f02ea2a81799d9813d05cce49a4468bb09",
+      "installed_sha256": "29006a72cdd638e538c71ddeccb9d8469cb7c846cde61a9dbb16e7858fce258d"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_qinguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "de0854e9105fb5713cf23892bf813d9005b370abb6bc90888129c2017d4933c2",
+      "installed_sha256": "7ea1ae8c1a8725c5c0415d9fbd066f85c2f7222960f54954965ba6d4010475ca"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_shangchao.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "d250be2c8fa54462e9f764e2a127bc2550e8c6685a86481275eed1cf7d128ba5",
+      "installed_sha256": "b97c1f6931443fabfb98dd38fcc55f9b6b06be8103c288af439116bf0888993a"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_shuguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "1d12cb9cdef2ae74079c497f598aedcbe7baa0ef18719481e0a4fd3cf9728dbb",
+      "installed_sha256": "90e0ad57cdf15b589b3cc35f608df8082a172af4610f93868881d1edb4273e38"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_songguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "f66b8bcc6c55c2843927e936385207960f568e026277d1152688acca0a11b020",
+      "installed_sha256": "95bb3502949ca19d197ed7faad227af78ad356b0da8b6e130090f30166e1797d"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_wenlangguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "4f46082d6745b0e7a1ffbf4fb4259984e5afe4c29eb0f897f123c8dafa5de540",
+      "installed_sha256": "fdf34c1465e2410153eb483d1274ac7513fa57e9c4011dc9fb305f78f1fabb70"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_wuguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "44f3141d8ea629fe6f3af6ac7847fa92c5d1add440c9002d104b3814c45f9776",
+      "installed_sha256": "6442d2df35313239538c4ca07f676f22913ce53e0832ba2a4e133a23dee49851"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_wushi.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "baa5e1e102c3eaf3eb8b936109ba213ed2d7349178e0c5d8abf0b9b71d0f5091",
+      "installed_sha256": "20b87767d99929120ad4ef2eb9b68b5f016e7e4732ce6374b4ab3d7402b65c6c"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_xiongnu.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "6ce5c9d4ea37018f4365747db4102a434bd0ad689c1970fc6b3e5d0894a1f753",
+      "installed_sha256": "204d077442e9abd5db5650b6e20383b17499d02e612d670d4ca9d1d3280cd4d3"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_xuguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "4e498acc5520ffef0320b23affa268c94400ed31626528b61389b32ec5819ede",
+      "installed_sha256": "e6463cf1c9b8ddaef652db43f0e829e251ed7fbd5e9c613aa56842c173bd5436"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_yanguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "3c20f4093fa44608862f9fe1e7bc5f80ab4f3a3e4a7a078c08c9b2812743b92f",
+      "installed_sha256": "2105d91153e50b252833699aac5ab3d1ebaf0b5c8401231d6e2acaa7ad40fd79"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_yiquguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "25f9e027aa8b10a6ef5abfdbaac2c4daa7a1359a0cce7b9535edf508520f78e9",
+      "installed_sha256": "fd89c9d117433317e105c8519f95f649f782d173c254c7b901215d677e9749d5"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_yongguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "a90120d8086d866a517477d104b7c48338ae16a545cebc795031ca3ef4fb36c8",
+      "installed_sha256": "d2534375c5b46154d61c3561ae34eb214be603dfb4f575b0c79f1c4726bc3c1d"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_yueguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "81edc13f4b4a34f953dc086aeb30fa54cbde669c15579dca82510d9f40a3d989",
+      "installed_sha256": "d60b41330328340c3dbddf216e1f28650b5b4cc4db7b70f248f6fe9427c494ee"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_yuezhi.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "e46febfb6a76fbfad99ddb8a9ec22ad72198e8813fdc44d133d1f2deee095f10",
+      "installed_sha256": "eb4d353d06bc2028ed50760c4a444b52de2c62f9a38970d426c83032bd9b6a75"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_zhongshan.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "701b5b2664ca77a6d1b6f27be81a9f0fe50045fbd1bdcc7092a1cbb7257451a4",
+      "installed_sha256": "34128554a51af1a2bbd9553d7962f6e6dd908acf197c4e352bee82891e6e896d"
+    },
+    {
+      "path": "gfx/coat_of_arms/colored_emblems/k_zhouguo.dds",
+      "fourcc": "DXT1",
+      "old_width": 250,
+      "old_height": 250,
+      "new_width": 252,
+      "new_height": 252,
+      "original_sha256": "8119075ffa67060044e1b9dc78e28cca8998366c1d33e0be1fa47e2a18b87600",
+      "installed_sha256": "cf4c6ae8fd43053212036931cd077184557c6733a545c7172fb70da6c22e7d96"
+    }
+  ]
+}

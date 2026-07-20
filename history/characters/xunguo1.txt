@@ -1,6 +1,6 @@
 ﻿yishi34={
   name="nanming252"
-  dynasty=_xin675
+  dynasty=xin675
 	religion="xiali" 
 	culture="xiaren"
   father=donglai33

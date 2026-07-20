@@ -18,9 +18,6 @@
 	2614.1.1 = {
 		holder = han2923
 	}
-	2669.1.1 = {
-		holder = han2924
-	}
 	2725.1.1 = {
 		holder = han2925
 	}
@@ -104,9 +101,6 @@ k_yiqu = {
 	}
 	2614.1.1 = {
 		holder = han2923
-	}
-	2669.1.1 = {
-		holder = han2924
 	}
 	2725.1.1 = {
 		holder = han2925

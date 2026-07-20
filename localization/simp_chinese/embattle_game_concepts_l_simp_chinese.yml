@@ -25,7 +25,7 @@ game_concept_embattle_potshots_tactic_desc:0 "属于[embattle_clumsy_tactic_grou
 game_concept_embattle_charge_tactic:0 "冲锋战术"
 game_concept_embattle_charge_tactic_desc:0 "属于[embattle_general_tactic_group|E]，由1单位[heavy_cavalry|E]解锁，[combat_phase|E]中生效后对应[stationed_regiment|E]获得[GetModifier('embattle_charge_tactic_modifier').GetNameWithTooltip|L]。"
 game_concept_embattle_reckless_charge_tactic:0 "鲁莽冲锋战术"
-game_concept_embattle_reckless_charge_tactic_desc:0 "属于[embattle_clumsy_tactic_group|E]，[combat_phase|E]中生效后中军[commander|E]获得[GetModifier('embattle_reckless_charge_tactic_modifier').GetNameWithTooltip|L]。
+game_concept_embattle_reckless_charge_tactic_desc:0 "属于[embattle_clumsy_tactic_group|E]，[combat_phase|E]中生效后中军[commander|E]获得[GetModifier('embattle_reckless_charge_tactic_modifier').GetNameWithTooltip|L]。"
 
 game_concept_embattle_stand_fast_tactic:0 "固守战术"
 game_concept_embattle_stand_fast_tactic_desc:0 "属于[embattle_general_tactic_group|E]，由1单位[spearmen|E]解锁，[combat_phase|E]中生效后对应[stationed_regiment|E]获得[GetModifier('embattle_stand_fast_tactic_modifier').GetNameWithTooltip|L]。"

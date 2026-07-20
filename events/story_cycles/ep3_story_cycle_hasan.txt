@@ -287,7 +287,7 @@ hasan_sabbah.1031 = {
 			base = 0
 			modifier = {
 				add = 1000
-				scope:seljuk_equivalent.house = house:house_seljuk
+				scope:seljuk_equivalent = { has_character_flag = is_seljuk }
 			}
 		}
 	}
@@ -300,7 +300,7 @@ hasan_sabbah.1031 = {
 			base = 0
 			modifier = {
 				add = 1000
-				NOT = { scope:seljuk_equivalent.house = house:house_seljuk }
+				scope:seljuk_equivalent = { NOT = { has_character_flag = is_seljuk } }
 			}
 		}
 	}

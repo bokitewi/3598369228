@@ -1621,44 +1621,6 @@ on_title_gain = {
 					top_liege.primary_title.var:administrative_ui_special_title.holder ?= { add_character_flag = ceremonial_liege_flag }
 				}
 			}
-			# West Francia becomes France when no longer controlled by a Karling
-			else_if = {
-				limit = {
-					scope:title = {
-						this = title:k_france
-					}
-					NOR = {
-						dynasty = { this = dynasty:25061 } # Not held by a Karling
-						any_liege_or_above = {
-							dynasty = { this = dynasty:25061 } # And does not have a liege that is a Karling
-						}
-						has_global_variable = west_francia_renamed
-					}
-				}
-				trigger_event = {
-					id = title_event.0001
-					days = 1
-				}
-			}
-			# East Francia becomes Germany when no longer controlled by a Karling
-			else_if = {
-				limit = {
-					scope:title = {
-						this = title:k_east_francia
-					}
-					NOR = {
-						dynasty = { this = dynasty:25061 }  # Not held by a Karling
-						any_liege_or_above = {
-							dynasty = { this = dynasty:25061 } # And does not have a liege that is a Karling
-						}
-						has_global_variable = east_francia_renamed
-					}
-				}
-				trigger_event = {
-					id = title_event.0002
-					days = 1
-				}
-			}
 			# Hidden management event to determine if we need to axe Asturias &, if we do, what notification events to send out afterwards.
 			else_if = {
 				limit = {
@@ -1702,40 +1664,6 @@ on_title_gain = {
 				trigger_event = {
 					id = tgp_japan_general.9100
 					days = 1
-				}
-			}
-			# Norway stuff
-			else_if = {
-				limit = {
-					# The title they've acquired is Norway.
-					scope:title = title:k_norway
-				}
-				# Tanglehair becomes Fairhair.
-				if = {
-					limit = {
-						# This character is Harald Fairhair.
-						exists = character:144000
-						this = character:144000
-						# Norway has been created by them.
-						scope:transfer_type = flag:created
-						# Norway has not been created previously.
-						NOT = { exists = global_var:norway_created }
-					}
-					trigger_event = {
-						id = fp1_major_decisions.1011
-						days = 1
-					}
-				}
-				# Check Norway's creation status.
-				if = {
-					limit = {
-						scope:transfer_type = flag:created
-						NOT = { exists = global_var:norway_created }
-					}
-					trigger_event = {
-						id = fp1_major_decisions.1012
-						days = 1
-					}
 				}
 			}
 			# English Partition Result - Gained Both

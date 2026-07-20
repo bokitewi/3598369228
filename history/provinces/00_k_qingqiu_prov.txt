@@ -1,12 +1,12 @@
 ﻿##### d_qingqiushi ############################
 
-### c_fuzhou
+### c_anshi
 
 
-### c_pingguo
+### c_anshi
 
 
-### c_wen1
+### c_anshi
 
 
 ### c_anshi
@@ -30,13 +30,13 @@
 }
 
 
-### c_xinchang1
+### c_anshi
 
 
-### c_xiangping
+### c_anshi
 
 
-### c_jujiu
+### c_lishan
 
 
 ### c_lishan
@@ -81,10 +81,10 @@
 }
 
 
-### c_changshengdao
+### c_liaokou
 
 
-### c_zhongdaoshan
+### c_qingqiuze
 
 
 ### c_qingqiuze
@@ -114,13 +114,13 @@
 }
 
 
-### c_beifeng
+### c_qingqiuze
 
 
-### c_beisha
+### c_qingqiuze
 
 
-### c_douli
+### c_tashi
 
 
 ### c_tashi
@@ -154,6 +154,6 @@
 }
 
 
-### c_lianyun
+### c_tashi
 
 

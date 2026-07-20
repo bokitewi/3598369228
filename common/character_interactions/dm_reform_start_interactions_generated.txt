@@ -3253,12 +3253,7 @@ dm_reform_start_dm_government_reform_feudal_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					is_independent_ruler = yes
-					highest_held_title_tier >= tier_kingdom
-					NOT = {
-						has_character_flag = dm_government_reform_cooldown
-					}
+					dm_can_change_government_reform_law_group_trigger = yes
 					is_landed = yes
 					NOT = {
 						has_government = feudal_government
@@ -3519,12 +3514,7 @@ dm_reform_start_dm_government_reform_republic_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					is_independent_ruler = yes
-					highest_held_title_tier >= tier_kingdom
-					NOT = {
-						has_character_flag = dm_government_reform_cooldown
-					}
+					dm_can_change_government_reform_law_group_trigger = yes
 					is_landed = yes
 					NOT = {
 						has_government = republic_government
@@ -3786,12 +3776,7 @@ dm_reform_start_dm_government_reform_theocracy_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					is_independent_ruler = yes
-					highest_held_title_tier >= tier_kingdom
-					NOT = {
-						has_character_flag = dm_government_reform_cooldown
-					}
+					dm_can_change_government_reform_law_group_trigger = yes
 					is_landed = yes
 					NOT = {
 						has_government = theocracy_government
@@ -4054,12 +4039,7 @@ dm_reform_start_dm_government_reform_clan_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					is_independent_ruler = yes
-					highest_held_title_tier >= tier_kingdom
-					NOT = {
-						has_character_flag = dm_government_reform_cooldown
-					}
+					dm_can_change_government_reform_law_group_trigger = yes
 					is_landed = yes
 					NOT = {
 						has_government = clan_government
@@ -4328,12 +4308,7 @@ dm_reform_start_dm_government_reform_tribal_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					is_independent_ruler = yes
-					highest_held_title_tier >= tier_kingdom
-					NOT = {
-						has_character_flag = dm_government_reform_cooldown
-					}
+					dm_can_change_government_reform_law_group_trigger = yes
 					is_landed = yes
 					NOT = {
 						has_government = tribal_government
@@ -4602,12 +4577,7 @@ dm_reform_start_dm_government_reform_wanua_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					is_independent_ruler = yes
-					highest_held_title_tier >= tier_kingdom
-					NOT = {
-						has_character_flag = dm_government_reform_cooldown
-					}
+					dm_can_change_government_reform_law_group_trigger = yes
 					is_landed = yes
 					NOT = {
 						has_government = wanua_government
@@ -4871,12 +4841,7 @@ dm_reform_start_dm_government_reform_administrative_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					is_independent_ruler = yes
-					highest_held_title_tier >= tier_kingdom
-					NOT = {
-						has_character_flag = dm_government_reform_cooldown
-					}
+					dm_can_change_government_reform_law_group_trigger = yes
 					is_landed = yes
 					NOT = {
 						has_government = administrative_government
@@ -5151,12 +5116,7 @@ dm_reform_start_dm_government_reform_feudal_admin_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					is_independent_ruler = yes
-					highest_held_title_tier >= tier_kingdom
-					NOT = {
-						has_character_flag = dm_government_reform_cooldown
-					}
+					dm_can_change_government_reform_law_group_trigger = yes
 					is_landed = yes
 					NOT = {
 						has_government = feudal_admin_government
@@ -5424,12 +5384,7 @@ dm_reform_start_dm_government_reform_celestial_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					is_independent_ruler = yes
-					highest_held_title_tier >= tier_kingdom
-					NOT = {
-						has_character_flag = dm_government_reform_cooldown
-					}
+					dm_can_change_government_reform_law_group_trigger = yes
 					is_landed = yes
 					NOT = {
 						has_government = celestial_government
@@ -5692,12 +5647,7 @@ dm_reform_start_dm_government_reform_mandala_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					is_independent_ruler = yes
-					highest_held_title_tier >= tier_kingdom
-					NOT = {
-						has_character_flag = dm_government_reform_cooldown
-					}
+					dm_can_change_government_reform_law_group_trigger = yes
 					is_landed = yes
 					NOT = {
 						has_government = mandala_government
@@ -5981,12 +5931,7 @@ dm_reform_start_dm_government_reform_meritocratic_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					is_independent_ruler = yes
-					highest_held_title_tier >= tier_kingdom
-					NOT = {
-						has_character_flag = dm_government_reform_cooldown
-					}
+					dm_can_change_government_reform_law_group_trigger = yes
 					is_landed = yes
 					NOT = {
 						has_government = meritocratic_government
@@ -6254,12 +6199,7 @@ dm_reform_start_dm_government_reform_japan_administrative_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					is_independent_ruler = yes
-					highest_held_title_tier >= tier_kingdom
-					NOT = {
-						has_character_flag = dm_government_reform_cooldown
-					}
+					dm_can_change_government_reform_law_group_trigger = yes
 					is_landed = yes
 					NOT = {
 						has_government = japan_administrative_government
@@ -6526,12 +6466,7 @@ dm_reform_start_dm_government_reform_japan_feudal_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					is_independent_ruler = yes
-					highest_held_title_tier >= tier_kingdom
-					NOT = {
-						has_character_flag = dm_government_reform_cooldown
-					}
+					dm_can_change_government_reform_law_group_trigger = yes
 					is_landed = yes
 					NOT = {
 						has_government = japan_feudal_government
@@ -6810,12 +6745,7 @@ dm_reform_start_dm_government_reform_nomad_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					is_independent_ruler = yes
-					highest_held_title_tier >= tier_kingdom
-					NOT = {
-						has_character_flag = dm_government_reform_cooldown
-					}
+					dm_can_change_government_reform_law_group_trigger = yes
 					is_landed = yes
 					NOT = {
 						has_government = nomad_government
@@ -7091,12 +7021,7 @@ dm_reform_start_dm_government_reform_steppe_admin_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					is_independent_ruler = yes
-					highest_held_title_tier >= tier_kingdom
-					NOT = {
-						has_character_flag = dm_government_reform_cooldown
-					}
+					dm_can_change_government_reform_law_group_trigger = yes
 					is_landed = yes
 					NOT = {
 						has_government = steppe_admin_government
@@ -12918,8 +12843,6 @@ dm_reform_start_saas_no_stipend_law_interaction = {
 				AND = {
 					is_landed = yes
 					highest_held_title_tier >= tier_county
-					is_landed = yes
-					highest_held_title_tier >= tier_county
 					NOT = {
 						has_variable = saas_stipend_law_cooldown
 					}
@@ -13008,8 +12931,6 @@ dm_reform_start_saas_limited_stipend_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					highest_held_title_tier >= tier_county
 					is_landed = yes
 					highest_held_title_tier >= tier_county
 					NOT = {
@@ -13102,8 +13023,6 @@ dm_reform_start_saas_normal_stipend_law_interaction = {
 				AND = {
 					is_landed = yes
 					highest_held_title_tier >= tier_county
-					is_landed = yes
-					highest_held_title_tier >= tier_county
 					NOT = {
 						has_variable = saas_stipend_law_cooldown
 					}
@@ -13194,8 +13113,6 @@ dm_reform_start_saas_large_stipend_law_interaction = {
 				AND = {
 					is_landed = yes
 					highest_held_title_tier >= tier_county
-					is_landed = yes
-					highest_held_title_tier >= tier_county
 					NOT = {
 						has_variable = saas_stipend_law_cooldown
 					}
@@ -13284,8 +13201,6 @@ dm_reform_start_saas_double_stipend_law_interaction = {
 			custom_description = {
 				text = dm_reform_law_requirements_tt
 				AND = {
-					is_landed = yes
-					highest_held_title_tier >= tier_county
 					is_landed = yes
 					highest_held_title_tier >= tier_county
 					NOT = {
@@ -14784,7 +14699,7 @@ dm_reform_start_appointment_succession_law_interaction = {
 	ai_frequency = 36
 	ai_accept = { base = 100 }
 	ai_will_do = {
-		base = 10
+		base = 15
 		modifier = {
 			factor = 0
 			scope:actor = { is_in_debt = yes }
@@ -14862,7 +14777,7 @@ dm_reform_start_appointment_succession_law_interaction = {
 				set_variable = { name = dm_reform_target value = flag:appointment_succession_law }
 				set_variable = { name = dm_reform_theme value = flag:succession }
 				set_variable = { name = dm_reform_axis value = flag:succession_concentration }
-				set_variable = { name = dm_reform_target_level value = -2 }
+				set_variable = { name = dm_reform_target_level value = -1 }
 				set_variable = { name = dm_reform_paid_prestige value = scope:dm_reform_paid_prestige }
 				dm_reform_capture_current_level_effect = yes
 				if = {
@@ -15225,7 +15140,7 @@ dm_reform_start_city_succession_law_interaction = {
 	ai_frequency = 36
 	ai_accept = { base = 100 }
 	ai_will_do = {
-		base = 15
+		base = 20
 		modifier = {
 			factor = 0
 			scope:actor = { is_in_debt = yes }
@@ -15279,7 +15194,7 @@ dm_reform_start_city_succession_law_interaction = {
 				set_variable = { name = dm_reform_target value = flag:city_succession_law }
 				set_variable = { name = dm_reform_theme value = flag:succession }
 				set_variable = { name = dm_reform_axis value = flag:succession_concentration }
-				set_variable = { name = dm_reform_target_level value = -1 }
+				set_variable = { name = dm_reform_target_level value = 0 }
 				dm_reform_capture_current_level_effect = yes
 				if = {
 					limit = { story_owner = { has_variable = dm_reform_pending_reformer } }
@@ -15308,7 +15223,7 @@ dm_reform_start_clan_antagonistic_partition_succession_law_interaction = {
 	ai_frequency = 36
 	ai_accept = { base = 100 }
 	ai_will_do = {
-		base = 15
+		base = 20
 		modifier = {
 			factor = 0
 			scope:actor = { is_in_debt = yes }
@@ -15369,7 +15284,7 @@ dm_reform_start_clan_antagonistic_partition_succession_law_interaction = {
 				set_variable = { name = dm_reform_target value = flag:clan_antagonistic_partition_succession_law }
 				set_variable = { name = dm_reform_theme value = flag:succession }
 				set_variable = { name = dm_reform_axis value = flag:succession_concentration }
-				set_variable = { name = dm_reform_target_level value = -1 }
+				set_variable = { name = dm_reform_target_level value = 0 }
 				dm_reform_capture_current_level_effect = yes
 				if = {
 					limit = { story_owner = { has_variable = dm_reform_pending_reformer } }
@@ -15668,7 +15583,7 @@ dm_reform_start_clan_harmonious_partition_succession_law_interaction = {
 	ai_frequency = 36
 	ai_accept = { base = 100 }
 	ai_will_do = {
-		base = 20
+		base = 25
 		modifier = {
 			factor = 0
 			scope:actor = { is_in_debt = yes }
@@ -15729,7 +15644,7 @@ dm_reform_start_clan_harmonious_partition_succession_law_interaction = {
 				set_variable = { name = dm_reform_target value = flag:clan_harmonious_partition_succession_law }
 				set_variable = { name = dm_reform_theme value = flag:succession }
 				set_variable = { name = dm_reform_axis value = flag:succession_concentration }
-				set_variable = { name = dm_reform_target_level value = 0 }
+				set_variable = { name = dm_reform_target_level value = 1 }
 				dm_reform_capture_current_level_effect = yes
 				if = {
 					limit = { story_owner = { has_variable = dm_reform_pending_reformer } }
@@ -15758,7 +15673,7 @@ dm_reform_start_herder_succession_law_interaction = {
 	ai_frequency = 36
 	ai_accept = { base = 100 }
 	ai_will_do = {
-		base = 20
+		base = 25
 		modifier = {
 			factor = 0
 			scope:actor = { is_in_debt = yes }
@@ -15812,7 +15727,7 @@ dm_reform_start_herder_succession_law_interaction = {
 				set_variable = { name = dm_reform_target value = flag:herder_succession_law }
 				set_variable = { name = dm_reform_theme value = flag:succession }
 				set_variable = { name = dm_reform_axis value = flag:succession_concentration }
-				set_variable = { name = dm_reform_target_level value = 0 }
+				set_variable = { name = dm_reform_target_level value = 1 }
 				dm_reform_capture_current_level_effect = yes
 				if = {
 					limit = { story_owner = { has_variable = dm_reform_pending_reformer } }
@@ -15841,7 +15756,7 @@ dm_reform_start_celestial_appointment_succession_law_interaction = {
 	ai_frequency = 36
 	ai_accept = { base = 100 }
 	ai_will_do = {
-		base = 20
+		base = 25
 		modifier = {
 			factor = 0
 			scope:actor = { is_in_debt = yes }
@@ -15911,7 +15826,7 @@ dm_reform_start_celestial_appointment_succession_law_interaction = {
 				set_variable = { name = dm_reform_target value = flag:celestial_appointment_succession_law }
 				set_variable = { name = dm_reform_theme value = flag:succession }
 				set_variable = { name = dm_reform_axis value = flag:succession_concentration }
-				set_variable = { name = dm_reform_target_level value = 0 }
+				set_variable = { name = dm_reform_target_level value = 1 }
 				set_variable = { name = dm_reform_paid_prestige value = scope:dm_reform_paid_prestige }
 				dm_reform_capture_current_level_effect = yes
 				if = {
@@ -16139,7 +16054,7 @@ dm_reform_start_japanese_appointment_succession_law_interaction = {
 	ai_frequency = 36
 	ai_accept = { base = 100 }
 	ai_will_do = {
-		base = 25
+		base = 30
 		modifier = {
 			factor = 0
 			scope:actor = { is_in_debt = yes }
@@ -16207,7 +16122,7 @@ dm_reform_start_japanese_appointment_succession_law_interaction = {
 				set_variable = { name = dm_reform_target value = flag:japanese_appointment_succession_law }
 				set_variable = { name = dm_reform_theme value = flag:succession }
 				set_variable = { name = dm_reform_axis value = flag:succession_concentration }
-				set_variable = { name = dm_reform_target_level value = 1 }
+				set_variable = { name = dm_reform_target_level value = 2 }
 				set_variable = { name = dm_reform_paid_prestige value = scope:dm_reform_paid_prestige }
 				dm_reform_capture_current_level_effect = yes
 				if = {
@@ -16237,7 +16152,7 @@ dm_reform_start_japanese_military_appointment_succession_law_interaction = {
 	ai_frequency = 36
 	ai_accept = { base = 100 }
 	ai_will_do = {
-		base = 25
+		base = 30
 		modifier = {
 			factor = 0
 			scope:actor = { is_in_debt = yes }
@@ -16308,7 +16223,7 @@ dm_reform_start_japanese_military_appointment_succession_law_interaction = {
 				set_variable = { name = dm_reform_target value = flag:japanese_military_appointment_succession_law }
 				set_variable = { name = dm_reform_theme value = flag:succession }
 				set_variable = { name = dm_reform_axis value = flag:succession_concentration }
-				set_variable = { name = dm_reform_target_level value = 1 }
+				set_variable = { name = dm_reform_target_level value = 2 }
 				set_variable = { name = dm_reform_paid_prestige value = scope:dm_reform_paid_prestige }
 				dm_reform_capture_current_level_effect = yes
 				if = {
@@ -16338,7 +16253,7 @@ dm_reform_start_mandala_succession_law_interaction = {
 	ai_frequency = 36
 	ai_accept = { base = 100 }
 	ai_will_do = {
-		base = 25
+		base = 30
 		modifier = {
 			factor = 0
 			scope:actor = { is_in_debt = yes }
@@ -16393,7 +16308,7 @@ dm_reform_start_mandala_succession_law_interaction = {
 				set_variable = { name = dm_reform_target value = flag:mandala_succession_law }
 				set_variable = { name = dm_reform_theme value = flag:succession }
 				set_variable = { name = dm_reform_axis value = flag:succession_concentration }
-				set_variable = { name = dm_reform_target_level value = 1 }
+				set_variable = { name = dm_reform_target_level value = 2 }
 				dm_reform_capture_current_level_effect = yes
 				if = {
 					limit = { story_owner = { has_variable = dm_reform_pending_reformer } }
@@ -16422,7 +16337,7 @@ dm_reform_start_meritocratic_appointment_succession_law_interaction = {
 	ai_frequency = 36
 	ai_accept = { base = 100 }
 	ai_will_do = {
-		base = 25
+		base = 30
 		modifier = {
 			factor = 0
 			scope:actor = { is_in_debt = yes }
@@ -16492,7 +16407,7 @@ dm_reform_start_meritocratic_appointment_succession_law_interaction = {
 				set_variable = { name = dm_reform_target value = flag:meritocratic_appointment_succession_law }
 				set_variable = { name = dm_reform_theme value = flag:succession }
 				set_variable = { name = dm_reform_axis value = flag:succession_concentration }
-				set_variable = { name = dm_reform_target_level value = 1 }
+				set_variable = { name = dm_reform_target_level value = 2 }
 				set_variable = { name = dm_reform_paid_prestige value = scope:dm_reform_paid_prestige }
 				dm_reform_capture_current_level_effect = yes
 				if = {
@@ -16622,7 +16537,7 @@ dm_reform_start_meritocratic_regency_succession_law_interaction = {
 	ai_frequency = 36
 	ai_accept = { base = 100 }
 	ai_will_do = {
-		base = 30
+		base = 35
 		modifier = {
 			factor = 0
 			scope:actor = { is_in_debt = yes }
@@ -16691,7 +16606,7 @@ dm_reform_start_meritocratic_regency_succession_law_interaction = {
 				set_variable = { name = dm_reform_target value = flag:meritocratic_regency_succession_law }
 				set_variable = { name = dm_reform_theme value = flag:succession }
 				set_variable = { name = dm_reform_axis value = flag:succession_concentration }
-				set_variable = { name = dm_reform_target_level value = 2 }
+				set_variable = { name = dm_reform_target_level value = 3 }
 				set_variable = { name = dm_reform_paid_prestige value = scope:dm_reform_paid_prestige }
 				dm_reform_capture_current_level_effect = yes
 				if = {
@@ -16721,7 +16636,7 @@ dm_reform_start_feudal_governor_appointment_succession_law_interaction = {
 	ai_frequency = 36
 	ai_accept = { base = 100 }
 	ai_will_do = {
-		base = 30
+		base = 35
 		modifier = {
 			factor = 0
 			scope:actor = { is_in_debt = yes }
@@ -16777,7 +16692,7 @@ dm_reform_start_feudal_governor_appointment_succession_law_interaction = {
 				set_variable = { name = dm_reform_target value = flag:feudal_governor_appointment_succession_law }
 				set_variable = { name = dm_reform_theme value = flag:succession }
 				set_variable = { name = dm_reform_axis value = flag:succession_concentration }
-				set_variable = { name = dm_reform_target_level value = 2 }
+				set_variable = { name = dm_reform_target_level value = 3 }
 				dm_reform_capture_current_level_effect = yes
 				if = {
 					limit = { story_owner = { has_variable = dm_reform_pending_reformer } }
@@ -16806,7 +16721,7 @@ dm_reform_start_feudal_governor_promotion_succession_law_interaction = {
 	ai_frequency = 36
 	ai_accept = { base = 100 }
 	ai_will_do = {
-		base = 30
+		base = 35
 		modifier = {
 			factor = 0
 			scope:actor = { is_in_debt = yes }
@@ -16863,7 +16778,7 @@ dm_reform_start_feudal_governor_promotion_succession_law_interaction = {
 				set_variable = { name = dm_reform_target value = flag:feudal_governor_promotion_succession_law }
 				set_variable = { name = dm_reform_theme value = flag:succession }
 				set_variable = { name = dm_reform_axis value = flag:succession_concentration }
-				set_variable = { name = dm_reform_target_level value = 2 }
+				set_variable = { name = dm_reform_target_level value = 3 }
 				dm_reform_capture_current_level_effect = yes
 				if = {
 					limit = { story_owner = { has_variable = dm_reform_pending_reformer } }

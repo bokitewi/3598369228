@@ -6153,9 +6153,14 @@ house_xin840 = {
 	dynasty = xin840
 }
 
+house_xin841 = {
+	name = "dynn_xin841"
+	dynasty = xin841
+}
+
 house_xin842 = {
 	name = "dynn_xin842"
-	dynasty = xin840
+	dynasty = xin842
 }
 
 house_xin843 = {

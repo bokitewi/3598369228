@@ -1,0 +1,20 @@
+# Historical nicknames referenced by the 3850 character histories.
+nick_dishun = {}
+nick_ranjizai = {}
+nick_shaohao = {}
+nick_dizhuangyu = {}
+nick_diku = {}
+nick_dizhe = {}
+nick_diyao = {}
+nick_diyu = {}
+nick_pengzu = {}
+nick_hebo = {}
+nick_xujuwang = {}
+nick_hanshu = {}
+nick_houji = {}
+nick_qixuanwang = {}
+nick_taiding = {}
+nick_waibing = {}
+nick_zhongren = {}
+nick_taijia = {}
+nick_woding = {}

@@ -222,7 +222,7 @@
 		yili = {
 			color = { 0.2 0.8 0.0 }
 			icon = tengri
-			reformed_icon = yili_reformed
+			reformed_icon = tengri
 
 			holy_site = linzi
 			holy_site = qufu
@@ -244,7 +244,7 @@
 		beidifangling = {
 			color = { 99 64 108 }
 			icon = yumaism
-			reformed_icon = beidifangling_reformed
+			reformed_icon = yumaism
 			
 			holy_site = lushi
 			holy_site = lingshou
@@ -264,7 +264,7 @@
 		xirongfangling = {
 			color = { 172 131 64 }
 			icon = yumaism
-			reformed_icon = xirongfangling_reformed
+			reformed_icon = yumaism
 			
 			holy_site = xiquanqiu
 			holy_site = yiqu
@@ -278,13 +278,13 @@
 
 			doctrine = tenet_warmonger
 			doctrine = tenet_human_sacrifice
-			doctrine = tenet_sky_burials
+			doctrine = doctrine_funeral_sky_burial
 
 		}
 		saman = {
 			color = { 137 86 191 }
 			icon = yumaism
-			reformed_icon = saman_reformed
+			reformed_icon = yumaism
 			
 			holy_site = yiwulv
 			holy_site = tuhe
@@ -297,7 +297,7 @@
 			doctrine = doctrine_gender_equal
 
 			doctrine = tenet_warmonger
-			doctrine = tenet_gruesome_festivals_blot
+			doctrine = tenet_gruesome_festivals
 			doctrine = tenet_sanctity_of_nature
 
 		}

@@ -220,7 +220,9 @@
 		baiyuefanlin = {
 			color = { 198 25 85 }
 			icon = tengri
-			reformed_icon = baiyuefanlin_reformed
+			reformed_icon = tengri
+
+			holy_site = kuaiji
 
 			doctrine = unreformed_faith_doctrine
 
@@ -236,7 +238,7 @@
 		chuwu = {
 			color = { 184 96 110 }
 			icon = yumaism
-			reformed_icon = chuwu_reformed
+			reformed_icon = yumaism
 			
 			holy_site = ying
 			holy_site = e
@@ -254,7 +256,7 @@
 		guiwu = {
 			color = { 21 67 97 }
 			icon = yumaism
-			reformed_icon = guiwu_reformed
+			reformed_icon = yumaism
 			
 			holy_site = zhi
 			holy_site = chengdu

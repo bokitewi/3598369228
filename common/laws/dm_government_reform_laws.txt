@@ -6,10 +6,7 @@ dm_government_reform_law_group = {
 	flag = dm_government_reform_law_group
 
 	can_change_law_group = {
-		is_landed = yes
-		is_independent_ruler = yes
-		highest_held_title_tier >= tier_kingdom
-		NOT = { has_character_flag = dm_government_reform_cooldown }
+		dm_can_change_government_reform_law_group_trigger = yes
 	}
 
 	dm_government_reform_feudal_law = {

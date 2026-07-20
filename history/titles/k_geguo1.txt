@@ -12,12 +12,6 @@
 	2632.1.1 = {
 		holder = han1388
 	}
-	2636.1.1 = {
-		holder = han1389
-	}
-	2643.1.1 = {
-		holder = han1391
-	}
 	2732.1.1 = {
 		holder = han1393
 	}
@@ -56,9 +50,6 @@
 	}
 	2970.12.31 = {
 		holder = han1405
-	}
-	2985.12.31 = {
-		holder = han1406
 	}
 	3028.12.31 = {
 		holder = han1407
@@ -151,12 +142,6 @@ d_zhugeshi = {
 	2632.1.1 = {
 		holder = han1388
 	}
-	2636.1.1 = {
-		holder = han1389
-	}
-	2643.1.1 = {
-		holder = han1391
-	}
 	2732.1.1 = {
 		holder = han1393
 	}
@@ -195,9 +180,6 @@ d_zhugeshi = {
 	}
 	2970.12.31 = {
 		holder = han1405
-	}
-	2985.12.31 = {
-		holder = han1406
 	}
 	3028.12.31 = {
 		holder = han1407
@@ -286,12 +268,6 @@ k_geguo1 = {
 	2632.1.1 = {
 		holder = han1388
 	}
-	2636.1.1 = {
-		holder = han1389
-	}
-	2643.1.1 = {
-		holder = han1391
-	}
 	2732.1.1 = {
 		holder = han1393
 	}
@@ -330,9 +306,6 @@ k_geguo1 = {
 	}
 	2970.12.31 = {
 		holder = han1405
-	}
-	2985.12.31 = {
-		holder = han1406
 	}
 	3028.12.31 = {
 		holder = han1407

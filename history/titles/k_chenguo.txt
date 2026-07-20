@@ -52,9 +52,6 @@ d_qiuzishi = {
 	3715.1.1 = {
 		holder = han1160
 	}
-	3765.1.1 = {
-		holder = han1183
-	}
 	3788.1.1 = {
 		holder = han1185
 	}

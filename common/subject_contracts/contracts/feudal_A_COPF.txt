@@ -32,7 +32,7 @@ feudal_government_succession_rights = {
 			ai_liege_desire = {
 				value = 2
 				if = {
-					limit = { scope:subject = { subject_contract_has_flag = feudal_succession_rights_hereditary } }
+					limit = { scope:subject = { subject_contract_has_flag = succession_rights_hereditary } }
 					add = {
 						value = 5
 						if = {
@@ -76,7 +76,7 @@ feudal_government_succession_rights = {
 			ai_liege_desire = {
 				value = 3
 				if = {
-					limit = { scope:subject = { subject_contract_has_flag = feudal_succession_rights_forced_partition } }
+					limit = { scope:subject = { subject_contract_has_flag = locked_to_partition } }
 					add = {
 						value = 5
 						if = {
@@ -92,7 +92,7 @@ feudal_government_succession_rights = {
 				if = {
 					limit = {
 						scope:subject = {
-							subject_contract_has_flag = feudal_succession_rights_court_supervision
+							subject_contract_has_flag = succession_rights_court_supervision
 						}
 					}
 					add = 100
@@ -127,7 +127,7 @@ feudal_government_succession_rights = {
 			ai_liege_desire = {
 				value = 5
 				if = {
-					limit = { scope:subject = { subject_contract_has_flag = feudal_succession_rights_court_supervision } }
+					limit = { scope:subject = { subject_contract_has_flag = succession_rights_court_supervision } }
 					add = {
 						value = 5
 						if = {

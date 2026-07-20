@@ -1488,7 +1488,7 @@
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
-      "level": -2,
+      "level": -1,
       "budget": false,
       "cost_resources": [
         "prestige"
@@ -1545,7 +1545,7 @@
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
-      "level": -1,
+      "level": 0,
       "budget": false,
       "cost_resources": []
     },
@@ -1556,7 +1556,7 @@
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
-      "level": -1,
+      "level": 0,
       "budget": false,
       "cost_resources": []
     },
@@ -1600,7 +1600,7 @@
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
-      "level": 0,
+      "level": 1,
       "budget": false,
       "cost_resources": []
     },
@@ -1611,7 +1611,7 @@
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
-      "level": 0,
+      "level": 1,
       "budget": false,
       "cost_resources": []
     },
@@ -1622,7 +1622,7 @@
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
-      "level": 0,
+      "level": 1,
       "budget": false,
       "cost_resources": [
         "prestige"
@@ -1661,7 +1661,7 @@
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
-      "level": 1,
+      "level": 2,
       "budget": false,
       "cost_resources": [
         "prestige"
@@ -1674,7 +1674,7 @@
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
-      "level": 1,
+      "level": 2,
       "budget": false,
       "cost_resources": [
         "prestige"
@@ -1687,7 +1687,7 @@
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
-      "level": 1,
+      "level": 2,
       "budget": false,
       "cost_resources": []
     },
@@ -1698,7 +1698,7 @@
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
-      "level": 1,
+      "level": 2,
       "budget": false,
       "cost_resources": [
         "prestige"
@@ -1724,7 +1724,7 @@
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
-      "level": 2,
+      "level": 3,
       "budget": false,
       "cost_resources": [
         "prestige"
@@ -1737,7 +1737,7 @@
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
-      "level": 2,
+      "level": 3,
       "budget": false,
       "cost_resources": []
     },
@@ -1748,7 +1748,7 @@
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
-      "level": 2,
+      "level": 3,
       "budget": false,
       "cost_resources": []
     },

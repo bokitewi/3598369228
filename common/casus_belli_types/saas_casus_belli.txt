@@ -87,7 +87,7 @@ saas_tianzi_force_tributary_cb = {
 }
 
 saas_wangdao_kingdom_conquest_cb = {
-	icon = religious
+	icon = religious_war
 	group = conquest
 	combine_into_one = yes
 	should_show_war_goal_subview = yes
@@ -300,7 +300,7 @@ saas_warring_states_conquest_cb = {
 }
 
 saas_tianzi_punish_wangdao_cb = {
-	icon = subjugation
+	icon = county_conquest_cb
 	group = subjugation
 	allowed_for_character = {
 		has_title = title:e_huaxia

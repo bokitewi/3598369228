@@ -137,17 +137,6 @@ diarchy.0012 = {
 
 	immediate = {
 		try_start_diarchy = regency
-		# Historic setup stuff.
-		## Fatimids start basically completely screwed.
-		if = {
-			limit = { this = character:3096 }
-			set_diarchy_swing = 100
-		}
-		## Kara Khitai Zhilugu was put on the throne cause Wolila killed the previous empress
-		else_if = {
-			limit = { this = character:188912 }
-			set_diarchy_swing = 60
-		}
 	}
 }
 
@@ -752,7 +741,7 @@ diarchy.0102 = {
 
 	trigger = {
 		has_active_diarchy = yes
-		has_diarchy_parameter = diarchy_type_is_grand_secretariat
+		has_diarchy_parameter = diarchy_is_grand_secretariat
 		# Because we were apparently occasionally catching gaps in diarch succession.
 		exists = diarch
 	}

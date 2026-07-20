@@ -26,7 +26,7 @@ fallen_of_zhou_dynasty_struggle.1004 = {
 		saas_is_lijiao_ruler_trigger = yes
 	}
 
-	left_portrait = { character = root animation = council }
+	left_portrait = { character = root animation = disapproval }
 
 	option = {
 		name = fallen_of_zhou_dynasty_struggle.1004.a

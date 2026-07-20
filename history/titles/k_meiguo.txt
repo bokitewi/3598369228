@@ -40,7 +40,6 @@
 }
 k_meiguo = {
 	3442.10.1 = {
-		liege = "e_zhoutianzi"
 		holder = mei1
 	}
 	3514.1.1 = {

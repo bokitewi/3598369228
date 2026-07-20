@@ -7333,22 +7333,7 @@ ep3_laamps.7001 = {
 }
 
 scripted_effect ep3_laamps_7002_ai_siward_leaves_effect = {
-	scope:siward = {
-		create_landless_adventurer_title_effect = {
-			REASON = flag:voluntary
-			FLAVOR_CHAR = scope:siward
-		}
-		start_travel_plan = {
-			destination = province:5296 #Bata
-			players_use_planner = no
-			on_start_on_action = on_travel_relocation_start
-			on_arrival_on_action = on_travel_relocation_end
-			on_arrival_destinations = last
-			on_arrival_event = ep3_laamps.7003
-			travel_with_domicile = yes
-			return_trip = no # One way
-		}
-	}
+	# The Hereward/Siward story is outside the 3850 map and is disabled.
 }
 
 # Siward Barn leaves Hereward's camp

@@ -1566,6 +1566,7 @@ ep3_story_cycle_violet_poet.2000 = {
 
 ep3_story_cycle_violet_poet.2001 = {
 	type = letter_event
+	sender = root
 	hidden = yes
 	trigger = {
 		always = no

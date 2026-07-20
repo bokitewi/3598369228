@@ -1,6 +1,5 @@
 ﻿d_xuanshi = {
 	3570.1.1 = {
-		liege = "k_quanshi"
 		holder = duochenshi1
 	}
 	3629.12.31 = {

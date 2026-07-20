@@ -1,0 +1,4 @@
+switch_faction_group = {
+	sort_order = 275
+	gui_tags = { big_button }
+}

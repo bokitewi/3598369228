@@ -55,16 +55,13 @@
 	}
 	else_if = {
 		limit = {
-			OR = {
+			NOR = {
 				is_leading_faction_type = populist_faction
 				is_leading_faction_type = peasant_faction
 				is_leading_faction_type = escalated_peasant_faction
 				max_number_of_knights <= 0 # 天朝制豁免
 			}
 		}
-		#
-	}
-	else = {
 		subtract = 5
 	}
 

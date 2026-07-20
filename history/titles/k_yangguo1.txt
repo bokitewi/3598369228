@@ -1,8 +1,4 @@
 ﻿d_qiushi = {
-	3807.1.1 = {
-		liege = "k_yangguo1"
-		holder = han34
-	}
 	3820.12.31 = {
 		holder = shanqiu1
 	}
@@ -17,7 +13,6 @@
 k_yangguo1 = {
 	3811.1.1 = {
 		liege = "e_zhoutianzi"
-		holder = han34
 	}
 	3847.12.31 = {
 		holder = han35

@@ -20,7 +20,4 @@ k_feiguo = {
 		change_development_level = 29
 		government = feudal_admin_government
 	}
-	3897.11.1 = {
-		holder = luguo6
-	}
 }

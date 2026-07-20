@@ -1,0 +1,9 @@
+texticon = {
+	icon = bce_icon_rule
+	iconsize = {
+		texture = "gfx/interface/icons/icon_bce_game_rules.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}

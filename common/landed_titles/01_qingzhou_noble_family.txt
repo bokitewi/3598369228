@@ -62,7 +62,7 @@ c_gaoshi = { # 高氏
 
 c_dingshi = { # 丁氏
 	color = { 100 100 100 }
-	capital = qi9
+	capital = c_qi9
 
 	definite_form = yes
 	landless = yes
@@ -3210,7 +3210,7 @@ c_geshi2 = { # 颌氏
 	ai_primary_priority = { add = @never_primary_score }
 }
 
-c_gongloushi = { # 工娄氏
+c_gongloushi2 = { # 工娄氏
 	color = { 100 100 100 }
 	capital = c_yangqiao
 

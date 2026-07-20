@@ -1,0 +1,12 @@
+﻿l_simp_chinese:
+ game_rule_category_bce_mod_series:0 "@bce_icon_rule!中國家紋"
+ rule_bce_noble_family_title:0 "@bce_icon_rule! #Clickable #Bold 中國家紋#!#!：貴族頭銜"
+ setting_default_noble_family_title:0 "啟用貴族頭銜（預設）"
+ setting_default_noble_family_title_desc:0 "原版預設，非貴族不會使用姓氏家紋，改變設定後需重新開局"
+ setting_never_noble_family_title:0 "停用貴族頭銜"
+ setting_never_noble_family_title_desc:0 "無論是否貴族一律使用姓氏家紋，改變設定後需重新開局"
+ rule_bce_create_cadet_branch:0 "@bce_icon_rule! #Clickable #Bold 中國家紋#!#!：分家支系"
+ setting_default_create_cadet_branch:0 "原版分家紋章設定（預設）"
+ setting_default_create_cadet_branch_desc:0 "使用原版分家邏輯，當創建支系時，新支系將使用「BCE圖樣紋章」。"
+ setting_always_bce_cadet_branch:0 "BCE分家紋章設定"
+ setting_always_bce_cadet_branch_desc:0 "新支系將使用原本的「BCE姓氏紋章」(如果原本有的話)，再加上地區州府紋章合併成新紋章，成為雙併紋章"

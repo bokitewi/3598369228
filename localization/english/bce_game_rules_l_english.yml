@@ -1,0 +1,13 @@
+﻿l_english:
+ game_rule_category_bce_mod_series:0 "@bce_icon_rule!Better Chinese Emblems"
+ rule_bce_noble_family_title:0 "@bce_icon_rule!Better #Clickable #Bold Better Chinese Emblems#!#!:0 Noble Titles"
+ setting_default_noble_family_title:0 "Enable Noble Titles (Default)"
+ setting_default_noble_family_title_desc:0 "Vanilla default:0 non-nobles will not use surname crests. Changing this setting requires starting a new game."
+ setting_never_noble_family_title:0 "Disable Noble Titles"
+ setting_never_noble_family_title_desc:0 "Regardless of noble status, everyone will use surname crests. Changing this setting requires starting a new game."
+ 
+ rule_bce_create_cadet_branch:0 "@bce_icon_rule! #Clickable #Bold Better Chinese Emblems#!#!:0 Cadet Branch CoA"
+ setting_default_create_cadet_branch:0 "Vanilla Cadet Branch CoA (Default)"
+ setting_default_create_cadet_branch_desc:0 "Uses the vanilla cadet-branch logic. When a cadet branch is created, the new branch will use a “BCE Pattern CoA”."
+ setting_always_bce_cadet_branch:0 "BCE Cadet Branch CoA"
+ setting_always_bce_cadet_branch_desc:0 "New cadet branches will use the original “BCE Surname CoA” (if available), then merge it with the regional county/prefecture CoA to form a combined, double-emblem CoA."

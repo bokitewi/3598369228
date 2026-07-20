@@ -4,6 +4,10 @@
 # 周礼  #
 #############
 
+dm_compat_registry = {
+	county = c_wangcheng
+}
+
 feng = {
 	county = c_feng2
 	barony = b_870_0
@@ -31,7 +35,7 @@ luo = {
 	character_modifier = {
 		name = holy_site_cologne_effect_name
 		monthly_tyranny = 0.01
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 }
 
@@ -91,7 +95,7 @@ xing = { #邢
 	character_modifier = {
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 }
 
@@ -102,7 +106,7 @@ bo = { #亳
 	character_modifier = {
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 }
 
@@ -162,7 +166,7 @@ an = { #老丘
 	character_modifier = {
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 }
 
@@ -179,7 +183,9 @@ linzi = { #临淄
 	character_modifier = {
 		monthly_piety_gain_mult = 0.2
 	}
-	flag = jerusalem_conversion_bonus # +20% County Conversion
+	parameters = {
+		jerusalem_conversion_bonus # +20% County Conversion
+	}
 }
 
 qufu = { #曲阜
@@ -245,7 +251,7 @@ lingshou = {
 	character_modifier = {
 		name = holy_site_cologne_effect_name
 		cultural_head_fascination_mult = 0.05
-		monthly_county_control_change_factor = 0.05
+		monthly_county_control_growth_factor = 0.05
 	}
 }
 
@@ -267,7 +273,7 @@ luo1 = {
 	character_modifier = {
 		name = holy_site_kent_effect_name
 		religious_vassal_opinion = 5
-		sway_scheme_power_mult = 0.1
+		sway_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
 	}
 }
 
@@ -383,6 +389,17 @@ yilou = {	#The Hungarian capital for their conversion to Christianity. As one of
 	character_modifier = {
 		name = holy_site_esztergom_effect_name
 		county_opinion_add = 10
+	}
+}
+
+ kuaiji = { # 会稽，越国故都
+	county = c_yue2
+	barony = b_2126_0
+
+	character_modifier = {
+		name = holy_site_kuaiji_effect_name
+		development_growth_factor = 0.1
+		stewardship = 1
 	}
 }
 

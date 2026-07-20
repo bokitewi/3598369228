@@ -160,7 +160,6 @@ k_tongguo = {
 		holder = sixingtongchengshi23
 	}
 	3570.12.31 = {
-		liege = "e_zhoutianzi"
 		holder = sixingtongchengshi24
 	}
 	3603.1.1 = {

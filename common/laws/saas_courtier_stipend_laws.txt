@@ -6,11 +6,6 @@ saas_courtier_stipend_law_group = {
 	flag = realm_law
 	flag = saas_courtier_stipend_law_group
 
-	can_change_law_group = {
-		is_landed = yes
-		highest_held_title_tier >= tier_county
-	}
-
 	saas_no_stipend_law = {
 		flag = saas_no_stipend_law
 		flag = saas_courtier_stipend_law

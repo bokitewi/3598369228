@@ -112,7 +112,6 @@
 }
 k_renguo = {
 	2787.1.1 = {
-		liege = "e_zhoutianzi"
 		holder = han5773
 	}
 	2829.12.31 = {

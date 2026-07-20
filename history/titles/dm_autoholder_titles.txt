@@ -359,12 +359,6 @@ c_badai = {
 	}
 }
 
-c_badong = {
-	3849.12.31 = {
-		holder = dm_autoholder_0050
-	}
-}
-
 c_bai1 = {
 	3849.12.31 = {
 		holder = dm_autoholder_0051
@@ -604,7 +598,6 @@ c_bazhou = {
 c_bei = {
 	3849.12.31 = {
 		holder = kangshi6
-		liege = d_changshi1
 	}
 }
 
@@ -1015,7 +1008,6 @@ c_canyan = {
 c_cao1 = {
 	3849.12.31 = {
 		holder = dm_autoholder_0128
-		liege = k_weiguo
 	}
 }
 
@@ -1598,7 +1590,6 @@ c_chuqiu = {
 c_chuqiu1 = {
 	3849.12.31 = {
 		holder = dm_autoholder_0194
-		liege = k_weiguo
 	}
 }
 
@@ -2103,7 +2094,6 @@ c_dingying = {
 c_diqiu = {
 	3849.12.31 = {
 		holder = han185
-		liege = k_weiguo
 	}
 }
 
@@ -3451,12 +3441,6 @@ c_gaoyang3 = {
 	}
 }
 
-c_gaoyangli = {
-	3849.12.31 = {
-		holder = dm_autoholder_0426
-	}
-}
-
 c_gaoyou = {
 	3849.12.31 = {
 		holder = dm_autoholder_0427
@@ -3928,7 +3912,6 @@ c_guide1 = {
 c_guijing = {
 	3849.12.31 = {
 		holder = dm_autoholder_0474
-		liege = d_changshi1
 	}
 }
 
@@ -5500,13 +5483,6 @@ c_jingxingsai = {
 	}
 }
 
-c_jingyang = {
-	3849.12.31 = {
-		holder = jixingdiaoguo1
-		liege = d_geshi2
-	}
-}
-
 c_jingyang1 = {
 	3849.12.31 = {
 		holder = dm_autoholder_0654
@@ -5957,7 +5933,6 @@ c_kangjin = {
 c_kangqiu = {
 	3849.12.31 = {
 		holder = kangshi1
-		liege = d_kangshi
 	}
 }
 
@@ -6075,12 +6050,6 @@ c_kuiqiu = {
 c_kuiying = {
 	3849.12.31 = {
 		holder = dm_autoholder_0720
-	}
-}
-
-c_kuizhou = {
-	3849.12.31 = {
-		holder = dm_autoholder_0721
 	}
 }
 
@@ -6973,7 +6942,6 @@ c_longkang = {
 c_longluo = {
 	3849.12.31 = {
 		holder = dm_autoholder_0828
-		liege = d_zhukeshi
 	}
 }
 
@@ -8175,7 +8143,6 @@ c_ningwu = {
 c_ningxinzhong = {
 	3849.12.31 = {
 		holder = dm_autoholder_0962
-		liege = d_kangshi
 	}
 }
 
@@ -8797,7 +8764,6 @@ c_qian = {
 c_qian1 = {
 	3849.12.31 = {
 		holder = dm_autoholder_1029
-		liege = d_changshi1
 	}
 }
 
@@ -11502,12 +11468,6 @@ c_wanqiu = {
 	}
 }
 
-c_wansui = {
-	3849.12.31 = {
-		holder = dm_autoholder_1366
-	}
-}
-
 c_wei2 = {
 	3849.12.31 = {
 		holder = han1996
@@ -12799,12 +12759,6 @@ c_xinping = {
 	3849.12.31 = {
 		holder = dm_autoholder_1528
 		liege = d_zhenzishi
-	}
-}
-
-c_xinpu = {
-	3849.12.31 = {
-		holder = dm_autoholder_1529
 	}
 }
 
@@ -14241,7 +14195,6 @@ c_you1 = {
 c_you2 = {
 	3849.12.31 = {
 		holder = dm_autoholder_1705
-		liege = d_kangshi
 	}
 }
 
@@ -14399,7 +14352,6 @@ c_yu9 = {
 c_yuan = {
 	3849.12.31 = {
 		holder = han851
-		liege = d_zhukeshi
 	}
 }
 
@@ -14626,12 +14578,6 @@ c_yun1 = {
 c_yun2 = {
 	3849.12.31 = {
 		holder = dm_autoholder_1754
-	}
-}
-
-c_yunan = {
-	3849.12.31 = {
-		holder = dm_autoholder_1755
 	}
 }
 
@@ -15353,7 +15299,6 @@ c_zhongzhou = {
 c_zhou = {
 	3849.12.31 = {
 		holder = dm_autoholder_1839
-		liege = d_zhukeshi
 	}
 }
 

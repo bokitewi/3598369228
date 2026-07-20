@@ -1,8 +1,4 @@
 ﻿d_bingshi = {
-	3458.1.1 = {
-		liege = "k_bingguo"
-		holder = zixingbinguo1
-	}
 	3536.1.1 = {
 		holder = zixingbinguo2
 	}
@@ -44,9 +40,6 @@
 	}
 }
 k_bingguo = {
-	3485.1.1 = {
-		holder = zixingbinguo1
-	}
 	3536.1.1 = {
 		holder = zixingbinguo2
 	}

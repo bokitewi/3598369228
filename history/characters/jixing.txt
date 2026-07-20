@@ -268,7 +268,7 @@ han1328={ #第5代
 }
 han1329={ #第5代
   name="nanming202"#祝融，为帝喾所诛杀，传位其弟吴回
-  dynasty_house=baijia297
+  dynasty_house=house_baijia297
 	religion="xiali" 
 	culture="xuanyuanshi"
   father=han1325

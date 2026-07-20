@@ -99,13 +99,9 @@ has_valid_realm_laws_for_liberty_faction_trigger = {
 				OR = {
 					has_realm_law = crown_authority_titular_liege
 					has_realm_law = crown_authority_0
-					has_realm_law = crown_authority_extended_0
 					has_realm_law = crown_authority_1
-					has_realm_law = crown_authority_extended_1
 					has_realm_law = crown_authority_2
-					has_realm_law = crown_authority_extended_2
 					has_realm_law = crown_authority_3
-					has_realm_law = crown_authority_extended_3
 				}
 			}
 		}
@@ -117,11 +113,8 @@ has_valid_realm_laws_for_liberty_faction_trigger = {
 			$TARGET$ = {
 				OR = {
 					has_realm_law = crown_authority_1
-					has_realm_law = crown_authority_extended_1
 					has_realm_law = crown_authority_2
-					has_realm_law = crown_authority_extended_2
 					has_realm_law = crown_authority_3
-					has_realm_law = crown_authority_extended_3
 				}
 			}
 		}

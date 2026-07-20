@@ -4791,35 +4791,11 @@ ep3_emperor_yearly.2211 = {
 # Shepherds moved close to a monastery with wives and children
 
 scripted_trigger ep3_2220_valid_county_trigger = {
-	faith = { has_doctrine = tenet_monasticism }
-	any_county_province = {
-		OR = {
-			has_holding_type = church_holding
-			ep3_2220_famous_monastery_trigger = yes
-		}
-	}
-	any_county_province = {
-		NOR = {
-			has_holding_type = church_holding
-			ep3_2220_famous_monastery_trigger = yes
-		}
-		OR = {
-			has_building_or_higher = hill_farms_01
-			has_building_or_higher = pastures_01
-			has_building_or_higher = farm_estates_01
-		}
-	}
+	always = no
 }
 
 scripted_trigger ep3_2220_famous_monastery_trigger = {
-	OR = {
-		this = province:678 #Sumela
-		this = province:3796 #Meteora
-		this = province:3776 #Mt.Athos
-		this = province:6032 #St.Catherine
-		this = province:5764 #Jvari
-		this = province:3729 #Hosios Loukas
-	}
+	always = no
 }
 
 ep3_emperor_yearly.2220 = {

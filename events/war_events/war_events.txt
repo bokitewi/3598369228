@@ -152,7 +152,7 @@ war_event.2003 = { #by Linnéa Thimrén
 }
 
 war_event.2004 = {
-	type = letter_event
+	scope = none
 	hidden = yes
 	trigger = {
 		always = no

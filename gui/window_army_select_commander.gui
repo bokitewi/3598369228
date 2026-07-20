@@ -1012,18 +1012,6 @@ types pob_filters {
 				}
 			}
 
-			hbox = {
-				layoutpolicy_horizontal = growing
-				margin_bottom = 10
-
-				button_standard = {
-					datacontext = "[GetScriptedGui('at_artifacts_window_reset_filter_options_gui')]"
-					name = "reset_filters"
-					text = "CHARACTER_RESET_FILTERS"
-					focuspolicy = click
-					#onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('flavor', MakeScopeFlag(GetVariableSystem.Get('at_artifacts_window_flavor'))).End)]"
-				}
-			}
 		}
 	}
 

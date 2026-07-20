@@ -7824,12 +7824,12 @@ e_huaxia = {
 	k_miguo = {
 		color={ 126 159 209 }
 			
-		capital = c_mi2
+		capital = c_yangcheng1
 		
 		d_mishi = {
 			color={ 126 159 209 }
 			
-			capital = c_mi2
+			capital = c_yangcheng1
 
 			c_yangcheng1 = {
 				color={ 0 165 210 }
@@ -13892,10 +13892,6 @@ e_huaxia = {
 					color={ 2 195 75 }					
 				}
 			}
-			c_huoyin = {
-				color={ 169 111 22 }
-										
-			}
 		}	
 		d_jishi5 = {
 			color={ 1 114 150 }
@@ -13936,10 +13932,6 @@ e_huaxia = {
 			
 			capital = c_hunu
 			
-			c_guangping = {
-				color={ 169 156 157 }
-										
-			}
 			c_hunu = {
 				color={ 43 132 153 }
 										
@@ -13998,17 +13990,8 @@ e_huaxia = {
 				}
 			}
 
-			c_xincang = {
-				color = { 127 108 149 }
-			}
 
-			c_lu1 = {
-				color = { 1 144 155 }
-			}
 
-			c_xianghe = {
-				color = { 43 147 28 }
-			}
 
 			c_sanhe = {
 				color = { 85 150 156 }
@@ -14052,13 +14035,7 @@ e_huaxia = {
 				}
 			}
 
-			c_lutai = {
-				color = { 86 201 76 }
-			}
 
-			c_duliang = {
-				color = { 128 204 204 }
-			}
 
 			c_genjin = {
 				color = { 170 207 77 }
@@ -14079,21 +14056,9 @@ e_huaxia = {
 				}
 			}
 
-			c_gengyin = {
-				color = { 2 210 205 }
-			}
 
-			c_rigen = {
-				color = { 44 0 78 }
-			}
 
-			c_xiyang3 = {
-				color = { 86 3 206 }
-			}
 
-			c_shanyou = {
-				color = { 128 6 79 }
-			}
 
 			c_zhongyu = {
 				color = { 2 198 80 }
@@ -14117,11 +14082,11 @@ e_huaxia = {
 	}
 	k_lingzhiguo = {
 		color = { 122 255 146 }
-		capital = c_lingzhi
+		capital = c_yanze
 
 		d_lingzhishi = {
 			color = { 122 255 146 }
-			capital = c_lingzhi
+			capital = c_yanze
 
 			c_yanze = {
 				color = { 170 9 207 }
@@ -14137,9 +14102,6 @@ e_huaxia = {
 				}
 			}
 
-			c_lingzhi = {
-				color = { 44 15 208 }
-			}
 
 			c_lingpisai = {
 				color = { 86 18 81 }
@@ -14160,9 +14122,6 @@ e_huaxia = {
 				}
 			}
 
-			c_zhizhong = {
-				color = { 128 21 209 }
-			}
 
 			c_haiyang2 = {
 				color = { 170 24 82 }
@@ -14197,9 +14156,6 @@ e_huaxia = {
 				}
 			}
 
-			c_nuanjin = {
-				color = { 44 186 83 }
-			}
 
 			c_changcheng1 = {
 				color = { 86 33 211 }
@@ -14220,25 +14176,10 @@ e_huaxia = {
 				}
 			}
 
-			c_rongjia = {
-				color = { 128 36 84 }
-			}
 
-			c_wanqiu1 = {
-				color = { 170 39 212 }
-			}
 
-			c_pingyin2 = {
-				color = { 2 42 128 }
-			}
 
-			c_li24 = {
-				color = { 44 45 213 }
-			}
 
-			c_lei = {
-				color = { 86 48 86 }
-			}
 
 			c_shicheng2 = {
 				color = { 128 51 214 }
@@ -14254,9 +14195,6 @@ e_huaxia = {
 				}
 			}
 
-			c_tuyin = {
-				color = { 170 54 84 }
-			}
 
 			c_hanerzhuang = {
 				color = { 170 21 17 }
@@ -14699,9 +14637,6 @@ e_huaxia = {
 			color = { 50 53 193 }
 			capital = c_yaoyang
 
-			c_huguan1 = {
-				color = { 86 153 131 }
-			}
 
 			c_guyang3 = {
 				color = { 128 156 4 }
@@ -14722,13 +14657,7 @@ e_huaxia = {
 				}
 			}
 
-			c_baoqiu1 = {
-				color = { 170 159 132 }
-			}
 
-			c_baitan = {
-				color = { 2 162 5 }
-			}
 
 			c_modaoyu = {
 				color = { 44 165 133 }
@@ -14754,21 +14683,9 @@ e_huaxia = {
 				}
 			}
 
-			c_junmi = {
-				color = { 86 168 6 }
-			}
 
-			c_jiangjunshiguan = {
-				color = { 128 171 134 }
-			}
 
-			c_xiaoxingzhou = {
-				color = { 170 174 7 }
-			}
 
-			c_huyan1 = {
-				color = { 2 177 135 }
-			}
 
 			c_yaoyang = {
 				color = { 44 180 8 }
@@ -14794,9 +14711,6 @@ e_huaxia = {
 				}
 			}
 
-			c_miyun = {
-				color = { 86 183 136 }
-			}
 
 			c_mantaoer = {
 				color = { 128 186 9 }
@@ -14817,21 +14731,9 @@ e_huaxia = {
 				}
 			}
 
-			c_hutusai = {
-				color = { 170 189 137 }
-			}
 
-			c_luye = {
-				color = { 2 192 10 }
-			}
 
-			c_hadang = {
-				color = { 44 195 138 }
-			}
 
-			c_huayan = {
-				color = { 169 141 27 }
-			}
 
 			c_tixi = {
 				color = { 1 159 30 }
@@ -14862,17 +14764,8 @@ e_huaxia = {
 				}
 			}
 
-			c_zhulu = {
-				color = { 85 12 41 }
-			}
 
-			c_juyongguan = {
-				color = { 127 15 169 }
-			}
 
-			c_yiyu = {
-				color = { 169 18 42 }
-			}
 
 			c_juyong = {
 				color = { 1 21 170 }
@@ -14898,21 +14791,9 @@ e_huaxia = {
 				}
 			}
 
-			c_juyang2 = {
-				color = { 43 24 43 }
-			}
 
-			c_quanshang = {
-				color = { 85 27 171 }
-			}
 
-			c_qieju = {
-				color = { 127 30 44 }
-			}
 
-			c_xialuo = {
-				color = { 169 33 172 }
-			}
 
 			c_pang1 = {
 				color = { 1 36 45 }
@@ -14957,13 +14838,7 @@ e_huaxia = {
 				}
 			}
 
-			c_wende = {
-				color = { 85 42 46 }
-			}
 
-			c_guangning = {
-				color = { 127 45 174 }
-			}
 
 			c_nvqi = {
 				color = { 169 63 177 }
@@ -14984,46 +14859,22 @@ e_huaxia = {
 				}
 			}
 
-			c_wangyun = {
-				color = { 2 147 130 }
-			}
 
-			c_songxing = {
-				color = { 44 150 3 }
-			}
 
-			c_halahetao = {
-				color = { 44 12 143 }
-			}
 
-			c_luanxing = {
-				color = { 213 15 16 }
-			}
 
-			c_baimachuan = {
-				color = { 128 18 144 }
-			}
 		}
 	}
 	k_danlan = {
 		color = { 127 60 49 }
-		capital = c_gangcheng
+		capital = c_yehuling
 
 		d_danlanshi = {
 			color = { 127 60 49 }
-			capital = c_gangcheng
+			capital = c_yehuling
 
-			c_gangcheng = {
-				color = { 127 60 49 }
-			}
 
-			c_zaoyang = {
-				color = { 1 66 50 }
-			}
 
-			c_qieru = {
-				color = { 1 186 70 }
-			}
 
 			c_yehuling = {
 				color = { 44 135 128 }
@@ -15049,13 +14900,7 @@ e_huaxia = {
 				}
 			}
 
-			c_beiyang1 = {
-				color = { 86 138 1 }
-			}
 
-			c_dushi = {
-				color = { 128 141 129 }
-			}
 
 			c_yuyi = {
 				color = { 170 144 2 }
@@ -15076,9 +14921,6 @@ e_huaxia = {
 				}
 			}
 
-			c_zaoyang2 = {
-				color = { 128 33 19 }
-			}
 
 			c_luanyuan = {
 				color = { 170 36 147 }
@@ -15109,17 +14951,8 @@ e_huaxia = {
 				}
 			}
 
-			c_kongsang = {
-				color = { 2 39 20 }
-			}
 
-			c_rouxuan = {
-				color = { 128 78 154 }
-			}
 
-			c_rixiang = {
-				color = { 247 232 152 }
-			}
 
 			c_hequan = {
 				color = { 198 89 72 }
@@ -15140,9 +14973,6 @@ e_huaxia = {
 				}
 			}
 
-			c_bupoguan = {
-				color = { 167 72 89 }
-			}
 
 			c_gecheng = {
 				color = { 188 58 86 }
@@ -15168,13 +14998,7 @@ e_huaxia = {
 				}
 			}
 
-			c_yinshan = {
-				color = { 196 96 158 }
-			}
 
-			c_sangang = {
-				color = { 173 34 247 }
-			}
 
 			c_qingxi = {
 				color = { 231 98 167 }
@@ -15195,21 +15019,9 @@ e_huaxia = {
 				}
 			}
 
-			c_longan = {
-				color = { 236 123 152 }
-			}
 
-			c_feiwu = {
-				color = { 114 202 97 }
-			}
 
-			c_fanhan = {
-				color = { 72 73 157 }
-			}
 
-			c_liaoshui = {
-				color = { 99 39 248 }
-			}
 		}
 	}
 	k_dairong = {
@@ -27496,15 +27308,12 @@ e_huaxia = {
 	}
 	k_guzhuguo = {
 		color = { 79 38 178 }
-		capital = c_lulong
+		capital = c_jieshi
 
 		d_motaishi = {
 			color = { 79 38 178 }
-			capital = c_lulong
+			capital = c_jieshi
 
-			c_lulong = {
-				color = { 79 38 178 }
-			}
 
 			c_jieshi = {
 				color = { 132 197 203 }
@@ -27549,9 +27358,6 @@ e_huaxia = {
 				}
 			}
 
-			c_jiujiang = {
-				color = { 133 211 154 }
-			}
 
 			c_xifeng2 = {
 				color = { 142 127 172 }
@@ -27572,9 +27378,6 @@ e_huaxia = {
 				}
 			}
 
-			c_fengrun = {
-				color = { 232 251 254 }
-			}
 
 			c_pingquan1 = {
 				color = { 1 228 89 }
@@ -27600,9 +27403,6 @@ e_huaxia = {
 				}
 			}
 
-			c_chengde1 = {
-				color = { 90 150 253 }
-			}
 
 			c_qianan = {
 				color = { 103 19 228 }
@@ -27623,9 +27423,6 @@ e_huaxia = {
 				}
 			}
 
-			c_xinglong = {
-				color = { 81 28 184 }
-			}
 
 			c_keye1 = {
 				color = { 130 207 197 }
@@ -27651,37 +27448,13 @@ e_huaxia = {
 				}
 			}
 
-			c_ningyuan = {
-				color = { 154 229 154 }
-			}
 
-			c_fusu = {
-				color = { 131 202 200 }
-			}
 
-			c_liping = {
-				color = { 112 243 218 }
-			}
 
-			c_bailang = {
-				color = { 101 29 238 }
-			}
 
-			c_ande1 = {
-				color = { 80 33 181 }
-			}
 
-			c_lingyuan = {
-				color = { 153 233 249 }
-			}
 
-			c_kedan = {
-				color = { 245 192 174 }
-			}
 
-			c_luolei = {
-				color = { 162 61 22 }
-			}
 
 			c_hudiyu = {
 				color = { 9 140 11 }
@@ -27707,13 +27480,7 @@ e_huaxia = {
 				}
 			}
 
-			c_shuluogan = {
-				color = { 233 52 45 }
-			}
 
-			c_mashou1 = {
-				color = { 26 240 122 }
-			}
 
 			c_wencheng1 = {
 				color = { 155 93 81 }
@@ -27729,13 +27496,7 @@ e_huaxia = {
 				}
 			}
 
-			c_yanfu = {
-				color = { 148 113 45 }
-			}
 
-			c_daba = {
-				color = { 166 175 57 }
-			}
 		}
 	}
 	k_lushirong = {
@@ -27798,9 +27559,6 @@ e_huaxia = {
 			color = { 255 218 95 }
 			capital = c_tuhe
 
-			c_bintu = {
-				color = { 132 216 151 }
-			}
 
 			c_tuhe = {
 				color = { 255 218 95 }
@@ -27835,13 +27593,7 @@ e_huaxia = {
 				}
 			}
 
-			c_jiaoli = {
-				color = { 71 67 238 }
-			}
 
-			c_youcheng = {
-				color = { 43 170 73 }
-			}
 
 			c_husu = {
 				color = { 255 197 240 }
@@ -27862,17 +27614,8 @@ e_huaxia = {
 				}
 			}
 
-			c_dieyun = {
-				color = { 148 13 8 }
-			}
 
-			c_talu = {
-				color = { 248 226 140 }
-			}
 
-			c_yitu = {
-				color = { 64 75 162 }
-			}
 
 			c_sixuan = {
 				color = { 179 65 86 }
@@ -27888,13 +27631,7 @@ e_huaxia = {
 				}
 			}
 
-			c_wulu1 = {
-				color = { 109 2 233 }
-			}
 
-			c_fangxian = {
-				color = { 156 221 8 }
-			}
 
 			c_fuli1 = {
 				color = { 110 253 228 }
@@ -27939,21 +27676,9 @@ e_huaxia = {
 				}
 			}
 
-			c_dawa = {
-				color = { 89 155 248 }
-			}
 
-			c_liaozhong = {
-				color = { 143 124 175 }
-			}
 
-			c_hunnan = {
-				color = { 102 24 233 }
-			}
 
-			c_fangxian1 = {
-				color = { 157 15 60 }
-			}
 
 			c_xiandu1 = {
 				color = { 153 223 114 }
@@ -28003,9 +27728,6 @@ e_huaxia = {
 				}
 			}
 
-			c_bali1 = {
-				color = { 167 37 77 }
-			}
 
 			c_yishiyi = {
 				color = { 207 170 54 }
@@ -28019,15 +27741,12 @@ e_huaxia = {
 	}
 	k_yuren = {
 		color = { 17 147 38 }
-		capital = c_qielv
+		capital = c_baozu
 
 		d_yushi5 = {
 			color = { 17 147 38 }
-			capital = c_qielv
+			capital = c_baozu
 
-			c_jicheng = {
-				color = { 230 247 248 }
-			}
 
 			c_zhaoyang = {
 				color = { 144 121 178 }
@@ -28048,13 +27767,7 @@ e_huaxia = {
 				}
 			}
 
-			c_yinliangchuan = {
-				color = { 113 238 213 }
-			}
 
-			c_tuhuzhen = {
-				color = { 152 237 244 }
-			}
 
 			c_pinggang = {
 				color = { 134 206 157 }
@@ -28080,29 +27793,11 @@ e_huaxia = {
 				}
 			}
 
-			c_yangan = {
-				color = { 0 89 133 }
-			}
 
-			c_chuhe = {
-				color = { 89 238 226 }
-			}
 
-			c_damogan = {
-				color = { 10 155 176 }
-			}
 
-			c_qielv = {
-				color = { 17 147 38 }
-			}
 
-			c_poyetou = {
-				color = { 119 160 194 }
-			}
 
-			c_yuedai = {
-				color = { 20 148 92 }
-			}
 
 			c_baozu = {
 				color = { 131 211 165 }
@@ -28133,9 +27828,6 @@ e_huaxia = {
 				}
 			}
 
-			c_yujia = {
-				color = { 148 246 134 }
-			}
 
 			c_wujie = {
 				color = { 103 177 210 }
@@ -28156,17 +27848,8 @@ e_huaxia = {
 				}
 			}
 
-			c_chili1 = {
-				color = { 215 91 227 }
-			}
 
-			c_bihan = {
-				color = { 17 128 131 }
-			}
 
-			c_gouze = {
-				color = { 84 219 79 }
-			}
 
 			c_qiqiu = {
 				color = { 246 167 67 }
@@ -28192,17 +27875,8 @@ e_huaxia = {
 				}
 			}
 
-			c_guizhu = {
-				color = { 170 101 51 }
-			}
 
-			c_yufen = {
-				color = { 171 123 2 }
-			}
 
-			c_xianping1 = {
-				color = { 45 144 133 }
-			}
 
 			c_huye = {
 				color = { 129 150 134 }
@@ -28231,31 +27905,16 @@ e_huaxia = {
 	}
 	k_yilv = {
 		color = { 158 160 155 }
-		capital = c_yilv
+		capital = c_hudiyu1
 
 		d_yilvshi = {
 			color = { 158 160 155 }
-			capital = c_yilv
+			capital = c_hudiyu1
 
-			c_shedie = {
-				color = { 88 233 190 }
-			}
 
-			c_zhishidai = {
-				color = { 53 177 200 }
-			}
 
-			c_duwei = {
-				color = { 87 177 11 }
-			}
 
-			c_wuwei2 = {
-				color = { 129 180 139 }
-			}
 
-			c_afuyu = {
-				color = { 171 183 12 }
-			}
 
 			c_kexi = {
 				color = { 45 189 13 }
@@ -28276,25 +27935,10 @@ e_huaxia = {
 				}
 			}
 
-			c_chekun = {
-				color = { 87 192 141 }
-			}
 
-			c_chiyun = {
-				color = { 129 195 14 }
-			}
 
-			c_shiyun = {
-				color = { 3 201 15 }
-			}
 
-			c_yilv = {
-				color = { 45 204 143 }
-			}
 
-			c_yiyi1 = {
-				color = { 87 207 16 }
-			}
 
 			c_hudiyu1 = {
 				color = { 129 210 144 }
@@ -28368,9 +28012,6 @@ e_huaxia = {
 				}
 			}
 
-			c_qiulin = {
-				color = { 174 6 18 }
-			}
 
 			c_xishilu = {
 				color = { 87 9 146 }
@@ -28396,50 +28037,23 @@ e_huaxia = {
 				}
 			}
 
-			c_yinan1 = {
-				color = { 129 12 19 }
-			}
 
-			c_yilu2 = {
-				color = { 171 15 147 }
-			}
 
-			c_moyu = {
-				color = { 3 18 20 }
-			}
 
-			c_tuoluoji = {
-				color = { 45 21 148 }
-			}
 
-			c_yinian = {
-				color = { 87 24 21 }
-			}
 
-			c_nanqiu = {
-				color = { 129 27 149 }
-			}
 		}
 	}
 	k_donghu = {
 		color = { 3 126 130 }
-		capital = c_bilichen
+		capital = c_zhulou
 
 		d_huhai = {
 			color = { 3 126 130 }
-			capital = c_bilichen
+			capital = c_zhulou
 
-			c_bilichen = {
-				color = { 3 126 130 }
-			}
 
-			c_pinbu = {
-				color = { 45 129 3 }
-			}
 
-			c_shiben = {
-				color = { 87 132 131 }
-			}
 
 			c_zhulou = {
 				color = { 129 135 4 }
@@ -28470,13 +28084,7 @@ e_huaxia = {
 				}
 			}
 
-			c_niangwan = {
-				color = { 171 138 132 }
-			}
 
-			c_yishi3 = {
-				color = { 3 141 5 }
-			}
 
 			c_sagu = {
 				color = { 87 147 6 }
@@ -28497,13 +28105,7 @@ e_huaxia = {
 				}
 			}
 
-			c_diela = {
-				color = { 171 153 7 }
-			}
 
-			c_xiangqiu1 = {
-				color = { 3 156 135 }
-			}
 
 			c_ruokouyin = {
 				color = { 45 159 8 }
@@ -28529,17 +28131,8 @@ e_huaxia = {
 				}
 			}
 
-			c_tuju = {
-				color = { 87 162 136 }
-			}
 
-			c_niela = {
-				color = { 129 165 9 }
-			}
 
-			c_tulvbu = {
-				color = { 171 168 137 }
-			}
 
 			c_nawei = {
 				color = { 3 171 10 }
@@ -28560,26 +28153,17 @@ e_huaxia = {
 				}
 			}
 
-			c_jijie = {
-				color = { 45 174 138 }
-			}
 
-			c_piban = {
-				color = { 3 186 140 }
-			}
 
-			c_fudi = {
-				color = { 171 198 142 }
-			}
 		}
 	}
 	k_huiren = {
 		color = { 3 33 150 }
-		capital = c_hui1
+		capital = c_yafu
 
 		d_huishi = {
 			color = { 3 33 150 }
-			capital = c_hui1
+			capital = c_yafu
 
 			c_yafu = {
 				color = { 171 30 22 }
@@ -28600,9 +28184,6 @@ e_huaxia = {
 				}
 			}
 
-			c_hui1 = {
-				color = { 3 33 150 }
-			}
 
 			c_wangping = {
 				color = { 134 187 209 }
@@ -28628,21 +28209,9 @@ e_huaxia = {
 				}
 			}
 
-			c_nansu = {
-				color = { 131 221 148 }
-			}
 
-			c_xiepi = {
-				color = { 201 36 23 }
-			}
 
-			c_changpingxian = {
-				color = { 87 39 151 }
-			}
 
-			c_buduo = {
-				color = { 129 42 24 }
-			}
 
 			c_quechuan = {
 				color = { 171 45 152 }
@@ -28653,13 +28222,7 @@ e_huaxia = {
 				}
 			}
 
-			c_xinan = {
-				color = { 3 48 25 }
-			}
 
-			c_yugu = {
-				color = { 45 51 153 }
-			}
 
 			c_ermian = {
 				color = { 87 167 26 }
@@ -28699,13 +28262,7 @@ e_huaxia = {
 				}
 			}
 
-			c_qiangshi = {
-				color = { 0 121 136 }
-			}
 
-			c_dabo = {
-				color = { 3 63 155 }
-			}
 		}
 	}
 	k_gaoyi = {
@@ -28750,25 +28307,10 @@ e_huaxia = {
 				}
 			}
 
-			c_gaizhou = {
-				color = { 100 34 243 }
-			}
 
-			c_yulin2 = {
-				color = { 229 242 245 }
-			}
 
-			c_zaona = {
-				color = { 45 141 168 }
-			}
 
-			c_henna = {
-				color = { 87 144 41 }
-			}
 
-			c_bunai1 = {
-				color = { 129 147 169 }
-			}
 
 			c_canyan = {
 				color = { 171 150 42 }
@@ -28799,25 +28341,10 @@ e_huaxia = {
 				}
 			}
 
-			c_xigaima = {
-				color = { 3 153 170 }
-			}
 
-			c_shangyintai = {
-				color = { 45 156 43 }
-			}
 
-			c_chuanna = {
-				color = { 87 159 171 }
-			}
 
-			c_guanna = {
-				color = { 129 162 44 }
-			}
 
-			c_feiliu = {
-				color = { 171 165 172 }
-			}
 
 			c_shenlu1 = {
 				color = { 3 168 45 }
@@ -28846,15 +28373,12 @@ e_huaxia = {
 	}
 	k_moren = {
 		color = { 133 192 206 }
-		capital = c_fushun
+		capital = c_xiandu
 
 		d_moshi1 = {
 			color = { 133 192 206 }
-			capital = c_fushun
+			capital = c_xiandu
 
-			c_fushun = {
-				color = { 133 192 206 }
-			}
 
 			c_xiandu = {
 				color = { 228 237 242 }
@@ -28870,37 +28394,13 @@ e_huaxia = {
 				}
 			}
 
-			c_liaoyang1 = {
-				color = { 77 48 172 }
-			}
 
-			c_wangpingxian = {
-				color = { 155 66 28 }
-			}
 
-			c_xincheng6 = {
-				color = { 87 69 156 }
-			}
 
-			c_houcheng = {
-				color = { 129 72 29 }
-			}
 
-			c_momi = {
-				color = { 87 165 238 }
-			}
 
-			c_hou2 = {
-				color = { 145 118 181 }
-			}
 
-			c_liangmo = {
-				color = { 171 75 157 }
-			}
 
-			c_mofu = {
-				color = { 45 81 158 }
-			}
 
 			c_gaoana = {
 				color = { 87 84 31 }
@@ -28955,42 +28455,21 @@ e_huaxia = {
 				}
 			}
 
-			c_zhuangqiu = {
-				color = { 171 90 32 }
-			}
 
-			c_gaimou = {
-				color = { 254 213 98 }
-			}
 
-			c_mudi = {
-				color = { 3 143 30 }
-			}
 
-			c_dongna = {
-				color = { 3 93 160 }
-			}
 		}
 	}
 	k_qingqiu = {
 		color = { 130 226 145 }
-		capital = c_fuzhou
+		capital = c_anshi
 
 		d_qingqiushi = {
 			color = { 130 226 145 }
-			capital = c_fuzhou
+			capital = c_anshi
 
-			c_fuzhou = {
-				color = { 130 226 145 }
-			}
 
-			c_pingguo = {
-				color = { 147 112 187 }
-			}
 
-			c_wen1 = {
-				color = { 98 44 253 }
-			}
 
 			c_anshi = {
 				color = { 227 232 239 }
@@ -29011,17 +28490,8 @@ e_huaxia = {
 				}
 			}
 
-			c_xinchang1 = {
-				color = { 76 53 169 }
-			}
 
-			c_xiangping = {
-				color = { 135 182 212 }
-			}
 
-			c_jujiu = {
-				color = { 108 7 238 }
-			}
 
 			c_lishan = {
 				color = { 45 151 33 }
@@ -29061,13 +28531,7 @@ e_huaxia = {
 				}
 			}
 
-			c_changshengdao = {
-				color = { 129 102 34 }
-			}
 
-			c_zhongdaoshan = {
-				color = { 171 105 162 }
-			}
 
 			c_qingqiuze = {
 				color = { 3 108 35 }
@@ -29093,17 +28557,8 @@ e_huaxia = {
 				}
 			}
 
-			c_beifeng = {
-				color = { 129 231 142 }
-			}
 
-			c_beisha = {
-				color = { 252 203 104 }
-			}
 
-			c_douli = {
-				color = { 85 175 228 }
-			}
 
 			c_tashi = {
 				color = { 157 217 13 }
@@ -29134,9 +28589,6 @@ e_huaxia = {
 				}
 			}
 
-			c_lianyun = {
-				color = { 78 43 175 }
-			}
 		}
 	}
 	k_zhoutou = {
@@ -29147,13 +28599,7 @@ e_huaxia = {
 			color = { 86 170 233 }
 			capital = c_pikou
 
-			c_shicheng5 = {
-				color = { 158 213 18 }
-			}
 
-			c_hongju = {
-				color = { 253 208 101 }
-			}
 
 			c_pikou = {
 				color = { 86 170 233 }
@@ -29207,9 +28653,6 @@ e_huaxia = {
 				}
 			}
 
-			c_bozhuo = {
-				color = { 75 58 166 }
-			}
 
 			c_wugu = {
 				color = { 136 177 215 }
@@ -29230,13 +28673,7 @@ e_huaxia = {
 				}
 			}
 
-			c_jili = {
-				color = { 107 12 243 }
-			}
 
-			c_yizhi = {
-				color = { 45 111 163 }
-			}
 
 			c_ruoluo = {
 				color = { 87 114 36 }
@@ -29271,17 +28708,8 @@ e_huaxia = {
 				}
 			}
 
-			c_zhili = {
-				color = { 171 120 37 }
-			}
 
-			c_houpu = {
-				color = { 3 123 165 }
-			}
 
-			c_sixian = {
-				color = { 45 126 38 }
-			}
 
 			c_bozhuokou = {
 				color = { 87 129 166 }
@@ -29307,26 +28735,17 @@ e_huaxia = {
 				}
 			}
 
-			c_wuci = {
-				color = { 129 132 39 }
-			}
 
-			c_hudu = {
-				color = { 171 135 167 }
-			}
 
-			c_xilou = {
-				color = { 3 138 40 }
-			}
 		}
 	}
 	k_chaoxianguo = {
 		color = { 81 195 208 }
-		capital = c_chaoxian
+		capital = c_zhanchan
 
 		d_jishi7 = {
 			color = { 81 195 208 }
-			capital = c_chaoxian
+			capital = c_zhanchan
 
 			c_zhanchan = {
 				color = { 125 251 130 }
@@ -29347,25 +28766,10 @@ e_huaxia = {
 				}
 			}
 
-			c_suicheng = {
-				color = { 248 183 116 }
-			}
 
-			c_chaoxian = {
-				color = { 81 195 208 }
-			}
 
-			c_manfanhan = {
-				color = { 45 171 173 }
-			}
 
-			c_weicheng1 = {
-				color = { 87 174 46 }
-			}
 
-			c_langshui = {
-				color = { 251 198 107 }
-			}
 
 			c_ruyi = {
 				color = { 84 180 223 }
@@ -29400,17 +28804,8 @@ e_huaxia = {
 				}
 			}
 
-			c_renxingli = {
-				color = { 97 49 248 }
-			}
 
-			c_randan = {
-				color = { 151 100 199 }
-			}
 
-			c_hunmi = {
-				color = { 94 64 233 }
-			}
 
 			c_zengchi = {
 				color = { 223 212 227 }
@@ -29431,17 +28826,8 @@ e_huaxia = {
 				}
 			}
 
-			c_tixi1 = {
-				color = { 104 27 254 }
-			}
 
-			c_loufang = {
-				color = { 161 201 33 }
-			}
 
-			c_ledu1 = {
-				color = { 126 246 133 }
-			}
 
 			c_siwang = {
 				color = { 249 188 113 }
@@ -29467,21 +28853,9 @@ e_huaxia = {
 				}
 			}
 
-			c_beijiang = {
-				color = { 82 190 213 }
-			}
 
-			c_wuguan1 = {
-				color = { 150 103 196 }
-			}
 
-			c_haiming = {
-				color = { 93 69 228 }
-			}
 
-			c_zhaoming = {
-				color = { 222 207 224 }
-			}
 
 			c_changcen = {
 				color = { 71 78 154 }
@@ -29526,9 +28900,6 @@ e_huaxia = {
 				}
 			}
 
-			c_daifang = {
-				color = { 103 32 249 }
-			}
 
 			c_tunyou = {
 				color = { 162 197 38 }
@@ -29559,26 +28930,17 @@ e_huaxia = {
 				}
 			}
 
-			c_hanzi = {
-				color = { 139 162 224 }
-			}
 
-			c_xiyan = {
-				color = { 95 59 238 }
-			}
 
-			c_aixiang = {
-				color = { 241 148 137 }
-			}
 		}
 	}
 	k_zhenfanguo = {
 		color = { 129 177 174 }
-		capital = c_zhenfan
+		capital = c_pingshi1
 
 		d_zhenfanshi = {
 			color = { 129 177 174 }
-			capital = c_zhenfan
+			capital = c_pingshi1
 
 			c_youxiumoutun = {
 				color = { 65 108 136 }
@@ -29609,25 +28971,10 @@ e_huaxia = {
 				}
 			}
 
-			c_moushui = {
-				color = { 74 230 173 }
-			}
 
-			c_sangwai = {
-				color = { 158 79 220 }
-			}
 
-			c_xiaoshisuo = {
-				color = { 87 99 198 }
-			}
 
-			c_dashisuo = {
-				color = { 46 1 208 }
-			}
 
-			c_zhenfan = {
-				color = { 129 177 174 }
-			}
 
 			c_pingshi1 = {
 				color = { 171 180 47 }
@@ -29658,9 +29005,6 @@ e_huaxia = {
 				}
 			}
 
-			c_qichong = {
-				color = { 3 183 175 }
-			}
 
 			c_boji = {
 				color = { 146 127 245 }
@@ -29686,25 +29030,10 @@ e_huaxia = {
 				}
 			}
 
-			c_lianggu = {
-				color = { 45 186 48 }
-			}
 
-			c_sengliang = {
-				color = { 58 134 213 }
-			}
 
-			c_gongmuda = {
-				color = { 129 192 49 }
-			}
 
-			c_guli1 = {
-				color = { 119 227 112 }
-			}
 
-			c_jiaping = {
-				color = { 128 236 139 }
-			}
 		}
 	}
 	k_duomidao = {

@@ -1,0 +1,13 @@
+﻿bce_noble_family_title = {
+	categories = { bce_mod_series }
+	default = default_noble_family_title
+	default_noble_family_title = {}
+	never_noble_family_title = {}
+}
+
+bce_create_cadet_branch = {
+	categories = { bce_mod_series }
+	default = default_create_cadet_branch
+	default_create_cadet_branch = {}
+	always_bce_cadet_branch = {}
+}

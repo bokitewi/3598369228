@@ -238,7 +238,6 @@ k_fengfuguo = {
 		holder = fengfu41
 	}
 	3843.1.1 = {
-		liege = "e_zhoutianzi1"
 		holder = fengfu42
 		government = feudal_admin_government
 	}

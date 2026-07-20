@@ -1,6 +1,6 @@
 ﻿##### d_tuheshi ############################
 
-### c_bintu
+### c_tuhe
 
 
 ### c_tuhe
@@ -39,10 +39,10 @@
 }
 
 
-### c_jiaoli
+### c_tuhe
 
 
-### c_youcheng
+### c_tuhe
 
 
 ### c_husu
@@ -54,13 +54,13 @@
 }
 
 
-### c_dieyun
+### c_tuhe
 
 
-### c_talu
+### c_tuhe
 
 
-### c_yitu
+### c_tuhe
 
 
 ### c_sixuan
@@ -72,10 +72,10 @@
 }
 
 
-### c_wulu1
+### c_tuhe
 
 
-### c_fangxian
+### c_tuhe
 
 
 ### c_fuli1
@@ -126,16 +126,16 @@
 }
 
 
-### c_dawa
+### c_tuhe
 
 
-### c_liaozhong
+### c_tuhe
 
 
-### c_hunnan
+### c_tuhe
 
 
-### c_fangxian1
+### c_tuhe
 
 
 ### c_xiandu1
@@ -192,7 +192,7 @@
 }
 
 
-### c_bali1
+### c_tuhe
 
 
 ### c_yishiyi

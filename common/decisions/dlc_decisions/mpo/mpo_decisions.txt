@@ -3396,7 +3396,7 @@ mpo_become_greatest_of_khans_decision = {
 			trigger = {
 				NOR = {
 					#Playing as Genghis
-					this = character:125501
+					has_character_flag = is_temujin
 					#He came and went without becoming Genghis
 					exists = global_var:genghis_died
 					has_game_rule = never_mongol_invasion
@@ -3475,7 +3475,7 @@ mpo_become_greatest_of_khans_decision = {
 		highest_held_title_tier = tier_empire
 		trigger_if = { # If you are player Temüjin we waive this requirements
 			limit = {
-				NOT = { this = character:125501 }
+				NOT = { has_character_flag = is_temujin }
 			}
 			OR = {
 				sub_realm_size >= mpo_greatest_of_khans_target_counties
@@ -3652,12 +3652,12 @@ mpo_become_greatest_of_khans_decision = {
 		trigger_if = {
 			limit = {
 				is_ai = no
-				this = character:125501 # Temüjin
+				has_character_flag = is_temujin
 				has_variable = had_mpo_temujin_flavor_0020
 			}
 			custom_tooltip = {
 				text = temujin_jamukha_gok_requirement
-				character:mpo_mongol_1 = { # Jamukha
+				var:had_mpo_temujin_flavor_0020 = {
 					is_alive = no
 				}
 			}

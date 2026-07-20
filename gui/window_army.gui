@@ -1788,27 +1788,6 @@ window = {
 					visible = "[GetPlayer.CanRaid]"
 				}
 
-				# Siege devastation
-				hbox = {
-					visible = "[GetScriptedGui('dt_is_siege_devastation_loaded').IsShown( GuiScope.SetRoot( Army.MakeScope ).End )]"
-					button_round = {
-						name = "scorch_earth"
-						
-						button_scorch_earth = {
-							datacontext = "[GetScriptedGui('scorched_earth')]"
-							onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Army.MakeScope ).End )]"
-							enabled = "[ScriptedGui.IsValid( GuiScope.SetRoot( Army.MakeScope ).End )]"
-							visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Army.MakeScope ).End )]"
-							tooltip = "scorch_earth_tooltip_desc"
-							using = tooltip_ne
-							parentanchor = center
-						}
-						enabled = "[GetScriptedGui('scorched_earth').IsValid( GuiScope.SetRoot( Army.MakeScope ).End )]"
-						visible = "[GetScriptedGui('scorched_earth').IsShown( GuiScope.SetRoot( Army.MakeScope ).End )]"
-					}
-				}
-				
-
 				button_round = {
 					name = "toggle_bartering"
 

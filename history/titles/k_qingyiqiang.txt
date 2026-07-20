@@ -48,20 +48,3 @@ d_huojingshi = {
 		government = tribal_government
 	}
 }
-
-d_qiandi = {
-3770.1.1 = {
-		liege = "k_ranmangqian"
-		holder = ranmangqian20
-	}
-3811.1.1 = {
-		holder = ranmangqian21
-	}
-3841.1.1 = {
-		holder = ranmangqian22
-	}
-3849.1.1 = {
-		change_development_level = 24
-		government = tribal_government
-	}
-}

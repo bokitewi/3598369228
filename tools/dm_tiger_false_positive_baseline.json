@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "path": "gui\\window_situation_list.gui",
+      "severity": "error",
+      "confidence": "weak",
+      "key": "unknown-field",
+      "message": "unknown gui field `animated_progress_value`",
+      "source_line": "animated_progress_value = \"[Story.MakeScope.Var( StoryCycleCounterVisualization.GetVariableName ).GetValue]\"",
+      "expected_count": 2,
+      "evidence": "The same field and binding are present in CK3 1.19.0.6 vanilla gui/window_situation_list.gui."
+    }
+  ]
+}

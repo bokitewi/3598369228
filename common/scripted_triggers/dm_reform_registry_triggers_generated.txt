@@ -728,180 +728,105 @@ dm_reform_target_is_valid_trigger = {
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_feudal_law
 			story_owner = {
-				is_landed = yes
-				is_independent_ruler = yes
-				highest_held_title_tier >= tier_kingdom
-				NOT = {
-					has_character_flag = dm_government_reform_cooldown
-				}
+				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
 			}
 		}
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_republic_law
 			story_owner = {
-				is_landed = yes
-				is_independent_ruler = yes
-				highest_held_title_tier >= tier_kingdom
-				NOT = {
-					has_character_flag = dm_government_reform_cooldown
-				}
+				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
 			}
 		}
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_theocracy_law
 			story_owner = {
-				is_landed = yes
-				is_independent_ruler = yes
-				highest_held_title_tier >= tier_kingdom
-				NOT = {
-					has_character_flag = dm_government_reform_cooldown
-				}
+				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
 			}
 		}
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_clan_law
 			story_owner = {
-				is_landed = yes
-				is_independent_ruler = yes
-				highest_held_title_tier >= tier_kingdom
-				NOT = {
-					has_character_flag = dm_government_reform_cooldown
-				}
+				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
 			}
 		}
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_tribal_law
 			story_owner = {
-				is_landed = yes
-				is_independent_ruler = yes
-				highest_held_title_tier >= tier_kingdom
-				NOT = {
-					has_character_flag = dm_government_reform_cooldown
-				}
+				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
 			}
 		}
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_wanua_law
 			story_owner = {
-				is_landed = yes
-				is_independent_ruler = yes
-				highest_held_title_tier >= tier_kingdom
-				NOT = {
-					has_character_flag = dm_government_reform_cooldown
-				}
+				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
 			}
 		}
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_administrative_law
 			story_owner = {
-				is_landed = yes
-				is_independent_ruler = yes
-				highest_held_title_tier >= tier_kingdom
-				NOT = {
-					has_character_flag = dm_government_reform_cooldown
-				}
+				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
 			}
 		}
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_feudal_admin_law
 			story_owner = {
-				is_landed = yes
-				is_independent_ruler = yes
-				highest_held_title_tier >= tier_kingdom
-				NOT = {
-					has_character_flag = dm_government_reform_cooldown
-				}
+				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
 			}
 		}
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_celestial_law
 			story_owner = {
-				is_landed = yes
-				is_independent_ruler = yes
-				highest_held_title_tier >= tier_kingdom
-				NOT = {
-					has_character_flag = dm_government_reform_cooldown
-				}
+				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
 			}
 		}
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_mandala_law
 			story_owner = {
-				is_landed = yes
-				is_independent_ruler = yes
-				highest_held_title_tier >= tier_kingdom
-				NOT = {
-					has_character_flag = dm_government_reform_cooldown
-				}
+				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
 			}
 		}
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_meritocratic_law
 			story_owner = {
-				is_landed = yes
-				is_independent_ruler = yes
-				highest_held_title_tier >= tier_kingdom
-				NOT = {
-					has_character_flag = dm_government_reform_cooldown
-				}
+				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
 			}
 		}
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_japan_administrative_law
 			story_owner = {
-				is_landed = yes
-				is_independent_ruler = yes
-				highest_held_title_tier >= tier_kingdom
-				NOT = {
-					has_character_flag = dm_government_reform_cooldown
-				}
+				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
 			}
 		}
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_japan_feudal_law
 			story_owner = {
-				is_landed = yes
-				is_independent_ruler = yes
-				highest_held_title_tier >= tier_kingdom
-				NOT = {
-					has_character_flag = dm_government_reform_cooldown
-				}
+				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
 			}
 		}
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_nomad_law
 			story_owner = {
-				is_landed = yes
-				is_independent_ruler = yes
-				highest_held_title_tier >= tier_kingdom
-				NOT = {
-					has_character_flag = dm_government_reform_cooldown
-				}
+				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
 			}
 		}
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_steppe_admin_law
 			story_owner = {
-				is_landed = yes
-				is_independent_ruler = yes
-				highest_held_title_tier >= tier_kingdom
-				NOT = {
-					has_character_flag = dm_government_reform_cooldown
-				}
+				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
 			}
 		}
@@ -1271,15 +1196,11 @@ dm_reform_target_is_valid_trigger = {
 			story_owner = {
 				is_landed = yes
 				highest_held_title_tier >= tier_county
-				is_landed = yes
-				highest_held_title_tier >= tier_county
 			}
 		}
 		AND = {
 			var:dm_reform_target = flag:saas_limited_stipend_law
 			story_owner = {
-				is_landed = yes
-				highest_held_title_tier >= tier_county
 				is_landed = yes
 				highest_held_title_tier >= tier_county
 			}
@@ -1289,8 +1210,6 @@ dm_reform_target_is_valid_trigger = {
 			story_owner = {
 				is_landed = yes
 				highest_held_title_tier >= tier_county
-				is_landed = yes
-				highest_held_title_tier >= tier_county
 			}
 		}
 		AND = {
@@ -1298,15 +1217,11 @@ dm_reform_target_is_valid_trigger = {
 			story_owner = {
 				is_landed = yes
 				highest_held_title_tier >= tier_county
-				is_landed = yes
-				highest_held_title_tier >= tier_county
 			}
 		}
 		AND = {
 			var:dm_reform_target = flag:saas_double_stipend_law
 			story_owner = {
-				is_landed = yes
-				highest_held_title_tier >= tier_county
 				is_landed = yes
 				highest_held_title_tier >= tier_county
 			}

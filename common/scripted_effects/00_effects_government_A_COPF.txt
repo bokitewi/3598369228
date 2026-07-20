@@ -374,7 +374,6 @@ effect_record_realm_laws = {
 					scope:record_source = {
 						OR = {
 							has_realm_law = crown_authority_0
-							has_realm_law = crown_authority_extended_0
 						}
 					}
 				}
@@ -388,7 +387,6 @@ effect_record_realm_laws = {
 					scope:record_source = {
 						OR = {
 							has_realm_law = crown_authority_1
-							has_realm_law = crown_authority_extended_1
 						}
 					}
 				}
@@ -402,7 +400,6 @@ effect_record_realm_laws = {
 					scope:record_source = {
 						OR = {
 							has_realm_law = crown_authority_2
-							has_realm_law = crown_authority_extended_2
 						}
 					}
 				}
@@ -416,7 +413,6 @@ effect_record_realm_laws = {
 					scope:record_source = {
 						OR = {
 							has_realm_law = crown_authority_3
-							has_realm_law = crown_authority_extended_3
 						}
 					}
 				}
@@ -835,7 +831,6 @@ effect_restore_realm_laws = {
 				var:crown_authority_previous = 0
 				NOR = {
 					has_realm_law = crown_authority_0
-					has_realm_law = crown_authority_extended_0
 				}
 			}
 			if = {
@@ -845,7 +840,7 @@ effect_restore_realm_laws = {
 						government_has_flag = government_is_feudal_admin
 					}
 				}
-				add_realm_law = crown_authority_extended_0
+				add_realm_law = crown_authority_0
 			}
 			else = {
 				add_realm_law = crown_authority_0
@@ -856,7 +851,6 @@ effect_restore_realm_laws = {
 				var:crown_authority_previous = 1
 				NOR = {
 					has_realm_law = crown_authority_1
-					has_realm_law = crown_authority_extended_1
 				}
 			}
 			if = {
@@ -866,7 +860,7 @@ effect_restore_realm_laws = {
 						government_has_flag = government_is_feudal_admin
 					}
 				}
-				add_realm_law = crown_authority_extended_1
+				add_realm_law = crown_authority_1
 			}
 			else = {
 				add_realm_law = crown_authority_1
@@ -877,7 +871,6 @@ effect_restore_realm_laws = {
 				var:crown_authority_previous = 2
 				NOR = {
 					has_realm_law = crown_authority_2
-					has_realm_law = crown_authority_extended_2
 				}
 			}
 			if = {
@@ -887,7 +880,7 @@ effect_restore_realm_laws = {
 						government_has_flag = government_is_feudal_admin
 					}
 				}
-				add_realm_law = crown_authority_extended_2
+				add_realm_law = crown_authority_2
 			}
 			else = {
 				add_realm_law = crown_authority_2
@@ -898,7 +891,6 @@ effect_restore_realm_laws = {
 				var:crown_authority_previous = 3
 				NOR = {
 					has_realm_law = crown_authority_3
-					has_realm_law = crown_authority_extended_3
 				}
 			}
 			if = {
@@ -908,7 +900,7 @@ effect_restore_realm_laws = {
 						government_has_flag = government_is_feudal_admin
 					}
 				}
-				add_realm_law = crown_authority_extended_3
+				add_realm_law = crown_authority_3
 			}
 			else = {
 				add_realm_law = crown_authority_3
@@ -1257,7 +1249,7 @@ effect_lower_crown_authority_to_legacy_head = {
 		# 设定自治封臣的契约
 		if = {
 			limit = { is_independent_ruler = yes }
-			every_in_local_list = {
+			every_in_list = {
 				list = new_autonomous_vassals
 				start_tributary = {
 					contract_group = feudal_autonomous_vassal
@@ -1346,7 +1338,6 @@ effect_establish_feudal_subject_supervisor = {
 				gender = male
 				age = { 20 40 }
 				employer = scope:scope_target_subject
-				location = scope:scope_target_subject.location
 				dynasty = none
 				random_traits = yes
 				faith = scope:scope_target_subject.liege.faith
@@ -1470,7 +1461,6 @@ effect_promote_new_bureaucrat = {
 		gender = male
 		age = { 30 50 }
 		employer = scope:target_subject
-		location = scope:target_subject.location
 		dynasty = generate
 		random_traits = yes
 		faith = scope:target_subject.liege.faith

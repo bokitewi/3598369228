@@ -1457,7 +1457,6 @@
  culture_tradition_events.3100.c: "服从吧，因为熊灵就在我身边。"
  tradition_ordo_riders_name: "斡耳朵骑手"
  tradition_ordo_riders_desc: "对牧群和加强部落凝聚力的需要，迫使该文化的游牧民成为坚韧的战士，既能抵御外敌，又能高效地为族人搜集物资。"
- culture_parameter_unlocks_ordo_riders_maa: "可以招募[GetMaA('ordo_riders_horse_archers').GetName][men_at_arms|E]"
  culture_parameter_reaver_gives_buffs_to_horse_archers: "[GetTrait('reaver').GetName( GetNullCharacter )][traits|E]将为[archer_cavalry|e][men_at_arms|e]提供增益"
  tradition_chinese_arts_name: "中华艺术"
  tradition_chinese_arts_desc: "笔墨之道、书画之道，都是该文化的重要元素。中国人并不只依赖军事力量或复杂的行政体系，还注重完善各种艺术形式。"

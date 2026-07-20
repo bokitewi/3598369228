@@ -59,7 +59,10 @@ l_simp_chinese:
  baiyuefanlin_adj:0 "百越泛灵"
  baiyuefanlin_adherent:1 "信徒"
  baiyuefanlin_adherent_plural:1 "信徒"
- baiyuefanlin_desc:0 ""百越"之称谓源于先秦古籍对南方沿海一带古越部族的泛称，又称古越族或越族等，因这些古越部族众多，故谓之为“百越”。在古籍的记载中，古越族人可上溯至远古时期。这些部族在先秦时期曾存在过璀璨的高度文明。"
+ baiyuefanlin_desc:0 "“百越”之称谓源于先秦古籍对南方沿海一带古越部族的泛称，又称古越族或越族等。因这些古越部族众多，故谓之为“百越”。在古籍的记载中，古越族人可上溯至远古时期。这些部族在先秦时期曾存在过璀璨的高度文明。"
+ holy_site_kuaiji_name:0 "会稽"
+ holy_site_kuaiji_effect_name:0 "来自会稽"
+ holy_site_kuaiji_effects:0 "会稽圣地"
 
  baiyuefanlin_old:1 "旧百越泛灵"
  baiyuefanlin_old_adj:1 "旧百越泛灵"

@@ -758,7 +758,6 @@ window = {
 
 		visible = "[SituationParticipantCharacterList.IsVisible]"
 	}
-}
 
 types Situation
 {

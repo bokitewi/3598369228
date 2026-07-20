@@ -37,7 +37,6 @@ d_mangbu = {
 
 d_baicaoqiang = {
 3753.1.1 = {
-		liege = "k_ranmangqian"
 		holder = ranmangqian13
 	}
 3802.1.1 = {
@@ -54,7 +53,6 @@ d_baicaoqiang = {
 
 d_qiandi = {
 3770.1.1 = {
-		liege = "k_ranmangqian"
 		holder = ranmangqian20
 	}
 3811.1.1 = {

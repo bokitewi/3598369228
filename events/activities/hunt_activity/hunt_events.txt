@@ -25062,7 +25062,10 @@ hunt.8210 = {
 					#Let's get some Ise Shrine Maiden vibes or at the very least a monk or a random imperial princess
 					OR = {
 						is_clergy = yes
-						dynasty = dynasty:japanese_yamato 
+						AND = {
+							exists = title:k_chrysanthemum_throne.holder
+							dynasty = title:k_chrysanthemum_throne.holder.dynasty
+						}
 					}
 					is_adult = yes
 				} 

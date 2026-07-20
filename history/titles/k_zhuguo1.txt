@@ -18,9 +18,6 @@
 	3740.1.1 = {
 		holder = zhuguo1
 	}
-	3780.1.1 = {
-		holder = zhuguo2
-	}
 	3821.1.1 = {
 		holder = zhuguo3
 	}

@@ -122,12 +122,6 @@
 						change = -1
 					}
 				}
-				crown_authority_extended = { #COPF
-					change_realm_law_level = {
-						law_group = crown_authority_extended
-						change = -1
-					}
-				}
 				tribal_authority = {
 					change_realm_law_level = {
 						law_group = tribal_authority

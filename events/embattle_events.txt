@@ -29,29 +29,29 @@ embattle_events.0001 = {
 			}
 		}
 
-		random_in_list = {
+		random_list = {
 			1 = {
 				set_variable = {
 					name = select_side_commander_by
-					value = select_side_commander_by_age
+					value = flag:select_side_commander_by_age
 				}
 			}
 			1 = {
 				set_variable = {
 					name = select_side_commander_by
-					value = select_side_commander_by_martial
+					value = flag:select_side_commander_by_martial
 				}
 			}
 			1 = {
 				set_variable = {
 					name = select_side_commander_by
-					value = select_side_commander_by_highest_held_title_tier
+					value = flag:select_side_commander_by_highest_held_title_tier
 				}
 			}
 			1 = {
 				set_variable = {
 					name = select_side_commander_by
-					value = select_side_commander_by_opinion
+					value = flag:select_side_commander_by_opinion
 				}
 			}
 		}
@@ -61,25 +61,25 @@ embattle_events.0001 = {
 			order_by = {
 				if = {
 					limit = { 
-						root.var:select_side_commander_by ?= select_side_commander_by_martial
+						root.var:select_side_commander_by ?= flag:select_side_commander_by_martial
 					}
 					value = martial
 				}
 				else_if = {
 					limit = { 
-						root.var:select_side_commander_by ?= select_side_commander_by_highest_held_title_tier
+						root.var:select_side_commander_by ?= flag:select_side_commander_by_highest_held_title_tier
 					}
 					value = highest_held_title_tier
 				}
 				else_if = {
 					limit = { 
-						root.var:select_side_commander_by ?= select_side_commander_by_opinion
+						root.var:select_side_commander_by ?= flag:select_side_commander_by_opinion
 					}
 					value = "opinion(scope:army.army_commander)"
 				}
 				else_if = {
 					limit = { 
-						root.var:select_side_commander_by ?= select_side_commander_by_age
+						root.var:select_side_commander_by ?= flag:select_side_commander_by_age
 					}
 					value = age
 				}

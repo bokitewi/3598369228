@@ -64,7 +64,7 @@ huimeng_activity.0020 = {
 
 	left_portrait = {
 		character = root
-		animation = council
+		animation = disapproval
 	}
 
 	option = {

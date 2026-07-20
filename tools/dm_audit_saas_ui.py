@@ -96,8 +96,11 @@ def check_settlement_cards() -> None:
 	for match in re.finditer(r"create_legend\s*=\s*\{", text):
 		block = definition_block(text[match.start() :], "create_legend")
 		properties = named_subblock(block, "properties")
-		if "ancestor = root" not in properties or "title = title:h_huaxia" not in properties:
-			fail("create_legend call has an incomplete properties block")
+		if "chronicle = conqueror_chronicle" in block:
+			if "ancestor =" in properties or "title =" in properties:
+				fail("conqueror chronicle received unsupported legend properties")
+		elif "ancestor = root" not in properties or "title = title:h_huaxia" not in properties:
+			fail("legitimizing legend call has an incomplete properties block")
 	story_gui = story_gui_path.read_text(encoding="utf-8-sig")
 	if 'name = "dm_reform_missing_reformer"' not in story_gui:
 		fail("reform story does not retain its missing-reformer row")

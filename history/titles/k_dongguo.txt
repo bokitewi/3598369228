@@ -3,9 +3,6 @@
 		liege = "k_dongguo"
 		holder = dongxing2
 	}
-	2561.1.1 = {
-		holder = dongxinghuanlongshi1
-	}
 	2588.1.1 = {
 		holder = dongxing4
 	}
@@ -144,9 +141,6 @@ k_dongguo = {
 	2503.1.1 = {
 		holder = dongxing2
 	}
-	2561.1.1 = {
-		holder = dongxinghuanlongshi1
-	}
 	2588.1.1 = {
 		holder = dongxing4
 	}
@@ -244,7 +238,6 @@ k_dongguo = {
 		holder = dongxing35
 	}
 	3562.1.1 = {
-		liege = "e_zhoutianzi"
 		holder = dongxing36
 	}
 	3584.1.1 = {

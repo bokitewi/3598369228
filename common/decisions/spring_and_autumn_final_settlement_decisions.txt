@@ -52,12 +52,10 @@ declare_new_mandate = {
 		save_scope_as = saas_settlement_author
 		saas_take_huaxia_hegemony_effect = yes
 		create_legend = {
-			type = saas_new_mandate
+			type = heroic
 			quality = famed
 			chronicle = conqueror_chronicle
 			properties = {
-				ancestor = root
-				title = title:h_huaxia
 			}
 		}
 		situation:spring_and_autumn_situation ?= {
@@ -130,7 +128,7 @@ zhou_old_state_new_mandate = {
 		save_scope_as = saas_settlement_author
 		saas_take_huaxia_hegemony_effect = yes
 		create_legend = {
-			type = saas_zhou_restoration
+			type = legitimizing
 			quality = famed
 			chronicle = ancestral_glory
 			properties = {
@@ -250,7 +248,7 @@ fate_divergence = {
 			limit = { scope:fate_divergence_restore = yes }
 			saas_grant_huaxia_hegemony_effect = { RECIPIENT = scope:zhou_emperor }
 			create_legend = {
-				type = saas_duke_of_zhou_reborn
+				type = legitimizing
 				quality = famed
 				chronicle = ancestral_glory
 				properties = {
@@ -362,12 +360,10 @@ fate_divergence = {
 			scope:zhou_emperor = { add_character_flag = ceremonial_liege_flag }
 			add_character_flag = ceremonial_regent_flag
 			create_legend = {
-				type = saas_world_savior
+				type = heroic
 				quality = famed
 				chronicle = conqueror_chronicle
 				properties = {
-					ancestor = root
-					title = title:h_huaxia
 				}
 			}
 			situation:spring_and_autumn_situation ?= {
@@ -440,12 +436,10 @@ new_dynasty_conquest = {
 		}
 		saas_take_huaxia_hegemony_effect = yes
 		create_legend = {
-			type = saas_huaxia_conqueror
+			type = heroic
 			quality = famed
 			chronicle = conqueror_chronicle
 			properties = {
-				ancestor = root
-				title = title:h_huaxia
 			}
 		}
 		situation:spring_and_autumn_situation ?= {

@@ -43,7 +43,7 @@
 # 	custom = more_glory_hounds
 
 # 	#custom = unlock_succession_rights_grant_recognition
-# 	#custom = unlock_succession_rights_grant_appointment
+# 	#custom = unlock_succession_rights_governor_appointment
 # 	#custom = unlock_succession_rights_governor_appointment
 # 	custom = unlock_advanced_succession_rights
 

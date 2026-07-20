@@ -1,0 +1,13 @@
+﻿l_russian:
+ game_rule_category_bce_mod_series:0 "@bce_icon_rule!Better Chinese Emblems"
+ rule_bce_noble_family_title:0 "@bce_icon_rule!Better #Clickable #Bold Better Chinese Emblems#!#!:0 Дворянские титулы" 
+ setting_default_noble_family_title:0 "Включить дворянские титулы (по умолчанию)"
+ setting_default_noble_family_title_desc:0 "Ваниль по умолчанию:0 недворяне не будут использовать родовые эмблемы по фамилии. Изменение этого параметра требует начала новой игры."
+ setting_never_noble_family_title:0 "Отключить дворянские титулы"
+ setting_never_noble_family_title_desc:0 "Независимо от дворянского статуса, все будут использовать родовые эмблемы по фамилии. Изменение этого параметра требует начала новой игры."
+ 
+ rule_bce_create_cadet_branch:0 "@bce_icon_rule! #Clickable #Bold Better Chinese Emblems#!#!:0 гербы кадетских ветвей"
+ setting_default_create_cadet_branch:0 "Гербы кадетских ветвей по ваниле (по умолчанию)"
+ setting_default_create_cadet_branch_desc:0 "Используется ванильная логика создания кадетских ветвей. При создании новой ветви она будет использовать «узорный герб BCE»."
+ setting_always_bce_cadet_branch:0 "Гербы кадетских ветвей BCE"
+ setting_always_bce_cadet_branch_desc:0 "Новые кадетские ветви будут использовать исходный «родовой герб BCE по фамилии» (если он существует), а затем объединять его с региональным гербом графства/префектуры, формируя комбинированный герб с двумя эмблемами."

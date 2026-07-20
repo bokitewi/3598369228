@@ -207,7 +207,7 @@ csg_init_list = {
 
 		if = {
 			limit = {
-				NOT = { exists = pob_side_commanders_sort_option }
+				NOT = { exists = var:pob_side_commanders_sort_option }
 			}
 			set_variable = {
 				name = pob_side_commanders_sort_option 

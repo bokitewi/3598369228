@@ -108,9 +108,6 @@
 	3700.1.1 = {
 		holder = pengzu5
 	}
-	3714.1.1 = {
-		holder = pengzu15
-	}
 	3771.1.1 = {
 		holder = pengzu16
 	}

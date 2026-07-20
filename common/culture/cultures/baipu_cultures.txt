@@ -71,7 +71,7 @@ yongren = {
 	traditions = {
 		tradition_sorcerous_metallurgy
 		tradition_mystical_ancestors
-		tradition_tea_ceremony
+		tradition_gardening
 		tradition_loyal_soldiers
 	}
 

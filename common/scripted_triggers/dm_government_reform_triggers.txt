@@ -1,3 +1,10 @@
+dm_can_change_government_reform_law_group_trigger = {
+	is_landed = yes
+	is_independent_ruler = yes
+	highest_held_title_tier >= tier_kingdom
+	NOT = { has_character_flag = dm_government_reform_cooldown }
+}
+
 dm_government_reform_supported_government_trigger = {
 	OR = {
 		has_government = feudal_government

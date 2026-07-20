@@ -92,7 +92,6 @@ d_shenshi6 = {
 
 d_bashi2 = {
 3555.1.1 = {
-    liege = "k_baguo1"
 		holder = han5094
 	}
 3605.1.1 = {

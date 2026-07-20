@@ -3408,6 +3408,7 @@ ep3_story_cycle_harrying.3022 = {
 ep3_story_cycle_harrying.3050 = {
 	# Absent vanilla-map title links isolated: c_cambridgeshire
 	type = letter_event
+	sender = root
 	hidden = yes
 	trigger = { always = no }
 }

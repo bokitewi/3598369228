@@ -1,8 +1,4 @@
 ﻿d_zaishi = {
-	3574.1.1 = {
-		liege = "k_daiguo"
-		holder = song1276
-	}
 	3638.1.1 = {
 		holder = song1277
 	}
@@ -26,7 +22,6 @@
 k_daiguo = {
 	3574.1.1 = {
 		liege = "e_zhoutianzi"
-		holder = song1276
 	}
 	3638.1.1 = {
 		holder = song1277

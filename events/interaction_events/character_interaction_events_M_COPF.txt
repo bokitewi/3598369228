@@ -1,5 +1,18 @@
 ﻿namespace = char_interaction
 
+# CK3 1.19 helper used by the cease-tribute response below. Event-file
+# scripted helpers are local and must accompany the overridden event.
+scripted_trigger can_retaliate_trigger = {
+	is_landed = yes
+	scope:actor = {
+		is_landed = yes
+	}
+	any_land_neighboring_realm_with_tributaries_owner = {
+		this = scope:actor
+	}
+	NOT = { confederation ?= scope:actor.confederation }
+}
+
 # 通知封臣授予总督头衔
 # This also includes a change_government effect in case you grant it to someone that doesn't have an estate yet and it has to be generated
 char_interaction.0111 = {
@@ -104,7 +117,7 @@ char_interaction.0370 = {
 				limit = {
 					government_has_flag = government_is_mandala
 					is_ai = yes
-					house = { has_house_power_parameter = aspect_of_serenity }
+					house = { has_house_aspiration_parameter = aspect_of_serenity }
 				}
 				always = no
 			}

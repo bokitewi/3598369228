@@ -1,0 +1,5 @@
+# The vanilla critical Greek-fire failure directly modifies c_byzantion.
+# That county is intentionally outside the 3850 total-conversion map, so the
+# otherwise unreachable effect is overridden with a no-op.
+ep3_greek_fire_crit_fail_effect = {
+}
