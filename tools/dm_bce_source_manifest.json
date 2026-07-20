@@ -1,0 +1,44 @@
+﻿{
+  "bce_version": "1.8.3",
+  "source_workshop_id": "3614544116",
+  "asset_count": 4055,
+  "asset_tree_sha256": "1daac03af5fd777ab5c5b3ad0caa862f857bd77a4ea341d89bd890596e4c1984",
+  "structural_sources": {
+    "bce_landed_titles": {
+      "path": "common/coat_of_arms/coat_of_arms/bce_landed_titles.txt.bce_source",
+      "sha256": "ba5d1c146fd261a81cb99d7269ea4c3e53d3878b2d7c1308fcc771170658552f"
+    },
+    "dm_name_list_han": {
+      "path": "common/culture/name_lists/01_chinese.txt.bce_source",
+      "sha256": "a3d86419821896cfe3eca96ff5199daabcb11515de3dce1e1c073f46903f8a55"
+    },
+    "bce_name_list_han": {
+      "path": "common/culture/name_lists/max_chinese.txt.bce_source",
+      "sha256": "b64b93d4cb0d42e9d1c62e3c3fe28d68f43856632ed747e0142a4b079dfc05f2"
+    },
+    "bce_coa_trigger": {
+      "path": "common/scripted_triggers/bce_coa_triggers.txt.bce_source",
+      "sha256": "181d07d12c22238030b62de61285c78262898a013522464c82e225fa9b3723ca"
+    },
+    "bce_colored_emblem_lists": {
+      "path": "common/coat_of_arms/template_lists/max_colored_emblem_lists.txt.bce_source",
+      "sha256": "942f676bb95a73eafb6c0f4ca1371482978e51ea5539c83eb6e246d1a45380cb"
+    },
+    "bce_random_templates": {
+      "path": "common/coat_of_arms/coat_of_arms/max_random_templates.txt",
+      "sha256": "8aa180c29e93ebfb6b6059fe4ac6fd71bc653c46752209da3fa283254870e510"
+    },
+    "bce_template_lists": {
+      "path": "common/coat_of_arms/template_lists/max_coa_templates.txt",
+      "sha256": "1b26662168e8fae395997c9d411ac53feb7318fdec480a32a46f3b6ca08a5d89"
+    },
+    "bce_color_lists": {
+      "path": "common/coat_of_arms/template_lists/max_color_lists.txt",
+      "sha256": "2d5ce5e97a8b086997174a3156f34d78a7ca8f6474431bfdfb75fadb9e475738"
+    },
+    "bce_dynasty_localization": {
+      "path": "localization/simp_chinese/dynasties/max_chinese_dynasty_names_l_simp_chinese.yml.bce_source",
+      "sha256": "9951ceb803b7140e4db76f8c10d7ef2ebb7fd88f6f2854c4e42c1f8c4949198b"
+    }
+  }
+}

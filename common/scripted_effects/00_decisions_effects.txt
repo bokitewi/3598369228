@@ -2412,9 +2412,19 @@ found_cadet_house_decision_effect = {
 							has_name_list = name_list_cham
 							# Tai
 							has_name_list = name_list_tai
-							# China
-							has_cultural_pillar = heritage_chinese
-							has_name_list = name_list_han
+							# DM_BCE_CADET_RULE_BEGIN
+							# The BCE alternative preserves a recognizable surname seal;
+							# all other branches keep the current 1.19 cadet effect.
+							trigger_if = {
+								limit = {
+									NOT = { has_game_rule = always_bce_cadet_branch }
+								}
+								OR = {
+									has_cultural_pillar = heritage_chinese
+									has_name_list = name_list_han
+								}
+							}
+							# DM_BCE_CADET_RULE_END
 							# Korea
 							has_cultural_pillar = heritage_korean
 							has_name_list = name_list_korean
