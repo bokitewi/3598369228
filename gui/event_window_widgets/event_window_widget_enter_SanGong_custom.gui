@@ -1,0 +1,51 @@
+vbox = {
+	name = "event_window_widget_enter_SanGong_custom"
+	layoutpolicy_horizontal = expanding
+	margin = { 10 0 }
+	spacing = 10
+	min_width = 200
+	editbox_standard_with_label = {
+		layoutpolicy_horizontal = expanding
+		blockoverride "editbox_properties" 
+		{
+			name = "enter_text" # name referenced in code
+			ontextedited = "[EventWindowWidgetEnterText.OnEdit]"
+		}
+		blockoverride "editbox_label"
+		{
+			text = SanGong_Zdy_FengHao_text
+		}
+	}
+	vbox = {
+        # 容器名称：默认条目容器
+		name = "default_entries"
+        # 数据模型：绑定默认条目数据（从事件脚本获取默认选项列表）
+		datamodel = "[EventWindowWidgetEnterText.AccessDefaultEntries]"
+        # 显示条件：仅当数据模型中有条目时才显示该容器
+		visible = "[DataModelHasItems( EventWindowWidgetEnterText.AccessDefaultEntries )]"
+
+        # 列表项模板（每个默认选项的样式）
+		item = {
+            # 标准列表按钮（单个默认选项的按钮样式）
+			button_standard_list = {
+                # 按钮名称：条目按钮
+				name = "entry"
+                # 按钮尺寸：宽200像素，高34像素
+				size = { 200 34 }
+                # 按钮背景样式：使用内置的"Background_Area"背景
+				background = {
+					using = Background_Area
+				}				
+                # 按钮文本：从数据模型获取默认条目的文本（如"太祖皇帝"）
+				text = "[EventWindowWidgetEnterTextDefaultEntry.GetText]"
+                # 字体样式：使用内置的"Font_Size_Small"（小字体）
+				using = Font_Size_Small
+                # 点击事件：触发默认条目选择的回调函数（选中后填充到输入框）
+				onclick = "[EventWindowWidgetEnterTextDefaultEntry.Select]"
+                # 按下状态：判断当前条目是否被选中（高亮显示）
+				down = "[EventWindowWidgetEnterTextDefaultEntry.IsSelected]"
+			}
+		}
+	}
+	expand = {}
+}

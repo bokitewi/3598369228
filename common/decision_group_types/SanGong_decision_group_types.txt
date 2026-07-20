@@ -1,0 +1,7 @@
+﻿
+SanGongLiuYuan = {
+	sort_order = 500
+	gui_tags = { big_button }
+	important_decision_group = yes
+}
+

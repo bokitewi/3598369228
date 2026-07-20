@@ -1,0 +1,97 @@
+widget = {
+	allow_outside = yes
+	name = "SanGong_art_list_selection"
+	size = { 440 330 }
+
+	vbox = {
+		allow_outside = yes
+		position = { -030 4 }
+
+		scrollbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+
+			blockoverride "scrollbox_content"
+			{
+				dynamicgridbox = {
+					datamodel = "[GetPlayer.MakeScope.GetList('SanGong_artifact_list')]"
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					datamodel_wrap = 1
+					flipdirection = yes
+					
+					item = {
+						button_standard = {
+							name = "background_button"
+							datacontext = "[Scope.Artifact]"
+							size = { 402 80 }
+							using = tooltip_ws
+							down = "[GetScriptedGui('SanGong_selected_artifact').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('selected_artifact', Artifact.MakeScope).End)]"
+							onclick = "[GetScriptedGui('SanGong_selected_artifact').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('selected_artifact', Artifact.MakeScope).End)]"
+							tooltip = 点击选择书籍，再次点击取消选择
+							datacontext = "[GetIllustration( 'artifact_regional_pattern' )]"
+							using = tooltip_above
+
+							# 顶部文化底纹
+							icon =  {
+								texture = "[Illustration.GetTexture( Artifact.GetCulture )]"
+								spriteType = Corneredtiled
+								size = { 100% 15% }
+								color = "[Artifact.GetRarityColor]"
+								alpha = 0.2
+								alwaystransparent = yes
+							}
+
+							# 底部文化底纹
+							icon =  {
+								texture = "[Illustration.GetTexture( Artifact.GetCulture )]"
+								spriteType = Corneredtiled
+								size = { 100% 15% }
+								color = "[Artifact.GetRarityColor]"
+								alpha = 0.2
+								alwaystransparent = yes
+								parentanchor = bottom
+							}
+
+							# 宝物悬浮提示
+							tooltipwidget = {
+								margin_top = 2011
+								artifact_tooltip = {
+									
+								}
+							}
+
+							icon_artifact = {
+								size = { 80 80 }
+							}
+						
+							text_multi = {
+								layoutpolicy_horizontal = expanding
+								text = "[Artifact.GetNameNoTooltip]"
+								parentanchor = center
+								autoresize = yes
+								max_width = 350
+								margin_top = -20
+								margin_left = 20
+								fontsize = 20 
+								default_format = "#high"
+								alwaystransparent = yes
+							}
+
+							spacer = {
+								size = { 0 6 }
+							}
+
+							hbox_artifact_durability = {
+								margin_top = 50
+								margin_left = 120
+								tooltip = ""
+							}
+							
+						}
+					}
+				}
+			}
+		}
+	}
+}

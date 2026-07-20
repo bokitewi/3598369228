@@ -1,0 +1,239 @@
+﻿DM_Shihao_GuoHao_effect = {
+    hidden_effect = {
+        dm_create_character_GuoHao_GongJuRen_effect = yes
+        scope:XianDi = { 
+            remove_nickname = yes 
+            give_nickname = nick_DM_Guohao 
+        }
+    }  
+}
+
+
+
+DM_Set_Shihao_effect = {#谥号
+    give_nickname = $ShiHao$
+    dynasty ?= { set_variable = $ShiHao$ }
+    if = {
+        limit = {
+            has_trait = Dm_Juewei_GongJue
+        }
+        give_nickname = nick_DM_Shihao_gong
+    }
+    else_if = {
+        limit = {
+            has_trait = Dm_Juewei_HouJue
+        }
+        give_nickname = nick_DM_Shihao_hou
+    }
+    else_if = {
+        limit = {
+            has_trait = Dm_Juewei_BoJue
+        }
+        give_nickname = nick_DM_Shihao_bo
+    }
+    else_if = {
+        limit = {
+            has_trait = Dm_Juewei_ZiJue
+        }
+        give_nickname = nick_DM_Shihao_zi
+    }
+    else_if = {
+        limit = {
+            has_trait = Dm_Juewei_NanJue
+        }
+        give_nickname = nick_DM_Shihao_nan
+    }
+ #  else = {
+ #      give_nickname = nick_DM_Shihao_nan
+ #  }
+
+    root = { save_scope_as = HuangDi }
+    scope:HuangDi = {
+        trigger_event = HuangDi_miaoshi.012
+    }
+}
+
+
+
+
+
+
+
+
+dm_create_character_GuoHao_GongJuRen_effect = {#庙谥国号工具人
+    hidden_effect = {
+        create_character = {
+            save_scope_as = Gongjuren
+        }
+        add_courtier = scope:Gongjuren
+        scope:Gongjuren = { 
+            give_nickname = DMGuoHao_global_var 
+            death = yes
+        }
+        set_global_variable = {
+            name = GuoHao_var_global
+            value = scope:Gongjuren
+            days = 1
+        }
+    }
+}
+
+
+pinfei_list_effect = {
+    clear_variable_list = Gongshi_pinfei_list
+    ordered_consort = {
+        order_by = {
+            value = 0
+            if = { limit = { this = root.primary_spouse } add = 99 }
+        }
+        max = 100
+        root = {
+            add_to_variable_list = {
+                name = Gongshi_pinfei_list
+                target = prev
+            }
+        }
+    }
+}
+liege_pinfei_list_effect = {
+    clear_variable_list = Wangshi_pinfei_list
+    top_liege = {
+        ordered_consort = {
+            order_by = {
+                value = 0
+                if = { limit = { this = top_liege.primary_spouse } add = 99 }
+            }
+            max = 100
+            root = {
+                add_to_variable_list = {
+                    name = Wangshi_pinfei_list
+                    target = prev
+                }
+            }
+        }
+    }
+}
+
+
+
+child_male_list_effect = {
+    clear_variable_list = child_male_list
+    ordered_child = {
+        limit = {
+            is_male = yes
+        }
+        order_by = age
+        max = 100
+        root = {
+            add_to_variable_list = {
+                name = child_male_list
+                target = prev
+            }
+        }
+    }
+}
+liege_child_male_list_effect = {
+    clear_variable_list = liege_child_male_list
+    top_liege = {
+        ordered_child = {
+            limit = {
+                is_male = yes
+            }
+            order_by = age
+            max = 100
+            root = {
+                add_to_variable_list = {
+                    name = liege_child_male_list
+                    target = prev
+                }
+            }
+        }
+    }
+    
+}
+
+child_female_list_effect = {
+    clear_variable_list = child_female_list
+    ordered_child = {
+        limit = {
+            is_female = yes
+        }
+        order_by = age
+        max = 100
+        root = {
+            add_to_variable_list = {
+                name = child_female_list
+                target = prev
+            }
+        }
+    }
+}
+
+liege_child_female_list_effect = {
+    clear_variable_list = liege_child_female_list
+    top_liege = {
+        ordered_child = {
+            limit = {
+                is_female = yes
+            }
+            order_by = age
+            max = 100
+            root = {
+                add_to_variable_list = {
+                    name = liege_child_female_list
+                    target = prev
+                }
+            }
+        }
+    }
+    
+}
+
+clear_variable_Zongshi_guis = {
+    clear_variable_list = Gongshi_pinfei_list
+    clear_variable_list = Wangshi_pinfei_list
+    clear_variable_list = child_female_list
+    clear_variable_list = child_female_list
+    clear_variable_list = liege_child_male_list
+    clear_variable_list = liege_child_female_list
+}
+
+
+
+
+
+LiGuo_years_effect = {
+    primary_title = {
+        ordered_past_holder = {
+            limit = {
+                dynasty ?= scope:actor.dynasty
+            }
+            order_by = days_since_death
+            max = 1
+            save_scope_as = kaiguoxianzu
+        }
+    }
+    set_variable = {
+        name = GuoJia_years 
+        value = {
+            value = scope:kaiguoxianzu.days_since_death 
+            divide = 365
+            ceiling = yes
+            min = 0
+        }
+    }
+    
+}
+
+GuoJun_var_effect = {
+    set_variable = { name = GuoJun_var value = 0 } 
+    primary_title = {
+        every_past_holder = {
+            even_if_dead = yes
+            limit = {
+                dynasty ?= scope:actor.dynasty
+            }
+            change_variable = { name = GuoJun_var add = 1 }
+        }
+    }
+}

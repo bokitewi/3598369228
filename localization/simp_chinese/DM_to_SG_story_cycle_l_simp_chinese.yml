@@ -1,0 +1,23 @@
+﻿l_simp_chinese:
+#本纪故事
+  story_Zhou_BenJi: "#bold 诔文"  
+  story_Zhou_BenJi_desc: "#v 载 $CHARACTER_VIEW_NAME$ 在位行事始末"  
+  TianZi: "[Character.GetPrimaryTitle.GetBaseNameNoTierNoTooltip]天子"
+  TianZi_STORY_PRACTICAL_INFORMATION_STRING: "$TianZi_ZaiWei_TEXT$$TianZi_realm_TEXT$$TianZi_child_TEXT$\n#v $BULLET_WITH_TAB$时人评曰：恭俭勤政、偃武安民、海内安定，为一代治世标杆"#[GetPlayer.Custom('SanGong_PingJia')]
+  TianZi_ZaiWei_TEXT: "$BULLET_WITH_TAB$[GetPlayer.Custom('SanGong_NianHao_LEVEL')][GetPlayer.Custom('SanGong_NianHao_data')]年     #weak [GetPlayer.GetPrimaryTitle.GetBaseNameNoTierNoTooltip]已立国 [GetPlayer.MakeScope.Var('GuoJia_years').GetValue|V0] 年#!"
+  TianZi_realm_TEXT: "\n$BULLET_WITH_TAB$初嗣位 领『[GetPlayer.MakeScope.Var('Dengji_sub_realm').GetValue|V0]』邑$TianZi_War_TEXT$\n$BULLET_WITH_TAB$[GetPlayer.Custom('SanGong_NianHao_LEVEL')][GetPlayer.Custom('SanGong_NianHao_data')]年 领『[GetPlayer.MakeScope.ScriptValue('sub_realm_value')|V0]』邑"
+  TianZi_War_TEXT: "\n$BULLET_WITH_TAB$大小征伐 0 次"
+  TianZi_child_TEXT: "\n$BULLET_WITH_TAB$王子『[GetPlayer.MakeScope.ScriptValue('SanGong_WangZi_var')]』人\n$BULLET_WITH_TAB$王姬『[GetPlayer.MakeScope.ScriptValue('SanGong_Wangji_var')]』人\n$BULLET_WITH_TAB$殇『[GetPlayer.MakeScope.ScriptValue('SanGong_huangzi_var')]』人"
+  
+  
+  DengjiJushi_story_1: "践祚之始，朝野不宁，内外多故"
+  DengjiJushi_story_2: "践祚之始，天下晏然，朝纲整肃"
+  DengjiJushi_story_3: "践祚之始，时局未定，祸福难料"
+#\n$BULLET_WITH_TAB$[GetPlayer.Custom('DengjiJushi_story')]
+
+  story_cycle_ZhuHou: "#bold [GetPlayer.GetPrimaryTitle.GetBaseNameNoTierNoTooltip]国史"  
+  story_cycle_ZhuHou_desc: "#v [GetPlayer.GetPrimaryTitle.GetBaseNameNoTierNoTooltip]国史"  
+  Zhuhou_STORY_PRACTICAL_INFORMATION_STRING: "$Zhuhou_ZaiWei_TEXT$$Zhuhou_Guojia_years_TEXT$$Zhuhou_GuoJun_var_TEXT$"
+ Zhuhou_ZaiWei_TEXT: "$BULLET_WITH_TAB$[GetPlayer.GetPrimaryTitle.GetBaseNameNoTierNoTooltip][GetPlayer.GetTitleTierName][GetPlayer.Custom('SanGong_NianHao_data')]年 #!"
+ Zhuhou_Guojia_years_TEXT: "\n$BULLET_WITH_TAB$#v [GetPlayer.GetPrimaryTitle.GetBaseNameNoTierNoTooltip] 自肇封以来，已历 [GetPlayer.MakeScope.Var('GuoJia_years').GetValue|V0] 年#!"
+ Zhuhou_GuoJun_var_TEXT: "\n$BULLET_WITH_TAB$#v 自始封君【[GetPlayer.MakeScope.Var('kaiguoxianzu_var').GetCharacter.GetPrimaryTitle.GetBaseNameNoTierNoTooltip][GetPlayer.MakeScope.Var('kaiguoxianzu_var').GetCharacter.GetTitleTierName] [GetPlayer.MakeScope.Var('kaiguoxianzu_var').GetCharacter.GetUIFirstNameOnlyNotMe]】肇国，已传 [GetPlayer.MakeScope.ScriptValue('GuoJun_var')] 世#!"

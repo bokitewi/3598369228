@@ -1,0 +1,629 @@
+
+SanGong_QingLiCanLiu_decisions = { 清理残留特质#(AI)
+    picture = { reference = "gfx/interface/illustrations/decisions/tgp_retire.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_QingLiCanLiu_decisions_desc
+    should_create_alert = { always = no }
+    is_shown = { 
+        SanGong_huangdi_trigger = yes
+        any_vassal_or_below = {
+            NOT = {
+                dynasty = root.dynasty
+            }
+            OR = {
+                SanGong_QinWang_trigger = yes
+                SanGong_JunWang_trigger = yes
+                has_trait = SanGong_FanWang
+                has_trait = SanGong_JunWang
+                has_trait = SanGong_Taizi
+            }  
+        }
+    }
+    is_valid = { 
+        SanGong_huangdi_trigger = yes
+        any_vassal_or_below = {
+            NOT = {
+                dynasty = root.dynasty
+            }
+            OR = {
+                SanGong_QinWang_trigger = yes
+                SanGong_JunWang_trigger = yes
+                has_trait = SanGong_FanWang
+                has_trait = SanGong_JunWang
+                has_trait = SanGong_Taizi
+            }  
+        }
+    }	  
+    effect = {
+        every_vassal_or_below = {
+            limit = {
+                NOT = {
+                    dynasty = root.dynasty
+                }
+                OR = {
+                    SanGong_QinWang_trigger = yes
+                    SanGong_JunWang_trigger = yes
+                    has_trait = SanGong_FanWang
+                    has_trait = SanGong_JunWang
+                    has_trait = SanGong_Taizi
+                }  
+            }
+            remove_GongTing_trait_effect = yes
+            remove_HuangZi_WangHao_effects = yes
+        }
+    }
+    ai_check_interval_by_tier = {
+        barony = 0
+        county = 0
+        duchy = 0
+        kingdom = 0
+        empire = 10
+        hegemony = 10
+    }
+    ai_potential = {  }
+    ai_will_do = { base = 1000 }
+}
+
+
+
+SanGong_CuiHuiYiFu_decisions = { #摧毁残留衣服
+	picture = { reference = "gfx/interface/illustrations/decisions/tgp_kowtow.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ShouYang_decision_desc
+    should_create_alert = { always = no }
+    is_shown = {  
+        is_ai = yes
+        OR = {
+            AND = {
+                SanGong_huangdi_trigger = no
+                any_character_artifact = {
+                    OR = {
+                        has_variable = TianZiLiuMian   
+                        has_variable = TianZiMianfu 
+                        has_variable = TianZiJian 
+                    }
+                }
+            }
+            AND = {
+                NOT = {
+                    has_trait = SanGong_GongWei_1
+                }
+                any_character_artifact = {
+                    OR = {
+                        has_variable = HuangHouDiYi 
+                        has_variable = HuangHouFengGuan 
+                    }
+                }
+            }
+        }
+	}
+	is_valid = {  
+        is_ai = yes
+        OR = {
+            AND = {
+                SanGong_huangdi_trigger = no
+                any_character_artifact = {
+                    OR = {
+                        has_variable = TianZiLiuMian   
+                        has_variable = TianZiMianfu 
+                        has_variable = TianZiJian 
+                    }
+                }
+            }
+            AND = {
+                NOT = {
+                    has_trait = SanGong_GongWei_1
+                }
+                any_character_artifact = {
+                    OR = {
+                        has_variable = HuangHouDiYi 
+                        has_variable = HuangHouFengGuan 
+                    }
+                }
+            }
+        }
+	}
+	effect = {#摧毁礼服
+        if = {
+            limit = {
+                SanGong_huangdi_trigger = no
+            }
+            every_character_artifact = {
+                limit = {
+                    OR = {
+                        has_variable = TianZiLiuMian   
+                        has_variable = TianZiMianfu 
+                        has_variable = TianZiJian 
+                    }
+                }
+                destroy_artifact = this
+            }
+        }    
+        if = {
+            limit = {
+                NOT = {
+                    has_trait = SanGong_GongWei_1
+                }
+            }
+            every_character_artifact = {
+                limit = {
+                    OR = {
+                        has_variable = HuangHouDiYi 
+                        has_variable = HuangHouFengGuan 
+                    }
+                }
+                destroy_artifact = this
+            }
+        } 
+	}
+	ai_check_interval_by_tier = {
+        barony = 1
+        county = 1
+        duchy = 1
+        kingdom = 1
+        empire = 20
+        hegemony = 20
+    }
+    ai_potential = {  }
+    ai_will_do = { base = 1000 }
+}	
+SanGong_Shihao_GaiZhi_decision = {#谥号改制
+    picture = { reference = "gfx/interface/illustrations/decisions/tgp_retire.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_Shihao_GaiZhi_decision_desc
+    should_create_alert = { always = no }
+    sort_order = 7000
+    is_shown = { 
+        is_ai = no
+        SanGong_huangdi_trigger = yes
+        NOT = {
+            has_character_flag = genghuan_shifa
+        }
+    }
+    is_valid = { 
+        can_interact_trigger = yes
+    }	
+    effect = {
+        add_character_flag = { flag = genghuan_shifa years = 50 }
+        trigger_event = SanGong_DianZhang.003
+    }
+    ai_check_interval_by_tier = {
+        barony = 0
+        county = 0
+        duchy = 0
+        kingdom = 0
+        empire = 0
+        hegemony = 0
+    }
+    ai_potential = {  }
+    ai_will_do = { base = 0 }
+}
+
+SanGong_JueWei_GaiZhi_decision = {#爵位改制
+    picture = { reference = "gfx/interface/illustrations/decisions/tgp_retire.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_JueWei_GaiZhi_decision_desc
+    should_create_alert = { always = no }
+    sort_order = 7000
+    is_shown = { 
+        has_title = title:h_china
+        SanGong_huangdi_trigger = yes
+        dynasty = {
+            NOT = {
+                has_variable = han_juewei
+                has_variable = tangsong_juewei
+                has_variable = ming_juewei 
+            }
+        }
+    }
+    is_valid = { 
+        can_interact_trigger = yes
+    }	
+    effect = {
+        #add_character_flag = { flag = genghuan_juewei years = 50 }
+        trigger_event = SanGong_DianZhang.004
+    }
+    ai_check_interval_by_tier = {
+        barony = 0
+        county = 0
+        duchy = 0
+        kingdom = 0
+        empire = 0
+        hegemony = 1
+    }
+    ai_will_do = { base = 100 }
+}
+SanGong_ChongShiHouGong_decisions = { #充实后宫(AI)
+    picture = { reference = "gfx/interface/illustrations/decisions/tgp_retire.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ChongShiHouGong_decisions_desc
+    should_create_alert = { always = no }
+    is_shown = { 
+        SanGong_huangdi_trigger = yes
+        any_concubine = {
+            count <= 3
+            has_dynasty = yes
+            culture = top_liege.culture
+        }
+    }
+    is_valid = { 
+        not_involved_activity_trigger = yes
+        custom_tooltip = {
+            text = 嫔妃数量小于3人
+            any_concubine = {
+                count >= 3
+                has_dynasty = yes
+            }
+        }
+
+    }	  
+    effect = {
+        save_scope_as = HuangDi
+        LianYin_house_effect = { TARGET = target1 XIUNV = Xiunv1 }
+        add_courtier = scope:Xiunv1
+        scope:Xiunv1 = {
+            save_scope_as = ShiQie
+        }
+        trigger_event = SanGong_ShiQin.010
+    }
+    ai_check_interval_by_tier = {
+        barony = 0
+        county = 0
+        duchy = 0
+        kingdom = 0
+        empire = 10
+        hegemony = 10
+    }
+    ai_potential = {  }
+    ai_will_do = { base = 1000 }
+}
+
+
+
+
+SanGong_CeLiTaiZi_decisions = {#册立太子(AI)
+    picture = { reference = "gfx/interface/illustrations/decisions/tgp_retire.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ZunFengTaiHou_decisions_desc
+    should_create_alert = { always = no }
+    is_shown = { 
+        is_ai = yes
+        SanGong_huangdi_trigger = yes
+        NOT = {
+            house = {
+                any_house_member = {
+                    top_liege = root
+                    has_trait = SanGong_Taizi
+                }
+            }
+        }
+    }
+    is_valid = { 
+        is_ai = yes
+        SanGong_huangdi_trigger = yes
+        any_consort = {
+            has_trait = SanGong_GongWei_1
+        }
+        NOT = {
+            any_child = {
+                has_trait = SanGong_Taizi
+            }
+        }
+        any_child = {
+            is_male = yes
+            age >= 4
+        }
+    }	  
+    effect = {
+        save_scope_as = HuangDi            
+        trigger_event = SanGong_DianZhang.005
+    }
+    ai_check_interval_by_tier = {
+        barony = 0
+        county = 0
+        duchy = 0
+        kingdom = 0
+        empire = 1
+        hegemony = 1
+    }
+    ai_potential = {  }
+    ai_will_do = { base = 1000 }
+}
+
+
+SanGong_GongTingFengShang_decisions = { #祖训
+    picture = {
+		reference = "gfx/interface/illustrations/decisions/tgp_kowtow.dds"
+	}
+    decision_group_type = SanGongLiuYuan
+    should_create_alert = { always = no }
+    desc = SanGong_GongTingFengShang_decisions_desc
+    widget = {
+        gui = "decision_view_widget_option_list_generic"
+        controller = decision_option_list_controller
+        decision_to_second_step_button = SanGong_GongTingFengShang_decisions_second_step_button
+        show_from_start = yes
+        item = {
+            icon = "gfx/interface/icons/court_position_task_types/grand_mentor_court_position_task_teach_liege.dds"
+            value = mianfu_1
+            localization = mianfu_1_tooltip
+            button_style = "decision_option_button"
+        }
+        item = {
+            icon = "gfx/interface/icons/court_position_task_types/antiquarian_court_position_task_exibit_artifacts.dds"
+            value = mianfu_2
+            localization = mianfu_2_tooltip
+            button_style = "decision_option_button"
+        }
+        item = {
+            icon = "gfx/interface/icons/court_position_task_types/court_poet_court_position_task_create_poetry.dds"
+            value = mianfu_3
+            localization = mianfu_3_tooltip
+            button_style = "decision_option_button"
+        }
+        item = {
+            icon = "gfx/interface/icons/court_position_task_types/grand_mentor_court_position_task_teach_liege.dds"
+            value = mianfu_4
+            localization = mianfu_4_tooltip
+            button_style = "decision_option_button"
+        }
+        item = {
+            icon = "gfx/interface/icons/court_position_task_types/antiquarian_court_position_task_exibit_artifacts.dds"
+            value = mianfu_7
+            localization = mianfu_7_tooltip
+            button_style = "decision_option_button"
+        }
+        item = {
+            icon = "gfx/interface/icons/court_position_types/hanfan_var.dds"
+            value = mianfu_5
+            localization = mianfu_5_tooltip
+            button_style = "decision_option_button"
+        }
+        item = {
+            icon = "gfx/interface/icons/court_position_task_types/court_poet_court_position_task_create_poetry.dds"
+            value = mianfu_6
+            localization = mianfu_6_tooltip
+            button_style = "decision_option_button"
+        }
+    }
+    is_shown = { 
+       #SanGong_huangdi_trigger = yes
+       #is_ai = no
+    }
+    effect = {
+        if = {
+            limit = { scope:mianfu_1 = yes }
+            trigger_event = SanGong_ZuXun.001
+        }
+        else_if = {
+            limit = { scope:mianfu_2 = yes } 
+            trigger_event = SanGong_ZuXun.002
+        }
+        else_if = {
+            limit = { scope:mianfu_3 = yes } 
+            trigger_event = SanGong_ZuXun.004
+        }
+        else_if = {
+            limit = { scope:mianfu_4 = yes } 
+            trigger_event = SanGong_ZuXun.003
+        }
+        else_if = {
+            limit = { scope:mianfu_5 = yes } 
+            if = {
+                limit = {
+                    NOT = { exists = global_var:hanfan_global_variable }
+                }
+                set_global_variable = hanfan_global_variable 
+                custom_tooltip = hanfan_global_variable_1
+            }
+            else_if = {
+                limit = {
+                    exists = global_var:hanfan_global_variable
+                }
+                remove_global_variable = hanfan_global_variable 
+                custom_tooltip = hanfan_global_variable_2
+            }
+        }
+        else_if = {
+            limit = { scope:mianfu_6 = yes } 
+            if = {
+                limit = {
+                    NOT = { exists = global_var:huanzhuang_global_variable }
+                }
+                set_global_variable = huanzhuang_global_variable 
+                custom_tooltip = huanzhuang_global_variable_1
+            }
+            else_if = {
+                limit = {
+                    exists = global_var:huanzhuang_global_variable
+                }
+                remove_global_variable = huanzhuang_global_variable 
+                custom_tooltip = huanzhuang_global_variable_2
+            }
+        }
+        else_if = {
+            limit = { scope:mianfu_7 = yes } 
+            if = {
+                limit = {
+                    NOT = { exists = global_var:chinese_fashion_change }
+                }
+                set_global_variable = {
+                    name = chinese_fashion_change
+                    value = 1
+                }
+                custom_tooltip = mianfu_7_tooltip_1
+            }
+            else_if = {
+                limit = {
+                    exists = global_var:chinese_fashion_change
+                }
+                remove_global_variable = chinese_fashion_change 
+                custom_tooltip = mianfu_7_tooltip_2
+            }
+        }
+    }
+    ai_will_do = 0
+}
+
+SanGong_ZhuiFeng_XianFu_decision = {#追封先父庙谥
+    picture = { reference = "gfx/interface/illustrations/decisions/tgp_debate.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ZhuiFeng_XianFu_decision_desc
+    should_create_alert = { always = no }
+    #is_shown = { 
+    #    SanGong_huangdi_trigger = yes
+    #    has_title = title:h_china
+    #    exists = father
+    #    dynasty = father.dynasty
+    #    father = {
+    #        is_alive = no
+    #        SanGong_TianZiMiaoShi_trigger = no
+    #    }
+    #}
+    #is_valid = { 
+    #    custom_tooltip = {
+    #        text = SanGong_TianZiMiaoShi_tt1
+    #        primary_title.title_held_years >= 1
+    #    }
+    #    custom_tooltip = {
+    #        text = SanGong_TianZiMiaoShi_tt
+    #        father = {
+    #            SanGong_TianZiMiaoShi_trigger = no
+    #        }
+    #    }
+    #}   	
+    effect = {
+        father = {
+            save_scope_as = XianDi   
+        }
+        if = {
+            limit = {
+                has_title = title:h_china
+            }
+            father = {
+                hidden_effect = {
+                    remove_nickname = yes
+                    remove_MiaoShi_effect = yes
+                    #add_trait = SanGong_KaiGuo
+                    #add_trait = SanGong_ZhongXing 
+                    give_nickname = Tianzi_miaohao_guohao_han
+                }
+            }
+        }
+        if = {
+            limit = {
+                has_trait = SanGong_KaiGuo
+            }
+            trigger_event = HuangDi_miaoshi.001
+        }
+        else_if = {
+            trigger_event = HuangDi_miaoshi.001
+        }
+    }
+    ai_check_interval_by_tier = {
+        barony = 0
+        county = 0
+        duchy = 0
+        kingdom = 0
+        empire = 12
+        hegemony = 12
+    }
+    ai_will_do = 100
+}
+
+SanGong_ZhuiFeng_WangGuoJunZhu_decision = {#追封亡国君主谥号
+    picture = { reference = "gfx/interface/illustrations/decisions/tgp_debate.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ZhuiFeng_WangGuoJunZhu_decision_desc
+    should_create_alert = { always = no }
+    is_shown = { 
+        is_ai = yes
+        has_title = title:h_china
+        exists = global_var:MoDaiHuangDi
+        global_var:MoDaiHuangDi = {
+            is_alive = no
+            SanGong_TianZiMiaoShi_trigger = no
+        }
+    }
+    is_valid = { 
+        is_ai = no
+        has_title = title:h_china
+        exists = global_var:MoDaiHuangDi
+        custom_tooltip = {
+            text = SanGong_TianZiMiaoShi_tt
+            global_var:MoDaiHuangDi = {
+                is_alive = no
+                SanGong_TianZiMiaoShi_trigger = no
+            }
+        }
+        
+    }	
+    effect = {
+        global_var:MoDaiHuangDi = {
+            save_scope_as = XianDi  
+        }
+        if = {
+            limit = { global_var:MoDaiHuangDi = { age < 16 } }
+            trigger_event = HuangDi_miaoshi.019
+        }
+        if = {
+            limit = { global_var:MoDaiHuangDi = { age >= 16 } }
+            trigger_event = HuangDi_miaoshi.082
+        }
+        remove_global_variable = MoDaiHuangDi
+    }
+    ai_check_interval_by_tier = {
+        barony = 0
+        county = 0
+        duchy = 0
+        kingdom = 0
+        empire = 0
+        hegemony = 1
+    }
+    ai_potential = {  }
+    ai_will_do = { base = 1000 }
+}
+
+ShiFeiGongGuo_decision = {#是非功过
+    picture = { reference = "gfx/interface/illustrations/decisions/tgp_career.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = ShiFeiGongGuo_decision_desc
+    should_create_alert = { always = no }
+    is_shown = { 
+       SanGong_huangdi_trigger = yes
+    }
+    is_valid = { 
+        custom_tooltip = ShiFeiGongGuo_tooltip1
+        custom_tooltip = ShiFeiGongGuo_tooltip2
+        custom_tooltip = ShiFeiGongGuo_tooltip3
+        custom_tooltip = ShiFeiGongGuo_tooltip4
+        custom_tooltip = ShiFeiGongGuo_tooltip5
+        has_trait = SanGong_KaiGuo
+        prestige_level >= 4
+        sub_realm_size >= var:SanGong_XiongZhu_var
+        sub_realm_size < var:SanGong_HunJun_var
+        custom_tooltip = {
+            text = ShiFeiGongGuo_tooltip6
+            current_military_strength >= 30000
+		}
+        custom_tooltip = {
+            text = ShiFeiGongGuo_tooltip7
+            has_variable = SanGong_HunJun_var2
+		}
+        custom_tooltip = {
+            text = ShiFeiGongGuo_tooltip8
+            has_variable = SanGong_Zhongxing_var
+		}
+    }	
+    effect = {
+
+    }
+}
+
+
+
+
+
+
+		
+

@@ -1,0 +1,125 @@
+﻿SanGong_PingJia = {
+    text = { 
+        trigger = { 
+            has_trait = SanGong_KaiGuo
+        } 
+        localization_key = SanGong_KaiGuo_desc 
+    }
+    text = { 
+        trigger = { 
+            prestige_level >= 4
+            has_variable = SanGong_Zhongxing_var
+            situation:dynastic_cycle ?= {
+                OR = { 
+                    situation_current_phase = situation_dynastic_cycle_phase_stability_expansion
+                    situation_current_phase = situation_dynastic_cycle_phase_stability_advancement
+                }
+            }      
+        } 
+        localization_key = SanGong_ZhongXing_desc 
+    }
+    text = { 
+        trigger = { 
+            NOT = { has_trait = SanGong_KaiGuo }
+            prestige_level >= 4
+            sub_realm_size >= var:SanGong_XiongZhu_var     
+        } 
+        localization_key = SanGong_XiongZhu_desc 
+    }
+    text = { 
+        trigger = { 
+            NOT = { has_trait = SanGong_KaiGuo }
+            age < 16     
+        } 
+        localization_key = SanGong_YouZhu_desc 
+    }
+    text = { 
+        trigger = { 
+            NOT = { has_trait = SanGong_KaiGuo }
+            OR = {
+                sub_realm_size < var:SanGong_HunJun_var
+                AND = {
+                    has_variable = SanGong_HunJun_var2
+                    situation:dynastic_cycle ?= {
+                        OR = { 
+                            situation_current_phase = situation_dynastic_cycle_phase_chaos            
+                            situation_current_phase = situation_dynastic_cycle_phase_instability_conquest 
+                            situation_current_phase = situation_dynastic_cycle_phase_instability       
+                        }
+                    }
+                }
+            }
+        } 
+        localization_key = SanGong_HunJun_desc 
+    }
+    text = { 
+        trigger = { 
+            always = yes
+        } 
+        localization_key = SanGong_ShouCheng_desc 
+    }
+}
+
+Fanwang_story = {
+    text = { 
+        trigger = { 
+            any_owned_story = {
+                type = story_Fanwang
+                var:loyalty_counter >= 5
+            }
+        } 
+        localization_key = Fanwang_story_1
+    }
+    text = { 
+        trigger = { 
+            any_owned_story = {
+                type = story_Fanwang
+                var:loyalty_counter < 5
+                var:loyalty_counter > 3
+            }
+        } 
+        localization_key = Fanwang_story_2
+    }
+    text = { 
+        trigger = { 
+            any_owned_story = {
+                type = story_Fanwang
+                var:loyalty_counter < 3
+                var:loyalty_counter > 0
+            }
+        } 
+        localization_key = Fanwang_story_3
+    }
+    text = { 
+        trigger = { 
+            any_owned_story = {
+                type = story_Fanwang
+                var:loyalty_counter < 0
+            }
+        } 
+        localization_key = Fanwang_story_4
+    }
+}
+
+DengjiJushi_story = {
+    text = { 
+        trigger = { 
+            has_variable = SanGong_Zhongxing_var
+        } 
+        localization_key = DengjiJushi_story_1
+    }
+    text = { 
+        trigger = { 
+                has_variable = SanGong_HunJun_var2
+        } 
+        localization_key = DengjiJushi_story_2
+    }
+    text = { 
+        trigger = { 
+            always = yes
+        } 
+        localization_key = DengjiJushi_story_3
+    }
+}
+
+

@@ -1,0 +1,28 @@
+﻿# Fires when a blood brother relation is removed
+on_relation_blood_brother_removed = {
+    events = {
+        sworn_brotherhood_events.0003
+    }
+}
+
+# # Fires when a new friendship is created
+# on_set_relation_friend = {
+#     events = {
+#         sworn_brotherhood_events.0005
+#     }
+# }
+
+# Oath-breaking detection
+is_sworn_brother_oath_breaking_trigger = {
+    exists = FROM
+    OR = {
+        AND = {
+            had_relation_blood_brother = { target = FROM }
+            OR = {
+                is_at_war_with = FROM
+                has_started_scheme_against_target = FROM
+                is_rival_of = FROM
+            }
+        }
+    }
+}

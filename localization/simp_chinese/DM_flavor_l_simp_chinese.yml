@@ -1,0 +1,123 @@
+﻿l_simp_chinese:
+
+    DM_lijiao_hegemon_male: "皇帝"
+    DM_lijiao_hegemon_female: "女皇"
+    DM_lijiao_hegemon_mother: "皇太后"
+    DM_lijiao_hegemon_male_prince: "皇子"
+    DM_lijiao_hegemon_female_prince: "皇女"
+
+    DM_lijiao_empire_male: "王"
+    DM_lijiao_empire_female: "王后"
+    DM_lijiao_empire_mother: "王太后"
+    DM_lijiao_empire_male_prince: "王子"
+    DM_lijiao_empire_female_prince: "王姬"
+
+    DM_lijiao_kingdom_male: "公"
+    DM_lijiao_kingdom_female: "夫人"
+    DM_lijiao_kingdom_mother: "小君"
+    DM_lijiao_kingdom_male_prince: "公子"
+    DM_lijiao_kingdom_female_prince: "公女"
+
+    DM_lijiao_duchy_male: "卿"
+    DM_lijiao_duchy_female: "夫人"
+    DM_lijiao_duchy_mother: "小君"
+    DM_lijiao_duchy_male_prince: "公子"
+    DM_lijiao_duchy_female_prince: "公女"
+
+    DM_lijiao_county_male: "大夫"
+    DM_lijiao_county_female: "夫人"
+    DM_lijiao_county_mother: "小君"
+    DM_lijiao_county_male_prince: "公子"
+    DM_lijiao_county_female_prince: "公女"
+
+    DM_lijiao_barony_male: "士"
+    DM_lijiao_barony_female: "妇人"
+    DM_lijiao_barony_mother: "小君"
+    DM_lijiao_barony_male_prince: "公子"
+    DM_lijiao_barony_female_prince: "公女"
+
+    DM_lijiao_Tianzi_male: "天子"
+    DM_lijiao_Tianzi_female: "天子"
+
+
+    DM_yidi_Tianzi_male: "大神"
+    DM_yidi_Tianzi_female: "大神"
+
+    DM_yidi_hegemon_male: "戎伯"
+    DM_yidi_hegemon_female: "戎女"
+    DM_yidi_hegemon_mother: "戎母"
+    DM_yidi_hegemon_male_prince: "戎子"
+    DM_yidi_hegemon_female_prince: "戎儿"
+
+    DM_yidi_empire_male: "狄君"
+    DM_yidi_empire_female: "狄女"
+    DM_yidi_empire_mother: "狄母"
+    DM_yidi_empire_male_prince: "狄子"
+    DM_yidi_empire_female_prince: "狄儿"
+
+    DM_yidi_kingdom_male: "蛮君"
+    DM_yidi_kingdom_female: "蛮女"
+    DM_yidi_kingdom_mother: "蛮母"
+    DM_yidi_kingdom_male_prince: "蛮子"
+    DM_yidi_kingdom_female_prince: "蛮儿"
+
+    DM_yidi_duchy_male: "夷长"
+    DM_yidi_duchy_female: "夷女"
+    DM_yidi_duchy_mother: "夷母"
+    DM_yidi_duchy_male_prince: "夷子"
+    DM_yidi_duchy_female_prince: "夷儿"
+
+    DM_yidi_county_male: "酋长"
+    DM_yidi_county_female: "酋妇"
+    DM_yidi_county_mother: "酋母"
+    DM_yidi_county_male_prince: "酋子"
+    DM_yidi_county_female_prince: "酋女"
+
+    DM_yidi_barony_male: "野士"
+    DM_yidi_barony_female: "野妇"
+    DM_yidi_barony_mother: "野母"
+    DM_yidi_barony_male_prince: "野子"
+    DM_yidi_barony_female_prince: "野女"
+
+#TITLE
+    hegemony_lijiao_huaxia_title: "国"
+    empire_lijiao_huaxia_title: "国"
+    kingdom_lijiao_huaxia_title: "国"
+    duchy_lijiao_huaxia_title: "氏"
+    county_lijiao_huaxia_title: "邑"
+    barony_lijiao_huaxia_title: "田"
+#COUNCILOR
+
+#天子
+    #天子
+    councillor_chancellor_lijiao_tianzi:0 "太保"   #掌玺大臣
+    councillor_marshal_lijiao_tianzi:0 "太师"  #军事统帅
+    councillor_steward_lijiao_tianzi:0 "太宰"  #财政总管
+    councillor_spymaster_lijiao_tianzi:0 "司寇"  #间谍首脑
+    councillor_chaplain_lijiao_tianzi:0 "太史"  #神职人员
+
+    #诸侯
+    councillor_chancellor_lijiao_zhuhou:0 "相"   #掌玺大臣
+    councillor_marshal_lijiao_zhuhou:0 "司马"  #军事统帅
+    councillor_steward_lijiao_zhuhou:0 "司徒"  #财政总管
+    councillor_spymaster_lijiao_zhuhou:0 "司寇"  #间谍首脑
+    councillor_chaplain_lijiao_zhuhou:0 "太祝"  #神职人员
+
+    #夷狄
+    councillor_chancellor_yidi:0 "大酋"  #掌玺大臣
+    councillor_marshal_yidi:0 "万骑"  #军事统帅
+    councillor_steward_yidi:0 "掌牧"  #财政总管
+    councillor_spymaster_yidi:0 "耳目"  #间谍首脑
+    councillor_chaplain_yidi:0 "巫祝"  #神职人员
+
+#爵位风味化
+    DM_falvor_GongJue_male: "公"
+    DM_falvor_GongJue_female: "夫人"
+    DM_falvor_HouJue_male: "侯"
+    DM_falvor_HouJue_female: "夫人"
+    DM_falvor_BoJue_male: "伯"
+    DM_falvor_BoJue_female: "夫人"
+    DM_falvor_ZiJue_male: "子"
+    DM_falvor_ZiJue_female: "夫人"
+    DM_falvor_NanJue_male: "男"
+    DM_falvor_NanJue_female: "夫人"

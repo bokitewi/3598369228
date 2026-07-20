@@ -1,0 +1,41 @@
+﻿Dm_Juewei_GongJue = {#公爵
+	category = lifestyle
+	stress_loss_mult = 0.05
+	name = trait_Dm_Juewei_GongJue
+	desc = trait_Dm_Juewei_GongJue_desc
+	flag = falvor_dm_gongjue
+	icon = Dm_Juewei.dds
+}
+
+Dm_Juewei_HouJue = {#侯爵
+	category = lifestyle
+	stress_loss_mult = 0.05
+	name = trait_Dm_Juewei_HouJue
+	desc = trait_Dm_Juewei_HouJue_desc
+	icon = Dm_Juewei.dds
+}
+
+Dm_Juewei_BoJue = {#伯爵
+	category = lifestyle
+	stress_loss_mult = 0.05
+	name = trait_Dm_Juewei_BoJue
+	desc = trait_Dm_Juewei_BoJue_desc
+	flag = falvor_dm_gongjue
+	icon = Dm_Juewei.dds
+}
+
+Dm_Juewei_ZiJue = {#子爵
+	category = lifestyle
+	stress_loss_mult = 0.05
+	name = trait_Dm_Juewei_ZiJue
+	desc = trait_Dm_Juewei_ZiJue_desc
+	icon = Dm_Juewei.dds
+}
+
+Dm_Juewei_NanJue = {#子爵
+	category = lifestyle
+	stress_loss_mult = 0.05
+	name = trait_Dm_Juewei_NanJue
+	desc = trait_Dm_Juewei_NanJue_desc
+	icon = Dm_Juewei.dds
+}

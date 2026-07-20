@@ -1,0 +1,117 @@
+﻿#华夏头衔风味化
+DM_lijiao_hegemon_male = { #男性霸权
+	type = character
+	gender = male
+	special = holder
+	tier = hegemony
+	priority = 3000
+	#religions = { lijiao_religion }
+	flavourization_rules = {
+		spouse_takes_title = no
+	}
+}
+
+DM_lijiao_hegemon_female = { #女性霸权
+	type = character
+	gender = female
+	special = holder
+	tier = hegemony
+	priority = 3000
+	#religions = { lijiao_religion }
+	flavourization_rules = {
+		spouse_takes_title = no
+	}
+}
+
+DM_lijiao_empire_male = { #男性帝国
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 3000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_empire_female = { #女性帝国
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 3000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_kingdom_male = { #男性王国
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 3000
+	#religions = { lijiao_religion }
+	
+}
+
+DM_lijiao_kingdom_female = { #女性王国
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 3000
+	#religions = { lijiao_religion }
+	
+}
+
+DM_lijiao_duchy_male = { #男性公国
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 3000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_duchy_female = { #女性公国
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 3000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_county_male = { #男性伯爵领
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 3000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_county_female = { #女性伯爵领
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 3000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_barony_male = { #男性男爵领
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 3000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_barony_female = { #女性男爵领
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 3000
+	#religions = { lijiao_religion }
+}
+

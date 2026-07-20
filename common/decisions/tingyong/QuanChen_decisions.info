@@ -1,0 +1,237 @@
+
+
+Quanchen_1_decision = {#成为权臣
+    picture = { reference = "gfx/interface/illustrations/decisions/tgp_career.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = Quanchen_1_decision_desc
+    should_create_alert = { always = no }
+    is_shown = { 
+       # NOT = {
+            has_trait = SanGong_Quanchen
+        #}
+        is_ai = yes
+        #is_independent_ruler = no
+        highest_held_title_tier >= tier_kingdom
+        NOR = {
+            has_trait = loyal
+            has_trait = craven
+            has_trait = incapable
+        }
+    }
+    is_valid = { 
+        is_ai = no
+       # prestige_level >= 4
+       # is_independent_ruler = no
+        highest_held_title_tier >= tier_kingdom
+        NOR = {
+            has_trait = loyal
+            has_trait = craven
+            has_trait = incapable
+        }
+    }	
+    effect = {
+            create_story = story_QuanChen
+            save_scope_as = owned_story
+            random_owned_story = {
+                type = story_QuanChen
+                set_variable = {
+                    name = huangdi_character
+                    value = scope:owned_story.top_liege
+                }
+                set_variable = {
+                    name = Quanchen_character
+                    value = scope:owned_story
+                }
+            }
+    }
+}
+
+
+Quanchen_2_decision = {#进爵
+    picture = { reference = "gfx/interface/illustrations/decisions/tgp_career.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = Quanchen_2_decision_desc
+    should_create_alert = { always = no }
+    is_shown = { 
+        has_trait = SanGong_Quanchen
+        is_independent_ruler = no
+        highest_held_title_tier >= tier_kingdom 
+    }
+    is_valid = { 
+        has_trait = SanGong_Quanchen
+        #prestige_level >= 4
+        is_independent_ruler = no
+        highest_held_title_tier >= tier_kingdom
+    }	
+    effect = {
+        save_scope_as = recipient
+        custom_tooltip = Quanchen_2_decision_tt
+        trigger_event = SanGong_Quanchen_event.001
+    }
+}
+
+	
+Quanchen_3_decision = {#废立皇后
+    picture = { reference = "gfx/interface/illustrations/decisions/tgp_career.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = Quanchen_3_decision_desc
+    should_create_alert = { always = no }
+    is_shown = { 
+        #has_trait = SanGong_Quanchen
+        is_independent_ruler = no
+        highest_held_title_tier >= tier_kingdom 
+        any_owned_story = {
+            type = story_QuanChen
+          #  var:Quanchen_var < 11100
+        }
+
+    }
+    is_valid = { 
+        has_trait = SanGong_Quanchen
+        #prestige_level >= 4
+        is_independent_ruler = no
+        highest_held_title_tier >= tier_kingdom
+        top_liege.primary_spouse = {
+            NOT = {
+               # dynasty = root.dynasty
+            }
+        }
+        custom_tooltip = {
+            text = Quanchen_3_decision_tt2
+            dynasty = {
+                any_dynasty_member = {
+                    is_female = yes
+                    is_adult = yes
+                    is_healthy = yes 
+                    NOT = {
+                        exists = primary_spouse
+                    }
+                }   
+            }
+        }   
+        custom_tooltip = {
+            text = Quanchen_3_decision_tt1
+            any_owned_story = {
+                type = story_QuanChen
+             #   var:Quanchen_var >= 2500
+            }
+        }   
+    }	
+    effect = {
+        save_scope_as = recipient
+        QuanchenVar_remove_1000 = yes
+        trigger_event = SanGong_Quanchen_event.003
+    }
+}
+
+Quanchen_4_decision = {#废立太子
+    picture = { reference = "gfx/interface/illustrations/decisions/tgp_career.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = Quanchen_4_decision_desc
+    should_create_alert = { always = no }
+    is_shown = { 
+        has_trait = SanGong_Quanchen
+        is_independent_ruler = no
+        highest_held_title_tier >= tier_kingdom 
+    }
+    is_valid = { 
+        has_trait = SanGong_Quanchen
+        #prestige_level >= 4
+        is_independent_ruler = no
+        highest_held_title_tier >= tier_kingdom
+        custom_tooltip = {
+            text = Quanchen_3_decision_tt1
+            any_owned_story = {
+                type = story_QuanChen
+             #   var:Quanchen_var >= 2500
+            }
+        }   
+    }	
+    effect = {
+        save_scope_as = recipient
+        QuanchenVar_remove_500 = yes
+        trigger_event = SanGong_Quanchen_event.004
+    }
+}
+
+Quanchen_HE_decision = {#废立皇帝
+    picture = { reference = "gfx/interface/illustrations/decisions/tgp_career.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = Quanchen_HE_decision_desc
+    should_create_alert = { always = no }
+    is_shown = { 
+        has_trait = SanGong_Quanchen
+        is_independent_ruler = no
+        highest_held_title_tier >= tier_kingdom 
+    }
+    is_valid = { 
+        has_trait = SanGong_Quanchen
+        #prestige_level >= 4
+        is_independent_ruler = no
+        highest_held_title_tier >= tier_kingdom
+    }	
+    widget = {
+		gui = "decision_view_widget_option_list_generic" # UI模板
+		controller = decision_option_list_controller # 控制器
+		decision_to_second_step_button = "diarch_attempt_to_overthrow_liege.second_step" # 第二步按钮
+		item = {
+			value = ShanRang_Duoquan # 选项值
+			current_description = ShanRang_Duoquan_desc # 当前描述
+			localization = ShanRang_Duoquan_tt # 本地化文本
+			icon = "gfx/interface/icons/message_feed/diplomacy.dds" # 图标
+			is_valid = { always = yes } # 始终可用
+			# AI选择权重
+			ai_chance = {
+				value = 0 # 基础权重0
+				# 条件：外交是最高属性，且外交≥勇武 → 权重+100
+				if = {
+					limit = {
+						highest_skill = diplomacy
+					}
+					add = 100
+				}
+			}
+		}
+        item = {
+			value = WuLi_Duoquan # 选项值
+			current_description = WuLi_Duoquan_desc # 当前描述
+			localization = WuLi_Duoquan_tt # 本地化文本
+			icon = "gfx/interface/icons/icon_prowess.dds"
+			is_valid = { always = yes } # 始终可用
+			# AI选择权重
+			ai_chance = {
+				value = 0 # 基础权重0
+				# 条件：外交是最高属性，且外交≥勇武 → 权重+100
+				if = {
+					limit = {
+						highest_skill = prowess
+					}
+					add = 100
+				}
+			}
+		}
+	}
+    effect = {
+        liege = {
+			# 选择外交政变 → 触发事件9001
+			if = {
+				limit = { scope:coup_diplomacy = yes }
+				trigger_event = diarchy.9001
+			}
+			# 选择密谋政变 → 触发事件9011
+			if = {
+				limit = { scope:coup_intrigue = yes }
+				trigger_event = diarchy.9011
+			}
+			# 选择勇武政变 → 触发事件9021
+			if = {
+				limit = { scope:coup_prowess = yes }
+				trigger_event = diarchy.9021
+			}
+		}
+	
+        save_scope_as = recipient
+        custom_tooltip = Quanchen_2_decision_tt
+        trigger_event = SanGong_Quanchen_event.001
+    }
+}

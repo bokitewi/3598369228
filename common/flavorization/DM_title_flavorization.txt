@@ -1,0 +1,41 @@
+﻿hegemony_lijiao_huaxia_title = {
+	type = title
+	priority = 500
+	tier = hegemony
+	#flavourization_rules = { only_vassals = yes }
+}
+
+empire_lijiao_huaxia_title = {
+	type = title
+	priority = 500
+	tier = empire
+	#flavourization_rules = { only_vassals = yes }
+}
+
+kingdom_lijiao_huaxia_title = {
+	type = title
+	priority = 500
+	tier = kingdom
+	#flavourization_rules = { only_vassals = yes }
+}
+
+duchy_lijiao_huaxia_title = {
+	type = title
+	priority = 500
+	tier = duchy
+	#flavourization_rules = { only_vassals = yes }
+}
+
+county_lijiao_huaxia_title = {
+	type = title
+	priority = 500
+	tier = county
+	#flavourization_rules = { only_vassals = yes }
+}
+
+barony_lijiao_huaxia_title = {
+	type = title
+	priority = 500
+	tier = barony
+	#flavourization_rules = { only_vassals = yes }
+}

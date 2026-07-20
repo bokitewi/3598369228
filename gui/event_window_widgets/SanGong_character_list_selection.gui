@@ -1,0 +1,79 @@
+widget = {
+	allow_outside = yes			# 允许部件内容超出父容器边界显示
+	name = "SanGong_character_list_selection"	# GUI 唯一名称（被事件调用）
+	size = { 440 280 }			# 部件整体尺寸：宽440 / 高280
+	# 垂直布局容器（从上到下排列内容）
+	vbox = {
+		allow_outside = yes			# 允许内容超出边界
+		#layoutpolicy_horizontal = expanding	# 水平方向自动拉伸填满空间
+		#layoutpolicy_vertical = expanding	# 垂直方向自动拉伸填满空间
+		position = { -030 4 }			# 整体位置偏移：向下移动4像素
+		# 滚动框（内容超出时自动出现滚动条）
+		scrollbox = {
+			layoutpolicy_horizontal = expanding	# 水平拉伸
+			layoutpolicy_vertical = expanding	# 垂直拉伸
+
+			# 滚动框内容区域重写
+			blockoverride "scrollbox_content"
+			{
+				# 内部垂直布局（用来放角色列表项）
+				vbox = {
+					# 数据绑定：数据源 = 玩家角色的 possible_characters 列表（候选角色列表）
+					datamodel = "[GetPlayer.MakeScope.GetList('SanGong_list_characters')]"
+					layoutpolicy_horizontal = expanding	# 水平拉伸
+					# ==============================================
+					# 列表项模板：每一个角色都会生成这个按钮
+					# ==============================================
+					item = {
+						# 标准按钮（角色选择按钮）
+						button_standard = {
+							name = "background_button"		# 按钮名称
+							size = { 402 68 }			# 按钮大小：宽402 / 高68
+							using = tooltip_ws			# 使用 tooltip_ws 样式
+							layoutpolicy_vertical = expanding	# 垂直拉伸
+							datacontext = "[Scope.GetCharacter]"	# 数据上下文 = 当前遍历到的角色
+							# 点击事件：执行脚本GUI，设置选中角色
+							onclick = "[GetScriptedGui('SanGong_selected_character').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('selected_char', Character.MakeScope).End)]"
+							# 按下状态：判断当前角色是否已被选中
+							down = "[GetScriptedGui('SanGong_selected_character').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('selected_char', Character.MakeScope).End)]"
+							# 鼠标悬浮提示框（角色卡片 tooltip）
+							tooltipwidget = {
+								cooltip_type = {
+									# 覆盖提示框信息区域
+									blockoverride "interaction_info" {
+										text = "CHARACTER_TOOLTIP_INSTRUCTION"	# 显示：角色提示说明
+									}
+								}
+							}
+							tooltip_offset = { 0 0 }				# 提示框偏移量
+							tooltip_verticalbehavior = slide		# 垂直显示方式：滑动
+							tooltip_horizontalbehavior = mirror		# 水平显示方式：镜像
+
+							portrait_head_small = {
+								scale = 0.75			# 头像缩放比例 0.75
+								tooltip_visible = yes	# 头像本身不显示提示
+							}
+							# 角色名称文字
+							text_single = {
+								name = "character_name"		# 文本控件名称
+								text = "[Character.Custom('SanGong_view_name')]，#V  [Character.GetAge]岁#!"	# 显示角色名字
+								fontsize = 20  	# 使用中等字体
+								align = center				# 居中对齐
+								max_width = 320				# 最大宽度：320像素
+								position = { 70 0 }		# 位置：右移70 / 下移20
+							}
+							text_single = {
+								position = { 70 35 }
+								hbox_skills_grid_character_model = { margin_left = 0 }
+							}
+							
+							expand = {}	# 自动扩展填充剩余空间
+							
+						}
+					}
+					expand = {}	# 底部自动扩展占位
+				}
+			}
+		}
+	}
+}

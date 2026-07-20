@@ -1,64 +1,88 @@
-﻿Script values are simple or complex values that can be referenced virtually anywhere in script that takes a number (and in some cases true/false values).
-
+# ===================== 核心概念 =====================
+# 脚本值（Script values）是可在脚本中任意位置引用的「数值型/布尔型」值
+# 适用场景：所有接收数字的脚本位置（部分场景支持 true/false 布尔值）
+# 核心分类：简单静态值、复杂公式
+Script values are simple or complex values that can be referenced virtually anywhere in script that takes a number (and in some cases true/false values).
 They come in two main variants; simple static values, and formulas.
 
-== Static values ==
-#Static values are defined like this:
-name_of_scripted_value = value #(E.G., "minor_stress_gain = 10")
+# ===================== 1. 静态值（Static values） =====================
+# 定义方式：直接赋值，格式为「名称 = 数值」
+# 示例：minor_stress_gain = 10（小幅度压力增加 = 10）
+Static values are defined like this:
+name_of_scripted_value = value (E.G., "minor_stress_gain = 10")
 
-#They're referenced in script by their name:
+# 引用方式：直接写名称即可
+# 示例：add_stress = minor_stress_gain（增加压力 = 10）
+They're referenced in script by their name:
 add_stress = minor_stress_gain
 
-== Formulas ==
-#For more complex values, it is possible to define mathematical formulas. These allow you to use everything available in the scope you're currently in.
-#Be careful with these, as they have to be calculated every single time they're evaluated. Complex formulas can be performance intensive.
-#Formulas do not work for true/false values.
+# ===================== 2. 公式（Formulas） =====================
+# 适用场景：需要动态计算的复杂数值（如根据角色年龄/属性计算奖励）
+# 核心特性：
+# - 可使用当前作用域的所有变量/触发器
+# - 注意性能：每次引用都会重新计算，复杂公式会增加性能消耗
+# - 限制：公式不支持布尔值（true/false），仅支持数值
+For more complex values, it is possible to define mathematical formulas. These allow you to use everything available in the scope you're currently in.
+Be careful with these, as they have to be calculated every single time they're evaluated. Complex formulas can be performance intensive.
+Formulas do not work for true/false values.
 
-#A formula is declared using curly brackets, and follow this format:
+# 公式声明格式：使用大括号包裹，支持以下操作
+A formula is declared using curly brackets, and follow this format:
 
 name_of_scripted_value = {
-	# Mathematical operations
-	add = number/scripted value/scope.something
-	subtract = ...
-	multiply = ...
-	divide = ... # Be careful not to divide by 0
-	modulo = ...
+	# 基础数学运算（支持数字/其他脚本值/作用域变量，如 scope:age、gold）
+	add = number/scripted value/scope.something  # 加法
+	subtract = ...                               # 减法
+	multiply = ...                               # 乘法
+	divide = ... # 除法（⚠️ 注意避免除以 0，会导致脚本报错）
+	modulo = ...                                 # 取模（余数）
 	
-	value = ... # Sets the value to this number
+	value = ... # 直接赋值（覆盖当前值，优先级高于初始值）
 	
-	max = ... # Sets the value to this number if it is currently higher. E.G., "max = 10" would cause the number 15 to become 10
-	min = ... # Sets the value to this number if it is currently lower
+	max = ... # 上限：若当前值高于该数，将值设为该数（示例：max = 10 → 15 会变成 10）
+	min = ... # 下限：若当前值低于该数，将值设为该数
 	
-	round = yes # Rounds to nearest whole number
-	ceiling = yes # Rounds up (towards positive infinity)
-	floor = yes # Rounds down (towards negative infinity)
+	round = yes # 四舍五入到整数（如 1.6 → 2，1.4 → 1）
+	ceiling = yes # 向上取整（向正无穷，如 1.1 → 2，-1.9 → -1）
+	floor = yes # 向下取整（向负无穷，如 1.9 → 1，-1.1 → -2）
 	
-	if = { # These operations are executed if the limit is met. You can also put "if" inside an "if"
-		limit = { some conditions }
-		add = 5
+	# 条件分支：满足 limit 时执行内部操作，支持嵌套 if
+	if = { 
+		limit = { some conditions } # 触发条件（支持所有常规触发器）
+		add = 5                     # 满足条件时执行的运算
 		divide = ...
 		...
 	}
-	else_if = { # If the "if" above is not met, these operations are executed, as long as the limit is met. You can put several "else_if" in a row
+	else_if = { # 若上面的 if 不满足，且当前 limit 满足，则执行（可连续写多个 else_if）
 		limit = { some conditions }
-		operations...
+		operations... # 任意数学运算/分支
 	}
-	else = { # If the "if" or "else_if" above is not met, these operations are executed
+	else = { # 若所有 if/else_if 都不满足，则执行
 		operations...
 	}
 	
-	fixed_range = { # Gives a random fixed-point number in the range (E.G., 1.242)
-		min = ... script value
-		max = ...
+	# 随机浮点数：返回 [min, max] 范围内的随机固定点数（如 1.242）
+	fixed_range = { 
+		min = ... # 最小值（支持脚本值）
+		max = ... # 最大值
 	}
 	
-	integer_range = { # Gives a random fixed-point number in the range (E.G., 1)
+	# 随机整数：返回 [min, max] 范围内的随机整数（如 1、3、5）
+	integer_range = { 
 		min = ...
 		max = ...
 	}
 }
 
-=== Execution order ===
+# ===================== 执行顺序（Execution order） =====================
+# 核心规则：所有操作按「定义顺序」执行（⚠️ 易错点：max/min 会影响后续运算）
+# 示例解析：
+# 1. value = 初始值（假设为 0）
+# 2. add = 5 → 0+5=5
+# 3. multiply = 4 → 5×4=20
+# 4. max = 10 → 20 超过上限，设为 10
+# 5. add = 5 → 10+5=15
+# 最终结果：15
 Operations are executed in the order defined.
 Example:
 	value = {
@@ -69,54 +93,78 @@ Example:
 	}
 Would result in "15", since "max = 10" would be applied before the last "add = 5"
 
-=== Inlining ===
+# ===================== 内联（Inlining） =====================
+# 核心规则：公式可直接写在需要脚本值的位置（无需提前命名/放在 scriptvalues 文件夹）
+# 适用场景：公式仅使用一次时
+# 进阶：数学运算中也可嵌套内联公式
+Inlining:
 Formulas can be written inline wherever scripted values work. So if a formula is only to be used once, there's no need to name it and have it in the scriptvalues folder.
 
 Example:
-	add_gold = {
-		value = gold
-		multiply = { # Yes, you can even inline them in the mathematical operators
+	add_gold = { # 内联公式：增加的金币 = 当前金币 × 0.5
+		value = gold # 初始值为当前金币数
+		multiply = { # 乘法中嵌套内联公式
 			value = 1
 			multiply = 0.5
 		}
 	}
-	
-=== Chaining ===
+
+# ===================== 链式调用（Chaining） =====================
+# 核心规则：可通过「作用域.脚本值名称」引用已命名的公式（支持跨作用域）
+# 示例解析：
+# 1. 定义 example_age = { value = age }（返回角色年龄）
+# 2. 引用 mother.example_age → 返回母亲的年龄
+Chaining:
 You can reference named script formulas using scope chaining. For example, if you were to define this formula:
 	example_age = {
 		value = age
 	}
 Then the following would work:
 	add_gold = {
-		value = mother.example_age
+		value = mother.example_age # 增加的金币数 = 母亲的年龄
 	}
 
-== Ranges ==
+# ===================== 范围（Ranges） =====================
+# 核心规则：脚本值支持「数值范围」，返回范围内的随机数
+# 格式：{ 最小值 最大值 }（支持数字/已命名的脚本值，不支持内联公式）
+# 示例1：add_gold = { 1 5 } → 随机增加 1-5 金币
+# 示例2：add_gold = { min_gold max_gold } → 先解析 min/max_gold，再取随机数
+# ⚠️ 禁止：add_gold = { { value = 1 add = 2 } some_named_value }（范围中不能内嵌公式）
+# 替代方案：使用 fixed_range/integer_range 实现
+Ranges:
 Script values can also define ranges.
 E.G., add_gold = { 1 5 } will add 1 to 5 gold.
 add_gold = { named_value another_named_value } will resolve the named values (including formulas).
 Note that you can't inline formulas within a range. E.G., you cannot do add_gold = { { value = 1 add = 2 } some_named_value }. If you need that, use integer_range or fixed_range from the script math system.
 
-== Lists ==
+# ===================== 列表（Lists） =====================
+# 核心规则：脚本值支持「列表遍历」，遍历指定列表并执行运算
+# 基础示例：add_gold = { every_child = { add = 1 } } → 增加的金币数 = 子女数量
+# 有序列表示例：按年龄排序，取前3个子女，累加他们的年龄作为增加的金币数
+Lists:
 Script values support lists.
 E.G., add_gold = { every_child = { add = 1 } } will add as much gold as you have children.
 All lists should work, including those defined in script.
 
 Ordered lists also work. E.G.,
 add_gold = {
-	ordered_child = {
-		order_by = age
-		max = 3
-		add = age
+	ordered_child = { # 有序遍历子女列表
+		order_by = age # 按年龄排序
+		max = 3        # 仅取前3个
+		add = age      # 累加每个子女的年龄
 	}
 }
 
-== Scoping ==
+# ===================== 作用域切换（Scoping） =====================
+# 核心规则：脚本值中可像常规脚本一样切换作用域
+# 示例解析：
+# 1. 切换到父亲作用域 → 遍历父亲的所有子女 → 每个子女加 1 → 最终金币数 = 父亲的子女数量
+Scoping:
 You can change scope within script values just as you can in regular script.
 Example:
 	add_gold = {
-		father = {
-			any_child = { add = 1 }
+		father = { # 切换到父亲作用域
+			any_child = { add = 1 } # 遍历父亲的每个子女，加 1
 		}
 	}
-This would add as much gold as your father has children.	
+This would add as much gold as your father has children.

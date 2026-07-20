@@ -1,0 +1,26 @@
+﻿
+DM_lijiao_Tianzi_male = { #天子（信仰领袖）
+	type = character
+	gender = male
+	special = holder
+	priority = 9999
+	titles = { e_zhoutianzi e_zhoutianzi1 }
+	religions = { lijiao_religion }
+	flavourization_rules = {
+		spouse_takes_title = no
+	}
+}
+
+
+DM_lijiao_Tianzi_female = { #天子（信仰领袖）
+	type = character
+	gender = female
+	special = holder
+	priority = 9999
+	titles = { e_zhoutianzi e_zhoutianzi1 }
+	religions = { lijiao_religion }
+	flavourization_rules = {
+		spouse_takes_title = no
+	}
+}
+

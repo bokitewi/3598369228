@@ -1,0 +1,48 @@
+﻿on_game_start_after_lobby = {#游戏开始时触发
+	on_actions = {
+		DM_to_SG_story_on
+        Chixu_set_action
+	}
+}
+
+
+DM_to_SG_story_on = {
+    effect = {
+        every_ruler = {
+            if = {
+                limit = {
+                    highest_held_title_tier > tier_kingdom
+                    is_independent_ruler = yes
+                    NOT = { exists = story_Zhou_BenJi }
+                }
+                save_scope_as = TianZi
+                create_story = story_Zhou_BenJi
+                random_owned_story = {
+                    type = story_Zhou_BenJi
+			        set_variable = { name = TianZi value = scope:TianZi }
+                }
+            }
+        }
+    }
+}
+
+
+Chixu_set_action = {#所有活着的添加齿序
+    effect = {
+        every_living_character = {
+            limit = {
+                faith.religion = religion:lijiao_religion
+            }
+            save_scope_as = child
+            if = {
+                limit = {
+                    is_female = yes 
+                }
+                set_variable = {  name = child_rank value = father.DM_child_female_chixu }
+            }
+            else = {
+                set_variable = {  name = child_rank value = father.DM_child_male_chixu }
+            }  
+        }
+    }
+}

@@ -1,0 +1,118 @@
+﻿
+
+SanGong_WangZi_var = {# 皇子
+	value = 0
+	every_child = {
+		limit = {
+			is_male = yes
+		}
+		add = 1
+	}	
+}
+
+SanGong_Wangji_var = {
+	value = 0
+	every_child = {
+		even_if_dead = yes
+		limit = {
+			is_female = yes
+		}
+		add = 1
+	}	
+}
+
+
+DM_child_male_chixu = {# 儿子齿序
+	value = 1
+	every_child = {
+		limit = {
+			is_male = yes
+			year_of_birth < scope:child.year_of_birth
+		}
+		add = 1
+	}	
+}
+
+DM_child_female_chixu = {#女儿齿序
+	value = 1
+	every_child = {
+		even_if_dead = yes
+		limit = {
+			is_female = yes
+			year_of_birth < scope:child.year_of_birth
+		}
+		add = 1
+	}	
+}
+
+
+SanGong_yaozhe_var = {# 夭折
+	value = 0
+	every_child = {
+		even_if_dead = yes
+		limit = {
+			is_alive = no
+			is_adult = no
+		}
+		add = 1
+	}	
+}
+
+GuoJun_var = {# 国君数量
+	value = 0
+	primary_title = {
+		every_past_holder = {
+			even_if_dead = yes
+			limit = {
+				is_alive = no
+				dynasty ?= root.dynasty
+			}
+			add = 1
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+SanGong_XiongZhu_value = {#雄主标准
+	value = sub_realm_size
+	add = {
+		value = sub_realm_size
+		if = {
+			limit = {
+				is_ai = no
+			}
+			multiply = 0.5
+		}
+		else_if = {
+			limit = {
+				is_ai = yes
+			}
+			multiply = 0.2
+		}
+		min = 10
+		floor = yes
+	}
+}
+
+
+SanGong_HunJun_value = {#昏君标准
+	value = sub_realm_size
+	multiply = 0.7
+	min = 10
+	floor = yes
+}
+
+
+
+sub_realm_value = {#领土规模
+	value = sub_realm_size
+}
+
+
+

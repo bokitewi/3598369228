@@ -1,0 +1,81 @@
+﻿texticon = {
+	icon = government_type_zongfan
+	iconsize = {
+		texture = "gfx/interface/icons/government_types/zongfan_government.dds"
+		size = { 28 28 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = Yinxi_icon
+	iconsize = {
+		texture = "gfx/interface/icons/court_position_types/HuangDiZhiBao.dds"
+		size = { 30 30 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = loyal_icon
+	iconsize = {
+		texture = "gfx/interface/icons/traits/loyal.dds"
+		size = { 30 30 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = campeador_icon
+	iconsize = {
+		texture = "gfx/interface/icons/traits/campeador.dds"
+		size = { 30 30 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = august_icon
+	iconsize = {
+		texture = "gfx/interface/icons/traits/august.dds"
+		size = { 30 30 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = laureate_camp_officer_icon
+	iconsize = {
+		texture = "gfx/interface/icons/court_position_types/laureate_camp_officer.dds"
+		size = { 30 30 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = court_gardener_court_position_icon
+	iconsize = {
+		texture = "gfx/interface/icons/court_position_types/court_gardener_court_position.dds"
+		size = { 30 30 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = pregnant_icon
+	iconsize = {
+		texture = "gfx/interface/icons/traits/pregnant.dds"
+		size = { 33 33 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+

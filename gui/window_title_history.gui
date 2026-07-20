@@ -1,0 +1,176 @@
+﻿######################################################
+################## HISTORY WINDOW ####################
+######################################################
+
+window = {
+    name = "title_history_window"          #窗口唯一标识：头衔历史窗口
+    position = { 0 80 }                    #窗口初始位置：X轴0像素，Y轴80像素（备注：X轴实际继承自title_view_window_side_pop_out模板）
+    widgetanchor = top                     #窗口锚点：顶部对齐（窗口的定位参考点为顶部）
+    size = { 700 90% }                     #窗口尺寸：宽度固定580像素，高度为屏幕高度的90%
+    layer = middle                         #窗口渲染层级：middle（中层，确保在背景之上、弹窗之下）
+
+    using = Window_Movable                 #复用内置模板：可移动窗口（支持鼠标拖拽）
+    using = title_view_window_side_pop_out #复用内置模板：头衔视图侧边弹出窗口样式
+    using = Window_Decoration              #复用内置模板：窗口装饰（边框、阴影等）
+    using = Window_Background              #复用内置模板：窗口背景样式
+
+    #垂直布局容器（vbox）：窗口内所有内容的根容器，元素从上到下排列
+    vbox = {
+        using = Window_Margins             #复用内置模板：窗口内边距（统一控制窗口内容与边框的间距）
+
+        #头衔历史窗口的标题栏（自定义类型：hbox_title_history_heading）
+        hbox_title_history_heading = {}
+
+        #垂直布局容器：承载历史条目列表的核心容器
+        vbox = {
+            layoutpolicy_horizontal = expanding  #水平布局策略：自动填充父容器宽度
+            layoutpolicy_vertical = expanding    #垂直布局策略：自动填充父容器高度
+
+            #角色列表容器（核心：存放所有头衔历史条目）
+            vbox_character_list = {
+                layoutpolicy_horizontal = expanding
+                layoutpolicy_vertical = expanding
+
+                #覆盖默认模板的“排序按钮”区块：置空表示隐藏排序按钮
+                blockoverride "sort_buttons" {}
+                #覆盖默认模板的“空列表可见性”区块：置空表示自定义空列表逻辑
+                blockoverride "scrollbox_empty_visibility" {}
+
+                #覆盖默认模板的“容器实现”区块：自定义列表的渲染方式为固定网格布局
+                blockoverride "container_implementation" {
+                    #固定网格布局容器（fixedgridbox）：按行列固定尺寸排列子元素
+                    fixedgridbox = {
+                        addcolumn = 600    #网格列宽：470像素（每个条目宽度）
+                        addrow = 160       #网格行高：160像素（每个条目高度）
+                        name = "characters_grid"  #网格容器唯一标识
+
+                        #数据模型绑定：获取头衔历史窗口的所有历史记录列表
+                        datamodel = "[TitleHistoryWindow.GetHistory]"
+
+                        #网格中单个条目配置：使用自定义的widget_title_history_item控件
+                        item = {
+                            widget_title_history_item = {}
+                        }
+                    }
+                }
+
+                #覆盖默认模板的“角色数量”区块：置空表示隐藏角色数量显示
+                blockoverride "character_count" {}
+            }
+        }
+    }
+}
+
+#定义头衔历史窗口的自定义控件类型集合
+types TitleHistory
+{
+    #定义标题栏控件类型（水平布局：hbox）
+    type hbox_title_history_heading = hbox {
+        layoutpolicy_horizontal = expanding  #水平填充父容器宽度
+
+        #标题栏样式模板（header_pattern）：包含头衔纹章、标题文本、关闭按钮
+        header_pattern = {
+            layoutpolicy_horizontal = expanding
+            allow_outside = yes              #允许控件超出父容器边界（避免纹章/按钮被截断）
+
+            #头衔纹章+皇冠控件容器
+            widget = {
+                size = { 36 44 }             #控件尺寸：36x44像素
+                allow_outside = yes
+
+                #小型头衔纹章+皇冠控件：显示当前头衔的纹章和皇冠
+                coa_title_tiny_crown = {
+                    allow_outside = yes
+                    datacontext = "[TitleHistoryWindow.GetTitle]"  #绑定当前窗口对应的头衔数据
+                }
+            }
+
+            #覆盖默认模板的“标题文本”区块：自定义标题显示
+            blockoverride "header_text"
+            {
+                datacontext = "[TitleHistoryWindow.GetTitle]"      #绑定当前头衔数据
+                text = "TITLE_VIEW_TITLE_HISTORY_LABEL"            #显示本地化文本：“头衔历史”（对应游戏内置本地化键）
+            }
+
+            #覆盖默认模板的“关闭按钮”区块：自定义关闭逻辑
+            blockoverride "button_close"
+            {
+                onclick = "[TitleHistoryWindow.Close]"              #点击事件：调用窗口关闭方法
+            }
+        }
+    }
+
+    #定义单个头衔历史条目控件类型（核心：显示单条历史记录的内容）
+	type widget_title_history_item = widget {
+		size = { 600 160 }
+
+		vbox = {
+            datacontext = "[TitleHistory.GetCharacter]"  #绑定当前历史记录对应的角色数据
+
+            #条目背景样式：复用内置的“带头部的区域背景”
+            background = {
+                using = Background_Area_With_Header
+            }
+            text_single = {
+				name = "date"                          #控件唯一标识：date
+				layoutpolicy_horizontal = expanding
+				margin_left = 15                       #左内边距15像素
+				margin_top = 3                         #上内边距3像素
+				text = "[TitleHistory.GetDate.GetString]"  #文本内容：获取历史记录日期并转为字符串
+			}
+
+            hbox = {
+                layoutpolicy_horizontal = expanding
+                #角色头部肖像控件（内置控件：仅显示头像头部）
+                portrait_head = {
+                }
+                vbox = {
+                    layoutpolicy_horizontal = expanding
+                    layoutpolicy_vertical = expanding
+                    margin = { 10 10 }                 #上下左右内边距10像素
+					text_multi = {
+						name = "holder_name"           #控件唯一标识：holder_name
+						layoutpolicy_horizontal = expanding
+						visible = "[Character.IsValid]" #可见性：仅当角色数据有效时显示
+						text = "CHARACTER_VIEW_NAME_HISTORY" #显示本地化文本：角色名称（你标注的标记位置）
+					}
+                    text_single = {
+                        name = "title_state"           #控件唯一标识：title_state
+                        layoutpolicy_horizontal = expanding
+                        text = "[TitleHistory.GetTitleTransferName]" #文本内容：获取头衔转移类型的本地化名称
+                    }
+                    text_single = {
+						layoutpolicy_horizontal = expanding
+						visible = "[And(Character.IsValid, Not(Character.IsAlive))]"
+                        margin_top = -20
+						text = "CHARACTER_VIEW_NAME_AGE_tt" #显示本地化文本：角色名称（你标注的标记位置）
+					}
+                    expand = {}
+                }
+
+                #垂直布局容器：承载家族纹章和家族名称
+                vbox = {
+                    layoutpolicy_horizontal = expanding
+                    maximumsize = { 0 -1 }             #最大尺寸：宽度无限制，高度自适应
+                    margin_right = 10                  #右内边距10像素
+
+                    visible = "[Character.HasDynasty]" #可见性：仅当角色有家族时显示
+
+                    #小型家族纹章控件
+                    coa_house_small = {
+                        datacontext = "[Character.GetHouse]" #绑定角色的家族数据
+                    }
+
+                    #多行文本控件：显示家族名称
+                    text_multi = {
+                        name = "type"                  #控件唯一标识：type
+                        text = "[Character.GetHouse.GetName]" #文本内容：获取家族名称
+                        layoutpolicy_horizontal = expanding
+                        align = top|hcenter            #对齐方式：顶部+水平居中
+                        minimumsize = { 100 0 }        #最小宽度100像素，高度自适应
+                    }
+                }
+            }
+        }
+	}
+}

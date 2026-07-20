@@ -1,0 +1,162 @@
+﻿##华夏风味化
+DM_lijiao_hegemon_mother = {#霸权母
+	type = character
+	gender = male
+	special = queen_mother
+	tier = hegemony
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_hegemon_male_prince = {#霸权子
+	type = character
+	gender = male
+	special = ruler_child
+	tier = hegemony
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_hegemon_female_prince = {#霸权女
+	type = character
+	gender = female
+	special = ruler_child
+	tier = hegemony
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_empire_mother = {#帝国母
+	type = character
+	gender = male
+	special = queen_mother
+	tier = empire
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_empire_male_prince = {#帝国子
+	type = character
+	gender = male
+	special = ruler_child
+	tier = empire
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_empire_female_prince = {#帝国女
+	type = character
+	gender = female
+	special = ruler_child
+	tier = empire
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_kingdom_mother = {#王国母
+	type = character
+	gender = male
+	special = queen_mother
+	tier = kingdom
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_kingdom_male_prince = {#王国子
+	type = character
+	gender = male
+	special = ruler_child
+	tier = kingdom
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_kingdom_female_prince = {#王国女
+	type = character
+	gender = female
+	special = ruler_child
+	tier = kingdom
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_duchy_mother = {#公国母
+	type = character
+	gender = male
+	special = queen_mother
+	tier = duchy
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_duchy_male_prince = {#公国子
+	type = character
+	gender = male
+	special = ruler_child
+	tier = duchy
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_duchy_female_prince = {#公国女
+	type = character
+	gender = female
+	special = ruler_child
+	tier = duchy
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_county_mother = {#伯爵领母
+	type = character
+	gender = male
+	special = queen_mother
+	tier = county
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_county_male_prince = {#伯爵领子
+	type = character
+	gender = male
+	special = ruler_child
+	tier = county
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_county_female_prince = {#伯爵领女
+	type = character
+	gender = female
+	special = ruler_child
+	tier = county
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_barony_mother = {#男爵领母
+	type = character
+	gender = male
+	special = queen_mother
+	tier = barony
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_barony_male_prince = {#男爵领子
+	type = character
+	gender = male
+	special = ruler_child
+	tier = barony
+	priority = 2000
+	#religions = { lijiao_religion }
+}
+
+DM_lijiao_barony_female_prince = {#男爵领女
+	type = character
+	gender = female
+	special = ruler_child
+	tier = barony
+	priority = 2000
+	#religions = { lijiao_religion }
+}

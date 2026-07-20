@@ -1,0 +1,53 @@
+﻿# Positive modifiers for maintaining brotherhood
+brotherhood_loyalty_modifier = {
+    icon = prestige_positive
+    diplomacy = 1
+    martial = 1
+    monthly_prestige = 0.3
+    friend_opinion = 10
+    diplomacy_per_opinion_factor = 0.1
+}
+
+brotherhood_ferocity_modifier = {
+    icon = martial_positive
+    martial = 2
+    prowess = 2
+    monthly_prestige = 0.2
+    damage = 0.08
+    knight_effectiveness = 0.1
+    advantage = 2
+}
+
+tested_brotherhood_modifier = {
+    icon = love_positive
+    diplomacy = 1
+    martial = 1
+    monthly_prestige = 0.2
+}
+
+# Oath-breaking penalties
+oath_breaker_modifier = {
+    icon = prestige_negative
+    monthly_prestige = -1.0
+    diplomacy = -2
+    intrigue = -1
+    general_opinion = -15
+    vassal_opinion = -10
+    same_faith_opinion = -10
+}
+
+dishonorable_modifier = {
+    icon = county_modifier_corruption_negative
+    monthly_prestige = -2.0
+    diplomacy = -3
+    knight_effectiveness = -0.1
+    levy_size = -0.1
+    hostile_scheme_resistance = -0.2
+}
+
+# # Newly befriended obstacle
+# recently_became_friends = {
+#     icon = prestige_positive
+#     duration = 183 # 6 months
+# }
+

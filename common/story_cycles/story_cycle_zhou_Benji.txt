@@ -1,0 +1,61 @@
+
+story_Zhou_BenJi = {#本纪
+	visible = yes # 显示设置：该故事周期在游戏中可见
+	# 图标配置
+	icon = {
+		trigger = {
+			always = yes # 触发条件：始终显示图标
+		}
+		reference = "gfx/interface/icons/story_cycles/WaDang.dds" # 图标文件路径
+	}
+	# 背景图片配置
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/armory.dds" # 背景图片路径（军械库）
+	}
+	# 可视化信息配置（显示文本）
+	visualization = {
+		character = { variable_name = "TianZi" label = "TianZi" }
+		custom_string_key = "TianZi_STORY_PRACTICAL_INFORMATION_STRING" # 调用的信息文本键
+		decisions = { SanGong_ZunFengTaiHou_decisions SanGong_ZhuiFeng_XianFu_decision SanGong_ZhuiFeng_WangGuoJunZhu_decision SanGong_ShouYang_decision SanGong_TuiWei_decision ShiFeiGongGuo_decision }
+	}
+	# 故事启动时执行的效果
+	on_setup = {
+		story_owner = {
+			
+			set_variable = { name = Dengji_sub_realm value = sub_realm_size }
+            set_variable = { name = data_nianhao_to_SG value = yes }
+            set_variable = { name = SG_NianHao_data value = 1 }#年号时间
+            set_variable = { name = ZaiWei_years value = 0 }#登基年份
+		}
+	}
+	
+	# 故事结束时执行的效果
+	on_end = {
+
+	}
+	
+	# 持有者死亡时执行（继承逻辑）
+	on_owner_death = {
+		end_story = yes # 结束故事
+	}
+	
+	effect_group = {
+		days = 1 # 每天检查一次
+		trigger = { 
+			story_owner = { 
+				OR = {
+					#has_government = landless_adventurer_government
+					highest_held_title_tier <= tier_kingdom
+				}
+				} 
+		}
+		triggered_effect = {
+			trigger = { always = yes }
+			effect = {
+				story_owner = { save_scope_as = story_owner }
+				end_story = yes # 结束故事
+			}
+		}
+	}
+}
+

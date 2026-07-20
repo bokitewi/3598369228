@@ -1,0 +1,33 @@
+window = {#年号按钮
+	visible = "[And( Not( IsGameViewOpen('barbershop') ), And( Not( IsPauseMenuShown ), And(Not(IsRightWindowOpen), IsDefaultGUIMode)))]"
+	name = SanGong_NianHao_button
+	size = { 100% 90% }
+	using = Animation_ShowHide_Quick
+    filter_mouse = all								# 拦截所有鼠标事件
+	alwaystransparent = yes							# 控件本身永久透明
+    parentanchor = bottom|right
+	layer = top										# 渲染层级：顶层（不被其他界面遮挡）
+	allow_outside = yes								# 允许控件部分超出父容器边界
+    widget = {
+        size = { 260 70 }
+		parentanchor = bottom|right
+        icon = {
+            visible = "[GetScriptedGui('SG_NianHao_GuiS').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            position = { 0 -15 }					
+            size = { 220 40 }
+            text_single = {
+                layoutpolicy_horizontal = expanding
+                margin_left = 30
+                margin_top = 15
+                fontsize_min = 16
+                fontsize = 20
+                text = "SG_NIANHAO_GUI"
+                tooltip = "SG_NIANHAO_GUI_Tootip"
+                texture = "gfx/interface/skinned/hud_bg_gamespeed.dds"	
+                default_format = "#date"				
+                align = right|nobaseline
+                using = Font_Size_Medium
+            }						
+        }
+    }
+}

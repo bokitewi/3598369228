@@ -1,0 +1,28 @@
+
+
+
+window = {#朝堂按钮
+    visible = "[And( And( Not( IsGameViewOpen('barbershop') ), IsDefaultGUIMode ), GetScriptedGui('Topliege_is_TianZi').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End) )]"
+	layer = hud_layer
+	name = SanGong_ZongShi_button
+	size = { 100% 90% }
+	using = Animation_ShowHide_Quick
+    alwaystransparent = yes
+    button_hud_character_bar = {
+        size = { 55 55 }
+		position = { 0 -150 }
+		parentanchor = bottom|left
+        widget_hud_main_tab = {
+            name = "tab_position_open"
+            tooltip = "SanGong_Chaotang_button_tt"
+            blockoverride "maintab_button"
+            {
+                texture = "gfx/interface/icons/court_position_types/favored_minister_court_position.dds"
+                onclick = "[GetVariableSystem.Set( 'SanGong_HouGong_open', 'true' )]"
+                onclick = "[GetScriptedGui('DM_Zongshi_list').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                datacontext = "[GetVariableSystem]"
+            }      
+        }
+    }
+}
+

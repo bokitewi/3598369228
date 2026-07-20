@@ -1,0 +1,3 @@
+﻿gui/DM_NianHao_button.gui = SanGong_NianHao_button
+gui/DM_to_SG_button.gui = SanGong_ZongShi_button
+gui/DM_Zongshi.gui = DM_Zongshi_Main

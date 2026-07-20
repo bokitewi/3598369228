@@ -1,0 +1,619 @@
+﻿SanGong_NianHao_LEVEL = {#年号等级
+    text = { 
+        trigger = {
+            is_independent_ruler = yes
+            highest_held_title_tier > tier_duchy 
+        }
+        localization_key = SanGong_NianHao_LV_1
+    }
+    text = {
+        fallback = yes
+        localization_key = SanGong_NianHao_LV_fallback
+    } 
+}
+
+
+SanGong_NianHao_data = {#年号时间
+    type = character  
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 1 } } 
+        localization_key = SanGong_NianHao_data_1
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 2 } } 
+        localization_key = SanGong_NianHao_data_2
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 3 } } 
+        localization_key = SanGong_NianHao_data_3
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 4 } } 
+        localization_key = SanGong_NianHao_data_4
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 5 } } 
+        localization_key = SanGong_NianHao_data_5
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 6 } } 
+        localization_key = SanGong_NianHao_data_6
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 7 } } 
+        localization_key = SanGong_NianHao_data_7
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 8 } } 
+        localization_key = SanGong_NianHao_data_8
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 9 } } 
+        localization_key = SanGong_NianHao_data_9
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 10 } } 
+        localization_key = SanGong_NianHao_data_10
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 11 } } 
+        localization_key = SanGong_NianHao_data_11
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 12 } } 
+        localization_key = SanGong_NianHao_data_12
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 13 } } 
+        localization_key = SanGong_NianHao_data_13
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 14 } } 
+        localization_key = SanGong_NianHao_data_14
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 15 } } 
+        localization_key = SanGong_NianHao_data_15
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 16 } } 
+        localization_key = SanGong_NianHao_data_16
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 17 } } 
+        localization_key = SanGong_NianHao_data_17
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 18 } } 
+        localization_key = SanGong_NianHao_data_18
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 19 } } 
+        localization_key = SanGong_NianHao_data_19
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 20 } } 
+        localization_key = SanGong_NianHao_data_20
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 21 } } 
+        localization_key = SanGong_NianHao_data_21
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 22 } } 
+        localization_key = SanGong_NianHao_data_22
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 23 } } 
+        localization_key = SanGong_NianHao_data_23
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 24 } } 
+        localization_key = SanGong_NianHao_data_24
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 25 } } 
+        localization_key = SanGong_NianHao_data_25
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 26 } } 
+        localization_key = SanGong_NianHao_data_26
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 27 } } 
+        localization_key = SanGong_NianHao_data_27
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 28 } } 
+        localization_key = SanGong_NianHao_data_28
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 29 } } 
+        localization_key = SanGong_NianHao_data_29
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 30 } } 
+        localization_key = SanGong_NianHao_data_30
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 31 } } 
+        localization_key = SanGong_NianHao_data_31
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 32 } } 
+        localization_key = SanGong_NianHao_data_32
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 33 } } 
+        localization_key = SanGong_NianHao_data_33
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 34 } } 
+        localization_key = SanGong_NianHao_data_34
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 35 } } 
+        localization_key = SanGong_NianHao_data_35
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 36 } } 
+        localization_key = SanGong_NianHao_data_36
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 37 } } 
+        localization_key = SanGong_NianHao_data_37
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 38 } } 
+        localization_key = SanGong_NianHao_data_38
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 39 } } 
+        localization_key = SanGong_NianHao_data_39
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 40 } } 
+        localization_key = SanGong_NianHao_data_40
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 41 } } 
+        localization_key = SanGong_NianHao_data_41
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 42 } } 
+        localization_key = SanGong_NianHao_data_42
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 43 } } 
+        localization_key = SanGong_NianHao_data_43
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 44 } } 
+        localization_key = SanGong_NianHao_data_44
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 45 } } 
+        localization_key = SanGong_NianHao_data_45
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 46 } } 
+        localization_key = SanGong_NianHao_data_46
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 47 } } 
+        localization_key = SanGong_NianHao_data_47
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 48 } } 
+        localization_key = SanGong_NianHao_data_48
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 49 } } 
+        localization_key = SanGong_NianHao_data_49
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 50 } } 
+        localization_key = SanGong_NianHao_data_50
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 51 } } 
+        localization_key = SanGong_NianHao_data_51
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 52 } } 
+        localization_key = SanGong_NianHao_data_52
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 53 } } 
+        localization_key = SanGong_NianHao_data_53
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 54 } } 
+        localization_key = SanGong_NianHao_data_54
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 55 } } 
+        localization_key = SanGong_NianHao_data_55
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 56 } } 
+        localization_key = SanGong_NianHao_data_56
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 57 } } 
+        localization_key = SanGong_NianHao_data_57
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 58 } } 
+        localization_key = SanGong_NianHao_data_58
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 59 } } 
+        localization_key = SanGong_NianHao_data_59
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 60 } } 
+        localization_key = SanGong_NianHao_data_60
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 61 } } 
+        localization_key = SanGong_NianHao_data_61
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 62 } } 
+        localization_key = SanGong_NianHao_data_62
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 63 } } 
+        localization_key = SanGong_NianHao_data_63
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 64 } } 
+        localization_key = SanGong_NianHao_data_64
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 65 } } 
+        localization_key = SanGong_NianHao_data_65
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 66 } } 
+        localization_key = SanGong_NianHao_data_66
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 67 } } 
+        localization_key = SanGong_NianHao_data_67
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 68 } } 
+        localization_key = SanGong_NianHao_data_68
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 69 } } 
+        localization_key = SanGong_NianHao_data_69
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 70 } } 
+        localization_key = SanGong_NianHao_data_70
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 71 } } 
+        localization_key = SanGong_NianHao_data_71
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 72 } } 
+        localization_key = SanGong_NianHao_data_72
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 73 } } 
+        localization_key = SanGong_NianHao_data_73
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 74 } } 
+        localization_key = SanGong_NianHao_data_74
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 75 } } 
+        localization_key = SanGong_NianHao_data_75
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 76 } } 
+        localization_key = SanGong_NianHao_data_76
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 77 } } 
+        localization_key = SanGong_NianHao_data_77
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 78 } } 
+        localization_key = SanGong_NianHao_data_78
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 79 } } 
+        localization_key = SanGong_NianHao_data_79
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 80 } } 
+        localization_key = SanGong_NianHao_data_80
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 81 } } 
+        localization_key = SanGong_NianHao_data_81
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 82 } } 
+        localization_key = SanGong_NianHao_data_82
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 83 } } 
+        localization_key = SanGong_NianHao_data_83
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 84 } } 
+        localization_key = SanGong_NianHao_data_84
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 85 } } 
+        localization_key = SanGong_NianHao_data_85
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 86 } } 
+        localization_key = SanGong_NianHao_data_86
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 87 } } 
+        localization_key = SanGong_NianHao_data_87
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 88 } } 
+        localization_key = SanGong_NianHao_data_88
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 89 } } 
+        localization_key = SanGong_NianHao_data_89
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 90 } } 
+        localization_key = SanGong_NianHao_data_90
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 91 } } 
+        localization_key = SanGong_NianHao_data_91
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 92 } } 
+        localization_key = SanGong_NianHao_data_92
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 93 } } 
+        localization_key = SanGong_NianHao_data_93
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 94 } } 
+        localization_key = SanGong_NianHao_data_94
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 95 } } 
+        localization_key = SanGong_NianHao_data_95
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 96 } } 
+        localization_key = SanGong_NianHao_data_96
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 97 } } 
+        localization_key = SanGong_NianHao_data_97
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 98 } } 
+        localization_key = SanGong_NianHao_data_98
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 99 } } 
+        localization_key = SanGong_NianHao_data_99
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data = 100 } } 
+        localization_key = SanGong_NianHao_data_100
+    }
+    text = { 
+        trigger = { top_liege = { var:SG_NianHao_data > 100 } } 
+        localization_key = SanGong_NianHao_data_other
+    }
+}
+
+SanGong_JiJie_data = {#季节
+    type = character   
+    text = { 
+        trigger = {  
+            NOT = { has_global_variable = SanGong_months_biecheng }
+            current_month >= 1
+            current_month <= 3
+        } 
+        localization_key = SanGong_JiJie_chun
+    }
+
+    text = {
+        trigger = { 
+            NOT = { has_global_variable = SanGong_months_biecheng }
+            current_month >= 4
+            current_month <= 6
+        } 
+        localization_key = SanGong_JiJie_xia
+    } 
+    text = {
+        trigger = { 
+            NOT = { has_global_variable = SanGong_months_biecheng }
+            current_month >= 7
+            current_month <= 9
+        } 
+        localization_key = SanGong_JiJie_qiu
+    } 
+    text = {
+        trigger = { 
+            NOT = { has_global_variable = SanGong_months_biecheng }
+            current_month >= 10
+            current_month <= 12
+        } 
+        localization_key = SanGong_JiJie_dong
+    } 
+}
+
+SanGong_months_data = {#月份
+    type = character   
+        text = { 
+        trigger = {  
+            has_global_variable = SanGong_months_biecheng
+            current_month = 1
+        } 
+        localization_key = SanGong_months_data_1_1
+    }
+    text = { 
+        trigger = {  
+            has_global_variable = SanGong_months_biecheng
+            current_month = 2
+        } 
+        localization_key = SanGong_months_data_2_1
+    }
+    text = { 
+        trigger = {  
+            has_global_variable = SanGong_months_biecheng
+            current_month = 3
+        } 
+        localization_key = SanGong_months_data_3_1
+    }
+    text = { 
+        trigger = {  
+            has_global_variable = SanGong_months_biecheng
+            current_month = 4
+        } 
+        localization_key = SanGong_months_data_4_1
+    }
+    text = { 
+        trigger = {  
+            has_global_variable = SanGong_months_biecheng
+            current_month = 5
+        } 
+        localization_key = SanGong_months_data_5_1
+    }
+    text = { 
+        trigger = {  
+            has_global_variable = SanGong_months_biecheng
+            current_month = 6
+        } 
+        localization_key = SanGong_months_data_6_1
+    }
+    text = { 
+        trigger = {  
+            has_global_variable = SanGong_months_biecheng
+            current_month = 7
+        } 
+        localization_key = SanGong_months_data_7_1
+    }
+    text = { 
+        trigger = {  
+            has_global_variable = SanGong_months_biecheng
+            current_month = 8
+        } 
+        localization_key = SanGong_months_data_8_1
+    }
+    text = { 
+        trigger = {  
+            has_global_variable = SanGong_months_biecheng
+            current_month = 9
+        } 
+        localization_key = SanGong_months_data_9_1
+    }
+    text = { 
+        trigger = {  
+            has_global_variable = SanGong_months_biecheng
+            current_month = 10
+        } 
+        localization_key = SanGong_months_data_10_1
+    }
+    text = { 
+        trigger = {  
+            has_global_variable = SanGong_months_biecheng
+            current_month = 11
+        } 
+        localization_key = SanGong_months_data_11_1
+    }
+    text = { 
+        trigger = {  
+            has_global_variable = SanGong_months_biecheng
+            current_month = 12
+        } 
+        localization_key = SanGong_months_data_12_1
+    }
+    text = { 
+        trigger = {  
+            current_month = 1
+        } 
+        localization_key = SanGong_months_data_1
+    }
+    text = { 
+        trigger = {  
+            current_month = 2
+        } 
+        localization_key = SanGong_months_data_2
+    }
+    text = { 
+        trigger = {  
+            current_month = 3
+        } 
+        localization_key = SanGong_months_data_3
+    }
+    text = { 
+        trigger = {  
+            current_month = 4
+        } 
+        localization_key = SanGong_months_data_4
+    }
+    text = { 
+        trigger = {  
+            current_month = 5
+        } 
+        localization_key = SanGong_months_data_5
+    }
+    text = { 
+        trigger = {  
+            current_month = 6
+        } 
+        localization_key = SanGong_months_data_6
+    }
+    text = { 
+        trigger = {  
+            current_month = 7
+        } 
+        localization_key = SanGong_months_data_7
+    }
+    text = { 
+        trigger = {  
+            current_month = 8
+        } 
+        localization_key = SanGong_months_data_8
+    }
+    text = { 
+        trigger = {  
+            current_month = 9
+        } 
+        localization_key = SanGong_months_data_9
+    }
+    text = { 
+        trigger = {  
+            current_month = 10
+        } 
+        localization_key = SanGong_months_data_10
+    }
+    text = { 
+        trigger = {  
+            current_month = 11
+        } 
+        localization_key = SanGong_months_data_11
+    }
+    text = { 
+        trigger = {  
+            current_month = 12
+        } 
+        localization_key = SanGong_months_data_12
+    }
+}

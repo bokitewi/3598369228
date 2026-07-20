@@ -1,0 +1,28 @@
+﻿
+
+
+on_birth_father = {#孩子出生时父亲视角
+    on_actions = {
+		DM_child_rank_action
+	}
+}
+
+DM_child_rank_action = {#孩子排名
+    effect = {
+        if = {
+            limit = {
+                scope:child = { is_female = yes }
+            }
+            scope:child = {
+                set_variable = {  name = child_rank value = father.DM_child_female_chixu }
+            }
+        }
+        else = {
+            scope:child = {
+                set_variable = {  name = child_rank value = father.DM_child_male_chixu }
+            }
+        }  
+    }		
+}
+
+

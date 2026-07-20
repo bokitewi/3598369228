@@ -1,0 +1,158 @@
+﻿Structure:
+
+# 故事周期类型定义
+# 这是 CK3 中「故事周期」的顶层结构，用于创建角色专属的长期剧情/机制
+key = {
+	# 故事周期【刚创建时】立即执行的效果
+	# 作用：初始化变量、添加特质、设置状态、判定开局条件
+	# root = 当前激活的故事周期
+	# scope:story = 等同于 root
+	on_setup = {}
+
+	# 故事周期【被 end_story 效果终止时】执行的效果
+	# 作用：清理数据、移除修正/特质、播放收尾事件
+	# root = 当前激活的故事周期
+	# scope:story = 等同于 root
+	on_end = {}
+
+	# 故事周期【持有者死亡时】执行的效果
+	# 作用：设置新的持有者、处理继承逻辑、转移故事周期
+	# root = 当前激活的故事周期
+	# scope:story = 等同于 root
+	on_owner_death = {}
+
+	# 布尔值：是否在游戏界面中显示该故事周期
+	# 默认值：no（不显示）
+	visible = no
+
+	# 为故事周期设置【图标】
+	# 支持使用触发器重复定义，游戏会自动选择【第一个满足条件】的图标
+	icon = {
+		# 可选触发器
+		# scope:story = 当前故事周期
+		trigger = {}
+
+		# 图标资源文件路径
+		# 如果不手动设置，游戏会**自动查找**默认路径：
+		# gfx/interface/icons/story_cycles/ + 故事周期名称.dds
+		reference = "gfx/interface/icons/story_cycles/story_icon_mystical_creature.dds"
+	}
+
+	# 为故事周期设置【背景图片】
+	# 支持使用触发器重复定义，游戏会自动选择【第一个满足条件】的背景
+	background = {
+		# 可选触发器
+		# scope:story = 当前故事周期
+		trigger = {}
+
+		# 背景资源文件路径
+		# 如果不设置，使用游戏默认背景
+		# 默认背景路径在 00_graphics.txt -> STORY_CYCLE_TYPE_FALLBACK_BACKGROUND
+		reference = "gfx/interface/illustrations/event_scenes/corridor_day.dds"
+	}
+
+	# 故事周期【界面可视化配置】
+	# 控制 UI 上显示什么内容：变量、角色、头衔、文本、计数器等
+	visualization = {
+		# 以下配置用于显示【故事周期变量】绑定的内容
+		# 格式：变量名 + 显示标签（本地化键）
+		# 如果变量类型不匹配，不会显示并报错
+		
+		# 显示单个角色
+		character = {
+			variable_name = "cool_dude_1"  # 绑定的角色变量名
+			label = "COOL_DUDE"           # 显示标签（本地化）
+		}
+		# 显示角色列表
+		character_list = {
+			variable_name = "list_of_cool_dudes"
+			label = "COOL_DUDES"
+		}
+		title = {...}         # 显示单个头衔
+		title_list = {...}    # 显示头衔列表
+		artifact = {...}      # 显示单个宝物
+		artifact_list = {...} # 显示宝物列表
+
+		# 【自定义显示文本】
+		# 填写本地化键，会直接显示在故事周期 UI 中
+		# 可使用 scope:story
+		# 不填则无额外文本
+		custom_string_key = "LOC_KEY"
+
+		# 计数器可视化配置
+		# 基础进度条计数器（0~正数）
+		basic_counter = {
+			variable_name = "some_value_variable" # 绑定变量
+			min = 0          # 最小值
+			max = 10         # 最大值
+			label = "MY_COOL_VALUE" # 标题
+			min_label = "MIN_VALUE_LABEL" # 最小值文本
+			max_label = "MAX_VALUE_LABEL" # 最大值文本
+		}
+		# 拉锯式计数器（负数~正数，如好感/对立值）
+		tug_of_war_counter = {
+			variable_name = "some_value_variable"
+			min = -10
+			max = 10
+			label = "MY_COOL_VALUE"
+			min_label = "MIN_VALUE_LABEL"
+			max_label = "MAX_VALUE_LABEL"
+		}
+
+		# 在 UI 中直接显示的：决议、修正、特质列表
+		decisions = { decision_1 decision_2 }
+		modifiers = { modifier_1 modifier_2 }
+		traits = { trait_1 trait_2 }
+	}
+
+	# 效果组（可定义任意数量）
+	# 故事周期的【核心运行逻辑】：定时触发、随机事件、条件判定、持续效果
+	effect_group = {
+		# 触发间隔：多少天/周/月/年 执行一次
+		# 可写固定值 或 随机区间 {最小..最大}
+		days/weeks/months/years = <整数>/{<整数>..<整数>}
+
+		# 触发概率（0~100）
+		# 不满足概率则本次不执行，下次间隔重新判定
+		# 不写则默认 100% 触发
+		chance = <小数>
+
+		# 全局触发条件
+		# 条件满足，整个效果组才会运行
+		# root = 当前激活的故事周期
+		# scope:story = 等同于 root
+		trigger = {}
+
+		# 单一触发效果
+		# 条件满足 → 执行对应效果
+		# 只能写一个
+		triggered_effect = {
+			trigger = {}  # 条件
+			effect = {}   # 效果
+		}
+
+		# 随机选择一个满足条件的触发效果执行（最多1个）
+		# 内部可写任意多个 triggered_effect
+		random_valid = {
+			triggered_effect = {}
+			...
+			triggered_effect = {}
+		}
+
+		# 按顺序检查，执行【第一个满足条件】的触发效果
+		# 内部可写任意多个 triggered_effect
+		first_valid = {
+			triggered_effect = {}
+			...
+			triggered_effect = {}
+		}
+
+		# 兜底效果
+		# 当【前面所有触发效果都未执行】时，才运行这里
+		fallback = {}
+	}
+
+	# 可以继续添加更多效果组
+	...
+	effect_group = {}
+}

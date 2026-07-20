@@ -1,0 +1,179 @@
+﻿namespace = sworn_brotherhood_events
+
+# Peach Garden Oath Ceremony - Main Event
+sworn_brotherhood_events.0001 = {
+    type = character_event
+    title = sworn_brotherhood_events.0001.t
+    desc = sworn_brotherhood_events.0001.desc
+    theme = alliance
+
+    override_background = {
+        reference = courtyard
+    }
+
+    # USE THE PASSED SCOPES
+    left_portrait = {
+        character = scope:oath_initiator
+        animation = diplomacy_default
+    }
+    right_portrait = {
+        character = scope:oath_brother
+        animation = diplomacy_default
+    }
+
+    trigger = {
+        exists = scope:oath_initiator
+        exists = scope:oath_brother
+    }
+
+    immediate = {
+        play_music_cue = "mx_cue_touching_moment"
+    }
+
+    option = { # Swear the Oath with Righteousness
+        name = sworn_brotherhood_events.0001.a
+        trigger = {
+            OR = {
+                has_trait = just
+                has_trait = honest
+                has_trait = diligent
+            }
+        }
+
+        # Both gain prestige and piety from the sacred oath
+        add_prestige = 150
+        add_piety = 75
+        scope:ceremony_brother = {
+            add_prestige = 150
+            add_piety = 75
+        }
+
+        # Chance to gain virtuous traits
+        random = {
+            chance = 30
+            add_trait = just
+        }
+
+        stress_impact = {
+            just = major_stress_impact_loss
+            honest = major_stress_impact_loss
+            arbitrary = medium_stress_impact_gain
+        }
+
+        custom_tooltip = sworn_brotherhood_righteous_path_tt
+    }
+
+    option = { # Swear the Oath with Loyalty
+        name = sworn_brotherhood_events.0001.b
+        trigger = {
+            OR = {
+                has_trait = loyal
+                has_trait = brave
+                has_trait = stubborn
+            }
+        }
+
+        # Military and alliance benefits
+        add_character_modifier = {
+            modifier = brotherhood_loyalty_modifier
+            years = 5
+        }
+        scope:ceremony_brother = {
+            add_character_modifier = {
+                modifier = brotherhood_loyalty_modifier
+                years = 5
+            }
+        }
+
+        stress_impact = {
+            loyal = major_stress_impact_loss
+            brave = medium_stress_impact_loss
+            deceitful = major_stress_impact_gain
+        }
+
+        custom_tooltip = sworn_brotherhood_loyalty_path_tt
+    }
+
+    option = { # Swear the Oath with Ambition
+        name = sworn_brotherhood_events.0001.c
+        trigger = {
+            OR = {
+                has_trait = ambitious
+                has_trait = strategist
+                has_trait = diligent
+            }
+        }
+
+        # Strategic and scheme benefits
+        add_character_modifier = {
+            modifier = brotherhood_ambition_modifier
+            years = 5
+        }
+
+        stress_impact = {
+            ambitious = major_stress_impact_loss
+            diligent = medium_stress_impact_loss
+            content = major_stress_impact_gain
+        }
+
+        custom_tooltip = sworn_brotherhood_ambition_path_tt
+    }
+
+    option = { # Simple Brotherhood Oath
+        name = sworn_brotherhood_events.0001.d
+        # Basic benefits without trait requirements
+        add_prestige = 100
+        add_piety = 50
+        scope:ceremony_brother = {
+            add_prestige = 100
+            add_piety = 50
+        }
+
+        stress_impact = {
+            base = minor_stress_impact_loss
+        }
+
+        custom_tooltip = sworn_brotherhood_simple_path_tt
+    }
+
+    # after = {
+    #     hidden_effect = {
+    #         # Schedule follow-up events
+    #         trigger_event = {
+    #             id = sworn_brotherhood_events.0002
+    #             days = { 180 360 }  # 6-12 months later
+    #         }
+    #     }
+    # }
+}
+
+# sworn_brotherhood_events.0002 = {
+#     type = character_event
+#     title = sworn_brotherhood_events.0002.t
+#     desc = sworn_brotherhood_events.0002.desc
+#     theme = alliance
+
+#     left_portrait = {
+#         character = root
+#         animation = diplomacy_default
+#     }
+
+#     option = { # Our bond grows stronger
+#         name = sworn_brotherhood_events.0002.a
+#         # REMOVED: trigger = { exists = scope:blood_brother }
+#         add_character_modifier = {
+#             modifier = tested_brotherhood_modifier
+#             years = 2
+#         }
+#         add_prestige = 25
+#         custom_tooltip = sworn_brotherhood_strengthened_tt
+#     }
+
+#     option = { # We remain stubborn
+#         name = sworn_brotherhood_events.0002.b
+#         # REMOVED: trigger = { exists = scope:blood_brother }
+#         add_piety = 25
+#         custom_tooltip = sworn_brotherhood_tested_tt
+#     }
+# }
+

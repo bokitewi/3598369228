@@ -1,0 +1,315 @@
+﻿# 十字军之王3 角色交互脚本 完整文档（术语统一翻译+注释汇总）
+## 一、整体结构与字段释义
+```pdx
+my_interaction = {
+	# 界面排序权重，数值越大在交互菜单中排位越靠前
+	interface_priority = number
+	# 是否为通用交互，决定是否展示在常规交互列表
+	common_interaction = yes/no
+	# 交互分类，例：interaction_category_hostile 敌对交互
+	category = interaction_category_hostile
+	# 交互图标键名，不填写则默认使用交互自身键名
+	icon = key
+
+	# 菜单内是否高亮显示该交互（触发器）
+	is_highlighted = trigger
+	# 交互高亮时悬浮提示文本键名
+	highlighted_reason = loc_key
+	# 交互被拒绝时展示的补充描述文本
+	on_decline_summary = dynamic description
+	# 启用专属定制界面类型
+	special_interaction = type
+	# 供AI识别的专属交互逻辑类型
+	special_ai_interaction = type
+	# 调用预设界面（联姻、征召盟友、授予头衔等）
+	interface = call_ally/marriage/grant_titles/etc.
+	# 该交互对应的密谋类型（谋杀、私奔、夺回宝物等）
+	scheme = elope/murder/etc.
+	# 接收方收到交互时自动弹出窗口
+	popup_on_receive = yes
+	# 交互被自动接受时，强制推送外交通知
+	force_notification = yes/no
+	# 收到交互请求时暂停游戏，常与 popup_on_receive 搭配使用
+	pause_on_receive = yes/no
+	# 交互被拒绝后触发谈判事件链，不再直接显示“拒绝”结果
+	ai_accept_negotiation = yes/no
+	# 是否隐藏该交互
+	hidden = yes
+	# 是否受外交距离规则限制，默认开启；可填写触发器做动态判断
+	use_diplomatic_range = yes/no/trigger
+	# 即便此前被对方拒绝，仍可再次发起该交互
+	can_send_despite_rejection = yes
+	# 忽略“对方有待处理交互”限制，可连续发起请求，默认关闭
+	ignores_pending_interaction_block = yes
+	# 交互发起后，对外展示的名称文本键名，默认使用交互键名
+	send_name = loc_key
+	# 必须选定目标角色后，才能打开该交互界面，默认关闭
+	needs_recipient_to_open = yes
+	# 玩家发起交互后，对方回复时是否弹出通知，默认开启
+	show_answer_notification = no
+	# 交互通知弹窗中，是否展示交互效果，默认开启
+	show_effects_in_notification = no
+
+	# 提醒图标路径
+	alert_icon = texture_path
+	# 小型图标路径
+	icon_small = texture_path
+	# 触发器：何时展示额外图标
+	should_use_extra_icon = { always = yes }
+	# 额外图标资源路径
+	extra_icon = "gfx/<...>/hook_icon.dds"
+
+	# 交互目标类型：头衔、无（默认）等
+	target_type = type
+	# 目标筛选规则，详见后文附录
+	target_filter = type
+
+	# 允许AI回复“考虑中”
+	ai_maybe = yes
+	# AI最短回复间隔（天数）
+	ai_min_reply_days = 4
+	# AI最长回复间隔（天数）
+	ai_max_reply_days = 9
+
+	# 交互简短描述文本键名
+	desc = loc_key
+	# 交互语气：negative 负面 / positive 正面
+	greeting = negative/positive
+	# 交互推送通知文本键名
+	notification_text = loc_key
+	# 角色头像下方提示文本（如“选择监护人”）
+	prompt = loc_key
+
+	# 交互全局冷却时长
+	cooldown = { years = x }
+	# 针对单个目标的交互冷却时长
+	cooldown_against_recipient = { years = x }
+
+	# 触发器：交互是否在菜单中可见
+	is_shown = trigger
+	# 触发器：交互是否可点击，仅展示失败原因
+	is_valid_showing_failures_only = trigger
+	# 触发器：交互整体是否合法可用
+	is_valid = trigger
+	# 触发器：是否存在合法目标，仅展示失败原因
+	has_valid_target_showing_failures_only = trigger
+	# 触发器：是否存在合法目标
+	has_valid_target = trigger
+	# 触发器：角色目标是否可被选中
+	can_be_picked = trigger
+	# 触发器：头衔目标是否可被选中
+	can_be_picked_title = trigger
+	# 是否自动接受交互，支持布尔值/动态触发器
+	auto_accept = yes/no/trigger
+	# 触发器：交互是否可以成功发起
+	can_send = trigger
+	# 触发器：对方是否可以拦截本次交互
+	can_be_blocked = trigger
+
+	# 重定向交互的发起者、接收者作用域
+	redirect = {}
+	# 筛选并填充可选发起者列表
+	populate_actor_list = {}
+	# 筛选并填充可选接收者列表
+	populate_recipient_list = {}
+
+	# 定义本地化变量，用于在文本中调用动态数值
+	localization_values = = {}
+
+	# 多选项区域的标题文本键名
+	options_heading = loc_key
+	# 定义单个交互选项
+	send_option = {
+		# 触发器：该选项是否可见
+		is_shown = trigger
+		# 触发器：该选项是否可选择
+		is_valid = trigger
+		# 选项悬浮提示文本
+		current_description = desc
+		# 选项唯一标记，选中后对应作用域标记置为yes（AI打分核心依据）
+		flag = flag_name
+		# 选项显示文本键名
+		localization = loc_key
+		# 触发器：界面打开时该选项是否默认选中，默认关闭
+		starts_enabled = trigger
+		# 触发器：是否允许修改该选项状态
+		can_be_changed = trigger
+		# 切换选项后是否重新全量校验交互合法性，谨慎使用（影响性能）
+		can_invalidate_interaction = bool
+	}
+	# 多选项是否为互斥单选，yes=只能选一个
+	send_options_exclusive = yes/no
+
+	# 交互成功发起时执行的效果
+	on_send = effect
+	# 对方接受交互时执行的效果
+	on_accept = effect
+	# 对方拒绝交互时执行的效果
+	on_decline = effect
+	# 交互被对方拦截时执行的效果
+	on_blocked_effect = effect
+	# 交互自动接受前执行（仅自动接受场景生效）
+	pre_auto_accept = effect
+	# 交互自动接受时执行（仅自动接受场景生效）
+	on_auto_accept = effect
+
+	# 交互回复条目提示文本键名
+	reply_item_key = loc_key
+	# 预判对方会接受时的提示文本键名
+	pre_answer_yes_key = loc_key
+	# 预判对方会拒绝时的提示文本键名
+	pre_answer_no_key = loc_key
+	# 预判对方“考虑中”时的提示文本键名
+	pre_answer_maybe_key = loc_key
+	# 接受概率明细文本键名
+	pre_answer_maybe_breakdown_key = loc_key
+
+	# 拦截按钮文本键名
+	answer_block_key = loc_key
+	# 接受按钮文本键名
+	answer_accept_key = loc_key
+	# 拒绝按钮文本键名
+	answer_reject_key = loc_key
+	# 确认按钮文本键名
+	answer_acknowledge_key = loc_key
+
+	# 发起交互所需消耗（虔诚、威望、金币、家族名望）
+	cost = {
+		piety = {}
+		prestige = {}
+		gold = {}
+		renown = {}
+	}
+
+	# 强制指定AI的交互目标
+	ai_set_target = {}
+	# AI筛选交互目标规则，可多次叠加配置
+	ai_targets = {
+		# AI候选目标分组，详见附录
+		ai_recipients = type
+		# 随机排除部分候选目标，用于优化运行性能（取值 0~1）
+		chance = 0-1
+	}
+	# AI目标快速前置筛选（基础硬性条件）
+	ai_target_quick_trigger = {
+		adult = yes					# 目标必须为成年人
+		attracted_to_owner = yes	# 目标对交互发起者抱有好感/爱慕
+		owner_attracted = yes		# 交互发起者对目标抱有好感/爱慕
+		prison = yes 				# 目标必须处于囚禁状态
+	}
+
+	# AI主动检查该交互的频率（单位：月）
+	ai_frequency = months
+	# 触发器：AI是否具备发起该交互的基础资格
+	ai_potential = trigger
+
+	# 【接收方AI逻辑】MTTH打分块
+	# 作用：1. 判断是否接受交互  2. 为 send_option 各 flag 选项打分，自动选择分数最高项
+	ai_accept = mtth
+
+	# 【发起方AI逻辑】MTTH打分块
+	# 作用：选定目标后，判断AI发起交互的意愿，取值等效0~100%，数值会被强制约束在区间内
+	# 补充规则：
+	# 1. 头衔类交互：逐个评估头衔，选用分值最高的目标头衔
+	# 2. 带多选项的交互：遍历所有选项组合，选用总分最高的组合
+	ai_will_do = mtth
+}
+```
+
+---
+## 二、常见问题 FAQ（官方问答+完整翻译）
+### 1. `special_interaction = arrange_marriage_interaction` 有什么作用？
+该配置启用联姻专属交互逻辑：
+1. 加载婚姻定制界面，发起/回复联姻请求时自动切换对应UI；
+2. 供AI识别联姻类交互，实现AI自动安排联姻；
+3. 自动为次要参与者完成订婚/成婚流程，同步建立同盟并发放威望。
+
+### 2. `secondary_actor = marriage` 和 `secondary_recipient = marriage` 有什么作用？
+该交互存在**次要参与角色**（实际成婚双方），且支持手动更换人选：
+1. 脚本自动重定向至联姻匹配界面；
+2. 例：向其他领主求娶其子女时，**对方领主为主接收方**（负责同意/拒绝），**领主子女为次要接收方**；
+3. 自动基于发起者、接收者的宫廷成员、子嗣生成可选名单。
+
+### 3. `secondary_actor = marry_off` 和 `secondary_recipient = marry_off` 有什么作用？
+逻辑与婚姻类配置相近，存在部分区别：
+1. 候选名单从**所有可成婚的在世角色**中筛选；
+2. 作用域重定向：你安排成婚的对象会被设为次要发起者；
+3. 沿用婚姻类目标匹配规则（多用于安排下属/朝臣婚配）。
+
+### 4. 交互触发器的校验时机与顺序？
+#### （1）交互发起合法性校验（Can Send）
+完整校验流程，按顺序执行：
+1. 检查交互配置是否完整（所有目标、主次参与者已选定）；
+2. 校验外交距离（若开启 `use_diplomatic_range`）；
+3. 执行专属交互的前置校验（`special_interaction` 规则）；
+4. 校验 `is_shown`（交互是否可见）；
+5. 检查对方是否有待处理的同类型交互；
+6. 校验 `is_valid_showing_failures_only`；
+7. 校验 `has_valid_target_showing_failures_only`；
+8. 校验 `can_send`；
+9. 校验 `is_valid`；
+10. 校验 `has_valid_target`；
+11. 执行专属交互的后置校验。
+
+> 补充：若交互需要对方手动确认（`auto_accept = no`），则必须判定对方AI会接受，才能向AI发起该交互。
+
+#### （2）头衔类目标名单生成（授予/收回头衔等）
+1. 根据 `target_filter` 筛选领地/法理头衔；
+2. 用 `can_be_picked_title` 校验头衔是否可选。
+> 注：该校验仅用于生成候选列表，**不参与交互发起校验**，属于快速筛选逻辑。
+
+#### （3）角色类目标名单生成（外交、密谋等）
+1. 根据 `secondary_actor/secondary_recipient` 规则确定候选角色范围；
+2. 未选定任何角色时：用 `can_be_picked` 筛选首个可选角色；
+3. 已选定第一个角色、选择第二个角色时：重定向作用域，并执行完整「发起合法性校验」（跳过AI接受判断）。
+> 注：`can_be_picked` 仅用于首轮角色筛选，**不属于交互发起校验流程**。
+
+#### （4）核心触发器分工
+- `is_shown`：界面层判断交互是否在菜单中显示；
+- `is_valid` / `is_valid_showing_failures_only`：判断交互按钮是否可点击。
+
+### 5. `target_filter` 可选值列表（目标筛选规则）
+- `actor_domain_titles`：发起者直辖头衔
+- `recipient_domain_titles`：接收者直辖头衔
+- `secondary_actor_domain_titles`：次要发起者直辖头衔
+- `secondary_recipient_domain_titles`：次要接收者直辖头衔
+- `actor_domain_titles_including_leases`：发起者直辖头衔（包含租借领地）
+- `recipient_domain_titles_including_leases`：接收者直辖头衔（包含租借领地）
+- `secondary_actor_domain_titles_including_leases`：次要发起者直辖头衔（包含租借领地）
+- `secondary_recipient_domain_titles_including_leases`：次要接收者直辖头衔（包含租借领地）
+- `actor_de_jure_titles`：发起者法理头衔
+- `recipient_de_jure_titles`：接收者法理头衔
+- `secondary_actor_de_jure_titles`：次要发起者法理头衔
+- `secondary_recipient_de_jure_titles`：次要接收者法理头衔
+- `none`：无筛选（默认值）
+
+---
+## 三、AI目标分组（`ai_recipients` 全部合法取值）
+用于 `ai_targets` 配置，定义AI可选择的交互目标：
+1. `known_secrets`：掌握其秘密的角色
+2. `hooked_characters`：持有其把柄的角色
+3. `neighboring_rulers`：相邻领主
+4. `peer_vassals`：同级封臣
+5. `guests`：宫廷访客
+6. `dynasty`：同王朝成员
+7. `courtiers`：宫廷朝臣
+8. `prisoners`：囚犯
+9. `sub_realm_characters`：直属封国境内角色
+10. `realm_characters`：整个领地境内角色
+11. `vassals`：直属封臣
+12. `liege`：直属领主/宗主
+13. `self`：自身
+14. `head_of_faith`：宗教领袖
+15. `spouses`：配偶
+16. `family`：家族成员
+17. `children`：子女
+18. `primary_war_enemies`：主要交战敌对阵营角色
+19. `war_enemies`：战争敌方角色
+20. `war_allies`：战争盟友角色
+21. `scripted_relations`：存在自定义脚本关系的角色
+
+---
+## 四、核心总结（AI打分逻辑重点）
+1. **多选项打分位置**：`ai_accept`，作用域匹配 `send_option` 内的 `flag` 完成选项择优；
+2. **发起意愿判断**：`ai_will_do`，AI会自动选取该分值最高的选项组合发起交互；
+3. 若脚本中**未编写 `ai_accept`**，交互内的多选项会使用游戏底层硬编码默认规则，无法自定义AI选择倾向。

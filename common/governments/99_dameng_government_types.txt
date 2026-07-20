@@ -1,0 +1,103 @@
+﻿写完的文件路径受限，这里直接给出完整注释版本：
+
+```plaintext
+japan_feudal_government = { # Soryo — 日本封建政府（庄领制/惣领制）
+	# ===== 政府规则 =====
+	government_rules = {
+		create_cadet_branches = yes             # 允许创建分支家族（日本武家分家）
+		rulers_should_have_dynasty = yes        # 统治者必须拥有王朝（武士家家名）
+		landless_playable = yes                 # 允许无地玩法（浪人/牢人）
+		legitimacy = yes                        # 启用正统性系统（武家继承正当性）
+		house_aspirations = yes                 # 启用家族野心系统（武家宿望）
+		use_as_base_on_landed = yes             # 有地角色以此政府为基底
+		use_as_base_on_rank_up = yes            # 升级时以此政府为基底
+		noble_families = yes                    # 启用名门家族系统（有力御家人/豪族）
+		disable_regnal_numbers = yes            # 禁用在位序号（日本不称"XX世"）
+		allow_accolades = yes                   # 允许授予武士称号（受领/受封）
+	}
+
+	# ===== 御所（宫廷）类型 =====
+	royal_court = any                          # 接受所有类型的宫廷（京都/镰仓等）
+
+	# ===== 角色修正 =====
+	character_modifier = {
+		# --- 军役与税赋 ---
+		japan_administrative_government_tax_contribution_mult = -0.5   # 徭役（税贡）修正 -50%
+		japan_administrative_government_levy_contribution_mult = -0.5  # 军役（动员力）修正 -50%
+		garrison_size = -0.5                    # 驻军规模 -50%（庄领制下领主常驻地有限）
+
+		# --- 封臣 ---
+		vassal_limit = 50                       # 直属封臣上限 +50（征夷大将军直辖御家人规模）
+
+		# --- 武士 ---
+		knight_effectiveness_mult = 0.1         # 骑士（武士）效率 +10%
+		knight_limit = 2                        # 骑士（武士）上限 +2
+
+		# --- 直辖领地 ---
+		domain_limit_max = 2                    # 直辖领地上限 +2（通过庄园进一步增加）
+
+		# --- 兵种 ---
+		archer_cavalry_recruitment_cost_mult = -0.25   # 弓骑兵（骑马武者）招募费用 -25%
+		heavy_infantry_recruitment_cost_mult = -0.25   # 重步兵（足轻/武士）招募费用 -25%
+	}
+
+	# ===== 居所类型 =====
+	domicile_type = japanese_manor             # 居所为日本式庄园（馆/御所）
+
+	# ===== 领地与传承 =====
+	primary_holding = castle_holding           # 主要地产为城郭
+	primary_heritages = { heritage_japonic }   # 主要文化遗产为日本系
+	valid_holdings = { 
+		temple_citadel_holding                 # 寺社城郭（寺社本所领）
+		tribal_holding                         # 部落（乡保/庄）
+	}
+	required_county_holdings = { 
+		castle_holding                         # 城郭
+		city_holding                           # 都市（町）
+		church_holding                         # 寺院（寺）
+	}
+
+	# ===== 封臣契约 =====
+	vassal_contract_group = japan_feudal_vassal  # 使用日本封建封臣契约类型（御家人制）
+
+	# ===== 获取此政府的条件 =====
+	can_get_government = {
+		has_tgp_dlc_trigger = yes              # 需要"皇室与宫廷"DLC
+		OR = {
+			top_liege = { government_is_japanese_trigger = yes }  # 上级领主为日本系政府（惣领不会在律令/惣领领域外产生）
+			domicile ?= { is_domicile_type = japanese_manor }     # 持有日本式庄园（被征服的律令/惣领维持惣领制）
+			has_character_flag = can_become_japanese_feudal       # 拥有特殊标记（事件转制）
+		}
+	}
+
+	# ===== 迁都限制 =====
+	# 执政者（摄关/幕府）始终留在原处
+	can_move_realm_capital = {
+		NOT = { primary_title ?= title:e_japan }  # 除非天皇所在，否则不可迁都（京都不动）
+	}
+
+	# ===== 继承兼容 =====
+	compatible_government_type_succession = { japan_administrative_government }  # 兼容继承政府：日本行政政府（律令制）
+
+	# ===== AI 行为 =====
+	ai = {
+		use_legends = yes                      # AI 使用传说（武家の名誉/由绪故事）
+	}
+
+	# ===== 标记（尽可能用标记替代 has_government 检查以支持模组扩展，无需对玩家可见时使用）=====
+	flags = {
+		may_elevate_co_monarch                              # 允许拥立共治君主（院政/摄关）
+		government_is_japan_feudal                          # 标识：日本封建政府
+		government_has_county_tier_noble_families            # 标识：伯爵级拥有名门家族
+		has_special_house_aspirations                       # 标识：拥有特殊家族野心
+		government_is_settled                               # 标识：定居政府（非游牧）
+		government_uses_domicile_but_not_adventurer          # 标识：使用居所而非冒险者基地
+		has_unique_government_perks                         # 标识：拥有独有政府技能
+		government_has_house_blocs                          # 标识：拥有家族派系（武家栋梁竞争）
+	}
+
+	# ===== 界面视觉 =====
+	color = { 68 100 250 }                     # 地图色：青蓝（武家色调）
+	realm_mask_offset = { 0.0 0.075 }          # 领域遮罩偏移
+	realm_mask_scale = { 0.95 0.95 }           # 领域遮罩缩放
+}

@@ -1,0 +1,40 @@
+﻿
+SG_NianHao_GuiS = {
+    scope = character
+    is_shown = {
+        exists = this
+        is_ruler = yes
+        top_liege = {
+			has_variable = data_nianhao_to_SG
+		}
+    }
+}
+
+Topliege_is_TianZi = {
+    scope = character
+    is_shown = {
+        exists = this
+        is_ruler = yes
+        OR = {
+            top_liege ?= {
+                faith.religion = religion:lijiao_religion
+            }
+            faith.religion = religion:lijiao_religion
+        }
+    }
+}
+
+
+DM_Zongshi_list = {
+	scope = character
+	effect = {
+        pinfei_list_effect = yes
+        child_male_list_effect = yes
+        child_female_list_effect = yes
+        liege_pinfei_list_effect = yes
+        liege_child_male_list_effect = yes
+        liege_child_female_list_effect = yes
+	}
+}
+
+

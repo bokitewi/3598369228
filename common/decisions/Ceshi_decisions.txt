@@ -1,0 +1,24 @@
+追封测试 = {
+    picture = { reference = "gfx/interface/illustrations/decisions/tgp_debate.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ZhuiFeng_XianFu_decision_desc
+    should_create_alert = { always = no }
+    sort_order = 6000
+    is_shown = { 
+       # is_ai = yes
+    }
+    is_valid = { 
+        #destroy_character_memory = scope:forgotten_memory  
+    }   	
+    effect = {
+        father = { 
+            remove_nickname = yes  
+            save_scope_as = XianDi 
+			
+		}
+        trigger_event = DM_Shihao.010
+
+    }
+    ai_will_do = 0
+    
+}

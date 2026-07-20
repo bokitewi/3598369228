@@ -1,0 +1,20 @@
+﻿yearly_global_pulse = {
+    on_actions = { 
+        DM_NianHao_add_action
+    }  
+}
+
+DM_NianHao_add_action = {#年号增加
+    effect = {
+    every_ruler = {
+            if = {
+                limit = {
+                    highest_held_title_tier >= tier_kingdom
+                    has_variable = SG_NianHao_data
+                }
+                change_variable = { name = SG_NianHao_data add = 1 }
+            }
+        }
+    }
+}
+

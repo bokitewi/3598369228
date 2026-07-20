@@ -1,0 +1,26 @@
+
+    nick_SanGong_Shihao_eshi_1 = {} #厉
+    nick_SanGong_Shihao_eshi_2 = {} #幽
+    nick_SanGong_Shihao_eshi_3 = {} #炀
+    nick_SanGong_Shihao_eshi_4 = {} #灵
+    nick_SanGong_Shihao_eshi_5 = {} #荒
+    nick_SanGong_Shihao_eshi_6 = {} #戾
+    nick_SanGong_Shihao_eshi_7 = {} #缪
+    nick_SanGong_Shihao_eshi_8 = {} #躁
+    nick_SanGong_Shihao_eshi_9 = {} #荡
+    nick_SanGong_Shihao_eshi_10 = {} #暴
+    Tianzi_miaoshi_zdy = {} #自定义谥号
+    Tianzi_guohao = {} #国号
+
+    Tianzi_miaohao_FeiDi_WangHao = {} #废帝王号
+    Tianzi_miaohao_FeiDi_ShiHao = {} #废帝谥号
+
+    Tianzi_miaohao_zu = {}
+    Tianzi_miaohao_zong = {}
+    Tianzi_miaoshi = {}
+
+    SanGongGuoHao_global_var = {}
+    TianChaoGuoHao_Global = {}
+    QianChaoGuoHao_Global = {}
+    Tianzi_guohao_han = {} #国号
+    Tianzi_miaohao = {} #天子庙号

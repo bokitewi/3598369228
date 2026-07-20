@@ -1,0 +1,15 @@
+﻿# SWORN BROTHERHOOD OATH-BREAKING TRIGGERS
+# Fires when blood brother relation is removed
+
+on_relation_blood_brother_removed = {
+    events = {
+        sworn_brotherhood_events.0003  # Fires for the betrayed character
+    }
+}
+
+# # This automatically triggers when any friendship is formed in the game
+# on_set_relation_friend = {
+#     events = {
+#         sworn_brotherhood_events.0005
+#     }
+# }

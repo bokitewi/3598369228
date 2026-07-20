@@ -1,0 +1,236 @@
+测试新本纪 = {
+    category = interaction_category_diplomacy
+    use_diplomatic_range = no
+    ignores_pending_interaction_block = yes
+    common_interaction = yes
+    desc = LinXuan_GuiNv_desc
+    auto_accept = yes
+    is_shown = {
+        scope:actor = {
+            is_ai = yes
+        }
+    }
+    on_accept = {
+        scope:recipient = {
+           # set_variable = falvor_dm_gongjue
+            #add_character_flag = falvor_dm_gongjue
+            add_trait = Dm_Juewei_BoJue
+        }
+            #scope:actor = {
+            #    if = {
+            #        limit = {
+            #            NOT = { exists = story_cycle_ZhuHou }
+            #        }
+            #        save_scope_as = Zhuhou
+            #        create_story = story_cycle_ZhuHou
+            #        random_owned_story = {
+            #            type = story_cycle_ZhuHou
+            #            set_variable = { name = Zhuhou value = scope:Zhuhou }
+            #        }
+            #    }
+            #    LiGuo_years_effect = yes
+            #    set_variable = {
+            #        name = kaiguoxianzu_var
+            #        value = scope:kaiguoxianzu
+            #    }
+            # }
+    }
+}
+测试谥号 = {
+    category = interaction_category_diplomacy
+    use_diplomatic_range = no
+    ignores_pending_interaction_block = yes
+    common_interaction = yes
+    desc = LinXuan_GuiNv_desc
+    auto_accept = yes
+    is_shown = {
+        scope:actor = {
+            is_ai = yes
+        }
+    }
+    on_accept = {
+        scope:actor = {
+            father = { save_scope_as = XianDi remove_MiaoShi_effect = yes remove_nickname = yes }
+            trigger_event = HuangDi_miaoshi.011
+            
+        }
+    }
+}
+
+测试齿序 = {
+    category = interaction_category_diplomacy
+    use_diplomatic_range = no
+    ignores_pending_interaction_block = yes
+    common_interaction = yes
+    desc = LinXuan_GuiNv_desc
+    auto_accept = yes
+    is_shown = {
+        scope:actor = {
+            is_ai = yes
+        }
+    }
+    on_accept = {
+        scope:recipient = {
+            save_scope_as = child
+            if = {
+                limit = {
+                    scope:child = { is_female = yes }
+                }
+                scope:child = {
+                    set_variable = {  name = child_rank value = father.DM_child_female_chixu }
+                }
+            }
+            else = {
+                scope:child = {
+                    set_variable = {  name = child_rank value = father.DM_child_male_chixu }
+                }
+            }       
+        }
+    }
+}
+
+
+测试立国 = {
+    category = interaction_category_diplomacy
+    use_diplomatic_range = no
+    ignores_pending_interaction_block = yes
+    common_interaction = yes
+    desc = LinXuan_GuiNv_desc
+    auto_accept = yes
+    is_shown = {
+        scope:actor = {
+            is_ai = yes
+        }
+        
+    }
+    on_accept = {
+        scope:actor = {
+            GuoJun_var_effect = yes
+        }
+    }
+}
+
+添加公爵特质 = {
+    category = interaction_category_diplomacy
+    use_diplomatic_range = no
+    ignores_pending_interaction_block = yes
+    common_interaction = yes
+    desc = LinXuan_GuiNv_desc
+    auto_accept = yes
+    on_accept = {
+        scope:recipient = {
+            remove_character_flag = falvor_dm_gongjue
+            remove_character_flag = falvor_dm_houjue
+            remove_character_flag = falvor_dm_bojue
+            remove_character_flag = falvor_dm_zijue
+            remove_character_flag = falvor_dm_nanjue
+            remove_trait = Dm_Juewei_GongJue
+            remove_trait = Dm_Juewei_HouJue
+            remove_trait = Dm_Juewei_BoJue
+            remove_trait = Dm_Juewei_ZiJue
+            remove_trait = Dm_Juewei_NanJue
+            add_character_flag = falvor_dm_gongjue
+            add_trait = Dm_Juewei_GongJue
+        }
+    }
+}
+
+添加侯爵特质 = {
+    category = interaction_category_diplomacy
+    use_diplomatic_range = no
+    ignores_pending_interaction_block = yes
+    common_interaction = yes
+    desc = LinXuan_GuiNv_desc
+    auto_accept = yes
+    on_accept = {
+        scope:recipient = {
+            remove_character_flag = falvor_dm_gongjue
+            remove_character_flag = falvor_dm_houjue
+            remove_character_flag = falvor_dm_bojue
+            remove_character_flag = falvor_dm_zijue
+            remove_character_flag = falvor_dm_nanjue
+            remove_trait = Dm_Juewei_GongJue
+            remove_trait = Dm_Juewei_HouJue
+            remove_trait = Dm_Juewei_BoJue
+            remove_trait = Dm_Juewei_ZiJue
+            remove_trait = Dm_Juewei_NanJue
+            add_character_flag = falvor_dm_houjue
+            add_trait = Dm_Juewei_HouJue
+        }
+    }
+}
+
+添加伯爵特质 = {
+    category = interaction_category_diplomacy
+    use_diplomatic_range = no
+    ignores_pending_interaction_block = yes
+    common_interaction = yes
+    desc = LinXuan_GuiNv_desc
+    auto_accept = yes
+    on_accept = {
+        scope:recipient = {
+            remove_character_flag = falvor_dm_gongjue
+            remove_character_flag = falvor_dm_houjue
+            remove_character_flag = falvor_dm_bojue
+            remove_character_flag = falvor_dm_zijue
+            remove_character_flag = falvor_dm_nanjue
+            remove_trait = Dm_Juewei_GongJue
+            remove_trait = Dm_Juewei_HouJue
+            remove_trait = Dm_Juewei_BoJue
+            remove_trait = Dm_Juewei_ZiJue
+            remove_trait = Dm_Juewei_NanJue
+            add_character_flag = falvor_dm_bojue
+            add_trait = Dm_Juewei_BoJue
+        }
+    }
+}
+
+添加子爵特质 = {
+    category = interaction_category_diplomacy
+    use_diplomatic_range = no
+    ignores_pending_interaction_block = yes
+    common_interaction = yes
+    desc = LinXuan_GuiNv_desc
+    auto_accept = yes
+    on_accept = {
+        scope:recipient = {
+            remove_character_flag = falvor_dm_gongjue
+            remove_character_flag = falvor_dm_houjue
+            remove_character_flag = falvor_dm_bojue
+            remove_character_flag = falvor_dm_zijue
+            remove_character_flag = falvor_dm_nanjue
+            remove_trait = Dm_Juewei_GongJue
+            remove_trait = Dm_Juewei_HouJue
+            remove_trait = Dm_Juewei_BoJue
+            remove_trait = Dm_Juewei_ZiJue
+            remove_trait = Dm_Juewei_NanJue
+            add_character_flag = falvor_dm_zijue
+            add_trait = Dm_Juewei_ZiJue
+        }
+    }
+}
+
+添加男爵特质 = {
+    category = interaction_category_diplomacy
+    use_diplomatic_range = no
+    ignores_pending_interaction_block = yes
+    common_interaction = yes
+    desc = LinXuan_GuiNv_desc
+    auto_accept = yes
+    on_accept = {
+        scope:recipient = {
+            remove_character_flag = falvor_dm_gongjue
+            remove_character_flag = falvor_dm_houjue
+            remove_character_flag = falvor_dm_bojue
+            remove_character_flag = falvor_dm_zijue
+            remove_character_flag = falvor_dm_nanjue
+            remove_trait = Dm_Juewei_GongJue
+            remove_trait = Dm_Juewei_HouJue
+            remove_trait = Dm_Juewei_BoJue
+            remove_trait = Dm_Juewei_ZiJue
+            remove_trait = Dm_Juewei_NanJue
+            add_character_flag = falvor_dm_nanjue
+            add_trait = Dm_Juewei_NanJue
+        }
+    }
+}

@@ -1,0 +1,1045 @@
+namespace = HuangDi_miaoshi
+#002-010 庙号
+#011-020汉谥
+#021—030 唐谥
+#031-040 宋谥
+#41-50 辽金谥
+#51-60 高丽谥
+#81-90 全朝代通用平、恶谥号
+
+HuangDi_miaoshi.009 = {# 盖棺定论 （前置）
+    type = character_event
+    title = HuangDi_miaoshi.009.event_title
+    window = SanGong_CeFeng_event_window
+    desc = {
+        desc = HuangDi_miaoshi.009.desc.1
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:XianDi = { has_trait = SanGong_KaiGuo }
+				}
+				desc = HuangDi_miaoshi.009.desc.2
+			}
+			triggered_desc = {
+				trigger = {
+					scope:XianDi = { has_trait = SanGong_ZhongXing }
+				}
+				desc = HuangDi_miaoshi.009.desc.3
+			}
+			triggered_desc = {
+				trigger = {
+					scope:XianDi = { has_trait = SanGong_XiongZhu }
+				}
+				desc = HuangDi_miaoshi.009.desc.4
+			}
+            triggered_desc = {
+				trigger = {
+					scope:XianDi = { has_trait = SanGong_ShouCheng }
+				}
+				desc = HuangDi_miaoshi.009.desc.5
+			}
+            triggered_desc = {
+				trigger = {
+					scope:XianDi = { has_trait = SanGong_YouZhu }
+				}
+				desc = HuangDi_miaoshi.009.desc.6
+			}
+            triggered_desc = {
+				trigger = {
+					scope:XianDi = { has_trait = SanGong_HunJun }
+				}
+				desc = HuangDi_miaoshi.009.desc.7
+			}
+		}
+	}
+    theme = death
+    override_background = bedchamber
+    right_portrait = {
+        character = scope:XianDi
+        animation = dead
+        camera = camera_center_large
+    }
+    immediate = {
+        scope:XianDi = {
+            SanGong_HuangDi_GaiGuanDingLun_effcet = yes
+        }
+    }
+    option = {
+        name = HuangDi_miaoshi.009.a
+        trigger = {
+            scope:XianDi = { is_adult = yes }
+        }
+        trigger_event = HuangDi_miaoshi.001
+    }
+    option = {
+        name = HuangDi_miaoshi.009.b
+        trigger = {
+            scope:XianDi = { is_adult = no }
+        }
+        trigger_event = HuangDi_miaoshi.081
+    }
+}
+
+HuangDi_miaoshi.011 = { #皇帝谥号拼字1
+    type = character_event
+    title = HuangDi_miaoshi.011_t
+    desc = HuangDi_miaoshi.011_d
+    theme = death
+    window = SanGong_CeFeng_event_window
+    override_background = bedchamber
+    right_portrait = {
+        character = scope:XianDi
+        animation = dead
+        camera = camera_center_large
+    }
+    immediate = {
+        SanGong_HuangDi_GuoHao_effect = yes
+    }
+    option = {
+        name = HuangDi_miaoshi.011.zdy #自定义
+        trigger = { is_ai = no } 
+        trigger_event = HuangDi_miaoshi.092
+    }
+    option = {#文
+        name = HuangDi_miaoshi.011.a
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_01 } } }
+        ai_chance = { base = 10000 }
+    }
+    option = {#武
+        name = HuangDi_miaoshi.011.b
+        trigger = { scope:XianDi = { OR = { has_trait = SanGong_KaiGuo has_trait = SanGong_ZhongXing has_trait = SanGong_XiongZhu } } NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_02 exists = var:nick_SanGong_Shihao_han_pin_2_02 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_02 } } }
+        ai_chance = { base = 10000 }
+    }
+    option = {#大
+        name = HuangDi_miaoshi.011.c
+        trigger = { scope:XianDi = { OR = { has_trait = SanGong_KaiGuo has_trait = SanGong_ZhongXing has_trait = SanGong_XiongZhu } } NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_03 exists = var:nick_SanGong_Shihao_han_pin_2_03 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_03 } } }
+        ai_chance = { base = 10000 }
+    }
+    option = {#太
+        name = HuangDi_miaoshi.011.d
+        trigger = { scope:XianDi = { OR = { has_trait = SanGong_KaiGuo has_trait = SanGong_ZhongXing has_trait = SanGong_XiongZhu } } NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_04 exists = var:nick_SanGong_Shihao_han_pin_2_04 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_04 } } }
+        ai_chance = { base = 10000 }
+    }
+    option = {#神
+        name = HuangDi_miaoshi.011.e
+        trigger = { scope:XianDi = { OR = { has_trait = SanGong_KaiGuo has_trait = SanGong_ZhongXing has_trait = SanGong_XiongZhu } } NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_05 exists = var:nick_SanGong_Shihao_han_pin_2_05 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_05 } } }
+        ai_chance = { base = 10000 }
+    }
+    option = {#圣
+        name = HuangDi_miaoshi.011.f
+        trigger = { scope:XianDi = { OR = { has_trait = SanGong_KaiGuo has_trait = SanGong_ZhongXing has_trait = SanGong_XiongZhu } } NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_06 exists = var:nick_SanGong_Shihao_han_pin_2_06 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_06 } } }
+        ai_chance = { base = 10000 }
+    }
+    option = {#高
+        name = HuangDi_miaoshi.011.g
+        trigger = { scope:XianDi = { OR = { has_trait = SanGong_KaiGuo has_trait = SanGong_ZhongXing has_trait = SanGong_XiongZhu } } NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_07 exists = var:nick_SanGong_Shihao_han_pin_2_07 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_07 } } }
+        ai_chance = { base = 10000 }
+    }
+    option = {#光
+        name = HuangDi_miaoshi.011.h
+        trigger = { scope:XianDi = { OR = { has_trait = SanGong_KaiGuo has_trait = SanGong_ZhongXing has_trait = SanGong_XiongZhu } } NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_08 exists = var:nick_SanGong_Shihao_han_pin_2_08 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_08 } } }
+        ai_chance = { base = 10000 }
+    }
+    option = {#孝
+        name = HuangDi_miaoshi.011.i
+        trigger = { NOT = { scope:XianDi = { OR = { has_trait = SanGong_KaiGuo has_trait = SanGong_ZhongXing has_trait = SanGong_XiongZhu } } dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_08 exists = var:nick_SanGong_Shihao_han_pin_2_08 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_09 } } }
+        ai_chance = { base = 1000 }
+    }
+    option = {#明
+        name = HuangDi_miaoshi.011.j
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_10 exists = var:nick_SanGong_Shihao_han_pin_2_10 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_10 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#昭
+        name = HuangDi_miaoshi.011.k
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_11 exists = var:nick_SanGong_Shihao_han_pin_2_11 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_11 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#景
+        name = HuangDi_miaoshi.011.l
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_12 exists = var:nick_SanGong_Shihao_han_pin_2_12 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_12 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#宣
+        name = HuangDi_miaoshi.011.m
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_13 exists = var:nick_SanGong_Shihao_han_pin_2_13 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_13 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#庄
+        name = HuangDi_miaoshi.011.n
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_14 exists = var:nick_SanGong_Shihao_han_pin_2_14 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_14 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#臧
+        name = HuangDi_miaoshi.011.o
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_15 exists = var:nick_SanGong_Shihao_han_pin_2_15 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_15 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#肃
+        name = HuangDi_miaoshi.011.p
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_16 exists = var:nick_SanGong_Shihao_han_pin_2_16 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_16 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#成
+        name = HuangDi_miaoshi.011.q
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_17 exists = var:nick_SanGong_Shihao_han_pin_2_17 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_17 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#康
+        name = HuangDi_miaoshi.011.r
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_18 exists = var:nick_SanGong_Shihao_han_pin_2_18 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_18 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#献
+        name = HuangDi_miaoshi.011.s
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_19 exists = var:nick_SanGong_Shihao_han_pin_2_19 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_19 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#元
+        name = HuangDi_miaoshi.011.t
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_20 exists = var:nick_SanGong_Shihao_han_pin_2_20 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_20 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#穆
+        name = HuangDi_miaoshi.011.u
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_21 exists = var:nick_SanGong_Shihao_han_pin_2_21 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_21 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#章
+        name = HuangDi_miaoshi.011.v
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_22 exists = var:nick_SanGong_Shihao_han_pin_2_22 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_22 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#烈
+        name = HuangDi_miaoshi.011.w
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_23 exists = var:nick_SanGong_Shihao_han_pin_2_23 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_23 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#桓
+        name = HuangDi_miaoshi.011.x
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_24 exists = var:nick_SanGong_Shihao_han_pin_2_24 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_24 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#威
+        name = HuangDi_miaoshi.011.y
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_25 exists = var:nick_SanGong_Shihao_han_pin_2_25 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_25 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#襄
+        name = HuangDi_miaoshi.011.z
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_26 exists = var:nick_SanGong_Shihao_han_pin_2_26 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_26 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#和
+        name = HuangDi_miaoshi.011.aa
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_27 exists = var:nick_SanGong_Shihao_han_pin_2_27 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_27 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#仁
+        name = HuangDi_miaoshi.011.ab
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_28 exists = var:nick_SanGong_Shihao_han_pin_2_28 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_28 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#宪
+        name = HuangDi_miaoshi.011.ac
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_29 exists = var:nick_SanGong_Shihao_han_pin_2_29 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_29 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#真
+        name = HuangDi_miaoshi.011.ad
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_30 exists = var:nick_SanGong_Shihao_han_pin_2_30 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_30 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#显
+        name = HuangDi_miaoshi.011.ae
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_31 exists = var:nick_SanGong_Shihao_han_pin_2_31 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_31 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#智
+        name = HuangDi_miaoshi.011.af
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_32 exists = var:nick_SanGong_Shihao_han_pin_2_32 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_32 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#英
+        name = HuangDi_miaoshi.011.ag
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_33 exists = var:nick_SanGong_Shihao_han_pin_2_33 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_33 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#睿
+        name = HuangDi_miaoshi.011.ah
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_34 exists = var:nick_SanGong_Shihao_han_pin_2_34 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_34 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#惠
+        name = HuangDi_miaoshi.011.ai
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_35 exists = var:nick_SanGong_Shihao_han_pin_2_35 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_35 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#理
+        name = HuangDi_miaoshi.011.aj
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_36 exists = var:nick_SanGong_Shihao_han_pin_2_36 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_36 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#纯
+        name = HuangDi_miaoshi.011.ak
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_37 exists = var:nick_SanGong_Shihao_han_pin_2_37 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_37 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#懿
+        name = HuangDi_miaoshi.011.al
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_38 exists = var:nick_SanGong_Shihao_han_pin_2_38 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_38 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#简
+        name = HuangDi_miaoshi.shturl
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_39 exists = var:nick_SanGong_Shihao_han_pin_2_39 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_39 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#平
+        name = HuangDi_miaoshi.011.an
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_40 exists = var:nick_SanGong_Shihao_han_pin_2_40 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_40 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#贞
+        name = HuangDi_miaoshi.011.ao
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_41 exists = var:nick_SanGong_Shihao_han_pin_2_41 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_41 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#敬
+        name = HuangDi_miaoshi.011.ap
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_42 exists = var:nick_SanGong_Shihao_han_pin_2_42 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_42 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#广
+        name = HuangDi_miaoshi.011.aq
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_43 exists = var:nick_SanGong_Shihao_han_pin_2_43 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_43 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#敏
+        name = HuangDi_miaoshi.011.ar
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_44 exists = var:nick_SanGong_Shihao_han_pin_2_44 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_44 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#安
+        name = HuangDi_miaoshi.011.as
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_45 exists = var:nick_SanGong_Shihao_han_pin_2_45 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_45 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#定
+        name = HuangDi_miaoshi.011.at
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_46 exists = var:nick_SanGong_Shihao_han_pin_2_46 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_46 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#靖
+        name = HuangDi_miaoshi.011.au
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_47 exists = var:nick_SanGong_Shihao_han_pin_2_47 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_47 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#翼
+        name = HuangDi_miaoshi.011.av
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_48 exists = var:nick_SanGong_Shihao_han_pin_2_48 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_48 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#贤
+        name = HuangDi_miaoshi.011.aw
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_49 exists = var:nick_SanGong_Shihao_han_pin_2_49 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_49 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#恭
+        name = HuangDi_miaoshi.011.ax
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_50 exists = var:nick_SanGong_Shihao_han_pin_2_50 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_50 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#共
+        name = HuangDi_miaoshi.011.ay
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_51 exists = var:nick_SanGong_Shihao_han_pin_2_51 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_51 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#戴
+        name = HuangDi_miaoshi.011.az
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_52 exists = var:nick_SanGong_Shihao_han_pin_2_52 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_52 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#博
+        name = HuangDi_miaoshi.011.ba
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_53 exists = var:nick_SanGong_Shihao_han_pin_2_53 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_53 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#厘
+        name = HuangDi_miaoshi.011.bb
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_54 exists = var:nick_SanGong_Shihao_han_pin_2_54 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_54 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#军
+        name = HuangDi_miaoshi.011.bc
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_55 exists = var:nick_SanGong_Shihao_han_pin_2_55 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_55 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#坚
+        name = HuangDi_miaoshi.011.bd
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_56 exists = var:nick_SanGong_Shihao_han_pin_2_56 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_56 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#防
+        name = HuangDi_miaoshi.011.be
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_57 exists = var:nick_SanGong_Shihao_han_pin_2_57 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_57 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#慎
+        name = HuangDi_miaoshi.011.bf
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_58 exists = var:nick_SanGong_Shihao_han_pin_2_58 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_58 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#礼
+        name = HuangDi_miaoshi.011.bg
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_59 exists = var:nick_SanGong_Shihao_han_pin_2_59 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_59 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#义
+        name = HuangDi_miaoshi.011.bh
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_60 exists = var:nick_SanGong_Shihao_han_pin_2_60 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_60 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#信
+        name = HuangDi_miaoshi.011.bi
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_61 exists = var:nick_SanGong_Shihao_han_pin_2_61 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_61 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#达
+        name = HuangDi_miaoshi.011.bj
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_62 exists = var:nick_SanGong_Shihao_han_pin_2_62 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_62 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#宽
+        name = HuangDi_miaoshi.011.bk
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_64 exists = var:nick_SanGong_Shihao_han_pin_2_64 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_64 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#凯
+        name = HuangDi_miaoshi.011.bl
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_65 exists = var:nick_SanGong_Shihao_han_pin_2_65 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_65 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#清
+        name = HuangDi_miaoshi.011.bm
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_66 exists = var:nick_SanGong_Shihao_han_pin_2_66 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_66 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#直
+        name = HuangDi_miaoshi.011.bn
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_67 exists = var:nick_SanGong_Shihao_han_pin_2_67 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_67 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#钦
+        name = HuangDi_miaoshi.011.bo
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_68 exists = var:nick_SanGong_Shihao_han_pin_2_68 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_68 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#益
+        name = HuangDi_miaoshi.011.bp
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_69 exists = var:nick_SanGong_Shihao_han_pin_2_69 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_69 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#良
+        name = HuangDi_miaoshi.011.bq
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_70 exists = var:nick_SanGong_Shihao_han_pin_2_70 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_70 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#度
+        name = HuangDi_miaoshi.011.br
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_71 exists = var:nick_SanGong_Shihao_han_pin_2_71 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_71 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#类
+        name = HuangDi_miaoshi.011.bs
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_72 exists = var:nick_SanGong_Shihao_han_pin_2_72 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_72 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#基
+        name = HuangDi_miaoshi.011.bt
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_73 exists = var:nick_SanGong_Shihao_han_pin_2_73 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_73 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#慈
+        name = HuangDi_miaoshi.011.bu
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_74 exists = var:nick_SanGong_Shihao_han_pin_2_74 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_74 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#鼎
+        name = HuangDi_miaoshi.011.bv
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_75 exists = var:nick_SanGong_Shihao_han_pin_2_75 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_75 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#齐
+        name = HuangDi_miaoshi.011.bw
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_76 exists = var:nick_SanGong_Shihao_han_pin_2_76 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_76 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#深
+        name = HuangDi_miaoshi.011.bx
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_77 exists = var:nick_SanGong_Shihao_han_pin_2_77 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_77 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#温
+        name = HuangDi_miaoshi.011.by
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_78 exists = var:nick_SanGong_Shihao_han_pin_2_78 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_78 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#让
+        name = HuangDi_miaoshi.011.bz
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_79 exists = var:nick_SanGong_Shihao_han_pin_2_79 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_79 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#宻
+        name = HuangDi_miaoshi.011.ca
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_80 exists = var:nick_SanGong_Shihao_han_pin_2_80 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_80 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#莫
+        name = HuangDi_miaoshi.011.cb
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_81 exists = var:nick_SanGong_Shihao_han_pin_2_81 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_81 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#介
+        name = HuangDi_miaoshi.011.cc
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_82 exists = var:nick_SanGong_Shihao_han_pin_2_82 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_82 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#厚
+        name = HuangDi_miaoshi.011.cd
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_83 exists = var:nick_SanGong_Shihao_han_pin_2_83 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_83 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#敌
+        name = HuangDi_miaoshi.011.ce
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_84 exists = var:nick_SanGong_Shihao_han_pin_2_84 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_84 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#素
+        name = HuangDi_miaoshi.011.cf
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_85 exists = var:nick_SanGong_Shihao_han_pin_2_85 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_85 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#勤
+        name = HuangDi_miaoshi.011.cg
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_86 exists = var:nick_SanGong_Shihao_han_pin_2_86 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_86 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#谦
+        name = HuangDi_miaoshi.011.ch
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_87 exists = var:nick_SanGong_Shihao_han_pin_2_87 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_87 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#友
+        name = HuangDi_miaoshi.011.ci
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_88 exists = var:nick_SanGong_Shihao_han_pin_2_88 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_88 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#震
+        name = HuangDi_miaoshi.011.cj
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_89 exists = var:nick_SanGong_Shihao_han_pin_2_89 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_89 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#祁
+        name = HuangDi_miaoshi.011.ck
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_90 exists = var:nick_SanGong_Shihao_han_pin_2_90 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_90 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#儆
+        name = HuangDi_miaoshi.011.cl
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_91 exists = var:nick_SanGong_Shihao_han_pin_2_91 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_91 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#摄
+        name = HuangDi_miaoshi.011.cm
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_92 exists = var:nick_SanGong_Shihao_han_pin_2_92 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_92 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#淑
+        name = HuangDi_miaoshi.011.cn
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_93 exists = var:nick_SanGong_Shihao_han_pin_2_93 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_93 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#革
+        name = HuangDi_miaoshi.011.co
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_94 exists = var:nick_SanGong_Shihao_han_pin_2_94 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_94 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#绍
+        name = HuangDi_miaoshi.011.cp
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_95 exists = var:nick_SanGong_Shihao_han_pin_2_95 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_95 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#正
+        name = HuangDi_miaoshi.011.cq
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_96 exists = var:nick_SanGong_Shihao_han_pin_2_96 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_96 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#勇
+        name = HuangDi_miaoshi.011.cr
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_97 exists = var:nick_SanGong_Shihao_han_pin_2_97 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_97 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#强
+        name = HuangDi_miaoshi.011.cs
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_98 exists = var:nick_SanGong_Shihao_han_pin_2_98 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_98 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#毅
+        name = HuangDi_miaoshi.011.ct
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_99 exists = var:nick_SanGong_Shihao_han_pin_2_99 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_99 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#刚
+        name = HuangDi_miaoshi.011.cu
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_100 exists = var:nick_SanGong_Shihao_han_pin_2_100 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_100 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#克
+        name = HuangDi_miaoshi.011.cv
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_101 exists = var:nick_SanGong_Shihao_han_pin_2_101 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_101 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#壮
+        name = HuangDi_miaoshi.011.cw
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_102 exists = var:nick_SanGong_Shihao_han_pin_2_102 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_102 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#果
+        name = HuangDi_miaoshi.011.cx
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_103 exists = var:nick_SanGong_Shihao_han_pin_2_103 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_103 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#圉
+        name = HuangDi_miaoshi.011.cy
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_104 exists = var:nick_SanGong_Shihao_han_pin_2_104 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_104 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#魏
+        name = HuangDi_miaoshi.011.cz
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_105 exists = var:nick_SanGong_Shihao_han_pin_2_105 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_105 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#节
+        name = HuangDi_miaoshi.011.da
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_106 exists = var:nick_SanGong_Shihao_han_pin_2_106 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_106 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#白
+        name = HuangDi_miaoshi.011.db
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_107 exists = var:nick_SanGong_Shihao_han_pin_2_107 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_107 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#匡
+        name = HuangDi_miaoshi.011.dc
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_108 exists = var:nick_SanGong_Shihao_han_pin_2_108 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_108 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#顺
+        name = HuangDi_miaoshi.011.dd
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_109 exists = var:nick_SanGong_Shihao_han_pin_2_109 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_109 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#商
+        name = HuangDi_miaoshi.011.de
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_110 exists = var:nick_SanGong_Shihao_han_pin_2_110 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_110 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#原
+        name = HuangDi_miaoshi.011.df
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_111 exists = var:nick_SanGong_Shihao_han_pin_2_111 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_111 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#夷
+        name = HuangDi_miaoshi.011.dg
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_112 exists = var:nick_SanGong_Shihao_han_pin_2_112 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_112 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#思
+        name = HuangDi_miaoshi.011.dh
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_113 exists = var:nick_SanGong_Shihao_han_pin_2_113 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_113 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#考
+        name = HuangDi_miaoshi.011.di
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_114 exists = var:nick_SanGong_Shihao_han_pin_2_114 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_114 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#胡
+        name = HuangDi_miaoshi.011.dj
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_115 exists = var:nick_SanGong_Shihao_han_pin_2_115 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_115 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#暠
+        name = HuangDi_miaoshi.011.dk
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_116 exists = var:nick_SanGong_Shihao_han_pin_2_116 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_116 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#使
+        name = HuangDi_miaoshi.011.dl
+        trigger = { NOT = { dynasty ?= { OR = { exists = var:nick_SanGong_Shihao_han_pin_1_117 exists = var:nick_SanGong_Shihao_han_pin_2_117 } } } }
+        hidden_effect = { scope:XianDi = { Tianzi_ShiHao_Han_effect = { ShiHao = nick_SanGong_Shihao_han_pin_1_117 } } }
+        ai_chance = { base = 0 }
+    }
+}
+
+HuangDi_miaoshi.012 = { # 谥号确定(单字)
+    type = character_event
+    title = HuangDi_miaoshi_012_t
+    desc = HuangDi_miaoshi_012_d
+    theme = wanderer_journey_focus    
+    #window = clear_event_window_v2
+    override_background = bp1_indian_corridor_day
+    override_effect_2d = { reference = legend_glow }
+    right_portrait = {
+        character = scope:XianDi
+        animation = dead
+        camera = camera_center_large
+    }
+
+    option = { 
+        name = HuangDi_miaoshi.012.a
+        hidden_effect = { 
+            scope:XianDi = { 
+                give_nickname = nick_SanGong_Shihao_han_pin_2_00
+            }
+        }
+        custom_tooltip = HuangDi_miaoshi.012.a_tt
+        ai_chance = { base = 0 }
+    }
+
+    option = { 
+        name = HuangDi_miaoshi.012.b
+        trigger_event = HuangDi_miaoshi.013
+        ai_chance = { base = 100 }
+    }
+}
+
+HuangDi_miaoshi.081 = { #皇帝谥号-平谥
+    type = character_event
+    title = HuangDi_miaoshi.081_t
+    desc = HuangDi_miaoshi.081_d
+    theme = death
+    override_background = bedchamber
+    right_portrait = {
+        character = scope:XianDi
+        animation = dead
+        camera = camera_center_large
+    }
+    immediate = {
+        if = {
+            limit = {
+                scope:XianDi = {
+                    NOT = { 
+                        has_trait = SanGong_WangGuoJunZhu 
+                        has_trait = SanGong_ErWangSanKe
+                    }
+                }
+            }
+            hidden_effect = {
+                create_character_GuoHao_GongJuRen_effect = yes
+                scope:XianDi = { remove_nickname = yes give_nickname = Tianzi_guohao_han }
+            } 
+        }
+    }
+    option = {
+        name = HuangDi_miaoshi.081.a
+        trigger = { NOT = { dynasty ?= { exists = var:nick_SanGong_Shihao_han_pin_2_118 } } } 
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_han_pin_2_118 } } 
+    }
+    option = {
+        name = HuangDi_miaoshi.081.b
+        trigger = { NOT = { dynasty ?= { exists = var:nick_SanGong_Shihao_han_pin_2_119 } } } 
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_han_pin_2_119 } } 
+    }
+    option = {
+        name = HuangDi_miaoshi.081.c
+        trigger = { NOT = { dynasty ?= { exists = var:nick_SanGong_Shihao_han_pin_2_120 } } } 
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_han_pin_2_120 } } 
+    }
+    option = {
+        name = HuangDi_miaoshi.081.d
+        trigger = { NOT = { dynasty ?= { exists = var:nick_SanGong_Shihao_han_pin_2_121 } } } 
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_han_pin_2_121 } } 
+    }
+    option = {
+        name = HuangDi_miaoshi.081.e
+        trigger = { NOT = { dynasty ?= { exists = var:nick_SanGong_Shihao_han_pin_2_122 } } } 
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_han_pin_2_122 } } 
+    }
+    option = {
+        name = HuangDi_miaoshi.081.f
+        trigger = { NOT = { dynasty ?= { exists = var:nick_SanGong_Shihao_han_pin_2_123 } } } 
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_han_pin_2_123 } } 
+    }
+    option = {
+        name = HuangDi_miaoshi.081.g
+        trigger = { NOT = { dynasty ?= { exists = var:nick_SanGong_Shihao_han_pin_2_124 } } } 
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_han_pin_2_124 } } 
+    }
+    option = {
+        name = HuangDi_miaoshi.081.h
+        trigger = { NOT = { dynasty ?= { exists = var:nick_SanGong_Shihao_han_pin_2_125 } } } 
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_han_pin_2_125 } } 
+    }
+    option = {
+        name = HuangDi_miaoshi.081.i
+        trigger = { NOT = { dynasty ?= { exists = var:nick_SanGong_Shihao_han_pin_2_126 } } } 
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_han_pin_2_126 } } 
+    }
+    option = {
+        name = HuangDi_miaoshi.081.j
+        trigger = { NOT = { dynasty ?= { exists = var:nick_SanGong_Shihao_han_pin_2_127 } } } 
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_han_pin_2_127 } } 
+    }
+    option = {
+        name = HuangDi_miaoshi.081.k
+        trigger = { NOT = { dynasty ?= { exists = var:nick_SanGong_Shihao_han_pin_2_128 } } } 
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_han_pin_2_128 } } 
+    }
+    option = {
+        name = HuangDi_miaoshi.081.l
+        trigger = { NOT = { dynasty ?= { exists = var:nick_SanGong_Shihao_han_pin_2_129 } } } 
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_han_pin_2_129 } } 
+    }
+    option = {
+        name = HuangDi_miaoshi.081.m
+        trigger = { NOT = { dynasty ?= { exists = var:nick_SanGong_Shihao_han_pin_2_130 } } } 
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_han_pin_2_130 } } 
+    }
+    option = {
+        name = HuangDi_miaoshi.081.n
+        trigger = { NOT = { dynasty ?= { exists = var:nick_SanGong_Shihao_han_pin_2_131 } } } 
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_han_pin_2_131 } } 
+    }
+    option = {
+        name = HuangDi_miaoshi.081.o
+        trigger = { NOT = { dynasty ?= { exists = var:nick_SanGong_Shihao_han_pin_2_132 } } } 
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_han_pin_2_132 } } 
+    }
+    option = {
+        name = HuangDi_miaoshi.081.p
+        trigger = { NOT = { dynasty ?= { exists = var:nick_SanGong_Shihao_han_pin_2_133 } } } 
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_han_pin_2_133 } } 
+    }
+}
+
+HuangDi_miaoshi.082 = { #皇帝谥号-恶谥
+    type = character_event
+    title = HuangDi_miaoshi.082_t
+    desc = HuangDi_miaoshi.082_d
+    window = SanGong_CeFeng_event_window
+    theme = death
+    override_background = bedchamber
+    right_portrait = {
+        character = scope:XianDi
+        animation = dead
+        camera = camera_center_large
+    }
+    option = {
+        name = HuangDi_miaoshi.001.e1
+        trigger_event = HuangDi_miaoshi.007
+    }
+    option = {
+        name = HuangDi_miaoshi.082.a
+        trigger = { NOT = { dynasty = { exists = var:nick_SanGong_Shihao_eshi_1 } } }
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_eshi_1 } }
+    }
+    option = {
+        name = HuangDi_miaoshi.082.b
+        trigger = { NOT = { dynasty = { exists = var:nick_SanGong_Shihao_eshi_2 } } }
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_eshi_2 } }
+    }
+    option = {
+        name = HuangDi_miaoshi.082.c
+        trigger = { NOT = { dynasty = { exists = var:nick_SanGong_Shihao_eshi_3 } } }
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_eshi_3 } }
+    }
+    option = {
+        name = HuangDi_miaoshi.082.d
+        trigger = { NOT = { dynasty = { exists = var:nick_SanGong_Shihao_eshi_4 } } }
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_eshi_4 } }
+    }
+    option = {
+        name = HuangDi_miaoshi.082.e
+        trigger = { NOT = { dynasty = { exists = var:nick_SanGong_Shihao_eshi_5 } } }
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_eshi_5 } }
+    }
+    option = {
+        name = HuangDi_miaoshi.082.f
+        trigger = { NOT = { dynasty = { exists = var:nick_SanGong_Shihao_eshi_6 } } }
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_eshi_6 } }
+    }
+    option = {
+        name = HuangDi_miaoshi.082.g
+        trigger = { NOT = { dynasty = { exists = var:nick_SanGong_Shihao_eshi_7 } } }
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_eshi_7 } }
+    }
+    option = {
+        name = HuangDi_miaoshi.082.h
+        trigger = { NOT = { dynasty = { exists = var:nick_SanGong_Shihao_eshi_8 } } }
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_eshi_8 } }
+    }
+    option = {
+        name = HuangDi_miaoshi.082.i
+        trigger = { NOT = { dynasty = { exists = var:nick_SanGong_Shihao_eshi_9 } } }
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_eshi_9 } }
+    }
+    option = {
+        name = HuangDi_miaoshi.082.j
+        trigger = { NOT = { dynasty = { exists = var:nick_SanGong_Shihao_eshi_10 } } }
+        scope:XianDi = { Tianzi_ShiHao_PingShi_effect = { ShiHao = nick_SanGong_Shihao_eshi_10 } }
+    }
+}
+
+
+
+
+HuangDi_miaoshi.092 = { #谥号自定义
+    type = character_event
+    title = HouGong_ShiHao.021_title
+    desc = HouGong_ShiHao.021_desc
+    theme = daeth    
+    override_background = bp1_indian_corridor_day
+    override_effect_2d = { reference = legend_glow }
+    right_portrait = {
+        character = scope:XianDi
+        animation = dead
+        camera = camera_center_large
+    }
+    widget = {
+        gui = "event_window_widget_enter_SanGong_custom"
+        container = "dynamic_birth_name"
+        controller = {
+            type = text
+            data = {
+                key = Tianzi_miaoshi_zdy_text
+                default = { localization_key = SanGong_Zdy_WangHao_text }
+            }
+        }
+        setup_scope = { root = { save_scope_as = text_target } }
+    }
+    option = { 
+        name = HuangDi_miaoshi.092.a
+        hidden_effect = {
+            scope:XianDi = {
+                give_nickname = Tianzi_miaoshi_zdy
+            }
+        } 
+    }
+}
+

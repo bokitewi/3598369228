@@ -1,0 +1,39 @@
+﻿DM_Chixu = {
+    text = {
+        trigger = {
+            NOT = { exists = var:child_rank }
+        }
+        localization_key = DM_Chixu_fallback
+    } 
+    text = {
+        trigger = {
+            var:child_rank = 1
+            has_trait = child_of_concubine
+        }
+        localization_key = DM_Chixu_bo_1
+    } 
+    text = {
+        trigger = {
+            var:child_rank = 1
+        }
+        localization_key = DM_Chixu_bo
+    } 
+    text = {
+        trigger = {
+            var:child_rank = 2
+        }
+        localization_key = DM_Chixu_zhong
+    }
+    text = {
+        trigger = {
+            var:child_rank = 3
+        }
+        localization_key = DM_Chixu_shu
+    }
+    text = {
+        trigger = {
+            var:child_rank >= 4
+        }
+        localization_key = DM_Chixu_ji
+    }
+}

@@ -1,0 +1,469 @@
+
+藩王故事测试 = {
+	picture = { reference = "gfx/interface/illustrations/decisions/tgp_kowtow.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ShouYang_decision_desc
+    should_create_alert = { always = no }
+    is_shown = {  
+            is_ai = yes
+	}
+	is_valid = { 
+        #is_at_war = no
+	}
+	effect = {
+       # add_trait = conqueror
+        create_story = story_Fanwang
+        random_owned_story = {
+            type = story_Fanwang
+            set_variable = { name = huangdi_character value = root.top_liege }
+            set_variable = { name = fanwang value = root }
+        }
+	}
+    ai_will_do = { base = 0 }
+}
+
+
+
+追封测试 = {#追封先父庙谥
+    picture = { reference = "gfx/interface/illustrations/decisions/tgp_debate.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ZhuiFeng_XianFu_decision_desc
+    should_create_alert = { always = no }
+    sort_order = 6000
+    is_shown = { 
+       # is_ai = yes
+    }
+    is_valid = { 
+        #destroy_character_memory = scope:forgotten_memory  
+    }   	
+    effect = {
+        father = { 
+			save_scope_as = XianDi 
+			remove_MiaoShi_effect = yes 
+			remove_nickname = yes 
+			add_trait = SanGong_ShouCheng
+			#remove_trait = SanGong_ShouCheng
+			#add_trait = SanGong_KaiGuo
+			#add_trait = SanGong_ZhongXing
+		}
+        trigger_event = HuangDi_miaoshi.001
+    }
+    ai_will_do = 0
+    
+}
+
+
+删除记忆 = {#追封先父庙谥
+    picture = { reference = "gfx/interface/illustrations/decisions/tgp_debate.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ZhuiFeng_XianFu_decision_desc
+    should_create_alert = { always = no }
+    sort_order = 6000
+    is_shown = { 
+        is_ai = yes
+    }
+    is_valid = { 
+         
+    }   	
+    effect = {
+        set_global_variable = SanGong_CharGobal
+        random_memory = {
+			#limit = { has_memory_type = failed_child_exam_memory }
+            save_scope_as = new_mem
+
+		}
+        destroy_character_memory = scope:new_mem 
+
+        #destroy_character_memory = scope:had_sex 
+        #destroy_character_memory = scope:failed_child_exam_memory
+    }
+    ai_will_do = 0
+    
+}
+
+
+测试 = { #
+	picture = { reference = "gfx/interface/illustrations/decisions/tgp_kowtow.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ShouYang_decision_desc
+    should_create_alert = { always = no }
+    is_shown = {  
+            is_ai = yes
+	}
+	is_valid = { 
+            is_ai = no
+	}
+	effect = {
+        #create_character_memory = { type = mem_Dengji_jiwei }
+       # ZhuiFengXianDi_effect = yes
+        #trigger_event = SanGong_DianZhang.003
+        #add_trait = SanGong_Juewei_GongJue
+        #add_trait = SanGong_Juewei_HouJue
+        #add_trait = SanGong_Juewei_BoJue
+        #add_trait = SanGong_Juewei_ZiJue
+        #remove_trait = lifestyle_bureaucrat
+        #add_trait = official_seniority
+        #random_JinGong_artifact_effect = yes
+        #CeHou_artifact_effect = yes
+        #Dengji_artifact_effect = yes
+        #add_trait = conqueror
+        #create_battle_won_memory_effect = { BATTLT_MEMORY = battle_won_memory_3000_side_commander }
+        scope:newly_created_artifact = {
+            #destroy_artifact = this
+        }
+        every_character_artifact = {
+            limit = {                    
+                OR = {
+                    #can_reforge = no
+                    #this = scope:newly_created_artifact
+                    #has_artifact_modifier = artifact_placeholder_modifier
+                    artifact_type = journal
+                    artifact_type = book
+                   # visuals = scroll
+                   # artifact_type = miscellaneous
+                    #artifact_type = book
+                    #artifact_slot_type = journal
+                    #artifact_slot_type = book
+                    #artifact_slot_type = book
+                    #has_artifact_feature = elixir_immortality
+                    #has_artifact_feature = elixir_youth  # 拥有青春特性
+                    #has_variable = TianZiLiuMian 
+                    has_variable = SanGong_Shici  
+                    #has_variable = TianZiMianfu 
+                    #has_variable = TianZiJian 
+                }
+            }
+            destroy_artifact = this
+        }
+	}
+	ai_check_interval_by_tier = {
+        barony = 0
+        county = 0
+        duchy = 0
+        kingdom = 10
+        empire = 20
+        hegemony = 30
+    }
+    ai_potential = {  }
+    ai_will_do = { base = 0 }
+}			
+
+
+庙谥侧室 = { #
+	picture = { reference = "gfx/interface/illustrations/decisions/tgp_kowtow.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ShouYang_decision_desc
+    should_create_alert = { always = no }
+    is_shown = {  
+            is_ai = yes
+	}
+	is_valid = { 
+            is_ai = no
+	}
+	effect = {
+        give_nickname = nick_SanGong_Shihao_liaojin_42
+        save_scope_as = HuangDi
+        father = {
+            save_scope_as = XianDi
+            remove_trait = SanGong_KaiGuo
+            remove_trait = SanGong_ZhongXing
+            remove_trait = SanGong_XiongZhu
+            remove_trait = SanGong_HunJun
+            remove_trait = SanGong_ShouCheng
+            remove_nickname = yes
+            remove_MiaoShi_effect = yes
+            #add_trait = SanGong_KaiGuo
+            #add_trait = SanGong_ZhongXing 
+            #add_trait = SanGong_XiongZhu
+            #add_trait = SanGong_HunJun
+            add_trait = SanGong_ShouCheng
+        }
+        trigger_event = HuangDi_miaoshi.082
+	}
+    ai_will_do = { base = 0 }
+}			
+
+篡位测试 = { #
+	picture = { reference = "gfx/interface/illustrations/decisions/tgp_kowtow.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ShouYang_decision_desc
+    should_create_alert = { always = no }
+    is_shown = {  
+            is_ai = yes
+	}
+	is_valid = { 
+            is_ai = no
+	}
+	effect = {
+        clear_variable_list = QianChaoHuangDi_list	
+        clear_variable_list = QianChaoPinFei_list	
+        clear_variable_list = QianChaoZongShi_list	
+            top_liege = {
+                root = {
+                    add_to_variable_list = {	
+                        name = QianChaoHuangDi_list
+                        target = prev
+                    }
+                }
+                every_consort = {
+                    root = {
+                        add_to_variable_list = {	
+                            name = QianChaoPinFei_list
+                            target = prev
+                        }
+                    }
+                }
+                every_close_family_member = {
+					limit = {
+                        dynasty = top_liege.dynasty
+						is_landed = no
+					}
+					root = {
+                        add_to_variable_list = {	
+                            name = QianChaoZongShi_list
+                            target = prev
+                        }
+                    }
+                }
+            }
+            close_all_views = yes
+            set_global_variable = SanGong_CuanWei_Gobal
+            set_global_variable = SanGong_CuanWei_main_1
+	}
+    ai_will_do = { base = 0 }
+}	
+
+二王三恪 = { #
+	picture = { reference = "gfx/interface/illustrations/decisions/tgp_kowtow.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ShouYang_decision_desc
+    should_create_alert = { always = no }
+    is_shown = {  
+            is_ai = yes
+	}
+	is_valid = { 
+            is_ai = no
+	}
+	effect = {
+        save_scope_as = XianDi
+        add_trait = SanGong_WangGuoJunZhu
+        add_trait = SanGong_ErWangSanKe
+        trigger_event = SanGong_CeFeng.090  
+
+	}
+    ai_will_do = { base = 0 }
+}
+
+自定义继承 = { #
+	picture = { reference = "gfx/interface/illustrations/decisions/tgp_kowtow.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ShouYang_decision_desc
+    should_create_alert = { always = no }
+    is_shown = {  
+            is_ai = yes
+	}
+	is_valid = { 
+            is_ai = no
+	}
+	effect = {
+        show_as_tooltip =sdasd
+        #close_all_views = yes
+        #take_hostage = top_liege
+        save_scope_as = old_holder
+        every_child = {
+            QianChaOHuangShi_effect = yes
+        } 
+
+	}
+    ai_will_do = { base = 0 }
+}
+
+选秀后宫 = { #
+	picture = { reference = "gfx/interface/illustrations/decisions/tgp_kowtow.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ShouYang_decision_desc
+    should_create_alert = { always = no }
+    is_shown = {  
+        is_ai = yes
+	}
+	is_valid = { 
+        is_ai = no
+	}
+	effect = {
+         trigger_event = SanGong_GongTing_event.005
+        trigger_event = SanGong_GongTing_event.006
+
+	}
+    ai_will_do = { base = 0 }
+}
+
+##设置角色所在省份（可强制锁定）
+#set_location - Moves the character to a specific location.
+#Usage: set_location = province | set_location = { location = province stick_to_location = yes/no }
+#Supported Scopes: character
+
+## 为文化附加姓名库
+#add_name_list - Adds the name list to the culture
+#<culture> = { add_name_list = name }
+#Supported Scopes: culture
+       #primary_title ?= {
+       #    every_past_holder_reversed = { # Add trait to past holders that were LPs
+       #        limit = {
+       #            is_alive = no
+       #        }
+       #        add_trait = loyal
+       #    }
+       #}
+
+
+退位测试 = { #
+	picture = { reference = "gfx/interface/illustrations/decisions/tgp_kowtow.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ShouYang_decision_desc
+    should_create_alert = { always = no }
+    is_shown = {  
+            is_ai = yes
+	}
+	is_valid = { 
+            is_ai = no
+	}
+	effect = {
+        HuangDi_GaiGuanDingLun_effect = yes
+        HuangDi_TuiWei_effect = yes
+	}
+    ai_will_do = { base = 0 }
+}
+
+传奇测试 = { #
+	picture = { reference = "gfx/interface/illustrations/decisions/tgp_kowtow.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ShouYang_decision_desc
+    should_create_alert = { always = no }
+    is_shown = {  
+        is_ai = yes
+	}
+	is_valid = { 
+        exists = global_var:orient_empires_loaded
+	}
+	effect = {
+        OE_add_miaohao_effect = yes
+       # father = { add_trait = SanGong_KaiGuo }
+        random_ancestor = {
+            even_if_dead = yes
+            limit = {
+                has_trait = SanGong_KaiGuo
+            }
+            #add_trait = loyal
+            save_scope_as = xianzu
+        }
+        set_variable = {
+            name = xianzu
+            value = scope:xianzu
+        }
+	}
+    ai_will_do = { base = 0 }
+}
+
+
+书籍测试 = { #
+	picture = { reference = "gfx/interface/illustrations/decisions/tgp_kowtow.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ShouYang_decision_desc
+    should_create_alert = { always = no }
+    is_shown = {  
+            is_ai = yes
+	}
+	is_valid = { 
+
+	}
+	effect = {
+        every_character_artifact = {
+            limit = {                    
+                OR = {
+                    artifact_type = journal
+                    artifact_type = book
+                    artifact_type = chronicle
+                }
+            }
+            destroy_artifact = this
+        }
+	}
+    ai_will_do = { base = 0 }
+}			
+
+仙药测试 = {
+	picture = { reference = "gfx/interface/illustrations/decisions/tgp_kowtow.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_ShouYang_decision_desc
+    should_create_alert = { always = no }
+    is_shown = {  
+            is_ai = yes
+	}
+	is_valid = { 
+
+	}
+	effect = {
+        every_character_artifact = {
+            limit = {                    
+                OR = {
+                    has_artifact_feature = elixir_immortality
+                    has_artifact_feature = elixir_youth  # 拥有青春特性
+                }
+            }
+            destroy_artifact = this
+        }
+	}
+    ai_will_do = { base = 0 }
+}
+
+
+
+
+SanGong_read_book_decision = {#读书
+	picture = { reference = "gfx/interface/illustrations/decisions/tgp_kowtow.dds" }
+    decision_group_type = SanGongLiuYuan
+    desc = SanGong_read_book_decision_desc
+    should_create_alert = { always = no }
+    cooldown = { years = 5 }
+    is_shown = {  
+        is_ai = yes
+        has_tgp_dlc_trigger = yes
+		government_allows = merit
+		is_playable_character = yes
+	}
+	is_valid = { 
+        is_ai = no
+        SanGong_has_readable_book_trigger = yes
+        #knows_language = language_chinese
+		custom_tooltip = {
+			text = tgp_china_study_confucian_classics_decision_req_tt
+			NOT = {
+				any_scheme = {
+					type = study_confucian_classics
+				}
+			}
+		}
+	}
+	effect = {
+        start_scheme = {
+            type = dushuxuexi
+            target_character = root
+        }
+        close_view = { view = decisions player = root }
+        random_scheme = {
+            type = dushuxuexi
+            save_scope_as = scheme
+        }
+        save_scope_as = owner
+        trigger_event = SanGong_readIng_book.001
+	}
+    ai_check_interval = 6
+
+	ai_potential = {
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+

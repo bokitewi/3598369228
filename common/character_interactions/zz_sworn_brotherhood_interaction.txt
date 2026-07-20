@@ -1,0 +1,184 @@
+﻿sworn_brotherhood_interaction = {
+    category = interaction_category_diplomacy
+    icon = blood_brother
+    desc = sworn_brotherhood_interaction_desc
+    common_interaction = yes
+    interface_priority = 55
+
+    greeting = positive
+    popup_on_receive = yes
+
+    cooldown = { years = 8 }
+    cooldown_against_recipient = { years = 15 }
+
+    is_shown = {
+        scope:actor = {
+            is_imprisoned = no
+            is_incapable = no
+            OR = {
+                culture = { has_cultural_pillar = heritage_chinese }
+                culture = { has_cultural_pillar = heritage_japonic }
+                culture = { has_cultural_pillar = heritage_viet }
+                culture = { has_cultural_pillar = heritage_korean }
+                has_relation_friend = scope:recipient
+            }
+        }
+        scope:recipient = {
+            is_imprisoned = no
+            is_incapable = no
+            NOT = { has_character_modifier = recently_became_friends }
+            NOT = { this = scope:actor }
+            OR = {
+                culture = { has_cultural_pillar = heritage_chinese }
+                culture = { has_cultural_pillar = heritage_japonic }
+                culture = { has_cultural_pillar = heritage_viet }
+                culture = { has_cultural_pillar = heritage_korean }
+                has_relation_friend = scope:actor
+            }
+        }
+    }
+
+
+    is_valid_showing_failures_only = {
+        scope:actor = {
+            is_imprisoned = no
+            is_incapable = no
+            NOT = { has_relation_blood_brother = scope:recipient }
+            has_relation_friend = scope:recipient
+            NOT = { has_character_modifier = recently_became_friends }
+            OR = {
+                stress_level < 2
+                has_trait = brave
+                has_trait = stubborn
+            }
+        }
+        scope:recipient = {
+            is_imprisoned = no
+            is_incapable = no
+            NOT = { has_relation_blood_brother = scope:actor }
+            has_relation_friend = scope:actor
+            NOT = { has_character_modifier = recently_became_friends }
+        }
+        NOT = { scope:actor = { is_close_family_of = scope:recipient } }
+    }
+
+    cost = {
+        prestige = 150
+        gold = 25
+        piety = 100
+
+        modifier = {
+            add = 30
+            factor = 1.0
+            scope:actor = {
+                tier_difference = {
+                    target = scope:recipient
+                    value >= 1
+                }
+            }
+            desc = RANK_DIFFERENCE_REASON
+        }
+    }
+
+    on_accept = {
+        scope:actor = {
+            # Create blood brother relation and alliance
+            set_relation_blood_brother = scope:recipient
+            create_alliance = scope:recipient
+            add_prestige = 500
+            add_piety = 250
+
+            # Chance for "just" trait if actor has it
+            if = {
+                limit = {
+                    NOT = { has_trait = just }
+                    scope:actor = { has_trait = just }
+                }
+                random = {
+                    chance = 25
+                    add_trait = just
+                }
+            }
+
+            # Cultural event routing
+            if = {
+                limit = {
+                    OR = {
+                        culture = { has_cultural_pillar = heritage_chinese }
+                        culture = { has_cultural_pillar = heritage_japonic }
+                        culture = { has_cultural_pillar = heritage_viet }
+                        culture = { has_cultural_pillar = heritage_korean }
+                    }
+                }
+                save_scope_as = blood_brother_actor
+                scope:recipient = { save_scope_as = blood_bro }
+                trigger_event = sworn_brotherhood_events.0001
+            }
+            else = {
+                save_scope_as = blood_brother_actor
+                scope:recipient = { save_scope_as = blood_bro }
+                trigger_event = mpo_interactions_events.0006
+            }
+        }
+    }
+
+
+    on_decline = {
+        scope:actor = {
+            add_stress = 25
+            add_opinion = {
+                target = scope:recipient
+                modifier = opinion_betrayed_me
+                years = 5
+            }
+        }
+    }
+
+    ai_frequency = {
+        base = 5
+        modifier = { add = 12 scope:actor = { tier = count } }
+        modifier = { add = 48 scope:actor = { tier = duke } }
+        modifier = { add = 24 scope:actor = { tier = king } }
+        modifier = { add = 6 scope:actor = { tier = emperor } }
+    }
+
+    ai_potential = {
+        is_imprisoned = no
+        NOT = { has_relation_blood_brother = scope:recipient }
+        NOT = { has_character_modifier = recently_became_friends }
+    }
+
+    ai_accept = {
+        base = 3
+        modifier = { add = 25 scope:recipient = { has_trait = loyal } desc = AI_TRAIT_LOYAL }
+        modifier = { add = 20 scope:recipient = { has_trait = just } desc = AI_TRAIT_JUST }
+        modifier = { add = 15 scope:recipient = { has_trait = honest } desc = AI_TRAIT_HONEST }
+        modifier = { add = 15 scope:recipient = { has_trait = brave } desc = AI_TRAIT_BRAVE }
+        modifier = { add = -30 scope:recipient = { has_trait = deceitful } desc = AI_TRAIT_DECEITFUL }
+        modifier = { add = -25 scope:recipient = { has_trait = arbitrary } desc = AI_TRAIT_ARBITRARY }
+        modifier = { add = -20 scope:recipient = { has_trait = ambitious } desc = AI_TRAIT_AMBITIOUS }
+        modifier = { add = -15 scope:recipient = { has_trait = paranoid } desc = AI_TRAIT_PARANOID }
+
+        modifier = {
+            add = 30
+            scope:actor = {
+                OR = {
+                    is_faction_target = yes
+                    at_war = yes
+                    num_children < 1
+                    is_indebted_to = scope:recipient
+                }
+            }
+            desc = AI_STRATEGIC_NEED
+        }
+
+        opinion_modifier = {
+            who = scope:recipient
+            target = scope:actor
+            multiplier = 0.5
+            desc = AI_OPINION_REASON
+        }
+    }
+
+    ai_will_do = { base = 5 }
+}

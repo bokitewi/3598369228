@@ -1,0 +1,130 @@
+﻿l_english:
+ # Interaction & Basic Strings #
+ sworn_brotherhood_interaction:0 "Swear Brotherhood Oath"
+ sworn_brotherhood_interaction_desc:0 "Propose a sacred sworn brotherhood, creating an unbreakable bond like the Peach Garden Oath of legend."
+ SWORN_BROTHERHOOD_NORMAL:0 "Propose sworn brotherhood"
+ opinion_sworn_brotherhood:0 "Sworn Brotherhood"
+ sworn_brotherhood_modifier:0 "Bound by Sacred Oath"
+ broke_sworn_brotherhood_oath:0 "Oath-Breaker"
+ friend_relation_effect_actor:0 "Becomes [recipient.GetTitledFirstName]'s sworn brother"
+ friend_relation_effect_recipient:0 "Becomes your sworn brother"
+ 
+ # AI Traits - Positive (Green)
+ AI_TRAIT_LOYAL:0 "#G Loyal#!"
+ AI_TRAIT_JUST:0 "#G Just#!" 
+ AI_TRAIT_HONEST:0 "#G Honest#!"
+ AI_TRAIT_BRAVE:0 "#G Brave#!"
+
+ # AI Traits - Negative (Red)
+ AI_TRAIT_DECEITFUL:0 "#R Deceitful#!"
+ AI_TRAIT_ARBITRARY:0 "#R Arbitrary#!"
+ AI_TRAIT_AMBITIOUS:0 "#R Ambitious#!"
+ AI_TRAIT_PARANOID:0 "#R Paranoid#!"
+ 
+
+ # Peach Garden Oath Ceremony
+ sworn_brotherhood_events.0001.t:0 "The Peach Garden Oath"
+ 
+ # Dynamic Event Descriptions
+ sworn_brotherhood_events.0001.desc.intro:0 "In a serene peach garden blooming with pink flowers, "
+ sworn_brotherhood_events.0001.desc.outro:0 " The scent of peach blossoms fills the air as we prepare to become sworn brothers, bound by loyalty until death.\n\n'We, though of different families, swear brotherhood before Heaven and Earth, vowing to aid each other in times of trouble, assist each other in times of danger, and share our fortunes together. We seek not to be born on the same day, but to die together on the same day. May Heaven and Earth bear witness to our sincerity!'"
+ sworn_brotherhood_events.0001.desc.just:0 "two noble souls committed to righteousness stand before Heaven and Earth. Our shared dedication to justice and honor brings us together in this sacred bond."
+ sworn_brotherhood_events.0001.desc.brave:0 "two courageous warriors stand before Heaven and Earth. Our shared valor and martial prowess forge this unbreakable bond on the field of honor."
+ sworn_brotherhood_events.0001.desc.loyal:0 "two steadfast companions stand before Heaven and Earth. Our unwavering loyalty and trust in one another form the foundation of this eternal brotherhood."
+ sworn_brotherhood_events.0001.desc.ambitious:0 "two visionary leaders stand before Heaven and Earth. Our shared dreams and grand ambitions unite us in this powerful alliance."
+ sworn_brotherhood_events.0001.desc.generic:0 "we stand before Heaven and Earth to swear an oath of brotherhood."
+ 
+ # Oath Options
+ sworn_brotherhood_events.0001.a:0 "Swear with Righteousness"
+ sworn_brotherhood_events.0001.b:0 "Swear with Loyalty"
+ sworn_brotherhood_events.0001.c:0 "Swear with Ferocity"
+ sworn_brotherhood_events.0001.d:0 "Swear Simple Brotherhood"
+ 
+ # Oath Tooltips
+ sworn_brotherhood_righteous_path_tt:0 "By swearing with righteousness, we gain additional honor and a chance to become more Just. This path honors Liu Bei's legacy."
+ sworn_brotherhood_loyalty_path_tt:0 "By swearing with loyalty, we gain military prowess and dedication to our oath. This path honors Guan Yu's unwavering loyalty."
+ sworn_brotherhood_ferocity_path_tt:0 "By swearing with ferocity, we gain combat strength and fierce determination. This path honors Zhang Fei's martial prowess."
+ sworn_brotherhood_simple_path_tt:0 "Swear a simple but sincere oath of brotherhood, gaining modest ceremonial honors."
+ 
+ # Follow-up Event
+ sworn_brotherhood_events.0002.t:0 "Brotherhood Tested"
+ sworn_brotherhood_events.0002.desc:0 "Months have passed since we swore brotherhood in the peach garden. Our bond has been tested by the trials of the world and emerges stronger for it."
+
+ sworn_brotherhood_events.0002.a:0 "Our bond grows stronger"
+ sworn_brotherhood_events.0002.b:0 "We remain steadfast"
+ sworn_brotherhood_events.0002.c:0 "Our bond has been tested"   
+ sworn_brotherhood_events.0002.d:0 "Humbly refuse additional ceremony"   
+
+ sworn_brotherhood_strengthened_tt:0 "Our sworn brotherhood has been strengthened through shared trials."
+ sworn_brotherhood_tested_tt:0 "The challenges we face only reinforce our commitment to each other."
+ sworn_brotherhood_humble_refusal_tt:0 "We humbly acknowledge our bond needs no further ceremony or reward."
+ 
+ # Modifier Names & Descriptions
+ brotherhood_loyalty_modifier:0 "Bound by Loyalty"
+ brotherhood_loyalty_modifier_desc:0 "The sacred oath has forged an unbreakable bond of loyalty between sworn brothers."
+ 
+ brotherhood_ferocity_modifier:0 "Brotherhood of Ferocity"  
+ brotherhood_ferocity_modifier_desc:0 "The sworn bond has ignited a fierce protective fury for one's blood brother."
+ 
+ tested_brotherhood_modifier:0 "Tested Brotherhood"
+ tested_brotherhood_modifier_desc:0 "Time and trial have proven this sworn brotherhood true and enduring."
+ 
+ brotherhood_ambition_modifier:0 "Bound by Ambitious Oath"
+ brotherhood_ambition_modifier_desc:0 "Having sworn an oath of ambition with a blood brother, united in pursuit of great achievements."
+ 
+ # Oath Breaking Penalties
+ oath_breaker_modifier:0 "Oath-Breaker"
+ oath_breaker_modifier_desc:0 "This character has broken a sacred sworn brotherhood oath, earning them scorn and distrust."
+ 
+ dishonorable_modifier:0 "Dishonorable"
+ dishonorable_modifier_desc:0 "This character's betrayal of a sworn brother has marked them as fundamentally dishonorable."
+ 
+ # Oath-Breaking Events
+ sworn_brotherhood_events.0003.t:0 "Brotherhood Betrayed"
+ sworn_brotherhood_events.0003.desc.intro:0 "The sacred bond you shared with [FROM.GetName] has been shattered by betrayal. "
+ sworn_brotherhood_events.0003.desc.just_betrayed:0 "As a just ruler, you believed in the sanctity of your oath. This breach of trust cuts deeper than any blade."
+ sworn_brotherhood_events.0003.desc.wrathful_betrayed:0 "The fire of rage burns within you. How dare [FROM.GetName] spit upon your sworn brotherhood!"
+ sworn_brotherhood_events.0003.desc.cynical_betrayed:0 "You always knew this day would come. In the end, all oaths are but words in the wind."
+ sworn_brotherhood_events.0003.desc.generic_betrayed:0 "The memory of your Peach Garden Oath now tastes like ash. [FROM.GetName] has proven false."
+ sworn_brotherhood_events.0003.desc.outro:0 "How will you respond to this betrayal?"
+ sworn_brotherhood_events.0003.a:0 "Righteous Indignation" 
+ sworn_brotherhood_events.0003.b:0 "Vengeful Wrath"
+ sworn_brotherhood_events.0003.c:0 "Cynical Acceptance"
+ 
+  # Future Betrayer Event
+  sworn_brotherhood_events.0004.t:0 "Oath Broken"
+  sworn_brotherhood_events.0004.desc:0 "You have broken your sacred oath with [FROM.GetName]. The weight of your dishonor settles upon you."
+  sworn_brotherhood_events.0004.a:0 "Regret the Betrayal"
+  sworn_brotherhood_events.0004.b:0 "Embrace the Ambition"
+ 
+ # Opinion Modifiers & Tooltips
+ opinion_broken_oath_justice:0 "Betrayed Our Sacred Oath"
+ opinion_expected_betrayal:0 "Expected Their Treachery"
+ stress_broken_oath_tt:0 "The betrayal of a sworn brother shakes your very soul."
+ stress_vengeful_rage_tt:0 "Righteous fury consumes you, but brings no peace."
+ 
+ # Enhanced Follow-up Event Options
+ sworn_brotherhood_loyalty_strengthened_tt:0 "Our bond of loyalty has been tested and emerged stronger than ever."
+ sworn_brotherhood_ferocity_strengthened_tt:0 "Our fierce brotherhood has proven itself in the crucible of time."
+ sworn_brotherhood_tested_tt:0 "Our brotherhood has stood the test of time and grown stronger for it."
+ sworn_brotherhood_humble_refusal_tt:0 "We humbly acknowledge our bond needs no further ceremony or reward."
+
+ # Modifier Name
+ recently_became_friends: "Recently Became Friends"
+ recently_became_friends_desc: "We have only recently sworn friendship - it is too soon to consider a deeper bond of brotherhood."
+ 
+ # Interaction Tooltips
+ sworn_brotherhood_recent_friends_tt: "Cannot swear brotherhood with someone we have only recently befriended"
+ sworn_brotherhood_established_friendship_tt: "Requires at least one year of established friendship"
+ 
+ # Stress Barrier Tooltips  
+ sworn_brotherhood_stress_barrier_tt: "Too stressed to consider such a deep commitment"
+ sworn_brotherhood_brave_bypass_tt: "Your brave nature allows you to overcome stress for this bond"
+ sworn_brotherhood_stubborn_bypass_tt: "Your stubborn determination lets you push through stress for this oath"
+ 
+ # Opinion Requirements
+ sworn_brotherhood_opinion_75_tt: "Requires at least 75 opinion to consider blood brotherhood"
+ 
+ # Debug/Test Strings (if needed)
+ debug_friendship_formed: "Friendship Formed"
+ debug_friendship_formed_desc: "The friendship tracking system is working correctly."

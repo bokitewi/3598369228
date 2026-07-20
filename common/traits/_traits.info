@@ -1,0 +1,256 @@
+﻿# ==============================================
+# CK3 特质系统 完整中文注释版（合并全文）
+# ==============================================
+
+# == 本地化与图标 Loc/icon ==
+# 默认规则：
+# 名称键：trait_<key>
+# 描述键：trait_<key>_desc
+# 默认图标路径：gfx/interface/icons/traits/<trait>.dds
+# 这些都可以用动态描述覆盖
+
+# 可用参数：
+# name   - 特质名称
+# desc   - 特质描述
+# icon   - 特质图标
+# 根作用域为角色（character）
+# 注意：某些情况下可能没有根作用域，
+# 如果你写动态名称/描述/图标，务必先做兜底判断：
+# NOT = { exists = this }
+
+# 示例：动态图标
+icon = {
+	first_valid = {
+		triggered_desc = {
+			trigger = { NOT = { exists = this } }
+			desc = "gfx/interface/icons/traits/diligent.dds"
+		}
+		
+		triggered_desc = {
+			trigger = { gold > 1000 }
+			desc = "gfx/interface/icons/traits/diligent.dds"
+		}
+		
+		desc = "gfx/interface/icons/traits/deceitful.dds"
+	}
+}
+
+# === 特质属性 Trait Properties ===
+category = X # 特质分类，影响玩法与排序
+# 可用分类：
+#	- personality: 核心性格，角色自动生成
+#	- education: 教育特质，只能有一个，自动生成
+#	- childhood: 童年性格，长大后转为成年性格，只给儿童
+#	- commander: 指挥官战斗特质，按需自动添加
+#	- winter_commander: 冬季区域专属指挥官特质
+#	- lifestyle: 生活方式进度特质
+#	- court_type: 宫廷类型相关特质
+#	- fame: 名望/恶名特质
+#	- health: 健康状况特质
+
+# === 特质生效条件 Trait validation ===
+valid_sex = all/male/female # 可拥有该特质的性别，默认 all
+minimum_age = int # 最小年龄
+maximum_age = int # 最大年龄
+
+potential = { # 赋予该特质必须满足的条件
+	# 触发条件写在这里
+	# 赋予后不会重新检查
+	# 统治者设计器中不生效
+	# 游戏启动时会清除不满足 potential 的特质
+}
+
+# === 特殊标记 Special flags ===
+inheritance_blocker = none/dynasty/all # 是否阻断头衔继承
+claim_inheritance_blocker = none/dynasty/all # 是否阻断宣称继承
+# none：不阻断
+# dynasty：仅同王朝阻断
+# all：全部阻断
+
+add_commander_trait = yes/no # 是否让自动生成角色获得指挥官特质
+incapacitating = yes/no # 是否失能，无法统治，需要摄政
+physical = yes/no # 是否为身体外观相关特质
+disables_combat_leadership = yes/no # 是否禁止担任指挥官
+can_have_children = yes/no # 是否能生育，默认 yes
+
+genetic = yes/no # 是否为遗传特质，与手动继承概率互斥
+# 遗传规则：
+# 特质可以是未激活状态
+# 子女可从父母激活/未激活的特质继承
+# 激活特质 → 100% 继承
+# 未激活 → 50% 继承
+# 父母双方都传 → 激活
+# 只有一方传 → 未激活
+
+good = yes/no # 是否为“正面”遗传特质
+
+inherit_from_real_father = yes/no # 是否从亲生父亲遗传，默认 yes
+inherit_from_real_mother = yes/no # 是否从亲生母亲遗传，默认 yes
+
+enables_inbred = yes/no # 是否允许子女有近亲繁殖特质
+# 只有父母有共同祖先才会触发
+# 如果父母特质没开 enables_inbred，但有近亲关系，
+# 仍有概率随机获得一个带 enables_inbred = yes 的特质
+
+shown_in_encyclopedia = yes/no # 是否显示在百科，默认 yes
+shown_in_ruler_designer = yes/no # 是否显示在统治者设计器，默认 yes
+
+immortal = yes/no # 停止视觉老化，免疫自然死亡，可被脚本杀死
+# 生育能力基于视觉年龄
+# 可用 set_immortal_age 修改视觉年龄
+
+bastard = none/illegitimate/legitimate # 是否为私生子/私生合法化
+
+# === 指挥官地形 ===
+trait_exclusive_if_realm_contains = {}
+# 只有王国包含指定地形时，才会随机给指挥官分配该特质
+
+# === 特质生成概率 ===
+birth = X # 0-100，未遗传情况下，多少比例角色天生拥有
+random_creation = X # 0-100，角色创建时随机获得概率
+# 仅对可遗传/遗传特质有效
+# 所有特质独立判定，若多个触发，随机选一个
+
+random_creation_weight = X # 随机生成权重，默认 1
+# 负数视为 0，0 永远不会被随机选中
+# 权重总和中随机抽取，同分类内权重越高越常见
+# 用于 personality / education / childhood
+# 遗传特质忽略此项
+
+inherit_chance = 50 # 0-100，普通继承概率，遗传特质不能用
+both_parent_has_trait_inherit_chance = 25 # 父母都有时的继承概率，遗传特质不能用
+
+parent_inheritance_sex = male/female/all # 可从哪种性别父母继承
+child_inheritance_sex = male/female/all # 可传给哪种性别子女
+
+# === 肖像外观影响 ===
+genetic_constraint_all = beauty # 全性别遗传外观约束
+genetic_constraint_men = beauty # 男性专属
+genetic_constraint_women = beauty # 女性专属
+
+portrait_extremity_shift = 0.25
+# 获得特质时，所有外观基因向 0 或 1 靠近对应百分比
+
+ugliness_portrait_extremity_shift = 0.75
+# 获得特质时，最极端的外观基因向 0 或 1 靠近对应百分比
+
+# === 特殊好感影响 ===
+same_opinion = 10 # 两人都有该特质时互相好感
+same_opinion_if_same_faith = 10 # 同信仰且同特质好感
+opposite_opinion = 10 # 相反特质互相好感
+
+# 条件触发好感
+triggered_opinion = {
+	opinion_modifier = opinion_modifier_key # 触发的好感修饰符
+	
+	parameter = doctrine_parameter_key # 信仰教义参数
+	check_missing = yes # 检查参数未设置，而非已设置
+	
+	same_faith = yes # 仅同信仰生效
+	same_dynasty = yes # 仅同王朝
+	ignore_opinion_value_if_same_trait = yes # 都有该特质则忽略
+	male_only = yes # 仅持有者为男性时生效
+	female_only = yes # 仅持有者为女性时生效
+}
+
+# === 特质关系 ===
+compatibility = {
+	gluttonous = 20
+	drunkard = @pos_compat_low
+}
+# 不是好感，用于兼容性判定
+# 兼容性 = 该特质持有者 对 拥有其他特质角色 的兼容度
+
+opposites = {
+	# 相反特质列表
+}
+
+# === 分组 ===
+level = integer # 同组内等级
+group = name # 特质组，同时影响继承与等价判定
+group_equivelence = name # 仅用于等价判定
+group_inheritance = name # 仅用于继承判定
+
+# === 杂项 ===
+ruler_designer_cost = int # 统治者设计器花费，默认 0
+
+flag = <name> # 特质标记，可多个，本地化用 TRAIT_FLAG_DESC_name
+
+culture_succession_prio = children_can_be_born_in_the_purple
+# 若传位者文化有该标记，拥有此特质的孩子视为长子/幼子
+# 不影响性别法，只影响年龄排序
+
+# === 等级轨道 Level tracks ===
+# 特质可以升级，靠轨道经验值解锁不同加成
+# 一个特质可有多条轨道，每条轨道独立存经验
+# 轨道名在特质内唯一
+
+tracks = {
+	<track_name> = {
+		20 = {
+			<modifiers>
+		}
+		50 = {
+			<modifiers>
+		}
+		90 = {
+			<modifiers>
+		}
+	}
+
+	<track_name_2> = {
+		30 = {
+			<modifiers>
+		}
+		55 = {
+			<modifiers>
+		}
+	}
+}
+
+# 单轨道简写（轨道名 = 特质名）
+track = {
+	20 = {
+		<modifiers>
+	}
+	40 = {
+		<modifiers>
+	}
+}
+
+# 轨道本地化：
+# trait_track_<key>
+# trait_track_<key>_desc
+
+# 效果：add_trait_xp
+# 触发条件：has_trait_xp
+
+# 每月经验衰减
+monthly_track_xp_degradation = { min = 20 change = 5 }
+# 每月减 5 点，最低不低于 20
+
+# === 修饰符 Modifiers ===
+# 文化参数满足时的修饰符
+culture_modifier = {
+	parameter = can_blind_prisoners
+	diplomacy = 5
+}
+
+# 信仰教义满足时的修饰符
+faith_modifier = {
+	parameter = great_holy_wars_active
+	stewardship = 1
+}
+
+# 其他不认识的属性都会被视为通用修饰符
+# 只要拥有该特质就生效
+
+# === 存档转换 Lookup conversion ===
+# trait_conversion.lookup
+# 旧特质名 → 新特质名 的映射
+# 用于版本更新时存档兼容
+
+# old_trait_indexes.lookup
+# 1.4 之前旧版本特质索引顺序
+# 空值填补空位
+# 做模组兼容 1.3 存档才需要改

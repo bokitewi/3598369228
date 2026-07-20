@@ -1,0 +1,251 @@
+types DM_view
+{
+	type DM_view = widget {
+		name = "DM_view"
+		layoutpolicy_horizontal = expanding
+		size = { -1 220 }
+        background = {
+            texture = "gfx/interface/illustrations/event_scenes/tgp_chinese_corridor_day.dds" 
+            using = Mask_Rough_Edges 
+            alpha = 0.6
+            margin = { -1 -1 } 
+            size = { 400 500 }
+        }
+		using = Animation_ShowHide_Standard
+		flowcontainer = {   
+            parentanchor = bottom|left
+            visible = "[GetVariableSystem.HasValue( 'SanGong_ZongShi_Main', 'Page_1' )]"
+            margin = { 100 0 }
+            portrait_shoulders = {
+                visible = "[Character.IsValid]" 
+                datacontext = "[GetPlayer.GetPlayerHeir]"
+                margin = { 80 80 }
+                text_single = {
+                    parentanchor = top|center
+                    text = "[Character.Custom('DM_view_name')]"
+                    margin_top = -50
+                    fontsize_min = 14
+                    fontsize = 18
+                    default_format = "#difficulty_medium"
+                    align = nobaseline
+                }
+                blockoverride "portrait_size" { size = { 205 235 } }
+                blockoverride "coa" {}   
+                blockoverride "highlight_icon" {}
+                blockoverride "opinion_box" {}  
+                blockoverride "status_icons" {}
+            } 
+        }
+        flowcontainer = {   
+            parentanchor = bottom|center
+            visible = "[GetVariableSystem.HasValue( 'SanGong_ZongShi_Main', 'Page_1' )]"
+            portrait_shoulders = {
+                datacontext = "[GetPlayer]"
+                margin = { 80 80 }
+                size = { 130 220 }
+                blockoverride "portrait_size" {
+                    size = { 205 235 } 
+                }
+                text_single = {
+                    parentanchor = top|center
+                    text = "[Character.Custom('DM_view_name')]"
+                    margin_top = 20
+                    fontsize_min = 14
+                    fontsize = 18
+                    default_format = "#difficulty_medium"
+                    align = nobaseline
+                }
+                blockoverride "coa" {}   
+                blockoverride "highlight_icon" {}
+                blockoverride "opinion_box" {}  
+                blockoverride "status_icons" {}
+            } 
+        }
+		flowcontainer = {   
+            parentanchor = bottom|right
+            visible = "[GetVariableSystem.HasValue( 'SanGong_ZongShi_Main', 'Page_1' )]"
+            margin = { 100 0 }
+            portrait_shoulders = {
+                visible = "[Character.IsValid]" 
+                datacontext = "[GetPlayer.GetPrimarySpouse]"
+                margin = { 80 80 }
+                text_single = {
+                    parentanchor = top|center
+                    text = "[Character.Custom('DM_view_name')]"
+                    margin_top = -50
+                    fontsize_min = 14
+                    fontsize = 18
+                    default_format = "#difficulty_medium"
+                    align = nobaseline
+                }
+                blockoverride "portrait_size" { size = { 205 235 } }
+                blockoverride "coa" {}   
+                blockoverride "highlight_icon" {}
+                blockoverride "opinion_box" {}  
+                blockoverride "status_icons" {}
+            } 
+        }	
+        flowcontainer = {   
+            parentanchor = bottom|left
+            visible = "[GetVariableSystem.HasValue( 'SanGong_ZongShi_Main', 'Page_2' )]"
+            margin = { 100 0 }
+            portrait_shoulders = {
+                visible = "[Character.IsValid]" 
+                datacontext = "[GetPlayer.GetTopLiege.GetPlayerHeir]"
+                margin = { 80 80 }
+                text_single = {
+                    parentanchor = top|center
+                    text = "[Character.Custom('DM_view_name')]"
+                    margin_top = -50
+                    fontsize_min = 14
+                    fontsize = 18
+                    default_format = "#difficulty_medium"
+                    align = nobaseline
+                }
+                blockoverride "portrait_size" { size = { 205 235 } }
+                blockoverride "coa" {}   
+                blockoverride "highlight_icon" {}
+                blockoverride "opinion_box" {}  
+                blockoverride "status_icons" {}
+            } 
+        }
+        flowcontainer = {   
+            parentanchor = bottom|center
+            visible = "[GetVariableSystem.HasValue( 'SanGong_ZongShi_Main', 'Page_2' )]"
+            portrait_shoulders = {
+                datacontext = "[GetPlayer.GetTopLiege]"
+                margin = { 80 80 }
+                size = { 130 220 }
+                blockoverride "portrait_size" {
+                    size = { 205 235 } 
+                }
+                text_single = {
+                    parentanchor = top|center
+                    text = "[Character.Custom('DM_view_name')]"
+                    margin_top = 20
+                    fontsize_min = 14
+                    fontsize = 18
+                    default_format = "#difficulty_medium"
+                    align = nobaseline
+                }
+                blockoverride "coa" {}   
+                blockoverride "highlight_icon" {}
+                blockoverride "opinion_box" {}  
+                blockoverride "status_icons" {}
+            } 
+        }
+		flowcontainer = {   
+            parentanchor = bottom|right
+            visible = "[GetVariableSystem.HasValue( 'SanGong_ZongShi_Main', 'Page_2' )]"
+            margin = { 100 0 }
+            portrait_shoulders = {
+                visible = "[Character.IsValid]" 
+                datacontext = "[GetPlayer.GetTopLiege.GetPrimarySpouse]"
+                margin = { 80 80 }
+                text_single = {
+                    parentanchor = top|center
+                    text = "[Character.Custom('DM_view_name')]"
+                    margin_top = -50
+                    fontsize_min = 14
+                    fontsize = 18
+                    default_format = "#difficulty_medium"
+                    align = nobaseline
+                }
+                blockoverride "portrait_size" { size = { 205 235 } }
+                blockoverride "coa" {}   
+                blockoverride "highlight_icon" {}
+                blockoverride "opinion_box" {}  
+                blockoverride "status_icons" {}
+            } 
+        }
+	}
+}
+
+types DM_dependentRuler_view
+{
+	type DM_dependentRuler_view = widget {
+		name = "DM_dependentRuler_view"
+		layoutpolicy_horizontal = expanding
+		size = { -1 220 }
+        background = {
+            texture = "gfx/interface/illustrations/event_scenes/tgp_chinese_corridor_day.dds" 
+            using = Mask_Rough_Edges 
+            alpha = 0.6
+            margin = { -1 -1 } 
+            size = { 400 500 }
+        }
+		using = Animation_ShowHide_Standard
+		flowcontainer = {   
+            parentanchor = bottom|left
+            margin = { 100 0 }
+            portrait_shoulders = {
+                visible = "[Character.IsValid]" 
+                datacontext = "[GetPlayer.GetTopLiege.GetPlayerHeir]"
+                margin = { 80 80 }
+                text_single = {
+                    parentanchor = top|center
+                    text = "[Character.Custom('DM_view_name')]"
+                    margin_top = -50
+                    fontsize_min = 14
+                    fontsize = 18
+                    default_format = "#difficulty_medium"
+                    align = nobaseline
+                }
+                blockoverride "portrait_size" { size = { 205 235 } }
+                blockoverride "coa" {}   
+                blockoverride "highlight_icon" {}
+                blockoverride "opinion_box" {}  
+                blockoverride "status_icons" {}
+            } 
+        }
+        flowcontainer = {   
+            parentanchor = bottom|center
+            portrait_shoulders = {
+                datacontext = "[GetPlayer.GetTopLiege]"
+                margin = { 80 80 }
+                size = { 130 220 }
+                blockoverride "portrait_size" {
+                    size = { 205 235 } 
+                }
+                text_single = {
+                    parentanchor = top|center
+                    text = "[Character.Custom('DM_view_name')]"
+                    margin_top = 20
+                    fontsize_min = 14
+                    fontsize = 18
+                    default_format = "#difficulty_medium"
+                    align = nobaseline
+                }
+                blockoverride "coa" {}   
+                blockoverride "highlight_icon" {}
+                blockoverride "opinion_box" {}  
+                blockoverride "status_icons" {}
+            } 
+        }
+		flowcontainer = {   
+            parentanchor = bottom|right
+            
+            margin = { 100 0 }
+            portrait_shoulders = {
+                visible = "[Character.IsValid]" 
+                datacontext = "[GetPlayer.GetTopLiege.GetPrimarySpouse]"
+                margin = { 80 80 }
+                text_single = {
+                    parentanchor = top|center
+                    text = "[Character.Custom('DM_view_name')]"
+                    margin_top = -50
+                    fontsize_min = 14
+                    fontsize = 18
+                    default_format = "#difficulty_medium"
+                    align = nobaseline
+                }
+                blockoverride "portrait_size" { size = { 205 235 } }
+                blockoverride "coa" {}   
+                blockoverride "highlight_icon" {}
+                blockoverride "opinion_box" {}  
+                blockoverride "status_icons" {}
+            } 
+        }	
+	}
+}
+

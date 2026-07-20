@@ -1,0 +1,208 @@
+﻿=== Notes ===
+# 注释说明
+# 决议会按照脚本文件中的顺序排序（也取决于文件本身的加载顺序）
+
+# 重要决议会在列表中高亮显示，且默认被视为“关键决议”
+# 当可执行时，重要决议会生成一个行动提示（Action）
+# 玩家可自行设置某个决议类型是否为“重要”
+
+=== Structure ===
+# 决议结构模板
+my_decision = {
+	# 决议标题
+	# 可覆盖默认标题，默认值为决议key本身
+	# 支持动态描述（和事件一样：first_valid 等）
+	# 作用域：角色
+	title = <key> | { ... }
+
+	### 决议显示图片
+	# 决议使用的图片
+	# 若有多个，会选择第一个满足触发条件的图片
+	picture = {
+		### 触发条件（jomini 触发器）
+		# 传入角色作用域，判断是否使用该图
+		# 空触发器默认永远满足，无需写 trigger
+		trigger = { ... }
+
+		### 图片资源路径（字符串）
+		reference = "gfx/interface/illustrations/my/example/illustration.dds"
+
+		### 打开决议时播放的音效
+		# 默认音效："event:/SFX/UI/Generic/Windows/sfx_ui_generic_window_standard_show"
+		soundeffect = "event:/SFX/UI/Generic/Windows/sfx_ui_generic_window_sidebar"
+	}
+
+	# 额外图片（用于斗争决议按钮等）
+	extra_picture = "image_name.dds"
+
+	# 决议分组（可折叠组）
+	# 不写则默认放入 'decisions' 组
+	decision_group_type = <key>
+
+	### 进度条数值
+	# 0-100 的数值，表示统治者距离执行该决议还有多近
+	# 用于统治者目标界面的进度条
+	# root：统治者（角色）
+	progress = <scripted value>
+
+	### 建议系统（给玩家的提示）
+	advice = {
+
+		### 区域
+		# 从指定地理区域中选取目标头衔
+		# 用于生成统治者目标建议
+		region = <geographical region>
+
+		## 每个头衔的提示（逐头衔判断）
+		# 已废弃，未来会迁移到 ruler objective 系统
+		per_title_hint = {
+
+			### 是否有效
+			# 触发器：该建议对当前头衔是否有效
+			is_valid = {
+				debug_only = <yes/no>
+			}
+
+			### 是否正在执行
+			# 玩家是否已在执行该建议
+			# 结果存入 scope:doing
+			is_doing = {
+				always = <yes/no>
+			}
+
+			### 重要性/权重
+			# 该建议的价值，越高越优先显示
+			# 低于 ADVICE_RELEVANCE_LIMIT（默认0）则不显示
+			relevance = <script value>
+
+			### 简短提示（按钮文字）
+			summary = <dynamic desc>
+
+			### 详细描述
+			description = <dynamic desc>
+		}
+	}
+
+	# AI 是否将此决议视为“长期目标”
+	# 若是，AI 会像创建头衔、修建地产一样重视它
+	# 会忽略 ai_check_interval
+	ai_goal = yes/no
+
+	# AI 检查间隔（月）
+	# 必须设置，除非 ai_goal = yes
+	# 0 = AI 永远不检查
+	ai_check_interval = 42
+
+	# 按头衔等级区分的 AI 检查间隔（月）
+	# 替代 ai_check_interval
+	# 必须定义所有等级
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 10
+		duchy = 2
+		kingdom = 1
+		empire = 1
+		hegemony = 1
+	}
+
+	# 排序权重
+	# 数字越大越靠前
+	# 相同则按定义顺序
+	sort_order = integer
+
+	# 选中决议时的悬浮提示
+	# 默认：<key>_tooltip
+	selection_tooltip = <key> | { ... }
+
+	# 决议描述
+	# 默认：<key>_desc
+	desc = <key> | { ... }
+
+	# 确认按钮文字
+	# 默认：<key>_confirm
+	confirm_text = <key> | { ... }
+
+	# 决议是否显示给角色
+	# 默认：always = yes
+	is_shown = { ... }
+
+	# 决议是否可执行（不满足则按钮灰显，并显示原因）
+	is_valid_showing_failures_only = { ... }
+
+	# 决议是否满足执行条件（显示在“要求”列表中）
+	is_valid = { ... }
+
+	# 执行成本
+	cost = {
+		gold = 42        # 金币
+		piety = 42       # 虔诚
+		prestige = 42    # 威望
+	}
+
+	# 最低成本（仅判断是否足够，不实际扣除）
+	# 用于需要玩家后续选择、再扣费的场景
+	minimum_cost = {}
+
+	# 是否需要创建提醒红点
+	should_create_alert = {
+		...
+	}
+
+	# 执行决议时触发的效果
+	effect = { ... }
+
+	# AI 潜在条件（是否纳入考虑）
+	ai_potential = { ... }
+
+	# AI 执行概率（0-100）
+	# 也决定玩家端的默认选项
+	ai_will_do = { ... }
+
+	# 自定义嵌入组件（最多一个）
+	widget = {
+		# 使用的组件名
+		# 文件必须放在 decision_view_widgets 目录下
+		gui = "<widget_name>"
+
+		# 控制器类型（默认：default）
+		controller = "<controller_type>"
+
+		# 是否从窗口打开时就显示选项
+		show_from_start = yes
+
+		# 选项列表（可写多个 item）
+		# 仅在 controller = decision_option_list_controller 时可用
+		item = {
+			value = entry_name           # 效果中使用的标识
+			is_shown = trigger            # 是否显示
+			is_valid = trigger            # 是否可选
+			current_description = desc    # 提示信息
+			localization = loc_key        # 显示文本
+			is_default = bool             # 是否默认选项
+			icon = "icon/file/path.dds"   # 图标
+			flat = no                     # 图标是否单色
+
+			# AI 选择权重（最高分自动选中）
+			ai_chance = score
+		}
+	}
+
+	# 简写格式：自动匹配 gui 为 decision_view_widget_<controller_type>
+	widget = "<controller_type>"
+}
+
+=== Custom Widgets ===
+# 自定义组件
+# 可嵌入到决议窗口中
+# GUI 文件必须放在 decision_view_widgets 路径
+# 文件名必须与组件名一致
+
+# 通常需要配套控制器
+# GUI 中的数据上下文取决于控制器类型
+
+# 可用控制器一览：
+# Controller Type						| Data Context Name				  	| 说明
+# ------------------------------------+-----------------------------------+-----------------------------------------------------------
+# default								| EventWindowWidget				  	| 默认控制器，无特殊行为
+# create_holy_order 					| DecisionViewWidgetCreateHolyOrder  | 显示创建骑士团的自定义界面
+# decision_option_list_controller 		| DecisionViewWidgetOptionList 		| 显示选项列表，用于在effect中根据选择执行不同逻辑

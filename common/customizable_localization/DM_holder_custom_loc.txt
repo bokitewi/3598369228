@@ -1,0 +1,97 @@
+﻿DM_view_name = {
+    text = {#死后显示
+       trigger = { is_alive = no }
+       localization_key = DM_view_name_death
+    } 
+    
+    text = {#统治者显示
+        trigger = {
+            is_ruler = yes
+        }
+        localization_key = DM_view_name_ruler
+    } 
+    text = {#女性显示
+        trigger = {
+            is_female = yes
+        }
+        localization_key = DM_view_name_female
+    } 
+    text = {
+        fallback = yes
+        localization_key = DM_view_name_fallback
+    } 
+}
+
+
+DM_view_name_ruler = {
+    text = {
+        trigger = {#天子
+            primary_title = {
+                is_head_of_faith = yes
+            }
+        }
+        localization_key = DM_view_name_ruler_tianzi
+    }
+    text = {
+        trigger = {#卿
+            highest_held_title_tier = tier_duchy
+        }
+        localization_key = DM_view_name_ruler_qing
+    }
+    text = {
+        trigger = {#士
+            highest_held_title_tier = tier_barony
+        }
+        localization_key = DM_view_name_ruler_shi
+    }
+    text = {
+        fallback = yes
+        localization_key = DM_view_name_ruler_fallback
+    } 
+}
+
+DM_view_name_female = {#女性非统治者显示
+    text = {#已婚女子
+        trigger = {
+            OR = {
+                exists = primary_spouse
+                is_married = yes
+            }
+        }
+        localization_key = DM_view_name_female_married
+    } 
+    text = {#兜底显示
+        fallback = yes
+        localization_key = DM_view_name_female_fallback
+    } 
+}
+
+
+
+
+DM_view_name_death = {#谥号显示
+    text = {
+        trigger = {#周天子
+            primary_title = title:e_zhoutianzi
+        }
+        localization_key = DM_view_name_e_zhoutianzi
+    }
+    
+    text = {
+        trigger = {#诸侯
+            has_any_nickname = yes
+            extis = primary_title
+        }
+        localization_key = DM_view_name_zhuhou_death
+    }
+    text = {#统治者
+        trigger = {
+            extis = primary_title
+        }
+        localization_key = DM_view_name_zhuhou_1_death
+    }
+    text = {#默认
+        fallback = yes
+        localization_key = DM_view_name_death_fallback
+    } 
+}

@@ -1,0 +1,723 @@
+namespace = DM_Shihao
+
+DM_Shihao.010 = { #谥号
+    type = character_event
+    title = DM_Shihao.010_t
+    desc = DM_Shihao.010_d
+    theme = death
+    window = SanGong_shihao_list_event_window
+    override_background = bedchamber
+    right_portrait = {
+    character = scope:XianDi
+    animation = dead
+    camera = camera_center_large
+    }
+    immediate = {
+        DM_Shihao_GuoHao_effect = yes
+    }
+    option = {
+        name = DM_Shihao.010.zdy #自定义
+        trigger = { is_ai = no } 
+        trigger_event = HuangDi_miaoshi.092
+    }
+    option = {#文
+        name = DM_Shihao.010.a
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_01 } } } }
+        hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_01 } } }
+        ai_chance = { base = 10000 }
+    }
+    option = {#武
+        name = DM_Shihao.010.b
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_02 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_02 } } }
+        ai_chance = { base = 10000 }
+    }
+    option = {#大
+        name = DM_Shihao.010.c
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_03 } } } }
+         hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_03 } } }
+        ai_chance = { base = 10000 }
+    }
+    option = {#太
+        name = DM_Shihao.010.d
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_04 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_04 } } }
+        ai_chance = { base = 10000 }
+    }
+    option = {#神
+        name = DM_Shihao.010.e
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_05 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_05 } } }
+        ai_chance = { base = 10000 }
+    }
+    option = {#圣
+        name = DM_Shihao.010.f
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_06 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_06 } } }
+        ai_chance = { base = 10000 }
+    }
+    option = {#高
+        name = DM_Shihao.010.g
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_07 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_07 } } }
+        ai_chance = { base = 10000 }
+    }
+    option = {#光
+        name = DM_Shihao.010.h
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_08 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_08 } } }
+        ai_chance = { base = 10000 }
+    }
+    option = {#孝
+        name = DM_Shihao.010.i
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_09 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_09 } } }
+        ai_chance = { base = 1000 }
+    }
+    option = {#明
+        name = DM_Shihao.010.j
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_10 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_10 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#昭
+        name = DM_Shihao.010.k
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_11 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_11 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#景
+        name = DM_Shihao.010.l
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_12 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_12 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#宣
+        name = DM_Shihao.010.m
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_13 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_13 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#庄
+        name = DM_Shihao.010.n
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_14 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_14 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#臧
+        name = DM_Shihao.010.o
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_15 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_15 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#肃
+        name = DM_Shihao.010.p
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_16 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_16 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#成
+        name = DM_Shihao.010.q
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_17 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_17 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#康
+        name = DM_Shihao.010.r
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_18 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_18 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#献
+        name = DM_Shihao.010.s
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_19 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_19 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#元
+        name = DM_Shihao.010.t
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_20 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_20 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#穆
+        name = DM_Shihao.010.u
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_21 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_21 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#章
+        name = DM_Shihao.010.v
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_22 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_22 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#烈
+        name = DM_Shihao.010.w
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_23 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_23 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#桓
+        name = DM_Shihao.010.x
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_24 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_24 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#威
+        name = DM_Shihao.010.y
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_25 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_25 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#襄
+        name = DM_Shihao.010.z
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_26 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_26 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#和
+        name = DM_Shihao.010.aa
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_27 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_27 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#仁
+        name = DM_Shihao.010.ab
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_28 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_28 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#宪
+        name = DM_Shihao.010.ac
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_29 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_29 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#真
+        name = DM_Shihao.010.ad
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_30 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_30 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#显
+        name = DM_Shihao.010.ae
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_31 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_31 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#智
+        name = DM_Shihao.010.af
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_32 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_32 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#英
+        name = DM_Shihao.010.ag
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_33 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_33 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#睿
+        name = DM_Shihao.010.ah
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_34 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_34 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#惠
+        name = DM_Shihao.010.ai
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_35 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_35 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#理
+        name = DM_Shihao.010.aj
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_36 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_36 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#纯
+        name = DM_Shihao.010.ak
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_37 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_37 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#懿
+        name = DM_Shihao.010.al
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_38 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_38 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#简
+        name = HuangDi_miaoshi.shturl
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_39 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_39 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#平
+        name = DM_Shihao.010.an
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_40 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_40 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#贞
+        name = DM_Shihao.010.ao
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_41 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_41 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#敬
+        name = DM_Shihao.010.ap
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_42 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_42 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#广
+        name = DM_Shihao.010.aq
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_43 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_43 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#敏
+        name = DM_Shihao.010.ar
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_44 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_44 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#安
+        name = DM_Shihao.010.as
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_45 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_45 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#定
+        name = DM_Shihao.010.at
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_46 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_46 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#靖
+        name = DM_Shihao.010.au
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_47 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_47 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#翼
+        name = DM_Shihao.010.av
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_48 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_48 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#贤
+        name = DM_Shihao.010.aw
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_49 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_49 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#恭
+        name = DM_Shihao.010.ax
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_50 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_50 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#共
+        name = DM_Shihao.010.ay
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_51 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_51 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#戴
+        name = DM_Shihao.010.az
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_52 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_52 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#博
+        name = DM_Shihao.010.ba
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_53 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_53 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#厘
+        name = DM_Shihao.010.bb
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_54 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_54 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#军
+        name = DM_Shihao.010.bc
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_55 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_55 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#坚
+        name = DM_Shihao.010.bd
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_56 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_56 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#防
+        name = DM_Shihao.010.be
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_57 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_57 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#慎
+        name = DM_Shihao.010.bf
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_58 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_58 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#礼
+        name = DM_Shihao.010.bg
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_59 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_59 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#义
+        name = DM_Shihao.010.bh
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_60 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_60 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#信
+        name = DM_Shihao.010.bi
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_61 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_61 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#达
+        name = DM_Shihao.010.bj
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_62 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_62 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#宽
+        name = DM_Shihao.010.bk
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_64 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_64 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#凯
+        name = DM_Shihao.010.bl
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_65 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_65 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#清
+        name = DM_Shihao.010.bm
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_66 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_66 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#直
+        name = DM_Shihao.010.bn
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_67 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_67 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#钦
+        name = DM_Shihao.010.bo
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_68 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_68 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#益
+        name = DM_Shihao.010.bp
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_69 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_69 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#良
+        name = DM_Shihao.010.bq
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_70 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_70 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#度
+        name = DM_Shihao.010.br
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_71 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_71 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#类
+        name = DM_Shihao.010.bs
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_72 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_72 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#基
+        name = DM_Shihao.010.bt
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_73 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_73 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#慈
+        name = DM_Shihao.010.bu
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_74 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_74 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#鼎
+        name = DM_Shihao.010.bv
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_75 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_75 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#齐
+        name = DM_Shihao.010.bw
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_76 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_76 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#深
+        name = DM_Shihao.010.bx
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_77 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_77 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#温
+        name = DM_Shihao.010.by
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_78 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_78 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#让
+        name = DM_Shihao.010.bz
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_79 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_79 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#宻
+        name = DM_Shihao.010.ca
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_80 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_80 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#莫
+        name = DM_Shihao.010.cb
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_81 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_81 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#介
+        name = DM_Shihao.010.cc
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_82 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_82 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#厚
+        name = DM_Shihao.010.cd
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_83 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_83 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#敌
+        name = DM_Shihao.010.ce
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_84 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_84 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#素
+        name = DM_Shihao.010.cf
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_85 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_85 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#勤
+        name = DM_Shihao.010.cg
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_86 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_86 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#谦
+        name = DM_Shihao.010.ch
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_87 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_87 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#友
+        name = DM_Shihao.010.ci
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_88 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_88 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#震
+        name = DM_Shihao.010.cj
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_89 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_89 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#祁
+        name = DM_Shihao.010.ck
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_90 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_90 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#儆
+        name = DM_Shihao.010.cl
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_91 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_91 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#摄
+        name = DM_Shihao.010.cm
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_92 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_92 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#淑
+        name = DM_Shihao.010.cn
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_93 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_93 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#革
+        name = DM_Shihao.010.co
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_94 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_94 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#绍
+        name = DM_Shihao.010.cp
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_95 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_95 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#正
+        name = DM_Shihao.010.cq
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_96 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_96 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#勇
+        name = DM_Shihao.010.cr
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_97 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_97 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#强
+        name = DM_Shihao.010.cs
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_98 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_98 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#毅
+        name = DM_Shihao.010.ct
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_99 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_99 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#刚
+        name = DM_Shihao.010.cu
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_100 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_100 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#克
+        name = DM_Shihao.010.cv
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_101 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_101 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#壮
+        name = DM_Shihao.010.cw
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_102 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_102 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#果
+        name = DM_Shihao.010.cx
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_103 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_103 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#圉
+        name = DM_Shihao.010.cy
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_104 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_104 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#魏
+        name = DM_Shihao.010.cz
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_105 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_105 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#节
+        name = DM_Shihao.010.da
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_106 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_106 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#白
+        name = DM_Shihao.010.db
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_107 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_107 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#匡
+        name = DM_Shihao.010.dc
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_108 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_108 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#顺
+        name = DM_Shihao.010.dd
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_109 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_109 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#商
+        name = DM_Shihao.010.de
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_110 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_110 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#原
+        name = DM_Shihao.010.df
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_111 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_111 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#夷
+        name = DM_Shihao.010.dg
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_112 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_112 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#思
+        name = DM_Shihao.010.dh
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_113 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_113 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#考
+        name = DM_Shihao.010.di
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_114 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_114 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#胡
+        name = DM_Shihao.010.dj
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_115 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_115 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#暠
+        name = DM_Shihao.010.dk
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_116 } } } }
+    hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_116 } } }
+        ai_chance = { base = 0 }
+    }
+    option = {#使
+        name = DM_Shihao.010.dl
+        trigger = { scope:XianDi = { dynasty ?= { NOT = { exists = var:nick_DM_Shihao_117 } } } }
+        hidden_effect = { scope:XianDi = { DM_Set_Shihao_effect = { ShiHao = nick_DM_Shihao_117 } } }
+        ai_chance = { base = 0 }
+    }
+    after = {
+       # hidden_effect = { scope:XianDi = { give_nickname = nick_DM_Shihao_gong } }
+
+    }
+}

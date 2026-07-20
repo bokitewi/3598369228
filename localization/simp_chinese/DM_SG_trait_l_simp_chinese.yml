@@ -1,0 +1,18 @@
+﻿l_simp_chinese:
+
+ trait_Dm_Juewei_GongJue:0 "公爵"
+ trait_Dm_Juewei_GongJue_desc:0 "这位角色贵为一国公爵，位极人臣，威仪自重。朝堂之上，一言九鼎；封地之内，万民景仰。纵有烦忧，亦能在仪仗华盖之间寻得几分从容，心中压力自减。"
+ trait_Dm_Juewei_HouJue:0 "侯爵"
+ trait_Dm_Juewei_HouJue_desc:0 "这位角色身居侯爵之尊，统辖一方，功勋卓著。麾下兵精粮足，境内政通人和。爵位带来的尊荣与底气，使其面对困境时多了一份沉稳，压力稍缓。"
+ trait_Dm_Juewei_BoJue:0 "伯爵"
+ trait_Dm_Juewei_BoJue_desc:0 "这位角色领有伯国，坐镇一方，为国之藩屏。虽不及公侯之显赫，亦是一地之主，号令所出，无人敢违。其地位足以令烦心事少几分分量，略减压力。"
+ trait_Dm_Juewei_ZiJue:0 "子爵"
+ trait_Dm_Juewei_ZiJue_desc:0 "这位角色受封子爵，位列贵族之序，享有封邑与特权。虽非封疆大吏，亦在乡绅之间颇有威望。这份身份让其遇事多几分从容，压力稍得舒缓。"
+ trait_Dm_Juewei_NanJue:0 "男爵"
+ trait_Dm_Juewei_NanJue_desc:0 "这位角色获封男爵，跻身贵族之列，虽爵位最末，亦非凡俗可比。一方乡土之上，人皆以爵爷相称。微末之爵亦能让其心境宽慰少许，减轻心中压力。"
+ juewei_gong:0 "公"
+ juewei_hou:0 "侯"
+ juewei_bo:0 "伯"
+ juewei_zi:0 "子"
+ juewei_nan:0 "男"
+ juewei_blank:0 "$DM_Char_Jue$"

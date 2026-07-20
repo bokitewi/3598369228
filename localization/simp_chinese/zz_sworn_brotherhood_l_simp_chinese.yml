@@ -1,0 +1,107 @@
+﻿l_simp_chinese:
+ # Interaction & Basic Strings #
+ sworn_brotherhood_interaction:0 "立下义结金兰"
+ sworn_brotherhood_interaction_desc:0 "提议缔结神圣的义结金兰，创造如传说中桃园结义般牢不可破的羁绊。"
+ SWORN_BROTHERHOOD_NORMAL:0 "提议结拜兄弟"
+ opinion_sworn_brotherhood:0 "金兰之谊"
+ sworn_brotherhood_modifier:0 "神圣盟约约束"
+ broke_sworn_brotherhood_oath:0 "背誓之人"
+ friend_relation_effect_actor:0 "成为[recipient.GetTitledFirstName]的结拜兄弟"
+ friend_relation_effect_recipient:0 "成为你的结拜兄弟"
+ 
+ # AI Traits
+ AI_TRAIT_LOYAL:0 "忠诚"
+ AI_TRAIT_JUST:0 "正直"
+ AI_TRAIT_HONEST:0 "诚实"
+ AI_TRAIT_BRAVE:0 "勇敢"
+ AI_TRAIT_DECEITFUL:0 "狡诈"
+ AI_TRAIT_ARBITRARY:0 "反复无常"
+ AI_TRAIT_AMBITIOUS:0 "野心勃勃"
+ AI_TRAIT_PARANOID:0 "多疑"
+ 
+ # Peach Garden Oath Ceremony
+ sworn_brotherhood_events.0001.t:0 "桃园结义"
+ 
+ # Dynamic Event Descriptions
+ sworn_brotherhood_events.0001.desc.intro:0 "在桃花盛放、落英缤纷的静谧桃园中，"
+ sworn_brotherhood_events.0001.desc.outro:0 " 桃花的芬芳弥漫在空气中，我们准备在此结为异姓兄弟，立誓同生共死，永世不渝。\n\n'我等虽然异姓，既结为兄弟，则同心协力，救困扶危；上报国家，下安黎庶。不求同年同月同日生，只愿同年同月同日死。皇天后土，实鉴此心！'"
+ sworn_brotherhood_events.0001.desc.just:0 "两位秉持正义的高尚灵魂立于天地之间。我们对公理与荣誉的共同追求，铸就了这神圣的盟约。"
+ sworn_brotherhood_events.0001.desc.brave:0 "两位无畏的勇士立于天地之间。我们共有的勇武与豪情，在荣誉之地锻造成这牢不可破的纽带。"
+ sworn_brotherhood_events.0001.desc.loyal:0 "两位坚贞不渝的伙伴立于天地之间。我们彼此间坚定不移的忠诚与信任，构成了这永恒情谊的基石。"
+ sworn_brotherhood_events.0001.desc.ambitious:0 "两位胸怀大志的领袖立于天地之间。我们共同的梦想与宏伟抱负，将我们联合于这强大的同盟之中。"
+ sworn_brotherhood_events.0001.desc.generic:0 "我们立于天地之间，立下兄弟盟约。"
+ 
+ # Oath Options
+ sworn_brotherhood_events.0001.a:0 "以「义」结拜" # 对应刘备之仁德
+ sworn_brotherhood_events.0001.b:0 "以「忠」结拜" # 对应关羽之忠义
+ sworn_brotherhood_events.0001.c:0 "以「勇」结拜" # 对应张飞之勇猛
+ sworn_brotherhood_events.0001.d:0 "简单结拜"
+ 
+ # Oath Tooltips
+ sworn_brotherhood_righteous_path_tt:0 "以义结拜，我们将获得额外的荣誉，并有几率变得更加正直。此路径效法刘备之遗风。"
+ sworn_brotherhood_loyalty_path_tt:0 "以忠结拜，我们将获得军事才能并对誓言更加坚定。此路径效法关羽之忠义。"
+ sworn_brotherhood_ferocity_path_tt:0 "以勇结拜，我们将获得战斗力和坚定的决心。此路径效法张飞之勇武。"
+ sworn_brotherhood_simple_path_tt:0 "立下简单而真诚的兄弟盟约，获得适度的仪式性荣誉。"
+ 
+ # Follow-up Event
+ sworn_brotherhood_events.0002.t:0 "情谊考验"
+ sworn_brotherhood_events.0002.desc:0 "自我们在桃园结义以来，数月已过。世间纷扰考验着我们的情谊，而这份羁绊历劫弥坚。"
+
+ sworn_brotherhood_events.0002.a:0 "我们的羁绊更加牢固"
+ sworn_brotherhood_events.0002.b:0 "我们依然坚定不移"
+ sworn_brotherhood_events.0002.c:0 "我们的情谊历经考验"   
+ sworn_brotherhood_events.0002.d:0 "谦拒额外仪典"   
+
+ sworn_brotherhood_strengthened_tt:0 "我们结拜的情谊历经共患难而更加坚固。"
+ sworn_brotherhood_tested_tt:0 "我们面临的挑战只会让彼此的承诺更加坚定。"
+ sworn_brotherhood_humble_refusal_tt:0 "我们谦逊地承认，彼此的情谊无需更多的仪式或奖赏。"
+ 
+ # Modifier Names & Descriptions
+ brotherhood_loyalty_modifier:0 "忠义相连"
+ brotherhood_loyalty_modifier_desc:0 "神圣的誓言在结拜兄弟之间铸就了牢不可破的忠诚纽带。"
+ 
+ brotherhood_ferocity_modifier:0 "勇烈兄弟"  
+ brotherhood_ferocity_modifier_desc:0 "结拜的盟约点燃了守护血盟兄弟的炽烈怒火。"
+ 
+ tested_brotherhood_modifier:0 "历劫情谊"
+ tested_brotherhood_modifier_desc:0 "时间与考验证明了这份义结金兰的真实与持久。"
+ 
+ brotherhood_ambition_modifier:0 "雄心之盟"
+ brotherhood_ambition_modifier_desc:0 "已与血盟兄弟立下雄心之誓，为成就大业而联合。"
+ 
+ # Oath Breaking Penalties
+ oath_breaker_modifier:0 "背誓之人"
+ oath_breaker_modifier_desc:0 "此角色背弃了神圣的义结金兰，因而遭受鄙夷与不信任。"
+ 
+ dishonorable_modifier:0 "无信之徒"
+ dishonorable_modifier_desc:0 "此角色背叛结拜兄弟的行为，标志着其本质上的无信无义。"
+ 
+ # Oath-Breaking Events
+ sworn_brotherhood_events.0003.t:0 "兄弟背叛"
+ sworn_brotherhood_events.0003.desc.intro:0 "你与[FROM.GetName]曾共享的神圣羁绊，已被背叛所粉碎。"
+ sworn_brotherhood_events.0003.desc.just_betrayed:0 "作为一位正直的统治者，你曾深信誓言的神圣。这背信弃义之举，比任何刀剑都更伤人至深。"
+ sworn_brotherhood_events.0003.desc.wrathful_betrayed:0 "愤怒的火焰在你心中燃烧。[FROM.GetName]安敢亵渎我们的结义之情！"
+ sworn_brotherhood_events.0003.desc.cynical_betrayed:0 "你早知会有这么一天。归根结底，所有誓言都不过是风中絮语。"
+ sworn_brotherhood_events.0003.desc.generic_betrayed:0 "昔日桃园结义的回忆如今味同嚼蜡。[FROM.GetName]已证明其虚伪。"
+ sworn_brotherhood_events.0003.desc.outro:0 "你将如何应对这背叛？"
+ sworn_brotherhood_events.0003.a:0 "义愤填膺" 
+ sworn_brotherhood_events.0003.b:0 "复仇之怒"
+ sworn_brotherhood_events.0003.c:0 "愤世嫉俗地接受"
+ 
+#  # Future Betrayer Event (注释掉的部分也一并翻译)
+#  sworn_brotherhood_events.0004.t:0 "誓言破碎"
+#  sworn_brotherhood_events.0004.desc:0 "你已背弃了与[FROM.GetName]的神圣誓言。背信弃义的沉重负担降临在你身上。"
+#  sworn_brotherhood_events.0004.a:0 "懊悔背叛之行"
+#  sworn_brotherhood_events.0004.b:0 "拥抱野心"
+ 
+ # Opinion Modifiers & Tooltips
+ opinion_broken_oath_justice:0 "背叛神圣盟约"
+ opinion_expected_betrayal:0 "早料其奸"
+ stress_broken_oath_tt:0 "结拜兄弟的背叛动摇了你的心魄。"
+ stress_vengeful_rage_tt:0 "正义的怒火吞噬着你，却无法带来平静。"
+ 
+ # Enhanced Follow-up Event Options
+ sworn_brotherhood_loyalty_strengthened_tt:0 "我们的忠诚纽带历经考验，比以往任何时候都更加牢固。"
+ sworn_brotherhood_ferocity_strengthened_tt:0 "我们炽烈的兄弟情谊在时间的熔炉中证明了其价值。"
+ sworn_brotherhood_tested_tt:0 "我们的义结金兰经受住了时间的考验，并因此更加坚固。"
+ sworn_brotherhood_humble_refusal_tt:0 "我们谦逊地承认，彼此的情谊无需更多的仪式或奖赏。"

@@ -1,0 +1,40 @@
+﻿l_simp_chinese:
+
+    DM_Char_title: "[Character.GetPrimaryTitle.GetBaseNameNoTierNoTooltip]"
+    DM_Char_SPOUSE_title: "[Character.GetPrimarySpouse.GetPrimaryTitle.GetBaseNameNoTierNoTooltip]"
+
+    DM_Char_Jue: "[Character.GetTitleTierName]"
+    DM_Char_Name: "[Character.GetUIFirstNameOnlyNotMeNoTooltip]"
+    DM_Char_House: "[Character.GetHouse.GetBaseNameNoTooltip]"
+    DM_Char_Dynasty: "[Character.GetDynasty.GetBaseNameNoTooltip]"
+
+    CHARACTER_VIEW_NAME_HISTORY: "[Character.Custom('DM_view_name')]"
+
+
+    DM_view_name_ruler_tianzi: "#v $DM_Char_title$$DM_Char_Jue$ $DM_Char_Name$#!" 
+    DM_view_name_ruler_qing: "#v $DM_Char_title$$DM_Char_Name$#!"
+    DM_view_name_ruler_shi: "#v $DM_Char_Dynasty$$DM_Char_Name$#!"
+    DM_view_name_ruler_fallback: "#v $DM_Char_title$[Character.Custom('LOC_Dm_juewei')] $DM_Char_Name$#!"
+    #DM_view_name_ruler_fallback: "#v [Character.GetUINameNotMeNoTooltip]#!"
+
+
+    DM_view_name_ruler: "[Character.Custom('DM_view_name_ruler')]"
+    DM_view_name_fallback: "#v [Character.GetUINameNotMeNoTooltip]#!#weak ([Character.Custom('DM_Chixu')])#!"
+
+    DM_view_name_female: "[Character.Custom('DM_view_name_female')]"
+    DM_view_name_female_married: "#v  $DM_Char_SPOUSE_title$$DM_Char_Jue$ [Character.Custom('DM_Chixu')]$DM_Char_Dynasty$ $DM_Char_Name$#! "
+    DM_view_name_female_fallback: "#v [Character.Custom('DM_Chixu')]$DM_Char_Dynasty$ $DM_Char_Name$"
+    DM_view_name_death: "[Character.Custom('DM_view_name_death')]"
+    DM_view_name_e_zhoutianzi: "#v [Character.GetNicknameNoTooltip] $DM_Char_Name$#!"
+    DM_view_name_zhuhou_death: "#v [Character.GetNicknameNoTooltip] $DM_Char_Name$#!"
+    DM_view_name_zhuhou_1_death: "#v $DM_Char_title$$DM_Char_Jue$ $DM_Char_Name$#!"
+    DM_view_name_death_fallback: "#v [Character.GetUINameNotMeNoTooltip]#!"
+
+
+
+    DM_Chixu_fallback: ""
+    DM_Chixu_bo: "伯"
+    DM_Chixu_bo_1: "孟"
+    DM_Chixu_zhong: "仲"
+    DM_Chixu_shu: "叔"
+    DM_Chixu_ji: "季"

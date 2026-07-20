@@ -1,0 +1,51 @@
+﻿LOC_Dm_juewei = {
+    type = character
+    text = {#公爵
+        trigger = {
+            has_trait = Dm_Juewei_GongJue
+        }
+        localization_key = juewei_gong
+    }
+    text = {#侯爵
+        trigger = {
+            has_trait = Dm_Juewei_HouJue
+        }
+        localization_key = juewei_hou
+    }
+    text = {#伯爵
+        trigger = {
+            has_trait = Dm_Juewei_BoJue
+        }
+        localization_key = juewei_bo
+    }
+    text = {#子爵
+        trigger = {
+            has_trait = Dm_Juewei_ZiJue
+        }
+        localization_key = juewei_zi
+    }
+    text = {#男爵
+        trigger = {
+            has_trait = Dm_Juewei_NanJue
+        }
+        localization_key = juewei_nan
+    }
+    text = {
+        fallback = yes
+        localization_key = juewei_blank
+    }
+}
+
+LOC_DM_FIRSTNAME = {
+    type = character
+    text = {#
+        trigger = {
+            is_ruler = yes
+        }
+        localization_key = LOC_Dm_ruler_first_name
+    }
+    text = {#
+        fallback = yes
+        localization_key = LOC_DM_FIRSTNAME_fallback
+    }
+}

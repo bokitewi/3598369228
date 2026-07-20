@@ -1,0 +1,45 @@
+﻿l_simp_chinese:
+  Color_HuangFeng: "#color:{0.79,0.70,0.45}; #bold "
+  Color_EHuang: "#color:{0.745,0.541,0.184}; #bold "
+  Color_ZanBai: "#color:{0.965,0.976,0.894}; #bold "
+  Color_Fen: "#color:{0.80,0.50,0.55}; #bold "
+  Color_MeiGui: "#color:{0.90,0.45,0.55}; #bold "
+  Color_FenHong: "#color:{0.95,0.55,0.65}; #bold "
+  Color_Lv: "#color:{0.30,0.72,0.35}; #bold "
+
+
+#后宫
+  DM_GongShi_Main_name: "$Color_ZanBai$[Character.GetPrimaryTitle.GetBaseNameNoTierNoTooltip]公室"
+  DM_WangShi_Main_name: "$Color_ZanBai$[GetPlayer.GetTopLiege.GetPrimaryTitle.GetBaseNameNoTierNoTooltip]王室"
+
+  DM_Gongshi_main: "#V #bold  公室#!"
+  DM_Wangshi_main: "#V #bold  王室#!"
+  DM_Zongshi_qiqie_btn: "妻妾"
+  DM_Zongshi_qiqie_btn_tt: "点击隐藏妻妾，显示子女"
+  DM_Zongshi_zinv_btn: "子女"
+  DM_Zongshi_zinv_btn_tt: "点击隐藏子女，显示妻妾"
+
+  Huaiyun_text: "#V #bold @pregnant_icon!"
+  Huaiyun_text_tt: "@pregnant_icon!怀孕中······"
+  ChuGe_TEXT: "$Color_Fen$ 未出阁"
+  ChuGe_TEXT_TT: "$SanGong_view_name_GongTing$ 尚未婚配\n#weak 仅14至50岁未婚公主显示此提示"
+
+  SanGong_view_age: "#v #bold 年|[Character.GetAge]"
+  DM_Qiqie_TT: "$DM_Char_House$$DM_Char_Name$,[Character.GetDeathOrBirthDateInfo]，今年[Character.GetAge]岁\n[Character.GetHealthInfo]"
+  DM_Qiqie_Name: "$DM_Char_House$$DM_Char_Name$"
+
+
+
+
+  DM_Gongshi_male: "公子"
+    DM_Gongshi_male_Name: "#v 公子 $DM_Char_Name$#!"
+    DM_Gongshi_female: "女公子"
+    DM_Gongshi_female_Name: "[Character.Custom('DM_view_name')]"
+
+
+  DM_Wangshi_male: "王子"
+  DM_Wangshi_female: "王姬"
+    DM_Wangshi_male_Name: "#v 王子 $DM_Char_Name$#!"
+
+    DM_Wangshi_female_Name: "[Character.Custom('DM_view_name')]"
+

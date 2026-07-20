@@ -1,0 +1,120 @@
+﻿#爵位风味化
+DM_falvor_GongJue_male = {
+	type = character
+	gender = male
+	special = holder
+	priority = 9000
+	flag = falvor_dm_gongjue
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}
+
+DM_falvor_GongJue_female = {
+	type = character
+	gender = female
+	special = holder
+	priority = 9000
+	flag = falvor_dm_gongjue
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}
+
+DM_falvor_HouJue_male = {
+	type = character
+	gender = male
+	special = holder
+	priority = 8000
+	flag = falvor_dm_houjue
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}
+
+DM_falvor_HouJue_female = {
+	type = character
+	gender = female
+	special = holder
+	priority = 8000
+	flag = falvor_dm_houjue
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}
+
+DM_falvor_BoJue_male = {
+	type = character
+	gender = male
+	special = holder
+	priority = 7000
+	flag = falvor_dm_bojue
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}
+
+DM_falvor_BoJue_female = {
+	type = character
+	gender = female
+	special = holder
+	priority = 7000
+	flag = falvor_dm_bojue
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}
+
+DM_falvor_ZiJue_male = {
+	type = character
+	gender = male
+	special = holder
+	priority = 6000
+	flag = falvor_dm_zijue
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}
+
+DM_falvor_ZiJue_female = {
+	type = character
+	gender = female
+	special = holder
+	priority = 6000
+	flag = falvor_dm_zijue
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}
+
+DM_falvor_NanJue_male = {
+	type = character
+	gender = male
+	special = holder
+	priority = 5000
+	flag = falvor_dm_nanjue
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}
+
+DM_falvor_NanJue_female = {
+	type = character
+	gender = female
+	special = holder
+	priority = 5000
+	flag = falvor_dm_nanjue
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}

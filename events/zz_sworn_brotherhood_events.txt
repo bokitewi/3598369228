@@ -1,0 +1,449 @@
+﻿namespace = sworn_brotherhood_events
+
+# Peach Garden Oath Ceremony - Modified from Vanilla Blood Brother Event
+sworn_brotherhood_events.0001 = {
+    type = character_event
+    title = sworn_brotherhood_events.0001.t
+    desc = {
+        desc = sworn_brotherhood_events.0001.desc.intro
+        first_valid = {
+            # RIGHTEOUS BROTHERS - Liu Bei style
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = just
+                        scope:blood_bro = { has_trait = just }
+                    }
+                }
+                desc = sworn_brotherhood_events.0001.desc.just
+            }
+            # BRAVE WARRIORS - Guan Yu/Zhang Fei style
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = brave
+                        scope:blood_bro = { has_trait = brave }
+                    }
+                }
+                desc = sworn_brotherhood_events.0001.desc.brave
+            }
+            # LOYAL COMPANIONS
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = loyal
+                        scope:blood_bro = { has_trait = loyal }
+                    }
+                }
+                desc = sworn_brotherhood_events.0001.desc.loyal
+            }
+            # AMBITIOUS ALLIANCE
+            triggered_desc = {
+                trigger = {
+                    OR = {
+                        has_trait = ambitious
+                        scope:blood_bro = { has_trait = ambitious }
+                    }
+                }
+                desc = sworn_brotherhood_events.0001.desc.ambitious
+            }
+            # GENERIC FALLBACK
+            desc = sworn_brotherhood_events.0001.desc.generic
+        }
+        desc = sworn_brotherhood_events.0001.desc.outro
+    }
+    theme = alliance
+
+    # Your beautiful garden background
+    override_background = {
+        reference = garden_location
+    }
+
+    # Authentic Chinese poses
+    left_portrait = {
+        character = root
+        animation = gongshou
+        camera = camera_event_left_away_3_4  # Faces toward the other character
+    }
+
+    right_portrait = {
+        character = scope:blood_bro
+        animation = gongshou
+        camera = camera_event_right_to_the_right  # Faces toward the other character
+    }
+
+    trigger = {
+        exists = scope:blood_bro
+    }
+
+    immediate = {
+        play_music_cue = "mx_cue_touching_moment"
+    }
+
+    # Your existing options with consistent scope:brother fixes
+    option = { # Swear with Righteousness (Liu Bei's path)
+        name = sworn_brotherhood_events.0001.a
+        trigger = {
+            OR = {
+                has_trait = just
+                has_trait = honest
+                has_trait = diligent
+            }
+        }
+
+        add_prestige = 50
+        add_piety = 25
+
+        random = {
+            chance = 30
+            add_trait = just
+        }
+
+        add_stress = -20  # ← FIXED: CK3 stress effect
+        custom_tooltip = sworn_brotherhood_righteous_path_tt
+    }
+
+    option = { # Swear with Loyalty (Guan Yu's path)
+        name = sworn_brotherhood_events.0001.b
+        trigger = {
+            OR = {
+                has_trait = loyal
+                has_trait = brave
+                has_trait = stubborn
+            }
+        }
+
+        add_character_modifier = {
+            modifier = brotherhood_loyalty_modifier
+            years = 3
+        }
+
+        add_stress = -15  # ← FIXED: CK3 stress effect
+        custom_tooltip = sworn_brotherhood_loyalty_path_tt
+    }
+
+    option = { # Swear with Ferocity (Zhang Fei's path)
+        name = sworn_brotherhood_events.0001.c
+        trigger = {
+            OR = {
+                has_trait = wrathful
+                has_trait = brave
+                has_trait = impatient
+            }
+        }
+
+        add_character_modifier = {
+            modifier = brotherhood_ferocity_modifier
+            years = 3
+        }
+
+        add_stress = -10  # ← FIXED: CK3 stress effect
+        custom_tooltip = sworn_brotherhood_ferocity_path_tt
+    }
+
+    option = { # Simple Brotherhood Oath (Vanilla fallback)
+        name = sworn_brotherhood_events.0001.d
+
+        add_prestige = 25
+        add_piety = 15
+        add_stress = -10  # ← FIXED: CK3 stress effect
+
+        custom_tooltip = sworn_brotherhood_simple_path_tt
+    }
+
+    after = {
+        hidden_effect = {
+            trigger_event = {
+                id = sworn_brotherhood_events.0002
+                days = { 180 360 }
+            }
+        }
+    }
+}
+
+# Enhanced Follow-up Event with Modifier Rewards
+sworn_brotherhood_events.0002 = {
+    type = character_event
+    title = sworn_brotherhood_events.0002.t
+    desc = sworn_brotherhood_events.0002.desc
+    theme = alliance
+
+    left_portrait = {
+        character = root
+        animation = diplomacy_default
+    }
+
+    right_portrait = {
+        character = scope:blood_bro
+        animation = diplomacy_default
+    }
+
+    trigger = {
+        exists = scope:blood_bro
+    }
+
+    option = { # Brotherhood of Loyalty (Guan Yu's Path)
+        name = sworn_brotherhood_events.0002.a
+        trigger = {
+            OR = {
+                has_trait = loyal
+                has_trait = just
+                has_trait = honest
+            }
+        }
+
+        add_character_modifier = {
+            modifier = brotherhood_loyalty_modifier
+            years = 5
+        }
+
+        scope:blood_bro = {
+            add_character_modifier = {
+                modifier = brotherhood_loyalty_modifier
+                years = 5
+            }
+        }
+
+        custom_tooltip = sworn_brotherhood_loyalty_strengthened_tt
+    }
+
+    option = { # Brotherhood of Ferocity (Zhang Fei's Path)
+        name = sworn_brotherhood_events.0002.b
+        trigger = {
+            OR = {
+                has_trait = brave
+                has_trait = wrathful
+                has_trait = stubborn
+            }
+        }
+
+        add_character_modifier = {
+            modifier = brotherhood_ferocity_modifier
+            years = 5
+        }
+
+        scope:blood_bro = {
+            add_character_modifier = {
+                modifier = brotherhood_ferocity_modifier
+                years = 5
+            }
+        }
+
+        custom_tooltip = sworn_brotherhood_ferocity_strengthened_tt
+    }
+
+    option = { # Tested Brotherhood (Generic Path)
+        name = sworn_brotherhood_events.0002.c
+
+        add_character_modifier = {
+            modifier = tested_brotherhood_modifier
+            years = 3
+        }
+
+        scope:blood_bro = {
+            add_character_modifier = {
+                modifier = tested_brotherhood_modifier
+                years = 3
+            }
+        }
+
+        custom_tooltip = sworn_brotherhood_tested_tt
+    }
+
+    option = { # Humble Refusal (Stress Relief)
+        name = sworn_brotherhood_events.0002.d
+        trigger = {
+            OR = {
+                has_trait = humble
+                has_trait = temperate
+                stress_level > 1
+            }
+        }
+
+        add_piety = 25
+        add_stress = -30  # ← FIXED: CK3 stress effect
+
+        custom_tooltip = sworn_brotherhood_humble_refusal_tt
+    }
+}
+
+# Brotherhood Betrayed Event - Fires for the betrayed character when relation is broken
+sworn_brotherhood_events.0003 = {
+    type = character_event
+    title = sworn_brotherhood_events.0003.t
+    desc = {
+        desc = sworn_brotherhood_events.0003.desc.intro
+        first_valid = {
+            triggered_desc = {
+                trigger = { has_trait = just }
+                desc = sworn_brotherhood_events.0003.desc.just_betrayed
+            }
+            triggered_desc = {
+                trigger = { has_trait = wrathful }
+                desc = sworn_brotherhood_events.0003.desc.wrathful_betrayed
+            }
+            triggered_desc = {
+                trigger = { has_trait = cynical }
+                desc = sworn_brotherhood_events.0003.desc.cynical_betrayed
+            }
+            desc = sworn_brotherhood_events.0003.desc.generic_betrayed
+        }
+        desc = sworn_brotherhood_events.0003.desc.outro
+    }
+    theme = friendship_negative  # ← FIXED: Valid CK3 theme
+
+    left_portrait = {
+        character = root
+        animation = anger
+    }
+
+    right_portrait = {
+        character = scope:actor  # ← FIXED: Use scope:actor instead of FROM
+        animation = shame
+    }
+
+    # This event fires automatically via on_relation_blood_brother_removed
+    fire_only_once = yes  # ← FIXED: CK3 syntax
+
+    immediate = {
+        scope:actor = { save_scope_as = betrayer }  # ← FIXED: Save the other character
+    }
+
+    option = { # Righteous Indignation (Just/Honest)
+        name = sworn_brotherhood_events.0003.a
+        trigger = {
+            OR = {
+                has_trait = just
+                has_trait = honest
+            }
+        }
+
+        add_stress = 50
+        scope:betrayer = {
+            add_opinion = {
+                target = root
+                modifier = opinion_betrayed_me
+                years = 10
+            }
+        }
+        add_trait = cynical
+        remove_trait = trusting
+
+        scope:betrayer = {
+            add_character_modifier = {
+                modifier = oath_breaker_modifier
+                years = 15
+            }
+        }
+    }
+
+    option = { # Vengeful Wrath (Wrathful/Brave)
+        name = sworn_brotherhood_events.0003.b
+        trigger = {
+            OR = {
+                has_trait = wrathful
+                has_trait = brave
+            }
+        }
+
+        add_rival = scope:betrayer
+        add_claim_on_liege_title_of = scope:betrayer
+
+        scope:betrayer = {
+            add_character_modifier = {
+                modifier = dishonorable_modifier
+                years = 20
+            }
+        }
+    }
+
+    option = { # Cynical Acceptance (Cynical/Ambitious)
+        name = sworn_brotherhood_events.0003.c
+        trigger = {
+            OR = {
+                has_trait = cynical
+                has_trait = ambitious
+            }
+        }
+
+        add_stress = 15
+        scope:betrayer = {
+            add_opinion = {
+                target = root
+                modifier = opinion_expected_betrayal
+                years = 5
+            }
+        }
+        add_prestige = 50
+    }
+}
+
+# Oath Broken Event - Fires for the betrayer character
+sworn_brotherhood_events.0004 = {
+    type = character_event
+    title = sworn_brotherhood_events.0004.t
+    desc = sworn_brotherhood_events.0004.desc
+    theme = guilt
+
+    left_portrait = {
+        character = root
+        animation = shame
+    }
+
+    trigger = {
+        exists = scope:actor
+        had_relation_blood_brother = { target = scope:actor }  # ← FIXED: Use scope:actor
+    }
+
+    option = { # Regret the Betrayal
+        name = sworn_brotherhood_events.0004.a
+
+        add_stress = 30
+        add_piety = -100
+        scope:actor = {
+            add_opinion = {
+                target = root
+                modifier = opinion_self_guilt
+                years = 5
+            }
+        }
+    }
+
+    option = { # Embrace the Ambition
+        name = sworn_brotherhood_events.0004.b
+        trigger = {
+            OR = {
+                has_trait = ambitious
+                has_trait = cynical
+            }
+        }
+
+        add_stress = 10
+        add_prestige = 75
+        scope:actor = {
+            add_opinion = {
+                target = root
+                modifier = opinion_cold_ambition
+                years = 10
+            }
+        }
+    }
+}
+
+# # Friendship Formation Tracking - Applies "recent friends" modifier
+# sworn_brotherhood_events.0005 = {
+#     type = character_event
+#     hidden = yes
+
+#     immediate = {
+#         # Apply the recently_became_friends modifier to both characters
+#         add_character_modifier = {
+#             modifier = recently_became_friends
+#             target = ROOT   # character who initiated friendship
+#         }
+#         add_character_modifier = {
+#             modifier = recently_became_friends
+#             target = FROM   # new friend
+#         }
+#     }
+# }

@@ -1,0 +1,216 @@
+﻿sworn_brotherhood_interaction = {
+    category = interaction_category_diplomacy
+    icon = blood_brother
+    desc = sworn_brotherhood_interaction_desc
+    common_interaction = yes
+    interface_priority = 55
+
+    greeting = positive
+    popup_on_receive = yes
+    cooldown = { years = 8 }  # Was 5 years
+    cooldown_against_recipient = { years = 15 }  # Was 10 years
+
+    is_shown = {
+        scope:actor = {
+            is_imprisoned = no
+            is_incapable = no
+            # Cultural restriction
+            OR = {
+                culture = { has_cultural_pillar = pillar_heritage_chinese }
+                always = yes  # Remove for strict cultural enforcement
+            }
+        }
+        scope:recipient = {
+            is_imprisoned = no
+            is_incapable = no
+            NOT = { this = scope:actor }
+            # Cultural restriction
+            OR = {
+                culture = { has_cultural_pillar = heritage_chinese }
+                always = yes  # Remove for strict cultural enforcement
+            }
+        }
+    }
+
+    is_valid_showing_failures_only = {
+        condition = {
+            trigger = scope:recipient
+            value >= 70  # Was 50 - requires stronger relationship
+        }
+        scope:actor = {
+            is_imprisoned = no
+            is_incapable = no
+            NOT = { has_relation_blood_brother = scope:recipient }
+            has_relation_friend = scope:recipient  # ← NEW: Requires existing friendship
+        }
+        scope:recipient = {
+            is_imprisoned = no
+            is_incapable = no
+            NOT = { has_relation_blood_brother = scope:actor }
+            has_relation_friend = scope:actor  # ← NEW: Reciprocal friendship
+        }
+        NOT = { scope:actor = { is_close_family_of = scope:recipient } }
+    }
+
+    # Cost scaling by rank difference
+    cost = {
+        prestige = 150    # Meaningful but not empire-breaking
+        gold = 25         # Ceremonial costs - wine, incense, feast
+        piety = 100       # Spiritual commitment
+
+        modifier = {
+            scope:actor = { tier_difference = { target = scope:recipient value >= 1 } }
+            add = {
+                value = 30
+                if = { limit = { tier_difference = { target = scope:recipient value = 2 } } add = 30 }
+                if = { limit = { tier_difference = { target = scope:recipient value = 3 } } add = 60 }
+                if = { limit = { tier_difference = { target = scope:recipient value = 4 } } add = 90 }
+                if = { limit = { tier_difference = { target = scope:recipient value = 5 } } add = 120 }
+            }
+            desc = RANK_DIFFERENCE_REASON
+        }
+    }
+
+    on_accept = {
+        # Save scopes for the event
+        scope:actor = {
+            save_scope_as = oath_initiator
+            scope:recipient = {
+                save_scope_as = oath_brother
+            }
+            trigger_event = {
+                id = sworn_brotherhood_events.0001
+                # PASS SCOPES TO THE EVENT
+                scope:oath_initiator = root
+                scope:oath_brother = scope:recipient
+            }
+        }
+
+        # YOUR ORIGINAL MECHANICS (completely preserved)
+        scope:actor = {
+            set_relation_blood_brother = scope:recipient
+            create_alliance = {
+                target = scope:recipient
+                allied_through_owner = scope:actor
+                allied_through_target = scope:recipient
+            }
+            add_prestige = 100
+            #add_gold = 50
+            add_piety = 50
+        }
+
+        scope:recipient = {
+            set_relation_blood_brother = scope:actor
+            add_prestige = 100
+            #add_gold = 50
+            add_piety = 50
+
+            if = {
+                limit = {
+                    NOT = { has_trait = just }
+                    scope:actor = { has_trait = just }
+                }
+                random = {
+                    chance = 25
+                    add_trait = just
+                }
+            }
+        }
+    }
+
+    on_decline = {
+        scope:actor = {
+            add_stress = 25
+            add_opinion = {
+                target = scope:recipient
+                modifier = opinion_betrayed_trust  # Use existing vanilla modifier
+                opinion = -20
+            }
+        }
+    }
+
+    ai_frequency_by_tier = {
+        barony = 0      # Too petty, focused on survival
+        county = 12     # Regional lords might swear for protection
+        duchy = 48      # IDEAL - building power blocs, like Liu Bei
+        kingdom = 24    # Less common but happens for major alliances
+        empire = 6      # Very rare - emperors don't need brotherhood
+        hegemony = 6    # Extremely rare
+    }
+
+    ai_potential = {
+        is_imprisoned = no
+        NOT = { has_relation_blood_brother = yes }  # ← Prevents AI from spamming the interaction
+    }
+
+    ai_accept = {
+        base = 3  # Was 5 - even more conservative
+
+        # TRAIT-BASED MODIFIERS
+        # Positive traits that make characters more likely to swear brotherhood
+        modifier = {
+            add = 25
+            scope:recipient = { has_trait = loyal }
+            desc = AI_TRAIT_LOYAL
+        }
+        modifier = {
+            add = 20
+            scope:recipient = { has_trait = just }
+            desc = AI_TRAIT_JUST
+        }
+        modifier = {
+            add = 15
+            scope:recipient = { has_trait = honest }
+            desc = AI_TRAIT_HONEST
+        }
+        modifier = {
+            add = 15
+            scope:recipient = { has_trait = brave }
+            desc = AI_TRAIT_BRAVE
+        }
+
+        # Negative traits that make characters less likely to swear brotherhood
+        modifier = {
+            add = -30
+            scope:recipient = { has_trait = deceitful }
+            desc = AI_TRAIT_DECEITFUL
+        }
+        modifier = {
+            add = -25
+            scope:recipient = { has_trait = arbitrary }
+            desc = AI_TRAIT_ARBITRARY
+        }
+        modifier = {
+            add = -20
+            scope:recipient = { has_trait = ambitious }
+            desc = AI_TRAIT_AMBITIOUS
+        }
+        modifier = {
+            add = -15
+            scope:recipient = { has_trait = paranoid }
+            desc = AI_TRAIT_PARANOID
+        }
+
+        # Strategic need now requires BOTH few allies AND high opinion
+        modifier = {
+            add = 20  # Was 30
+            any_ally = { count < 1 }
+            scope:recipient = {
+                has_opinion_modifier = {
+                    target = scope:actor
+                    value >= 70
+                }
+            }
+        }
+
+        # Dynamic opinion scaling - much cleaner!
+        opinion_modifier = {
+            who = scope:recipient
+            opinion_target = scope:actor
+            multiplier = 0.5  # 0.5% acceptance per 1 opinion
+            desc = AI_OPINION_REASON
+        }
+    }
+
+    ai_will_do = { base = 5 }  # Was 10 - AI proposes it much less often
+}
