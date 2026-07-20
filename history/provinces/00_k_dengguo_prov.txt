@@ -1,0 +1,65 @@
+﻿##### d_dengshi ############################
+
+### c_rang
+# RANG
+1754 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_fanying
+# FANYING
+1767 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_deng1
+# DENG1
+1769 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_hecheng
+# HECHENG
+1770 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zan
+# ZAN
+1773 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yudou
+# YUDOU
+1774 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_dengling
+# DENGLING
+1775 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

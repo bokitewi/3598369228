@@ -1,0 +1,193 @@
+﻿quarterly_playable_pulse = {
+	on_actions = {
+		saas_quarterly_stipend_pulse
+	}
+}
+
+saas_quarterly_stipend_pulse = {
+	trigger = {
+		saas_courtier_stipend_ruler_trigger = yes
+	}
+	effect = {
+		saas_pay_quarterly_stipends_effect = yes
+	}
+}
+
+on_join_court = {
+	on_actions = {
+		saas_stipend_join_court
+	}
+}
+
+saas_stipend_join_court = {
+	effect = {
+		remove_character_modifier = saas_courtier_stipend_income_modifier
+		remove_character_modifier = saas_personal_salary_raise_modifier
+		if = {
+			limit = {
+				scope:new_employer ?= {
+					saas_courtier_stipend_ruler_trigger = yes
+				}
+			}
+			scope:new_employer = {
+				saas_refresh_courtier_stipend_income_effect = yes
+			}
+		}
+	}
+}
+
+on_leave_court = {
+	on_actions = {
+		saas_stipend_leave_court
+	}
+}
+
+saas_stipend_leave_court = {
+	effect = {
+		remove_character_modifier = saas_courtier_stipend_income_modifier
+		remove_character_modifier = saas_personal_salary_raise_modifier
+		if = {
+			limit = {
+				scope:old_employer ?= {
+					is_alive = yes
+					saas_courtier_stipend_ruler_trigger = yes
+				}
+			}
+			scope:old_employer = {
+				saas_refresh_courtier_stipend_income_effect = yes
+			}
+		}
+	}
+}
+
+on_death = {
+	on_actions = {
+		saas_retainer_death_cleanup
+	}
+}
+
+saas_retainer_death_cleanup = {
+	effect = {
+		remove_character_modifier = saas_courtier_stipend_income_modifier
+		remove_character_modifier = saas_courtier_stipend_expense_modifier
+		remove_character_modifier = saas_personal_salary_raise_modifier
+		remove_character_flag = saas_retainer_project_success
+		remove_character_flag = saas_retainer_project_invalid
+		saas_clear_retainer_project_effect = yes
+		host ?= {
+			if = {
+				limit = {
+					is_alive = yes
+					saas_courtier_stipend_ruler_trigger = yes
+				}
+				saas_refresh_courtier_stipend_income_effect = yes
+			}
+		}
+	}
+}
+
+random_yearly_playable_pulse = {
+	on_actions = {
+		saas_retainer_yearly_pulse
+	}
+}
+
+saas_retainer_yearly_pulse = {
+	trigger = {
+		is_landed = yes
+		highest_held_title_tier >= tier_county
+		NOT = { has_character_flag = saas_retainer_project_active }
+		OR = {
+			saas_is_ritual_restoration_phase_trigger = yes
+			saas_is_ritual_collapse_phase_trigger = yes
+			saas_is_warring_states_phase_trigger = yes
+		}
+		any_courtier_or_guest = {
+			OR = {
+				saas_retainer_diplomacy_candidate_trigger = yes
+				saas_retainer_martial_candidate_trigger = yes
+				saas_retainer_stewardship_candidate_trigger = yes
+				saas_retainer_intrigue_candidate_trigger = yes
+				saas_retainer_learning_candidate_trigger = yes
+				saas_retainer_salary_request_candidate_trigger = yes
+			}
+		}
+	}
+	effect = {
+		random = {
+			chance = {
+				value = 20
+				if = {
+					limit = { saas_is_ritual_collapse_phase_trigger = yes }
+					add = 10
+				}
+				else_if = {
+					limit = { saas_is_warring_states_phase_trigger = yes }
+					add = 20
+				}
+			}
+			trigger_event = {
+				on_action = saas_retainer_event_pool
+			}
+		}
+	}
+}
+
+saas_retainer_event_pool = {
+	random_events = {
+		100 = saas_retainer.1100
+		100 = saas_retainer.1200
+		100 = saas_retainer.1300
+		100 = saas_retainer.1400
+		100 = saas_retainer.1500
+		75 = saas_retainer.1600
+	}
+}
+
+yearly_global_pulse = {
+	on_actions = {
+		saas_elite_pool_global_pulse
+		saas_retainer_global_talent_pulse
+	}
+}
+
+saas_elite_pool_global_pulse = {
+	trigger = {
+		NOT = { exists = global_var:saas_elite_pool_cycle_lock }
+		any_independent_ruler = {
+			is_alive = yes
+			is_landed = yes
+			highest_held_title_tier >= tier_county
+			exists = capital_county
+			exists = capital_province
+		}
+	}
+	effect = {
+		set_global_variable = {
+			name = saas_elite_pool_cycle_lock
+			value = yes
+			years = 5
+		}
+		random = {
+			chance = 2
+			saas_create_global_elite_pool_character_effect = yes
+		}
+	}
+}
+
+saas_retainer_global_talent_pulse = {
+	trigger = {
+		exists = situation:spring_and_autumn_situation
+		OR = {
+			situation:spring_and_autumn_situation = {
+				situation_current_phase = spring_and_autumn_phase
+			}
+			situation:spring_and_autumn_situation = {
+				situation_current_phase = warring_states_phase
+			}
+		}
+	}
+	effect = {
+		trigger_event = saas_retainer.2000
+	}
+}

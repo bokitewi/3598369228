@@ -1,0 +1,65 @@
+﻿##### d_baishi ############################
+
+### c_bai1
+# BAI1
+1653 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xiping
+# XIPING
+1654 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_tangxi
+# TANGXI
+1655 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_dingying
+# DINGYING
+1656 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_bifen
+# BIFEN
+1657 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xianghe1
+# XIANGHE1
+1663 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yelu
+# YELU
+1664 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

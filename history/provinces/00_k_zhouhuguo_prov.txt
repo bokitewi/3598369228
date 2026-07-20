@@ -1,0 +1,20 @@
+﻿##### d_gaoyinashi ############################
+
+### c_danluo
+# DANLUO
+3383 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_liangyina
+
+
+### c_fuyina
+
+
+### c_gaoyina
+
+

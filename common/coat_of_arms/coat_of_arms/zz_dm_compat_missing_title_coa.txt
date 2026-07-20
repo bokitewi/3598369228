@@ -1,0 +1,3913 @@
+﻿# Generated pre-scripted CoAs for inert compatibility title shells.
+
+d_BOR_barune = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_BOR_kutai = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "red"
+}
+
+d_BOR_nan_sarunai = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "blue"
+}
+
+d_BOR_santubong = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+d_BOR_tanjungpura = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "red"
+}
+
+d_JAV_mataram = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_JAV_taruma = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_MAL_langkasuka = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "black"
+}
+
+d_PHI_sandao = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+d_SUM_aceh = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_SUM_jambi = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+}
+
+d_SUM_minangkabau = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "yellow"
+}
+
+d_SUM_palembang = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "green"
+}
+
+d_SUM_riau = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+}
+
+d_SuMa_konawe = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+d_SuMa_luwu = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+}
+
+d_SuMa_tompotika = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+}
+
+d_aegean_islands = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+d_ajmer = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_al-hasa = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "purple"
+}
+
+d_alexandria = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+d_algarve = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+d_alger = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+d_alsace = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_anartta = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "blue"
+}
+
+d_anatolia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "yellow"
+}
+
+d_anhalt = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+d_anjou = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+}
+
+d_antioch = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "black"
+}
+
+d_anupa = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_apostolic_church = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_apulia = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_aquitaine = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+d_aragon = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_armagnac = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+d_armeniac = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "white"
+}
+
+d_auvergne = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_azerbaijan = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+d_azov = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_bahrain = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "yellow"
+}
+
+d_baigaur = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+d_barcelona = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_basra = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_beja = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "yellow"
+}
+
+d_bejaia = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "purple"
+}
+
+d_benevento = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "black"
+}
+
+d_biansong = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "blue"
+}
+
+d_bohemia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_bosna = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+d_bourbon = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+d_brabant = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "red"
+}
+
+d_bugeac = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_bukgye = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+}
+
+d_burgundy = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+d_calabria = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "purple"
+}
+
+d_canarias = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+}
+
+d_cappadocia = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_capua = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "black"
+}
+
+d_carinthia = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_cephalonia = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "black"
+}
+
+d_chaldia = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "blue"
+}
+
+d_charsianon = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+d_chera_nadu = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "red"
+}
+
+d_chernigov = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_cherven_cities = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+d_chungju = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "purple"
+}
+
+d_cibyrrhaeot = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+d_cilicia = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "green"
+}
+
+d_coimbra = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+d_connacht = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+d_conversos = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+d_coptic_papacy = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "green"
+}
+
+d_cornwall = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_courland = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+d_crimea = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "purple"
+}
+
+d_croatia = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+d_cumbria = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+d_currezia = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+d_cyprus = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "blue"
+}
+
+d_cyrenaica = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_dakhina_desa = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_dalmatia = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+d_dauphine = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "blue"
+}
+
+d_daylam = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+}
+
+d_diyarbakr = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+d_dobrudja = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+d_don_valley = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+d_edessa = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "white"
+}
+
+d_emilia = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "black"
+}
+
+d_esthonia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_fars = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "green"
+}
+
+d_fezzan = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "green"
+}
+
+d_flanders = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+d_friuli = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+}
+
+d_gabes = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+}
+
+d_gaeseong = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+}
+
+d_galicia = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+}
+
+d_galloway = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "red"
+}
+
+d_gascogne = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+d_gayomarthianism = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_genoa = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "blue"
+}
+
+d_georgia = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "yellow"
+}
+
+d_ghulat = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+}
+
+d_gloucester = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "green"
+}
+
+d_gotland = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_granada = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+}
+
+d_greater_armenia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "green"
+}
+
+d_grodno = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+}
+
+d_gyeongju = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+d_hai_dong = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+}
+
+d_halych = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_haymanot = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "yellow"
+}
+
+d_hereford = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_hokurikudo = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+}
+
+d_holland = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+d_hormuz = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "white"
+}
+
+d_iceland = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "black"
+}
+
+d_iconoclast = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+}
+
+d_imami = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+d_indrapura = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+d_ismaili = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "blue"
+}
+
+d_istria = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_itil = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+}
+
+d_jerid = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_jharkand = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+d_jomsvikings = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+d_julich = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+d_kabarism = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "purple"
+}
+
+d_kairouan = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+d_karaism = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_kasi = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+d_kawar = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+d_kermanshah = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "yellow"
+}
+
+d_khopyor = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+d_khurmazta = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "black"
+}
+
+d_khurramism = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "purple"
+}
+
+d_khuzestan = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "black"
+}
+
+d_kiev = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+d_kinai = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+d_kizilyedisan = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_konkana = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "green"
+}
+
+d_krain = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_krete = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "black"
+}
+
+d_kroumerie = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "blue"
+}
+
+d_kurdistan = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_kuru = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_laamp_aelfwine = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "blue"
+}
+
+d_laamp_ahwazi = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+}
+
+d_laamp_ali_ibn_reverter = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "green"
+}
+
+d_laamp_anangapida = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+d_laamp_andronikos_komnenos = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "purple"
+}
+
+d_laamp_arrow_cutters = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "red"
+}
+
+d_laamp_asen = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+d_laamp_band_of_the_inland_sea = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+d_laamp_companions_of_caodong = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "yellow"
+}
+
+d_laamp_crispin = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_laamp_danishmend = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_laamp_dawn_company = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+}
+
+d_laamp_delta_company = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+d_laamp_ding_hui = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+}
+
+d_laamp_disciples_of_chongyang = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+d_laamp_eastern_sculptors = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "green"
+}
+
+d_laamp_el_cid = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "red"
+}
+
+d_laamp_enian = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_laamp_frontier_guardians = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+d_laamp_guttorm = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+d_laamp_hidden_valley_banner = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+d_laamp_hiei_wayfarers = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "purple"
+}
+
+d_laamp_hrolfr = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_laamp_karatzas = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "green"
+}
+
+d_laamp_kizil_buga = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+d_laamp_lalibela = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "black"
+}
+
+d_laamp_leaf_hermits = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_laamp_lembongs_band = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "red"
+}
+
+d_laamp_liangshan_band = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_laamp_mieszko = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_laamp_miyoshi_kiyotsura = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+d_laamp_muhammad_bakhtiyar = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+}
+
+d_laamp_munheon_disciples = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "purple"
+}
+
+d_laamp_northern_blades = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+d_laamp_ordinators = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "blue"
+}
+
+d_laamp_pathwalkers = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+d_laamp_pongyi_thaing_fellowship = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+d_laamp_raimon_brun = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_laamp_raoul = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_laamp_ravine_lords = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_laamp_sabbah = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_laamp_samadhi_and_prajna_society = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+d_laamp_sirafi_mariners = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+d_laamp_stormbringers = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+d_laamp_suleyman = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_laamp_ubbe = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "black"
+}
+
+d_laamp_voiteh = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+d_laamp_wake = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+d_laamp_wallada = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+d_laamp_wandering_lute = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+}
+
+d_laamp_way_of_the_mountains = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "blue"
+}
+
+d_laamp_white_tigers = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+d_laamp_zhu_quanzhong = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+d_laamp_ziyar = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_lam_tay = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+d_lancaster = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "blue"
+}
+
+d_languedoc = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+}
+
+d_lata = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+}
+
+d_latgalians = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+d_latium = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_lausitz = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "blue"
+}
+
+d_leinster = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "black"
+}
+
+d_leon = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_lesser_poland = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+}
+
+d_levedia = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+}
+
+d_lithuanians = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+d_livonia = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_lombardia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_lop_buri = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+d_lower_bosna = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "red"
+}
+
+d_lower_lorraine = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "blue"
+}
+
+d_lower_silesia = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_luodian = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+d_luxembourg = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "blue"
+}
+
+d_magadha = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+d_mahra = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "green"
+}
+
+d_malabarism = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+}
+
+d_mallorca = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+d_manichean = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+}
+
+d_maru = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+}
+
+d_masmudi = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "purple"
+}
+
+d_masuria = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+}
+
+d_mazdakism = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "black"
+}
+
+d_mazdayasna = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+d_mecca = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+d_medapata = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "black"
+}
+
+d_medina = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "yellow"
+}
+
+d_meissen = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+d_merv = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "yellow"
+}
+
+d_mesopotamia = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+d_minsk = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+d_mombasa = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_munster = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+d_murcia = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_muwalladi = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "yellow"
+}
+
+d_nankaido = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+d_nasikya = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "blue"
+}
+
+d_navarra = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+d_nf_agelastos = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+}
+
+d_nf_alopos = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_nf_ampelas = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+d_nf_angelos = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+d_nf_aplakes = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "purple"
+}
+
+d_nf_arcruni = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_nf_areobindenos = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+d_nf_argyros = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "red"
+}
+
+d_nf_basiliakos = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+d_nf_batatzes = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "black"
+}
+
+d_nf_botaneiates = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_nf_branas = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_nf_bryennios = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "green"
+}
+
+d_nf_diogenes = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+d_nf_doukas = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+}
+
+d_nf_dragosevic = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_nf_durres = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_nf_gabras = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+d_nf_garidas = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_nf_gerontas = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "red"
+}
+
+d_nf_hexavoulis = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+d_nf_kamateros = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "purple"
+}
+
+d_nf_kamytzes = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+d_nf_kantakouzenos = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "white"
+}
+
+d_nf_karandenos = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+d_nf_kardias = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+}
+
+d_nf_katakalitzes = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+d_nf_kaukadenos = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+d_nf_komnenos = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+d_nf_komnenos_doukas = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "purple"
+}
+
+d_nf_kontostephanos = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "red"
+}
+
+d_nf_kourkouas = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "green"
+}
+
+d_nf_krateros = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+d_nf_lachanodrakon = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+d_nf_lampardas = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_nf_macrodoukas = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "black"
+}
+
+d_nf_makedon = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+d_nf_makrembolites = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+}
+
+d_nf_maleinos = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "purple"
+}
+
+d_nf_maleios = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_nf_maurikios = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+d_nf_melissenos = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "purple"
+}
+
+d_nf_murzuphlos = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_nf_ooryphas = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+d_nf_ouranos = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "red"
+}
+
+d_nf_pahlavuni = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_nf_palaiologos = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "red"
+}
+
+d_nf_pastillas = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+}
+
+d_nf_pegonites = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+d_nf_petraliphas = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+d_nf_phokas = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_nf_pleustes = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+d_nf_raoul = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_nf_rogerios = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_nf_saronites = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+d_nf_sellokalas = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_nf_skleros = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_nf_synadenos = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+d_nf_tarchaneiotes = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+}
+
+d_nf_taronites = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+d_nf_varajnuni = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+d_nghe_an = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+d_nishapur = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+}
+
+d_nizari = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_nordgau = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_normandy = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+d_north_saikaido = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+d_northern_isles = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_northumberland = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+d_novgorod = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "green"
+}
+
+d_oman = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+d_opsikion = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+}
+
+d_optimatoi = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+}
+
+d_orleans = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "green"
+}
+
+d_ostergotland = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "blue"
+}
+
+d_osterreich = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "red"
+}
+
+d_ostmark = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+d_oultrejourdain = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "yellow"
+}
+
+d_palestine = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "blue"
+}
+
+d_paphlagonia = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+}
+
+d_patriarchate_in_the_east = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_pereyaslavl = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+}
+
+d_pinsk = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "green"
+}
+
+d_pisa = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "black"
+}
+
+d_poitou = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+d_pomerelia = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+d_porto = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "red"
+}
+
+d_provence = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "yellow"
+}
+
+d_prussia = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "purple"
+}
+
+d_ragusa = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+}
+
+d_red_levedia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "blue"
+}
+
+d_rif = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+d_romagna = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+}
+
+d_ruhunu = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+d_ruucuu = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "green"
+}
+
+d_salerno = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "black"
+}
+
+d_salzburg = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "blue"
+}
+
+d_samaritan = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_samarra = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+d_sardinia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "green"
+}
+
+d_saurashtra = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "white"
+}
+
+d_savoie = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "green"
+}
+
+d_sebasteia = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "purple"
+}
+
+d_sevilla = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+}
+
+d_shammar = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "black"
+}
+
+d_shiite = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+}
+
+d_shimen = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "yellow"
+}
+
+d_shirvan = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+d_sicily = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+d_sinai = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+d_sinhala = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_skane = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_slavonia = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+}
+
+d_smaland = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "purple"
+}
+
+d_socotra = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+d_somerset = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+d_spoleto = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+d_steyermark = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+}
+
+d_stravani = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+d_sukhothai = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+d_sunni = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+d_syrmia = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+d_syrte = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_tabaristan = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+}
+
+d_tamna = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "red"
+}
+
+d_tana = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "black"
+}
+
+d_thang_long = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+}
+
+d_the_isles = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+d_thrace = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+d_thuringia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_tibesti = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "purple"
+}
+
+d_tirabhukti = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+d_tlemcen = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+d_toledo = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+d_tondai_nadu = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "white"
+}
+
+d_toscana = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "yellow"
+}
+
+d_toulouse = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+d_transjurania = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "white"
+}
+
+d_transylvania = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+}
+
+d_transylvanian_alps = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_tripolitania = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+d_tunis = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+d_turov = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+}
+
+d_tyrol = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "red"
+}
+
+d_ulster = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "green"
+}
+
+d_upper_burgundy = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+d_upper_lorraine = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "purple"
+}
+
+d_upper_silesia = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+d_urartuism = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_urdunn = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+}
+
+d_usora = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+}
+
+d_valencia = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+d_valois = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+}
+
+d_vaspurakan = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+d_vastergotland = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+d_venice = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+d_vijaya = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_volhynia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "purple"
+}
+
+d_voronezh = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+d_west_bando = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+d_western_isles = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "green"
+}
+
+d_xiyuan = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+d_yedisan = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+d_york = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+d_yungdrung_bon = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+d_zab = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "black"
+}
+
+d_zangke = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "white"
+}
+
+d_zaragoza = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+}
+
+d_zayidi = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+d_zun_warriors = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+d_zurvanism = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+e_aarlud_khanate = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+}
+
+e_abyssinia = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "red"
+}
+
+e_aegyptus = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+e_africa = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "yellow"
+}
+
+e_anatolia = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+e_andong = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+}
+
+e_arabia = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+e_armenia = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+e_bactria = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+e_baruun_khanate = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "red"
+}
+
+e_bengal = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "purple"
+}
+
+e_beth_nahrain = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "purple"
+}
+
+e_blue_horde = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+e_britannia = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+e_brunei = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "white"
+}
+
+e_byzantium = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+e_carpathia = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+e_carthage = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+e_caspian-pontic_steppe = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+e_chagatai = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+}
+
+e_deccan = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "yellow"
+}
+
+e_france = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+e_germany = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+e_golden_horde = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+e_goryeo = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+e_great_liao = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+e_great_yuan = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "blue"
+}
+
+e_hindustan = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+e_hre = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "purple"
+}
+
+e_ilkhanate = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "yellow"
+}
+
+e_illyria = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+e_italy = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+}
+
+e_japan = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+e_jingyang = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+e_kirghiz_khanate = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+}
+
+e_latin_empire = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+e_liangyi = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+e_lingnan = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+e_macedonia = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "red"
+}
+
+e_maghreb = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "red"
+}
+
+e_majapahit = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+}
+
+e_minister_censor = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "red"
+}
+
+e_minister_chancellor = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+e_minister_grand_marshal = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+e_minister_of_justice = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "purple"
+}
+
+e_minister_of_personnel = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "purple"
+}
+
+e_minister_of_revenue = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+e_minister_of_rites = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+}
+
+e_minister_of_war = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+e_minister_of_works = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+}
+
+e_mongol_empire = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+e_mongolia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "yellow"
+}
+
+e_north_sea = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+e_nusantara = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+e_omnod_dalai_khanate = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+e_oriens = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "blue"
+}
+
+e_outremer = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+e_persia = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+}
+
+e_rajastan = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+e_red_horde = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+}
+
+e_russia = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "black"
+}
+
+e_ruucuu = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+e_scandinavia = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "black"
+}
+
+e_slavia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+e_spain = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+e_srivijaya = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "blue"
+}
+
+e_tartaria = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+e_tibet = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+}
+
+e_timurids = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+}
+
+e_togskol_khanate = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "black"
+}
+
+e_turan = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+}
+
+e_uyghur_khanate = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+}
+
+e_viet = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+e_wendish_empire = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+e_west_slavia = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "blue"
+}
+
+e_white_horde = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+e_yongliang = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+}
+
+e_zhongyuan = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+h_dar_al_islam = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+h_eastern_roman_empire = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "black"
+}
+
+h_huaxia = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+h_india = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+}
+
+h_roman_empire = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+}
+
+k_abyssinia = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+k_africa = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+k_anatolia = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+}
+
+k_andalusia = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+}
+
+k_aquitaine = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+k_arabia = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+k_aragon = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+}
+
+k_armenia = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+k_armenian_principality = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "red"
+}
+
+k_asturias = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+}
+
+k_austria = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+k_aydin = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "red"
+}
+
+k_aynumosir = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+k_badajoz = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+k_baekje = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+}
+
+k_balhae = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "blue"
+}
+
+k_bavaria = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "green"
+}
+
+k_bene_israel = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+k_bihar = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "green"
+}
+
+k_blemmyia = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+k_bohemia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "green"
+}
+
+k_bosnia = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+k_bosporan_kingdom = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "red"
+}
+
+k_brittany = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+k_brunei = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "purple"
+}
+
+k_bulgaria = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "green"
+}
+
+k_burgundy = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+k_canarias = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "green"
+}
+
+k_candar = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "purple"
+}
+
+k_carantania = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+k_carthage = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+k_carthago_nova = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "purple"
+}
+
+k_castille = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+k_caucasus = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+k_champa = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+}
+
+k_chrysanthemum_throne = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+k_cornwall = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+k_cossack = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+k_croatia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "red"
+}
+
+k_cuman = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "yellow"
+}
+
+k_cumbria = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+k_cyprus = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+k_dacia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "yellow"
+}
+
+k_dali = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "blue"
+}
+
+k_daneland = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+}
+
+k_danelaw = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+k_daylam = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "blue"
+}
+
+k_delhi = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "red"
+}
+
+k_denmark = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+}
+
+k_dzungaria = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "black"
+}
+
+k_east_francia = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+k_egypt = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "yellow"
+}
+
+k_england = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "blue"
+}
+
+k_epirus = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+k_eretnid = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+k_esthonia = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+k_fashion = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "purple"
+}
+
+k_france = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+k_frisia = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+k_galicia-volhynia = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+}
+
+k_georgia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "blue"
+}
+
+k_germiyan = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+k_ghana = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+k_goguryeo = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+k_gondwana = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+}
+
+k_hellas = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "blue"
+}
+
+k_hexi = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+k_hitakami = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+k_hungary = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "purple"
+}
+
+k_ireland = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "purple"
+}
+
+k_israel = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "yellow"
+}
+
+k_italy = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+k_jazira = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+k_jerusalem = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+}
+
+k_kabulistan = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+k_karaman = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+k_kashmir = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "black"
+}
+
+k_khorasan = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "white"
+}
+
+k_kosala = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+k_krete = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "white"
+}
+
+k_leon = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+k_livonia = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "purple"
+}
+
+k_lotharingia = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+k_maghreb = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "purple"
+}
+
+k_magyar = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+}
+
+k_malayadvipa = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "blue"
+}
+
+k_malwa = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+k_mann_the_isles = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+k_mauretania = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+k_mentese = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "yellow"
+}
+
+k_mesopotamia = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+k_moldavia = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+k_moravia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "yellow"
+}
+
+k_naples = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "black"
+}
+
+k_navarra = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+k_nikaea = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "yellow"
+}
+
+k_norway = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+k_novgorod = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+}
+
+k_nubia = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+}
+
+k_old_armenia = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+}
+
+k_opolye = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+k_orissa = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "red"
+}
+
+k_orthodox = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+}
+
+k_ottoman = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+k_pagan = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+k_papal_state = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "purple"
+}
+
+k_pechenegs = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+k_persia = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "white"
+}
+
+k_poland = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+}
+
+k_pomerania = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+k_pontic_steppe = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+k_pontus = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "red"
+}
+
+k_portugal = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+k_punjab = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "white"
+}
+
+k_rajputana = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+k_romagna = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+k_rum = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "blue"
+}
+
+k_ruthenia = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+k_ruucuu = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "yellow"
+}
+
+k_sakya_trizin = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+}
+
+k_sardinia = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "blue"
+}
+
+k_saruhan = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+}
+
+k_saxony = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+k_scotland = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+}
+
+k_serbia = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "purple"
+}
+
+k_siam = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+k_sicily = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+k_silla = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "blue"
+}
+
+k_sindh = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "black"
+}
+
+k_sorbia = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "green"
+}
+
+k_spanish_galicia = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "purple"
+}
+
+k_sweden = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+}
+
+k_switzerland = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}
+
+k_syria = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "blue"
+}
+
+k_tahert = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "black"
+}
+
+k_tamilakam = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "black"
+}
+
+k_tanjungnagara = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+k_tekke = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "yellow"
+}
+
+k_thessalonika = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "green"
+}
+
+k_toledo = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "red"
+}
+
+k_transoxiana = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "green"
+}
+
+k_trebizond = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "white"
+}
+
+k_trinacria = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "yellow"
+}
+
+k_tripolitania = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "purple"
+}
+
+k_valencia = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+k_venice = {
+	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "white"
+}
+
+k_viet = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "blue"
+}
+
+k_visigoths = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	color2 = "white"
+}
+
+k_wales = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green"
+}
+
+k_white_rus = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "purple"
+}
+
+k_xia = {
+	pattern = "pattern_solid.dds"
+	color1 = "purple"
+	color2 = "red"
+}
+
+k_yavakadvipa = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}
+
+k_yemen = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "green"
+}
+
+k_yongson_throne = {
+	pattern = "pattern_solid.dds"
+	color1 = "blue"
+	color2 = "red"
+}

@@ -1,0 +1,37 @@
+﻿l_simp_chinese:
+
+rule_embattle_side_advantage_multiplier:0 "@war_icon![embattle|E]——边路优势乘数"
+setting_embattle_side_advantage_1x:0 "1倍"
+setting_embattle_side_advantage_1x_desc:0 "中军[commander|E]会额外获得等同于两翼[commander]的军事能力总和的[advantage|E]。"
+setting_embattle_side_advantage_0.5x:0 "#high 0.5倍#!"
+setting_embattle_side_advantage_0.5x_desc:0 "中军[commander|E]会额外获得等同于两翼[commander]的军事能力总和#V 一半#!的[advantage|E]。"
+
+rule_embattle_side_commander_traits_sharing:0 "@war_icon![embattle|E]——副将[battle|E][commander_trait|E]共享"
+setting_embattle_side_commander_traits_sharing_enable:0 "启用"
+setting_embattle_side_commander_traits_sharing_enable_desc:0 "中军[commander|E]战斗中共享两翼[commander]的[battle|E][commander_traits|E]。"
+setting_embattle_side_commander_traits_sharing_disable:0 "#high 禁用#!"
+setting_embattle_side_commander_traits_sharing_disable_desc:0 "同原版。"
+
+rule_embattle_side_commander_appointor:0 "@war_icon![embattle|E]——副将任免委任"
+setting_embattle_side_commander_appointor_ai_only_except_own_troop:0 "仅亲征部队"
+setting_embattle_side_commander_appointor_ai_only_except_own_troop_desc:0 "玩家仅能任命亲征部队的两翼[commander]。"
+setting_embattle_side_commander_appointor_player_exempt:0 "#high 任何部队#!"
+setting_embattle_side_commander_appointor_player_exempt_desc:0 "玩家可以任命电脑角色担任中军[commander|E]的部队的两翼[commander]。"
+
+rule_embattle_tactic:0 "@war_icon![embattle|E]——[embattle_tactic|E]"
+setting_embattle_tactic_enabled:0 "启用"
+setting_embattle_tactic_enabled_desc:0 "[battle|E]中每#V 20#!天中军[commander|E]会选一个[embattle_tactic|E]发动。"
+setting_embattle_tactic_disabled:0 "#high 禁用#!"
+setting_embattle_tactic_disabled_desc:0 "同原版。"
+
+rule_embattle_side_commanders_trait_xp:0 "@war_icon![embattle|E]——副将[commander_trait|E]晋升"
+setting_embattle_side_commanders_trait_xp_enabled:0 "启用"
+setting_embattle_side_commanders_trait_xp_enabled_desc:0 "除中军[commander|E]之外，两翼将领也可以通过[battle|E]、[siege|E]和#E 行军#!来获得[commander_trait|E]的[trait_level_track_xp|E]。"
+setting_embattle_side_commanders_trait_xp_disabled:0 "禁用"
+setting_embattle_side_commanders_trait_xp_disabled_desc:0 "同原版。"
+
+rule_embattle_acotw_compatch:0 "@war_icon![embattle|E]——[GetTrait('acotw_obscured').GetName( GetNullCharacter )|E]"
+setting_embattle_acotw_compatch_enabled:0 "启用"
+setting_embattle_acotw_compatch_enabled_desc:0 "[GetTrait('acotw_obscured').GetName( GetNullCharacter )]不会使用[embattle|E]，这会#P 极大#!提高性能。该[trait|E]出自[a_culling_of_the_weak|E]。"
+setting_embattle_acotw_compatch_disabled:0 "禁用"
+setting_embattle_acotw_compatch_disabled_desc:0 "同原[embattle|E]。"

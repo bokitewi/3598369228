@@ -1,0 +1,311 @@
+﻿# Synced from vanilla 1.19 00_perk_interactions.txt.
+# Players and non-Spring governments retain the interaction. The
+# populous feudal_admin AI is excluded from automatic scheme creation.
+
+fabricate_hook_interaction = {
+	icon = icon_scheme_fabricate_hook
+	category = interaction_category_hostile
+
+	auto_accept = yes
+	ignores_pending_interaction_block = yes
+
+	scheme = fabricate_hook
+
+	desc = fabricate_hook_interaction_desc
+	
+	is_shown = {
+		scope:actor = {
+			OR = {
+				has_perk = truth_is_relative_perk
+				AND = {
+					has_trait = vengeful
+					has_relation_rival = scope:recipient
+				}
+				AND = {
+					any_character_struggle = {
+						involvement = involved
+						has_struggle_phase_parameter = unlocks_fabricate_hooks_for_all
+						is_secondary_character_involvement_either_trigger = {
+							CHAR = scope:recipient
+						}
+					}
+				}
+				AND = {
+					government_has_flag = government_is_clan
+					is_in_same_clan_as_trigger = { CHARACTER = scope:recipient }
+					house = { has_house_unity_stage = competitive }	
+				}	
+			}
+		}
+		scope:recipient != scope:actor
+	}
+
+	is_valid = {
+		NOT = { scope:actor = { has_hook = scope:recipient } }
+		OR = {
+			scope:actor = {
+				OR = {
+					has_perk = truth_is_relative_perk # To display that it's available because of the Perk
+					AND = {
+						has_trait = vengeful
+						has_relation_rival = scope:recipient
+					}
+					AND = {
+						any_character_struggle = {
+							involvement = involved
+							has_struggle_phase_parameter = unlocks_fabricate_hooks_for_all
+							is_secondary_character_involvement_either_trigger = {
+								CHAR = scope:recipient
+							}
+						}
+					}
+					AND = {
+						government_has_flag = government_is_clan
+						is_in_same_clan_as_trigger = { CHARACTER = scope:recipient }
+						house = { has_house_unity_stage = competitive }	
+					}	
+				}
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			is_physically_able_adult = yes
+			can_start_scheme = {
+				target_character = scope:recipient
+				type = fabricate_hook
+			}
+		}
+	}
+
+	# Scheme Starter Packages
+	options_heading = schemes.t.agent_packages
+	send_options_exclusive = yes
+	## Balanced agents.
+	send_option = {
+		flag = agent_focus_balance
+		current_description = fabricate_hook_interaction.tt.agent_focus_balance
+	}
+	## Focused on Success Chance.
+	send_option = {
+		flag = agent_focus_success
+		current_description = fabricate_hook_interaction.tt.agent_focus_success
+	}
+	## Focused on Speed.
+	send_option = {
+		flag = agent_focus_speed
+		current_description = fabricate_hook_interaction.tt.agent_focus_speed
+	}
+	## Focused on Secrecy.
+	send_option = {
+		flag = agent_focus_secrecy
+		current_description = fabricate_hook_interaction.tt.agent_focus_secrecy
+	}
+
+	on_accept = {
+		scope:actor = {
+			stress_impact = {
+				just = medium_stress_impact_gain
+				honest = medium_stress_impact_gain
+				compassionate = minor_stress_impact_gain
+			}
+			send_interface_toast = {
+				type = event_toast_effect_good
+				title = fabricate_hook_interaction_toast
+				left_icon = scope:actor
+				right_icon = scope:recipient
+
+				# Success.
+				if = {
+					limit = { scope:agent_focus_success ?= yes }
+					begin_scheme_with_agents_effect = {
+						SCHEME_TYPE = fabricate_hook
+						TARGET_TYPE = target_character
+						TARGET_SCOPE = scope:recipient
+						# Success.
+						AGENT_1 = agent_outcast
+						AGENT_2 = agent_diplomat
+						AGENT_3 = agent_thief
+						# Speed.
+						AGENT_4 = agent_infiltrator
+						# Secrecy.
+						AGENT_5 = agent_lookout
+					}
+				}
+				# Speed.
+				else_if = {
+					limit = { scope:agent_focus_speed ?= yes }
+					begin_scheme_with_agents_effect = {
+						SCHEME_TYPE = fabricate_hook
+						TARGET_TYPE = target_character
+						TARGET_SCOPE = scope:recipient
+						# Speed.
+						AGENT_1 = agent_infiltrator
+						AGENT_2 = agent_footpad
+						AGENT_3 = agent_socialite
+						# Success.
+						AGENT_4 = agent_outcast
+						# Secrecy.
+						AGENT_5 = agent_lookout
+					}
+				}
+				# Secrecy.
+				else_if = {
+					limit = { scope:agent_focus_secrecy ?= yes }
+					begin_scheme_with_agents_effect = {
+						SCHEME_TYPE = fabricate_hook
+						TARGET_TYPE = target_character
+						TARGET_SCOPE = scope:recipient
+						# Secrecy.
+						AGENT_1 = agent_lookout
+						AGENT_2 = agent_decoy
+						AGENT_3 = agent_justiciar
+						# Success.
+						AGENT_4 = agent_outcast
+						# Speed.
+						AGENT_5 = agent_footpad
+					}
+				}
+				# Balanced.
+				else = {
+					begin_scheme_with_agents_effect = {
+						SCHEME_TYPE = fabricate_hook
+						TARGET_TYPE = target_character
+						TARGET_SCOPE = scope:recipient
+						# Success.
+						AGENT_1 = agent_outcast
+						AGENT_2 = agent_thief
+						# Speed.
+						AGENT_3 = agent_infiltrator
+						AGENT_4 = agent_footpad
+						# Secrecy.
+						AGENT_5 = agent_lookout
+					}
+				}
+			}
+		}
+	}
+
+	ai_targets = {
+		ai_recipients = liege
+		ai_recipients = vassals
+	}
+
+	ai_targets = {
+		ai_recipients = neighboring_rulers
+		ai_recipients = peer_vassals
+		max = 10
+	}
+	
+	ai_targets = {
+		ai_recipients = courtiers
+		max = 5
+	}
+	
+	ai_targets = {
+		ai_recipients = realm_characters
+		ai_recipients = top_realm_domicile_owners
+		max = 30
+	}
+	
+	ai_potential = {
+		NOT = { has_government = feudal_admin_government }
+		is_adult = yes
+		ai_greed >= low_positive_ai_value
+		intrigue >= medium_skill_rating
+		NOR = {
+			has_trait = content
+			any_scheme = {
+				OR = {
+					scheme_type = murder
+					scheme_type = abduct
+					scheme_type = claim_throne
+					scheme_type = fabricate_hook
+					scheme_type = steal_back_artifact
+				}
+			}
+		}
+	}
+	
+	ai_target_quick_trigger = {
+		adult = yes
+	}
+
+	ai_frequency_by_tier = {
+		barony = 0
+		county = 60
+		duchy = 12
+		kingdom = 12
+		empire = 12
+		hegemony = 12
+	}
+
+	ai_will_do = {
+		base = 10
+
+		modifier = {
+			add = {
+				value = 20
+				if = {
+					limit = {
+						exists = scope:recipient.cp:councillor_spymaster
+						scope:recipient.cp:councillor_spymaster = { intrigue < 10 }
+					}
+					add = 50
+				}
+			}
+			
+			scope:recipient = {
+				is_vassal_of = scope:actor
+				vassal_contract_has_modifiable_obligations = yes
+			}
+		}
+		
+		modifier = {
+			add = -50
+			
+			opinion = {
+				target = scope:recipient
+				value >= high_positive_opinion
+			}
+		}
+		
+		modifier = {
+			add = -40
+			
+			scope:recipient = {
+				is_playable_character = yes
+				NOT = {
+					is_vassal_of = scope:actor
+				}
+			}
+		}
+		
+		modifier = {
+			add = 50
+			
+			scope:recipient = {
+				is_playable_character = no
+				OR = {
+					liege = scope:actor.liege
+					liege = {
+						OR = {
+							has_relation_rival = scope:actor
+							has_relation_nemesis = scope:actor
+						}
+					}
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0
+			
+			scope:recipient = {
+				has_council_position = councillor_spymaster
+			}
+		}
+		start_hostile_scheme_ai_base_modifiers = yes # At the end so Cowed can block it completely
+	}
+}

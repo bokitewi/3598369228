@@ -1,0 +1,178 @@
+@dm_government_reform_cost = 2000
+
+dm_government_reform_law_group = {
+	default = dm_government_reform_feudal_law
+	cumulative = no
+	flag = realm_law
+	flag = dm_government_reform_law_group
+
+	can_change_law_group = {
+		is_landed = yes
+		is_independent_ruler = yes
+		highest_held_title_tier >= tier_kingdom
+		NOT = { has_character_flag = dm_government_reform_cooldown }
+	}
+
+	dm_government_reform_feudal_law = {
+		flag = dm_government_reform_law
+		should_start_with = { has_government = feudal_government }
+		can_keep = { OR = { has_government = feudal_government has_character_flag = dm_government_reform_applying } }
+		can_have = { is_landed = yes }
+		can_pass = { NOT = { has_government = feudal_government } }
+		pass_cost = { prestige = @dm_government_reform_cost }
+		on_pass = { dm_government_reform_change_government_effect = { GOVERNMENT = feudal_government TARGET = feudal } }
+	}
+	dm_government_reform_republic_law = {
+		flag = dm_government_reform_law
+		should_start_with = { has_government = republic_government }
+		can_keep = { OR = { has_government = republic_government has_character_flag = dm_government_reform_applying } }
+		can_have = { is_landed = yes }
+		can_pass = { NOT = { has_government = republic_government } }
+		pass_cost = { prestige = @dm_government_reform_cost }
+		on_pass = { dm_government_reform_change_government_effect = { GOVERNMENT = republic_government TARGET = republic } }
+	}
+	dm_government_reform_theocracy_law = {
+		flag = dm_government_reform_law
+		should_start_with = { has_government = theocracy_government }
+		can_keep = { OR = { has_government = theocracy_government has_character_flag = dm_government_reform_applying } }
+		can_have = { is_landed = yes }
+		can_pass = { NOT = { has_government = theocracy_government } }
+		pass_cost = { prestige = @dm_government_reform_cost }
+		on_pass = { dm_government_reform_change_government_effect = { GOVERNMENT = theocracy_government TARGET = theocracy } }
+	}
+	dm_government_reform_clan_law = {
+		flag = dm_government_reform_law
+		should_start_with = { has_government = clan_government }
+		can_keep = { OR = { has_government = clan_government has_character_flag = dm_government_reform_applying } }
+		can_have = { is_landed = yes }
+		can_pass = { NOT = { has_government = clan_government } }
+		pass_cost = { prestige = @dm_government_reform_cost }
+		on_pass = { dm_government_reform_change_government_effect = { GOVERNMENT = clan_government TARGET = clan } }
+	}
+	dm_government_reform_tribal_law = {
+		flag = dm_government_reform_law
+		should_start_with = { has_government = tribal_government }
+		can_keep = { OR = { has_government = tribal_government has_character_flag = dm_government_reform_applying } }
+		can_have = { is_landed = yes }
+		can_pass = { NOT = { has_government = tribal_government } }
+		pass_cost = { prestige = @dm_government_reform_cost }
+		on_pass = { dm_government_reform_change_government_effect = { GOVERNMENT = tribal_government TARGET = tribal } }
+	}
+	dm_government_reform_wanua_law = {
+		flag = dm_government_reform_law
+		should_start_with = { has_government = wanua_government }
+		can_keep = { OR = { has_government = wanua_government has_character_flag = dm_government_reform_applying } }
+		can_have = { is_landed = yes }
+		can_pass = { NOT = { has_government = wanua_government } }
+		pass_cost = { prestige = @dm_government_reform_cost }
+		on_pass = { dm_government_reform_change_government_effect = { GOVERNMENT = wanua_government TARGET = wanua } }
+	}
+	dm_government_reform_administrative_law = {
+		flag = dm_government_reform_law
+		should_start_with = { has_government = administrative_government }
+		can_keep = { OR = { has_government = administrative_government has_character_flag = dm_government_reform_applying } }
+		can_have = { is_landed = yes }
+		can_pass = {
+			NOT = { has_government = administrative_government }
+			custom_description = { text = dm_government_reform_requires_ep3_tt has_ep3_dlc_trigger = yes }
+		}
+		pass_cost = { prestige = @dm_government_reform_cost }
+		on_pass = { dm_government_reform_change_government_effect = { GOVERNMENT = administrative_government TARGET = administrative } }
+	}
+	dm_government_reform_feudal_admin_law = {
+		flag = dm_government_reform_law
+		should_start_with = { has_government = feudal_admin_government }
+		can_keep = { OR = { has_government = feudal_admin_government has_character_flag = dm_government_reform_applying } }
+		can_have = { is_landed = yes }
+		can_pass = {
+			NOT = { has_government = feudal_admin_government }
+			custom_description = { text = dm_government_reform_requires_ep3_tt has_ep3_dlc_trigger = yes }
+		}
+		pass_cost = { prestige = @dm_government_reform_cost }
+		on_pass = { dm_government_reform_change_government_effect = { GOVERNMENT = feudal_admin_government TARGET = feudal_admin } }
+	}
+	dm_government_reform_celestial_law = {
+		flag = dm_government_reform_law
+		should_start_with = { has_government = celestial_government }
+		can_keep = { OR = { has_government = celestial_government has_character_flag = dm_government_reform_applying } }
+		can_have = { is_landed = yes }
+		can_pass = {
+			NOT = { has_government = celestial_government }
+			custom_description = { text = dm_government_reform_requires_tgp_tt has_tgp_dlc_trigger = yes }
+		}
+		pass_cost = { prestige = @dm_government_reform_cost }
+		on_pass = { dm_government_reform_change_government_effect = { GOVERNMENT = celestial_government TARGET = celestial } }
+	}
+	dm_government_reform_mandala_law = {
+		flag = dm_government_reform_law
+		should_start_with = { has_government = mandala_government }
+		can_keep = { OR = { has_government = mandala_government has_character_flag = dm_government_reform_applying } }
+		can_have = { is_landed = yes }
+		can_pass = {
+			NOT = { has_government = mandala_government }
+			custom_description = { text = dm_government_reform_requires_tgp_tt has_tgp_dlc_trigger = yes }
+		}
+		pass_cost = { prestige = @dm_government_reform_cost }
+		on_pass = { dm_government_reform_change_government_effect = { GOVERNMENT = mandala_government TARGET = mandala } }
+	}
+	dm_government_reform_meritocratic_law = {
+		flag = dm_government_reform_law
+		should_start_with = { has_government = meritocratic_government }
+		can_keep = { OR = { has_government = meritocratic_government has_character_flag = dm_government_reform_applying } }
+		can_have = { is_landed = yes }
+		can_pass = {
+			NOT = { has_government = meritocratic_government }
+			custom_description = { text = dm_government_reform_requires_tgp_tt has_tgp_dlc_trigger = yes }
+		}
+		pass_cost = { prestige = @dm_government_reform_cost }
+		on_pass = { dm_government_reform_change_government_effect = { GOVERNMENT = meritocratic_government TARGET = meritocratic } }
+	}
+	dm_government_reform_japan_administrative_law = {
+		flag = dm_government_reform_law
+		should_start_with = { has_government = japan_administrative_government }
+		can_keep = { OR = { has_government = japan_administrative_government has_character_flag = dm_government_reform_applying } }
+		can_have = { is_landed = yes }
+		can_pass = {
+			NOT = { has_government = japan_administrative_government }
+			custom_description = { text = dm_government_reform_requires_tgp_tt has_tgp_dlc_trigger = yes }
+		}
+		pass_cost = { prestige = @dm_government_reform_cost }
+		on_pass = { dm_government_reform_change_government_effect = { GOVERNMENT = japan_administrative_government TARGET = japan_administrative } }
+	}
+	dm_government_reform_japan_feudal_law = {
+		flag = dm_government_reform_law
+		should_start_with = { has_government = japan_feudal_government }
+		can_keep = { OR = { has_government = japan_feudal_government has_character_flag = dm_government_reform_applying } }
+		can_have = { is_landed = yes }
+		can_pass = {
+			NOT = { has_government = japan_feudal_government }
+			custom_description = { text = dm_government_reform_requires_tgp_tt has_tgp_dlc_trigger = yes }
+		}
+		pass_cost = { prestige = @dm_government_reform_cost }
+		on_pass = { dm_government_reform_change_government_effect = { GOVERNMENT = japan_feudal_government TARGET = japan_feudal } }
+	}
+	dm_government_reform_nomad_law = {
+		flag = dm_government_reform_law
+		should_start_with = { has_government = nomad_government }
+		can_keep = { OR = { has_government = nomad_government has_character_flag = dm_government_reform_applying } }
+		can_have = { is_landed = yes }
+		can_pass = {
+			NOT = { has_government = nomad_government }
+			custom_description = { text = dm_government_reform_requires_mpo_tt has_mpo_dlc_trigger = yes }
+		}
+		pass_cost = { prestige = @dm_government_reform_cost }
+		on_pass = { dm_government_reform_change_government_effect = { GOVERNMENT = nomad_government TARGET = nomad } }
+	}
+	dm_government_reform_steppe_admin_law = {
+		flag = dm_government_reform_law
+		should_start_with = { has_government = steppe_admin_government }
+		can_keep = { OR = { has_government = steppe_admin_government has_character_flag = dm_government_reform_applying } }
+		can_have = { is_landed = yes }
+		can_pass = {
+			NOT = { has_government = steppe_admin_government }
+			custom_description = { text = dm_government_reform_requires_tgp_tt has_tgp_dlc_trigger = yes }
+		}
+		pass_cost = { prestige = @dm_government_reform_cost }
+		on_pass = { dm_government_reform_change_government_effect = { GOVERNMENT = steppe_admin_government TARGET = steppe_admin } }
+	}
+}

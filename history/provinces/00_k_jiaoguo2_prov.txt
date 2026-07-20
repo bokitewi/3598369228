@@ -1,0 +1,83 @@
+﻿##### d_jiaoshi2 ############################
+
+### c_gaoshan
+# GAOSHAN
+299 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_tan2
+# TAN2
+308 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_jianyang1
+# 
+1980 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_jiao6
+# 
+1981 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_chuzhong
+# 
+2037 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yongyang1
+# 
+2038 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shigu
+# 
+2043 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhuiqi
+# ZHUIQI
+2256 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_bojing
+# THOUARS
+2257 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

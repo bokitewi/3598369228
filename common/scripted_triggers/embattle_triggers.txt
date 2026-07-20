@@ -1,0 +1,24 @@
+﻿embattle_has_valid_commander_trigger = {
+	scope:army.var:embattle_right_flank_commander ?= {
+		is_alive = yes
+		knight_army = scope:army
+	}
+	scope:army.var:embattle_left_flank_commander ?= {
+		is_alive = yes
+		knight_army = scope:army
+	}
+}
+
+embattle_commander_trait_can_be_seeded_trigger = {
+	scope:commander ?= {
+		NOT = { has_trait = $SEED_TRAIT$ }
+	}
+	OR = {
+		scope:army.var:embattle_left_flank_commander ?= {
+			has_trait = $SEED_TRAIT$
+		}
+		scope:army.var:embattle_right_flank_commander ?= {
+			has_trait = $SEED_TRAIT$
+		}
+	}
+}

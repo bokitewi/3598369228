@@ -1,0 +1,23 @@
+﻿namespace = easteregg_event
+
+##################################################
+# #Vanity Events
+# 0001 - 10002	Charna and Jakub duel
+##################################################
+
+#	Secret event to decide who should have the rock.
+easteregg_event.0001 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+
+easteregg_event.0002 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}

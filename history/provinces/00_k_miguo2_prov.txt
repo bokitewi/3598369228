@@ -1,0 +1,74 @@
+﻿##### d_mishi2 ############################
+
+### c_ziwugu
+# ZIWUGU
+3121 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xunyang1
+# XUNYANG1
+3115 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yuyang2
+# YUYANG2
+3116 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_fengli1
+# FENGLI1
+3117 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_aoshan
+# AOSHAN
+3644 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xuandi
+# XUANDI
+3645 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shangjin
+# SHANGJIN
+3646 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_jiaojing
+# JIAOXING
+3647 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

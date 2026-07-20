@@ -1,0 +1,162 @@
+﻿# Autonomous stance changes for eligible Lijiao participants.
+
+switch_to_supporters = {
+	title = switch_to_supporters_title
+	desc = switch_to_supporters_desc
+	confirm_text = switch_to_supporters_confirm
+	picture = { reference = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_pro.dds" }
+	decision_group_type = switch_faction_group
+
+	is_shown = {
+		saas_eligible_participant_trigger = yes
+		saas_is_lijiao_ruler_trigger = yes
+		NOT = { saas_is_wangdao_trigger = yes }
+	}
+	is_valid = {
+		is_available_adult = yes
+		is_imprisoned = no
+		is_commanding_army = no
+		is_travelling = no
+		NOT = { has_character_flag = recently_switched_faction_flag }
+	}
+	cost = { prestige = 500 }
+	effect = {
+		if = {
+			limit = { saas_is_badao_trigger = yes }
+			every_ruler = {
+				limit = { saas_is_badao_trigger = yes this != root }
+				add_opinion = { target = root modifier = switched_faction_opinion }
+			}
+		}
+		else_if = {
+			limit = { saas_is_neutral_trigger = yes }
+			every_ruler = {
+				limit = { saas_is_neutral_trigger = yes this != root }
+				add_opinion = { target = root modifier = switched_faction_opinion }
+			}
+		}
+		saas_clear_participant_stance_effect = yes
+		add_trait = character_involve_supporters_of_zhou_dynasty
+		if = {
+			limit = { has_legitimacy = yes }
+			add_legitimacy = -15
+		}
+		add_character_flag = { flag = recently_switched_faction_flag years = 5 }
+		saas_trigger_catalyst_effect = { CATALYST = saas_catalyst_wangdao_gains_member CHARACTER = root }
+		custom_tooltip = switch_faction_penalty_tooltip
+	}
+	ai_check_interval = 12
+	ai_will_do = {
+		base = 5
+		modifier = { add = 35 has_trait = just }
+		modifier = { add = 25 has_trait = humble }
+		modifier = { factor = 0 saas_is_warring_states_phase_trigger = yes has_trait = ambitious }
+	}
+}
+
+switch_to_opponents = {
+	title = switch_to_opponents_title
+	desc = switch_to_opponents_desc
+	confirm_text = switch_to_opponents_confirm
+	picture = { reference = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_expand.dds" }
+	decision_group_type = switch_faction_group
+
+	is_shown = {
+		saas_eligible_participant_trigger = yes
+		saas_is_lijiao_ruler_trigger = yes
+		NOT = { saas_is_badao_trigger = yes }
+	}
+	is_valid = {
+		is_available_adult = yes
+		is_imprisoned = no
+		is_commanding_army = no
+		is_travelling = no
+		NOT = { has_character_flag = recently_switched_faction_flag }
+	}
+	cost = { prestige = 500 }
+	effect = {
+		if = {
+			limit = { saas_is_wangdao_trigger = yes }
+			every_ruler = {
+				limit = { saas_is_wangdao_trigger = yes this != root }
+				add_opinion = { target = root modifier = switched_faction_opinion }
+			}
+		}
+		else_if = {
+			limit = { saas_is_neutral_trigger = yes }
+			every_ruler = {
+				limit = { saas_is_neutral_trigger = yes this != root }
+				add_opinion = { target = root modifier = switched_faction_opinion }
+			}
+		}
+		saas_clear_participant_stance_effect = yes
+		add_trait = character_involve_opponents_of_zhou_dynasty
+		if = {
+			limit = { has_legitimacy = yes }
+			add_legitimacy = -15
+		}
+		add_character_flag = { flag = recently_switched_faction_flag years = 5 }
+		custom_tooltip = switch_faction_penalty_tooltip
+	}
+	ai_check_interval = 12
+	ai_will_do = {
+		base = 5
+		modifier = { add = 45 has_trait = ambitious }
+		modifier = { add = 30 has_trait = arrogant }
+		modifier = { add = 20 saas_is_warring_states_phase_trigger = yes }
+		modifier = { factor = 0 has_trait = content }
+	}
+}
+
+switch_to_neutral = {
+	title = switch_to_neutral_title
+	desc = switch_to_neutral_desc
+	confirm_text = switch_to_neutral_confirm
+	picture = { reference = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_advance.dds" }
+	decision_group_type = switch_faction_group
+
+	is_shown = {
+		saas_eligible_participant_trigger = yes
+		saas_is_lijiao_ruler_trigger = yes
+		NOT = { saas_is_neutral_trigger = yes }
+	}
+	is_valid = {
+		is_available_adult = yes
+		is_imprisoned = no
+		is_commanding_army = no
+		is_travelling = no
+		NOT = { has_character_flag = recently_switched_faction_flag }
+	}
+	cost = { prestige = 500 }
+	effect = {
+		if = {
+			limit = { saas_is_wangdao_trigger = yes }
+			every_ruler = {
+				limit = { saas_is_wangdao_trigger = yes this != root }
+				add_opinion = { target = root modifier = switched_faction_opinion }
+			}
+		}
+		else_if = {
+			limit = { saas_is_badao_trigger = yes }
+			every_ruler = {
+				limit = { saas_is_badao_trigger = yes this != root }
+				add_opinion = { target = root modifier = switched_faction_opinion }
+			}
+		}
+		saas_clear_participant_stance_effect = yes
+		add_trait = character_involve_neutral_of_zhou_dynasty
+		if = {
+			limit = { has_legitimacy = yes }
+			add_legitimacy = -15
+		}
+		add_character_flag = { flag = recently_switched_faction_flag years = 5 }
+		custom_tooltip = switch_faction_penalty_tooltip
+	}
+	ai_check_interval = 12
+	ai_will_do = {
+		base = 5
+		modifier = { add = 40 has_trait = content }
+		modifier = { add = 25 has_trait = calm }
+		modifier = { factor = 0 has_trait = ambitious }
+	}
+}

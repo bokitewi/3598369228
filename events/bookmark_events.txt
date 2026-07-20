@@ -1,0 +1,530 @@
+﻿
+namespace = bookmark
+
+
+###############################
+# 867 - WRATH OF THE NORTHMEN #
+###############################
+
+###Æthelred isn't as cool as Alfred so we kill him
+bookmark.0001 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+	
+### Alfred is pretty cool so we give him a nickname
+bookmark.0002 = { #by Mathilda Bjarnehed
+	type = character_event
+	title = bookmark.0002.t
+	desc = bookmark.0002.desc
+	theme = crown
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	
+	trigger = {
+		is_ai = no
+		top_liege = this
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			limit = { is_ai = no }
+			trigger_event = {
+				id = bookmark.0002
+				days = 1800 #~5 years
+			}
+		}
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+		capital_province = { save_scope_as = capital }
+		random_realm_province = {
+			limit = { this != scope:capital }
+			save_scope_as = province
+		}
+		give_nickname = nick_the_great
+	}
+
+	option = {
+		name = bookmark.0002.a
+	}
+}
+
+### The Ragnarsson brothers catch King Aella ##
+# The event can trigger when you imprison Aella as one of his sons
+# It also works for other norse!
+
+bookmark.0003 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+
+bookmark.0004 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+
+###############################
+# 867 - THE GREAT ADVENTURERS #
+###############################
+
+###	Daurama takes Bawo under her wing.
+bookmark.0101 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+###Radhanites were influential in Khazaria, so we spawn a bunch of them
+bookmark.0200 = { #by James Beaumont
+	type = character_event
+	hidden = yes
+	
+	trigger = {
+		this = title:e_caspian-pontic_steppe.holder #Khagan of Khazaria
+		is_alive = yes
+		is_landed = yes
+	}
+
+	immediate = {
+		create_character = {
+			location = title:e_caspian-pontic_steppe.holder.capital_province
+			trait = lifestyle_mystic
+			random_traits = yes
+			faith = faith:kabarism
+			culture = culture:radhanite
+			gender_female_chance = {
+				if = {
+					limit = { faith:kabarism = { has_doctrine = doctrine_gender_male_dominated } }
+					add = 0
+				}
+				else_if = {
+					limit = { faith:kabarism = { has_doctrine = doctrine_gender_female_dominated } }
+					add = 100
+				}
+				else = {
+					add = 50
+				}
+			}
+			save_scope_as = new_courtier
+		}
+		title:e_caspian-pontic_steppe.holder = { add_courtier = scope:new_courtier }
+		create_character = {
+			location = title:e_caspian-pontic_steppe.holder.capital_province
+			faith = faith:kabarism
+			culture = culture:radhanite
+			random_traits_list = {
+				count = 1
+				education_learning_2 = {}
+				education_learning_3 = {}
+				education_learning_4 = {}
+			}
+			random_traits = yes
+			gender_female_chance = {
+				if = {
+					limit = { faith:kabarism = { has_doctrine = doctrine_gender_male_dominated } }
+					add = 0
+				}
+				else_if = {
+					limit = { faith:kabarism = { has_doctrine = doctrine_gender_female_dominated } }
+					add = 100
+				}
+				else = {
+					add = 50
+				}
+			}
+			save_scope_as = new_courtier
+		}
+		title:e_caspian-pontic_steppe.holder = { add_courtier = scope:new_courtier }
+		create_character = {
+			location = title:e_caspian-pontic_steppe.holder.capital_province
+			age = { 18 35 }
+			random_traits_list = {
+				count = 1
+				education_martial_2 = {}
+				education_martial_3 = {}
+				education_martial_4 = {}
+			}
+			random_traits_list = {
+				count = 1
+				brave = {}
+				just = {}
+			}
+			random_traits_list = { #Something nice
+				honest = {}
+				gregarious = {}
+				trusting = {}
+				compassionate = {}
+				generous = {}
+				humble = {}
+				calm = {}
+			}
+			random_traits_list = {
+				count = 1
+				lustful = {}
+				chaste = {}
+				wrathful = {}
+				arrogant = {}
+				impatient = {}
+				patient = {}
+				impatient  = {}
+				ambitious = {}
+				cynical = {}
+				zealous = {}
+				stubborn = {}
+			}
+			random_traits = no
+			martial = {
+				min_template_decent_skill
+				max_template_decent_skill
+			}
+			prowess = {
+				min_template_decent_skill
+				max_template_decent_skill
+			}
+			faith = faith:kabarism
+			culture = culture:radhanite
+			gender_female_chance = {
+				add = 25
+			}
+			save_scope_as = new_courtier
+		}
+		title:e_caspian-pontic_steppe.holder = { add_courtier = scope:new_courtier }
+		create_character = {
+			location = title:e_caspian-pontic_steppe.holder.capital_province
+			random_traits = yes
+			faith = faith:kabarism
+			culture = culture:radhanite
+			gender_female_chance = {
+				add = 25
+			}
+			save_scope_as = new_courtier
+		}
+		title:e_caspian-pontic_steppe.holder = { add_courtier = scope:new_courtier }
+		create_character = {
+			location = title:e_caspian-pontic_steppe.holder.capital_province
+			random_traits = yes
+			faith = faith:kabarism
+			culture = culture:radhanite
+			gender_female_chance = {
+				add = 25
+			}
+			save_scope_as = new_courtier
+		}
+		title:e_caspian-pontic_steppe.holder = { add_courtier = scope:new_courtier }
+	}
+}
+
+##############
+# 867 - MISC #
+##############
+
+##################################################
+# In Memory of Your Good Taste
+# by Ewan Cowhig Croft & Stu Taylor
+# 0211 - 0220
+##################################################
+
+#	Basileios has just murdered Michael.
+## Credit to Stu Taylor of Dead Good Comics for the title line and entire lead-in to this event.
+bookmark.0211 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+
+
+#########################
+# 1066 - RAGS TO RICHES #
+#########################
+
+###	Matilda start-up event
+bookmark.1066 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+
+# Matilda, a witch or not?
+bookmark.1067 = {
+	type = character_event
+	title = bookmark.1067.t
+	desc = bookmark.1067.desc
+	theme = faith
+	override_background = { reference = bp1_bonfire }
+	override_effect_2d = {
+		reference = smoke	
+	}
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	
+	right_portrait = {
+		character = scope:witch
+		animation = happy_teacher
+	}
+
+	trigger = {
+		NOR = {
+			is_witch_trigger = yes
+			has_trait = lifestyle_herbalist
+		}
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		if = {
+			limit = {
+				any_pool_character = {
+					province = root.location
+					is_physically_able_ai_adult = yes
+					has_no_particular_noble_roots_trigger = yes
+					is_female = yes
+					age > root.age
+					age >= 25
+					has_education_intrigue_trigger = yes
+				}
+			}
+			random_pool_character = {
+				province = root.location
+				limit = {
+					is_physically_able_ai_adult = yes
+					has_no_particular_noble_roots_trigger = yes
+					is_female = yes
+					age > root.age
+					age >= 25
+					has_education_intrigue_trigger = yes
+				}
+				save_scope_as = witch
+			}
+		}
+		else = {
+			hidden_effect = {
+				create_character = {
+					template = witchy_template
+					gender_female_chance = 100
+					location = root.location
+					culture = root.location.culture
+					faith = root.location.faith
+					dynasty = none
+					save_scope_as = witch
+				}
+			}
+		}
+		hidden_effect = {
+			scope:witch ?= {
+				if = {
+					limit = {
+						NOT = {
+							has_trait = eccentric
+						}
+					}
+					add_trait = eccentric
+				}
+				give_witch_secret_or_trait_effect = yes
+			}
+		}
+	}
+
+	option = { # Embrace the knowledge
+		name = bookmark.1067.a
+		flavor = bookmark.1067.a_flavor
+		add_internal_flag = dangerous
+		
+		set_focus = intrigue_skulduggery_focus
+		
+		add_intrigue_lifestyle_perk_points = 5
+		
+		give_witch_secret_or_trait_effect = yes
+		
+		add_trait = lifestyle_herbalist
+
+		ai_chance = {
+			base = 25
+		}
+	}
+
+	option = { # No, I'm pious!
+		name = bookmark.1067.b
+		flavor = bookmark.1067.b_flavor
+		
+		add_learning_lifestyle_xp = major_lifestyle_experience
+		
+		add_piety = 500
+		
+		add_learning_skill = 2
+
+		ai_chance = {
+			base = 75
+		}
+	}
+}
+
+# Vratislav chooses whether to lay claims, or appease the emperor
+bookmark.1068 = {
+	type = character_event
+	title = bookmark.1068.t
+	desc = bookmark.1068.desc
+	theme = war
+	override_background = { reference = ep2_travel_bridge }
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	right_portrait = {
+		character = scope:emperor
+		animation = personality_cynical
+	}
+
+	trigger = {
+		exists = title:d_meissen.holder
+		exists = title:d_lausitz.holder
+		NOR = {
+			has_claim_on = title:d_meissen
+			has_claim_on = title:d_lausitz
+			title:d_lausitz.holder = root
+			title:d_meissen.holder = root
+		}
+		title:e_hre.holder ?= {
+			this != root
+		}
+		is_vassal_of = title:e_hre.holder
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+		title:e_hre.holder = {
+			save_scope_as = emperor
+		}
+	}
+
+	option = { # Lay claim to the lands
+		name = bookmark.1068.a
+		flavor = bookmark.1068.a_flavor
+		add_pressed_claim = title:d_meissen
+		add_pressed_claim = title:d_lausitz
+
+		ai_chance = {
+			base = 25
+		}
+	}
+
+	option = { # Appease the Emperor
+		name = bookmark.1068.b
+		flavor = bookmark.1068.b_flavor
+		
+		add_prestige = 500
+		add_legitimacy_effect = { LEGITIMACY = medium_legitimacy_gain }
+		
+		scope:emperor = {
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 30
+			}
+		}
+		
+		if = {
+			limit = {
+				scope:emperor = { is_ai = yes }
+				can_add_hook = {
+					target = scope:emperor
+					type = favor_hook
+				}
+			}
+			add_hook = {
+				type = favor_hook
+				target = scope:emperor
+			}
+		}
+
+		ai_chance = {
+			base = 75
+		}
+	}
+}
+
+# The matter of Jaromir
+bookmark.1069 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+
+# A Norman Sicily
+bookmark.1070 = {
+	# Absent vanilla-map title links isolated: c_napoli, c_palermo
+	type = character_event
+	hidden = yes
+	trigger = { always = no }
+}
+
+# The Pretender Monk
+bookmark.1071 = {
+	# Absent vanilla-map title links isolated: c_avlonas, c_buthrotum, c_dyrrachion
+	type = character_event
+	hidden = yes
+	trigger = { always = no }
+}
+
+# Conquering Cordoba
+bookmark.1072 = {
+	# Absent vanilla-map title links isolated: c_cabra, c_cordoba
+	type = character_event
+	hidden = yes
+	trigger = { always = no }
+}
+
+# The Seljuk Scion
+bookmark.1073 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+
+###We let the player decide which dynasty Sibylla's son will belong to avoid undesirable potential game overs
+bookmark.0300 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+
+bookmark.0400 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+
+bookmark.0500 = {
+	# Absent vanilla-map title links isolated: c_caozhou
+	type = character_event
+	hidden = yes
+	trigger = { always = no }
+}

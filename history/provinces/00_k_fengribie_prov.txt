@@ -1,0 +1,108 @@
+﻿##### d_yunashi ############################
+
+### c_feng7
+
+
+### c_xi6
+
+
+### c_haibu
+# HAIBU
+3525 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# SUXIMEN
+2903 = {
+	holding = none
+}
+
+
+### c_fenghou
+# FENGHOU
+2868 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_guoqian
+# GUOQIAN
+2931 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhisan
+
+
+### c_sujinyuan
+
+
+### c_yuzuoguozao
+# YUZUO
+2919 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# TUXIA
+2902 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_yuzuo
+
+
+### c_gangshuimen
+# GANGSHUIMEN
+2901 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_tuxia
+
+
+### c_fengqian
+# FENGQIAN
+2824 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# FENG7
+2930 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_ritian
+# RITIAN
+3524 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# XI6
+2932 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_tianhe
+
+

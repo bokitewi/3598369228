@@ -1,0 +1,83 @@
+﻿##### d_luoshi ############################
+
+### c_luo1
+# 
+1798 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_jiangying
+# 
+1794 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yan6
+# 
+1795 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ruo
+# 
+1796 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lan2
+# 
+1799 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_mian
+# 
+1801 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xiao2
+# 
+1802 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ganyukou
+# 
+1803 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lankou
+# 
+1804 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

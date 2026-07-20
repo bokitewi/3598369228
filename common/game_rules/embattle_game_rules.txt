@@ -1,0 +1,86 @@
+﻿### 边路优势乘数 ###
+#embattle_side_advantage_multiplier = {
+#	
+#	categories = {
+#		tweaks
+#	}
+#	
+#	default = embattle_side_advantage_0.5x
+#	embattle_side_advantage_1x = {}
+#	embattle_side_advantage_0.5x = {}
+#}
+
+### 战术 ###
+embattle_tactic = {
+	categories = {
+		tweaks
+	}
+	
+	default = embattle_tactic_enabled
+	embattle_tactic_enabled = {
+		flag = GG_can_change_rule
+	}
+	embattle_tactic_disabled = {
+		flag = GG_can_change_rule
+	}
+}
+
+### AI主将挑选副将 ###
+embattle_side_commander_appointor = {
+	categories = {
+		tweaks
+	}
+	
+	default = embattle_side_commander_appointor_ai_only_except_own_troop
+	embattle_side_commander_appointor_ai_only_except_own_troop = {
+		flag = GG_can_change_rule
+	}
+	embattle_side_commander_appointor_player_exempt = {
+		flag = GG_can_change_rule
+	}
+}
+
+### 边路临时将领特质 ###
+embattle_side_commander_traits_sharing = {
+	categories = {
+		tweaks
+	}
+	
+	default = embattle_side_commander_traits_sharing_enable
+	embattle_side_commander_traits_sharing_enable = {
+		flag = GG_can_change_rule
+	}
+	embattle_side_commander_traits_sharing_disable = {
+		flag = GG_can_change_rule
+	}
+}
+
+### 边路将领特质获得经验 ###
+embattle_side_commanders_trait_xp = {
+	categories = {
+		tweaks
+	}
+	
+	default = embattle_side_commanders_trait_xp_enabled
+	embattle_side_commanders_trait_xp_enabled = {
+		flag = GG_can_change_rule
+	}
+	embattle_side_commanders_trait_xp_disabled = {
+		flag = GG_can_change_rule
+	}
+}
+
+### 优胜劣汰兼容性 ###
+embattle_acotw_compatch = {
+	categories = {
+		#tweaks
+	}
+	
+	default = embattle_acotw_compatch_enabled
+	embattle_acotw_compatch_enabled = {
+		flag = GG_can_change_rule
+	}
+	embattle_acotw_compatch_disabled = {
+		flag = GG_can_change_rule
+	}
+}

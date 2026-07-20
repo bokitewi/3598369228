@@ -1,0 +1,2 @@
+﻿# Deliberate total-conversion override.
+# The vanilla Silk Road situation depends on regions outside the Spring and Autumn map.

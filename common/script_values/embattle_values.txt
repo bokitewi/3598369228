@@ -1,0 +1,148 @@
+﻿embattle_side_commander_advantage_value = {
+	value = martial
+
+	commanding_army = {
+		save_temporary_scope_as = temp_army
+	}
+	
+	if = {
+		limit = {
+			scope:temp_army.var:embattle_left_flank_commander ?= {
+				is_alive = yes
+			}
+		}
+		scope:temp_army.var:embattle_left_flank_commander = {
+			save_temporary_scope_as = temp_lwc
+		}
+		add = scope:temp_lwc.martial
+	}
+
+	if = {
+		limit = {
+			scope:temp_army.var:embattle_right_flank_commander ?= {
+				is_alive = yes
+			}
+		}
+		scope:temp_army.var:embattle_right_flank_commander = {
+			save_temporary_scope_as = temp_rwc
+		}
+		add = scope:temp_rwc.martial
+	}
+
+	#if = {
+	#	limit = {
+	#		has_game_rule = embattle_side_advantage_0.5x
+	#	}
+	#	multiply = 0.5
+	#}
+
+	if = {
+		limit = {
+			exists = scope:temp_lwc
+			exists = scope:temp_rwc
+		}
+		divide = 3
+	}
+	else_if = {
+		limit = {
+			OR = {
+				exists = scope:temp_lwc
+				exists = scope:temp_rwc
+			}
+		}
+		divide = 2
+		subtract = 2
+	}
+	else_if = {
+		limit = {
+			OR = {
+				is_leading_faction_type = populist_faction
+				is_leading_faction_type = peasant_faction
+				is_leading_faction_type = escalated_peasant_faction
+				max_number_of_knights <= 0 # 天朝制豁免
+			}
+		}
+		#
+	}
+	else = {
+		subtract = 5
+	}
+
+	subtract = martial
+	
+	desc = MODIFIER_DEFINITION_MAIN_DESC_SIDE_ADVANTAGE
+}
+
+embattle_character_count_value = {
+	value = 0
+
+	army_owner = {
+		every_knight = {
+			limit = {
+				knight_army = root
+			}
+			add = 1	
+		}
+	}
+}
+
+embattle_general_tactic_count_value = {
+	value = 0
+
+	if = {
+		limit = {
+			any_army_maa_regiment = {
+				is_unit_type = archers
+				maa_size >= 1
+			}
+		}
+		add = 1
+	}
+
+	if = {
+		limit = {
+			any_army_maa_regiment = {
+				is_unit_type = heavy_cavalry
+				maa_size >= 1
+			}
+		}
+		add = 1
+	}
+
+	if = {
+		limit = {
+			any_army_maa_regiment = {
+				is_unit_type = pikemen
+				maa_size >= 1
+			}
+		}
+		add = 1
+	}
+
+	if = {
+		limit = {
+			any_army_maa_regiment = {
+				is_unit_type = heavy_infantry
+				maa_size >= 1
+			}
+		}
+		add = 1
+	}
+
+	if = {
+		limit = {
+			OR = {
+				any_army_maa_regiment = {
+					is_unit_type = light_cavalry
+					maa_size >= 1
+				}
+				any_army_maa_regiment = {
+					is_unit_type = archer_cavalry
+					maa_size >= 1
+				}
+			}
+		}
+		add = 1
+	}
+
+}

@@ -1,0 +1,33 @@
+﻿saas_personal_salary_raise_modifier = {
+}
+
+saas_salary_refused_modifier = {
+}
+
+saas_recruit_talent_edict_modifier = {
+}
+
+saas_courtier_stipend_expense_modifier = {
+	icon = stewardship_negative
+	monthly_income = -1
+	scale = {
+		value = saas_current_monthly_stipend_expense_value
+		desc = saas_courtier_stipend_expense_scale_desc
+		display_mode = scaled
+	}
+}
+
+saas_courtier_stipend_income_modifier = {
+	icon = stewardship_positive
+	monthly_income = 1
+	scale = {
+		value = saas_current_courtier_monthly_stipend_value
+		desc = saas_courtier_stipend_income_scale_desc
+		display_mode = scaled
+	}
+}
+
+saas_retainer_defense_reform_modifier = {
+	levy_size = 0.10
+	garrison_size = 0.20
+}

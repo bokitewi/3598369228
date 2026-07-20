@@ -1,0 +1,46 @@
+﻿l_simp_chinese:
+
+game_concept_embattle:0 "布阵"
+game_concept_embattle_desc:0 "指副将（两翼[commander|E]）系统和[embattle_tactic|E]系统。"
+game_concept_embattle_side_advantage_modifier:0 "边路优势修正"
+game_concept_embattle_side_advantage_modifier_desc:0 "中军[commander|E]的基础[advantage|E]会被修正到所有[commanders]（中军和两翼[commanders]）的[martial|E][skills|E]平均值。\n\n两翼指挥官空缺会导致#X 5#!点的优势惩罚。"
+game_concept_embattle_tactic:0 "战术"
+game_concept_embattle_tactic_desc:0 "战斗时，双方[commanders|E]每#V 20#!天会从[embattle_general_tactic_group|E]选择一种战术，其中有[embattle_tactic_counter|E]。战术会给予训练有素的[stationed_regiment|E]对应的加成。\n\n如果[army|E]在[battle|E]中能采取的战术#X 不足3#!种，则会从[embattle_clumsy_tactic_group|E]组中填充至#V 3#!种。相反，如果能采取的战术#P 超过5#!种，则会获得[GetModifier('embattle_tactic_diversity_modifier').GetNameWithTooltip|L]。"
+
+game_concept_embattle_tactic_counter:0 "战术克制关系"
+game_concept_embattle_tactic_counter_desc:0 "不同的战术之间会有克制关系，影响中军[commander|E]的[advantage|E]。被克制的一方会获得[GetModifier('embattle_tactic_counter_modifier').GetNameWithTooltip|L]。"
+
+game_concept_embattle_general_tactic_group:0 "常规战术组"
+game_concept_embattle_general_tactic_group_desc:0 "角色能采用的常规战术包括：\n$BULLET_WITH_TAB$[embattle_volly_tactic|E]\n$BULLET_WITH_TAB$[embattle_charge_tactic|E]\n$BULLET_WITH_TAB$[embattle_stand_fast_tactic|E]\n$BULLET_WITH_TAB$[embattle_advance_tactic|E]\n$BULLET_WITH_TAB$[embattle_harass_tactic|E]\n\n角色能采用战术#X 不足3#!种时，会从[embattle_clumsy_tactic_group|E]组中填充至#V 3#!种。"
+
+game_concept_embattle_clumsy_tactic_group:0 "拙劣战术组"
+game_concept_embattle_clumsy_tactic_group_desc:0 "角色能采用的拙劣战术包括：\n$BULLET_WITH_TAB$[embattle_potshots_tactic|E]\n$BULLET_WITH_TAB$[embattle_reckless_charge_tactic|E]\n$BULLET_WITH_TAB$[embattle_confused_orders_tactic|E]\n$BULLET_WITH_TAB$[embattle_timid_advance_tactic|E]\n$BULLET_WITH_TAB$[embattle_disorganised_harass_tactic|E]"
+
+# 战术
+game_concept_embattle_volly_tactic:0 "齐射战术"
+game_concept_embattle_volly_tactic_desc:0 "属于[embattle_general_tactic_group|E]，由1单位[archers|E]解锁，[combat_phase|E]中生效后对应[stationed_regiment|E]获得[GetModifier('embattle_volly_tactic_modifier').GetNameWithTooltip|L]。"
+game_concept_embattle_potshots_tactic:0 "胡乱射击战术"
+game_concept_embattle_potshots_tactic_desc:0 "属于[embattle_clumsy_tactic_group|E]，[combat_phase|E]中生效后中军[commander|E]获得[GetModifier('embattle_potshots_tactic_modifier').GetNameWithTooltip|L]。"
+
+game_concept_embattle_charge_tactic:0 "冲锋战术"
+game_concept_embattle_charge_tactic_desc:0 "属于[embattle_general_tactic_group|E]，由1单位[heavy_cavalry|E]解锁，[combat_phase|E]中生效后对应[stationed_regiment|E]获得[GetModifier('embattle_charge_tactic_modifier').GetNameWithTooltip|L]。"
+game_concept_embattle_reckless_charge_tactic:0 "鲁莽冲锋战术"
+game_concept_embattle_reckless_charge_tactic_desc:0 "属于[embattle_clumsy_tactic_group|E]，[combat_phase|E]中生效后中军[commander|E]获得[GetModifier('embattle_reckless_charge_tactic_modifier').GetNameWithTooltip|L]。
+
+game_concept_embattle_stand_fast_tactic:0 "固守战术"
+game_concept_embattle_stand_fast_tactic_desc:0 "属于[embattle_general_tactic_group|E]，由1单位[spearmen|E]解锁，[combat_phase|E]中生效后对应[stationed_regiment|E]获得[GetModifier('embattle_stand_fast_tactic_modifier').GetNameWithTooltip|L]。"
+game_concept_embattle_confused_orders_tactic:0 "军令费解战术"
+game_concept_embattle_confused_orders_tactic_desc:0 "属于[embattle_clumsy_tactic_group|E]，[combat_phase|E]中生效后中军[commander|E]获得[GetModifier('embattle_confused_orders_tactic_modifier').GetNameWithTooltip|L]。"
+
+game_concept_embattle_advance_tactic:0 "推进战术"
+game_concept_embattle_advance_tactic_desc:0 "属于[embattle_general_tactic_group|E]，由1单位[skirmisher|E]或[heavy_infantry|E]解锁，[combat_phase|E]中生效后对应[stationed_regiment|E]获得[GetModifier('embattle_advance_tactic_modifier').GetNameWithTooltip|L]。"
+game_concept_embattle_timid_advance_tactic:0 "胆怯推进战术"
+game_concept_embattle_timid_advance_tactic_desc:0 "属于[embattle_clumsy_tactic_group|E]，[combat_phase|E]中生效后中军[commander|E]获得[GetModifier('embattle_timid_advance_tactic_modifier').GetNameWithTooltip|L]。"
+
+game_concept_embattle_harass_tactic:0 "骚扰战术"
+game_concept_embattle_harass_tactic_desc:0 "属于[embattle_general_tactic_group|E]，由1单位[light_cavalry|E]或[archer_cavalry|E]解锁，[combat_phase|E]中生效后对应[stationed_regiment|E]获得获得[GetModifier('embattle_harass_tactic_modifier').GetNameWithTooltip|L]。"
+game_concept_embattle_disorganised_harass_tactic:0 "无组织骚扰战术"
+game_concept_embattle_disorganised_harass_tactic_desc:0 "属于[embattle_clumsy_tactic_group|E]，[combat_phase|E]中生效后中军[commander|E]获得[GetModifier('embattle_disorganised_harass_tactic_modifier').GetNameWithTooltip|L]。"
+
+game_concept_a_culling_of_the_weak:0 "优胜劣汰"
+game_concept_a_culling_of_the_weak_desc:0 "A Culling of the Weak（ACOTW）是一款性能优化Mod，它把处在玩家[character|E]外交距离之外的电脑角色定义为[GetTrait('acotw_obscured').GetName( GetNullCharacter )]，限制其活动。"

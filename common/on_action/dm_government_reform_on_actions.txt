@@ -1,0 +1,5 @@
+on_government_change = {
+	effect = {
+		dm_government_reform_on_government_change_effect = yes
+	}
+}

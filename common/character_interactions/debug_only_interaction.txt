@@ -1,0 +1,29 @@
+﻿kns_debug_interaction = {
+	category = interaction_category_diplomacy
+	icon = icon_dynasty
+	common_interaction = yes
+	interface_priority = 101
+
+	use_diplomatic_range = no
+	ignores_pending_interaction_block = yes
+
+	is_shown = {
+		always = no
+		debug_only = yes
+		scope:actor = { 
+			is_ai = no
+		}
+	}
+
+	on_accept = {
+		scope:recipient = {
+			add_trait = organizer
+			# add_trait_xp = {
+			# 	trait = forest_fighter
+			# 	value = 25
+			# }
+		}
+	}
+	
+	auto_accept = yes
+}

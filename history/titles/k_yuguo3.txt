@@ -1,0 +1,115 @@
+﻿k_yuguo3 = {
+3530.1.1 = {
+		holder = han5121
+	}
+3583.1.1 = {
+		holder = han5122
+	}
+3624.1.1 = {
+		holder = han5123
+	}
+3635.12.31 = {
+		holder = han5124
+	}
+3673.12.31 = {
+		holder = han5125
+	}
+3691.12.31 = {
+		holder = han5126
+	}
+3720.12.31 = {
+		holder = han5127
+	}
+3746.12.31 = {
+		holder = han5128
+	}
+3782.12.31 = {
+		holder = han5129
+	}
+3813.12.31 = {
+		holder = han5130
+	}
+3849.1.1 = {
+		change_development_level = 29
+		government = feudal_admin_government		
+	}
+}
+
+
+d_yushi4 = {
+3530.1.1 = {
+		liege = "k_yuguo3"
+		holder = han5121
+	}
+3583.1.1 = {
+		holder = han5122
+	}
+3624.1.1 = {
+		holder = han5123
+	}
+3635.12.31 = {
+		holder = han5124
+	}
+3673.12.31 = {
+		holder = han5125
+	}
+3691.12.31 = {
+		holder = han5126
+	}
+3720.12.31 = {
+		holder = han5127
+	}
+3746.12.31 = {
+		holder = han5128
+	}
+3782.12.31 = {
+		holder = han5129
+	}
+3813.12.31 = {
+		holder = han5130
+	}
+}
+
+d_gongyushi = {
+3530.1.1 = {
+		liege = "k_yuguo3"
+		holder = han5121
+	}
+3583.1.1 = {
+		holder = han5122
+	}
+3624.1.1 = {
+		holder = han5123
+	}
+3635.12.31 = {
+		holder = han5124
+	}
+3673.12.31 = {
+		holder = han5125
+	}
+3691.12.31 = {
+		holder = han5126
+	}
+3720.12.31 = {
+		holder = han5127
+	}
+3746.12.31 = {
+		holder = han5128
+	}
+3782.12.31 = {
+		holder = han5129
+	}
+3813.12.31 = {
+		holder = baipuyuguo1
+	}
+3827.12.31 = {
+		holder = baipuyuguo2
+	}
+3845.12.31 = {
+		holder = baipuyuguo3
+	}
+3849.1.1 = {
+		change_development_level = 27
+		government = feudal_admin_government		
+	}
+}

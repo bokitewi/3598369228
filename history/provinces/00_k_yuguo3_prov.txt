@@ -1,0 +1,98 @@
+﻿##### d_yushi4 ############################
+
+### c_kuizhou
+# KUIZHOU
+3176 = {
+	holding = none
+}
+
+
+### c_jiangguan
+# JIANGGUAN
+3177 = {
+	culture = yongren
+	religion = guiwu
+	holding = castle_holding
+}
+
+
+### c_baidi
+# YONGAN
+3178 = {
+	culture = yongren
+	religion = guiwu
+	holding = castle_holding
+}
+
+
+### c_badong
+# BADONG
+3179 = {
+	holding = none
+}
+
+
+### c_wushan
+# WUSHAN
+3209 = {
+	culture = yongren
+	religion = guiwu
+	holding = castle_holding
+}
+
+
+### c_yunan
+# YUNAN
+3208 = {
+	holding = none
+}
+
+
+### c_quren1
+# QUREN
+3682 = {
+	culture = yongren
+	religion = guiwu
+	holding = castle_holding
+}
+
+
+### c_nanpu
+# NANPU
+3205 = {
+	culture = yongren
+	religion = guiwu
+	holding = castle_holding
+}
+
+
+### c_xinpu
+# XINPU
+3210 = {
+	holding = none
+}
+
+
+### c_wansui
+# WANSUI
+3211 = {
+	holding = none
+}
+
+
+### c_gaoyangli
+# GAOYANGLI
+3683 = {
+	holding = none
+}
+
+
+### c_wentang
+# WENTANG
+3684 = {
+	culture = yongren
+	religion = guiwu
+	holding = castle_holding
+}
+
+

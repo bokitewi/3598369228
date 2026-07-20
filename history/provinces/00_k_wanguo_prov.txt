@@ -1,0 +1,56 @@
+﻿##### d_wanshi ############################
+
+### c_wan2
+# 
+2066 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xiaochi
+# 
+2073 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shipai
+# 
+2074 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_taihu
+# 
+2075 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_songzi2
+# 
+2076 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xunyang
+# 
+2077 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

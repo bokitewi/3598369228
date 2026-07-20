@@ -1,0 +1,65 @@
+﻿##### d_lushi4 ############################
+
+### c_qiujun
+# 
+1994 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_siding
+# 
+1995 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xiaoyaojin
+# 
+1999 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lu5
+# 
+2000 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shen6
+# 
+2002 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_sundi
+# 
+2023 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_hu6
+# 
+2025 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

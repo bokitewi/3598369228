@@ -1,0 +1,34 @@
+﻿saas_retainer_patronage_opinion = {
+	opinion = 15
+	years = 5
+}
+
+saas_retainer_rejected_opinion = {
+	opinion = -10
+	years = 5
+}
+
+saas_salary_raise_granted_opinion = {
+	opinion = 20
+	years = 5
+}
+
+saas_salary_raise_refused_opinion = {
+	opinion = -20
+	years = 5
+}
+
+saas_retainer_project_success_opinion = {
+	opinion = 15
+	years = 5
+}
+
+saas_retainer_project_failure_opinion = {
+	opinion = -5
+	years = 3
+}
+
+saas_retainer_diplomatic_success_opinion = {
+	opinion = 20
+	years = 5
+}

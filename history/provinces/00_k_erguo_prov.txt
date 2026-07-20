@@ -1,0 +1,56 @@
+﻿##### d_ershi ############################
+
+### c_minge
+# 
+1901 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhiyuan
+# 
+1902 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_dasui
+# 
+1903 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_er
+# 
+1906 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yongyang
+# 
+1909 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_dachengguan
+# 
+1927 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

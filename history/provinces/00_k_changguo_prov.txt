@@ -1,0 +1,65 @@
+﻿##### d_changshi ############################
+
+### c_zhang3
+# 
+1917 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xiling2
+# 
+1918 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_baiju1
+# 
+1919 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yongan
+# 
+1920 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_mulan
+# 
+1921 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_huang5
+# 
+1922 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ma2
+# 
+1923 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

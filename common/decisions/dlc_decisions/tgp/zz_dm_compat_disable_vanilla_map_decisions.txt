@@ -1,0 +1,84 @@
+﻿# 大梦春秋使用自己的春秋局势与天命流程。
+# 原版王朝循环决议假定 h_china 的每个法理县均有合法持有人，
+# 该假定不适用于本模组保留的无地空壳头衔。
+situation_dynastic_cycle_claim_mandate_decision = {
+	decision_group_type = dynastic_cycle
+	title = situation_dynastic_cycle_claim_mandate_decision
+	desc = situation_dynastic_cycle_claim_mandate_decision_desc
+	selection_tooltip = situation_dynastic_cycle_claim_mandate_decision_tooltip
+	picture = {
+		reference = "gfx/interface/illustrations/event_story/tgp_dynastic_cycle_stability.dds"
+	}
+	extra_picture = "gfx/interface/illustrations/event_story/tgp_dynastic_cycle_stability.dds"
+	sort_order = 80
+
+	is_shown = {
+		always = no
+	}
+
+	is_valid = {
+		always = no
+	}
+
+	effect = {
+	}
+
+	ai_check_interval = 0
+	ai_will_do = {
+		base = 0
+	}
+}
+
+# Roads to Power: this branch requires Constantinople and the Byzantine map.
+prepare_greek_fire_dromons_decision = {
+	decision_group_type = roman
+	title = prepare_greek_fire_dromons_decision
+	desc = prepare_greek_fire_dromons_decision_desc
+	selection_tooltip = prepare_greek_fire_dromons_decision_tooltip
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_smith.dds"
+	}
+
+	is_shown = {
+		always = no
+	}
+
+	is_valid = {
+		always = no
+	}
+
+	effect = {
+	}
+
+	ai_check_interval = 0
+	ai_will_do = {
+		base = 0
+	}
+}
+
+# Roman Sicily is outside the Spring and Autumn total-conversion map.
+rebuke_roman_revanchism_sicily = {
+	decision_group_type = major
+	title = rebuke_roman_revanchism_sicily
+	desc = rebuke_roman_revanchism_sicily_desc
+	selection_tooltip = rebuke_roman_revanchism_sicily_tooltip
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_legitimacy.dds"
+	}
+
+	is_shown = {
+		always = no
+	}
+
+	is_valid = {
+		always = no
+	}
+
+	effect = {
+	}
+
+	ai_check_interval = 0
+	ai_will_do = {
+		base = 0
+	}
+}

@@ -1,0 +1,74 @@
+﻿##### d_caishi ############################
+
+### c_deng
+# DENG
+1620 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shangcai
+# SHANGCAI
+1626 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xin3
+# XIN3
+1674 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_sangqiu2
+# SANGQIU2
+1675 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lv3
+# LV3
+1676 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_qinqiu
+# QINQIU
+1677 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_dongling
+# DONGLING
+1679 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_li14
+# LI14
+1681 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

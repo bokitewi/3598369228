@@ -1,0 +1,56 @@
+﻿##### d_hushi ############################
+
+### c_yingshang
+# YINGSHANG
+1621 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_nvyin
+# NVYIN
+1622 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_hu3
+# HU3
+1666 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_fubo
+# FUBO
+1667 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lushang1
+# LUSHANG1
+1668 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ruqing
+# RUQING
+1683 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

@@ -1,0 +1,38 @@
+﻿##### d_shuliaoshi ############################
+
+### c_shuliao
+# 
+2013 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_liao5
+# 
+2016 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_cong
+# 
+2017 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_you4
+# 
+2018 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

@@ -1,0 +1,22 @@
+﻿embattle_set_general_tactic_effect_center = {
+	scope:army = {
+		army_owner = {
+			set_variable = {
+				name = embattle_center_tactic
+				value = flag:embattle_$TACTIC$
+			}
+		}
+		every_army_maa_regiment = {
+			limit = {
+				is_unit_type = $TYPE$
+				maa_size >= 1
+			}
+			regiment_station ?= {
+				add_province_modifier = {
+					modifier = embattle_$TACTIC$_modifier
+					days = 10
+				}
+			}
+		}
+	}
+}

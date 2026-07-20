@@ -1,0 +1,8478 @@
+﻿# Generated inert compatibility shells for vanilla title references.
+# No provinces, de-jure structure, holders, history, or map content.
+
+d_BOR_barune = {
+	color = { 67 120 49 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_BOR_kutai = {
+	color = { 104 117 76 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_BOR_nan_sarunai = {
+	color = { 102 107 155 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_BOR_santubong = {
+	color = { 181 107 202 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_BOR_tanjungpura = {
+	color = { 109 113 127 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_JAV_mataram = {
+	color = { 109 116 91 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_JAV_taruma = {
+	color = { 197 90 127 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_MAL_langkasuka = {
+	color = { 50 163 51 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_PHI_sandao = {
+	color = { 196 156 94 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_SUM_aceh = {
+	color = { 110 173 94 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_SUM_jambi = {
+	color = { 76 74 124 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_SUM_minangkabau = {
+	color = { 202 72 169 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_SUM_palembang = {
+	color = { 141 79 142 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_SUM_riau = {
+	color = { 151 163 113 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_SuMa_konawe = {
+	color = { 176 176 137 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_SuMa_luwu = {
+	color = { 189 155 114 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_SuMa_tompotika = {
+	color = { 61 135 166 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_aegean_islands = {
+	color = { 106 122 183 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_ajmer = {
+	color = { 88 137 128 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_al-hasa = {
+	color = { 85 105 51 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_alexandria = {
+	color = { 58 94 151 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_algarve = {
+	color = { 131 60 193 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_alger = {
+	color = { 87 56 105 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_alsace = {
+	color = { 85 168 68 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_anartta = {
+	color = { 49 74 207 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_anatolia = {
+	color = { 91 147 177 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_anhalt = {
+	color = { 143 128 63 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_anjou = {
+	color = { 159 175 164 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_antioch = {
+	color = { 166 63 107 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_anupa = {
+	color = { 201 164 125 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_apostolic_church = {
+	color = { 97 107 127 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_apulia = {
+	color = { 106 181 184 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_aquitaine = {
+	color = { 101 83 102 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_aragon = {
+	color = { 178 120 104 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_armagnac = {
+	color = { 125 193 132 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_armeniac = {
+	color = { 175 190 103 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_auvergne = {
+	color = { 155 102 155 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_azerbaijan = {
+	color = { 148 72 127 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_azov = {
+	color = { 144 113 70 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_bahrain = {
+	color = { 66 84 88 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_baigaur = {
+	color = { 162 80 124 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_barcelona = {
+	color = { 108 121 54 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_basra = {
+	color = { 197 55 76 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_beja = {
+	color = { 121 102 132 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_bejaia = {
+	color = { 183 83 57 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_benevento = {
+	color = { 119 158 55 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_biansong = {
+	color = { 175 62 127 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_bohemia = {
+	color = { 135 123 69 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_bosna = {
+	color = { 162 52 70 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_bourbon = {
+	color = { 206 65 81 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_brabant = {
+	color = { 155 158 123 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_bugeac = {
+	color = { 86 76 206 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_bukgye = {
+	color = { 125 68 59 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_burgundy = {
+	color = { 190 85 108 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_calabria = {
+	color = { 48 64 136 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_canarias = {
+	color = { 65 56 95 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_cappadocia = {
+	color = { 110 180 75 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_capua = {
+	color = { 88 194 149 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_carinthia = {
+	color = { 89 164 99 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_cephalonia = {
+	color = { 84 51 109 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_chaldia = {
+	color = { 59 128 204 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_charsianon = {
+	color = { 107 109 183 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_chera_nadu = {
+	color = { 88 96 157 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_chernigov = {
+	color = { 79 91 122 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_cherven_cities = {
+	color = { 125 108 152 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_chungju = {
+	color = { 72 51 137 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_cibyrrhaeot = {
+	color = { 171 197 143 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_cilicia = {
+	color = { 50 117 168 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_coimbra = {
+	color = { 178 63 81 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_connacht = {
+	color = { 124 131 112 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_conversos = {
+	color = { 83 65 198 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_coptic_papacy = {
+	color = { 110 102 126 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_cornwall = {
+	color = { 147 75 82 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_courland = {
+	color = { 66 139 65 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_crimea = {
+	color = { 77 59 66 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_croatia = {
+	color = { 72 98 94 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_cumbria = {
+	color = { 71 192 118 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_currezia = {
+	color = { 152 66 77 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_cyprus = {
+	color = { 195 137 197 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_cyrenaica = {
+	color = { 74 77 145 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_dakhina_desa = {
+	color = { 80 70 113 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_dalmatia = {
+	color = { 51 119 195 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_dauphine = {
+	color = { 188 129 72 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_daylam = {
+	color = { 99 73 69 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_diyarbakr = {
+	color = { 145 50 161 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_dobrudja = {
+	color = { 149 190 59 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_don_valley = {
+	color = { 105 53 105 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_edessa = {
+	color = { 137 80 81 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_emilia = {
+	color = { 78 171 192 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_esthonia = {
+	color = { 111 53 49 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_fars = {
+	color = { 75 109 174 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_fezzan = {
+	color = { 81 62 117 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_flanders = {
+	color = { 93 108 58 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_friuli = {
+	color = { 72 205 202 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_gabes = {
+	color = { 76 182 82 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_gaeseong = {
+	color = { 101 80 77 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_galicia = {
+	color = { 187 91 123 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_galloway = {
+	color = { 148 111 105 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_gascogne = {
+	color = { 117 162 62 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_gayomarthianism = {
+	color = { 64 54 92 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_genoa = {
+	color = { 116 175 89 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_georgia = {
+	color = { 132 83 172 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_ghulat = {
+	color = { 105 86 87 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_gloucester = {
+	color = { 143 100 131 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_gotland = {
+	color = { 59 161 82 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_granada = {
+	color = { 124 107 64 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_greater_armenia = {
+	color = { 64 100 82 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_grodno = {
+	color = { 85 50 107 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_gyeongju = {
+	color = { 63 155 101 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_hai_dong = {
+	color = { 112 104 128 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_halych = {
+	color = { 149 84 177 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_haymanot = {
+	color = { 131 103 163 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_hereford = {
+	color = { 192 102 125 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_hokurikudo = {
+	color = { 129 101 167 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_holland = {
+	color = { 79 199 118 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_hormuz = {
+	color = { 136 61 177 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_iceland = {
+	color = { 190 109 87 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_iconoclast = {
+	color = { 185 183 96 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_imami = {
+	color = { 109 176 200 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_indrapura = {
+	color = { 79 135 122 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_ismaili = {
+	color = { 104 69 134 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_istria = {
+	color = { 72 68 92 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_itil = {
+	color = { 88 135 55 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_jerid = {
+	color = { 86 64 122 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_jharkand = {
+	color = { 182 67 86 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_jomsvikings = {
+	color = { 134 138 113 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_julich = {
+	color = { 61 125 178 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_kabarism = {
+	color = { 101 59 84 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_kairouan = {
+	color = { 128 200 180 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_karaism = {
+	color = { 138 63 76 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_kasi = {
+	color = { 73 104 52 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_kawar = {
+	color = { 185 53 144 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_kermanshah = {
+	color = { 201 118 68 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_khopyor = {
+	color = { 177 98 70 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_khurmazta = {
+	color = { 178 94 150 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_khurramism = {
+	color = { 203 113 84 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_khuzestan = {
+	color = { 177 165 61 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_kiev = {
+	color = { 128 174 52 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_kinai = {
+	color = { 54 166 53 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_kizilyedisan = {
+	color = { 124 50 120 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_konkana = {
+	color = { 54 75 139 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_krain = {
+	color = { 61 192 138 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_krete = {
+	color = { 199 139 124 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_kroumerie = {
+	color = { 54 63 100 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_kurdistan = {
+	color = { 68 117 102 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_kuru = {
+	color = { 102 89 88 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_aelfwine = {
+	color = { 112 64 89 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_ahwazi = {
+	color = { 70 155 66 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_ali_ibn_reverter = {
+	color = { 173 111 89 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_anangapida = {
+	color = { 110 205 64 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_andronikos_komnenos = {
+	color = { 85 60 109 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_arrow_cutters = {
+	color = { 136 117 106 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_asen = {
+	color = { 53 165 158 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_band_of_the_inland_sea = {
+	color = { 89 69 201 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_companions_of_caodong = {
+	color = { 56 67 78 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_crispin = {
+	color = { 125 149 57 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_danishmend = {
+	color = { 104 112 94 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_dawn_company = {
+	color = { 71 116 86 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_delta_company = {
+	color = { 94 83 134 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_ding_hui = {
+	color = { 66 185 53 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_disciples_of_chongyang = {
+	color = { 92 87 161 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_eastern_sculptors = {
+	color = { 143 111 48 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_el_cid = {
+	color = { 95 55 86 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_enian = {
+	color = { 139 176 71 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_frontier_guardians = {
+	color = { 50 137 130 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_guttorm = {
+	color = { 112 74 70 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_hidden_valley_banner = {
+	color = { 75 103 68 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_hiei_wayfarers = {
+	color = { 185 57 173 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_hrolfr = {
+	color = { 182 207 205 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_karatzas = {
+	color = { 142 77 178 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_kizil_buga = {
+	color = { 125 114 76 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_lalibela = {
+	color = { 139 134 87 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_leaf_hermits = {
+	color = { 56 104 160 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_lembongs_band = {
+	color = { 80 129 103 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_liangshan_band = {
+	color = { 141 62 134 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_mieszko = {
+	color = { 86 82 104 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_miyoshi_kiyotsura = {
+	color = { 202 161 97 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_muhammad_bakhtiyar = {
+	color = { 104 78 53 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_munheon_disciples = {
+	color = { 125 108 186 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_northern_blades = {
+	color = { 145 122 142 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_ordinators = {
+	color = { 74 140 50 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_pathwalkers = {
+	color = { 73 85 59 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_pongyi_thaing_fellowship = {
+	color = { 71 84 75 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_raimon_brun = {
+	color = { 110 185 123 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_raoul = {
+	color = { 203 61 65 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_ravine_lords = {
+	color = { 93 60 101 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_sabbah = {
+	color = { 64 88 141 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_samadhi_and_prajna_society = {
+	color = { 120 119 83 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_sirafi_mariners = {
+	color = { 158 196 73 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_stormbringers = {
+	color = { 70 203 66 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_suleyman = {
+	color = { 159 69 98 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_ubbe = {
+	color = { 156 150 106 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_voiteh = {
+	color = { 127 177 166 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_wake = {
+	color = { 166 119 180 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_wallada = {
+	color = { 99 61 59 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_wandering_lute = {
+	color = { 123 55 94 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_way_of_the_mountains = {
+	color = { 52 202 61 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_white_tigers = {
+	color = { 77 125 51 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_zhu_quanzhong = {
+	color = { 158 50 100 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_laamp_ziyar = {
+	color = { 143 186 77 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_lam_tay = {
+	color = { 128 97 72 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_lancaster = {
+	color = { 83 105 188 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_languedoc = {
+	color = { 69 91 187 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_lata = {
+	color = { 100 79 147 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_latgalians = {
+	color = { 75 198 139 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_latium = {
+	color = { 71 88 131 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_lausitz = {
+	color = { 110 54 121 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_leinster = {
+	color = { 48 164 109 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_leon = {
+	color = { 121 135 110 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_lesser_poland = {
+	color = { 56 56 193 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_levedia = {
+	color = { 104 114 79 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_lithuanians = {
+	color = { 95 77 78 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_livonia = {
+	color = { 108 50 97 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_lombardia = {
+	color = { 110 169 104 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_lop_buri = {
+	color = { 51 174 97 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_lower_bosna = {
+	color = { 108 116 144 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_lower_lorraine = {
+	color = { 73 142 140 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_lower_silesia = {
+	color = { 102 152 192 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_luodian = {
+	color = { 95 52 108 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_luxembourg = {
+	color = { 187 111 93 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_magadha = {
+	color = { 87 96 206 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_mahra = {
+	color = { 103 48 168 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_malabarism = {
+	color = { 145 125 81 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_mallorca = {
+	color = { 95 123 51 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_manichean = {
+	color = { 108 115 81 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_maru = {
+	color = { 142 89 58 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_masmudi = {
+	color = { 88 138 142 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_masuria = {
+	color = { 203 118 92 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_mazdakism = {
+	color = { 140 194 129 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_mazdayasna = {
+	color = { 92 53 107 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_mecca = {
+	color = { 48 120 111 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_medapata = {
+	color = { 124 67 104 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_medina = {
+	color = { 199 184 122 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_meissen = {
+	color = { 51 85 157 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_merv = {
+	color = { 75 106 79 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_mesopotamia = {
+	color = { 149 140 118 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_minsk = {
+	color = { 97 68 50 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_mombasa = {
+	color = { 195 75 103 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_munster = {
+	color = { 61 75 139 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_murcia = {
+	color = { 205 201 114 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_muwalladi = {
+	color = { 52 125 153 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nankaido = {
+	color = { 93 76 76 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nasikya = {
+	color = { 130 141 48 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_navarra = {
+	color = { 147 114 77 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_agelastos = {
+	color = { 70 115 49 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_alopos = {
+	color = { 74 138 184 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_ampelas = {
+	color = { 82 120 52 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_angelos = {
+	color = { 70 49 69 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_aplakes = {
+	color = { 102 61 113 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_arcruni = {
+	color = { 77 74 119 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_areobindenos = {
+	color = { 91 108 147 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_argyros = {
+	color = { 175 101 51 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_basiliakos = {
+	color = { 64 192 80 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_batatzes = {
+	color = { 104 165 60 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_botaneiates = {
+	color = { 51 150 180 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_branas = {
+	color = { 136 153 116 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_bryennios = {
+	color = { 81 128 184 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_diogenes = {
+	color = { 76 164 50 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_doukas = {
+	color = { 89 153 56 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_dragosevic = {
+	color = { 92 63 109 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_durres = {
+	color = { 90 79 113 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_gabras = {
+	color = { 93 117 132 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_garidas = {
+	color = { 76 74 125 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_gerontas = {
+	color = { 68 104 188 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_hexavoulis = {
+	color = { 91 51 55 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_kamateros = {
+	color = { 82 99 101 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_kamytzes = {
+	color = { 91 150 51 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_kantakouzenos = {
+	color = { 86 195 153 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_karandenos = {
+	color = { 112 82 95 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_kardias = {
+	color = { 103 170 129 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_katakalitzes = {
+	color = { 96 130 85 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_kaukadenos = {
+	color = { 165 97 84 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_komnenos = {
+	color = { 85 177 180 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_komnenos_doukas = {
+	color = { 80 151 182 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_kontostephanos = {
+	color = { 174 90 79 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_kourkouas = {
+	color = { 126 54 72 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_krateros = {
+	color = { 162 100 61 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_lachanodrakon = {
+	color = { 140 80 124 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_lampardas = {
+	color = { 116 179 116 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_macrodoukas = {
+	color = { 57 116 143 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_makedon = {
+	color = { 58 102 110 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_makrembolites = {
+	color = { 98 75 131 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_maleinos = {
+	color = { 109 48 117 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_maleios = {
+	color = { 55 171 133 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_maurikios = {
+	color = { 56 152 108 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_melissenos = {
+	color = { 132 203 166 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_murzuphlos = {
+	color = { 181 129 136 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_ooryphas = {
+	color = { 121 191 151 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_ouranos = {
+	color = { 65 128 79 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_pahlavuni = {
+	color = { 129 129 115 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_palaiologos = {
+	color = { 113 103 158 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_pastillas = {
+	color = { 72 91 180 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_pegonites = {
+	color = { 91 162 70 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_petraliphas = {
+	color = { 133 148 125 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_phokas = {
+	color = { 101 91 50 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_pleustes = {
+	color = { 131 98 92 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_raoul = {
+	color = { 165 168 80 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_rogerios = {
+	color = { 105 179 92 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_saronites = {
+	color = { 166 197 152 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_sellokalas = {
+	color = { 127 113 65 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_skleros = {
+	color = { 87 70 124 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_synadenos = {
+	color = { 143 56 183 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_tarchaneiotes = {
+	color = { 116 83 126 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_taronites = {
+	color = { 106 87 122 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nf_varajnuni = {
+	color = { 86 118 142 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nghe_an = {
+	color = { 54 183 69 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nishapur = {
+	color = { 102 197 62 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nizari = {
+	color = { 134 146 206 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_nordgau = {
+	color = { 170 122 187 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_normandy = {
+	color = { 61 67 76 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_north_saikaido = {
+	color = { 54 99 111 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_northern_isles = {
+	color = { 167 70 116 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_northumberland = {
+	color = { 124 133 81 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_novgorod = {
+	color = { 61 55 110 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_oman = {
+	color = { 74 67 146 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_opsikion = {
+	color = { 203 63 125 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_optimatoi = {
+	color = { 70 87 96 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_orleans = {
+	color = { 176 118 75 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_ostergotland = {
+	color = { 120 112 130 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_osterreich = {
+	color = { 120 112 90 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_ostmark = {
+	color = { 63 56 164 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_oultrejourdain = {
+	color = { 182 60 127 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_palestine = {
+	color = { 64 86 100 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_paphlagonia = {
+	color = { 128 147 123 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_patriarchate_in_the_east = {
+	color = { 154 72 129 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_pereyaslavl = {
+	color = { 192 148 85 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_pinsk = {
+	color = { 100 202 87 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_pisa = {
+	color = { 95 138 144 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_poitou = {
+	color = { 179 101 177 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_pomerelia = {
+	color = { 151 111 192 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_porto = {
+	color = { 91 178 107 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_provence = {
+	color = { 205 139 191 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_prussia = {
+	color = { 163 87 97 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_ragusa = {
+	color = { 97 89 77 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_red_levedia = {
+	color = { 93 52 187 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_rif = {
+	color = { 142 105 116 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_romagna = {
+	color = { 123 59 127 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_ruhunu = {
+	color = { 203 135 178 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_ruucuu = {
+	color = { 192 125 129 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_salerno = {
+	color = { 73 136 72 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_salzburg = {
+	color = { 63 156 187 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_samaritan = {
+	color = { 155 119 73 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_samarra = {
+	color = { 117 102 183 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_sardinia = {
+	color = { 129 109 185 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_saurashtra = {
+	color = { 64 60 129 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_savoie = {
+	color = { 64 100 194 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_sebasteia = {
+	color = { 121 113 86 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_sevilla = {
+	color = { 101 50 124 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_shammar = {
+	color = { 87 83 183 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_shiite = {
+	color = { 108 147 108 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_shimen = {
+	color = { 202 71 93 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_shirvan = {
+	color = { 61 130 110 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_sicily = {
+	color = { 200 135 129 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_sinai = {
+	color = { 85 90 61 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_sinhala = {
+	color = { 157 54 174 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_skane = {
+	color = { 166 154 55 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_slavonia = {
+	color = { 49 174 106 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_smaland = {
+	color = { 196 83 206 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_socotra = {
+	color = { 95 186 81 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_somerset = {
+	color = { 120 72 136 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_spoleto = {
+	color = { 52 112 144 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_steyermark = {
+	color = { 59 113 124 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_stravani = {
+	color = { 50 106 185 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_sukhothai = {
+	color = { 114 170 50 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_sunni = {
+	color = { 170 49 196 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_syrmia = {
+	color = { 91 195 80 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_syrte = {
+	color = { 122 151 120 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_tabaristan = {
+	color = { 96 140 103 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_tamna = {
+	color = { 181 117 115 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_tana = {
+	color = { 76 96 96 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_thang_long = {
+	color = { 114 92 103 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_the_isles = {
+	color = { 158 58 138 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_thrace = {
+	color = { 95 185 153 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_thuringia = {
+	color = { 69 121 114 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_tibesti = {
+	color = { 115 85 49 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_tirabhukti = {
+	color = { 132 159 159 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_tlemcen = {
+	color = { 192 64 129 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_toledo = {
+	color = { 118 52 113 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_tondai_nadu = {
+	color = { 142 192 125 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_toscana = {
+	color = { 78 136 96 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_toulouse = {
+	color = { 163 129 132 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_transjurania = {
+	color = { 54 202 118 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_transylvania = {
+	color = { 48 105 115 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_transylvanian_alps = {
+	color = { 87 121 53 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_tripolitania = {
+	color = { 51 51 137 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_tunis = {
+	color = { 104 94 50 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_turov = {
+	color = { 62 58 198 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_tyrol = {
+	color = { 95 66 48 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_ulster = {
+	color = { 144 82 185 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_upper_burgundy = {
+	color = { 57 165 118 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_upper_lorraine = {
+	color = { 129 56 56 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_upper_silesia = {
+	color = { 83 94 93 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_urartuism = {
+	color = { 118 57 154 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_urdunn = {
+	color = { 69 139 76 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_usora = {
+	color = { 179 131 122 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_valencia = {
+	color = { 190 93 167 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_valois = {
+	color = { 80 112 135 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_vaspurakan = {
+	color = { 109 178 143 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_vastergotland = {
+	color = { 141 60 204 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_venice = {
+	color = { 110 95 48 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_vijaya = {
+	color = { 52 165 54 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_volhynia = {
+	color = { 54 167 207 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_voronezh = {
+	color = { 143 67 115 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_west_bando = {
+	color = { 122 72 114 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_western_isles = {
+	color = { 50 193 113 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_xiyuan = {
+	color = { 149 116 137 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_yedisan = {
+	color = { 57 131 115 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_york = {
+	color = { 118 190 51 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_yungdrung_bon = {
+	color = { 118 200 113 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_zab = {
+	color = { 153 138 102 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_zangke = {
+	color = { 194 182 105 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_zaragoza = {
+	color = { 169 113 177 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_zayidi = {
+	color = { 58 98 124 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_zun_warriors = {
+	color = { 199 111 166 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+d_zurvanism = {
+	color = { 132 64 125 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_aarlud_khanate = {
+	color = { 59 75 179 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_abyssinia = {
+	color = { 79 53 95 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_aegyptus = {
+	color = { 90 119 143 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_africa = {
+	color = { 179 135 79 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_anatolia = {
+	color = { 147 61 132 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_andong = {
+	color = { 54 72 89 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_arabia = {
+	color = { 93 133 128 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_armenia = {
+	color = { 113 136 207 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_bactria = {
+	color = { 168 48 104 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_baruun_khanate = {
+	color = { 192 174 136 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_bengal = {
+	color = { 50 87 88 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_beth_nahrain = {
+	color = { 48 58 80 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_blue_horde = {
+	color = { 82 61 113 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_britannia = {
+	color = { 139 112 102 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_brunei = {
+	color = { 164 181 118 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_byzantium = {
+	color = { 82 71 174 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_carpathia = {
+	color = { 175 122 145 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_carthage = {
+	color = { 148 85 62 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_caspian-pontic_steppe = {
+	color = { 198 195 83 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_chagatai = {
+	color = { 70 70 154 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_deccan = {
+	color = { 199 161 129 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_france = {
+	color = { 115 57 135 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_germany = {
+	color = { 101 108 169 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_golden_horde = {
+	color = { 123 116 152 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_goryeo = {
+	color = { 49 64 119 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_great_liao = {
+	color = { 197 59 76 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_great_yuan = {
+	color = { 85 51 111 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_hindustan = {
+	color = { 73 70 100 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_hre = {
+	color = { 59 157 173 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_ilkhanate = {
+	color = { 62 190 157 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_illyria = {
+	color = { 109 54 138 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_italy = {
+	color = { 177 73 200 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_japan = {
+	color = { 134 143 69 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_jingyang = {
+	color = { 205 117 96 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_kirghiz_khanate = {
+	color = { 88 97 183 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_latin_empire = {
+	color = { 125 199 69 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_liangyi = {
+	color = { 88 184 170 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_lingnan = {
+	color = { 94 109 203 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_macedonia = {
+	color = { 57 149 131 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_maghreb = {
+	color = { 88 63 173 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_majapahit = {
+	color = { 193 67 88 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_minister_censor = {
+	color = { 203 93 154 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_minister_chancellor = {
+	color = { 93 132 188 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_minister_grand_marshal = {
+	color = { 123 162 139 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_minister_of_justice = {
+	color = { 132 197 174 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_minister_of_personnel = {
+	color = { 66 85 111 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_minister_of_revenue = {
+	color = { 99 92 75 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_minister_of_rites = {
+	color = { 90 83 65 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_minister_of_war = {
+	color = { 68 61 79 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_minister_of_works = {
+	color = { 123 127 144 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_mongol_empire = {
+	color = { 89 105 136 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_mongolia = {
+	color = { 75 167 162 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_north_sea = {
+	color = { 110 96 83 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_nusantara = {
+	color = { 186 179 125 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_omnod_dalai_khanate = {
+	color = { 122 201 114 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_oriens = {
+	color = { 178 122 173 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_outremer = {
+	color = { 133 130 48 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_persia = {
+	color = { 59 66 52 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_rajastan = {
+	color = { 115 112 101 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_red_horde = {
+	color = { 76 94 71 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_russia = {
+	color = { 98 107 79 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_ruucuu = {
+	color = { 191 195 101 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_scandinavia = {
+	color = { 139 84 90 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_slavia = {
+	color = { 118 180 78 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_spain = {
+	color = { 53 84 90 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_srivijaya = {
+	color = { 153 191 147 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_tartaria = {
+	color = { 56 76 66 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_tibet = {
+	color = { 107 82 164 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_timurids = {
+	color = { 85 67 82 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_togskol_khanate = {
+	color = { 48 49 81 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_turan = {
+	color = { 67 106 87 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_uyghur_khanate = {
+	color = { 102 93 122 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_viet = {
+	color = { 72 137 80 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_wendish_empire = {
+	color = { 162 76 85 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_west_slavia = {
+	color = { 70 49 79 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_white_horde = {
+	color = { 142 48 175 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_yongliang = {
+	color = { 101 141 81 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+e_zhongyuan = {
+	color = { 60 199 82 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+h_dar_al_islam = {
+	color = { 134 133 52 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+h_eastern_roman_empire = {
+	color = { 131 106 182 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+h_huaxia = {
+	color = { 66 58 59 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+h_india = {
+	color = { 53 143 195 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+h_roman_empire = {
+	color = { 84 56 126 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_abyssinia = {
+	color = { 89 67 110 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_africa = {
+	color = { 141 105 73 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_anatolia = {
+	color = { 141 205 106 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_andalusia = {
+	color = { 189 94 55 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_aquitaine = {
+	color = { 95 49 123 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_arabia = {
+	color = { 53 196 138 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_aragon = {
+	color = { 167 137 110 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_armenia = {
+	color = { 138 158 173 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_armenian_principality = {
+	color = { 143 87 176 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_asturias = {
+	color = { 97 55 103 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_austria = {
+	color = { 119 202 128 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_aydin = {
+	color = { 72 58 81 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_aynumosir = {
+	color = { 176 70 107 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_badajoz = {
+	color = { 66 117 137 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_baekje = {
+	color = { 145 135 139 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_balhae = {
+	color = { 92 55 171 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_bavaria = {
+	color = { 183 61 119 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_bene_israel = {
+	color = { 49 93 79 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_bihar = {
+	color = { 97 165 179 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_blemmyia = {
+	color = { 136 191 101 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_bohemia = {
+	color = { 137 82 175 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_bosnia = {
+	color = { 108 142 137 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_bosporan_kingdom = {
+	color = { 78 108 115 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_brittany = {
+	color = { 190 190 63 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_brunei = {
+	color = { 140 56 118 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_bulgaria = {
+	color = { 123 78 173 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_burgundy = {
+	color = { 132 72 102 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_canarias = {
+	color = { 176 175 104 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_candar = {
+	color = { 103 50 52 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_carantania = {
+	color = { 111 131 205 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_carthage = {
+	color = { 184 168 205 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_carthago_nova = {
+	color = { 164 105 98 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_castille = {
+	color = { 170 74 145 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_caucasus = {
+	color = { 95 91 59 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_champa = {
+	color = { 116 101 148 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_chrysanthemum_throne = {
+	color = { 52 113 99 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_cornwall = {
+	color = { 169 92 110 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_cossack = {
+	color = { 89 49 71 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_croatia = {
+	color = { 68 118 187 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_cuman = {
+	color = { 59 86 127 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_cumbria = {
+	color = { 64 134 140 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_cyprus = {
+	color = { 78 186 74 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_dacia = {
+	color = { 149 92 146 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_dali = {
+	color = { 200 181 191 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_daneland = {
+	color = { 73 197 71 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_danelaw = {
+	color = { 171 118 206 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_daylam = {
+	color = { 202 62 201 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_delhi = {
+	color = { 48 49 69 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_denmark = {
+	color = { 73 187 184 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_dzungaria = {
+	color = { 126 102 201 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_east_francia = {
+	color = { 99 158 146 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_egypt = {
+	color = { 154 99 123 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_england = {
+	color = { 187 102 72 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_epirus = {
+	color = { 122 206 101 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_eretnid = {
+	color = { 131 170 55 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_esthonia = {
+	color = { 110 91 101 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_fashion = {
+	color = { 72 52 68 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_france = {
+	color = { 152 100 129 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_frisia = {
+	color = { 52 54 73 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_galicia-volhynia = {
+	color = { 120 151 121 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_georgia = {
+	color = { 52 82 110 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_germiyan = {
+	color = { 149 109 180 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_ghana = {
+	color = { 72 145 153 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_goguryeo = {
+	color = { 105 75 63 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_gondwana = {
+	color = { 167 142 92 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_hellas = {
+	color = { 187 72 55 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_hexi = {
+	color = { 115 81 180 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_hitakami = {
+	color = { 53 78 90 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_hungary = {
+	color = { 102 95 152 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_ireland = {
+	color = { 120 164 131 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_israel = {
+	color = { 112 99 90 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_italy = {
+	color = { 63 59 103 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_jazira = {
+	color = { 68 127 89 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_jerusalem = {
+	color = { 150 113 114 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_kabulistan = {
+	color = { 92 119 135 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_karaman = {
+	color = { 61 110 85 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_kashmir = {
+	color = { 75 100 130 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_khorasan = {
+	color = { 116 104 203 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_kosala = {
+	color = { 196 77 146 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_krete = {
+	color = { 61 182 97 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_leon = {
+	color = { 107 52 126 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_livonia = {
+	color = { 85 93 123 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_lotharingia = {
+	color = { 117 105 69 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_maghreb = {
+	color = { 91 51 135 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_magyar = {
+	color = { 172 99 78 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_malayadvipa = {
+	color = { 141 82 57 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_malwa = {
+	color = { 141 60 66 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_mann_the_isles = {
+	color = { 77 115 207 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_mauretania = {
+	color = { 48 57 105 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_mentese = {
+	color = { 195 99 100 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_mesopotamia = {
+	color = { 75 53 162 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_moldavia = {
+	color = { 133 157 185 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_moravia = {
+	color = { 139 186 78 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_naples = {
+	color = { 92 66 160 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_navarra = {
+	color = { 79 79 160 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_nikaea = {
+	color = { 126 77 178 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_norway = {
+	color = { 175 66 85 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_novgorod = {
+	color = { 150 57 68 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_nubia = {
+	color = { 92 48 62 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_old_armenia = {
+	color = { 132 70 131 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_opolye = {
+	color = { 51 98 176 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_orissa = {
+	color = { 118 61 118 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_orthodox = {
+	color = { 81 107 95 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_ottoman = {
+	color = { 84 187 93 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_pagan = {
+	color = { 101 53 141 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_papal_state = {
+	color = { 56 98 85 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_pechenegs = {
+	color = { 96 102 123 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_persia = {
+	color = { 88 144 66 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_poland = {
+	color = { 79 84 134 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_pomerania = {
+	color = { 78 205 124 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_pontic_steppe = {
+	color = { 181 176 105 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_pontus = {
+	color = { 107 66 158 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_portugal = {
+	color = { 129 90 128 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_punjab = {
+	color = { 89 123 136 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_rajputana = {
+	color = { 151 152 145 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_romagna = {
+	color = { 96 87 76 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_rum = {
+	color = { 68 107 81 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_ruthenia = {
+	color = { 65 194 58 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_ruucuu = {
+	color = { 143 196 142 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_sakya_trizin = {
+	color = { 166 128 96 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_sardinia = {
+	color = { 127 53 60 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_saruhan = {
+	color = { 139 65 121 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_saxony = {
+	color = { 124 74 193 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_scotland = {
+	color = { 173 52 148 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_serbia = {
+	color = { 122 130 128 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_siam = {
+	color = { 76 84 96 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_sicily = {
+	color = { 174 48 61 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_silla = {
+	color = { 137 84 126 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_sindh = {
+	color = { 171 115 74 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_sorbia = {
+	color = { 62 60 129 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_spanish_galicia = {
+	color = { 70 85 177 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_sweden = {
+	color = { 68 121 106 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_switzerland = {
+	color = { 55 71 119 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_syria = {
+	color = { 98 61 127 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_tahert = {
+	color = { 181 88 103 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_tamilakam = {
+	color = { 103 84 191 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_tanjungnagara = {
+	color = { 150 116 87 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_tekke = {
+	color = { 90 111 155 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_thessalonika = {
+	color = { 122 113 126 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_toledo = {
+	color = { 109 142 128 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_transoxiana = {
+	color = { 128 167 53 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_trebizond = {
+	color = { 115 129 113 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_trinacria = {
+	color = { 170 181 76 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_tripolitania = {
+	color = { 176 84 89 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_valencia = {
+	color = { 126 106 122 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_venice = {
+	color = { 93 135 66 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_viet = {
+	color = { 132 157 65 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_visigoths = {
+	color = { 67 173 132 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_wales = {
+	color = { 95 53 101 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_white_rus = {
+	color = { 105 182 205 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_xia = {
+	color = { 193 52 148 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_yavakadvipa = {
+	color = { 163 121 91 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_yemen = {
+	color = { 201 82 119 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}
+
+k_yongson_throne = {
+	color = { 155 143 114 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}

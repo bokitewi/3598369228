@@ -1,0 +1,351 @@
+﻿DMReformActorOffice = {
+	type = character
+	log_loc_errors = no
+
+	text = {
+		trigger = { this = scope:dm_reform_story.story_owner }
+		localization_key = dm_reform_actor_office_ruler
+	}
+	text = {
+		trigger = { scope:dm_reform_story.var:dm_reform_reformer ?= this }
+		localization_key = dm_reform_actor_office_reformer
+	}
+	text = {
+		trigger = { is_councillor_of = scope:dm_reform_story.story_owner }
+		localization_key = dm_reform_actor_office_councillor
+	}
+	text = {
+		trigger = {
+			has_court_position = eparch_court_position
+		}
+		localization_key = eparch_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = grand_preceptor_court_position
+		}
+		localization_key = grand_preceptor_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = grand_mentor_court_position
+		}
+		localization_key = grand_mentor_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = grand_guardian_court_position
+		}
+		localization_key = grand_guardian_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = fire_dragon_engineer_court_position
+		}
+		localization_key = fire_dragon_engineer_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = keeper_of_the_harem_court_position
+		}
+		localization_key = keeper_of_the_harem_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = favored_minister_court_position
+		}
+		localization_key = favored_minister_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = minister_bureaucrat_court_position
+		}
+		localization_key = minister_bureaucrat_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = court_physician_court_position
+		}
+		localization_key = court_physician_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = travel_leader_court_position
+		}
+		localization_key = travel_leader_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = antiquarian_court_position
+		}
+		localization_key = antiquarian_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = seneschal_court_position
+		}
+		localization_key = seneschal_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = court_tutor_court_position
+		}
+		localization_key = court_tutor_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = wet_nurse_court_position
+		}
+		localization_key = wet_nurse_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = charioteer_court_position
+		}
+		localization_key = charioteer_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = bookmaker_court_position
+		}
+		localization_key = bookmaker_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = akolouthos_court_position
+		}
+		localization_key = akolouthos_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = chief_eunuch_court_position
+		}
+		localization_key = chief_eunuch_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = master_of_horse_court_position
+		}
+		localization_key = master_of_horse_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = master_of_hunt_court_position
+		}
+		localization_key = master_of_hunt_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = master_assassin_court_position
+		}
+		localization_key = master_assassin_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = cultural_emissary_court_position
+		}
+		localization_key = cultural_emissary_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = cave_hermit_court_position
+		}
+		localization_key = cave_hermit_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = chief_qadi_court_position
+		}
+		localization_key = chief_qadi_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = court_gardener_court_position
+		}
+		localization_key = court_gardener_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = court_scholar_court_position
+		}
+		localization_key = court_scholar_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = chronicler_court_position
+		}
+		localization_key = chronicler_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = champion_court_position
+		}
+		localization_key = champion_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = court_brewmaster_court_position
+		}
+		localization_key = court_brewmaster_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = lady_in_waiting_court_position
+		}
+		localization_key = lady_in_waiting_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = royal_architect_court_position
+		}
+		localization_key = royal_architect_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = high_almoner_court_position
+		}
+		localization_key = high_almoner_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = court_poet_court_position
+		}
+		localization_key = court_poet_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = court_musician_court_position
+		}
+		localization_key = court_musician_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = cupbearer_court_position
+		}
+		localization_key = cupbearer_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = food_taster_court_position
+		}
+		localization_key = food_taster_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = keeper_of_swans_court_position
+		}
+		localization_key = keeper_of_swans_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = court_jester_court_position
+		}
+		localization_key = court_jester_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = executioner_court_position
+		}
+		localization_key = executioner_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = bodyguard_court_position
+		}
+		localization_key = bodyguard_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = court_artificer_court_position
+		}
+		localization_key = court_artificer_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = garuda_court_position
+		}
+		localization_key = garuda_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = court_guru_court_position
+		}
+		localization_key = court_guru_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = court_brahmin_court_position
+		}
+		localization_key = court_brahmin_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = khlon_glan_court_position
+		}
+		localization_key = khlon_glan_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = court_astrologer_court_position
+		}
+		localization_key = court_astrologer_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = boyan_court_position
+		}
+		localization_key = boyan_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = siege_engineer_court_position
+		}
+		localization_key = siege_engineer_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = yurtchi_court_position
+		}
+		localization_key = yurtchi_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = cherbi_court_position
+		}
+		localization_key = cherbi_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = yeke_jarquchi_court_position
+		}
+		localization_key = yeke_jarquchi_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = foreign_emissary_court_position
+		}
+		localization_key = foreign_emissary_court_position
+	}
+	text = {
+		trigger = {
+			has_court_position = keeper_of_the_horses_court_position
+		}
+		localization_key = keeper_of_the_horses_court_position
+	}
+	text = {
+		trigger = { is_powerful_vassal_of = scope:dm_reform_story.story_owner }
+		localization_key = dm_reform_actor_office_powerful_vassal
+	}
+	text = {
+		trigger = { exists = var:movement_member }
+		localization_key = dm_reform_actor_office_movement_leader
+	}
+	text = {
+		trigger = { is_vassal_of = scope:dm_reform_story.story_owner }
+		localization_key = dm_reform_actor_office_vassal
+	}
+	text = {
+		localization_key = dm_reform_actor_office_courtier
+		fallback = yes
+	}
+}

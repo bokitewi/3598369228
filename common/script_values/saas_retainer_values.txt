@@ -1,0 +1,209 @@
+﻿saas_paid_courtier_count_value = {
+	value = 0
+	every_courtier = {
+		limit = { is_imprisoned = no }
+		add = 1
+		if = {
+			limit = { has_character_modifier = saas_personal_salary_raise_modifier }
+			add = 0.5
+		}
+	}
+}
+
+saas_current_monthly_stipend_expense_value = {
+	value = saas_paid_courtier_count_value
+	if = {
+		limit = { has_realm_law = saas_limited_stipend_law }
+		multiply = 0.05
+	}
+	else_if = {
+		limit = { has_realm_law = saas_normal_stipend_law }
+		multiply = 0.10
+	}
+	else_if = {
+		limit = { has_realm_law = saas_large_stipend_law }
+		multiply = 0.15
+	}
+	else_if = {
+		limit = { has_realm_law = saas_double_stipend_law }
+		multiply = 0.20
+	}
+	else = {
+		multiply = 0
+	}
+}
+
+# Evaluated in the paid courtier's character scope.
+saas_current_courtier_monthly_stipend_value = {
+	value = 0
+	if = {
+		limit = { host = { has_realm_law = saas_limited_stipend_law } }
+		add = 0.05
+	}
+	else_if = {
+		limit = { host = { has_realm_law = saas_normal_stipend_law } }
+		add = 0.10
+	}
+	else_if = {
+		limit = { host = { has_realm_law = saas_large_stipend_law } }
+		add = 0.15
+	}
+	else_if = {
+		limit = { host = { has_realm_law = saas_double_stipend_law } }
+		add = 0.20
+	}
+	if = {
+		limit = { has_character_modifier = saas_personal_salary_raise_modifier }
+		multiply = 1.5
+	}
+}
+
+saas_limited_stipend_burden_percent_value = {
+	value = saas_paid_courtier_count_value
+	multiply = 0.05
+	divide = {
+		value = monthly_character_income
+		min = 0.1
+	}
+	multiply = 100
+}
+
+saas_normal_stipend_burden_percent_value = {
+	value = saas_paid_courtier_count_value
+	multiply = 0.10
+	divide = {
+		value = monthly_character_income
+		min = 0.1
+	}
+	multiply = 100
+}
+
+saas_large_stipend_burden_percent_value = {
+	value = saas_paid_courtier_count_value
+	multiply = 0.15
+	divide = {
+		value = monthly_character_income
+		min = 0.1
+	}
+	multiply = 100
+}
+
+saas_double_stipend_burden_percent_value = {
+	value = saas_paid_courtier_count_value
+	multiply = 0.20
+	divide = {
+		value = monthly_character_income
+		min = 0.1
+	}
+	multiply = 100
+}
+
+saas_retainer_stewardship_success_value = {
+	value = 20
+	add = {
+		value = scope:retainer.stewardship
+		multiply = 3
+	}
+	if = {
+		limit = {
+			scope:retainer = {
+				OR = {
+					has_trait = diligent
+					has_trait = ambitious
+				}
+			}
+		}
+		add = 10
+	}
+	min = 20
+	max = 95
+}
+
+saas_retainer_diplomacy_success_value = {
+	value = 20
+	add = {
+		value = scope:retainer.diplomacy
+		multiply = 3
+	}
+	if = {
+		limit = {
+			scope:retainer = {
+				OR = {
+					has_trait = diligent
+					has_trait = ambitious
+					has_trait = gregarious
+				}
+			}
+		}
+		add = 10
+	}
+	min = 20
+	max = 95
+}
+
+saas_retainer_martial_success_value = {
+	value = 20
+	add = {
+		value = scope:retainer.martial
+		multiply = 3
+	}
+	if = {
+		limit = {
+			scope:retainer = {
+				OR = {
+					has_trait = diligent
+					has_trait = ambitious
+					has_trait = brave
+				}
+			}
+		}
+		add = 10
+	}
+	min = 20
+	max = 95
+}
+
+saas_retainer_intrigue_success_value = {
+	value = 20
+	add = {
+		value = scope:retainer.intrigue
+		multiply = 3
+	}
+	if = {
+		limit = {
+			scope:retainer = {
+				OR = {
+					has_trait = diligent
+					has_trait = ambitious
+					has_trait = deceitful
+				}
+			}
+		}
+		add = 10
+	}
+	min = 20
+	max = 95
+}
+
+saas_retainer_learning_success_value = {
+	value = 20
+	add = {
+		value = scope:retainer.learning
+		multiply = 3
+	}
+	if = {
+		limit = {
+			scope:retainer = {
+				OR = {
+					has_trait = diligent
+					has_trait = ambitious
+					has_trait = zealous
+					has_trait = scholar
+				}
+			}
+		}
+		add = 10
+	}
+	min = 20
+	max = 95
+}

@@ -1,0 +1,109 @@
+﻿
+embattle_side_commander_advantage_modifier = {
+	icon = martial_positive
+
+	advantage = 1
+
+	scale = {
+		value = embattle_side_commander_advantage_value
+		desc = MODIFIER_DEFINITION_VALUE_PER_SIDE_ADVANTAGE
+		display_mode = scaled
+	}
+}
+
+# 齐射
+embattle_volly_tactic_modifier = {
+	icon = prowess_positive
+
+	stationed_archers_damage_mult = 0.1
+}
+
+# 冲锋
+embattle_charge_tactic_modifier = {
+	icon = prowess_positive
+
+	stationed_heavy_cavalry_damage_mult = 0.1
+	stationed_light_cavalry_damage_mult = 0.2
+}
+
+# 固守
+embattle_stand_fast_tactic_modifier = {
+	icon = prowess_positive
+
+	stationed_pikemen_toughness_mult = 0.3
+	stationed_heavy_infantry_toughness_mult = 0.3
+}
+
+# 推进
+embattle_advance_tactic_modifier = {
+	icon = prowess_positive
+
+	stationed_heavy_infantry_damage_mult = 0.3
+	stationed_heavy_infantry_toughness_mult = 0.3
+	stationed_skirmishers_damage_mult = 0.3
+	stationed_skirmishers_toughness_mult = 0.4
+}
+
+# 骚扰
+embattle_harass_tactic_modifier = {
+	icon = prowess_positive
+
+	stationed_light_cavalry_damage_mult = 0.1
+	stationed_light_cavalry_toughness_mult = 0.1
+	stationed_archer_cavalry_damage_mult = 0.2
+}
+
+# 胡乱射击
+embattle_potshots_tactic_modifier = {
+	icon = prowess_negative
+	
+	enemy_hard_casualty_modifier = -0.2
+}
+
+# 鲁莽冲锋
+embattle_reckless_charge_tactic_modifier = {
+	icon = prowess_negative
+
+	max_combat_roll = 2
+	min_combat_roll = -5
+}
+
+# 军令费解
+embattle_confused_orders_tactic_modifier = {
+	icon = prowess_negative
+
+	attacker_advantage = -5
+	defender_advantage = -2
+}
+
+# 胆怯推进
+embattle_timid_advance_tactic_modifier = {
+	icon = prowess_negative
+
+	max_combat_roll = -5
+	min_combat_roll = 2
+}
+
+# 无组织骚扰
+embattle_disorganised_harass_tactic_modifier = {
+	icon = prowess_negative
+
+	advantage = -5
+	hard_casualty_modifier = 0.1
+}
+
+# 战术多样性
+embattle_tactic_diversity_modifier = {
+	icon = martial_positive
+
+	advantage = 5
+}
+
+# 战术克制
+embattle_tactic_counter_modifier = {
+	icon = martial_negative
+
+	advantage = -5
+}
+
+

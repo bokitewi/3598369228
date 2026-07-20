@@ -1,0 +1,102 @@
+﻿namespace = fp2_struggle
+
+######################################
+# EL CID'S BIZARRE ADVENTURE SYSTEM
+# By Hugo Cortell
+######################################
+fp2_struggle.2045 = {
+	hidden = yes
+
+	trigger = {
+		is_landless_adventurer = no	
+	}
+
+	immediate = {
+		if = { # Startup changes (give the cid his full nickname when he starts adventuring)
+			limit = { NOT = { has_character_flag = has_already_begun_travelling } }
+			
+			remove_nickname = yes
+			give_nickname = nick_the_cid_campeador
+			add_character_flag = has_already_begun_travelling # Prevents yearly pulse from stacking up requests
+			add_character_flag = blocked_from_leaving # Prevents el cid from vacationing in far away lands
+		}
+
+		if = {
+			limit = { NOT = { has_character_flag = finished_el_cids_travels } } # In case several requests for the event are stacked up
+			if = { # Being a guest is used as a boolean to check if the character is in an "evaluation" phase or already in a court. DO NOT USE THE GUEST SYSTEM FOR THIS.
+				limit = { 
+					OR = {
+						is_pool_guest = yes
+						is_pool_character = yes
+						is_foreign_court_guest = yes
+					} 
+				}
+				random_county_in_region = { # Naturally biased in favor of larger states
+					limit = { exists = holder.liege }
+					weight = {
+						base = 1
+						modifier = {
+							add = 10
+							holder.liege = { has_relation_friend = root }
+						}
+						modifier = {
+							add = 30
+							holder.liege = { has_relation_best_friend = root }
+						}
+						compare_modifier = {
+							value = holder.prestige_level
+							multiplier = 1.5
+						}
+					}
+					region = world_europe_west_iberia # Locks el cid's forced travels to iberia
+					holder.liege = { trigger_event = fp2_struggle.2051 }
+				}
+			}
+			else = {
+				if = {
+					limit = { exists = liege }
+					liege = { trigger_event = fp2_struggle.2050 } # This is you, you get the event, while el cid gets the "system event"
+				}
+				else = {
+					employer = { trigger_event = fp2_struggle.2050 } # ditto
+				}
+			}
+		}
+	}
+}
+
+
+#############################################################
+# Unease About El Sidi
+# By The Content Design Team (And scripted by Hugo Cortell)
+#############################################################
+
+scripted_trigger el_cid_too_important_trigger = {
+	OR = {
+		any_extended_family_member = { this = scope:fp2_2050_el_cid }
+		scope:fp2_2050_el_cid = { is_vassal_of = ROOT }
+		has_relation_best_friend = scope:fp2_2050_el_cid
+		is_spouse_of = scope:fp2_2050_el_cid
+	}
+}
+
+fp2_struggle.2050 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+
+
+############################################################
+# El Cid Arrives At Your Court
+# By The Content Design Team (And scripted by Hugo Cortell)
+############################################################
+fp2_struggle.2051 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}

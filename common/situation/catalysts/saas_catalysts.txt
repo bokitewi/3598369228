@@ -1,0 +1,44 @@
+﻿# Spring and Autumn situation catalysts.
+
+saas_catalyst_tribute_established = {}
+saas_catalyst_tianzi_victory = {}
+saas_catalyst_wangdao_gains_member = {}
+saas_catalyst_lijiao_alliance = {}
+saas_catalyst_successful_huimeng = {}
+saas_catalyst_long_peace = {}
+saas_catalyst_lijiao_aggressive_war = {}
+saas_catalyst_title_usurped = {}
+saas_catalyst_tianzi_defeat = {}
+saas_catalyst_siyi_conquest = {}
+saas_catalyst_adventurer_conquest = {}
+saas_catalyst_refused_tribute = {}
+saas_catalyst_wangdao_internal_war = {}
+saas_catalyst_tributary_lost = {}
+saas_catalyst_peace_restored = {}
+saas_catalyst_house_restored = {}
+
+# Vanilla Iberian Struggle catalysts reused by the Spring and Autumn situation.
+catalyst_passing_of_time = {}
+catalyst_gain_claim_on_title_fp2 = {}
+catalyst_new_building_in_castle = {}
+catalyst_becomes_rival_with_involved = {}
+catalyst_using_a_hook_on_very_important_character = {}
+catalyst_unnatural_death_important_character = {}
+catalyst_usurp_title_fp2 = {}
+catalyst_forced_conversion = {}
+catalyst_reveal_secret_important = {}
+catalyst_broke_truce_against_important_character = {}
+catalyst_improve_development_vassal_diff_faith_culture = {}
+catalyst_became_friend_lover_with_character = {}
+catalyst_learned_new_language_important = {}
+catalyst_new_building_in_city = {}
+catalyst_sign_truce_outside_war = {}
+catalyst_formed_interreligious_alliance_with_important_character = {}
+catalyst_ransom_important = {}
+catalyst_grant_privilege_to_diff_faith_culture_vassal = {}
+catalyst_invite_diff_faith_culture_to_feast = {}
+catalyst_independence_from_non_dejure_vassal = {}
+catalyst_grant_land_local_noble = {}
+catalyst_became_best_friend_soulmate_with_very_important_character = {}
+catalyst_convert_local_culture_faith = {}
+catalyst_release_important = {}

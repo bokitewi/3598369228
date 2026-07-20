@@ -1,0 +1,76 @@
+﻿##### d_zhuliuheshi ############################
+
+### c_junhe
+
+
+### c_junhejun
+# SHIZHANG
+2974 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# XIANGWU1
+2973 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# JUNHE
+2845 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_yidou
+
+
+### c_hemiao
+# HEMAO
+3559 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# YIDOU
+2846 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_nahejun
+
+
+##### d_luyuanshi ############################
+
+### c_luyuan
+
+
+### c_zhuliuhe
+
+
+### c_youdu1
+# ZHULIUHE
+2963 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# LUYUAN
+2962 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_yitou
+
+
+### c_wubaiyuan
+
+

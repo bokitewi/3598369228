@@ -1,0 +1,74 @@
+﻿##### d_nanzengshi ############################
+
+### c_zengguan
+# ZENGGUAN
+1703 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_juan2
+# JUAN2
+1704 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yangqiu
+# YANGQIU
+1705 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zeng3
+# ZENG3
+1706 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhong
+# ZHONG
+1710 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ciqiu
+# CIQIU
+1713 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zengqiu
+# ZENGQIU
+1714 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_bi3
+# BI3
+1716 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

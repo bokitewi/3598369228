@@ -1,0 +1,54 @@
+﻿# Synced from vanilla 1.19 09_mpo_actions.txt.
+# Empty total-conversion county shells are skipped before entering holder scope.
+
+action_offer_confederation = {
+	priority = 900
+	combine_into_one = yes
+	check_create_action = {
+		every_land_neighboring_realm_with_tributaries_owner = {
+			limit = {
+				root = {
+					is_character_interaction_potentially_accepted = {
+						recipient = prev
+						interaction = offer_confederation_interaction
+					}
+				}
+			}
+			add_to_list = potential_confeds
+		}
+		capital_county.empire ?= {
+			every_de_jure_county = {
+				limit = {
+					exists = holder
+					holder = {
+						root = {
+							is_character_interaction_potentially_accepted = {
+								recipient = prev
+								interaction = offer_confederation_interaction
+							}
+						}
+					}
+				}
+				holder = {
+					add_to_list = potential_confeds
+				}
+			}
+		}
+		every_in_list = {
+			list = potential_confeds
+			try_create_important_action = {
+				important_action_type = action_offer_confederation
+				actor = root
+				recipient = this
+			}
+		}
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = offer_confederation_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}

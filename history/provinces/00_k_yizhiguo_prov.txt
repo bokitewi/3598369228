@@ -1,0 +1,19 @@
+﻿##### d_abiliushi ############################
+
+### c_shangduima
+# SHANGXIAN
+2918 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_shangxian
+
+
+##### d_yiqishi ############################
+
+### c_wenhuoliang1
+
+

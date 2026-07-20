@@ -1,0 +1,56 @@
+﻿##### d_jiaoshi3 ############################
+
+### c_jiao4
+# 
+1778 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yunguan
+# 
+1779 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_jushi
+# 
+1781 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ren2
+# 
+1782 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shiyan
+# SHIYAN
+3118 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xunxiang
+# XUNXIANG
+3119 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

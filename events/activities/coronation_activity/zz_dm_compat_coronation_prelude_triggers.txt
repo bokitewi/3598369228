@@ -1,0 +1,18 @@
+﻿# Vanilla 1.19 trigger with a missing-domicile guard for Spring-map nomads.
+scripted_trigger prelude_events_0090_appropriate_guest = {
+	is_ai = yes
+	is_adult = yes
+	is_landed = yes
+	is_healthy = yes
+	government_has_flag = government_is_nomadic
+	exists = domicile
+	domicile ?= { herd >= major_herd_value }
+	this != root
+	OR = {
+		is_vassal_of = root
+		opinion = {
+			target = root
+			value >= 25
+		}
+	}
+}

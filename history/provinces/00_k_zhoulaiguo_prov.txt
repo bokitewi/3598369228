@@ -1,0 +1,92 @@
+﻿##### d_zhoulaishi ############################
+
+### c_fangzhong
+# FANGZHONG
+613 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shen
+# SHEN
+614 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_qie
+# QIE
+615 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhoulai
+# ZHOULAI
+616 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yingwei
+# YINGWEI
+617 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xiachengfu
+# XIACHENGFU
+2355 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_sharui
+# SHARUI
+2356 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_pinga
+# PINGA
+2357 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ciyang
+# CIYANG
+2361 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_jiaoqiu
+# JIAOQIU
+2362 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

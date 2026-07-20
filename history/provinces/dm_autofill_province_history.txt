@@ -1,0 +1,833 @@
+﻿# Generated compatibility metadata for capital provinces without
+# an authored province-history block.
+
+645 = {
+	culture = zhou
+	religion = dongzhouli
+}
+
+664 = {
+	culture = zhou
+	religion = dongzhouli
+}
+
+665 = {
+	culture = zhou
+	religion = dongzhouli
+}
+
+666 = {
+	culture = zhou
+	religion = dongzhouli
+}
+
+668 = {
+	culture = zhou
+	religion = dongzhouli
+}
+
+669 = {
+	culture = zhou
+	religion = dongzhouli
+}
+
+709 = {
+	culture = dongyi
+	religion = yili
+}
+
+711 = {
+	culture = dongyi
+	religion = yili
+}
+
+712 = {
+	culture = lu
+	religion = xizhouli
+}
+
+722 = {
+	culture = xiaren
+	religion = xiali
+}
+
+726 = {
+	culture = zhou
+	religion = dongzhouli
+}
+
+966 = {
+	culture = qin
+	religion = xizhouli
+}
+
+977 = {
+	culture = qin
+	religion = xizhouli
+}
+
+999 = {
+	culture = jin
+	religion = dongzhouli
+}
+
+1001 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+1002 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+1005 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+1010 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+1011 = {
+	culture = jin
+	religion = dongzhouli
+}
+
+1022 = {
+	culture = jin
+	religion = dongzhouli
+}
+
+1023 = {
+	culture = jin
+	religion = dongzhouli
+}
+
+1028 = {
+	culture = chidi
+	religion = dongzhouli
+}
+
+1029 = {
+	culture = jin
+	religion = dongzhouli
+}
+
+1032 = {
+	culture = jin
+	religion = dongzhouli
+}
+
+1050 = {
+	culture = jin
+	religion = xizhouli
+}
+
+1053 = {
+	culture = jin
+	religion = xizhouli
+}
+
+1054 = {
+	culture = jin
+	religion = xizhouli
+}
+
+1055 = {
+	culture = jin
+	religion = xizhouli
+}
+
+1056 = {
+	culture = jin
+	religion = xizhouli
+}
+
+1057 = {
+	culture = chidi
+	religion = beidifangling
+}
+
+1072 = {
+	culture = zhou
+	religion = dongzhouli
+}
+
+1073 = {
+	culture = zhou
+	religion = dongzhouli
+}
+
+1078 = {
+	culture = zhou
+	religion = dongzhouli
+}
+
+1079 = {
+	culture = zhou
+	religion = dongzhouli
+}
+
+1080 = {
+	culture = zhou
+	religion = dongzhouli
+}
+
+1086 = {
+	culture = zhou
+	religion = dongzhouli
+}
+
+1087 = {
+	culture = zhou
+	religion = dongzhouli
+}
+
+1089 = {
+	culture = zhou
+	religion = dongzhouli
+}
+
+1108 = {
+	culture = zhou
+	religion = dongzhouli
+}
+
+1402 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+}
+
+1405 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+}
+
+1408 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+}
+
+1867 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3248 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3770 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3778 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3787 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3872 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3873 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3877 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3884 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3890 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3894 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3903 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3911 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3918 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3919 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3920 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3924 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3928 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3929 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3932 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3934 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3942 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3945 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3948 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3949 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3957 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3959 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3960 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3963 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3965 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3967 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3970 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3975 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3978 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3982 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3984 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3988 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3991 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+3999 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4006 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4009 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4016 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4018 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4023 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4033 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4034 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4040 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4048 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4051 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4053 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4061 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4066 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4070 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4074 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4079 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4094 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4101 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4105 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4109 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4119 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4121 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4126 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4138 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4141 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4142 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4148 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4150 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4156 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4157 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4164 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4168 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4170 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4178 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4181 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4188 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4191 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4193 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4200 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4208 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4211 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4227 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4236 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4240 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4244 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4246 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4254 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4262 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4272 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4273 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4277 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4287 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4290 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4297 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4303 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4309 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4351 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4353 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4358 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4362 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4366 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4373 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4385 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4390 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4394 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4398 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4407 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4413 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4426 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4427 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4434 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4440 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4449 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4452 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4455 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4457 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4462 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4471 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4477 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4486 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4490 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4504 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4512 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4538 = {
+	culture = zhou
+	religion = xizhouli
+}
+
+4736 = {
+	culture = hehuangzhirong
+	religion = xirongfangling
+}
+

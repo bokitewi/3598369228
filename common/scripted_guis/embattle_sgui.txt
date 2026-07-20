@@ -1,0 +1,365 @@
+﻿### 检测两翼指挥官合法性 ###
+embattle_valid_commander_detection = {
+	scope = army
+	
+	effect = {
+		if = { # 两翼指挥官被任命为总指挥官，移除其两翼指挥官
+			limit = {
+				var:embattle_left_flank_commander ?= army_commander
+			}
+			remove_variable = embattle_left_flank_commander
+		}
+		if = { # 两翼指挥官被任命为总指挥官，移除其两翼指挥官
+			limit = {
+				var:embattle_right_flank_commander ?= army_commander
+			}
+			remove_variable = embattle_right_flank_commander
+		}
+
+		if = {
+			limit = { # 两翼指挥官离队，移除其两翼指挥官
+				var:embattle_left_flank_commander ?= {
+					NOT = { knight_army = root }
+				}
+			}
+			remove_variable = embattle_left_flank_commander
+		}
+		if = {
+			limit = { # 两翼指挥官离队，移除其两翼指挥官
+				var:embattle_right_flank_commander ?= {
+					NOT = { knight_army = root }
+				}
+			}
+			remove_variable = embattle_right_flank_commander
+		}
+
+		if = {
+			limit = { # 玩家委任副将任免
+				has_game_rule = embattle_side_commander_appointor_ai_only_except_own_troop
+				army_commander != army_owner
+			}
+			remove_variable = embattle_left_flank_commander
+			remove_variable = embattle_right_flank_commander
+		}
+	}
+}
+
+embattle_set_army_commander_list = { # 构建两翼指挥官列表
+	scope = army
+	
+	effect = {
+		clear_variable_list = armytest # 重建列表以防合法角色变化，如骑士离队等
+
+		army_owner = {
+			every_knight = {
+				limit = { # 该军队的骑士都是潜在的两翼指挥官
+					knight_army = root
+				}
+				root = {
+					add_to_variable_list = {
+						name = armytest
+						target = prev
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+embattle_set_army_left_flank_commander = { # 设置左翼指挥官
+	scope = army
+
+	effect = {
+		set_variable = {
+			name = embattle_left_flank_commander
+			value = scope:knight
+		}
+	}
+}
+embattle_set_army_right_flank_commander = { # 设置右翼指挥官
+	scope = army
+
+	effect = {
+		set_variable = {
+			name = embattle_right_flank_commander
+			value = scope:knight
+		}
+	}
+}
+
+### 是否为指挥官 ###
+#character = scope:knight
+embattle_is_not_commanding_trigger = { # 是否为总指挥官或两翼指挥官，用于判断更换将领时能否选中
+	scope = army
+
+	is_shown = {
+		Or = {
+			army_commander ?= scope:knight
+			var:embattle_left_flank_commander ?= scope:knight
+			var:embattle_right_flank_commander ?= scope:knight
+		}
+	}
+}
+
+### 不合法指挥官 ###
+embattle_is_invalid_left_flank_commander_trigger = { # 不合法指挥官，用于红色文本提示
+	scope = army
+
+	is_valid = {
+		AND = {
+			has_game_rule = embattle_side_commander_appointor_ai_only_except_own_troop
+			army_commander != army_owner
+		}
+	}
+
+	is_shown = {
+		var:embattle_left_flank_commander ?= {
+			NOT = { knight_army = root }
+		}
+	}
+}
+embattle_is_invalid_right_flank_commander_trigger = { # 不合法指挥官，用于红色文本提示
+	scope = army
+
+	is_valid = {
+		AND = {
+			has_game_rule = embattle_side_commander_appointor_ai_only_except_own_troop
+			army_commander != army_owner
+		}
+	}
+
+	is_shown = {
+		var:embattle_right_flank_commander ?= {
+			NOT = { knight_army = root }
+		}
+	}
+}
+
+### 是否有两翼指挥官 ###
+embattle_has_left_flank_commander_trigger = { # 是否有两翼指挥官，用于判断能否移除指挥官
+	scope = army
+
+	is_shown = {
+		has_variable = embattle_left_flank_commander
+	}
+}
+embattle_has_right_flank_commander_trigger = { # 是否有两翼指挥官，用于判断能否移除指挥官
+	scope = army
+
+	is_shown = {
+		has_variable = embattle_right_flank_commander
+	}
+}
+
+### 移除指挥官 ###
+embattle_clear_left_flank_commander = { #移除指挥官
+	scope = army
+
+	effect = {
+		remove_variable = embattle_left_flank_commander
+	}
+}
+embattle_clear_right_flank_commander = { #移除指挥官
+	scope = army
+
+	effect = {
+		remove_variable = embattle_right_flank_commander
+	}
+}
+
+### window_combat在commander上存储Army ###
+embattle_window_combat_sgui = {
+	scope = character
+
+	effect = {
+		set_variable = {
+			name = embattle_army
+			value = this.commanding_army
+		}
+
+		scope:root2 = {
+			set_variable = {
+				name = embattle_army
+				value = this.commanding_army
+			}
+		}
+	}
+}
+
+embattle_is_trait = {
+	scope = trait
+
+	is_shown = {
+		has_trait_category = commander
+	}
+}
+
+csg_init_list = {
+	scope = character
+
+	effect = {
+		clear_global_variable_list = pob_side_commanders_sort_option
+		add_to_global_variable_list = { name = pob_side_commanders_sort_option target = flag:_martial }
+		add_to_global_variable_list = { name = pob_side_commanders_sort_option target = flag:_age }
+		add_to_global_variable_list = { name = pob_side_commanders_sort_option target = flag:_highest_held_title_tier }
+		add_to_global_variable_list = { name = pob_side_commanders_sort_option target = flag:_opinion_of_root }
+
+		if = {
+			limit = {
+				NOT = { exists = pob_side_commanders_sort_option }
+			}
+			set_variable = {
+				name = pob_side_commanders_sort_option 
+				value = flag:_martial
+			}
+		}
+		
+	}
+}
+
+# ROOT = Player
+pob_side_commanders_sort_option_gui = {
+	scope = character
+	saved_scopes = { 
+		sort_option 
+		army
+	}
+
+	effect = {
+		set_variable = {
+			name = pob_side_commanders_sort_option
+			value = scope:sort_option
+		}
+
+		scope:army = {
+			every_in_list = {
+				variable = armytest
+				scope:army = {
+					add_to_variable_list = {
+						name = army_test_temp
+						target = prev
+					}
+				}
+				
+			}
+			clear_variable_list = armytest
+			
+			ordered_in_list = {
+				variable = army_test_temp
+				order_by = {
+					# Apply sort option
+					if = {
+						limit = { ROOT.var:pob_side_commanders_sort_option = flag:_age }
+						value = age
+					}
+					else_if = {
+						limit = { ROOT.var:pob_side_commanders_sort_option = flag:_highest_held_title_tier }
+						value = highest_held_title_tier
+					}
+					else_if = {
+						limit = { ROOT.var:pob_side_commanders_sort_option = flag:_opinion_of_root }
+						value = "opinion(root)"
+					}
+					else_if = {
+						limit = { ROOT.var:pob_side_commanders_sort_option = flag:_martial }
+						value = martial
+					}
+					else = {
+						value = martial
+					}
+					# Apply sort order
+					if = {
+						limit = {
+							ROOT = { has_variable = pob_side_commanders_sort_order_ascending }
+						}
+						multiply = -1
+					}
+				}
+				max = 100
+				check_range_bounds = no
+
+				scope:army = {
+					add_to_variable_list = {
+						name = armytest
+						target = prev
+					}
+				}
+			}
+		}
+	}
+}
+
+pob_change_sort_order_effect = {
+	scope = character
+
+	effect = {
+		if = {
+			limit = {
+				has_variable = pob_side_commanders_sort_order_ascending
+			}
+			remove_variable = pob_side_commanders_sort_order_ascending
+		}
+		else = {
+			set_variable = pob_side_commanders_sort_order_ascending
+		}
+		
+		scope:army = {
+			every_in_list = {
+				variable = armytest
+				scope:army = {
+					add_to_variable_list = {
+						name = army_test_temp
+						target = prev
+					}
+				}
+				
+			}
+			clear_variable_list = armytest
+			
+			ordered_in_list = {
+				variable = army_test_temp
+				order_by = {
+					# Apply sort option
+					if = {
+						limit = { ROOT.var:pob_side_commanders_sort_option = flag:_age }
+						value = age
+					}
+					else_if = {
+						limit = { ROOT.var:pob_side_commanders_sort_option = flag:_highest_held_title_tier }
+						value = highest_held_title_tier
+					}
+					else_if = {
+						limit = { ROOT.var:pob_side_commanders_sort_option = flag:_opinion_of_root }
+						value = "opinion(root)"
+					}
+					else_if = {
+						limit = { ROOT.var:pob_side_commanders_sort_option = flag:_martial }
+						value = martial
+					}
+					else = {
+						value = martial
+					}
+					# Apply sort order
+					if = {
+						limit = {
+							ROOT = { has_variable = pob_side_commanders_sort_order_ascending }
+						}
+						multiply = -1
+					}
+				}
+				max = 100
+				check_range_bounds = no
+
+				scope:army = {
+					add_to_variable_list = {
+						name = armytest
+						target = prev
+					}
+				}
+			}
+		}
+	}
+}
+
+

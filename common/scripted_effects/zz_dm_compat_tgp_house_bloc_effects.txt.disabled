@@ -1,0 +1,527 @@
+﻿# Synced from vanilla 1.19 10_dlc_tgp_house_bloc_scripted_effects.txt.
+# Disabled: use the authoritative CK3 1.19.0.6 vanilla house-bloc effects.
+# Re-entrant join/leave callbacks use temporary scopes to prevent nested
+# vassal-house processing from overwriting the parent bloc and house.
+
+tgp_create_house_bloc_effect = {
+	save_scope_as = bloc_creator
+	save_scope_value_as = {
+		name = type
+		value = flag:$TYPE$
+	}
+	custom_description = {
+		text = create_house_bloc_effect
+		subject = scope:bloc_creator.house_head
+		if = {
+			limit = {
+				OR = {
+					has_house_aspiration_parameter = ceremony_cheaper_feasts
+					scope:type = flag:ceremony
+				}
+			}
+			house_head = {
+				create_confederation = {
+					name = CONFEDERATION_HOUSE_NAME
+					type = confederation_type:house_bloc_ceremony
+					leader = house
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_house_aspiration_parameter = unlocks_japanese_manor_watch_house
+					scope:type = flag:determination
+				}
+			}
+			house_head = {
+				create_confederation = {
+					name = CONFEDERATION_HOUSE_NAME
+					type = confederation_type:house_bloc_determination
+					leader = house
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_house_aspiration_parameter = unlocks_japanese_manor_shrine
+					scope:type = flag:humility
+				}
+			}
+			house_head = {
+				create_confederation = {
+					name = CONFEDERATION_HOUSE_NAME
+					type = confederation_type:house_bloc_humility
+					leader = house
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_house_aspiration_parameter = unlocks_japanese_manor_brewery
+					scope:type = flag:prosperity
+				}
+			}
+			house_head = {
+				create_confederation = {
+					name = CONFEDERATION_HOUSE_NAME
+					type = confederation_type:house_bloc_prosperity
+					leader = house
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_house_aspiration_parameter = unlocks_japanese_manor_archive
+					scope:type = flag:service
+				}
+			}
+			house_head = {
+				create_confederation = {
+					name = CONFEDERATION_HOUSE_NAME
+					type = confederation_type:house_bloc_service
+					leader = house
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_house_aspiration_parameter = unlocks_japanese_manor_armory
+					scope:type = flag:strength
+				}
+			}
+			house_head = {
+				create_confederation = {
+					name = CONFEDERATION_HOUSE_NAME
+					type = confederation_type:house_bloc_strength
+					leader = house
+				}
+			}
+		}
+		house_confederation ?= {
+			save_scope_as = bloc
+			set_coa = scope:bloc_creator
+		}
+	}
+}
+
+tgp_set_house_bloc_leading_house_effect = {
+	save_scope_as = bloc
+	leading_house ?= { save_scope_as = old_leader }
+	$LEADER$ ?= {
+		save_scope_as = leader
+		save_scope_as = bloc_creator # for bloc name
+	}
+	if = {
+		limit = {
+			exists = scope:leader
+			exists = scope:bloc
+			trigger_if = {
+				limit = { exists = scope:old_leader }
+				scope:old_leader != scope:leader
+			}
+		}
+		custom_description = {
+			text = change_house_bloc_leader_effect
+			subject = scope:leader.house_head
+			object = scope:old_leader.house_head
+			scope:bloc ?= {
+				set_leading_house = scope:leader
+				hidden_effect = {
+					set_coa = scope:leader
+					set_confederation_name = "CONFEDERATION_HOUSE_NAME"
+					if = {
+						limit = { exists = scope:old_leader }
+						set_variable = {
+							name = recent_leader_change
+							value = scope:old_leader
+							years = 5
+						}
+					}
+					every_player = {
+						limit = {
+							top_liege ?= scope:leader.house_head.top_liege
+							tgp_uses_house_blocs_trigger = yes
+						}
+						send_interface_message = {
+							type = msg_house_bloc_leader
+							title = msg_bloc_new_leading_house
+							desc = msg_bloc_new_leading_house_desc
+							left_icon = scope:leader.house_head
+							right_icon = scope:leader
+							custom_description = {
+								text = change_house_bloc_leader_effect
+								subject = scope:leader.house_head
+								object = scope:old_leader.house_head
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+tgp_join_house_bloc_effect = {
+	save_temporary_scope_as = joiner
+	house_confederation ?= { save_temporary_scope_as = old_bloc }
+	$INVITER$ ?= {
+		save_temporary_scope_as = inviter
+		house_confederation ?= { save_temporary_scope_as = bloc }
+	}
+	if = { # Tooltip for interaction
+		limit = { NOT = { exists = scope:bloc } }
+		scope:joiner.house_head = { custom_tooltip = join_house_bloc_tt_no_scope }
+	}
+	else_if = {
+		limit = {
+			exists = scope:joiner
+			exists = scope:inviter
+			exists = scope:bloc
+			trigger_if = {
+				limit = { exists = scope:old_bloc }
+				scope:old_bloc != scope:bloc
+			}
+		}
+		# Match the vanilla interaction order for direct event/effect callers:
+		# fully finish old-bloc callbacks before adding this house to a new bloc.
+		if = {
+			limit = {
+				exists = scope:old_bloc
+				scope:old_bloc != scope:bloc
+			}
+			scope:joiner = {
+				tgp_leave_house_bloc_effect = {
+					OPINION = flag:no
+					TRUCE = flag:no
+				}
+			}
+		}
+		# ADD MEMBER HOUSE
+		custom_description = {
+			text = join_house_bloc_effect
+			subject = scope:joiner.house_head
+			object = scope:inviter.house_head
+			scope:bloc ?= {
+				hidden_effect = { add_confederation_member_house = scope:joiner }
+			}
+		}
+		# OPINION
+		if = {
+			limit = {
+				$OPINION$ = flag:yes
+				exists = scope:joiner
+				scope:inviter != scope:joiner
+			}
+			scope:inviter ?= {
+				house_head ?= {
+					if = { # Hide for players
+						limit = { is_ai = yes }
+						if = {
+							limit = {
+								has_opinion_modifier = {
+									modifier = left_house_bloc_opinion
+									target = scope:joiner.house_head
+								}
+							}
+							remove_opinion = {
+								modifier = left_house_bloc_opinion
+								target = scope:joiner.house_head
+							}
+						}
+						add_opinion = {
+							modifier = joined_house_bloc_opinion
+							target = scope:joiner.house_head
+							opinion = 15
+						}
+					}
+				}
+				change_house_relation_effect = {
+					HOUSE = scope:joiner
+					VALUE = house_relation_improve_medium_value
+					REASON = joined_bloc
+					CHAR = scope:joiner.house_head
+					TARGET_CHAR = scope:inviter.house_head
+					TITLE = scope:dummy_gender
+				}
+			}
+		}
+	}
+}
+
+tgp_on_member_house_joined_shared_effect = {
+	save_temporary_scope_as = bloc
+	scope:house ?= {
+		save_temporary_scope_as = joiner
+		set_variable = {
+			name = recently_joined_bloc
+			years = 5
+		}
+	}
+	# MESSAGES
+	every_player = {
+		limit = {
+			top_liege ?= scope:bloc.leading_house.house_head.top_liege
+			tgp_uses_house_blocs_trigger = yes
+		}
+		if = {
+			limit = {
+				NOT = { house = house.house_confederation.leading_house } # avoid double message when creating
+				scope:bloc = {
+					any_confederation_member_house = { count = 2 }
+				}
+			}
+			send_interface_message = {
+				type = msg_house_bloc_created
+				title = msg_house_bloc_created
+				desc = msg_house_bloc_created_desc
+				left_icon = scope:bloc.leading_house.house_head
+				right_icon = scope:bloc.leading_house
+				custom_description = {
+					text = create_house_bloc_effect
+					subject = scope:bloc.leading_house.house_head
+				}
+			}
+		}
+		else_if = {
+			limit = { house.house_confederation ?= scope:bloc }
+			send_interface_message = {
+				type = msg_house_joined_house_bloc 
+				title = msg_house_joined_bloc
+				desc = msg_house_joined_bloc_desc
+				left_icon = scope:joiner
+				right_icon = scope:bloc.leading_house
+				custom_description = {
+					text = join_house_bloc_effect
+					subject = scope:joiner.house_head
+					object = scope:bloc.leading_house.house_head
+				}
+				# MEMBER LIST TOOLTIP
+				#show_as_tooltip = {
+				#	scope:bloc = {
+				#		every_in_list = {
+				#			variable = joining_house_members
+				#			limit = { house = scope:joiner }
+				#			custom = house_joined_bloc_member_custom
+				#			custom_tooltip = house_bloc_member_tt
+				#		}
+				#	}
+				#}
+			}
+		}
+	}
+	every_in_list = {
+		variable = joining_house_members
+		limit = { house = scope:joiner }
+		save_temporary_scope_as = house_member_temp
+		remove_character_flag = bloc_message_flag
+		scope:bloc = {
+			remove_list_variable = {
+				name = joining_house_members
+				target = scope:house_member_temp
+			}
+		}
+		# Find Sub-Vassal houses of joining Vassal Houses
+		if = {
+			limit = { is_independent_ruler = no } # Kampaku is the only exception
+			every_vassal_or_below = {
+				limit = {
+					is_house_head = yes
+					any_held_title = { is_noble_family_title = yes }
+					is_independent_ruler = no
+					house = {
+						NOR = {
+							this = scope:house
+							house_confederation ?= scope:bloc
+							is_in_list = joining_vassal_houses
+						}
+					}
+				}
+				house = { add_to_list = joining_vassal_houses }
+			}
+		}
+	}
+	every_in_list = {
+		list = joining_vassal_houses
+		save_temporary_scope_as = vassal_house_temp
+		# The list can outlive a title/government change. Re-evaluate the exact
+		# vanilla member-house conditions without replacing the permanent
+		# callback scope:house reserved by the engine.
+		if = {
+			limit = {
+				exists = scope:bloc
+				house_head ?= {
+					trigger_if = {
+						limit = {
+							exists = scope:bloc.leading_house.house_head.top_liege
+						}
+						top_liege ?= scope:bloc.leading_house.house_head.top_liege
+					}
+					is_alive = yes
+					any_held_title = { is_noble_family_title = yes }
+					tgp_uses_house_blocs_trigger = yes
+				}
+			}
+			if = {
+				limit = { exists = house_confederation }
+				set_variable = {
+					name = bloc_leaving_reason
+					value = flag:reason_followed_liege
+					days = 4
+				}
+				tgp_leave_house_bloc_effect = {
+					OPINION = flag:no
+					TRUCE = flag:yes
+				}
+			}
+			tgp_join_house_bloc_effect = {
+				INVITER = scope:joiner
+				OPINION = flag:no
+			}
+		}
+	}
+	if = {
+		limit = { debug_only = yes }
+		debug_log = "house joined bloc"
+		debug_log_scopes = yes
+	}
+}
+
+tgp_on_member_house_left_shared_effect = {
+	save_temporary_scope_as = bloc
+	scope:house = {
+		save_temporary_scope_as = leaver
+		if = {
+			limit = { has_variable = recently_joined_bloc }
+			remove_variable = recently_joined_bloc
+		}
+		house_head ?= { save_temporary_scope_as = house_head }
+	}
+	# MESSAGES
+	every_player = {
+		limit = {
+			OR = {
+				house = scope:house
+				confederation ?= scope:bloc
+			}
+		}
+		# Inform Members of Leavers
+		send_interface_toast = {
+			type = msg_house_left_house_bloc 
+			title = msg_house_left_bloc
+			desc = msg_house_left_bloc_desc
+			left_icon = scope:leaver
+			right_icon = scope:bloc.leading_house
+			if = {
+				limit = {
+					NOT = { exists = scope:house_head }
+				}
+				custom_tooltip = msg_house_left_bloc_no_reason
+			}
+			else_if = {
+				limit = { house = scope:leaver }
+				custom_tooltip = msg_house_left_bloc_desc_root
+			}
+			else = {
+				custom_tooltip = msg_house_left_bloc_desc
+			}
+			# MEMBER LIST TOOLTIP
+			#show_as_tooltip = {
+			#   scope:bloc = {
+			#       every_in_list = {
+			#           variable = leaving_house_members
+			#           limit = { house = scope:leaver }
+			#           #custom = house_left_bloc_member_custom
+			#           custom_tooltip = house_bloc_member_tt
+			#       }
+			#   }
+			#}
+		}
+	}
+	every_in_list = {
+		variable = leaving_house_members
+		limit = { house = scope:leaver }
+		save_temporary_scope_as = house_member_temp
+	    if = {
+	     	limit = { is_alive = yes }
+	     	remove_character_flag = bloc_message_flag
+	    }
+		scope:bloc = {
+			remove_list_variable = {
+				name = leaving_house_members
+				target = scope:house_member_temp
+			}
+		}
+		# Find sub-Vassal houses of leaving vassal Houses
+		if = {
+			limit = {
+				house.house_head = { is_independent_ruler = no } 
+			}
+			scope:bloc = {
+				every_confederation_member_house = {
+					limit = {
+						house_head = {
+							is_independent_ruler = no
+							liege.house ?= scope:house
+						}
+						NOR = {
+							this = scope:house
+							is_in_list = leaving_vassal_houses
+						}
+					}
+					add_to_list = leaving_vassal_houses
+				}
+			}
+		}
+	}
+	# Find leader if necessary
+	if = {
+		limit = { NOT = { exists = leading_house } }
+		if = {
+			limit = {
+				any_confederation_member = { has_title = title:e_japan }
+			}
+			random_confederation_member = {
+				limit = { has_title = title:e_japan }
+				save_scope_as = new_leader_scope
+			}
+			tgp_set_house_bloc_leading_house_effect = { LEADER = scope:new_leader_scope }
+		}
+		else = {
+			tgp_find_new_house_bloc_leader_effect = yes
+		}
+	}
+	# Remove Vassal houses of leaving Houses from above
+	every_in_list = {
+		list = leaving_vassal_houses
+		save_temporary_scope_as = vassal_house_temp
+		set_variable = {
+			name = bloc_leaving_reason
+			value = flag:reason_followed_liege
+			days = 4
+		}
+		tgp_leave_house_bloc_effect = {
+			OPINION = flag:no
+			TRUCE = flag:yes
+		}
+	}
+	if = {
+		limit = { debug_only = yes }
+		debug_log = "house left bloc"
+		debug_log_scopes = yes
+	}
+	# Disband last: the current confederation scope is invalid afterwards.
+	if = {
+		limit = {
+			OR = {
+				NOT = { exists = leading_house }
+				any_confederation_member_house = { count = 1 }
+			}
+		}
+		hidden_effect = { disband_confederation = yes }
+	}
+}

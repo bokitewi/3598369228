@@ -1,0 +1,92 @@
+﻿##### d_quanshi ############################
+
+### c_zhangshi
+# 
+1805 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_bangao
+# 
+1806 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_fen1
+# 
+1807 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_danyang
+# 
+1808 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_quan3
+# 
+1809 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_nachu
+# 
+1810 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_pixie
+# 
+1814 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_jingling
+# 
+1812 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_baoqiu
+# 
+1815 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ziling
+# 
+1817 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

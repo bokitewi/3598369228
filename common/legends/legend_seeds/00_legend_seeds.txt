@@ -1,0 +1,2 @@
+﻿# Deliberate total-conversion override.
+# Vanilla legendary ancestry seeds depend on removed historical characters and dynasties.

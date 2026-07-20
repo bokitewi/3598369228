@@ -1,0 +1,32 @@
+﻿##### d_boqishi ############################
+
+### c_boqi
+# BOQI
+2950 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_riye
+
+
+### c_boshe
+
+
+### c_baqiao
+# BOSHE
+2893 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_jiumi2
+
+
+### c_hecun
+
+

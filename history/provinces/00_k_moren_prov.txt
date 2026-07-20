@@ -1,0 +1,114 @@
+﻿##### d_moshi1 ############################
+
+### c_fushun
+
+
+### c_xiandu
+# XIANDU
+3472 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# LIAOYANG1
+3473 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_liaoyang1
+
+
+### c_wangpingxian
+
+
+### c_xincheng6
+
+
+### c_houcheng
+
+
+### c_momi
+
+
+### c_hou2
+
+
+### c_liangmo
+
+
+### c_mofu
+
+
+### c_gaoana
+# XINCHENG6
+3857 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# HOUCHENG
+3858 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# WANGPINGXIAN
+3856 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# FUSHUN
+3484 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_qujin
+# QUJIN
+3863 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# HOU2
+3480 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# ZHUANQIU
+3864 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# MOMI
+3479 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# GAOANA
+3862 = {
+	holding = none
+}
+
+
+### c_zhuangqiu
+
+
+### c_gaimou
+
+
+### c_mudi
+
+
+### c_dongna
+
+

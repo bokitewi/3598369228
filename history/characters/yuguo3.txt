@@ -1,0 +1,356 @@
+########## 鱼国世系 ###########
+han5121={
+  name="nanming932"#出土资料显示的最早鱼伯，生活于文王晚年.武王.成王之际
+  dynasty=baijia335
+  religion="guiwu"
+  culture="yongren"
+
+  3530.1.1 = {
+		birth = yes
+	}
+  3583.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5122={
+  name="nanming380"#出土资料显示的鱼伯，生活于成王.康王之际
+  dynasty=baijia335
+  religion="guiwu"
+  culture="yongren"
+  father=han5121
+
+  3579.1.1 = {
+		birth = yes
+	}
+  3624.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5123={
+  name="ji1"#出土资料显示的鱼伯，生活于康王.昭王之际
+  dynasty=baijia335
+  religion="guiwu"
+  culture="yongren"
+  father=han5122
+
+  3599.1.1 = {
+		birth = yes
+	}
+  3635.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5124={
+  name="nanming544"#出土资料显示的鱼伯，生活昭王晚年至穆王
+  dynasty=baijia335
+  religion="guiwu"
+  culture="yongren"
+  father=han5123
+
+  3618.1.1 = {
+		birth = yes
+	}
+  3673.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5125={
+  name="nanming933"#从此处以下的鱼伯都是编的
+  dynasty=baijia335
+  religion="guiwu"
+  culture="yongren"
+  father=han5124
+
+  3646.1.1 = {
+		birth = yes
+	}
+  3691.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5126={
+  name="mao1"
+  dynasty=baijia335
+  religion="guiwu"
+  culture="yongren"
+  father=han5125
+
+  3671.1.1 = {
+		birth = yes
+	}
+  3720.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5127={
+  name="xiu"
+  dynasty=baijia335
+  religion="guiwu"
+  culture="yongren"
+  father=han5126
+
+  3693.1.1 = {
+		birth = yes
+	}
+  3746.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5128={
+  name="wen1"
+  dynasty=baijia335
+  religion="guiwu"
+  culture="yongren"
+  father=han5127
+
+  3721.1.1 = {
+		birth = yes
+	}
+  3782.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5129={
+  name="huang1"
+  dynasty=baijia335
+  religion="guiwu"
+  culture="yongren"
+  father=han5128
+
+  3764.1.1 = {
+		birth = yes
+	}
+  3813.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5130={
+  name="liao1"#平王东迁时期鱼国君主
+  dynasty=baijia335
+  religion="guiwu"
+  culture="yongren"
+  father=han5129
+
+  3804.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5131={
+  name="xian3"#储君
+  dynasty=baijia335
+  religion="guiwu"
+  culture="yongren"
+  father=han5130
+
+  3822.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5132={
+  name="miao"#第二继承人
+  dynasty=baijia335
+  religion="guiwu"
+  culture="yongren"
+  father=han5130
+
+  3824.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5133={
+  name="yu9"#第三继承人
+  dynasty=baijia335
+  religion="guiwu"
+  culture="yongren"
+  father=han5130
+
+  3825.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5134={
+  name="chong3"#第四继承人
+  dynasty=baijia335
+  religion="guiwu"
+  culture="yongren"
+  father=han5130
+
+  3828.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5135={
+  name="nvming181"#大女儿
+  dynasty=baijia335
+  religion="guiwu"
+  culture="yongren"
+  father=han5130
+  female=yes
+  
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han5136={
+  name="nvming231"#二女儿
+  dynasty=baijia335
+  religion="guiwu"
+  culture="yongren"
+  father=han5130
+  female=yes
+  
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+###################
+baipuyuguo1={
+  name="nanming751"
+  dynasty_house=house_baijia220
+  religion="guiwu"
+  culture="yongren"
+  father=han5128
+
+  3770.1.1 = {
+		birth = yes
+	}
+  3827.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipuyuguo2={
+  name="nanming763"
+  dynasty_house=house_baijia220
+  religion="guiwu"
+  culture="yongren"
+  father=baipuyuguo1
+
+  3793.1.1 = {
+		birth = yes
+	}
+  3845.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipuyuguo3={
+  name="nanming779"
+  dynasty_house=house_baijia220
+  religion="guiwu"
+  culture="yongren"
+  father=baipuyuguo2
+
+  3811.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipuyuguo4={
+  name="nanming796"
+  dynasty_house=house_baijia220
+  religion="guiwu"
+  culture="yongren"
+  father=baipuyuguo3
+
+  3829.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipuyuguo5={
+  name="nanming820"
+  dynasty_house=house_baijia220
+  religion="guiwu"
+  culture="yongren"
+  father=baipuyuguo3
+
+  3830.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+baipuyuguo6={
+  name="nvming310"
+  dynasty_house=house_baijia220
+  religion="guiwu"
+  culture="yongren"
+  father=baipuyuguo3
+  female=yes
+
+  3832.1.1 = {
+		birth = yes
+	}
+  3880.12.31 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}

@@ -1,0 +1,47 @@
+﻿##### d_xiangshi1 ############################
+
+### c_nandun
+# NANDUN
+1629 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_damin
+# DAMIN
+1630 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xiang6
+# XIANG6
+1669 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yang4
+# YANG4
+1670 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_juemo
+# JUEMO
+1672 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

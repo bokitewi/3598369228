@@ -1,0 +1,157 @@
+﻿l_english:
+commander_text_label:0 "Center [commander|E]\n[Army.GetCommander.GetFirstName]"
+lwleader_text_label:0 "Left Flank [commander]\n[Army.MakeScope.Var('embattle_left_flank_commander').Char.GetFirstName]"
+rwleader_text_label:0 "Right Flank [commander]\n[Army.MakeScope.Var('embattle_right_flank_commander').Char.GetFirstName]"
+pre_lwleader_text_label:0 "@warning_icon! #N $lwleader_text_label$#!"
+pre_rwleader_text_label:0 "@warning_icon! #N $rwleader_text_label$#!"
+
+embattle_side_commander_advantage_modifier:0 "Side Advantage"
+MODIFIER_DEFINITION_MAIN_DESC_SIDE_ADVANTAGE: "This modifier increases along with [martial|E] skills of double-wing [commanders]（#bold $MULTIPLIER|0$#!）"
+MODIFIER_DEFINITION_VALUE_PER_SIDE_ADVANTAGE: "\t#weak increases along with [martial|E] skills of double-wing [commanders]#!"
+
+embattle_character_count:0 "[Army.MakeScope.ScriptValue('embattle_character_count_value')|0] of [Army.MakeScope.ScriptValue('embattle_character_count_value')|0] Characters"
+embattle_SELECT_CENTER_COMMANDER_HEADER:0 "Select New Center [commander|E]"
+embattle_SELECT_LEFT_FLANK_COMMANDER_HEADER:0 "Select New Left Flank [commander]"
+embattle_SELECT_RIGHT_FLANK_COMMANDER_HEADER:0 "Select New Right Flank [commander]"
+
+game_concept_embattle:0 "Embattle"
+game_concept_embattle_desc:0 "Refers to the lieutenant (flank [commander|E]) system and the [embattle_tactic|E] system."
+game_concept_embattle_side_advantage_modifier:0 "Flank Advantage Modifier"
+game_concept_embattle_side_advantage_modifier_desc:0 "The main army’s [commander|E] base [advantage|E] is adjusted to match the average [martial|E] [skills|E] of all [commanders] (center and flanks).\n\nLeaving flank commander positions empty incurs an #X 5–10#! point advantage penalty."
+game_concept_embattle_tactic:0 "Tactic"
+game_concept_embattle_tactic_desc:0 "During battle, each side’s [commanders|E] choose one tactic from the [embattle_general_tactic_group|E] every #V 20#! days, including those with [embattle_tactic_counter|E]. Tactics grant bonuses to well-trained [stationed_regiment|E] units.\n\nIf an [army|E] can employ fewer than #X 3#! tactics in a [battle|E], it will be filled from the [embattle_clumsy_tactic_group|E] to reach #V 3#!. Conversely, if it can employ more than #P 5#! tactics, it gains [GetModifier('embattle_tactic_diversity_modifier').GetNameWithTooltip|L]."
+
+game_concept_embattle_tactic_counter:0 "Tactic Countering"
+game_concept_embattle_tactic_counter_desc:0 "Tactics may counter one another, affecting the main army [commander|E]’s [advantage|E]. The countered side gains [GetModifier('embattle_tactic_counter_modifier').GetNameWithTooltip|L]."
+
+game_concept_embattle_general_tactic_group:0 "General Tactic Group"
+game_concept_embattle_general_tactic_group_desc:0 "Tactics available to a character include:\n$BULLET_WITH_TAB$[embattle_volly_tactic|E]\n$BULLET_WITH_TAB$[embattle_charge_tactic|E]\n$BULLET_WITH_TAB$[embattle_stand_fast_tactic|E]\n$BULLET_WITH_TAB$[embattle_advance_tactic|E]\n$BULLET_WITH_TAB$[embattle_harass_tactic|E]\n\nIf a character can use fewer than #X 3#! tactics, the list is filled from the [embattle_clumsy_tactic_group|E] to reach #V 3#!."
+
+game_concept_embattle_clumsy_tactic_group:0 "Clumsy Tactic Group"
+game_concept_embattle_clumsy_tactic_group_desc:0 "Clumsy tactics available to a character include:\n$BULLET_WITH_TAB$[embattle_potshots_tactic|E]\n$BULLET_WITH_TAB$[embattle_reckless_charge_tactic|E]\n$BULLET_WITH_TAB$[embattle_confused_orders_tactic|E]\n$BULLET_WITH_TAB$[embattle_timid_advance_tactic|E]\n$BULLET_WITH_TAB$[embattle_disorganised_harass_tactic|E]"
+
+game_concept_embattle_volly_tactic:0 "Volley Tactic"
+game_concept_embattle_volly_tactic_desc:0 "Part of the [embattle_general_tactic_group|E], unlocked by 1 unit of [archers|E]. When active during a [combat_phase|E], the corresponding [stationed_regiment|E] gains [GetModifier('embattle_volly_tactic_modifier').GetNameWithTooltip|L]."
+game_concept_embattle_potshots_tactic:0 "Potshot Tactic"
+game_concept_embattle_potshots_tactic_desc:0 "Part of the [embattle_clumsy_tactic_group|E]. When active during a [combat_phase|E], the main army [commander|E] gains [GetModifier('embattle_potshots_tactic_modifier').GetNameWithTooltip|L]."
+
+game_concept_embattle_charge_tactic:0 "Charge Tactic"
+game_concept_embattle_charge_tactic_desc:0 "Part of the [embattle_general_tactic_group|E], unlocked by 1 unit of [heavy_cavalry|E]. When active during a [combat_phase|E], the corresponding [stationed_regiment|E] gains [GetModifier('embattle_charge_tactic_modifier').GetNameWithTooltip|L]."
+game_concept_embattle_reckless_charge_tactic:0 "Reckless Charge Tactic"
+game_concept_embattle_reckless_charge_tactic_desc:0 "Part of the [embattle_clumsy_tactic_group|E]. When active during a [combat_phase|E], the main army [commander|E] gains [GetModifier('embattle_reckless_charge_tactic_modifier').GetNameWithTooltip|L]."
+
+game_concept_embattle_stand_fast_tactic:0 "Stand Fast Tactic"
+game_concept_embattle_stand_fast_tactic_desc:0 "Part of the [embattle_general_tactic_group|E], unlocked by 1 unit of [spearmen|E]. When active during a [combat_phase|E], the corresponding [stationed_regiment|E] gains [GetModifier('embattle_stand_fast_tactic_modifier').GetNameWithTooltip|L]."
+game_concept_embattle_confused_orders_tactic:0 "Confused Orders Tactic"
+game_concept_embattle_confused_orders_tactic_desc:0 "Part of the [embattle_clumsy_tactic_group|E]. When active during a [combat_phase|E], the main army [commander|E] gains [GetModifier('embattle_confused_orders_tactic_modifier').GetNameWithTooltip|L]."
+
+game_concept_embattle_advance_tactic:0 "Advance Tactic"
+game_concept_embattle_advance_tactic_desc:0 "Part of the [embattle_general_tactic_group|E], unlocked by 1 unit of [skirmisher|E] or [heavy_infantry|E]. When active during a [combat_phase|E], the corresponding [stationed_regiment|E] gains [GetModifier('embattle_advance_tactic_modifier').GetNameWithTooltip|L]."
+game_concept_embattle_timid_advance_tactic:0 "Timid Advance Tactic"
+game_concept_embattle_timid_advance_tactic_desc:0 "Part of the [embattle_clumsy_tactic_group|E]. When active during a [combat_phase|E], the main army [commander|E] gains [GetModifier('embattle_timid_advance_tactic_modifier').GetNameWithTooltip|L]."
+
+game_concept_embattle_harass_tactic:0 "Harassment Tactic"
+game_concept_embattle_harass_tactic_desc:0 "Part of the [embattle_general_tactic_group|E], unlocked by 1 unit of [light_cavalry|E] or [archer_cavalry|E]. When active during a [combat_phase|E], the corresponding [stationed_regiment|E] gains [GetModifier('embattle_harass_tactic_modifier').GetNameWithTooltip|L]."
+game_concept_embattle_disorganised_harass_tactic:0 "Disorganized Harassment Tactic"
+game_concept_embattle_disorganised_harass_tactic_desc:0 "Part of the [embattle_clumsy_tactic_group|E]. When active during a [combat_phase|E], the main army [commander|E] gains [GetModifier('embattle_disorganised_harass_tactic_modifier').GetNameWithTooltip|L]."
+
+rule_embattle_side_advantage_multiplier:0 "@war_icon![embattle|E] – Flank Advantage Multiplier"
+setting_embattle_side_advantage_1x:0 "1×"
+setting_embattle_side_advantage_1x_desc:0 "The main army [commander|E] gains additional [advantage|E] equal to the total martial skill of the flank [commanders]."
+setting_embattle_side_advantage_0.5x:0 "#high 0.5×#!"
+setting_embattle_side_advantage_0.5x_desc:0 "The main army [commander|E] gains additional [advantage|E] equal to #V half#! the total martial skill of the flank [commanders]."
+
+rule_embattle_side_commander_traits_sharing:0 "@war_icon![embattle|E] – Shared Flank Traits"
+setting_embattle_side_commander_traits_sharing_enable:0 "Enabled"
+setting_embattle_side_commander_traits_sharing_enable_desc:0 "The main army [commander|E] shares the [commander_traits|E] of both flanks during battle."
+setting_embattle_side_commander_traits_sharing_disable:0 "#high Disabled#!"
+setting_embattle_side_commander_traits_sharing_disable_desc:0 "Same as vanilla."
+
+rule_embattle_side_commander_appointor:0 "@war_icon![embattle|E] – Flank Commander Assignment"
+setting_embattle_side_commander_appointor_ai_only_except_own_troop:0 "Own Levies Only"
+setting_embattle_side_commander_appointor_ai_only_except_own_troop_desc:0 "The player may only appoint flank [commander]s for armies they personally lead."
+setting_embattle_side_commander_appointor_player_exempt:0 "#high Any Army#!"
+setting_embattle_side_commander_appointor_player_exempt_desc:0 "The player may appoint AI characters as flank [commander]s for armies led by other main [commander|E]s."
+
+rule_embattle_tactic:0 "@war_icon![embattle|E] – [embattle_tactic|E]"
+setting_embattle_tactic_enabled:0 "Enabled"
+setting_embattle_tactic_enabled_desc:0 ""
+setting_embattle_tactic_disabled:0 "#high Disabled#!"
+setting_embattle_tactic_disabled_desc:0 ""
+
+rule_embattle_side_commanders_trait_xp:0 "@war_icon![embattle|E] — Flank Commander [commander_trait|E] XP"
+setting_embattle_side_commanders_trait_xp_enabled:0 "Enabled"
+setting_embattle_side_commanders_trait_xp_enabled_desc:0 "In addition to the main army [commander|E], flank commanders can also gain [trait_level_track_xp|E] for their [commander_trait|E] through [battle|E], [siege|E], and #E movement#!."
+setting_embattle_side_commanders_trait_xp_disabled:0 "Disabled"
+setting_embattle_side_commanders_trait_xp_disabled_desc:0 "Same as the base game."
+
+rule_embattle_acotw_compatch:0 "@war_icon![embattle|E]——[GetTrait('acotw_obscured').GetName( GetNullCharacter )|E]"
+setting_embattle_acotw_compatch_enabled:0 "Enabled"
+setting_embattle_acotw_compatch_enabled_desc:0 "[GetTrait('acotw_obscured').GetName( GetNullCharacter )] doesn't use [embattle|E]. This [trait|E] is from [a_culling_of_the_weak|E]."
+setting_embattle_acotw_compatch_disabled:0 "Disabled"
+setting_embattle_acotw_compatch_disabled_desc:0 "Same as [embattle|E]."
+
+# Tactics
+
+embattle_volly_tactic_modifier:0 "Volley Tactic"
+embattle_volly_tactic_modifier_desc:0 "This legion unleashes volleys like pouring rain, breaking the enemy’s morale before the battle even begins."
+embattle_charge_tactic_modifier:0 "Charge Tactic"
+embattle_charge_tactic_modifier_desc:0 "This legion charges like a raging tide, fearless of life or death."
+embattle_stand_fast_tactic_modifier:0 "Stand Fast Tactic"
+embattle_charge_tactic_modifier_desc:0 "This legion stands firm like a mountain, yielding not an inch."
+embattle_advance_tactic_modifier:0 "Advance Tactic"
+embattle_advance_tactic_modifier_desc:0 "This legion advances like an iron flood, pressing forward layer by layer."
+embattle_harass_tactic_modifier:0 "Harassment Tactic"
+embattle_harass_tactic_modifier_desc:0 "This legion harasses like a roaming serpent, appearing and vanishing unpredictably."
+
+embattle_tactic_diversity_modifier:0 "Tactical Diversity"
+embattle_tactic_diversity_modifier_desc:0 "This commander employs a wide variety of tactics."
+embattle_tactic_counter_modifier:0 "Tactic Countered"
+embattle_tactic_counter_modifier_desc:0 "This commander’s tactic has been countered by the enemy."
+
+embattle_potshots_tactic_modifier:0 "Potshot Tactic"
+embattle_potshots_tactic_modifier_desc:0 "This legion fires blindly and chaotically, with no sense of discipline."
+embattle_reckless_charge_tactic_modifier:0 "Reckless Charge Tactic"
+embattle_reckless_charge_tactic_modifier_desc:0 "This legion rushes forward like a beast out of control, harming both foe and self."
+embattle_confused_orders_tactic_modifier:0 "Confused Orders Tactic"
+embattle_confused_orders_tactic_modifier_desc:0 "This legion behaves like a headless flock, each acting on its own."
+embattle_timid_advance_tactic_modifier:0 "Timid Advance Tactic"
+embattle_timid_advance_tactic_modifier_desc:0 "This legion proceeds as if treading on thin ice, unsure whether to advance or retreat."
+embattle_disorganised_harass_tactic_modifier:0 "Disorganized Harassment Tactic"
+embattle_disorganised_harass_tactic_modifier_desc:0 "This legion harasses like scattered ants emerging from a nest—chaotic and disorderly."
+
+at_age:0 "Age"
+at_highest_held_title_tier:0 "Rank"
+at_opinion_of_root:0 "Opinion of You"
+at_martial:0 "Martial Skill"
+
+embattle_combat_tactic_mechanic_title_volly_tactic:0 "Volley Tactic"
+embattle_combat_tactic_mechanic_tt_volly_tactic:0 "[commander.GetName] commands the army to launch a [embattle_volly_tactic|E]"
+
+embattle_combat_tactic_mechanic_title_charge_tactic:0 "Charge Tactic"
+embattle_combat_tactic_mechanic_tt_charge_tactic:0 "[commander.GetName] commands the army to launch a [embattle_charge_tactic|E]"
+
+embattle_combat_tactic_mechanic_title_stand_fast_tactic:0 "Stand Fast Tactic"
+embattle_combat_tactic_mechanic_tt_stand_fast_tactic:0 "[commander.GetName] commands the army to launch a [embattle_stand_fast_tactic|E]"
+
+embattle_combat_tactic_mechanic_title_advance_tactic:0 "Advance Tactic"
+embattle_combat_tactic_mechanic_tt_advance_tactic:0 "[commander.GetName] commands the army to launch an [embattle_advance_tactic|E]"
+
+embattle_combat_tactic_mechanic_title_harass_tactic:0 "Harassment Tactic"
+embattle_combat_tactic_mechanic_tt_harass_tactic:0 "[commander.GetName] commands the army to launch a [embattle_harass_tactic|E]"
+
+embattle_combat_tactic_mechanic_title_potshots_tactic:0 "Potshot Tactic"
+embattle_combat_tactic_mechanic_tt_potshots_tactic:0 "[commander.GetName]'s army disobeys orders and launches a potshot tactic"
+embattle_combat_tactic_mechanic_title_reckless_charge_tactic:0 "Reckless Charge Tactic"
+embattle_combat_tactic_mechanic_tt_reckless_charge_tactic:0 "[commander.GetName]'s army disobeys orders and launches a reckless charge tactic"
+embattle_combat_tactic_mechanic_title_confused_orders_tactic:0 "Confused Orders Tactic"
+embattle_combat_tactic_mechanic_tt_confused_orders_tactic:0 "[commander.GetName]'s army disobeys orders and launches a confused orders tactic"
+embattle_combat_tactic_mechanic_title_timid_advance_tactic:0 "Timid Advance Tactic"
+embattle_combat_tactic_mechanic_tt_timid_advance_tactic:0 "[commander.GetName]'s army disobeys orders and launches a [embattle_timid_advance_tactic|E]"
+embattle_combat_tactic_mechanic_title_disorganised_harass_tactic:0 "Disorganized Harassment Tactic"
+embattle_combat_tactic_mechanic_tt_disorganised_harass_tactic:0 "[commander.GetName]'s army disobeys orders and launches a [embattle_disorganised_harass_tactic|E]"
+
+test_tooltip:0 "[test2.GetName][test.GetName]"
+
+message_filter_embattle_tactic_activated:0 "@war_icon! Tactic Activated"
+message_filter_embattle_tactic_activated_desc:0 "A [commander|E] has initiated a tactic"

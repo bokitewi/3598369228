@@ -1,0 +1,2 @@
+﻿on_big_t1_regular_building_built_effect = {
+}

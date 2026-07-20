@@ -1,0 +1,65 @@
+﻿##### d_kuangshi ############################
+
+### c_qichun
+# 
+2078 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_jukou
+# 
+2079 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhu6
+# 
+2080 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lanxi
+# 
+2081 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_luotian
+# 
+2082 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_qishan
+# 
+2083 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_qikou
+# 
+2084 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

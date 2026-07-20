@@ -1,0 +1,65 @@
+﻿##### d_fengshi1 ############################
+
+### c_xiang3
+# XIANG3
+581 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yicheng2
+# YICHENG2
+2333 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_wokou
+# WOKOU
+2334 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shangdian
+# SHANGDIAN
+2363 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_longkang
+# LONGKANG
+2386 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_gou
+# GOU
+2387 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_tan3
+# TAN3
+2388 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

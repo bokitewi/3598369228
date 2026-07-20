@@ -1,0 +1,47 @@
+﻿##### d_zongshi ############################
+
+### c_yongpu
+# 
+2049 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_santan
+# 
+2051 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yuanjin
+# 
+2061 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zong
+# 
+2062 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shengtang
+# 
+2070 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

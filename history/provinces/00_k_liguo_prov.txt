@@ -1,0 +1,92 @@
+﻿##### d_lishi ############################
+
+### c_minglu
+# MINGLU
+603 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ku
+# KU
+605 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_li4
+# LI4
+606 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ziwu
+# ZIWU
+607 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xin1
+# XIN1
+609 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xinqi
+# XINQI
+612 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ningping
+# NINGPING
+2347 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yan10
+# YAN10
+2348 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xinyang
+# XINYANG
+2349 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xiang7
+# XIANG7
+2351 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

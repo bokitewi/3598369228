@@ -1,0 +1,65 @@
+﻿##### d_xibugengshi ############################
+
+### c_fan5
+# FAN5
+1612 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xibugeng
+# XIBUGENG
+1613 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_gaoyou1
+# GAOYOU1
+1614 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_dingling
+# DINGLING
+1616 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yinyang1
+# YINYANG1
+1617 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yinqiang
+# YINQIANG
+1618 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xihua
+# XIHUA
+1619 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

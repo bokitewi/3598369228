@@ -1,0 +1,458 @@
+﻿embattle_seed_commander_trait_effect_base = {
+	add_character_flag = embattle_temp_trait_seeded
+	add_trait = $SEED_TRAIT$
+	if = {
+		limit = {
+			OR = {
+				scope:army.var:embattle_left_flank_commander ?= {
+					has_trait_xp = {
+						trait = $TRAIT$
+						value >= 100
+					}
+				}
+				scope:army.var:embattle_right_flank_commander ?= {
+					has_trait_xp = {
+						trait = $TRAIT$
+						value >= 100
+					}
+				}
+			}
+		}
+		add_trait_xp = {
+			trait = $SEED_TRAIT$
+			value = 100
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				scope:army.var:embattle_left_flank_commander ?= {
+					has_trait_xp = {
+						trait = $TRAIT$
+						value >= 66
+					}
+				}
+				scope:army.var:embattle_right_flank_commander ?= {
+					has_trait_xp = {
+						trait = $TRAIT$
+						value >= 66
+					}
+				}
+			}
+		}
+		add_trait_xp = {
+			trait = $SEED_TRAIT$
+			value = 66
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				scope:army.var:embattle_left_flank_commander ?= {
+					has_trait_xp = {
+						trait = $TRAIT$
+						value >= 33
+					}
+				}
+				scope:army.var:embattle_right_flank_commander ?= {
+					has_trait_xp = {
+						trait = $TRAIT$
+						value >= 33
+					}
+				}
+			}
+		}
+		add_trait_xp = {
+			trait = $SEED_TRAIT$
+			value = 33
+		}
+	}
+}
+
+embattle_seed_commander_trait_effect = {
+	if = {
+		limit = {
+			embattle_commander_trait_can_be_seeded_trigger = { SEED_TRAIT = $TRAIT$ }
+		}
+		scope:commander = {
+			embattle_seed_commander_trait_effect_base = {
+				TRAIT = $TRAIT$
+				SEED_TRAIT = embattle_$TRAIT$ 
+			}
+		}
+	}
+}
+
+embattle_remove_commander_trait_seeded_effect = {
+	remove_trait = $TRAIT$
+}
+
+embattle_on_combat_start_tactic_polling_effect = {
+	save_scope_as = combat_side
+	side_commander = {
+		save_scope_as = commander
+		commanding_army = {
+			save_scope_as = army
+			army_owner = { 
+				save_scope_as = army_owner 
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			scope:army_owner = { is_ai = no }
+		}
+		random_list = {
+		0 = { # 齐射
+			modifier = {
+				add = 10
+				scope:army = { # 1单位以上的弓箭手触发齐射
+					any_army_maa_regiment = {
+						is_unit_type = archers
+						maa_size >= 1
+					}
+				}
+			}
+
+			scope:commander = {
+				set_variable = {
+					name = volly_tactic
+					days = 2
+				}
+			}
+
+			scope:army_owner = {
+				send_interface_toast = {
+					type = embattle_tactic_activated_neutral
+					title = embattle_combat_tactic_mechanic_title_volly_tactic
+					left_icon = scope:commander
+					custom_tooltip = embattle_combat_tactic_mechanic_tt_volly_tactic
+				}
+			}
+
+			embattle_set_general_tactic_effect_center = {
+				TYPE = archers
+				TACTIC = volly_tactic
+			}
+		}
+
+		0 = { # 冲锋
+			modifier = {
+				add = 10
+				scope:army = { # 1单位以上的骑兵触发冲锋
+					any_army_maa_regiment = {
+						is_unit_type = heavy_cavalry
+						maa_size >= 1
+					}
+				}
+			}
+
+			scope:army_owner = {
+				send_interface_toast = {
+					type = embattle_tactic_activated_neutral
+					title = embattle_combat_tactic_mechanic_title_charge_tactic
+					left_icon = scope:commander
+					custom_tooltip = embattle_combat_tactic_mechanic_tt_charge_tactic
+				}
+			}
+
+			scope:commander = {
+				set_variable = {
+					name = charge_tactic
+					days = 2
+				}
+			}
+
+			embattle_set_general_tactic_effect_center = {
+				TYPE = heavy_cavalry
+				TACTIC = charge_tactic
+			}
+
+			embattle_set_general_tactic_effect_center = {
+				TYPE = light_cavalry
+				TACTIC = charge_tactic
+			}
+		}
+		
+		0 = { # 固守
+			modifier = {
+				add = 10
+				scope:army = { # 1单位以上的步兵触发固守
+					any_army_maa_regiment = {
+						is_unit_type = pikemen
+						maa_size >= 1
+					}
+				}
+			}
+
+			scope:army_owner = {
+				send_interface_toast = {
+					type = embattle_tactic_activated_neutral
+					title = embattle_combat_tactic_mechanic_title_stand_fast_tactic
+					left_icon = scope:commander
+					custom_tooltip = embattle_combat_tactic_mechanic_tt_stand_fast_tactic
+				}
+			}
+
+			scope:commander = {
+				set_variable = {
+					name = stand_fast_tactic
+					days = 2
+				}
+			}
+
+			embattle_set_general_tactic_effect_center = {
+				TYPE = pikemen
+				TACTIC = stand_fast_tactic
+			}
+
+			embattle_set_general_tactic_effect_center = {
+				TYPE = heavy_infantry
+				TACTIC = stand_fast_tactic
+			}
+		}
+
+		0 = { # 推进
+			modifier = {
+				add = 10
+				scope:army = { # 1单位以上的重步或散兵触发推进
+					OR = {
+						any_army_maa_regiment = {
+							is_unit_type = heavy_infantry
+							maa_size >= 1
+						}
+						any_army_maa_regiment = {
+							is_unit_type = skirmishers
+							maa_size >= 1
+						}
+					}
+				}
+			}
+
+			scope:army_owner = {
+				send_interface_toast = {
+					type = embattle_tactic_activated_neutral
+					title = embattle_combat_tactic_mechanic_title_advance_tactic
+					left_icon = scope:commander
+					custom_tooltip = embattle_combat_tactic_mechanic_tt_advance_tactic
+				}
+			}
+
+			scope:commander = {
+				set_variable = {
+					name = advance_tactic
+					days = 2
+				}
+			}
+
+			embattle_set_general_tactic_effect_center = {
+				TYPE = heavy_infantry
+				TACTIC = advance_tactic
+			}
+		}
+	
+		0 = { # 骚扰
+			modifier = {
+				add = 10
+				scope:army = { # 1单位以上的轻骑/弓骑触发冲锋
+					OR = {
+						any_army_maa_regiment = {
+							is_unit_type = light_cavalry
+							maa_size >= 1
+						}
+						any_army_maa_regiment = {
+							is_unit_type = archer_cavalry
+							maa_size >= 1
+						}
+					}
+				}
+			}
+
+			scope:army_owner = {
+				send_interface_toast = {
+					type = embattle_tactic_activated_neutral
+					title = embattle_combat_tactic_mechanic_title_harass_tactic
+					left_icon = scope:commander
+					custom_tooltip = embattle_combat_tactic_mechanic_tt_harass_tactic
+				}
+			}
+
+			scope:commander = {
+				set_variable = {
+					name = harass_tactic
+					days = 2
+				}
+			}
+
+			embattle_set_general_tactic_effect_center = {
+				TYPE = light_cavalry
+				TACTIC = harass_tactic
+			}
+
+			embattle_set_general_tactic_effect_center = {
+				TYPE = archer_cavalry
+				TACTIC = harass_tactic
+			}
+		}
+
+		0 = { # 胡乱射击
+			modifier = {
+				add = 10
+				scope:commander = {
+					is_target_in_variable_list = {
+						name = embattle_clumsy_tactic_group
+						target = flag:embattle_reckless_charge_tactic
+					}
+				}
+				scope:army = {
+					embattle_general_tactic_count_value < 3
+				}
+			}
+
+			scope:army_owner = {
+				send_interface_toast = {
+					type = embattle_tactic_activated_bad
+					title = embattle_combat_tactic_mechanic_title_potshots_tactic
+					left_icon = scope:commander
+					custom_tooltip = embattle_combat_tactic_mechanic_tt_potshots_tactic
+				}
+			}
+
+			scope:commander = {
+				add_character_modifier = {
+					modifier = embattle_potshots_tactic_modifier
+					days = 10
+				}
+			}
+		}
+
+		0 = { # 鲁莽冲锋
+			modifier = {
+				add = 10
+				scope:commander = {
+					is_target_in_variable_list = {
+						name = embattle_clumsy_tactic_group
+						target = flag:embattle_reckless_charge_tactic
+					}
+				}
+				scope:army = {
+					embattle_general_tactic_count_value < 3
+				}
+			}
+
+			scope:army_owner = {
+				send_interface_toast = {
+					type = embattle_tactic_activated_bad
+					title = embattle_combat_tactic_mechanic_title_reckless_charge_tactic
+					left_icon = scope:commander
+					custom_tooltip = embattle_combat_tactic_mechanic_tt_reckless_charge_tactic
+				}
+			}
+
+			scope:commander = {
+				add_character_modifier = {
+					modifier = embattle_reckless_charge_tactic_modifier
+					days = 10
+				}
+			}
+		}
+
+		0 = { # 军令费解
+			modifier = {
+				add = 10
+				scope:commander = {
+					is_target_in_variable_list = {
+						name = embattle_clumsy_tactic_group
+						target = flag:embattle_confused_orders_tactic
+					}
+				}
+				scope:army = {
+					embattle_general_tactic_count_value < 3
+				}
+			}
+
+			scope:army_owner = {
+				send_interface_toast = {
+					type = embattle_tactic_activated_bad
+					title = embattle_combat_tactic_mechanic_title_confused_orders_tactic
+					left_icon = scope:commander
+					custom_tooltip = embattle_combat_tactic_mechanic_tt_confused_orders_tactic
+				}
+			}
+
+			scope:commander = {
+				add_character_modifier = {
+					modifier = embattle_confused_orders_tactic_modifier
+					days = 10
+				}
+			}
+		}
+		
+		0 = { # 胆怯推进
+			modifier = {
+				add = 10
+				scope:commander = {
+					is_target_in_variable_list = {
+						name = embattle_clumsy_tactic_group
+						target = flag:embattle_timid_advance_tactic
+					}
+				}
+				scope:army = {
+					embattle_general_tactic_count_value < 3
+				}
+			}
+
+			scope:army_owner = {
+				send_interface_toast = {
+					type = embattle_tactic_activated_bad
+					title = embattle_combat_tactic_mechanic_title_timid_advance_tactic
+					left_icon = scope:commander
+					custom_tooltip = embattle_combat_tactic_mechanic_tt_timid_advance_tactic
+				}
+			}
+
+			scope:commander = {
+				add_character_modifier = {
+					modifier = embattle_timid_advance_tactic_modifier
+					days = 10
+				}
+			}
+		}
+
+		0 = { # 无组织骚扰
+			modifier = {
+				add = 10
+				scope:commander = {
+					is_target_in_variable_list = {
+						name = embattle_clumsy_tactic_group
+						target = flag:embattle_disorganised_harass_tactic
+					}
+				}
+				scope:army = {
+					embattle_general_tactic_count_value < 3
+				}
+			}
+
+			scope:army_owner = {
+				send_interface_toast = {
+					type = embattle_tactic_activated_bad
+					title = embattle_combat_tactic_mechanic_title_disorganised_harass_tactic
+					left_icon = scope:commander
+					custom_tooltip = embattle_combat_tactic_mechanic_tt_disorganised_harass_tactic
+				}
+			}
+
+			scope:commander = {
+				add_character_modifier = {
+					modifier = embattle_disorganised_harass_tactic_modifier
+					days = 10
+				}
+			}
+		}
+
+		}
+	}
+	
+}
+

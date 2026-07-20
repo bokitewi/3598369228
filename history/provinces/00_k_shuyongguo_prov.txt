@@ -1,0 +1,56 @@
+﻿##### d_shuyongshi ############################
+
+### c_diji
+# 
+2044 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_li18
+# 
+2045 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_wuwei1
+# 
+2046 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_fuqiu
+# 
+2047 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shuyong
+# 
+2048 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xiangan
+# 
+2050 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

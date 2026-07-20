@@ -1,0 +1,57 @@
+﻿##### d_zhenjianshi ############################
+
+### c_bomo
+
+
+### c_zhenjianya
+
+
+### c_chisui
+
+
+### c_yibao
+
+
+### c_shiwan
+# ZHENJIANYA
+2949 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+##### d_tuoheshi ############################
+
+### c_tuohe
+
+
+### c_zhenjian
+# ZHENJIAN
+2948 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xuehe
+# BOMO
+2883 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+##### d_mingshishi ############################
+
+### c_chishi
+
+
+### c_hemao
+
+
+### c_meinan
+
+

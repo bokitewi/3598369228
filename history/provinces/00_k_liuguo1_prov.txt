@@ -1,0 +1,92 @@
+﻿##### d_liushi1 ############################
+
+### c_lu4
+# 
+1967 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_nangang
+# 
+1968 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lin4
+# 
+2005 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_dilu
+# 
+2009 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_chiji
+# 
+2010 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xifeng
+# 
+2020 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhuye
+# 
+2021 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_e2
+# 
+2022 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_chengde
+# 
+2003 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_beng1
+# 
+2024 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

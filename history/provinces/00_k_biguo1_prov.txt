@@ -1,0 +1,56 @@
+﻿##### d_bishi1 ############################
+
+### c_beijing
+# BEIJING
+3669 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_fengchang
+# FENGCHANG
+3671 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_daning
+# DANING
+3672 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_fuyu1
+# FUYU1
+3676 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_qi18
+# QI18
+3678 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_bi4
+# BI4
+3679 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

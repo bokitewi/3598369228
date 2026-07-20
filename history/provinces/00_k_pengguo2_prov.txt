@@ -1,0 +1,65 @@
+﻿##### d_jianshi ############################
+
+### c_fangzhu
+# FANGZHU
+3656 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_dahong
+# DAHONG
+3657 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_censhan
+# CENSHAN
+3658 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xieshan
+# XIESHAN
+3659 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhuji
+# ZHUJI
+3660 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_luomo
+# LUOMOSHAN
+3662 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shangfen
+# SHANGFEN
+3664 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

@@ -1,0 +1,65 @@
+﻿##### d_tongshi2 ############################
+
+### c_tong3
+# 
+2064 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_guache
+# 
+2065 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_tongrui
+# 
+2067 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_wankou
+# 
+2068 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_nanchao
+# 
+2069 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_leichi
+# 
+2071 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_wangjiang
+# 
+2072 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

@@ -1,0 +1,110 @@
+﻿##### d_ruoshi ############################
+
+### c_xi4
+# XI4
+1746 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhongcheng
+# ZHONGCHENG
+1747 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_wuguan
+# WUGUAN
+1748 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_cangye
+# CANGYE
+1749 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shang
+# SHANG
+1750 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shangluo
+# SHANGLUO
+1751 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_sanhu
+# SANHU
+1755 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_dan3
+# DAN3
+1756 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shangmi
+# SHANGMI
+1757 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_wei4
+# WEI4
+1759 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_feng3
+# 
+1777 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_du2
+# DU2
+3591 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

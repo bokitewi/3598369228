@@ -1,0 +1,35 @@
+﻿##### d_daoyushi ############################
+
+### c_qiduo
+
+
+### c_yinfan
+# YINFAN
+2896 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_daoye
+# DAOYE
+2945 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shuiyi
+
+
+### c_bashang
+
+
+### c_zhitou
+
+
+### c_yimei
+
+

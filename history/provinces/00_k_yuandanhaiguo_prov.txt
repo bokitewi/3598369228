@@ -1,0 +1,57 @@
+﻿##### d_wubushi2 ############################
+
+### c_fentian
+
+
+### c_suhe
+
+
+### c_jiunu
+
+
+### c_yuanjiang
+
+
+##### d_jiunushi ############################
+
+### c_yuandanhai
+
+
+### c_yichang3
+
+
+### c_yinzuo
+
+
+##### d_haishi ############################
+
+### c_zuoye
+
+
+### c_chengsi
+
+
+### c_qinyuan
+# YUANJIANG
+2844 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# SUHE
+2920 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# JIUNU
+2961 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_zhouzhi
+
+

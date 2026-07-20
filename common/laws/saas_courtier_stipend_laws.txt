@@ -1,0 +1,276 @@
+﻿@saas_stipend_law_cooldown_years = 5
+
+saas_courtier_stipend_law_group = {
+	default = saas_normal_stipend_law
+	cumulative = no
+	flag = realm_law
+	flag = saas_courtier_stipend_law_group
+
+	can_change_law_group = {
+		is_landed = yes
+		highest_held_title_tier >= tier_county
+	}
+
+	saas_no_stipend_law = {
+		flag = saas_no_stipend_law
+		flag = saas_courtier_stipend_law
+
+		should_start_with = { always = no }
+		can_keep = {
+			is_landed = yes
+			highest_held_title_tier >= tier_county
+		}
+		can_have = {
+			is_landed = yes
+			highest_held_title_tier >= tier_county
+		}
+		can_pass = {
+			NOT = { has_variable = saas_stipend_law_cooldown }
+		}
+
+		pass_cost = { prestige = medium_prestige_value }
+		modifier = { courtier_opinion = -30 }
+		on_pass = {
+			set_variable = {
+				name = saas_stipend_law_cooldown
+				years = @saas_stipend_law_cooldown_years
+			}
+			saas_refresh_courtier_stipend_income_effect = yes
+		}
+
+		ai_will_do = {
+			value = 1
+			if = {
+				limit = { gold < 0 }
+				add = 200
+			}
+			if = {
+				limit = { saas_normal_stipend_burden_percent_value > 25 }
+				add = 150
+			}
+			if = {
+				limit = { has_trait = generous }
+				multiply = 0.1
+			}
+		}
+	}
+
+	saas_limited_stipend_law = {
+		flag = saas_limited_stipend_law
+		flag = saas_courtier_stipend_law
+
+		should_start_with = { always = no }
+		can_keep = {
+			is_landed = yes
+			highest_held_title_tier >= tier_county
+		}
+		can_have = {
+			is_landed = yes
+			highest_held_title_tier >= tier_county
+		}
+		can_pass = {
+			NOT = { has_variable = saas_stipend_law_cooldown }
+		}
+
+		pass_cost = { prestige = medium_prestige_value }
+		modifier = { courtier_opinion = -10 }
+		on_pass = {
+			set_variable = {
+				name = saas_stipend_law_cooldown
+				years = @saas_stipend_law_cooldown_years
+			}
+			saas_refresh_courtier_stipend_income_effect = yes
+		}
+
+		ai_will_do = {
+			value = 20
+			if = {
+				limit = { gold < 0 }
+				add = 100
+			}
+			if = {
+				limit = {
+					saas_limited_stipend_burden_percent_value <= 25
+					saas_normal_stipend_burden_percent_value > 25
+				}
+				add = 100
+			}
+			if = {
+				limit = { saas_limited_stipend_burden_percent_value > 25 }
+				multiply = 0.1
+			}
+			if = {
+				limit = { has_trait = generous }
+				multiply = 0.5
+			}
+		}
+	}
+
+	saas_normal_stipend_law = {
+		flag = saas_normal_stipend_law
+		flag = saas_courtier_stipend_law
+
+		should_start_with = {
+			is_landed = yes
+			highest_held_title_tier >= tier_county
+		}
+		can_keep = {
+			is_landed = yes
+			highest_held_title_tier >= tier_county
+		}
+		can_have = {
+			is_landed = yes
+			highest_held_title_tier >= tier_county
+		}
+		can_pass = {
+			NOT = { has_variable = saas_stipend_law_cooldown }
+		}
+
+		pass_cost = { prestige = medium_prestige_value }
+		on_pass = {
+			set_variable = {
+				name = saas_stipend_law_cooldown
+				years = @saas_stipend_law_cooldown_years
+			}
+			saas_refresh_courtier_stipend_income_effect = yes
+		}
+
+		ai_will_do = {
+			value = 100
+			if = {
+				limit = { gold < 0 }
+				multiply = 0.1
+			}
+			if = {
+				limit = { saas_normal_stipend_burden_percent_value > 25 }
+				multiply = 0.2
+			}
+			if = {
+				limit = {
+					saas_normal_stipend_burden_percent_value >= 10
+					saas_normal_stipend_burden_percent_value <= 25
+				}
+				add = 25
+			}
+		}
+	}
+
+	saas_large_stipend_law = {
+		flag = saas_large_stipend_law
+		flag = saas_courtier_stipend_law
+
+		should_start_with = { always = no }
+		can_keep = {
+			is_landed = yes
+			highest_held_title_tier >= tier_county
+		}
+		can_have = {
+			is_landed = yes
+			highest_held_title_tier >= tier_county
+		}
+		can_pass = {
+			NOT = { has_variable = saas_stipend_law_cooldown }
+		}
+
+		pass_cost = { prestige = medium_prestige_value }
+		modifier = { courtier_opinion = 10 }
+		on_pass = {
+			set_variable = {
+				name = saas_stipend_law_cooldown
+				years = @saas_stipend_law_cooldown_years
+			}
+			saas_refresh_courtier_stipend_income_effect = yes
+		}
+
+		ai_will_do = {
+			value = 5
+			if = {
+				limit = {
+					gold >= 200
+					saas_large_stipend_burden_percent_value < 10
+				}
+				add = 80
+			}
+			if = {
+				limit = {
+					saas_large_stipend_burden_percent_value < 10
+					OR = {
+						has_trait = generous
+						has_trait = ambitious
+					}
+				}
+				add = 30
+			}
+			if = {
+				limit = {
+					saas_large_stipend_burden_percent_value < 10
+					has_royal_court = yes
+					court_grandeur_current_level >= 4
+				}
+				add = 40
+			}
+			if = {
+				limit = { gold < 0 }
+				multiply = 0.1
+			}
+		}
+	}
+
+	saas_double_stipend_law = {
+		flag = saas_double_stipend_law
+		flag = saas_courtier_stipend_law
+
+		should_start_with = { always = no }
+		can_keep = {
+			is_landed = yes
+			highest_held_title_tier >= tier_county
+		}
+		can_have = {
+			is_landed = yes
+			highest_held_title_tier >= tier_county
+		}
+		can_pass = {
+			NOT = { has_variable = saas_stipend_law_cooldown }
+		}
+
+		pass_cost = { prestige = medium_prestige_value }
+		modifier = { courtier_opinion = 30 }
+		on_pass = {
+			set_variable = {
+				name = saas_stipend_law_cooldown
+				years = @saas_stipend_law_cooldown_years
+			}
+			saas_refresh_courtier_stipend_income_effect = yes
+		}
+
+		ai_will_do = {
+			value = 1
+			if = {
+				limit = {
+					gold >= 500
+					saas_double_stipend_burden_percent_value < 10
+					OR = {
+						has_trait = generous
+						has_trait = ambitious
+					}
+				}
+				add = 120
+			}
+			if = {
+				limit = {
+					has_royal_court = yes
+					court_grandeur_current_level >= 6
+				}
+				add = 50
+			}
+			if = {
+				limit = { saas_double_stipend_burden_percent_value >= 10 }
+				multiply = 0.1
+			}
+			if = {
+				limit = { gold < 0 }
+				multiply = 0.05
+			}
+		}
+	}
+}

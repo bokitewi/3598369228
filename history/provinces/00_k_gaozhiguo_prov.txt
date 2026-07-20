@@ -1,0 +1,197 @@
+﻿##### d_jiaolushi ############################
+
+### c_jiaolu
+
+
+### c_dansheng
+# AIFAGUAN
+2898 = {
+	holding = none
+}
+
+
+### c_zuyu
+
+
+### c_yueqian
+# YUEQIAN
+2875 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# SANYEHOU
+2959 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# WUYI
+3549 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_sanguo
+
+
+##### d_daxiongyanshi ############################
+
+### c_jiangzhao
+# SANGUO
+2956 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_jiahe
+# JIAHE
+2825 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# YIMITOU
+2957 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+##### d_nengdengshi ############################
+
+### c_nengdeng
+
+
+### c_zhuzhou
+
+
+### c_fengzhi
+# NENGDENG
+2884 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_yucang
+
+
+##### d_yimitoushi ############################
+
+### c_yimitou
+
+
+### c_dibo
+
+
+##### d_maibishi ############################
+
+### c_yuezhong
+# YUEZHONG
+2827 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# JIUBIQI
+2964 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_maibi
+
+
+##### d_jiubiqishi ############################
+
+### c_jiubiqi
+
+
+### c_gaozhi
+# GAOZHI
+2967 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zuodu
+
+
+##### d_gaozhishenjiangshi ############################
+
+### c_gaozhishenjiang
+# GAOZHISHENJIANG
+2968 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# ZUODU
+2966 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_yuehou
+# YUEHOU
+2854 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_puyuan
+# PUYUAN
+2995 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yanzhou
+# YANZHOU
+2994 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_feituoshi ############################
+
+### c_feiyi
+# FEIYI
+2832 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# FEITUO
+2958 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_feituo
+
+
+### c_yitian
+
+

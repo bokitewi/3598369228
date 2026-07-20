@@ -1,0 +1,104 @@
+﻿##### d_zhoutoushi ############################
+
+### c_shicheng5
+
+
+### c_hongju
+
+
+### c_pikou
+# PIKOU
+3469 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# HONGJU
+3468 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# SHICHENG5
+3456 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_huanggudao
+# HUANGUDAO
+3470 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_daxing
+# DAXING
+3452 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# BOZHUO
+3453 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_bozhuo
+
+
+### c_wugu
+# WUGU
+3454 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_jili
+
+
+### c_yizhi
+
+
+### c_ruoluo
+# JUJIU
+3465 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_keting
+
+
+### c_zhili
+
+
+### c_houpu
+
+
+### c_sixian
+
+
+### c_bozhuokou
+
+
+### c_wuci
+
+
+### c_hudu
+
+
+### c_xilou
+
+

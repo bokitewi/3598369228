@@ -1,0 +1,15 @@
+﻿embattle_tactic_activated_neutral = {
+	icon = "war"
+	title = event_message_title
+	desc = event_message_effect
+	style = neutral
+	message_filter_type = embattle_tactic_activated
+}
+
+embattle_tactic_activated_bad = {
+	icon = "war"
+	title = event_message_title
+	desc = event_message_effect
+	style = bad
+	message_filter_type = embattle_tactic_activated
+}

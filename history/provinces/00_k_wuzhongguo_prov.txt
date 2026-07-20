@@ -1,0 +1,137 @@
+﻿##### d_wuzhongshi ############################
+
+### c_yongnu
+# YONGNU
+1242 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# XIANGHE
+1256 = {
+	culture = yan
+	religion = xizhouli
+	holding = none
+}
+# HUOYIN
+1244 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xincang
+
+
+### c_lu1
+
+
+### c_xianghe
+
+
+### c_sanhe
+# SANHE
+1257 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# DULIANG
+2553 = {
+	culture = yan
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_wuzhong
+# WUZHONG
+1258 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# LUTAI
+2552 = {
+	culture = yan
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_xuwu1
+# XUWU1
+2551 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# XINCANG
+1243 = {
+	culture = yan
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_lutai
+
+
+### c_duliang
+
+
+### c_genjin
+# GENJIN
+2554 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# GENGYING
+2555 = {
+	culture = yan
+	religion = xizhouli
+	holding = none
+}
+# RIGEN
+2556 = {
+	culture = yan
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_gengyin
+
+
+### c_rigen
+
+
+### c_xiyang3
+
+
+### c_shanyou
+
+
+### c_zhongyu
+# ZHONGYU
+2560 = {
+	culture = yan
+	religion = xizhouli
+	holding = castle_holding
+}
+# SHANYOU
+2558 = {
+	culture = yan
+	religion = xizhouli
+	holding = none
+}
+# XIYANG3
+2557 = {
+	culture = yan
+	religion = xizhouli
+	holding = none
+}
+
+

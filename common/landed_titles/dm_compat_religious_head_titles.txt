@@ -1,0 +1,13 @@
+﻿e_xiahou = {
+	color = { 195 156 63 }
+	landless = yes
+	capital = c_zhu3
+	allow_domicile = no
+	destroy_if_invalid_heir = yes
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+	can_use_nomadic_naming = no
+	can_be_named_after_dynasty = no
+	definite_form = yes
+	ruler_uses_title_name = no
+}

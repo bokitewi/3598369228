@@ -1,0 +1,37 @@
+﻿##### d_renshengshi ############################
+
+### c_xiangmo
+
+
+### c_liancan
+
+
+### c_yupu
+
+
+### c_yubaoxumei
+
+
+### c_ayoujiabo
+# ZHIFU
+3560 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# JIANGHU
+3561 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+##### d_zhangbushi ############################
+
+### c_xiangwu1
+
+
+### c_shizhang
+
+

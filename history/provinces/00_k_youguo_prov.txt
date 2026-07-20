@@ -1,0 +1,65 @@
+﻿##### d_youshi ############################
+
+### c_fuli
+# FULI
+489 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_qi3
+# QI3
+582 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhi
+# ZHI
+501 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lv5
+# LV5
+2389 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lingbi1
+# LINGBI1
+2390 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_wo
+# WO
+2391 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_dazexiang
+# DAZEXIANG
+2332 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

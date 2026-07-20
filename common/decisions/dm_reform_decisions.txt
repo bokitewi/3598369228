@@ -1,0 +1,31 @@
+dm_reform_abort_decision = {
+	decision_group_type = major
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	ai_check_interval = 180
+	is_shown = {
+		any_owned_story = { type = dm_reform_story }
+	}
+	is_valid = {
+		any_owned_story = { type = dm_reform_story }
+	}
+	effect = {
+		random_owned_story = {
+			limit = { story_type = dm_reform_story }
+			dm_reform_abort_effect = yes
+		}
+	}
+	ai_potential = { always = yes }
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			any_owned_story = {
+				type = dm_reform_story
+				var:dm_reform_support <= -7
+				var:dm_reform_elapsed_days >= 730
+			}
+		}
+	}
+}

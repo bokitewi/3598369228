@@ -1,0 +1,151 @@
+﻿namespace = fallen_of_zhou_dynasty_struggle
+
+# Participant initialization after the situation has been created.
+fallen_of_zhou_dynasty_struggle.1003 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		every_ruler = {
+			limit = { saas_eligible_participant_trigger = yes }
+			saas_refresh_participant_effect = yes
+		}
+	}
+}
+
+fallen_of_zhou_dynasty_struggle.1004 = {
+	type = character_event
+	window = big_event_window
+	major = yes
+	title = fallen_of_zhou_dynasty_struggle.1004.t
+	desc = fallen_of_zhou_dynasty_struggle.1004.desc
+	theme = realm
+
+	trigger = {
+		saas_eligible_participant_trigger = yes
+		saas_is_lijiao_ruler_trigger = yes
+	}
+
+	left_portrait = { character = root animation = council }
+
+	option = {
+		name = fallen_of_zhou_dynasty_struggle.1004.a
+		saas_clear_participant_stance_effect = yes
+		add_trait = character_involve_supporters_of_zhou_dynasty
+		ai_chance = {
+			base = 35
+			modifier = { add = 35 has_trait = just }
+			modifier = { add = 25 has_trait = humble }
+		}
+	}
+
+	option = {
+		name = fallen_of_zhou_dynasty_struggle.1004.b
+		saas_clear_participant_stance_effect = yes
+		add_trait = character_involve_opponents_of_zhou_dynasty
+		ai_chance = {
+			base = 35
+			modifier = { add = 45 has_trait = ambitious }
+			modifier = { add = 30 has_trait = arrogant }
+		}
+	}
+
+	option = {
+		name = fallen_of_zhou_dynasty_struggle.1004.c
+		saas_clear_participant_stance_effect = yes
+		add_trait = character_involve_neutral_of_zhou_dynasty
+		ai_chance = {
+			base = 30
+			modifier = { add = 35 has_trait = content }
+			modifier = { add = 25 has_trait = calm }
+		}
+	}
+}
+
+# Annual repair pass and low-frequency situation trends.
+fallen_of_zhou_dynasty_struggle.1010 = {
+	hidden = yes
+	scope = none
+
+	immediate = {
+		every_ruler = {
+			limit = {
+				OR = {
+					saas_eligible_participant_trigger = yes
+					saas_has_any_participant_stance_trigger = yes
+				}
+			}
+			saas_refresh_participant_effect = yes
+		}
+
+		every_ruler = {
+			limit = {
+				government_has_flag = government_is_landless_adventurer
+				saas_location_in_huaxia_trigger = yes
+			}
+			remove_character_modifier = saas_restoration_adventurer_restraint_modifier
+			remove_character_modifier = saas_warring_adventurer_impetus_modifier
+			if = {
+				limit = { saas_is_ritual_restoration_phase_trigger = yes }
+				add_character_modifier = { modifier = saas_restoration_adventurer_restraint_modifier months = 18 }
+			}
+			else_if = {
+				limit = { saas_is_warring_states_phase_trigger = yes }
+				add_character_modifier = { modifier = saas_warring_adventurer_impetus_modifier months = 18 }
+			}
+		}
+
+		if = {
+			limit = {
+				any_ruler = {
+					count < 4
+					saas_eligible_participant_trigger = yes
+					is_at_war = yes
+				}
+			}
+			if = {
+				limit = { exists = global_var:saas_low_war_years }
+				change_global_variable = { name = saas_low_war_years add = 1 }
+			}
+			else = { set_global_variable = { name = saas_low_war_years value = 1 } }
+		}
+		else = { set_global_variable = { name = saas_low_war_years value = 0 } }
+
+		if = {
+			limit = {
+				exists = global_var:saas_low_war_years
+				global_var:saas_low_war_years >= 5
+				exists = title:e_huaxia.holder
+			}
+			saas_trigger_catalyst_effect = {
+				CATALYST = saas_catalyst_long_peace
+				CHARACTER = title:e_huaxia.holder
+			}
+			if = {
+				limit = { situation:spring_and_autumn_situation = { situation_current_phase = warring_states_phase } }
+				saas_trigger_catalyst_effect = {
+					CATALYST = saas_catalyst_peace_restored
+					CHARACTER = title:e_huaxia.holder
+				}
+			}
+			set_global_variable = { name = saas_low_war_years value = 0 }
+		}
+
+		if = {
+			limit = { exists = title:e_huaxia.holder }
+			title:e_huaxia.holder = {
+				if = {
+					limit = {
+						exists = var:saas_previous_tributary_count
+						number_of_tributaries < var:saas_previous_tributary_count
+					}
+					saas_trigger_catalyst_effect = {
+						CATALYST = saas_catalyst_tributary_lost
+						CHARACTER = this
+					}
+				}
+				set_variable = { name = saas_previous_tributary_count value = number_of_tributaries }
+			}
+		}
+	}
+}

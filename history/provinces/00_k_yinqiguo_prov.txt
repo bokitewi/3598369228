@@ -1,0 +1,23 @@
+﻿##### d_yiqishi1 ############################
+
+### c_yinqi
+
+
+### c_cijun
+# YINQI
+3530 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# YULING
+3580 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_zhifu1
+
+

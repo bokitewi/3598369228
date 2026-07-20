@@ -1,0 +1,38 @@
+﻿##### d_shulongshi ############################
+
+### c_bian1
+# 
+1966 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_qian3
+# 
+1969 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shulong
+# 
+1970 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_huangpu
+# 
+1971 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

@@ -1,0 +1,421 @@
+﻿###DECISIONS LIST###
+
+##
+# Found a Viet Empire
+# Found the Majapahit Empire
+# Found a Ryukyu Empire
+# Found the Siam Kingdom
+# Found the Establish the Darussalam
+# Found the Found the Empire of Brunei
+##
+
+##################################################
+# Found a Viet Empire
+# by Ali Kara
+##################################################
+### Found the Viet Empire ###
+form_dai_viet_empire_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/event_story/tgp_dynastic_cycle_stability.dds"
+	}
+	desc = form_dai_viet_empire_decision_desc
+	selection_tooltip = form_dai_viet_empire_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 120
+		empire = 0
+		hegemony = 0
+	}
+
+	is_shown = {
+		is_playable_character = yes
+		highest_held_title_tier <= tier_kingdom
+		capital_province = { geographical_region = custom_viet_lands }
+		culture = { has_cultural_pillar = heritage_viet }
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_created_dai_viet_empire
+			}
+		}
+	}
+
+	is_valid = {
+		top_liege = this
+		highest_held_title_tier = tier_kingdom
+		has_title = title:k_viet
+		has_title = title:k_champa
+	}
+
+	is_valid_showing_failures_only = {
+		is_landed = yes
+		is_available_adult = yes
+	}
+
+	cost = {
+		prestige = 2000
+	}
+
+	effect = {
+		if = {
+			limit = {
+				is_ai = no
+			}
+			add_achievement_global_variable_effect = {
+				VARIABLE = achieved_ep4_14_daits_how_you_do_it_achievement
+				VALUE = yes
+			}
+		}
+		show_as_tooltip = {
+			form_dai_viet_empire_decision_scripted_effect = yes
+		}
+		save_scope_as = founder
+		trigger_event = {
+			id = major_decisions.4000
+		}
+		every_player = {
+			limit = {
+				this != root
+				is_within_diplo_range = { CHARACTER = root }
+			}
+			trigger_event = {
+				id = major_decisions.4001
+			}
+		}
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_created_dai_viet_empire
+			}
+			set_global_variable = {
+				name = flag_created_dai_viet_empire
+				value = scope:founder
+			}
+		}
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+##################################################
+# Found the Majapahit Empire
+# by Ali Kara
+##################################################
+### Found the Majapahit Empire ###
+form_majapahit_empire_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/event_scenes/tgp_asia_throne_room.dds"
+	}
+	desc = form_majapahit_empire_decision_desc
+	selection_tooltip = form_majapahit_empire_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 120
+		empire = 0
+		hegemony = 0
+	}
+
+	is_shown = {
+		always = no
+	}
+
+	is_valid = {
+		always = no
+	}
+
+	is_valid_showing_failures_only = {
+		always = no
+	}
+
+	cost = {
+		prestige = 1500
+		piety = 1000
+	}
+
+	effect = {
+
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+##################################################
+# Found a Ryukyu Empire
+# by Ali Kara
+##################################################
+### Found a Ryukyuan Empire ###
+form_ryukyu_empire_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/holding_types/tgp_shinto_temple.dds"
+	}
+	desc = form_ryukyu_empire_decision_desc
+	selection_tooltip = form_ryukyu_empire_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 120
+		empire = 0
+		hegemony = 0
+	}
+
+	is_shown = {
+		always = no
+	}
+
+	is_valid = {
+		always = no
+	}
+
+	is_valid_showing_failures_only = {
+		always = no
+	}
+
+	cost = {
+		prestige = 2300
+		piety = 250
+		gold = 750
+	}
+
+	effect = {
+
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+##################################################
+# Found the Siam Kingdom
+# by Ali Kara
+##################################################
+### Found the Siam Kingdom ###
+form_siam_kingdom_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/activity_splash_screens/tour_arrival_asia_welcome.dds"
+	}
+	desc = form_siam_kingdom_decision_desc
+	selection_tooltip = form_siam_kingdom_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 120
+		kingdom = 0
+		empire = 0
+		hegemony = 0
+	}
+
+	is_shown = {
+		is_playable_character = yes
+		highest_held_title_tier <= tier_duchy
+		capital_province = {
+			OR = {
+				geographical_region = world_asia_thailand
+				geographical_region = world_asia_malaysia
+			}
+		}
+		culture = { has_cultural_pillar = heritage_tai }
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_created_siam_kingdom
+			}
+		}
+	}
+
+	is_valid = {
+		top_liege = this
+		highest_held_title_tier = tier_duchy
+		has_title = title:d_sukhothai
+		culture = { has_cultural_pillar = heritage_tai } # just to inform the player
+		custom_tooltip = {
+			text = form_siam_kingdom_decision_requirement_1_tt
+			title:d_lop_buri = {
+				this = { is_title_created = yes }
+				holder = {
+					OR = {
+						is_vassal_or_below_of = ROOT
+						this = ROOT
+					}
+				}
+			}
+		}
+		completely_controls = title:d_sukhothai
+		completely_controls = title:d_lop_buri
+	}
+
+	is_valid_showing_failures_only = {
+		is_landed = yes
+		is_available_adult = yes
+	}
+
+	cost = {
+		gold = 350
+		prestige = 1000
+		piety = 100
+	}
+
+	effect = {
+		show_as_tooltip = {
+			form_siam_kingdom_decision_scripted_effect = yes
+		}
+		save_scope_as = founder
+		trigger_event = {
+			id = major_decisions.7000
+		}
+		every_player = {
+			limit = {
+				this != root
+				is_within_diplo_range = { CHARACTER = root }
+			}
+			trigger_event = {
+				id = major_decisions.7001
+			}
+		}
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_created_siam_kingdom
+			}
+			set_global_variable = {
+				name = flag_created_siam_kingdom
+				value = scope:founder
+			}
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+##################################################
+# Found the Brunei Kingdom
+# by Ali Kara
+##################################################
+form_brunei_kingdom_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/activity_splash_screens/tour_arrival_mena_welcome.dds"
+	}
+	desc = form_brunei_kingdom_decision_desc
+	selection_tooltip = form_brunei_kingdom_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 120
+		kingdom = 0
+		empire = 0
+		hegemony = 0
+	}
+
+	is_shown = {
+		always = no
+	}
+
+	is_valid = {
+		always = no
+	}
+
+	is_valid_showing_failures_only = {
+		always = no
+	}
+
+	cost = {
+		gold = 350
+		piety = 1000
+	}
+
+	effect = {
+
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+##################################################
+# Found the Brunei Empire
+# by Ali Kara
+##################################################
+form_brunei_empire_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/fp3/fp3_decision_foundation.dds"
+	}
+	desc = form_brunei_empire_decision_desc
+	selection_tooltip = form_brunei_empire_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 120
+		empire = 0
+		hegemony = 0
+	}
+
+	is_shown = {
+		always = no
+	}
+
+	is_valid = {
+		always = no
+	}
+
+	is_valid_showing_failures_only = {
+		always = no
+	}
+
+	cost = {
+		gold = 600
+		piety = 2250
+	}
+
+	effect = {
+
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}

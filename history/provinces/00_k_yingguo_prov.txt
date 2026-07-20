@@ -1,0 +1,65 @@
+﻿##### d_yingshi ############################
+
+### c_niulan
+# NIULAN
+1636 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_luyang
+# LUYANG
+1637 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_ying2
+# YING2
+1640 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_luguan
+# LUGUAN
+1641 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shangrong
+# SHANGRONG
+1642 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_raojiao
+# RAOJIAO
+1643 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xu5
+# XU5
+1644 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

@@ -1,0 +1,143 @@
+﻿##### d_huhai ############################
+
+### c_bilichen
+
+
+### c_pinbu
+
+
+### c_shiben
+
+
+### c_zhulou
+# ZHULOU
+3808 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# SHIBEN
+3807 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# PINGBU
+3806 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# BILICHEN
+3805 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# NIANGWAN
+3809 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_niangwan
+
+
+### c_yishi3
+
+
+### c_sagu
+# YISHI
+3810 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# FUDI
+3829 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# DIELA
+3814 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_diela
+
+
+### c_xiangqiu1
+
+
+### c_ruokouyin
+# RUOKOUYIN
+3816 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# TUJU
+3817 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# NIELA
+3818 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# XIANGQIU1
+3815 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_tuju
+
+
+### c_niela
+
+
+### c_tulvbu
+
+
+### c_nawei
+# NAWEI
+3820 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# JIJIE
+3821 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# TULVBU
+3819 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_jijie
+
+
+### c_piban
+
+
+### c_fudi
+
+

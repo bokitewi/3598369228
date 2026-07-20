@@ -1,0 +1,101 @@
+﻿##### d_maoyeshi ############################
+
+### c_zhizhifu
+# ZHIZHIFU
+2969 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xintian1
+
+
+### c_duohu
+
+
+### c_meizhinai
+# WUYEZHI
+2970 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_zuowei
+
+
+### c_piangan
+
+
+### c_ligen
+
+
+### c_yuxubi
+
+
+### c_cheping
+
+
+### c_shangye
+# SHANGYE
+2850 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_wuyezhi
+
+
+### c_yematuo
+
+
+### c_erduoduo
+
+
+### c_yubolianqi
+
+
+### c_bafan
+
+
+### c_zuhe
+
+
+### c_xiaye
+
+
+### c_xinzhi
+# XINZHI
+2971 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# ZHUBO
+2972 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_zhubo
+
+
+### c_hanchuanjun1
+
+
+### c_naxujun
+
+
+### c_fanghe
+
+
+### c_heneijun
+
+

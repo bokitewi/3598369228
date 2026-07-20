@@ -1,0 +1,32 @@
+﻿##### d_jiafeishi ############################
+
+### c_douliu
+
+
+### c_shanli
+
+
+### c_jiafei
+
+
+### c_badai
+# BADAI
+3555 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# SHANLI
+3554 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# DOULIU
+3553 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+

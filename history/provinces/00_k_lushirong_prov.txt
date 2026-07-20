@@ -1,0 +1,47 @@
+﻿##### d_lushi5 ############################
+
+### c_lushi1
+# LUSHI
+3763 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_tieguan
+# TIEGUAN
+3764 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_duguan1
+# DUGUAN
+3765 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_juyangchuan
+# JUYANGCHUAN
+3766 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_liqingchuan
+# LIQINGCHUAN
+3767 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

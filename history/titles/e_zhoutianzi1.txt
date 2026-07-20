@@ -1,0 +1,6 @@
+﻿e_zhoutianzi1 = {
+	3849.12.31 = {
+		holder = han32
+		government = feudal_admin_government
+	}
+}

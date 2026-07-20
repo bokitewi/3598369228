@@ -1,0 +1,11 @@
+﻿# Allied rulers of the Huimeng host.
+dm_activity_invite_rule_allies = {
+	effect = {
+		every_ally = {
+			limit = {
+				bannable_serving_diarch_trigger = no
+			}
+			add_to_list = characters
+		}
+	}
+}

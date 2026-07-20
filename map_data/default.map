@@ -1,47 +1,37 @@
-#max_provinces = 1466
-definitions = "definition.csv"
+﻿definitions = "definition.csv"
 provinces = "provinces.png"
-#positions = "positions.txt"
 rivers = "rivers.png"
-#terrain_definition = "terrain.txt"
 topology = "heightmap.heightmap"
-#tree_definition = "trees.bmp"
 continent = "continent.txt"
 adjacencies = "adjacencies.csv"
-#climate = "climate.txt"
 island_region = "island_region.txt"
 seasons = "seasons.txt"
 
-#############
-# SEA ZONES
-#############
 
-#North European Seas
-sea_zones = LIST { 2 } #French & Iberian atlantic coasts
 
-###############
-# MAJOR RIVERS
-###############
+sea_zones = RANGE { 4554 4731 }
+sea_zones = LIST { 589 }
 
-########
-# LAKES
-########
 
-#####################
-# IMPASSABLE TERRAIN
-#####################
-# Can be colored by whoever owns the most of the province's neighbours.
-# Blocks unit movement.
 
-############
-# WASTELAND
-############
-# These are actually supposed to be Wasteland:
-# Cannot be colored. Blocks unit movement, used for things like Sahara desert. 
+river_provinces = LIST { 724 741 743 2187 2188 2335 2336 2338 2431 2432 2439 2444 2452 2483 4739 4740 4741 4744 }
 
-# IMPASSABLE SEA ZONES
-# These sea provinces cannot be crossed/sailed
+lakes = RANGE { 1326 1330 }
+lakes = LIST { 1006 1007 1008 2171 2172 2224 2286 2317 2318 2337 2436 2462 3586 }
 
-# UNUSED PROVINCES
-# These provinces cause issues because they are passable land, but not part of any title.
-# They are probably not visible anywhere on the map, so feel free to reuse them (after double checking that they are actually missing).
+impassable_mountains = RANGE { 2401 2430 }
+impassable_mountains = RANGE { 2447 2450 }
+impassable_mountains = RANGE { 2523 2530 }
+impassable_mountains = RANGE { 2584 2597 }
+impassable_mountains = RANGE { 2622 2630 }
+impassable_mountains = RANGE { 2641 2650 }
+impassable_mountains = RANGE { 2682 2685 }
+impassable_mountains = RANGE { 2694 2700 }
+impassable_mountains = RANGE { 2725 2740 }
+impassable_mountains = RANGE { 2781 2786 }
+impassable_mountains = RANGE { 3582 3585 }
+impassable_mountains = RANGE { 3587 3590 }
+impassable_mountains = RANGE { 3592 3610 }
+impassable_mountains = RANGE { 3626 3635 }
+impassable_mountains = RANGE { 4745 4755 }
+impassable_mountains = LIST { 751 766 767 796 797 834 835 846 918 919 925 941 975 1019 1020 1122 1123 1124 2287 2292 2295 2296 2300 2303 2304 2369 2453 2454 2492 2493 2575 2576 2577 2600 2635 2636 2637 2668 2669 2670 4737 4738 }

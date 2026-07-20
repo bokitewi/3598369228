@@ -1,0 +1,115 @@
+﻿namespace = mpo_temujin_flavor
+
+# mpo_temujin_flavor.0001 - Become Blood Brothers with Jamukha
+# mpo_temujin_flavor.0010 - Jamukha stops being your vassal
+# mpo_temujin_flavor.0020 - Jamukha becomes your rival
+# mpo_temujin_flavor.0030 - Borte announces she's pregnant
+
+#######################
+# Become Blood Brothers with Jamukha
+#######################
+
+mpo_temujin_flavor.0001 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+
+#######################
+# Jamukha stops being your vassal
+#######################
+
+scripted_effect mpo_temujin_flavor_0010_jamukha_leaving_effect = {
+	if = {
+		limit = { scope:jamukha = { is_vassal_of = root } }
+		scope:jamukha = {
+			create_title_and_vassal_change = {
+				type = independency
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			becomes_independent = {
+				change = scope:change
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+	}
+	else = {
+		scope:jamukha = { end_tributary = yes }
+	}
+	add_truce_both_ways = {
+		character = scope:jamukha
+		years = 5
+		name = temujin_jamukha_truce
+	}
+	hidden_effect = { # This will put him closer to Temujin
+		scope:jamukha = {
+			if = {
+				limit = {
+					current_military_strength < scope:temujin.current_military_strength
+				}
+				domicile ?= {
+					change_herd = {
+						value = scope:temujin.domicile.herd
+						multiply = 0.5
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:togrul
+		}
+		scope:jamukha = {
+			custom_tooltip = negotiate_togrul_alliance_effect_tooltip
+			create_alliance = {
+				target = scope:togrul
+				allied_through_owner = scope:jamukha
+				allied_through_target = scope:togrul
+			}
+			hidden_effect = {
+				scope:togrul = {
+					add_opinion = {
+						target = scope:jamukha
+						modifier = event_negotiated_alliance_opinion
+					}
+				}
+			}
+		}
+	}
+}
+
+mpo_temujin_flavor.0010 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+
+#######################
+# Jamukha becomes your rival -- now you must kill him
+#######################
+
+mpo_temujin_flavor.0020 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+
+#######################
+# Borte announces she's pregnant
+#######################
+mpo_temujin_flavor.0030 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+

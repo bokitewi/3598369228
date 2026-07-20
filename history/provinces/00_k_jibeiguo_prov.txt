@@ -1,0 +1,200 @@
+﻿##### d_haibuzhishi ############################
+
+### c_xiaodoudao
+
+
+##### d_jibeishi ############################
+
+### c_beihoupinzhi
+# BEIHOUPINZHI
+2942 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_sanci
+
+
+### c_yudiao
+
+
+### c_shiluo1
+
+
+### c_sanxi
+
+
+### c_weitian
+
+
+### c_nuke
+# JIBEIXUE
+2943 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_jibeixue
+
+
+### c_nunaijiuwan
+
+
+### c_pinzhi
+
+
+### c_yexunai
+
+
+### c_shenshi
+
+
+##### d_qiutingshi ############################
+
+### c_yinghe
+
+
+### c_jibeizhong
+# JIBEIZHONG
+2944 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_beizhong
+
+
+##### d_jiayeshi ############################
+
+### c_jiaye
+
+
+### c_gaodaogong
+
+
+### c_wawu
+
+
+### c_xiadao
+# BEIZHONG
+2863 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_houmu
+
+
+### c_xiaoduo
+
+
+### c_azhi
+# GAODAOGONG
+2905 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+##### d_zhendaoshi ############################
+
+### c_meizuo
+
+
+### c_yubaowubo
+# MEIZUO
+2888 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_kutian
+
+
+### c_jiumi1
+
+
+### c_shengjiantian
+
+
+### c_yinduo
+
+
+##### d_taiboshi ############################
+
+### c_beiqian
+
+
+### c_sanye2
+
+
+### c_chiban
+
+
+### c_shangdao1
+# BEIQIAN
+2880 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_taibo
+
+
+##### d_aqishi ############################
+
+### c_aqi
+# AQI
+2941 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# ANYUN
+2861 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_aigong
+# AIGONG
+2904 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shanxian
+
+
+### c_gaotian
+
+
+### c_zhaotian
+
+
+### c_anyun
+
+
+### c_fengtian1
+
+
+### c_gaogong
+
+

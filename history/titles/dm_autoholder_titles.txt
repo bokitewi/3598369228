@@ -1,0 +1,15815 @@
+﻿# Generated minimum legal holders for counties unowned at 3850.1.1.
+
+c_ai2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0001
+		liege = k_mouguo
+	}
+}
+
+c_aigong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0002
+	}
+}
+
+c_ailing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0003
+		liege = d_dongguoshi
+	}
+}
+
+c_an1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0004
+	}
+}
+
+c_an2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0005
+		liege = k_zhuguo
+	}
+}
+
+c_anchang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0006
+	}
+}
+
+c_ancheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0007
+		liege = k_zuoguo
+	}
+}
+
+c_ancheng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0008
+	}
+}
+
+c_anci = {
+	3849.12.31 = {
+		holder = dm_autoholder_0009
+		liege = d_hanhoushi
+	}
+}
+
+c_ande = {
+	3849.12.31 = {
+		holder = dm_autoholder_0010
+		liege = k_geguo
+	}
+}
+
+c_andi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0011
+	}
+}
+
+c_anfang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0012
+	}
+}
+
+c_anfeng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0013
+	}
+}
+
+c_anfeng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0014
+	}
+}
+
+c_anhezhen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0015
+		liege = d_zuoshi1
+	}
+}
+
+c_anji = {
+	3849.12.31 = {
+		holder = dm_autoholder_0016
+	}
+}
+
+c_anjin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0017
+		liege = d_huoshi1
+	}
+}
+
+c_anju = {
+	3849.12.31 = {
+		holder = dm_autoholder_0018
+		liege = d_eshi
+	}
+}
+
+c_anling1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0019
+		liege = d_jiezhenshi
+	}
+}
+
+c_anling2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0020
+	}
+}
+
+c_anlu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0021
+	}
+}
+
+c_anmen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0022
+	}
+}
+
+c_anping = {
+	3849.12.31 = {
+		holder = zixinglinshi7
+		liege = k_linguo
+	}
+}
+
+c_anqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0023
+		liege = d_zhoushi
+	}
+}
+
+c_anrongguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0024
+		liege = d_qinshi1
+	}
+}
+
+c_ansai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0025
+		liege = d_lifeishi
+	}
+}
+
+c_anshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0026
+	}
+}
+
+c_anshu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0027
+	}
+}
+
+c_anwu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0028
+	}
+}
+
+c_anxian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0029
+		liege = d_shaoliangshi
+	}
+}
+
+c_anxie = {
+	3849.12.31 = {
+		holder = dm_autoholder_0030
+	}
+}
+
+c_anyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0031
+		liege = d_heshi
+	}
+}
+
+c_anyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0032
+		liege = k_guoguo1
+	}
+}
+
+c_anyang3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0033
+		liege = d_chuqiushi
+	}
+}
+
+c_anyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0034
+	}
+}
+
+c_anyi1 = {
+	3849.12.31 = {
+		holder = tiaorong13
+		liege = k_tiaorong
+	}
+}
+
+c_anyiguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0035
+		liege = d_mianzhushi
+	}
+}
+
+c_anyue = {
+	3849.12.31 = {
+		holder = gushuguo145
+		liege = d_boguanshi
+	}
+}
+
+c_anyun1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0036
+	}
+}
+
+c_anzhong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0037
+		liege = k_nanlvguo
+	}
+}
+
+c_aoshan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0038
+	}
+}
+
+c_aowei = {
+	3849.12.31 = {
+		holder = dm_autoholder_0039
+		liege = d_zhuyushi
+	}
+}
+
+c_aqi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0040
+	}
+}
+
+c_asu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0041
+	}
+}
+
+c_awu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0042
+		liege = k_raoguo
+	}
+}
+
+c_awu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0043
+	}
+}
+
+c_ayang = {
+	3849.12.31 = {
+		holder = yougeshi41
+		liege = d_geshi
+	}
+}
+
+c_ayang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0044
+		liege = d_kongshi1
+	}
+}
+
+c_aye = {
+	3849.12.31 = {
+		holder = dm_autoholder_0045
+	}
+}
+
+c_ayoujiabo = {
+	3849.12.31 = {
+		holder = dm_autoholder_0046
+	}
+}
+
+c_azhi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0047
+	}
+}
+
+c_ba = {
+	3849.12.31 = {
+		holder = dm_autoholder_0048
+		liege = d_xiagongshi
+	}
+}
+
+c_ba1 = {
+	3849.12.31 = {
+		holder = chidibaguo11
+		liege = k_baguo
+	}
+}
+
+c_ba2 = {
+	3849.12.31 = {
+		holder = han5080
+		liege = k_baguo1
+	}
+}
+
+c_badai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0049
+	}
+}
+
+c_badong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0050
+	}
+}
+
+c_bai1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0051
+	}
+}
+
+c_bai2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0052
+	}
+}
+
+c_bai3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0053
+		liege = k_juguo
+	}
+}
+
+c_baideng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0054
+		liege = d_helaishi
+	}
+}
+
+c_baidi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0055
+	}
+}
+
+c_baigou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0056
+	}
+}
+
+c_baigu = {
+	3849.12.31 = {
+		holder = han1907
+		liege = d_xialvshi
+	}
+}
+
+c_baiju = {
+	3849.12.31 = {
+		holder = dm_autoholder_0057
+	}
+}
+
+c_baiju1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0058
+	}
+}
+
+c_baimasai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0059
+	}
+}
+
+c_bairen = {
+	3849.12.31 = {
+		holder = xingguonangongshi16
+		liege = d_jianshi1
+	}
+}
+
+c_baishaguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0060
+	}
+}
+
+c_baishan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0061
+		liege = d_mishi3
+	}
+}
+
+c_baishui = {
+	3849.12.31 = {
+		holder = dm_autoholder_0062
+		liege = d_bailangshi
+	}
+}
+
+c_baishui1 = {
+	3849.12.31 = {
+		holder = pingzhouguo5
+		liege = d_baishuishi
+	}
+}
+
+c_baishuiguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0063
+		liege = d_baishuishi
+	}
+}
+
+c_baitu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0064
+		liege = d_qiulinshi
+	}
+}
+
+c_baiyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0065
+		liege = d_helaishi
+	}
+}
+
+c_baizhang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0066
+		liege = d_qingshi
+	}
+}
+
+c_bajiao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0067
+		liege = k_dalirong
+	}
+}
+
+c_balu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0068
+	}
+}
+
+c_bangao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0069
+	}
+}
+
+c_banlugu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0070
+	}
+}
+
+c_banshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0071
+		liege = d_laishi2
+	}
+}
+
+c_bao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0072
+		liege = k_tanguo
+	}
+}
+
+c_bao1 = {
+	3849.12.31 = {
+		holder = han3367
+		liege = k_baoguo1
+	}
+}
+
+c_baogu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0073
+		liege = d_baoshi1
+	}
+}
+
+c_baohai1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0074
+	}
+}
+
+c_baoqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0075
+	}
+}
+
+c_baosui = {
+	3849.12.31 = {
+		holder = baosuishi6
+		liege = k_baoguo
+	}
+}
+
+c_baoxin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0076
+	}
+}
+
+c_baozu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0077
+	}
+}
+
+c_baqiao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0078
+	}
+}
+
+c_baqu = {
+	3849.12.31 = {
+		holder = baipunaguo11
+		liege = d_dushi2
+	}
+}
+
+c_baxi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0079
+		liege = d_xishi1
+	}
+}
+
+c_bazhou = {
+	3849.12.31 = {
+		holder = congrencongguo10
+		liege = d_pushi1
+	}
+}
+
+c_bei = {
+	3849.12.31 = {
+		holder = kangshi6
+		liege = d_changshi1
+	}
+}
+
+c_beidian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0080
+		liege = d_zishi
+	}
+}
+
+c_beihoupinzhi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0081
+	}
+}
+
+c_beijian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0082
+	}
+}
+
+c_beijing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0083
+	}
+}
+
+c_beiliang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0084
+	}
+}
+
+c_beilubeigao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0085
+	}
+}
+
+c_beimi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0086
+	}
+}
+
+c_beiqiu = {
+	3849.12.31 = {
+		holder = qi19
+		liege = d_beiguoshi
+	}
+}
+
+c_beiqiu1 = {
+	3849.12.31 = {
+		holder = jixingbeiguo9
+		liege = k_beiguo
+	}
+}
+
+c_beiqu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0087
+		liege = k_siguo
+	}
+}
+
+c_beitang = {
+	3849.12.31 = {
+		holder = yunxingbeitangshi8
+		liege = k_beitangguo
+	}
+}
+
+c_beixing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0088
+		liege = d_muqiushi
+	}
+}
+
+c_beiyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0089
+		liege = k_xixiashi
+	}
+}
+
+c_beizheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0090
+		liege = k_shenguo
+	}
+}
+
+c_beng = {
+	3849.12.31 = {
+		holder = bengshi2
+		liege = d_bengshi
+	}
+}
+
+c_beng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0091
+	}
+}
+
+c_bi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0092
+		liege = k_baoguo
+	}
+}
+
+c_bi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0093
+		liege = d_yousongshi
+	}
+}
+
+c_bi2 = {
+	3849.12.31 = {
+		holder = han496
+		liege = k_biguo
+	}
+}
+
+c_bi3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0094
+	}
+}
+
+c_bi4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0095
+	}
+}
+
+c_bian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0096
+		liege = d_dongyeshi
+	}
+}
+
+c_bian1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0097
+	}
+}
+
+c_bianjing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0098
+		liege = k_mangguo
+	}
+}
+
+c_bianli = {
+	3849.12.31 = {
+		holder = dm_autoholder_0099
+	}
+}
+
+c_bifen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0100
+	}
+}
+
+c_biliujia = {
+	3849.12.31 = {
+		holder = dm_autoholder_0101
+	}
+}
+
+c_bin = {
+	3849.12.31 = {
+		holder = quanrong6
+		liege = d_bailuanshi
+	}
+}
+
+c_bin1 = {
+	3849.12.31 = {
+		holder = zixingbingguo22
+		liege = k_binguo
+	}
+}
+
+c_bing = {
+	3849.12.31 = {
+		holder = zixingbinguo14
+		liege = k_bingguo
+	}
+}
+
+c_bing1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0102
+	}
+}
+
+c_binhua = {
+	3849.12.31 = {
+		holder = dm_autoholder_0103
+		liege = d_hageishi
+	}
+}
+
+c_biyang = {
+	3849.12.31 = {
+		holder = han1564
+		liege = k_biyangguo
+	}
+}
+
+c_biyang2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0104
+	}
+}
+
+c_biyang3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0105
+	}
+}
+
+c_biyin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0106
+	}
+}
+
+c_bo = {
+	3849.12.31 = {
+		holder = han1261
+		liege = d_huangfushi
+	}
+}
+
+c_bo1 = {
+	3849.12.31 = {
+		holder = suiyinshi16
+		liege = d_suiyinshi
+	}
+}
+
+c_bobei = {
+	3849.12.31 = {
+		holder = dm_autoholder_0107
+		liege = d_wushi2
+	}
+}
+
+c_boji = {
+	3849.12.31 = {
+		holder = dm_autoholder_0108
+	}
+}
+
+c_bojing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0109
+	}
+}
+
+c_bojiuqi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0110
+	}
+}
+
+c_boling = {
+	3849.12.31 = {
+		holder = boshi1
+		liege = d_boshi
+	}
+}
+
+c_boling1 = {
+	3849.12.31 = {
+		holder = zixinglinshi13
+		liege = d_bishi5
+	}
+}
+
+c_boqi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0111
+	}
+}
+
+c_bowang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0112
+	}
+}
+
+c_boxiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0113
+	}
+}
+
+c_boyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0114
+		liege = k_yeguo
+	}
+}
+
+c_bozhuokou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0115
+	}
+}
+
+c_bu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0116
+	}
+}
+
+c_buqi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0117
+		liege = d_sushashi
+	}
+}
+
+c_busifenxie = {
+	3849.12.31 = {
+		holder = dm_autoholder_0118
+	}
+}
+
+c_buye = {
+	3849.12.31 = {
+		holder = donglai8
+		liege = k_donglaiguo
+	}
+}
+
+c_caisang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0119
+		liege = k_quguo
+	}
+}
+
+c_caiyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0120
+	}
+}
+
+c_caiyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0121
+	}
+}
+
+c_cangjiegu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0122
+		liege = d_qianershi
+	}
+}
+
+c_cangling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0123
+		liege = d_ranshi
+	}
+}
+
+c_cangye = {
+	3849.12.31 = {
+		holder = dm_autoholder_0124
+	}
+}
+
+c_canhe = {
+	3849.12.31 = {
+		holder = dm_autoholder_0125
+		liege = d_fanshi4
+	}
+}
+
+c_canlu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0126
+		liege = k_moguo
+	}
+}
+
+c_canyan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0127
+	}
+}
+
+c_cao1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0128
+		liege = k_weiguo
+	}
+}
+
+c_ce = {
+	3849.12.31 = {
+		holder = han3278
+		liege = k_ceguo
+	}
+}
+
+c_ce1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0129
+		liege = d_kaishi
+	}
+}
+
+c_censhan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0130
+	}
+}
+
+c_cenyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0131
+	}
+}
+
+c_cha1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0132
+	}
+}
+
+c_chai = {
+	3849.12.31 = {
+		holder = luguo16
+		liege = d_dongyeshi
+	}
+}
+
+c_chaibi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0133
+	}
+}
+
+c_chaifu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0134
+		liege = k_hanguo1
+	}
+}
+
+c_chaiyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0135
+		liege = k_lirong
+	}
+}
+
+c_chan = {
+	3849.12.31 = {
+		holder = zhang1
+		liege = d_taoshi
+	}
+}
+
+c_chang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0136
+		liege = k_jieguo
+	}
+}
+
+c_chang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0137
+		liege = k_xueguo
+	}
+}
+
+c_changcen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0138
+	}
+}
+
+c_changcheng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0139
+	}
+}
+
+c_changge = {
+	3849.12.31 = {
+		holder = dm_autoholder_0140
+	}
+}
+
+c_changguang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0141
+		liege = d_jiceshi
+	}
+}
+
+c_changguo = {
+	3849.12.31 = {
+		holder = han96
+		liege = d_guoshi
+	}
+}
+
+c_changjiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0142
+		liege = d_chongshi1
+	}
+}
+
+c_changli = {
+	3849.12.31 = {
+		holder = dm_autoholder_0143
+	}
+}
+
+c_changmen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0144
+	}
+}
+
+c_changping = {
+	3849.12.31 = {
+		holder = dm_autoholder_0145
+		liege = d_fengshi6
+	}
+}
+
+c_changping1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0146
+		liege = d_jishi5
+	}
+}
+
+c_changqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0147
+		liege = k_fengfuguo
+	}
+}
+
+c_changshao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0148
+		liege = d_xianmoushi
+	}
+}
+
+c_changshe = {
+	3849.12.31 = {
+		holder = dm_autoholder_0149
+	}
+}
+
+c_changshui = {
+	3849.12.31 = {
+		holder = dm_autoholder_0150
+		liege = k_yinrong
+	}
+}
+
+c_changwei = {
+	3849.12.31 = {
+		holder = dm_autoholder_0151
+	}
+}
+
+c_changyan = {
+	3849.12.31 = {
+		holder = han6081
+		liege = d_zhongshi
+	}
+}
+
+c_changze = {
+	3849.12.31 = {
+		holder = dm_autoholder_0152
+		liege = d_sheyanshi
+	}
+}
+
+c_changzhou = {
+	3849.12.31 = {
+		holder = boren10
+		liege = d_hongtashi
+	}
+}
+
+c_chanling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0153
+	}
+}
+
+c_chao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0154
+		liege = d_gongliangshi
+	}
+}
+
+c_chao1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0155
+	}
+}
+
+c_chao2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0156
+	}
+}
+
+c_chaocheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0157
+		liege = d_cangshi
+	}
+}
+
+c_chaona = {
+	3849.12.31 = {
+		holder = dm_autoholder_0158
+		liege = d_wuzhishi
+	}
+}
+
+c_chaoyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0159
+	}
+}
+
+c_chencang = {
+	3849.12.31 = {
+		holder = jixingxiaoguoguo1
+		liege = d_xilvshi
+	}
+}
+
+c_cheng = {
+	3849.12.31 = {
+		holder = qiguo27
+		liege = d_xiloushi
+	}
+}
+
+c_cheng1 = {
+	3849.12.31 = {
+		holder = han366
+		liege = k_chengguo
+	}
+}
+
+c_cheng3 = {
+	3849.12.31 = {
+		holder = han3143
+		liege = k_chengguo1
+	}
+}
+
+c_cheng4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0160
+	}
+}
+
+c_chengan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0161
+		liege = k_daiguo
+	}
+}
+
+c_chengde = {
+	3849.12.31 = {
+		holder = dm_autoholder_0162
+	}
+}
+
+c_chengdu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0163
+		liege = d_kaimingshi
+	}
+}
+
+c_chengfu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0164
+	}
+}
+
+c_chengfu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0165
+	}
+}
+
+c_chenggao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0166
+		liege = d_xiangshi2
+	}
+}
+
+c_chengji = {
+	3849.12.31 = {
+		holder = han2884
+		liege = d_chengjishi
+	}
+}
+
+c_chengjiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0167
+	}
+}
+
+c_chengkuang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0168
+		liege = d_yuanshi3
+	}
+}
+
+c_chengpu = {
+	3849.12.31 = {
+		holder = caoguo11
+		liege = d_hanshi4
+	}
+}
+
+c_chengqiu = {
+	3849.12.31 = {
+		holder = kanguo1
+		liege = d_chengqiushi
+	}
+}
+
+c_chengyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0169
+		liege = d_chuishi
+	}
+}
+
+c_chengyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0170
+		liege = d_heshi
+	}
+}
+
+c_chenling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0171
+		liege = d_hanshi5
+	}
+}
+
+c_chiji = {
+	3849.12.31 = {
+		holder = dm_autoholder_0172
+	}
+}
+
+c_chili = {
+	3849.12.31 = {
+		holder = dm_autoholder_0173
+		liege = k_feiguo1
+	}
+}
+
+c_chilv = {
+	3849.12.31 = {
+		holder = dm_autoholder_0174
+	}
+}
+
+c_chishui = {
+	3849.12.31 = {
+		holder = congrenchong12
+		liege = d_zanshi
+	}
+}
+
+c_chixiaodou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0175
+	}
+}
+
+c_chixue = {
+	3849.12.31 = {
+		holder = dm_autoholder_0176
+	}
+}
+
+c_chiyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0177
+	}
+}
+
+c_chiyin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0178
+	}
+}
+
+c_chizhang = {
+	3849.12.31 = {
+		holder = hengxingchouyoushi6
+		liege = d_chizhangshi
+	}
+}
+
+c_chizhisai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0179
+		liege = d_wujiushi
+	}
+}
+
+c_chong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0180
+		liege = k_renguo
+	}
+}
+
+c_chong2 = {
+	3849.12.31 = {
+		holder = sixingchongshi8
+		liege = k_chongguo
+	}
+}
+
+c_chongkan = {
+	3849.12.31 = {
+		holder = congrencongguo20
+		liege = d_eshi
+	}
+}
+
+c_chonglao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0181
+		liege = d_xushi2
+	}
+}
+
+c_chongling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0182
+	}
+}
+
+c_chongqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0183
+		liege = d_chengqiushi
+	}
+}
+
+c_chongqiu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0184
+	}
+}
+
+c_chou = {
+	3849.12.31 = {
+		holder = shanqiu2
+		liege = d_qiushi
+	}
+}
+
+c_chou1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0185
+	}
+}
+
+c_chouyou = {
+	3849.12.31 = {
+		holder = han2760
+		liege = k_chouyouguo
+	}
+}
+
+c_chuanlu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0186
+	}
+}
+
+c_chudao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0187
+		liege = k_yuzhirong
+	}
+}
+
+c_chui = {
+	3849.12.31 = {
+		holder = donglai57
+		liege = d_hanshi3
+	}
+}
+
+c_chui1 = {
+	3849.12.31 = {
+		holder = yousongshi38
+		liege = d_chuishi
+	}
+}
+
+c_chui2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0188
+		liege = d_tongtishi
+	}
+}
+
+c_chuiji = {
+	3849.12.31 = {
+		holder = dm_autoholder_0189
+		liege = k_yangguo1
+	}
+}
+
+c_chuisha = {
+	3849.12.31 = {
+		holder = dm_autoholder_0190
+	}
+}
+
+c_chungu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0191
+		liege = d_heishi
+	}
+}
+
+c_chungu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0192
+	}
+}
+
+c_chuntiamen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0193
+	}
+}
+
+c_chuqiu = {
+	3849.12.31 = {
+		holder = jirong13
+		liege = d_chuqiushi
+	}
+}
+
+c_chuqiu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0194
+		liege = k_weiguo
+	}
+}
+
+c_chuyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0195
+	}
+}
+
+c_chuyun1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0196
+	}
+}
+
+c_chuzhong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0197
+	}
+}
+
+c_cijian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0198
+		liege = k_maoguo1
+	}
+}
+
+c_cijun = {
+	3849.12.31 = {
+		holder = dm_autoholder_0199
+	}
+}
+
+c_ciqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0200
+	}
+}
+
+c_cishi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0201
+		liege = k_zengguo
+	}
+}
+
+c_ciyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0202
+	}
+}
+
+c_cong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0203
+	}
+}
+
+c_cong1 = {
+	3849.12.31 = {
+		holder = han5061
+		liege = k_congguo
+	}
+}
+
+c_cuanmao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0204
+		liege = d_tuishi
+	}
+}
+
+c_cui = {
+	3849.12.31 = {
+		holder = han110
+		liege = d_cuishi
+	}
+}
+
+c_cuo1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0205
+		liege = k_yanguo1
+	}
+}
+
+c_dabaiyou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0206
+		liege = d_qiumulinshi
+	}
+}
+
+c_dachengguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0207
+	}
+}
+
+c_dahe = {
+	3849.12.31 = {
+		holder = dm_autoholder_0208
+	}
+}
+
+c_dahong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0209
+	}
+}
+
+c_dai = {
+	3849.12.31 = {
+		holder = song1281
+		liege = k_daiguo
+	}
+}
+
+c_dai1 = {
+	3849.12.31 = {
+		holder = han2649
+		liege = k_daiguo1
+	}
+}
+
+c_daji = {
+	3849.12.31 = {
+		holder = han1187
+		liege = d_qiuzishi
+	}
+}
+
+c_daji1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0210
+		liege = d_taishi
+	}
+}
+
+c_daliang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0211
+		liege = k_danguo
+	}
+}
+
+c_daling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0212
+	}
+}
+
+c_daling1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0213
+		liege = d_longshi
+	}
+}
+
+c_damin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0214
+	}
+}
+
+c_dan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0215
+		liege = d_meishi
+	}
+}
+
+c_dan1 = {
+	3849.12.31 = {
+		holder = han542
+		liege = k_danguo
+	}
+}
+
+c_dan3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0216
+	}
+}
+
+c_dan4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0217
+	}
+}
+
+c_danbo = {
+	3849.12.31 = {
+		holder = dm_autoholder_0218
+	}
+}
+
+c_danbo1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0219
+	}
+}
+
+c_danchima = {
+	3849.12.31 = {
+		holder = dm_autoholder_0220
+	}
+}
+
+c_danfu = {
+	3849.12.31 = {
+		holder = han1307
+		liege = d_shanfushi
+	}
+}
+
+c_dang = {
+	3849.12.31 = {
+		holder = han1264
+		liege = d_songshi
+	}
+}
+
+c_dangli = {
+	3849.12.31 = {
+		holder = dm_autoholder_0221
+		liege = d_shuangjiushi1
+	}
+}
+
+c_danhu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0222
+		liege = d_lushi6
+	}
+}
+
+c_daning = {
+	3849.12.31 = {
+		holder = dm_autoholder_0223
+	}
+}
+
+c_danling = {
+	3849.12.31 = {
+		holder = qingyiqiang3
+		liege = d_danlishi
+	}
+}
+
+c_danluo = {
+	3849.12.31 = {
+		holder = dm_autoholder_0224
+	}
+}
+
+c_danqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0225
+		liege = d_lunushi
+	}
+}
+
+c_dansheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0226
+	}
+}
+
+c_danxing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0227
+	}
+}
+
+c_danyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0228
+	}
+}
+
+c_danyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0229
+	}
+}
+
+c_danyang2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0230
+	}
+}
+
+c_danzhang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0231
+	}
+}
+
+c_dao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0232
+	}
+}
+
+c_daoren = {
+	3849.12.31 = {
+		holder = zixingdaiguo13
+		liege = d_fanshi4
+	}
+}
+
+c_daoye = {
+	3849.12.31 = {
+		holder = dm_autoholder_0233
+	}
+}
+
+c_dasong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0234
+		liege = d_donglaishi
+	}
+}
+
+c_dasui = {
+	3849.12.31 = {
+		holder = dm_autoholder_0235
+	}
+}
+
+c_daxia = {
+	3849.12.31 = {
+		holder = dirong19
+		liege = d_baishishi
+	}
+}
+
+c_daxing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0236
+	}
+}
+
+c_dazexiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0237
+	}
+}
+
+c_deng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0238
+	}
+}
+
+c_deng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0239
+	}
+}
+
+c_dengling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0240
+	}
+}
+
+c_dengqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0241
+	}
+}
+
+c_di1 = {
+	3849.12.31 = {
+		holder = han5825
+		liege = k_soumanguo
+	}
+}
+
+c_di2 = {
+	3849.12.31 = {
+		holder = jixingdiguo8
+		liege = k_diguo1
+	}
+}
+
+c_dianling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0242
+		liege = k_yuguo1
+	}
+}
+
+c_diao = {
+	3849.12.31 = {
+		holder = han1942
+		liege = k_diaoguo
+	}
+}
+
+c_diaoling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0243
+	}
+}
+
+c_diaoyin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0244
+		liege = k_diaoguo
+	}
+}
+
+c_didao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0245
+		liege = k_quanrong1
+	}
+}
+
+c_didao1 = {
+	3849.12.31 = {
+		holder = dirong10
+		liege = k_dirong
+	}
+}
+
+c_diefu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0246
+		liege = d_hunshi
+	}
+}
+
+c_dige = {
+	3849.12.31 = {
+		holder = dm_autoholder_0247
+		liege = k_beiguo
+	}
+}
+
+c_diguo = {
+	3849.12.31 = {
+		holder = dm_autoholder_0248
+	}
+}
+
+c_diji = {
+	3849.12.31 = {
+		holder = dm_autoholder_0249
+	}
+}
+
+c_dilu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0250
+	}
+}
+
+c_ding = {
+	3849.12.31 = {
+		holder = dm_autoholder_0251
+		liege = d_fenrushi
+	}
+}
+
+c_dingling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0252
+	}
+}
+
+c_dingxiang = {
+	3849.12.31 = {
+		holder = hezongshi1
+		liege = d_heshi1
+	}
+}
+
+c_dingyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0253
+		liege = d_lishi8
+	}
+}
+
+c_dingyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0254
+	}
+}
+
+c_dingying = {
+	3849.12.31 = {
+		holder = dm_autoholder_0255
+	}
+}
+
+c_diqiu = {
+	3849.12.31 = {
+		holder = han185
+		liege = k_weiguo
+	}
+}
+
+c_dizu = {
+	3849.12.31 = {
+		holder = dizushi4
+		liege = k_dizu
+	}
+}
+
+c_dong = {
+	3849.12.31 = {
+		holder = dongxing46
+		liege = k_dongguo
+	}
+}
+
+c_dongan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0256
+		liege = d_jishi8
+	}
+}
+
+c_dongbugeng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0257
+	}
+}
+
+c_dongcheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0258
+		liege = k_zhongliguo
+	}
+}
+
+c_dongguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0259
+	}
+}
+
+c_dongguo = {
+	3849.12.31 = {
+		holder = dm_autoholder_0260
+		liege = k_dongguoguo
+	}
+}
+
+c_donghai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0261
+		liege = k_zhuqiguo
+	}
+}
+
+c_donglin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0262
+	}
+}
+
+c_dongling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0263
+	}
+}
+
+c_dongling1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0264
+	}
+}
+
+c_dongmu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0265
+		liege = d_hanshi3
+	}
+}
+
+c_dongting = {
+	3849.12.31 = {
+		holder = dm_autoholder_0266
+		liege = k_gaorong
+	}
+}
+
+c_dongwu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0267
+	}
+}
+
+c_dongxiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0268
+		liege = d_naguo
+	}
+}
+
+c_dongyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0269
+	}
+}
+
+c_dongyang2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0270
+		liege = k_lingfuguo
+	}
+}
+
+c_dongyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0271
+	}
+}
+
+c_dongyu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0272
+		liege = k_duochen
+	}
+}
+
+c_doucheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0273
+		liege = d_lvshi2
+	}
+}
+
+c_douji = {
+	3849.12.31 = {
+		holder = dm_autoholder_0274
+	}
+}
+
+c_doujin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0275
+		liege = k_weiguo1
+	}
+}
+
+c_doumulingguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0276
+	}
+}
+
+c_dounan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0277
+	}
+}
+
+c_dourenzhi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0278
+	}
+}
+
+c_du = {
+	3849.12.31 = {
+		holder = yiqishitangdushi2
+		liege = k_duguo
+	}
+}
+
+c_du1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0279
+		liege = k_gaoguo
+	}
+}
+
+c_du2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0280
+	}
+}
+
+c_duandao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0281
+		liege = k_yuwushi
+	}
+}
+
+c_duansheqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0282
+	}
+}
+
+c_duanshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0283
+		liege = d_duanshi1
+	}
+}
+
+c_dudao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0284
+	}
+}
+
+c_duguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0285
+		liege = d_yangjiaoshi
+	}
+}
+
+c_duguan1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0286
+	}
+}
+
+c_duiqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0287
+		liege = d_guifangshi
+	}
+}
+
+c_duiyu = {
+	3849.12.31 = {
+		holder = quanrong11
+		liege = d_bailushi
+	}
+}
+
+c_dule = {
+	3849.12.31 = {
+		holder = dm_autoholder_0288
+		liege = k_xiluoguirong
+	}
+}
+
+c_dulu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0289
+	}
+}
+
+c_dun = {
+	3849.12.31 = {
+		holder = dm_autoholder_0290
+	}
+}
+
+c_dun1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0291
+	}
+}
+
+c_dunqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0292
+		liege = k_guanguo
+	}
+}
+
+c_dunqiu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0293
+		liege = d_sunshi
+	}
+}
+
+c_dunqiu2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0294
+		liege = d_shiweishi
+	}
+}
+
+c_duochen = {
+	3849.12.31 = {
+		holder = duochenshi8
+		liege = k_duochen
+	}
+}
+
+c_duohe = {
+	3849.12.31 = {
+		holder = dm_autoholder_0295
+		liege = d_duoshi1
+	}
+}
+
+c_duokejun = {
+	3849.12.31 = {
+		holder = dm_autoholder_0296
+	}
+}
+
+c_duoyu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0297
+		liege = d_huangfushi
+	}
+}
+
+c_duping = {
+	3849.12.31 = {
+		holder = dm_autoholder_0298
+		liege = d_liangyoushi
+	}
+}
+
+c_e = {
+	3849.12.31 = {
+		holder = dm_autoholder_0299
+		liege = k_siguo
+	}
+}
+
+c_e1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0300
+	}
+}
+
+c_e2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0301
+	}
+}
+
+c_ehecheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0302
+		liege = d_ranshi
+	}
+}
+
+c_elu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0303
+		liege = d_mishi3
+	}
+}
+
+c_enyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0304
+		liege = d_fengshi2
+	}
+}
+
+c_er = {
+	3849.12.31 = {
+		holder = dm_autoholder_0305
+	}
+}
+
+c_erfang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0306
+	}
+}
+
+c_ermian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0307
+	}
+}
+
+c_eryang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0308
+	}
+}
+
+c_etian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0309
+	}
+}
+
+c_fajian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0310
+	}
+}
+
+c_fajiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0311
+		liege = k_liuyushi
+	}
+}
+
+c_fan3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0312
+		liege = d_pangshi
+	}
+}
+
+c_fan4 = {
+	3849.12.31 = {
+		holder = han1892
+		liege = k_fanguo1
+	}
+}
+
+c_fan5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0313
+	}
+}
+
+c_fan6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0314
+	}
+}
+
+c_fan7 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0315
+	}
+}
+
+c_fan8 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0316
+	}
+}
+
+c_fan9 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0317
+		liege = k_ruguo
+	}
+}
+
+c_fanduo = {
+	3849.12.31 = {
+		holder = dm_autoholder_0318
+	}
+}
+
+c_fang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0319
+		liege = d_yanshi4
+	}
+}
+
+c_fang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0320
+		liege = k_yangguo
+	}
+}
+
+c_fang3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0321
+		liege = k_jiguo1
+	}
+}
+
+c_fang4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0322
+		liege = d_zhenzishi
+	}
+}
+
+c_fang5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0323
+	}
+}
+
+c_fangcheng = {
+	3849.12.31 = {
+		holder = jixinghanhoushi5
+		liege = d_dushi1
+	}
+}
+
+c_fangchi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0324
+		liege = d_yuyuanzhenshi
+	}
+}
+
+c_fangdang = {
+	3849.12.31 = {
+		holder = han3055
+		liege = k_huanrong
+	}
+}
+
+c_fanghe = {
+	3849.12.31 = {
+		holder = dm_autoholder_0325
+	}
+}
+
+c_fangqu = {
+	3849.12.31 = {
+		holder = yiquguo1
+		liege = d_hunyeshi
+	}
+}
+
+c_fangshanguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0326
+		liege = d_bashi1
+	}
+}
+
+c_fangshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0327
+		liege = k_daiguo1
+	}
+}
+
+c_fangyu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0328
+		liege = k_feiguo
+	}
+}
+
+c_fangzhong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0329
+	}
+}
+
+c_fangzhu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0330
+	}
+}
+
+c_fangzi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0331
+		liege = d_shangliangshi
+	}
+}
+
+c_fanhenei = {
+	3849.12.31 = {
+		holder = dm_autoholder_0332
+	}
+}
+
+c_fanliang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0333
+	}
+}
+
+c_fanwu = {
+	3849.12.31 = {
+		holder = zixingshashi9
+		liege = d_weishengshi
+	}
+}
+
+c_fanwu1 = {
+	3849.12.31 = {
+		holder = hengxingfeishi4
+		liege = d_fanwushi
+	}
+}
+
+c_fanyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0334
+		liege = d_lvfushi
+	}
+}
+
+c_fanyang2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0335
+	}
+}
+
+c_fanying = {
+	3849.12.31 = {
+		holder = dm_autoholder_0336
+	}
+}
+
+c_fashouzhi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0337
+	}
+}
+
+c_fei1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0338
+		liege = k_zhuanyuguo
+	}
+}
+
+c_fei2 = {
+	3849.12.31 = {
+		holder = luguo5
+		liege = k_feiguo
+	}
+}
+
+c_fei3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0339
+		liege = d_yuanshi4
+	}
+}
+
+c_fei5 = {
+	3849.12.31 = {
+		holder = han2239
+		liege = k_feiguo1
+	}
+}
+
+c_feigou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0340
+		liege = k_hanguo1
+	}
+}
+
+c_feiliang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0341
+		liege = k_jiguo5
+	}
+}
+
+c_feiling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0342
+	}
+}
+
+c_feitin = {
+	3849.12.31 = {
+		holder = yunxinghunrong11
+		liege = k_hunrong
+	}
+}
+
+c_feiyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0343
+	}
+}
+
+c_fen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0344
+		liege = k_xuguo1
+	}
+}
+
+c_fen1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0345
+	}
+}
+
+c_feng = {
+	3849.12.31 = {
+		holder = tengshu2
+		liege = d_tenshushi
+	}
+}
+
+c_feng1 = {
+	3849.12.31 = {
+		holder = jixingdongguoguo1
+		liege = d_guojishi
+	}
+}
+
+c_feng3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0346
+	}
+}
+
+c_feng5 = {
+	3849.12.31 = {
+		holder = luziyinger1
+		liege = d_fengshi6
+	}
+}
+
+c_fengchang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0347
+	}
+}
+
+c_fengdu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0348
+		liege = d_nushi
+	}
+}
+
+c_fengguo = {
+	3849.12.31 = {
+		holder = han4762
+		liege = k_fengguo2
+	}
+}
+
+c_fenghou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0349
+	}
+}
+
+c_fengli1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0350
+	}
+}
+
+c_fenglong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0351
+		liege = k_diguo1
+	}
+}
+
+c_fengqian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0352
+	}
+}
+
+c_fengshan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0353
+	}
+}
+
+c_fengzhi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0354
+	}
+}
+
+c_fenmen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0355
+		liege = d_lvfushi
+	}
+}
+
+c_fenquan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0356
+		liege = d_mengshi
+	}
+}
+
+c_fenyang = {
+	3849.12.31 = {
+		holder = yunxingyanjingrong14
+		liege = k_yanjingrong
+	}
+}
+
+c_fu1 = {
+	3849.12.31 = {
+		holder = zixingtongguo1
+		liege = d_fushi1
+	}
+}
+
+c_fu2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0357
+	}
+}
+
+c_fubo = {
+	3849.12.31 = {
+		holder = dm_autoholder_0358
+	}
+}
+
+c_fucha = {
+	3849.12.31 = {
+		holder = dm_autoholder_0359
+	}
+}
+
+c_fucheng = {
+	3849.12.31 = {
+		holder = direnqiguo3
+		liege = k_qiguo2
+	}
+}
+
+c_fugao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0360
+	}
+}
+
+c_fugou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0361
+		liege = d_zhoushi2
+	}
+}
+
+c_fuhan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0362
+		liege = d_yunwushi
+	}
+}
+
+c_fuhan1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0363
+	}
+}
+
+c_fujiao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0364
+	}
+}
+
+c_fukou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0365
+		liege = d_weishengshi
+	}
+}
+
+c_fukui = {
+	3849.12.31 = {
+		holder = dm_autoholder_0366
+		liege = k_gengguo
+	}
+}
+
+c_fuli = {
+	3849.12.31 = {
+		holder = dm_autoholder_0367
+	}
+}
+
+c_fuli1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0368
+	}
+}
+
+c_fuling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0369
+	}
+}
+
+c_fuliu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0370
+		liege = k_gaorong
+	}
+}
+
+c_fuliu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0371
+		liege = d_wushi1
+	}
+}
+
+c_fuping = {
+	3849.12.31 = {
+		holder = dm_autoholder_0372
+		liege = d_qiaorushi
+	}
+}
+
+c_fuping2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0373
+		liege = d_duomashi
+	}
+}
+
+c_fuqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0374
+	}
+}
+
+c_fuqiu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0375
+		liege = k_rongguo
+	}
+}
+
+c_fushi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0376
+		liege = d_shenshi
+	}
+}
+
+c_fushi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0377
+		liege = k_xiluoguirong
+	}
+}
+
+c_fushu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0378
+		liege = d_lunshi
+	}
+}
+
+c_fusida = {
+	3849.12.31 = {
+		holder = dm_autoholder_0379
+	}
+}
+
+c_futian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0380
+	}
+}
+
+c_fuwen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0381
+		liege = d_dazuoshi
+	}
+}
+
+c_fuxia = {
+	3849.12.31 = {
+		holder = chengguo3
+		liege = d_xiagongshi
+	}
+}
+
+c_fuyang = {
+	3849.12.31 = {
+		holder = qiaorushi15
+		liege = d_dishi
+	}
+}
+
+c_fuyang3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0382
+	}
+}
+
+c_fuyang5 = {
+	3849.12.31 = {
+		holder = barenbaguo13
+		liege = d_zhengshi1
+	}
+}
+
+c_fuyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0383
+		liege = k_yiqu
+	}
+}
+
+c_fuyu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0384
+	}
+}
+
+c_fuzhi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0385
+	}
+}
+
+c_fuzhong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0386
+		liege = k_chengguo
+	}
+}
+
+c_gai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0387
+		liege = k_mouguo
+	}
+}
+
+c_gaixia = {
+	3849.12.31 = {
+		holder = dm_autoholder_0388
+		liege = d_feishi2
+	}
+}
+
+c_gaizhu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0389
+		liege = d_qianershi
+	}
+}
+
+c_gan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0390
+		liege = k_yuyuqiuguo
+	}
+}
+
+c_gan2 = {
+	3849.12.31 = {
+		holder = han1955
+		liege = k_ganguo
+	}
+}
+
+c_gang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0391
+		liege = d_taoshi
+	}
+}
+
+c_gangcheng1 = {
+	3849.12.31 = {
+		holder = han2614
+		liege = k_dairong
+	}
+}
+
+c_gangshuimen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0392
+	}
+}
+
+c_ganguan = {
+	3849.12.31 = {
+		holder = han2053
+		liege = k_xiluoguirong
+	}
+}
+
+c_ganlu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0393
+		liege = k_quanrong
+	}
+}
+
+c_gansui = {
+	3849.12.31 = {
+		holder = dm_autoholder_0394
+	}
+}
+
+c_gantang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0395
+		liege = d_shenshi5
+	}
+}
+
+c_ganxian = {
+	3849.12.31 = {
+		holder = yuqiushi1
+		liege = d_yushi6
+	}
+}
+
+c_ganyu = {
+	3849.12.31 = {
+		holder = zhuqi11
+		liege = d_gongloushi
+	}
+}
+
+c_ganyukou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0396
+	}
+}
+
+c_gao1 = {
+	3849.12.31 = {
+		holder = han431
+		liege = k_gaoguo
+	}
+}
+
+c_gao2 = {
+	3849.12.31 = {
+		holder = yunxinggaorong3
+		liege = k_gaorong
+	}
+}
+
+c_gao4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0397
+		liege = d_zhaoshi1
+	}
+}
+
+c_gao5 = {
+	3849.12.31 = {
+		holder = taidairushi51
+		liege = d_taishi
+	}
+}
+
+c_gaoana = {
+	3849.12.31 = {
+		holder = dm_autoholder_0398
+	}
+}
+
+c_gaochai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0399
+		liege = d_dongqiushi
+	}
+}
+
+c_gaochang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0400
+	}
+}
+
+c_gaocheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0401
+		liege = d_dishi
+	}
+}
+
+c_gaocheng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0402
+	}
+}
+
+c_gaocheng2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0403
+	}
+}
+
+c_gaodu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0404
+		liege = k_quanrong
+	}
+}
+
+c_gaodu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0405
+		liege = d_xuanshi
+	}
+}
+
+c_gaogong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0406
+	}
+}
+
+c_gaogouli = {
+	3849.12.31 = {
+		holder = dm_autoholder_0407
+	}
+}
+
+c_gaohu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0408
+	}
+}
+
+c_gaojin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0409
+	}
+}
+
+c_gaolai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0410
+	}
+}
+
+c_gaolang = {
+	3849.12.31 = {
+		holder = yunxingyanjingrong25
+		liege = d_langshi
+	}
+}
+
+c_gaole = {
+	3849.12.31 = {
+		holder = dm_autoholder_0411
+		liege = d_chushi
+	}
+}
+
+c_gaoliang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0412
+		liege = d_qiushi
+	}
+}
+
+c_gaoling1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0413
+	}
+}
+
+c_gaoluo = {
+	3849.12.31 = {
+		holder = han2069
+		liege = k_gaoluo
+	}
+}
+
+c_gaomi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0414
+		liege = d_zhengyushi
+	}
+}
+
+c_gaonu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0415
+		liege = k_dalirong
+	}
+}
+
+c_gaoping = {
+	3849.12.31 = {
+		holder = dm_autoholder_0416
+		liege = k_xuguo
+	}
+}
+
+c_gaoping1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0417
+		liege = d_bailushi
+	}
+}
+
+c_gaoqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0418
+	}
+}
+
+c_gaoque = {
+	3849.12.31 = {
+		holder = dm_autoholder_0419
+		liege = d_xiutushi
+	}
+}
+
+c_gaoquesai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0420
+		liege = d_juqushi
+	}
+}
+
+c_gaoshan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0421
+	}
+}
+
+c_gaowang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0422
+		liege = d_linqiushi1
+	}
+}
+
+c_gaowang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0423
+	}
+}
+
+c_gaoyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0424
+		liege = d_guoshi4
+	}
+}
+
+c_gaoyang3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0425
+	}
+}
+
+c_gaoyangli = {
+	3849.12.31 = {
+		holder = dm_autoholder_0426
+	}
+}
+
+c_gaoyou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0427
+	}
+}
+
+c_gaoyou1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0428
+	}
+}
+
+c_gaoyu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0429
+		liege = d_sushashi
+	}
+}
+
+c_gaoyu1 = {
+	3849.12.31 = {
+		holder = yousongshi34
+		liege = k_jishuizhirong
+	}
+}
+
+c_gaoyuan = {
+	3849.12.31 = {
+		holder = han88
+		liege = d_gaoshi
+	}
+}
+
+c_gaozhi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0430
+	}
+}
+
+c_gaozhishenjiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0431
+	}
+}
+
+c_ge = {
+	3849.12.31 = {
+		holder = yougeshi35
+		liege = k_geguo
+	}
+}
+
+c_ge1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0432
+		liege = k_zengguo
+	}
+}
+
+c_gecheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0433
+	}
+}
+
+c_geling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0434
+	}
+}
+
+c_geng = {
+	3849.12.31 = {
+		holder = yangguo23
+		liege = d_gengshi1
+	}
+}
+
+c_geng1 = {
+	3849.12.31 = {
+		holder = jixinggengshi10
+		liege = k_gengguo
+	}
+}
+
+c_geng2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0435
+		liege = d_yuzhushi
+	}
+}
+
+c_genjin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0436
+	}
+}
+
+c_genmou = {
+	3849.12.31 = {
+		holder = han1032
+		liege = k_genmouguo
+	}
+}
+
+c_genshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0437
+	}
+}
+
+c_gong = {
+	3849.12.31 = {
+		holder = jixinggongshi8
+		liege = k_gongguo
+	}
+}
+
+c_gong1 = {
+	3849.12.31 = {
+		holder = jixinggongguo6
+		liege = k_gongguo1
+	}
+}
+
+c_gong2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0438
+		liege = d_ruanshi
+	}
+}
+
+c_gong3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0439
+	}
+}
+
+c_gonggao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0440
+		liege = d_fudengshi
+	}
+}
+
+c_gongjing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0441
+		liege = d_cancongshi
+	}
+}
+
+c_gongliu = {
+	3849.12.31 = {
+		holder = han3473
+		liege = d_shentushi
+	}
+}
+
+c_gongyan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0442
+	}
+}
+
+c_gou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0443
+	}
+}
+
+c_goudu = {
+	3849.12.31 = {
+		holder = han1262
+		liege = d_yueshi1
+	}
+}
+
+c_goulong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0444
+		liege = k_xiuhunzhuhe
+	}
+}
+
+c_goumao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0445
+		liege = k_daiguo1
+	}
+}
+
+c_gousu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0446
+	}
+}
+
+c_gouwu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0447
+	}
+}
+
+c_gu = {
+	3849.12.31 = {
+		holder = xujushi3
+		liege = d_qushi1
+	}
+}
+
+c_gu2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0448
+		liege = d_yangjiaoshi
+	}
+}
+
+c_gu3 = {
+	3849.12.31 = {
+		holder = han2250
+		liege = k_guguo
+	}
+}
+
+c_gu4 = {
+	3849.12.31 = {
+		holder = hengxinglunushi2
+		liege = d_lunushi
+	}
+}
+
+c_gu5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0449
+		liege = d_zuorenshi
+	}
+}
+
+c_gu6 = {
+	3849.12.31 = {
+		holder = han645
+		liege = k_guguo1
+	}
+}
+
+c_gu7 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0450
+	}
+}
+
+c_guache = {
+	3849.12.31 = {
+		holder = dm_autoholder_0451
+	}
+}
+
+c_guai = {
+	3849.12.31 = {
+		holder = jiangxingguaishi16
+		liege = k_guaiguo
+	}
+}
+
+c_guan1 = {
+	3849.12.31 = {
+		holder = wuguan29
+		liege = k_guanguo
+	}
+}
+
+c_guan2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0452
+		liege = d_shuangshi
+	}
+}
+
+c_guancen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0453
+		liege = k_yanjingrong
+	}
+}
+
+c_guancheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0454
+		liege = d_goushi
+	}
+}
+
+c_guandong = {
+	3849.12.31 = {
+		holder = han2880
+		liege = d_guandongshi
+	}
+}
+
+c_guang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0455
+		liege = d_xishi2
+	}
+}
+
+c_guang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0456
+	}
+}
+
+c_guang2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0457
+	}
+}
+
+c_guangde = {
+	3849.12.31 = {
+		holder = dm_autoholder_0458
+	}
+}
+
+c_guangdu = {
+	3849.12.31 = {
+		holder = gushuguo182
+		liege = d_yufushi
+	}
+}
+
+c_guanghua = {
+	3849.12.31 = {
+		holder = dm_autoholder_0459
+	}
+}
+
+c_guanglang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0460
+		liege = d_xuanshi
+	}
+}
+
+c_guangmu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0461
+		liege = d_qufushi
+	}
+}
+
+c_guangwang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0462
+		liege = d_bishi5
+	}
+}
+
+c_guangwu1 = {
+	3849.12.31 = {
+		holder = han2917
+		liege = d_lifeishi
+	}
+}
+
+c_guangwu3 = {
+	3849.12.31 = {
+		holder = huanrong1
+		liege = d_qianershi
+	}
+}
+
+c_guangwu4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0463
+		liege = d_gongshi2
+	}
+}
+
+c_guangyan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0464
+		liege = d_qiumulinshi
+	}
+}
+
+c_guangying = {
+	3849.12.31 = {
+		holder = dm_autoholder_0465
+	}
+}
+
+c_guanjin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0466
+		liege = k_wuluoguo
+	}
+}
+
+c_guanshi = {
+	3849.12.31 = {
+		holder = jixingbeiguo14
+		liege = d_guanshi1
+	}
+}
+
+c_guantai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0467
+		liege = k_zhuguo1
+	}
+}
+
+c_guanyang = {
+	3849.12.31 = {
+		holder = donglai24
+		liege = d_jiceshi
+	}
+}
+
+c_guayan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0468
+		liege = d_zhishi1
+	}
+}
+
+c_gucheng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0469
+	}
+}
+
+c_gudanzhe = {
+	3849.12.31 = {
+		holder = dm_autoholder_0470
+	}
+}
+
+c_gui = {
+	3849.12.31 = {
+		holder = dm_autoholder_0471
+		liege = d_liangshishi
+	}
+}
+
+c_gui1 = {
+	3849.12.31 = {
+		holder = jiangxingguirong10
+		liege = k_guirong
+	}
+}
+
+c_guide = {
+	3849.12.31 = {
+		holder = dm_autoholder_0472
+		liege = d_yuyuanzhenshi
+	}
+}
+
+c_guide1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0473
+		liege = k_meiguo
+	}
+}
+
+c_guijing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0474
+		liege = d_changshi1
+	}
+}
+
+c_guishan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0475
+	}
+}
+
+c_guiyan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0476
+		liege = k_chenguo
+	}
+}
+
+c_guiyin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0477
+		liege = d_xianmoushi
+	}
+}
+
+c_gula = {
+	3849.12.31 = {
+		holder = dm_autoholder_0478
+	}
+}
+
+c_guling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0479
+		liege = d_qiuzishi
+	}
+}
+
+c_guluo = {
+	3849.12.31 = {
+		holder = dm_autoholder_0480
+		liege = d_qiulinshi
+	}
+}
+
+c_guluzhi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0481
+	}
+}
+
+c_gumi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0482
+		liege = d_shanboshi
+	}
+}
+
+c_gumu = {
+	3849.12.31 = {
+		holder = zhuguo57
+		liege = d_yanshi4
+	}
+}
+
+c_guo = {
+	3849.12.31 = {
+		holder = han5489
+		liege = k_xiaoguoguo
+	}
+}
+
+c_guo1 = {
+	3849.12.31 = {
+		holder = jixingmoshi8
+		liege = d_guoshi4
+	}
+}
+
+c_guo4 = {
+	3849.12.31 = {
+		holder = han2197
+		liege = k_guoguo1
+	}
+}
+
+c_guoqian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0483
+	}
+}
+
+c_guqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0484
+		liege = d_yueshi1
+	}
+}
+
+c_gusima = {
+	3849.12.31 = {
+		holder = dm_autoholder_0485
+	}
+}
+
+c_gusu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0486
+	}
+}
+
+c_guta = {
+	3849.12.31 = {
+		holder = chidiquanshi14
+		liege = d_xuanshi
+	}
+}
+
+c_guyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0487
+	}
+}
+
+c_guyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0488
+		liege = k_liangguo
+	}
+}
+
+c_guyang3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0489
+	}
+}
+
+c_guye = {
+	3849.12.31 = {
+		holder = dm_autoholder_0490
+		liege = k_yuzhirong
+	}
+}
+
+c_guyuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0491
+		liege = d_xuanshi1
+	}
+}
+
+c_guzang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0492
+		liege = d_yueshi4
+	}
+}
+
+c_haian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0493
+	}
+}
+
+c_haibu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0494
+	}
+}
+
+c_hailing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0495
+	}
+}
+
+c_haixi = {
+	3849.12.31 = {
+		holder = zhongwu1
+		liege = d_liangshishi
+	}
+}
+
+c_haiyan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0496
+	}
+}
+
+c_haiyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0497
+	}
+}
+
+c_haiyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0498
+		liege = d_donglaishi
+	}
+}
+
+c_haiyang2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0499
+	}
+}
+
+c_han = {
+	3849.12.31 = {
+		holder = dm_autoholder_0500
+	}
+}
+
+c_han1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0501
+		liege = k_huaguo
+	}
+}
+
+c_han3 = {
+	3849.12.31 = {
+		holder = jixinghanguo3
+		liege = k_hanguo2
+	}
+}
+
+c_han5 = {
+	3849.12.31 = {
+		holder = han3021
+		liege = k_hanguo1
+	}
+}
+
+c_han6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0502
+		liege = k_tongguo1
+	}
+}
+
+c_hanchang = {
+	3849.12.31 = {
+		holder = barenbaguo9
+		liege = d_xiangshi3
+	}
+}
+
+c_handan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0503
+		liege = k_sheguo
+	}
+}
+
+c_hanerzhuang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0504
+	}
+}
+
+c_hangao = {
+	3849.12.31 = {
+		holder = jixinghanhoushi1
+		liege = d_hanhoushi
+	}
+}
+
+c_hanguguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0505
+		liege = k_jiaoguo1
+	}
+}
+
+c_hanhui = {
+	3849.12.31 = {
+		holder = dm_autoholder_0506
+		liege = d_jishi9
+	}
+}
+
+c_hanjing = {
+	3849.12.31 = {
+		holder = yunxinghunrong16
+		liege = d_rongzhoushi
+	}
+}
+
+c_hanshan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0507
+	}
+}
+
+c_hanshou1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0508
+		liege = d_kuwujishi
+	}
+}
+
+c_hanye = {
+	3849.12.31 = {
+		holder = jixingshanboshi1
+		liege = d_shanboshi
+	}
+}
+
+c_hanyin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0509
+		liege = d_shenshi6
+	}
+}
+
+c_hao1 = {
+	3849.12.31 = {
+		holder = jixingdiguo13
+		liege = d_haoshi
+	}
+}
+
+c_hao3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0510
+		liege = d_xishi4
+	}
+}
+
+c_haoshang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0511
+		liege = k_zhongliguo
+	}
+}
+
+c_haowei = {
+	3849.12.31 = {
+		holder = dm_autoholder_0512
+		liege = d_jinchengshi
+	}
+}
+
+c_he = {
+	3849.12.31 = {
+		holder = niguo3
+		liege = d_xiashi1
+	}
+}
+
+c_he1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0513
+		liege = k_quanshi
+	}
+}
+
+c_hecheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0514
+	}
+}
+
+c_hechi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0515
+		liege = d_sanyishi
+	}
+}
+
+c_hecun = {
+	3849.12.31 = {
+		holder = dm_autoholder_0516
+	}
+}
+
+c_hehe = {
+	3849.12.31 = {
+		holder = dm_autoholder_0517
+		liege = d_yanfushi
+	}
+}
+
+c_hei = {
+	3849.12.31 = {
+		holder = zixingheiguo14
+		liege = k_heiguo
+	}
+}
+
+c_heixue = {
+	3849.12.31 = {
+		holder = dm_autoholder_0518
+	}
+}
+
+c_hejiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0519
+		liege = d_boshi1
+	}
+}
+
+c_helvcheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0520
+	}
+}
+
+c_hemao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0521
+	}
+}
+
+c_hemei = {
+	3849.12.31 = {
+		holder = dm_autoholder_0522
+	}
+}
+
+c_hemiao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0523
+	}
+}
+
+c_hemu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0524
+		liege = d_xiutushi
+	}
+}
+
+c_henei1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0525
+	}
+}
+
+c_heng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0526
+		liege = d_qianloushi
+	}
+}
+
+c_heng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0527
+		liege = k_geguo1
+	}
+}
+
+c_hengshan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0528
+	}
+}
+
+c_hequ = {
+	3849.12.31 = {
+		holder = dm_autoholder_0529
+	}
+}
+
+c_hequan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0530
+	}
+}
+
+c_heyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0531
+		liege = d_ashi
+	}
+}
+
+c_heyin = {
+	3849.12.31 = {
+		holder = han2676
+		liege = k_linhu
+	}
+}
+
+c_hezhou = {
+	3849.12.31 = {
+		holder = rangren3
+		liege = k_rangren
+	}
+}
+
+c_hong1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0532
+		liege = d_feishi2
+	}
+}
+
+c_hongkou = {
+	3849.12.31 = {
+		holder = han1263
+		liege = d_huashi2
+	}
+}
+
+c_hongmen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0533
+		liege = d_daweishi
+	}
+}
+
+c_hongshang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0534
+	}
+}
+
+c_hou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0535
+		liege = k_suguo
+	}
+}
+
+c_houjing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0536
+		liege = d_shunshi
+	}
+}
+
+c_houqiu = {
+	3849.12.31 = {
+		holder = zhongwu6
+		liege = d_houqiushi
+	}
+}
+
+c_houshi = {
+	3849.12.31 = {
+		holder = han674
+		liege = k_huaguo1
+	}
+}
+
+c_houzhi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0537
+	}
+}
+
+c_hu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0538
+		liege = d_tongchengshi
+	}
+}
+
+c_hu3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0539
+	}
+}
+
+c_hu4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0540
+	}
+}
+
+c_hu5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0541
+	}
+}
+
+c_hu6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0542
+	}
+}
+
+c_hua = {
+	3849.12.31 = {
+		holder = dm_autoholder_0543
+		liege = d_shasuishi
+	}
+}
+
+c_hua1 = {
+	3849.12.31 = {
+		holder = fengxinghuaguo10
+		liege = k_huaguo
+	}
+}
+
+c_hua3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0544
+		liege = k_zhuanyuguo
+	}
+}
+
+c_hua4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0545
+		liege = k_yongguo
+	}
+}
+
+c_huacheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0546
+		liege = d_fengshi2
+	}
+}
+
+c_huaian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0547
+	}
+}
+
+c_huaide1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0548
+		liege = k_pengxirong
+	}
+}
+
+c_huailing = {
+	3849.12.31 = {
+		holder = xiuyushi7
+		liege = d_xiuyushi
+	}
+}
+
+c_huaipu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0549
+	}
+}
+
+c_huaiyin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0550
+	}
+}
+
+c_huan1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0551
+	}
+}
+
+c_huan2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0552
+		liege = d_wuyishi
+	}
+}
+
+c_huandao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0553
+		liege = d_mianzhushi
+	}
+}
+
+c_huang = {
+	3849.12.31 = {
+		holder = qi9
+		liege = d_dongguoshi
+	}
+}
+
+c_huang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0554
+		liege = d_shasuishi
+	}
+}
+
+c_huang2 = {
+	3849.12.31 = {
+		holder = cangshi52
+		liege = d_yimenshi
+	}
+}
+
+c_huang4 = {
+	3849.12.31 = {
+		holder = taidaihuangshi47
+		liege = k_huangguo
+	}
+}
+
+c_huang5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0555
+	}
+}
+
+c_huang6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0556
+	}
+}
+
+c_huanggu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0557
+	}
+}
+
+c_huanggudao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0558
+	}
+}
+
+c_huanghuaguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0559
+	}
+}
+
+c_huangji = {
+	3849.12.31 = {
+		holder = dm_autoholder_0560
+	}
+}
+
+c_huangjin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0561
+		liege = d_chenggongshi
+	}
+}
+
+c_huangpu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0562
+	}
+}
+
+c_huangpu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0563
+	}
+}
+
+c_huangtuguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0564
+	}
+}
+
+c_huangya = {
+	3849.12.31 = {
+		holder = dm_autoholder_0565
+		liege = d_suoshi
+	}
+}
+
+c_huanyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0566
+		liege = k_linhu
+	}
+}
+
+c_huanyin = {
+	3849.12.31 = {
+		holder = weixingdaweishi2
+		liege = d_daweishi
+	}
+}
+
+c_huanyong = {
+	3849.12.31 = {
+		holder = baosuishi12
+		liege = d_bishi4
+	}
+}
+
+c_huanyuanguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0567
+		liege = k_huaguo1
+	}
+}
+
+c_huarong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0568
+	}
+}
+
+c_huating = {
+	3849.12.31 = {
+		holder = xizengguo17
+		liege = d_xigongshi
+	}
+}
+
+c_huating1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0569
+	}
+}
+
+c_huchi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0570
+		liege = d_lishi6
+	}
+}
+
+c_huchu = {
+	3849.12.31 = {
+		holder = taidaishenshi51
+		liege = d_zhangshi1
+	}
+}
+
+c_hudiyu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0571
+	}
+}
+
+c_hudiyu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0572
+	}
+}
+
+c_hudou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0573
+	}
+}
+
+c_hufu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0574
+		liege = d_huashi2
+	}
+}
+
+c_huguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0575
+		liege = d_puhushi
+	}
+}
+
+c_hui = {
+	3849.12.31 = {
+		holder = dm_autoholder_0576
+	}
+}
+
+c_huina = {
+	3849.12.31 = {
+		holder = dm_autoholder_0577
+	}
+}
+
+c_hukou1 = {
+	3849.12.31 = {
+		holder = yiqihushi1
+		liege = d_hushi1
+	}
+}
+
+c_hulu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0578
+	}
+}
+
+c_humeng = {
+	3849.12.31 = {
+		holder = linhuqiulinshi6
+		liege = d_qiumulinshi
+	}
+}
+
+c_hun = {
+	3849.12.31 = {
+		holder = kongtongshi21
+		liege = d_kongshi1
+	}
+}
+
+c_hunhuaizhang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0579
+		liege = d_duomashi
+	}
+}
+
+c_hunie = {
+	3849.12.31 = {
+		holder = weixingpuguo25
+		liege = d_puyushi
+	}
+}
+
+c_hunu = {
+	3849.12.31 = {
+		holder = han2301
+		liege = d_qishi3
+	}
+}
+
+c_huo = {
+	3849.12.31 = {
+		holder = han383
+		liege = k_huoguo
+	}
+}
+
+c_huo1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0580
+	}
+}
+
+c_huo3 = {
+	3849.12.31 = {
+		holder = zixinghuoguo10
+		liege = k_huoguo1
+	}
+}
+
+c_huoli = {
+	3849.12.31 = {
+		holder = dm_autoholder_0581
+	}
+}
+
+c_huoze = {
+	3849.12.31 = {
+		holder = dizushi10
+		liege = d_huoshi2
+	}
+}
+
+c_hupan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0582
+		liege = d_guirongshi
+	}
+}
+
+c_huqi = {
+	3849.12.31 = {
+		holder = jixinghushi6
+		liege = k_darong
+	}
+}
+
+c_huqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0583
+		liege = d_dongshanshi
+	}
+}
+
+c_huqiu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0584
+		liege = k_qusou
+	}
+}
+
+c_huqiu2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0585
+	}
+}
+
+c_huren = {
+	3849.12.31 = {
+		holder = dm_autoholder_0586
+	}
+}
+
+c_hushu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0587
+	}
+}
+
+c_husu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0588
+	}
+}
+
+c_hutai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0589
+		liege = k_languo
+	}
+}
+
+c_hutai1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0590
+	}
+}
+
+c_huye = {
+	3849.12.31 = {
+		holder = dm_autoholder_0591
+	}
+}
+
+c_ji1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0592
+		liege = d_yunshi1
+	}
+}
+
+c_ji10 = {
+	3849.12.31 = {
+		holder = jixinggongguo14
+		liege = d_jishi10
+	}
+}
+
+c_ji11 = {
+	3849.12.31 = {
+		holder = han2290
+		liege = k_jiguo4
+	}
+}
+
+c_ji12 = {
+	3849.12.31 = {
+		holder = yiqixingjishi10
+		liege = k_jiguo5
+	}
+}
+
+c_ji13 = {
+	3849.12.31 = {
+		holder = han3069
+		liege = k_jirong
+	}
+}
+
+c_ji14 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0593
+	}
+}
+
+c_ji18 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0594
+	}
+}
+
+c_ji19 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0595
+		liege = d_zhangshi1
+	}
+}
+
+c_ji2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0596
+		liege = d_longqiushi
+	}
+}
+
+c_ji20 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0597
+	}
+}
+
+c_ji3 = {
+	3849.12.31 = {
+		holder = han1024
+		liege = d_xiaoshishi
+	}
+}
+
+c_ji4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0598
+		liege = d_kongshi
+	}
+}
+
+c_ji5 = {
+	3849.12.31 = {
+		holder = han1300
+		liege = k_jiguo1
+	}
+}
+
+c_ji6 = {
+	3849.12.31 = {
+		holder = han1133
+		liege = k_jiguo2
+	}
+}
+
+c_ji9 = {
+	3849.12.31 = {
+		holder = qiangjiuru8
+		liege = d_jiushi
+	}
+}
+
+c_jia1 = {
+	3849.12.31 = {
+		holder = han1208
+		liege = k_miguo
+	}
+}
+
+c_jia2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0599
+	}
+}
+
+c_jiagu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0600
+		liege = d_dongloushi
+	}
+}
+
+c_jiahe = {
+	3849.12.31 = {
+		holder = dm_autoholder_0601
+	}
+}
+
+c_jiamao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0602
+	}
+}
+
+c_jian1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0603
+		liege = k_feiguo
+	}
+}
+
+c_jiancheng1 = {
+	3849.12.31 = {
+		holder = raoguo42
+		liege = d_shunshi
+	}
+}
+
+c_jiang = {
+	3849.12.31 = {
+		holder = han132
+		liege = k_jinguo1
+	}
+}
+
+c_jiang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0604
+	}
+}
+
+c_jiang2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0605
+	}
+}
+
+c_jiang3 = {
+	3849.12.31 = {
+		holder = han2829
+		liege = k_jiangguo
+	}
+}
+
+c_jiangan1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0606
+	}
+}
+
+c_jiangcheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0607
+	}
+}
+
+c_jiangdu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0608
+	}
+}
+
+c_jiange = {
+	3849.12.31 = {
+		holder = pingzhouguo9
+		liege = d_danshi2
+	}
+}
+
+c_jiangguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0609
+	}
+}
+
+c_jiangjin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0610
+	}
+}
+
+c_jiangling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0611
+	}
+}
+
+c_jiangpu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0612
+	}
+}
+
+c_jiangshi = {
+	3849.12.31 = {
+		holder = jiangshirong13
+		liege = k_jiangshizhirong
+	}
+}
+
+c_jiangshi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0613
+	}
+}
+
+c_jiangying = {
+	3849.12.31 = {
+		holder = dm_autoholder_0614
+	}
+}
+
+c_jiangyou = {
+	3849.12.31 = {
+		holder = dizuxiguo1
+		liege = d_gongshi2
+	}
+}
+
+c_jiangyuangong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0615
+	}
+}
+
+c_jiangzhao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0616
+	}
+}
+
+c_jianping = {
+	3849.12.31 = {
+		holder = dm_autoholder_0617
+		liege = k_meiguo
+	}
+}
+
+c_jianshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0618
+	}
+}
+
+c_jiantu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0619
+		liege = k_baoguo
+	}
+}
+
+c_jianyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0620
+		liege = k_biyangguo
+	}
+}
+
+c_jianyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0621
+	}
+}
+
+c_jianzhou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0622
+		liege = d_qishi2
+	}
+}
+
+c_jiao2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0623
+	}
+}
+
+c_jiao3 = {
+	3849.12.31 = {
+		holder = han1903
+		liege = k_jiaoguo1
+	}
+}
+
+c_jiao4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0624
+	}
+}
+
+c_jiao5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0625
+	}
+}
+
+c_jiao6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0626
+	}
+}
+
+c_jiaocheng = {
+	3849.12.31 = {
+		holder = han217
+		liege = d_yuanshi4
+	}
+}
+
+c_jiaojing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0627
+	}
+}
+
+c_jiaoqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0628
+	}
+}
+
+c_jiashi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0629
+	}
+}
+
+c_jiashi1 = {
+	3849.12.31 = {
+		holder = han2107
+		liege = k_jiashi
+	}
+}
+
+c_jiazhao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0630
+	}
+}
+
+c_jiazhuhuo = {
+	3849.12.31 = {
+		holder = dm_autoholder_0631
+	}
+}
+
+c_jibeizhong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0632
+	}
+}
+
+c_jie = {
+	3849.12.31 = {
+		holder = han754
+		liege = k_jieguo
+	}
+}
+
+c_jiegen = {
+	3849.12.31 = {
+		holder = jieguo24
+		liege = d_jiezhenshi
+	}
+}
+
+c_jieniao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0633
+		liege = d_wushi2
+	}
+}
+
+c_jiequan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0634
+		liege = d_guandongshi
+	}
+}
+
+c_jieshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0635
+	}
+}
+
+c_jiexiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0636
+		liege = k_binguo
+	}
+}
+
+c_jifu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0637
+	}
+}
+
+c_jijin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0638
+		liege = k_zuoguo
+	}
+}
+
+c_jilusai = {
+	3849.12.31 = {
+		holder = jusoushi88
+		liege = d_qujinshi
+	}
+}
+
+c_jima = {
+	3849.12.31 = {
+		holder = dm_autoholder_0639
+		liege = k_weiguo1
+	}
+}
+
+c_jin1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0640
+		liege = d_lishi5
+	}
+}
+
+c_jin3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0641
+	}
+}
+
+c_jin4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0642
+	}
+}
+
+c_jinan = {
+	3849.12.31 = {
+		holder = direnqiguo10
+		liege = d_zishi1
+	}
+}
+
+c_jing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0643
+		liege = k_kuaiguo
+	}
+}
+
+c_jing2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0644
+	}
+}
+
+c_jing5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0645
+		liege = d_nangongshi
+	}
+}
+
+c_jing6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0646
+	}
+}
+
+c_jingchi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0647
+	}
+}
+
+c_jingfu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0648
+	}
+}
+
+c_jingkou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0649
+	}
+}
+
+c_jingling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0650
+	}
+}
+
+c_jingpin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0651
+		liege = d_huyanshi
+	}
+}
+
+c_jinguai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0652
+	}
+}
+
+c_jingxingsai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0653
+		liege = d_chizhangshi
+	}
+}
+
+c_jingyang = {
+	3849.12.31 = {
+		holder = jixingdiaoguo1
+		liege = d_geshi2
+	}
+}
+
+c_jingyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0654
+		liege = d_shenshi2
+	}
+}
+
+c_jingyao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0655
+	}
+}
+
+c_jinjuguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0656
+	}
+}
+
+c_jinling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0657
+	}
+}
+
+c_jinmen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0658
+		liege = k_jurong
+	}
+}
+
+c_jinming = {
+	3849.12.31 = {
+		holder = jixingkaiguo11
+		liege = k_kaiguo
+	}
+}
+
+c_jinming1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0659
+	}
+}
+
+c_jinxiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0660
+	}
+}
+
+c_jinyang = {
+	3849.12.31 = {
+		holder = qiangjiuru2
+		liege = d_weiyushi
+	}
+}
+
+c_jinyin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0661
+		liege = k_gengguo
+	}
+}
+
+c_jiong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0662
+		liege = k_dizu
+	}
+}
+
+c_jipei = {
+	3849.12.31 = {
+		holder = han122
+		liege = d_jishi9
+	}
+}
+
+c_jipu = {
+	3849.12.31 = {
+		holder = sixingduanshi46
+		liege = d_jipushi
+	}
+}
+
+c_jiqiu = {
+	3849.12.31 = {
+		holder = zhuanguo3
+		liege = d_zhuqiushi
+	}
+}
+
+c_jiqiu1 = {
+	3849.12.31 = {
+		holder = han117
+		liege = k_jiguo3
+	}
+}
+
+c_jishi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0663
+		liege = d_huangfushi
+	}
+}
+
+c_jiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0664
+	}
+}
+
+c_jiuchu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0665
+	}
+}
+
+c_jiuhu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0666
+	}
+}
+
+c_jiuliangqi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0667
+	}
+}
+
+c_jiulong = {
+	3849.12.31 = {
+		holder = ranmangqian22
+		liege = d_qiandi
+	}
+}
+
+c_jiumen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0668
+		liege = d_shaoxishi
+	}
+}
+
+c_jiumi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0669
+	}
+}
+
+c_jiushijiuquan = {
+	3849.12.31 = {
+		holder = hengxingdairong5
+		liege = d_maoyushi
+	}
+}
+
+c_jiushuai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0670
+		liege = d_benshi
+	}
+}
+
+c_jiusiwudan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0671
+	}
+}
+
+c_jiuyan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0672
+	}
+}
+
+c_jiuyuan1 = {
+	3849.12.31 = {
+		holder = xiuhunzhuhe14
+		liege = d_heshi
+	}
+}
+
+c_jiuzhou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0673
+	}
+}
+
+c_jiuzi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0674
+	}
+}
+
+c_jiyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0675
+	}
+}
+
+c_jiyangsai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0676
+	}
+}
+
+c_jiying = {
+	3849.12.31 = {
+		holder = dm_autoholder_0677
+		liege = d_liangqiu
+	}
+}
+
+c_jizhang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0678
+		liege = d_gongloushi
+	}
+}
+
+c_ju = {
+	3849.12.31 = {
+		holder = han788
+		liege = k_juguo
+	}
+}
+
+c_ju1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0679
+		liege = k_jurong
+	}
+}
+
+c_ju2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0680
+		liege = k_gaoluo
+	}
+}
+
+c_ju3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0681
+		liege = k_duochen
+	}
+}
+
+c_juan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0682
+		liege = d_bishi4
+	}
+}
+
+c_juan1 = {
+	3849.12.31 = {
+		holder = jizhanshi1
+		liege = k_zhanguo1
+	}
+}
+
+c_juan2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0683
+	}
+}
+
+c_jucheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0684
+		liege = d_qishi3
+	}
+}
+
+c_juding = {
+	3849.12.31 = {
+		holder = dm_autoholder_0685
+		liege = d_pugushi
+	}
+}
+
+c_juemo = {
+	3849.12.31 = {
+		holder = dm_autoholder_0686
+	}
+}
+
+c_jufu = {
+	3849.12.31 = {
+		holder = han801
+		liege = d_jishi8
+	}
+}
+
+c_juju = {
+	3849.12.31 = {
+		holder = fengfu47
+		liege = d_fengshi5
+	}
+}
+
+c_jukou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0687
+	}
+}
+
+c_juling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0688
+		liege = d_zhuloushi
+	}
+}
+
+c_julu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0689
+		liege = k_jiguo3
+	}
+}
+
+c_jundu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0690
+		liege = d_jishi5
+	}
+}
+
+c_junhejun = {
+	3849.12.31 = {
+		holder = dm_autoholder_0691
+	}
+}
+
+c_junmi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0692
+	}
+}
+
+c_juntai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0693
+		liege = k_miguo
+	}
+}
+
+c_junxiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0694
+	}
+}
+
+c_jurong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0695
+	}
+}
+
+c_jushang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0696
+		liege = d_xuanshi1
+	}
+}
+
+c_jushi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0697
+	}
+}
+
+c_juyang1 = {
+	3849.12.31 = {
+		holder = zixingdaiguo2
+		liege = d_laishi2
+	}
+}
+
+c_juyang3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0698
+	}
+}
+
+c_juyang4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0699
+		liege = d_hanshi4
+	}
+}
+
+c_juyangchuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0700
+	}
+}
+
+c_juyong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0701
+	}
+}
+
+c_juyuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0702
+	}
+}
+
+c_juzhusai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0703
+		liege = d_lishi6
+	}
+}
+
+c_kaibian = {
+	3849.12.31 = {
+		holder = han4707
+		liege = k_boguo
+	}
+}
+
+c_kaizhou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0704
+		liege = d_dushi2
+	}
+}
+
+c_kan = {
+	3849.12.31 = {
+		holder = kanguo1099
+		liege = k_kanguo
+	}
+}
+
+c_kangjin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0705
+	}
+}
+
+c_kangqiu = {
+	3849.12.31 = {
+		holder = kangshi1
+		liege = d_kangshi
+	}
+}
+
+c_kankan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0706
+		liege = k_gongguo
+	}
+}
+
+c_ke = {
+	3849.12.31 = {
+		holder = muqiushi15
+		liege = d_xiguoshi
+	}
+}
+
+c_ke1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0707
+	}
+}
+
+c_ke2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0708
+		liege = d_yongrenshi
+	}
+}
+
+c_kedousijia = {
+	3849.12.31 = {
+		holder = dm_autoholder_0709
+	}
+}
+
+c_keihu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0710
+		liege = d_langshi
+	}
+}
+
+c_keting = {
+	3849.12.31 = {
+		holder = dm_autoholder_0711
+	}
+}
+
+c_kexi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0712
+	}
+}
+
+c_keye1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0713
+	}
+}
+
+c_kongtong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0714
+		liege = k_songguo
+	}
+}
+
+c_kongtongshi = {
+	3849.12.31 = {
+		holder = kongtongshi15
+		liege = k_kongtongshi
+	}
+}
+
+c_kongyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0715
+	}
+}
+
+c_ku = {
+	3849.12.31 = {
+		holder = dm_autoholder_0716
+	}
+}
+
+c_kuai = {
+	3849.12.31 = {
+		holder = han1474
+		liege = k_kuaiguo
+	}
+}
+
+c_kuang3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0717
+		liege = d_yuzhushi
+	}
+}
+
+c_kui = {
+	3849.12.31 = {
+		holder = dm_autoholder_0718
+	}
+}
+
+c_kuiqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0719
+		liege = k_rongguo
+	}
+}
+
+c_kuiying = {
+	3849.12.31 = {
+		holder = dm_autoholder_0720
+	}
+}
+
+c_kuizhou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0721
+	}
+}
+
+c_kuizi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0722
+		liege = k_yuguo2
+	}
+}
+
+c_kunshan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0723
+		liege = k_zhuguo1
+	}
+}
+
+c_kunshan1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0724
+	}
+}
+
+c_kunyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0725
+	}
+}
+
+c_lai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0726
+		liege = d_cuishi
+	}
+}
+
+c_lai2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0727
+	}
+}
+
+c_laizhu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0728
+	}
+}
+
+c_lan = {
+	3849.12.31 = {
+		holder = languo1
+		liege = k_languo
+	}
+}
+
+c_lan2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0729
+	}
+}
+
+c_lang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0730
+		liege = k_zhuguo3
+	}
+}
+
+c_langling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0731
+	}
+}
+
+c_langya = {
+	3849.12.31 = {
+		holder = jieguo38
+		liege = d_donggongshi
+	}
+}
+
+c_langyu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0732
+		liege = d_weiyushi
+	}
+}
+
+c_langzhou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0733
+		liege = d_jushi2
+	}
+}
+
+c_lankou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0734
+	}
+}
+
+c_lanshan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0735
+	}
+}
+
+c_lanxi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0736
+	}
+}
+
+c_lanyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0737
+	}
+}
+
+c_lanyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0738
+	}
+}
+
+c_laoling1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0739
+		liege = d_baimingshi
+	}
+}
+
+c_laoqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0740
+		liege = k_danguo
+	}
+}
+
+c_laoyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0741
+		liege = k_nanlvguo
+	}
+}
+
+c_lean = {
+	3849.12.31 = {
+		holder = dm_autoholder_0742
+		liege = k_soumanguo
+	}
+}
+
+c_lean1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0743
+	}
+}
+
+c_lean2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0744
+	}
+}
+
+c_lecheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0745
+	}
+}
+
+c_leichi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0746
+	}
+}
+
+c_lengshuiguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0747
+	}
+}
+
+c_lenv = {
+	3849.12.31 = {
+		holder = dm_autoholder_0748
+	}
+}
+
+c_leping = {
+	3849.12.31 = {
+		holder = dm_autoholder_0749
+		liege = d_chizhangshi
+	}
+}
+
+c_lexiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0750
+	}
+}
+
+c_lexu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0751
+		liege = d_yanshi3
+	}
+}
+
+c_li1 = {
+	3849.12.31 = {
+		holder = zhenguan33
+		liege = d_zhenguanshi
+	}
+}
+
+c_li10 = {
+	3849.12.31 = {
+		holder = han5859
+		liege = k_liguo1
+	}
+}
+
+c_li11 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0752
+		liege = d_nangongshi
+	}
+}
+
+c_li12 = {
+	3849.12.31 = {
+		holder = hengxinggushi1
+		liege = d_lishi5
+	}
+}
+
+c_li14 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0753
+	}
+}
+
+c_li15 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0754
+	}
+}
+
+c_li16 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0755
+	}
+}
+
+c_li17 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0756
+	}
+}
+
+c_li18 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0757
+	}
+}
+
+c_li19 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0758
+		liege = d_beiguoshi
+	}
+}
+
+c_li21 = {
+	3849.12.31 = {
+		holder = lituzhidi3
+		liege = k_lituzhidi
+	}
+}
+
+c_li22 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0759
+		liege = d_zongshi1
+	}
+}
+
+c_li25 = {
+	3849.12.31 = {
+		holder = taidaisishi47
+		liege = k_siguo
+	}
+}
+
+c_li3 = {
+	3849.12.31 = {
+		holder = han1255
+		liege = d_kongshi
+	}
+}
+
+c_li4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0760
+	}
+}
+
+c_li6 = {
+	3849.12.31 = {
+		holder = han3110
+		liege = k_lirong
+	}
+}
+
+c_li7 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0761
+		liege = k_quanrong1
+	}
+}
+
+c_lian2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0762
+	}
+}
+
+c_liancheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0763
+	}
+}
+
+c_liang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0764
+		liege = k_xunguo2
+	}
+}
+
+c_liang2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0765
+	}
+}
+
+c_liangfu = {
+	3849.12.31 = {
+		holder = qiguo19
+		liege = d_dongloushi
+	}
+}
+
+c_liangqi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0766
+		liege = d_weishengshi
+	}
+}
+
+c_liangqiu = {
+	3849.12.31 = {
+		holder = gaoguo6
+		liege = d_liangqiu
+	}
+}
+
+c_liangzou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0767
+		liege = d_gaoshi
+	}
+}
+
+c_lianshao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0768
+		liege = k_pengxirong
+	}
+}
+
+c_liantianguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0769
+	}
+}
+
+c_lianyu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0770
+		liege = k_zhanguo1
+	}
+}
+
+c_liao2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0771
+	}
+}
+
+c_liao3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0772
+	}
+}
+
+c_liao4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0773
+	}
+}
+
+c_liao5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0774
+	}
+}
+
+c_liaocheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0775
+		liege = d_qiaorushi
+	}
+}
+
+c_liaokou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0776
+	}
+}
+
+c_liaoyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0777
+		liege = k_jiashi
+	}
+}
+
+c_lidong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0778
+	}
+}
+
+c_lie = {
+	3849.12.31 = {
+		holder = han2702
+		liege = d_hutushi
+	}
+}
+
+c_liekou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0779
+	}
+}
+
+c_lieren = {
+	3849.12.31 = {
+		holder = dm_autoholder_0780
+		liege = d_jishi9
+	}
+}
+
+c_ligu = {
+	3849.12.31 = {
+		holder = han75
+		liege = d_feishi3
+	}
+}
+
+c_lin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0781
+		liege = k_zhongwuguo
+	}
+}
+
+c_lin1 = {
+	3849.12.31 = {
+		holder = xingguonangongshi9
+		liege = d_shangliangshi
+	}
+}
+
+c_lin3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0782
+	}
+}
+
+c_lin4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0783
+	}
+}
+
+c_lindu = {
+	3849.12.31 = {
+		holder = piguo16
+		liege = d_xishi3
+	}
+}
+
+c_ling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0784
+	}
+}
+
+c_lingbi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0785
+	}
+}
+
+c_lingbi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0786
+	}
+}
+
+c_lingchuang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0787
+		liege = d_duoshi1
+	}
+}
+
+c_lingfu = {
+	3849.12.31 = {
+		holder = lingfushi7
+		liege = k_lingfuguo
+	}
+}
+
+c_lingfu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0788
+	}
+}
+
+c_lingguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0789
+		liege = d_qingshi
+	}
+}
+
+c_linghu = {
+	3849.12.31 = {
+		holder = yishi57
+		liege = k_xunguo1
+	}
+}
+
+c_lingmen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0790
+		liege = d_yanshi4
+	}
+}
+
+c_lingpisai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0791
+	}
+}
+
+c_lingshou = {
+	3849.12.31 = {
+		holder = han2223
+		liege = d_shaoxishi
+	}
+}
+
+c_lingting = {
+	3849.12.31 = {
+		holder = dm_autoholder_0792
+	}
+}
+
+c_lingwu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0793
+		liege = k_xixiashi
+	}
+}
+
+c_linhe = {
+	3849.12.31 = {
+		holder = dm_autoholder_0794
+		liege = d_juqushi
+	}
+}
+
+c_linhu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0795
+	}
+}
+
+c_linhuai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0796
+		liege = k_xuguo
+	}
+}
+
+c_linjiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0797
+	}
+}
+
+c_linjing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0798
+		liege = d_shenshi2
+	}
+}
+
+c_linju = {
+	3849.12.31 = {
+		holder = dm_autoholder_0799
+	}
+}
+
+c_linle = {
+	3849.12.31 = {
+		holder = youqiongshi40
+		liege = k_chuguo
+	}
+}
+
+c_linlv = {
+	3849.12.31 = {
+		holder = dm_autoholder_0800
+		liege = d_shishi1
+	}
+}
+
+c_linping = {
+	3849.12.31 = {
+		holder = dm_autoholder_0801
+	}
+}
+
+c_linqiu = {
+	3849.12.31 = {
+		holder = renqin14
+		liege = d_linqiushi
+	}
+}
+
+c_linqu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0802
+		liege = d_xishi2
+	}
+}
+
+c_linqu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0803
+		liege = d_huishi1
+	}
+}
+
+c_linrong = {
+	3849.12.31 = {
+		holder = jusoushi82
+		liege = d_qufushi
+	}
+}
+
+c_linshui = {
+	3849.12.31 = {
+		holder = yunxingyanjingrong20
+		liege = d_yanfushi
+	}
+}
+
+c_linshui1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0804
+	}
+}
+
+c_linshui2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0805
+		liege = d_rangshi
+	}
+}
+
+c_lintao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0806
+	}
+}
+
+c_lintao1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0807
+		liege = d_shendushi
+	}
+}
+
+c_linzhang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0808
+		liege = d_beiqiushi
+	}
+}
+
+c_linzhen = {
+	3849.12.31 = {
+		holder = han2916
+		liege = d_lishi8
+	}
+}
+
+c_linzhou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0809
+		liege = d_cancongshi
+	}
+}
+
+c_liqingchuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0810
+	}
+}
+
+c_liqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0811
+	}
+}
+
+c_liqiu1 = {
+	3849.12.31 = {
+		holder = luziyinger6
+		liege = d_zongshi1
+	}
+}
+
+c_lishan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0812
+	}
+}
+
+c_lishui = {
+	3849.12.31 = {
+		holder = dm_autoholder_0813
+	}
+}
+
+c_litin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0814
+		liege = d_fengshi6
+	}
+}
+
+c_liu1 = {
+	3849.12.31 = {
+		holder = xueshi3
+		liege = d_zhishi
+	}
+}
+
+c_liu2 = {
+	3849.12.31 = {
+		holder = han1177
+		liege = d_yuanshi3
+	}
+}
+
+c_liu3 = {
+	3849.12.31 = {
+		holder = jixingliuguo9
+		liege = k_liuguo
+	}
+}
+
+c_liuquan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0815
+		liege = d_jishi
+	}
+}
+
+c_liushu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0816
+		liege = d_xiguoshi
+	}
+}
+
+c_liuyu = {
+	3849.12.31 = {
+		holder = han2098
+		liege = k_liuyushi
+	}
+}
+
+c_liwu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0817
+		liege = k_linguo
+	}
+}
+
+c_lixia = {
+	3849.12.31 = {
+		holder = dm_autoholder_0818
+		liege = k_tanguo
+	}
+}
+
+c_lixiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0819
+	}
+}
+
+c_lixing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0820
+		liege = d_hushi1
+	}
+}
+
+c_liyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0821
+	}
+}
+
+c_liyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0822
+	}
+}
+
+c_liyang3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0823
+	}
+}
+
+c_long = {
+	3849.12.31 = {
+		holder = zhuzao16
+		liege = d_longqiushi
+	}
+}
+
+c_long3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0824
+		liege = k_ruiguo
+	}
+}
+
+c_longchao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0825
+	}
+}
+
+c_longdui = {
+	3849.12.31 = {
+		holder = dm_autoholder_0826
+		liege = k_nifang
+	}
+}
+
+c_longkang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0827
+	}
+}
+
+c_longluo = {
+	3849.12.31 = {
+		holder = dm_autoholder_0828
+		liege = d_zhukeshi
+	}
+}
+
+c_longmen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0829
+		liege = k_ruiguo
+	}
+}
+
+c_longsang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0830
+		liege = d_yanshi6
+	}
+}
+
+c_longxiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0831
+		liege = k_jurong
+	}
+}
+
+c_longxing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0832
+	}
+}
+
+c_longze = {
+	3849.12.31 = {
+		holder = dm_autoholder_0833
+		liege = d_linqiushi
+	}
+}
+
+c_longzhong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0834
+	}
+}
+
+c_lou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0835
+		liege = d_puyushi
+	}
+}
+
+c_lou1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0836
+	}
+}
+
+c_loufan = {
+	3849.12.31 = {
+		holder = han2696
+		liege = k_loufan
+	}
+}
+
+c_loulin = {
+	3849.12.31 = {
+		holder = xu11
+		liege = d_jiangliangshi
+	}
+}
+
+c_louting = {
+	3849.12.31 = {
+		holder = dm_autoholder_0837
+		liege = d_ququeshi
+	}
+}
+
+c_louxian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0838
+		liege = d_lieshi
+	}
+}
+
+c_lu = {
+	3849.12.31 = {
+		holder = shiguo17
+		liege = d_lushi
+	}
+}
+
+c_lu2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0839
+		liege = d_ruanshi
+	}
+}
+
+c_lu3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0840
+	}
+}
+
+c_lu4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0841
+	}
+}
+
+c_lu5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0842
+	}
+}
+
+c_lu6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0843
+		liege = d_gengshi1
+	}
+}
+
+c_lu7 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0844
+	}
+}
+
+c_luanniao = {
+	3849.12.31 = {
+		holder = dayushi1
+		liege = d_yueshi4
+	}
+}
+
+c_luanyuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0845
+	}
+}
+
+c_lucheng1 = {
+	3849.12.31 = {
+		holder = yunxingbeitangshi14
+		liege = d_wujiushi
+	}
+}
+
+c_luguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0846
+	}
+}
+
+c_luhun = {
+	3849.12.31 = {
+		holder = yunxingluhunguo11
+		liege = k_luhunrong
+	}
+}
+
+c_luliu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0847
+		liege = d_linghushi
+	}
+}
+
+c_lunshi = {
+	3849.12.31 = {
+		holder = sixinglunshi3
+		liege = d_lunshi
+	}
+}
+
+c_luo = {
+	3849.12.31 = {
+		holder = han2703
+		liege = d_luoleishi
+	}
+}
+
+c_luo1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0848
+	}
+}
+
+c_luo2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0849
+	}
+}
+
+c_luodu = {
+	3849.12.31 = {
+		holder = yuzhirong1
+		liege = d_yuzhushi
+	}
+}
+
+c_luojiang = {
+	3849.12.31 = {
+		holder = ranmangqian8
+		liege = d_mangbu
+	}
+}
+
+c_luomo = {
+	3849.12.31 = {
+		holder = dm_autoholder_0850
+	}
+}
+
+c_luomu = {
+	3849.12.31 = {
+		holder = zuoduguo8
+		liege = d_dazuoshi
+	}
+}
+
+c_luorui = {
+	3849.12.31 = {
+		holder = dm_autoholder_0851
+	}
+}
+
+c_luoshan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0852
+	}
+}
+
+c_luotian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0853
+	}
+}
+
+c_luoxian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0854
+		liege = d_mangbu
+	}
+}
+
+c_luoxiao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0855
+		liege = k_gaoluo
+	}
+}
+
+c_luoyin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0856
+		liege = k_chongguo
+	}
+}
+
+c_lushan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0857
+		liege = d_dingzuoshi
+	}
+}
+
+c_lushang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0858
+		liege = d_liangqiu
+	}
+}
+
+c_lushang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0859
+	}
+}
+
+c_lushi = {
+	3849.12.31 = {
+		holder = han2084
+		liege = k_luzi
+	}
+}
+
+c_lushi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0860
+	}
+}
+
+c_lusi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0861
+		liege = k_beitangguo
+	}
+}
+
+c_luxiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0862
+		liege = d_shuangjiushi1
+	}
+}
+
+c_luxingsai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0863
+		liege = k_luzi
+	}
+}
+
+c_luyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0864
+	}
+}
+
+c_luyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0865
+	}
+}
+
+c_luzhong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0866
+	}
+}
+
+c_luzhou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0867
+		liege = d_hongtashi
+	}
+}
+
+c_lv = {
+	3849.12.31 = {
+		holder = dm_autoholder_0868
+		liege = d_xishi3
+	}
+}
+
+c_lv2 = {
+	3849.12.31 = {
+		holder = xilvguo3258
+		liege = k_lvguo
+	}
+}
+
+c_lv3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0869
+	}
+}
+
+c_lv4 = {
+	3849.12.31 = {
+		holder = han3258
+		liege = k_nanlvguo
+	}
+}
+
+c_lv5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0870
+	}
+}
+
+c_lvcheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0871
+	}
+}
+
+c_lvepang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0872
+		liege = d_bailuanshi
+	}
+}
+
+c_ma1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0873
+		liege = k_loufan
+	}
+}
+
+c_ma2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0874
+	}
+}
+
+c_ma3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0875
+	}
+}
+
+c_macheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0876
+		liege = k_dairong
+	}
+}
+
+c_maicheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0877
+	}
+}
+
+c_maichouli = {
+	3849.12.31 = {
+		holder = dm_autoholder_0878
+	}
+}
+
+c_malin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0879
+		liege = d_hunyeshi
+	}
+}
+
+c_maling2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0880
+		liege = d_chidinieshi
+	}
+}
+
+c_maling3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0881
+		liege = k_zhanguo1
+	}
+}
+
+c_mang = {
+	3849.12.31 = {
+		holder = mangguo14
+		liege = k_mangguo
+	}
+}
+
+c_mangcheguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0882
+		liege = k_jiashi
+	}
+}
+
+c_mangdang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0883
+		liege = k_mangguo
+	}
+}
+
+c_manggu = {
+	3849.12.31 = {
+		holder = yunxinghunrong21
+		liege = d_dangyushi
+	}
+}
+
+c_manjia = {
+	3849.12.31 = {
+		holder = han2240
+		liege = d_chisongshi
+	}
+}
+
+c_manshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0884
+	}
+}
+
+c_mantaoer = {
+	3849.12.31 = {
+		holder = dm_autoholder_0885
+	}
+}
+
+c_mao = {
+	3849.12.31 = {
+		holder = han1067
+		liege = k_maoguo
+	}
+}
+
+c_mao1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0886
+	}
+}
+
+c_mao3 = {
+	3849.12.31 = {
+		holder = han460
+		liege = k_maoguo1
+	}
+}
+
+c_mao6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0887
+		liege = d_guaishi
+	}
+}
+
+c_maoer = {
+	3849.12.31 = {
+		holder = dm_autoholder_0888
+		liege = d_maoyushi
+	}
+}
+
+c_maorong = {
+	3849.12.31 = {
+		holder = maorong10
+		liege = k_maorong
+	}
+}
+
+c_maoshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0889
+		liege = d_yushi8
+	}
+}
+
+c_mashou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0890
+		liege = k_chouyouguo
+	}
+}
+
+c_matu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0891
+	}
+}
+
+c_mei = {
+	3849.12.31 = {
+		holder = dm_autoholder_0892
+		liege = d_gongdushi
+	}
+}
+
+c_mei1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0893
+		liege = d_yousongshi
+	}
+}
+
+c_mei2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0894
+		liege = k_jiangshizhirong
+	}
+}
+
+c_mei4 = {
+	3849.12.31 = {
+		holder = han196
+		liege = d_sunshi
+	}
+}
+
+c_mei5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0895
+	}
+}
+
+c_mei6 = {
+	3849.12.31 = {
+		holder = mei11
+		liege = k_meiguo
+	}
+}
+
+c_meiying = {
+	3849.12.31 = {
+		holder = dm_autoholder_0896
+	}
+}
+
+c_meizhinai = {
+	3849.12.31 = {
+		holder = dm_autoholder_0897
+	}
+}
+
+c_meizhou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0898
+		liege = d_danlishi
+	}
+}
+
+c_meng = {
+	3849.12.31 = {
+		holder = han943
+		liege = d_mengshi
+	}
+}
+
+c_meng2 = {
+	3849.12.31 = {
+		holder = caoguo6
+		liege = d_mengshi1
+	}
+}
+
+c_meng3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0899
+		liege = k_shanguo
+	}
+}
+
+c_meng4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0900
+	}
+}
+
+c_mengmen = {
+	3849.12.31 = {
+		holder = dm_autoholder_0901
+		liege = k_fanguo1
+	}
+}
+
+c_menyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0902
+	}
+}
+
+c_mi4 = {
+	3849.12.31 = {
+		holder = han3451
+		liege = k_miguo1
+	}
+}
+
+c_mi5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0903
+	}
+}
+
+c_mi6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0904
+	}
+}
+
+c_mi7 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0905
+	}
+}
+
+c_mian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0906
+	}
+}
+
+c_mian1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0907
+	}
+}
+
+c_mianchi = {
+	3849.12.31 = {
+		holder = jixingxiguoguo1
+		liege = d_shangyangshi
+	}
+}
+
+c_mianshui1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0908
+		liege = d_boshi1
+	}
+}
+
+c_miansi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0909
+		liege = d_qiandi
+	}
+}
+
+c_mianyang = {
+	3849.12.31 = {
+		holder = sixingbaoguo3
+		liege = d_nanmenshi
+	}
+}
+
+c_mianzhu = {
+	3849.12.31 = {
+		holder = han3080
+		liege = k_mianzhurong
+	}
+}
+
+c_mianzhu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0910
+		liege = d_baicaoqiang
+	}
+}
+
+c_miao = {
+	3849.12.31 = {
+		holder = maorong15
+		liege = d_miaoshi
+	}
+}
+
+c_micang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0911
+		liege = d_fanshi5
+	}
+}
+
+c_mie = {
+	3849.12.31 = {
+		holder = dm_autoholder_0912
+		liege = d_zhongshi
+	}
+}
+
+c_mijiaduo = {
+	3849.12.31 = {
+		holder = dm_autoholder_0913
+	}
+}
+
+c_min = {
+	3849.12.31 = {
+		holder = maodishi1
+		liege = d_kanfushi
+	}
+}
+
+c_min1 = {
+	3849.12.31 = {
+		holder = jixingxiaguo8
+		liege = d_xiagongshi1
+	}
+}
+
+c_ming1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0914
+	}
+}
+
+c_mingcaoyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0915
+	}
+}
+
+c_minge = {
+	3849.12.31 = {
+		holder = dm_autoholder_0916
+	}
+}
+
+c_mingling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0917
+	}
+}
+
+c_minglu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0918
+	}
+}
+
+c_mingyan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0919
+		liege = d_zaishi
+	}
+}
+
+c_mingyu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0920
+		liege = d_gengshi2
+	}
+}
+
+c_mixian = {
+	3849.12.31 = {
+		holder = dm_autoholder_0921
+		liege = d_qiushi1
+	}
+}
+
+c_mixu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0922
+		liege = d_guaishi
+	}
+}
+
+c_mo = {
+	3849.12.31 = {
+		holder = jixingmoshi5
+		liege = k_moguo
+	}
+}
+
+c_mo1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0923
+		liege = k_qiangjiuru
+	}
+}
+
+c_mocheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0924
+	}
+}
+
+c_modaoyu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0925
+	}
+}
+
+c_mogexiqi = {
+	3849.12.31 = {
+		holder = xixiashi61
+		liege = d_quanwushi
+	}
+}
+
+c_moling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0926
+	}
+}
+
+c_moluo = {
+	3849.12.31 = {
+		holder = dm_autoholder_0927
+	}
+}
+
+c_mou = {
+	3849.12.31 = {
+		holder = han826
+		liege = k_mouguo
+	}
+}
+
+c_moulou = {
+	3849.12.31 = {
+		holder = zhuguo3
+		liege = d_qianloushi
+	}
+}
+
+c_moyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0928
+	}
+}
+
+c_mozang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0929
+		liege = d_dangyushi
+	}
+}
+
+c_mu = {
+	3849.12.31 = {
+		holder = jixinggongguo10
+		liege = d_mushi
+	}
+}
+
+c_mu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0930
+	}
+}
+
+c_muhang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0931
+		liege = d_donggongshi
+	}
+}
+
+c_mulan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0932
+	}
+}
+
+c_mulingguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0933
+	}
+}
+
+c_mulingguan1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0934
+		liege = d_pingshi
+	}
+}
+
+c_muping = {
+	3849.12.31 = {
+		holder = dm_autoholder_0935
+		liege = d_laishi
+	}
+}
+
+c_muqiu = {
+	3849.12.31 = {
+		holder = muqiushi4
+		liege = d_muqiushi
+	}
+}
+
+c_muxu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0936
+	}
+}
+
+c_muye = {
+	3849.12.31 = {
+		holder = dm_autoholder_0937
+		liege = d_jishi10
+	}
+}
+
+c_na1 = {
+	3849.12.31 = {
+		holder = baipunaguo4
+		liege = k_naguo
+	}
+}
+
+c_nachu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0938
+	}
+}
+
+c_nanchang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0939
+	}
+}
+
+c_nanchao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0940
+	}
+}
+
+c_nandun = {
+	3849.12.31 = {
+		holder = dm_autoholder_0941
+	}
+}
+
+c_nangang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0942
+	}
+}
+
+c_nangang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0943
+		liege = d_hunyeshi
+	}
+}
+
+c_nangong = {
+	3849.12.31 = {
+		holder = xingguonangongshi2
+		liege = d_nangongshi
+	}
+}
+
+c_nanjiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0944
+	}
+}
+
+c_nanpi = {
+	3849.12.31 = {
+		holder = youqiongshi46
+		liege = d_chushi
+	}
+}
+
+c_nanpu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0945
+	}
+}
+
+c_nanqu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0946
+		liege = d_jipushi
+	}
+}
+
+c_nanqu1 = {
+	3849.12.31 = {
+		holder = jixingqushi529
+		liege = k_quguo
+	}
+}
+
+c_nansha = {
+	3849.12.31 = {
+		holder = dm_autoholder_0947
+	}
+}
+
+c_nanshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0948
+	}
+}
+
+c_nanwucheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0949
+	}
+}
+
+c_nanxi = {
+	3849.12.31 = {
+		holder = boren4
+		liege = d_ashi
+	}
+}
+
+c_nanxing = {
+	3849.12.31 = {
+		holder = dm_autoholder_0950
+		liege = k_linhu
+	}
+}
+
+c_nanxingtang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0951
+		liege = k_xianyu
+	}
+}
+
+c_nanzhang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0952
+	}
+}
+
+c_nanzheng = {
+	3849.12.31 = {
+		holder = han3375
+		liege = d_chenggongshi
+	}
+}
+
+c_nawei = {
+	3849.12.31 = {
+		holder = dm_autoholder_0953
+	}
+}
+
+c_naxu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0954
+	}
+}
+
+c_neibeili = {
+	3849.12.31 = {
+		holder = dm_autoholder_0955
+	}
+}
+
+c_neihuang = {
+	3849.12.31 = {
+		holder = han200
+		liege = d_ningshi
+	}
+}
+
+c_ni = {
+	3849.12.31 = {
+		holder = niguo1
+		liege = k_niguo
+	}
+}
+
+c_nie = {
+	3849.12.31 = {
+		holder = cangshi59
+		liege = d_cangshi
+	}
+}
+
+c_nie1 = {
+	3849.12.31 = {
+		holder = han5525
+		liege = d_chidinieshi
+	}
+}
+
+c_niesang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0956
+		liege = d_zhishi
+	}
+}
+
+c_nieyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0957
+		liege = k_nanlvguo
+	}
+}
+
+c_ning = {
+	3849.12.31 = {
+		holder = dm_autoholder_0958
+		liege = d_xiagongshi1
+	}
+}
+
+c_ningguo = {
+	3849.12.31 = {
+		holder = dm_autoholder_0959
+	}
+}
+
+c_ningling = {
+	3849.12.31 = {
+		holder = han1429
+		liege = k_geguo1
+	}
+}
+
+c_ningping = {
+	3849.12.31 = {
+		holder = dm_autoholder_0960
+	}
+}
+
+c_ningwu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0961
+		liege = k_tenguo
+	}
+}
+
+c_ningxinzhong = {
+	3849.12.31 = {
+		holder = dm_autoholder_0962
+		liege = d_kangshi
+	}
+}
+
+c_ningyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0963
+		liege = d_yunshi2
+	}
+}
+
+c_niulan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0964
+	}
+}
+
+c_nixia = {
+	3849.12.31 = {
+		holder = dm_autoholder_0965
+		liege = d_ashi
+	}
+}
+
+c_niyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0966
+		liege = k_quanrong1
+	}
+}
+
+c_nuke = {
+	3849.12.31 = {
+		holder = dm_autoholder_0967
+	}
+}
+
+c_nunaijiuwan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0968
+	}
+}
+
+c_nuren = {
+	3849.12.31 = {
+		holder = nuren3
+		liege = k_nuren
+	}
+}
+
+c_nvqi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0969
+	}
+}
+
+c_nvyin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0970
+	}
+}
+
+c_ouyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0971
+	}
+}
+
+c_pandao = {
+	3849.12.31 = {
+		holder = barenbaguo2
+		liege = d_fanshi5
+	}
+}
+
+c_pang = {
+	3849.12.31 = {
+		holder = jixingruiguo1
+		liege = d_pangshi
+	}
+}
+
+c_pang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0972
+	}
+}
+
+c_pang2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0973
+		liege = d_lvshi1
+	}
+}
+
+c_pangan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0974
+	}
+}
+
+c_panshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_0975
+		liege = d_boguanshi
+	}
+}
+
+c_peizhou = {
+	3849.12.31 = {
+		holder = nuren9
+		liege = d_hageishi
+	}
+}
+
+c_peng = {
+	3849.12.31 = {
+		holder = weixingpengguo10
+		liege = k_pengguo1
+	}
+}
+
+c_peng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0976
+	}
+}
+
+c_peng2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0977
+		liege = k_tongguo1
+	}
+}
+
+c_pengcheng = {
+	3849.12.31 = {
+		holder = han1516
+		liege = k_pengguo
+	}
+}
+
+c_pengshan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0978
+		liege = d_yufushi
+	}
+}
+
+c_pengya = {
+	3849.12.31 = {
+		holder = dm_autoholder_0979
+		liege = d_fushi1
+	}
+}
+
+c_pengyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0980
+		liege = d_shentushi
+	}
+}
+
+c_pi = {
+	3849.12.31 = {
+		holder = xiangguo19
+		liege = d_bishi2
+	}
+}
+
+c_pi1 = {
+	3849.12.31 = {
+		holder = piguo10
+		liege = k_piguo
+	}
+}
+
+c_pi3 = {
+	3849.12.31 = {
+		holder = han5324
+		liege = k_shuguo2
+	}
+}
+
+c_pifeng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0981
+	}
+}
+
+c_pikou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0982
+	}
+}
+
+c_pilao = {
+	3849.12.31 = {
+		holder = dm_autoholder_0983
+		liege = k_baguo
+	}
+}
+
+c_pilou = {
+	3849.12.31 = {
+		holder = dm_autoholder_0984
+	}
+}
+
+c_ping1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0985
+		liege = d_zhoushi
+	}
+}
+
+c_ping2 = {
+	3849.12.31 = {
+		holder = cangshi43
+		liege = k_cangguo
+	}
+}
+
+c_ping3 = {
+	3849.12.31 = {
+		holder = taidairushi47
+		liege = k_ruguo
+	}
+}
+
+c_pinga = {
+	3849.12.31 = {
+		holder = dm_autoholder_0986
+	}
+}
+
+c_pingan = {
+	3849.12.31 = {
+		holder = dm_autoholder_0987
+	}
+}
+
+c_pingchang2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0988
+		liege = k_hanguo2
+	}
+}
+
+c_pingcheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_0989
+		liege = d_beiyinshi
+	}
+}
+
+c_pingcheng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_0990
+		liege = d_qiushi1
+	}
+}
+
+c_pingchun = {
+	3849.12.31 = {
+		holder = dm_autoholder_0991
+	}
+}
+
+c_pingdu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0992
+		liege = d_tangshi1
+	}
+}
+
+c_pingdu1 = {
+	3849.12.31 = {
+		holder = hengxingchouyoushi1
+		liege = d_qiuwushi
+	}
+}
+
+c_pingdu2 = {
+	3849.12.31 = {
+		holder = han2911
+		liege = k_dalirong
+	}
+}
+
+c_pinggang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0993
+	}
+}
+
+c_pinggu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0994
+		liege = d_qishi3
+	}
+}
+
+c_pingli = {
+	3849.12.31 = {
+		holder = dm_autoholder_0995
+	}
+}
+
+c_pingliang = {
+	3849.12.31 = {
+		holder = dm_autoholder_0996
+		liege = d_zengshi1
+	}
+}
+
+c_pinglin = {
+	3849.12.31 = {
+		holder = dm_autoholder_0997
+	}
+}
+
+c_pingling = {
+	3849.12.31 = {
+		holder = dm_autoholder_0998
+		liege = d_guoshi1
+	}
+}
+
+c_pinglu = {
+	3849.12.31 = {
+		holder = dm_autoholder_0999
+		liege = d_fushi
+	}
+}
+
+c_pinglu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1000
+		liege = d_huyanshi
+	}
+}
+
+c_pingqiu = {
+	3849.12.31 = {
+		holder = fengfu42
+		liege = k_fengfuguo
+	}
+}
+
+c_pingquan1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1001
+	}
+}
+
+c_pingrong = {
+	3849.12.31 = {
+		holder = yuzhirong6
+		liege = d_yuyuanzhenshi
+	}
+}
+
+c_pingshan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1002
+		liege = d_fanwushi
+	}
+}
+
+c_pingshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1003
+	}
+}
+
+c_pingshi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1004
+	}
+}
+
+c_pingxiang1 = {
+	3849.12.31 = {
+		holder = mianzhurong5
+		liege = d_wuyishi
+	}
+}
+
+c_pingyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1005
+		liege = d_yanshi5
+	}
+}
+
+c_pingyang4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1006
+		liege = k_guguo1
+	}
+}
+
+c_pingyin1 = {
+	3849.12.31 = {
+		holder = zixingdaiguo9
+		liege = d_beiyinshi
+	}
+}
+
+c_pingzhou1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1007
+		liege = k_huoguo
+	}
+}
+
+c_pingzhou2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1008
+		liege = k_xiluoguirong
+	}
+}
+
+c_pinyang = {
+	3849.12.31 = {
+		holder = han2001
+		liege = k_pengxirong
+	}
+}
+
+c_pishao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1009
+		liege = d_dongshanshi
+	}
+}
+
+c_pishi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1010
+		liege = d_linqiushi1
+	}
+}
+
+c_pixie = {
+	3849.12.31 = {
+		holder = dm_autoholder_1011
+	}
+}
+
+c_pu2 = {
+	3849.12.31 = {
+		holder = weixingpuguo20
+		liege = k_puguo
+	}
+}
+
+c_puban = {
+	3849.12.31 = {
+		holder = dm_autoholder_1012
+		liege = d_lishi7
+	}
+}
+
+c_pugu = {
+	3849.12.31 = {
+		holder = qi46
+		liege = d_pugushi
+	}
+}
+
+c_puhu = {
+	3849.12.31 = {
+		holder = liuxu1
+		liege = d_puhushi
+	}
+}
+
+c_puhuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1013
+		liege = d_yueshi4
+	}
+}
+
+c_pusao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1014
+	}
+}
+
+c_pusui = {
+	3849.12.31 = {
+		holder = dm_autoholder_1015
+		liege = d_jiangliangshi
+	}
+}
+
+c_putao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1016
+	}
+}
+
+c_puxing = {
+	3849.12.31 = {
+		holder = dm_autoholder_1017
+		liege = k_puguo
+	}
+}
+
+c_puyuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1018
+	}
+}
+
+c_qi = {
+	3849.12.31 = {
+		holder = han251
+		liege = k_qiguo1
+	}
+}
+
+c_qi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1019
+		liege = k_yuguo
+	}
+}
+
+c_qi10 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1020
+	}
+}
+
+c_qi11 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1021
+		liege = d_hanshi3
+	}
+}
+
+c_qi12 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1022
+		liege = k_xueguo
+	}
+}
+
+c_qi13 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1023
+	}
+}
+
+c_qi18 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1024
+	}
+}
+
+c_qi2 = {
+	3849.12.31 = {
+		holder = zhushi3
+		liege = d_zhushi4
+	}
+}
+
+c_qi3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1025
+	}
+}
+
+c_qi4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1026
+		liege = d_youshi2
+	}
+}
+
+c_qi5 = {
+	3849.12.31 = {
+		holder = wuguan41
+		liege = d_yushi7
+	}
+}
+
+c_qi7 = {
+	3849.12.31 = {
+		holder = han2832
+		liege = d_longshi
+	}
+}
+
+c_qi8 = {
+	3849.12.31 = {
+		holder = yiqixingjishi15
+		liege = d_qishi1
+	}
+}
+
+c_qi9 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1027
+		liege = d_lvshi1
+	}
+}
+
+c_qian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1028
+		liege = d_renshi
+	}
+}
+
+c_qian1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1029
+		liege = d_changshi1
+	}
+}
+
+c_qian2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1030
+		liege = d_bingshi
+	}
+}
+
+c_qian3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1031
+	}
+}
+
+c_qian4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1032
+	}
+}
+
+c_qianan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1033
+	}
+}
+
+c_qiangjiuru = {
+	3849.12.31 = {
+		holder = han2115
+		liege = k_qiangjiuru
+	}
+}
+
+c_qiangren = {
+	3849.12.31 = {
+		holder = dm_autoholder_1034
+		liege = d_shangyangshi
+	}
+}
+
+c_qiangyin = {
+	3849.12.31 = {
+		holder = han2621
+		liege = d_helaishi
+	}
+}
+
+c_qianhou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1035
+		liege = d_beiqiushi
+	}
+}
+
+c_qianmu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1036
+		liege = k_caozhongzhirong
+	}
+}
+
+c_qiansheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1037
+		liege = k_soumanguo
+	}
+}
+
+c_qianwei = {
+	3849.12.31 = {
+		holder = gushuguo89
+		liege = d_cancongshi
+	}
+}
+
+c_qianweizhihui = {
+	3849.12.31 = {
+		holder = dm_autoholder_1038
+		liege = d_xiaoguoshi
+	}
+}
+
+c_qianxi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1039
+	}
+}
+
+c_qianyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1040
+		liege = d_xiaoguoshi
+	}
+}
+
+c_qianyu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1041
+	}
+}
+
+c_qianyuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1042
+		liege = d_bingshi
+	}
+}
+
+c_qianzou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1043
+		liege = d_tangshi1
+	}
+}
+
+c_qiao = {
+	3849.12.31 = {
+		holder = hengxinggushi6
+		liege = d_qiaoshi
+	}
+}
+
+c_qiaoduo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1044
+	}
+}
+
+c_qicheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1045
+	}
+}
+
+c_qichun = {
+	3849.12.31 = {
+		holder = dm_autoholder_1046
+	}
+}
+
+c_qiduo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1047
+	}
+}
+
+c_qie = {
+	3849.12.31 = {
+		holder = dm_autoholder_1048
+	}
+}
+
+c_qie1 = {
+	3849.12.31 = {
+		holder = lituzhidi9
+		liege = d_duanshi1
+	}
+}
+
+c_qiepi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1049
+	}
+}
+
+c_qifeng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1050
+		liege = d_lvshi2
+	}
+}
+
+c_qijie = {
+	3849.12.31 = {
+		holder = han2705
+		liege = d_huyanshi
+	}
+}
+
+c_qikou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1051
+	}
+}
+
+c_qin1 = {
+	3849.12.31 = {
+		holder = renqin8
+		liege = k_qinguo
+	}
+}
+
+c_qin2 = {
+	3849.12.31 = {
+		holder = han2871
+		liege = k_qinguo1
+	}
+}
+
+c_qing = {
+	3849.12.31 = {
+		holder = dm_autoholder_1052
+		liege = k_shiguo
+	}
+}
+
+c_qing2 = {
+	3849.12.31 = {
+		holder = han1138
+		liege = d_jigongshi
+	}
+}
+
+c_qing3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1053
+		liege = d_muqiushi
+	}
+}
+
+c_qingni = {
+	3849.12.31 = {
+		holder = dm_autoholder_1054
+		liege = k_miguo1
+	}
+}
+
+c_qingqiuze = {
+	3849.12.31 = {
+		holder = dm_autoholder_1055
+	}
+}
+
+c_qingtan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1056
+	}
+}
+
+c_qingten = {
+	3849.12.31 = {
+		holder = dm_autoholder_1057
+	}
+}
+
+c_qingxi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1058
+	}
+}
+
+c_qingyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1059
+		liege = d_danlishi
+	}
+}
+
+c_qingyi1 = {
+	3849.12.31 = {
+		holder = han4729
+		liege = k_qingyiqiang
+	}
+}
+
+c_qingyuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1060
+		liege = k_pengguo1
+	}
+}
+
+c_qining = {
+	3849.12.31 = {
+		holder = dm_autoholder_1061
+	}
+}
+
+c_qinqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1062
+	}
+}
+
+c_qinshe = {
+	3849.12.31 = {
+		holder = dm_autoholder_1063
+	}
+}
+
+c_qinyuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1064
+	}
+}
+
+c_qiong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1065
+	}
+}
+
+c_qiongzhou = {
+	3849.12.31 = {
+		holder = qingyiqiang9
+		liege = d_huojingshi
+	}
+}
+
+c_qipan = {
+	3849.12.31 = {
+		holder = han4765
+		liege = d_kuwujishi
+	}
+}
+
+c_qiqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1066
+	}
+}
+
+c_qishan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1067
+	}
+}
+
+c_qishi = {
+	3849.12.31 = {
+		holder = tiaorong20
+		liege = d_benshi
+	}
+}
+
+c_qitu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1068
+	}
+}
+
+c_qiu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1069
+		liege = d_shuangshi
+	}
+}
+
+c_qiu2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1070
+	}
+}
+
+c_qiuci = {
+	3849.12.31 = {
+		holder = dm_autoholder_1071
+		liege = d_daweishi
+	}
+}
+
+c_qiujun = {
+	3849.12.31 = {
+		holder = dm_autoholder_1072
+	}
+}
+
+c_qiumo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1073
+	}
+}
+
+c_qiutian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1074
+	}
+}
+
+c_qiuyou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1075
+		liege = d_baimingshi
+	}
+}
+
+c_qiuyu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1076
+		liege = d_dongguoshi
+	}
+}
+
+c_qiuyu1 = {
+	3849.12.31 = {
+		holder = han81
+		liege = d_zangsunshi
+	}
+}
+
+c_qixi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1077
+	}
+}
+
+c_qixiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1078
+		liege = d_huashi2
+	}
+}
+
+c_qiyuan = {
+	3849.12.31 = {
+		holder = han2982
+		liege = k_quanrong1
+	}
+}
+
+c_qizhi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1079
+		liege = d_xishi5
+	}
+}
+
+c_qu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1080
+		liege = k_zhuqiguo
+	}
+}
+
+c_quan = {
+	3849.12.31 = {
+		holder = yunxingquanrong3
+		liege = k_quanrong
+	}
+}
+
+c_quan1 = {
+	3849.12.31 = {
+		holder = chidiquanshi8
+		liege = k_quanshi
+	}
+}
+
+c_quan3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1081
+	}
+}
+
+c_quanqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1082
+		liege = d_kongshi
+	}
+}
+
+c_quchi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1083
+		liege = k_zhuguo2
+	}
+}
+
+c_quean = {
+	3849.12.31 = {
+		holder = dm_autoholder_1084
+	}
+}
+
+c_quechuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1085
+	}
+}
+
+c_quegong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1086
+		liege = k_yuwushi
+	}
+}
+
+c_queling = {
+	3849.12.31 = {
+		holder = dm_autoholder_1087
+	}
+}
+
+c_quesai = {
+	3849.12.31 = {
+		holder = dm_autoholder_1088
+		liege = k_ganguo
+	}
+}
+
+c_queyu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1089
+		liege = d_puhushi
+	}
+}
+
+c_queyu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1090
+		liege = d_chidinieshi
+	}
+}
+
+c_queyu2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1091
+		liege = d_qiuwushi
+	}
+}
+
+c_qufu = {
+	3849.12.31 = {
+		holder = han70
+		liege = k_luguo
+	}
+}
+
+c_quji = {
+	3849.12.31 = {
+		holder = dm_autoholder_1092
+		liege = k_daiguo
+	}
+}
+
+c_qujiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1093
+		liege = d_pushi1
+	}
+}
+
+c_qujin = {
+	3849.12.31 = {
+		holder = dm_autoholder_1094
+	}
+}
+
+c_quliang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1095
+		liege = d_wugaoshi
+	}
+}
+
+c_quliang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1096
+		liege = k_jiguo3
+	}
+}
+
+c_qulv = {
+	3849.12.31 = {
+		holder = han1623
+		liege = d_feishi2
+	}
+}
+
+c_quni = {
+	3849.12.31 = {
+		holder = zixingnishi15
+		liege = k_nifang
+	}
+}
+
+c_quqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1097
+		liege = k_qiguo
+	}
+}
+
+c_quqiu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1098
+		liege = k_juguo
+	}
+}
+
+c_quren = {
+	3849.12.31 = {
+		holder = dm_autoholder_1099
+	}
+}
+
+c_quren1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1100
+	}
+}
+
+c_qusou = {
+	3849.12.31 = {
+		holder = jusoushi78
+		liege = k_qusou
+	}
+}
+
+c_quting = {
+	3849.12.31 = {
+		holder = dm_autoholder_1101
+	}
+}
+
+c_quwei = {
+	3849.12.31 = {
+		holder = dm_autoholder_1102
+		liege = d_hanshi5
+	}
+}
+
+c_quwo1 = {
+	3849.12.31 = {
+		holder = han137
+		liege = d_quwoshi
+	}
+}
+
+c_quyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1103
+		liege = d_houqiushi
+	}
+}
+
+c_quyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1104
+		liege = k_maorong
+	}
+}
+
+c_quyang2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1105
+	}
+}
+
+c_quzhou = {
+	3849.12.31 = {
+		holder = congrencongguo4
+		liege = d_luoshi1
+	}
+}
+
+c_rang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1106
+	}
+}
+
+c_rang2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1107
+		liege = d_rangshi
+	}
+}
+
+c_ranlu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1108
+	}
+}
+
+c_rao = {
+	3849.12.31 = {
+		holder = raoguo36
+		liege = k_raoguo
+	}
+}
+
+c_raoan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1109
+		liege = d_fenrushi
+	}
+}
+
+c_raojiao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1110
+	}
+}
+
+c_ren = {
+	3849.12.31 = {
+		holder = han880
+		liege = k_renguo
+	}
+}
+
+c_ren1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1111
+		liege = d_jianshi1
+	}
+}
+
+c_ren2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1112
+	}
+}
+
+c_rendainu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1113
+	}
+}
+
+c_rigao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1114
+	}
+}
+
+c_rigen1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1115
+	}
+}
+
+c_ritian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1116
+	}
+}
+
+c_rizhi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1117
+	}
+}
+
+c_rong = {
+	3849.12.31 = {
+		holder = jirong7
+		liege = k_rongguo
+	}
+}
+
+c_rong1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1118
+	}
+}
+
+c_rong2 = {
+	3849.12.31 = {
+		holder = jixingrongshi9
+		liege = k_rongguo1
+	}
+}
+
+c_rong4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1119
+		liege = d_duanshi1
+	}
+}
+
+c_rongchuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1120
+		liege = k_dairong
+	}
+}
+
+c_rongjing = {
+	3849.12.31 = {
+		holder = dm_autoholder_1121
+		liege = d_zuoshi1
+	}
+}
+
+c_rongqiu = {
+	3849.12.31 = {
+		holder = tanguo11
+		liege = d_dongqiushi
+	}
+}
+
+c_rongye = {
+	3849.12.31 = {
+		holder = dm_autoholder_1122
+		liege = d_tenshushi
+	}
+}
+
+c_rongye1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1123
+		liege = d_judishi
+	}
+}
+
+c_ru = {
+	3849.12.31 = {
+		holder = dm_autoholder_1124
+	}
+}
+
+c_ru1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1125
+		liege = k_shenguo1
+	}
+}
+
+c_ru2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1126
+		liege = k_jinguo1
+	}
+}
+
+c_ruan = {
+	3849.12.31 = {
+		holder = yanxingruanguo15
+		liege = k_ruanguo
+	}
+}
+
+c_rugao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1127
+	}
+}
+
+c_rui = {
+	3849.12.31 = {
+		holder = han1986
+		liege = k_ruiguo
+	}
+}
+
+c_rulaibeili = {
+	3849.12.31 = {
+		holder = dm_autoholder_1128
+	}
+}
+
+c_ruo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1129
+	}
+}
+
+c_ruokouyin = {
+	3849.12.31 = {
+		holder = dm_autoholder_1130
+	}
+}
+
+c_ruoluo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1131
+	}
+}
+
+c_ruqing = {
+	3849.12.31 = {
+		holder = dm_autoholder_1132
+	}
+}
+
+c_ruqing1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1133
+	}
+}
+
+c_ruxukou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1134
+	}
+}
+
+c_ruyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1135
+		liege = d_lushi6
+	}
+}
+
+c_ruyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1136
+	}
+}
+
+c_sagu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1137
+	}
+}
+
+c_saicheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1138
+	}
+}
+
+c_sanchaguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1139
+		liege = d_yanshi6
+	}
+}
+
+c_sanfeng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1140
+		liege = d_qujinshi
+	}
+}
+
+c_sangqiu = {
+	3849.12.31 = {
+		holder = jinyunshi45
+		liege = d_yunshi2
+	}
+}
+
+c_sangqiu1 = {
+	3849.12.31 = {
+		holder = zixingnishi20
+		liege = d_sangqiushi
+	}
+}
+
+c_sangqiu2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1141
+	}
+}
+
+c_sangqiu3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1142
+	}
+}
+
+c_sangquan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1143
+		liege = k_xunguo1
+	}
+}
+
+c_sangsui = {
+	3849.12.31 = {
+		holder = dm_autoholder_1144
+	}
+}
+
+c_sanguan = {
+	3849.12.31 = {
+		holder = han3172
+		liege = k_sanguo
+	}
+}
+
+c_sangyuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1145
+	}
+}
+
+c_sanhe = {
+	3849.12.31 = {
+		holder = dm_autoholder_1146
+	}
+}
+
+c_sanhu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1147
+	}
+}
+
+c_sanmao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1148
+	}
+}
+
+c_sanshui1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1149
+		liege = k_xuyanrong
+	}
+}
+
+c_santan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1150
+	}
+}
+
+c_sanye = {
+	3849.12.31 = {
+		holder = dm_autoholder_1151
+	}
+}
+
+c_sanye1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1152
+	}
+}
+
+c_shaling = {
+	3849.12.31 = {
+		holder = dm_autoholder_1153
+		liege = k_hezongshi
+	}
+}
+
+c_shamopu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1154
+	}
+}
+
+c_shan1 = {
+	3849.12.31 = {
+		holder = han633
+		liege = k_shanguo
+	}
+}
+
+c_shanbei = {
+	3849.12.31 = {
+		holder = dm_autoholder_1155
+	}
+}
+
+c_shanbian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1156
+	}
+}
+
+c_shandu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1157
+	}
+}
+
+c_shang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1158
+	}
+}
+
+c_shangai = {
+	3849.12.31 = {
+		holder = dm_autoholder_1159
+		liege = k_chouyouguo
+	}
+}
+
+c_shangbo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1160
+		liege = d_qiaoshi
+	}
+}
+
+c_shangcai = {
+	3849.12.31 = {
+		holder = dm_autoholder_1161
+	}
+}
+
+c_shangchang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1162
+	}
+}
+
+c_shangdao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1163
+	}
+}
+
+c_shangdao1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1164
+	}
+}
+
+c_shangdian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1165
+	}
+}
+
+c_shangduima = {
+	3849.12.31 = {
+		holder = dm_autoholder_1166
+	}
+}
+
+c_shangfen = {
+	3849.12.31 = {
+		holder = dm_autoholder_1167
+	}
+}
+
+c_shanghong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1168
+	}
+}
+
+c_shangji = {
+	3849.12.31 = {
+		holder = dm_autoholder_1169
+	}
+}
+
+c_shangjin = {
+	3849.12.31 = {
+		holder = dm_autoholder_1170
+	}
+}
+
+c_shanglian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1171
+	}
+}
+
+c_shanglu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1172
+		liege = d_hankaishi
+	}
+}
+
+c_shangluo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1173
+	}
+}
+
+c_shangmi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1174
+	}
+}
+
+c_shangming = {
+	3849.12.31 = {
+		holder = dm_autoholder_1175
+		liege = k_qinguo
+	}
+}
+
+c_shangming1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1176
+	}
+}
+
+c_shangqiu = {
+	3849.12.31 = {
+		holder = han1259
+		liege = k_songguo
+	}
+}
+
+c_shangquyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1177
+		liege = d_lunushi
+	}
+}
+
+c_shangrong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1178
+	}
+}
+
+c_shangshe = {
+	3849.12.31 = {
+		holder = dm_autoholder_1179
+	}
+}
+
+c_shangwu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1180
+		liege = k_loufan
+	}
+}
+
+c_shangyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1181
+		liege = k_xiguoguo
+	}
+}
+
+c_shangye = {
+	3849.12.31 = {
+		holder = dm_autoholder_1182
+	}
+}
+
+c_shangyecheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1183
+	}
+}
+
+c_shansang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1184
+	}
+}
+
+c_shanyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1185
+	}
+}
+
+c_shanyang1 = {
+	3849.12.31 = {
+		holder = jixingyongshi1
+		liege = d_yongrenshi
+	}
+}
+
+c_shaoliang = {
+	3849.12.31 = {
+		holder = han2893
+		liege = k_liangguo
+	}
+}
+
+c_shaoliang1 = {
+	3849.12.31 = {
+		holder = hengxinglunushi12
+		liege = d_shaoliangshi
+	}
+}
+
+c_shaoqu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1186
+		liege = k_yuanguo1
+	}
+}
+
+c_shaqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1187
+		liege = d_jianshi1
+	}
+}
+
+c_shaqu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1188
+	}
+}
+
+c_shareyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1189
+	}
+}
+
+c_sharui = {
+	3849.12.31 = {
+		holder = dm_autoholder_1190
+	}
+}
+
+c_shasheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1191
+		liege = k_luguo
+	}
+}
+
+c_shasui = {
+	3849.12.31 = {
+		holder = zhugeshi2
+		liege = d_shasuishi
+	}
+}
+
+c_shaxian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1192
+	}
+}
+
+c_shazha = {
+	3849.12.31 = {
+		holder = dm_autoholder_1193
+		liege = k_yinrong
+	}
+}
+
+c_she = {
+	3849.12.31 = {
+		holder = han172
+		liege = k_nieguo
+	}
+}
+
+c_she1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1194
+		liege = k_liguo1
+	}
+}
+
+c_shehong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1195
+		liege = d_qishi2
+	}
+}
+
+c_shejin = {
+	3849.12.31 = {
+		holder = dm_autoholder_1196
+	}
+}
+
+c_shen = {
+	3849.12.31 = {
+		holder = dm_autoholder_1197
+	}
+}
+
+c_shen10 = {
+	3849.12.31 = {
+		holder = han5088
+		liege = d_shenshi6
+	}
+}
+
+c_shen2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1198
+		liege = k_xiguoguo
+	}
+}
+
+c_shen3 = {
+	3849.12.31 = {
+		holder = sixingyoushenshi36
+		liege = k_shenguo
+	}
+}
+
+c_shen4 = {
+	3849.12.31 = {
+		holder = taidaishenshi47
+		liege = k_shenguo1
+	}
+}
+
+c_shen5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1199
+	}
+}
+
+c_shen6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1200
+	}
+}
+
+c_shen7 = {
+	3849.12.31 = {
+		holder = jixingranguo1
+		liege = d_shenshi4
+	}
+}
+
+c_shen8 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1201
+		liege = d_guifangshi
+	}
+}
+
+c_shen9 = {
+	3849.12.31 = {
+		holder = han3465
+		liege = k_shenguo2
+	}
+}
+
+c_shenbu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1202
+	}
+}
+
+c_shenchui = {
+	3849.12.31 = {
+		holder = jixingganguo1
+		liege = d_shenshi5
+	}
+}
+
+c_shendu = {
+	3849.12.31 = {
+		holder = jiangxingjirong5
+		liege = d_shendushi
+	}
+}
+
+c_sheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1203
+	}
+}
+
+c_sheng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1204
+	}
+}
+
+c_shengdou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1205
+		liege = d_mengshi1
+	}
+}
+
+c_shengjiantian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1206
+	}
+}
+
+c_shengtang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1207
+	}
+}
+
+c_shenlu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1208
+	}
+}
+
+c_shenlu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1209
+	}
+}
+
+c_shenqi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1210
+	}
+}
+
+c_shenqian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1211
+	}
+}
+
+c_shenquanzhang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1212
+		liege = k_xuyanrong
+	}
+}
+
+c_shenshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1213
+	}
+}
+
+c_shenyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1214
+	}
+}
+
+c_shenze = {
+	3849.12.31 = {
+		holder = dm_autoholder_1215
+		liege = k_xianyu
+	}
+}
+
+c_shesan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1216
+	}
+}
+
+c_shexia = {
+	3849.12.31 = {
+		holder = dm_autoholder_1217
+		liege = k_huangguo
+	}
+}
+
+c_sheyan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1218
+		liege = d_sheyanshi
+	}
+}
+
+c_sheyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1219
+	}
+}
+
+c_sheye = {
+	3849.12.31 = {
+		holder = dm_autoholder_1220
+	}
+}
+
+c_shi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1221
+		liege = d_zhenguanshi
+	}
+}
+
+c_shi2 = {
+	3849.12.31 = {
+		holder = han206
+		liege = d_shishi1
+	}
+}
+
+c_shi3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1222
+		liege = k_guguo
+	}
+}
+
+c_shi4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1223
+		liege = d_chisongshi
+	}
+}
+
+c_shi5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1224
+	}
+}
+
+c_shi6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1225
+	}
+}
+
+c_shi7 = {
+	3849.12.31 = {
+		holder = shiguo10
+		liege = k_shiguo
+	}
+}
+
+c_shibie = {
+	3849.12.31 = {
+		holder = dm_autoholder_1226
+	}
+}
+
+c_shicheng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1227
+	}
+}
+
+c_shicheng2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1228
+	}
+}
+
+c_shicheng3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1229
+		liege = d_qishi1
+	}
+}
+
+c_shicheng6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1230
+	}
+}
+
+c_shichuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1231
+	}
+}
+
+c_shifang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1232
+		liege = d_mangbu
+	}
+}
+
+c_shigu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1233
+	}
+}
+
+c_shihuiguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1234
+		liege = d_longshi
+	}
+}
+
+c_shijian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1235
+	}
+}
+
+c_shiliang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1236
+	}
+}
+
+c_shima = {
+	3849.12.31 = {
+		holder = dm_autoholder_1237
+	}
+}
+
+c_shimen1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1238
+	}
+}
+
+c_shimen2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1239
+		liege = d_sanshi
+	}
+}
+
+c_shimenguan = {
+	3849.12.31 = {
+		holder = pingzhouguo1
+		liege = d_goushi
+	}
+}
+
+c_shimenzhang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1240
+		liege = k_xiuhunzhuhe
+	}
+}
+
+c_shining = {
+	3849.12.31 = {
+		holder = dm_autoholder_1241
+		liege = d_zhengshi1
+	}
+}
+
+c_shipai = {
+	3849.12.31 = {
+		holder = dm_autoholder_1242
+	}
+}
+
+c_shiqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1243
+		liege = k_aoguo
+	}
+}
+
+c_shiquan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1244
+		liege = k_jieguo
+	}
+}
+
+c_shiquan1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1245
+		liege = d_bashi2
+	}
+}
+
+c_shiquan2 = {
+	3849.12.31 = {
+		holder = ranmangqian15
+		liege = d_baicaoqiang
+	}
+}
+
+c_shisheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1246
+	}
+}
+
+c_shishi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1247
+		liege = k_yangrong
+	}
+}
+
+c_shishou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1248
+	}
+}
+
+c_shishou1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1249
+	}
+}
+
+c_shiwan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1250
+	}
+}
+
+c_shiwu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1251
+	}
+}
+
+c_shixi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1252
+	}
+}
+
+c_shixia = {
+	3849.12.31 = {
+		holder = dm_autoholder_1253
+	}
+}
+
+c_shiyan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1254
+	}
+}
+
+c_shiyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1255
+	}
+}
+
+c_shou = {
+	3849.12.31 = {
+		holder = han907
+		liege = d_fushi
+	}
+}
+
+c_shouguang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1256
+		liege = d_jishi
+	}
+}
+
+c_shouyang = {
+	3849.12.31 = {
+		holder = mianzhurong1
+		liege = d_shouyangshi
+	}
+}
+
+c_shouying = {
+	3849.12.31 = {
+		holder = dm_autoholder_1257
+		liege = d_tushanshi
+	}
+}
+
+c_shouyuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1258
+		liege = d_youshi2
+	}
+}
+
+c_shouzhi = {
+	3849.12.31 = {
+		holder = zhugeshi6
+		liege = d_zhugeshi
+	}
+}
+
+c_shu2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1259
+	}
+}
+
+c_shu3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1260
+		liege = k_xiangguo
+	}
+}
+
+c_shu4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1261
+		liege = k_yanjingrong
+	}
+}
+
+c_shu5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1262
+	}
+}
+
+c_shuangliu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1263
+		liege = d_kaimingshi
+	}
+}
+
+c_shubao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1264
+	}
+}
+
+c_shugong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1265
+	}
+}
+
+c_shuhuang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1266
+	}
+}
+
+c_shuichi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1267
+		liege = d_baishishi
+	}
+}
+
+c_shujiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1268
+	}
+}
+
+c_shuliao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1269
+	}
+}
+
+c_shulong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1270
+	}
+}
+
+c_shunyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1271
+	}
+}
+
+c_shunyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1272
+	}
+}
+
+c_shuofang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1273
+		liege = k_qusou
+	}
+}
+
+c_shuqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1274
+	}
+}
+
+c_shuyong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1275
+	}
+}
+
+c_shuzhou1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1276
+		liege = d_huojingshi
+	}
+}
+
+c_sibing = {
+	3849.12.31 = {
+		holder = dm_autoholder_1277
+	}
+}
+
+c_siding = {
+	3849.12.31 = {
+		holder = dm_autoholder_1278
+	}
+}
+
+c_sigao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1279
+		liege = k_tenguo
+	}
+}
+
+c_silu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1280
+	}
+}
+
+c_siqu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1281
+		liege = k_piguo
+	}
+}
+
+c_siwang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1282
+	}
+}
+
+c_sixuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1283
+	}
+}
+
+c_siyu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1284
+	}
+}
+
+c_songlingguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1285
+		liege = d_baicaoqiang
+	}
+}
+
+c_songyin = {
+	3849.12.31 = {
+		holder = dm_autoholder_1286
+	}
+}
+
+c_songzi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1287
+		liege = d_haoshi
+	}
+}
+
+c_songzi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1288
+	}
+}
+
+c_songzi2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1289
+	}
+}
+
+c_su = {
+	3849.12.31 = {
+		holder = han903
+		liege = k_suguo
+	}
+}
+
+c_suanzao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1290
+		liege = d_xushi2
+	}
+}
+
+c_suguo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1291
+	}
+}
+
+c_sui = {
+	3849.12.31 = {
+		holder = suiyinshi10
+		liege = k_suiguo
+	}
+}
+
+c_sui1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1292
+		liege = d_zhishi1
+	}
+}
+
+c_sui2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1293
+	}
+}
+
+c_suiyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1294
+	}
+}
+
+c_suizhong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1295
+	}
+}
+
+c_suji = {
+	3849.12.31 = {
+		holder = dm_autoholder_1296
+		liege = d_dazuoshi
+	}
+}
+
+c_sundi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1297
+	}
+}
+
+c_suo = {
+	3849.12.31 = {
+		holder = fengxinghuaguo16
+		liege = d_suoshi
+	}
+}
+
+c_suo1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1298
+		liege = d_yimenshi
+	}
+}
+
+c_suo2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1299
+	}
+}
+
+c_suo3 = {
+	3849.12.31 = {
+		holder = xianqiushi1
+		liege = d_xianqiushi
+	}
+}
+
+c_suoshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1300
+		liege = d_guojishi
+	}
+}
+
+c_suoshi1 = {
+	3849.12.31 = {
+		holder = duochenshi14
+		liege = d_duoshi1
+	}
+}
+
+c_suqi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1301
+	}
+}
+
+c_sutai = {
+	3849.12.31 = {
+		holder = dm_autoholder_1302
+	}
+}
+
+c_suyu = {
+	3849.12.31 = {
+		holder = han1637
+		liege = d_baimingshi
+	}
+}
+
+c_tai = {
+	3849.12.31 = {
+		holder = dm_autoholder_1303
+		liege = d_bengshi
+	}
+}
+
+c_tai1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1304
+		liege = k_jiangshizhirong
+	}
+}
+
+c_taian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1305
+	}
+}
+
+c_taibo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1306
+	}
+}
+
+c_taihu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1307
+	}
+}
+
+c_taiqing = {
+	3849.12.31 = {
+		holder = dm_autoholder_1308
+	}
+}
+
+c_taixia = {
+	3849.12.31 = {
+		holder = dm_autoholder_1309
+		liege = d_rongqishi
+	}
+}
+
+c_tan = {
+	3849.12.31 = {
+		holder = han810
+		liege = k_tanguo
+	}
+}
+
+c_tan1 = {
+	3849.12.31 = {
+		holder = han1740
+		liege = k_tanguo1
+	}
+}
+
+c_tan2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1310
+	}
+}
+
+c_tan3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1311
+	}
+}
+
+c_tang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1312
+		liege = d_boshi
+	}
+}
+
+c_tang2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1313
+		liege = d_kanfushi
+	}
+}
+
+c_tang5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1314
+	}
+}
+
+c_tangao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1315
+		liege = k_qiguo1
+	}
+}
+
+c_tangli = {
+	3849.12.31 = {
+		holder = dm_autoholder_1316
+	}
+}
+
+c_tangluo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1317
+		liege = d_ceshi
+	}
+}
+
+c_tangmao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1318
+		liege = d_kaishi
+	}
+}
+
+c_tangxi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1319
+	}
+}
+
+c_tangzi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1320
+	}
+}
+
+c_tanyuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1321
+	}
+}
+
+c_tao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1322
+		liege = k_zhangguo
+	}
+}
+
+c_tao3 = {
+	3849.12.31 = {
+		holder = han232
+		liege = k_caoguo
+	}
+}
+
+c_taolin = {
+	3849.12.31 = {
+		holder = dm_autoholder_1323
+		liege = d_heshi1
+	}
+}
+
+c_taoren = {
+	3849.12.31 = {
+		holder = han1104
+		liege = d_yanshi5
+	}
+}
+
+c_taosheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1324
+	}
+}
+
+c_taoyang = {
+	3849.12.31 = {
+		holder = jiangxingjirong1
+		liege = d_yanshi6
+	}
+}
+
+c_tashi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1325
+	}
+}
+
+c_tawo = {
+	3849.12.31 = {
+		holder = qiaorushi2
+		liege = d_qiaorushi
+	}
+}
+
+c_ten = {
+	3849.12.31 = {
+		holder = han483
+		liege = k_tenguo
+	}
+}
+
+c_tiancheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1326
+		liege = d_fanshi4
+	}
+}
+
+c_tianchuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1327
+	}
+}
+
+c_tianmenguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1328
+		liege = k_yanjingrong
+	}
+}
+
+c_tiantang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1329
+		liege = d_gaoshi
+	}
+}
+
+c_tianyan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1330
+	}
+}
+
+c_tiao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1331
+	}
+}
+
+c_tie = {
+	3849.12.31 = {
+		holder = dm_autoholder_1332
+		liege = d_yushi7
+	}
+}
+
+c_tieguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1333
+	}
+}
+
+c_ting = {
+	3849.12.31 = {
+		holder = dm_autoholder_1334
+		liege = d_jiceshi
+	}
+}
+
+c_tixi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1335
+	}
+}
+
+c_tong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1336
+		liege = d_jiangliangshi
+	}
+}
+
+c_tong1 = {
+	3849.12.31 = {
+		holder = jixingtongguo9
+		liege = k_tongguo
+	}
+}
+
+c_tong2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1337
+		liege = d_quwoshi
+	}
+}
+
+c_tong3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1338
+	}
+}
+
+c_tong4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1339
+	}
+}
+
+c_tong5 = {
+	3849.12.31 = {
+		holder = han2969
+		liege = k_tongguo1
+	}
+}
+
+c_tongdi = {
+	3849.12.31 = {
+		holder = jiashi3
+		liege = d_tongtishi
+	}
+}
+
+c_tongguan = {
+	3849.12.31 = {
+		holder = quanrong1
+		liege = d_bailangshi
+	}
+}
+
+c_tongliang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1340
+		liege = d_zanshi
+	}
+}
+
+c_tongqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1341
+		liege = k_yanguo
+	}
+}
+
+c_tongrui = {
+	3849.12.31 = {
+		holder = dm_autoholder_1342
+	}
+}
+
+c_tongrui1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1343
+	}
+}
+
+c_tongyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1344
+	}
+}
+
+c_tu = {
+	3849.12.31 = {
+		holder = han2902
+		liege = d_liangyoushi
+	}
+}
+
+c_tufei = {
+	3849.12.31 = {
+		holder = han5046
+		liege = k_juguo1
+	}
+}
+
+c_tuhe = {
+	3849.12.31 = {
+		holder = dm_autoholder_1345
+	}
+}
+
+c_tui = {
+	3849.12.31 = {
+		holder = jixingtuishi1
+		liege = d_tuishi
+	}
+}
+
+c_tui1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1346
+		liege = d_yishi
+	}
+}
+
+c_tuilianghuo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1347
+	}
+}
+
+c_tunshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1348
+		liege = d_guanshi1
+	}
+}
+
+c_tunyou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1349
+	}
+}
+
+c_tuogao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1350
+	}
+}
+
+c_tuoyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1351
+	}
+}
+
+c_tuqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1352
+		liege = d_xiloushi
+	}
+}
+
+c_tushan = {
+	3849.12.31 = {
+		holder = tushanshi35
+		liege = d_tushanshi
+	}
+}
+
+c_tushi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1353
+		liege = d_yuanshi4
+	}
+}
+
+c_tutai = {
+	3849.12.31 = {
+		holder = jixingyeguo21
+		liege = d_beiqiushi
+	}
+}
+
+c_tuyuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1354
+	}
+}
+
+c_wa = {
+	3849.12.31 = {
+		holder = dm_autoholder_1355
+		liege = k_nanyanguo
+	}
+}
+
+c_waihuang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1356
+		liege = d_zaishi
+	}
+}
+
+c_wan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1357
+	}
+}
+
+c_wan1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1358
+	}
+}
+
+c_wan2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1359
+	}
+}
+
+c_wang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1360
+		liege = d_bailangshi
+	}
+}
+
+c_wangjiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1361
+	}
+}
+
+c_wangping = {
+	3849.12.31 = {
+		holder = dm_autoholder_1362
+	}
+}
+
+c_wangyuan = {
+	3849.12.31 = {
+		holder = weixingdongshanshi1
+		liege = d_dongshanshi
+	}
+}
+
+c_wangzuo = {
+	3849.12.31 = {
+		holder = zixinghuoguo17
+		liege = d_gengshi2
+	}
+}
+
+c_wankou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1363
+	}
+}
+
+c_wanlu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1364
+	}
+}
+
+c_wanpu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1365
+		liege = k_nanyanguo
+	}
+}
+
+c_wanqiu = {
+	3849.12.31 = {
+		holder = han1165
+		liege = k_chenguo
+	}
+}
+
+c_wansui = {
+	3849.12.31 = {
+		holder = dm_autoholder_1366
+	}
+}
+
+c_wei2 = {
+	3849.12.31 = {
+		holder = han1996
+		liege = k_weiguo1
+	}
+}
+
+c_wei3 = {
+	3849.12.31 = {
+		holder = sixingduanshi40
+		liege = k_duanguo
+	}
+}
+
+c_wei4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1367
+	}
+}
+
+c_wei5 = {
+	3849.12.31 = {
+		holder = mei21
+		liege = d_meishi
+	}
+}
+
+c_weibei = {
+	3849.12.31 = {
+		holder = dm_autoholder_1368
+	}
+}
+
+c_weidi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1369
+	}
+}
+
+c_weiming = {
+	3849.12.31 = {
+		holder = dm_autoholder_1370
+		liege = d_dangyushi
+	}
+}
+
+c_weiniu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1371
+		liege = d_mishi3
+	}
+}
+
+c_weiqi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1372
+		liege = k_genmouguo
+	}
+}
+
+c_weishan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1373
+	}
+}
+
+c_weishi = {
+	3849.12.31 = {
+		holder = zhenglvshi1
+		liege = d_lvshi2
+	}
+}
+
+c_weishi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1374
+	}
+}
+
+c_weiyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1375
+		liege = d_rongzhoushi
+	}
+}
+
+c_weiying = {
+	3849.12.31 = {
+		holder = dm_autoholder_1376
+	}
+}
+
+c_weiyu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1377
+		liege = d_weiyushi
+	}
+}
+
+c_weizai = {
+	3849.12.31 = {
+		holder = dm_autoholder_1378
+		liege = d_tashi
+	}
+}
+
+c_weizhang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1379
+	}
+}
+
+c_wen = {
+	3849.12.31 = {
+		holder = han1878
+		liege = k_suguo1
+	}
+}
+
+c_wenan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1380
+		liege = k_moguo
+	}
+}
+
+c_wencheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1381
+	}
+}
+
+c_wencheng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1382
+	}
+}
+
+c_wenchi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1383
+		liege = d_quanwushi
+	}
+}
+
+c_weng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1384
+	}
+}
+
+c_wenguledu = {
+	3849.12.31 = {
+		holder = jusoushi95
+		liege = d_juqushi
+	}
+}
+
+c_wenshan1 = {
+	3849.12.31 = {
+		holder = ranmangqian2
+		liege = k_ranmangqian
+	}
+}
+
+c_wentang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1385
+	}
+}
+
+c_wenzhe = {
+	3849.12.31 = {
+		holder = dm_autoholder_1386
+		liege = k_piguo
+	}
+}
+
+c_wo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1387
+	}
+}
+
+c_wo2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1388
+		liege = k_liguo1
+	}
+}
+
+c_wo3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1389
+	}
+}
+
+c_wokou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1390
+	}
+}
+
+c_woyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1391
+		liege = d_peishi
+	}
+}
+
+c_woye = {
+	3849.12.31 = {
+		holder = xiuhunzhuluo20
+		liege = d_xiutushi
+	}
+}
+
+c_wu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1392
+		liege = d_zhoushi
+	}
+}
+
+c_wu2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1393
+		liege = k_pengguo
+	}
+}
+
+c_wu4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1394
+		liege = k_liuguo
+	}
+}
+
+c_wu5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1395
+		liege = d_tangsunshi
+	}
+}
+
+c_wu6 = {
+	3849.12.31 = {
+		holder = yunxingwuluoguo46
+		liege = d_wushi1
+	}
+}
+
+c_wuan = {
+	3849.12.31 = {
+		holder = zixingshashi10
+		liege = k_sheguo
+	}
+}
+
+c_wucheng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1396
+		liege = k_tongguo
+	}
+}
+
+c_wucheng2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1397
+		liege = k_yeguo
+	}
+}
+
+c_wucheng3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1398
+		liege = k_lingfuguo
+	}
+}
+
+c_wucheng4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1399
+		liege = d_luoleishi
+	}
+}
+
+c_wucheng5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1400
+	}
+}
+
+c_wucheng6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1401
+	}
+}
+
+c_wucheng7 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1402
+		liege = d_genshi
+	}
+}
+
+c_wude = {
+	3849.12.31 = {
+		holder = dm_autoholder_1403
+		liege = k_xiaguo
+	}
+}
+
+c_wudi = {
+	3849.12.31 = {
+		holder = qiaorushi9
+		liege = d_fenrushi
+	}
+}
+
+c_wudu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1404
+		liege = k_linhu
+	}
+}
+
+c_wudu1 = {
+	3849.12.31 = {
+		holder = jiangxingguirong15
+		liege = d_hankaishi
+	}
+}
+
+c_wufu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1405
+		liege = d_fengshi5
+	}
+}
+
+c_wufu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1406
+	}
+}
+
+c_wugao = {
+	3849.12.31 = {
+		holder = yuwurong11
+		liege = d_wugaoshi
+	}
+}
+
+c_wugong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1407
+		liege = d_ceshi
+	}
+}
+
+c_wugu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1408
+	}
+}
+
+c_wuguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1409
+	}
+}
+
+c_wuhu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1410
+	}
+}
+
+c_wujiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1411
+	}
+}
+
+c_wujie = {
+	3849.12.31 = {
+		holder = dm_autoholder_1412
+	}
+}
+
+c_wujin = {
+	3849.12.31 = {
+		holder = dm_autoholder_1413
+		liege = d_peishi
+	}
+}
+
+c_wulan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1414
+		liege = d_rongzhoushi
+	}
+}
+
+c_wuling = {
+	3849.12.31 = {
+		holder = dm_autoholder_1415
+		liege = d_guoshi
+	}
+}
+
+c_wuling1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1416
+	}
+}
+
+c_wulu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1417
+		liege = k_cangguo
+	}
+}
+
+c_wumihan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1418
+	}
+}
+
+c_wuping = {
+	3849.12.31 = {
+		holder = dm_autoholder_1419
+		liege = d_dushi1
+	}
+}
+
+c_wuqiang = {
+	3849.12.31 = {
+		holder = yunxingwuluoguo41
+		liege = k_wuluoguo
+	}
+}
+
+c_wuqiang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1420
+	}
+}
+
+c_wuqiongzhimen = {
+	3849.12.31 = {
+		holder = dm_autoholder_1421
+		liege = d_beiyinshi
+	}
+}
+
+c_wuqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1422
+		liege = d_kongtongshi
+	}
+}
+
+c_wurenguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1423
+		liege = d_lishi8
+	}
+}
+
+c_wuruanguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1424
+		liege = d_wujiushi
+	}
+}
+
+c_wushan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1425
+	}
+}
+
+c_wushi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1426
+		liege = k_sheguo
+	}
+}
+
+c_wushi1 = {
+	3849.12.31 = {
+		holder = han3043
+		liege = k_wuzhi
+	}
+}
+
+c_wushisai = {
+	3849.12.31 = {
+		holder = dm_autoholder_1427
+		liege = d_xigongshi
+	}
+}
+
+c_wusui1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1428
+		liege = d_sangqiushi
+	}
+}
+
+c_wutu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1429
+		liege = d_langshi
+	}
+}
+
+c_wuwei = {
+	3849.12.31 = {
+		holder = han3300
+		liege = k_yushi
+	}
+}
+
+c_wuwei1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1430
+	}
+}
+
+c_wuwu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1431
+		liege = d_zangsunshi
+	}
+}
+
+c_wuxi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1432
+		liege = d_jirongshi
+	}
+}
+
+c_wuxi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1433
+	}
+}
+
+c_wuxiao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1434
+		liege = d_huoshi1
+	}
+}
+
+c_wuyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1435
+		liege = d_zhuqiushi
+	}
+}
+
+c_wuyang2 = {
+	3849.12.31 = {
+		holder = han318
+		liege = d_shuangshi
+	}
+}
+
+c_wuyang4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1436
+		liege = d_xilvshi
+	}
+}
+
+c_wuyang5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1437
+	}
+}
+
+c_wuyao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1438
+		liege = d_heshi1
+	}
+}
+
+c_wuyeshan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1439
+	}
+}
+
+c_wuyin = {
+	3849.12.31 = {
+		holder = dm_autoholder_1440
+	}
+}
+
+c_wuyuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1441
+		liege = k_raoguo
+	}
+}
+
+c_wuyuan1 = {
+	3849.12.31 = {
+		holder = xiuhunzhuluo14
+		liege = k_xiuhunzhuhe
+	}
+}
+
+c_wuyuan2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1442
+	}
+}
+
+c_wuzhong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1443
+	}
+}
+
+c_xi1 = {
+	3849.12.31 = {
+		holder = languo8
+		liege = d_zhuloushi
+	}
+}
+
+c_xi3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1444
+	}
+}
+
+c_xi4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1445
+	}
+}
+
+c_xi5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1446
+		liege = d_qushi1
+	}
+}
+
+c_xi7 = {
+	3849.12.31 = {
+		holder = han5114
+		liege = k_xiguo1
+	}
+}
+
+c_xia2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1447
+		liege = d_xialvshi
+	}
+}
+
+c_xia3 = {
+	3849.12.31 = {
+		holder = yishi62
+		liege = d_shushi2
+	}
+}
+
+c_xia4 = {
+	3849.12.31 = {
+		holder = jixingxiaguo4
+		liege = k_xiaguo
+	}
+}
+
+c_xiabian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1448
+		liege = d_hankaishi
+	}
+}
+
+c_xiabo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1449
+		liege = k_wuluoguo
+	}
+}
+
+c_xiabuzuo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1450
+	}
+}
+
+c_xiachengfu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1451
+	}
+}
+
+c_xiadao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1452
+	}
+}
+
+c_xian1 = {
+	3849.12.31 = {
+		holder = jizhanshi6
+		liege = d_juanshi
+	}
+}
+
+c_xian3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1453
+	}
+}
+
+c_xian4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1454
+		liege = d_hutushi
+	}
+}
+
+c_xiandu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1455
+	}
+}
+
+c_xiandu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1456
+	}
+}
+
+c_xiang = {
+	3849.12.31 = {
+		holder = xiangguo10
+		liege = k_xiangguo
+	}
+}
+
+c_xiang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1457
+		liege = k_zhuanguo
+	}
+}
+
+c_xiang2 = {
+	3849.12.31 = {
+		holder = mangguo20
+		liege = d_xiangshi2
+	}
+}
+
+c_xiang3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1458
+	}
+}
+
+c_xiang4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1459
+		liege = k_xuguo1
+	}
+}
+
+c_xiang6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1460
+	}
+}
+
+c_xiang7 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1461
+	}
+}
+
+c_xiang9 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1462
+	}
+}
+
+c_xiangan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1463
+	}
+}
+
+c_xiangcheng = {
+	3849.12.31 = {
+		holder = jixingmiguo1
+		liege = d_jiashi1
+	}
+}
+
+c_xianghe1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1464
+	}
+}
+
+c_xiangling1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1465
+		liege = d_qiushi
+	}
+}
+
+c_xiangluo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1466
+		liege = k_diaoguo
+	}
+}
+
+c_xiangshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1467
+		liege = d_shangliangshi
+	}
+}
+
+c_xiangwu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1468
+		liege = d_shouyangshi
+	}
+}
+
+c_xiangxiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1469
+	}
+}
+
+c_xiangyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1470
+	}
+}
+
+c_xiangyuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1471
+		liege = d_wugaoshi
+	}
+}
+
+c_xianmei = {
+	3849.12.31 = {
+		holder = dm_autoholder_1472
+		liege = d_yushi3
+	}
+}
+
+c_xianping = {
+	3849.12.31 = {
+		holder = dm_autoholder_1473
+	}
+}
+
+c_xianqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1474
+		liege = k_maoguo
+	}
+}
+
+c_xianting = {
+	3849.12.31 = {
+		holder = dm_autoholder_1475
+	}
+}
+
+c_xianyu = {
+	3849.12.31 = {
+		holder = han2216
+		liege = k_xianyu
+	}
+}
+
+c_xianyu1 = {
+	3849.12.31 = {
+		holder = yunxingbeitangshi62
+		liege = d_lishi6
+	}
+}
+
+c_xiao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1476
+	}
+}
+
+c_xiao1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1477
+	}
+}
+
+c_xiao2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1478
+	}
+}
+
+c_xiaochang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1479
+	}
+}
+
+c_xiaochi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1480
+	}
+}
+
+c_xiaoguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1481
+		liege = d_wuzhishi
+	}
+}
+
+c_xiaoting = {
+	3849.12.31 = {
+		holder = dm_autoholder_1482
+	}
+}
+
+c_xiaoyaojin = {
+	3849.12.31 = {
+		holder = dm_autoholder_1483
+	}
+}
+
+c_xiaqiu = {
+	3849.12.31 = {
+		holder = han1614
+		liege = d_ququeshi
+	}
+}
+
+c_xiaqiu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1484
+		liege = d_juanshi
+	}
+}
+
+c_xiaqiu2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1485
+		liege = d_bishi3
+	}
+}
+
+c_xiaquyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1486
+		liege = k_guguo
+	}
+}
+
+c_xiashou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1487
+	}
+}
+
+c_xiaxiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1488
+		liege = k_zhongwuguo
+	}
+}
+
+c_xiayang = {
+	3849.12.31 = {
+		holder = jixingyuguo4
+		liege = d_jingshi
+	}
+}
+
+c_xiaye1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1489
+	}
+}
+
+c_xiayi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1490
+		liege = d_songshi
+	}
+}
+
+c_xiayin = {
+	3849.12.31 = {
+		holder = dm_autoholder_1491
+	}
+}
+
+c_xiazhou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1492
+	}
+}
+
+c_xibugeng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1493
+	}
+}
+
+c_xicen = {
+	3849.12.31 = {
+		holder = dm_autoholder_1494
+	}
+}
+
+c_xicheng = {
+	3849.12.31 = {
+		holder = jixingyousushi2
+		liege = d_wenshi
+	}
+}
+
+c_xicheng1 = {
+	3849.12.31 = {
+		holder = yunxingxiaorong9
+		liege = k_xiaorong
+	}
+}
+
+c_xicheng2 = {
+	3849.12.31 = {
+		holder = jixingyuanguo1
+		liege = d_xishi4
+	}
+}
+
+c_xicheng3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1495
+	}
+}
+
+c_xichong = {
+	3849.12.31 = {
+		holder = congrenchong4
+		liege = k_chongguo1
+	}
+}
+
+c_xichui = {
+	3849.12.31 = {
+		holder = dm_autoholder_1496
+		liege = d_guirongshi
+	}
+}
+
+c_xie = {
+	3849.12.31 = {
+		holder = dm_autoholder_1497
+	}
+}
+
+c_xieshan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1498
+	}
+}
+
+c_xietouwei = {
+	3849.12.31 = {
+		holder = dm_autoholder_1499
+	}
+}
+
+c_xieyuguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1500
+		liege = d_yishi2
+	}
+}
+
+c_xifeng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1501
+	}
+}
+
+c_xifeng2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1502
+	}
+}
+
+c_xihua = {
+	3849.12.31 = {
+		holder = dm_autoholder_1503
+	}
+}
+
+c_xihuo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1504
+	}
+}
+
+c_xiling = {
+	3849.12.31 = {
+		holder = dm_autoholder_1505
+	}
+}
+
+c_xiling1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1506
+	}
+}
+
+c_xiling2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1507
+	}
+}
+
+c_xin1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1508
+	}
+}
+
+c_xin3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1509
+	}
+}
+
+c_xincheng3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1510
+		liege = d_jushi3
+	}
+}
+
+c_xincheng5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1511
+		liege = k_nanlvguo
+	}
+}
+
+c_xindu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1512
+	}
+}
+
+c_xinfu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1513
+	}
+}
+
+c_xing = {
+	3849.12.31 = {
+		holder = dm_autoholder_1514
+		liege = k_guoguo1
+	}
+}
+
+c_xing1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1515
+	}
+}
+
+c_xing2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1516
+		liege = d_sanyishi
+	}
+}
+
+c_xing4 = {
+	3849.12.31 = {
+		holder = han158
+		liege = k_xingguo
+	}
+}
+
+c_xing5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1517
+	}
+}
+
+c_xing6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1518
+	}
+}
+
+c_xingfen = {
+	3849.12.31 = {
+		holder = dm_autoholder_1519
+		liege = k_loufan
+	}
+}
+
+c_xingshan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1520
+	}
+}
+
+c_xingyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1521
+		liege = k_aoguo
+	}
+}
+
+c_xinjing = {
+	3849.12.31 = {
+		holder = dm_autoholder_1522
+		liege = d_chongshi1
+	}
+}
+
+c_xinli = {
+	3849.12.31 = {
+		holder = dm_autoholder_1523
+		liege = k_liangguo
+	}
+}
+
+c_xinli1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1524
+		liege = d_shenshi4
+	}
+}
+
+c_xinling = {
+	3849.12.31 = {
+		holder = dm_autoholder_1525
+	}
+}
+
+c_xinning = {
+	3849.12.31 = {
+		holder = dm_autoholder_1526
+		liege = d_congshi
+	}
+}
+
+c_xinnong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1527
+	}
+}
+
+c_xinping = {
+	3849.12.31 = {
+		holder = dm_autoholder_1528
+		liege = d_zhenzishi
+	}
+}
+
+c_xinpu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1529
+	}
+}
+
+c_xinqi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1530
+	}
+}
+
+c_xinshi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1531
+	}
+}
+
+c_xintian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1532
+		liege = k_jinguo1
+	}
+}
+
+c_xinxing = {
+	3849.12.31 = {
+		holder = dm_autoholder_1533
+		liege = d_jirongshi
+	}
+}
+
+c_xinyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1534
+	}
+}
+
+c_xinyuan = {
+	3849.12.31 = {
+		holder = jixingfanzhongpu11
+		liege = d_xinyuanshi
+	}
+}
+
+c_xinzheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1535
+		liege = k_zhengguo
+	}
+}
+
+c_xinzheng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1536
+		liege = d_kuwujishi
+	}
+}
+
+c_xinzhi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1537
+	}
+}
+
+c_xiongguizhang = {
+	3849.12.31 = {
+		holder = xuyanrong1
+		liege = d_judishi
+	}
+}
+
+c_xiongmao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1538
+	}
+}
+
+c_xiongmao1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1539
+	}
+}
+
+c_xiongye = {
+	3849.12.31 = {
+		holder = dm_autoholder_1540
+	}
+}
+
+c_xiongyeshenyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1541
+	}
+}
+
+c_xiping = {
+	3849.12.31 = {
+		holder = dm_autoholder_1542
+	}
+}
+
+c_xiqucheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1543
+		liege = d_huishi1
+	}
+}
+
+c_xishilu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1544
+	}
+}
+
+c_xiu2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1545
+		liege = d_yimushi
+	}
+}
+
+c_xiucheng = {
+	3849.12.31 = {
+		holder = sanyishi2
+		liege = d_sanshi
+	}
+}
+
+c_xiuwu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1546
+		liege = k_gongguo1
+	}
+}
+
+c_xixia = {
+	3849.12.31 = {
+		holder = xixiashi55
+		liege = k_xixiashi
+	}
+}
+
+c_xixiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1547
+		liege = k_yanguo1
+	}
+}
+
+c_xixiang1 = {
+	3849.12.31 = {
+		holder = han5101
+		liege = d_bashi2
+	}
+}
+
+c_xiyang2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1548
+	}
+}
+
+c_xu = {
+	3849.12.31 = {
+		holder = han1610
+		liege = k_xuguo
+	}
+}
+
+c_xu1 = {
+	3849.12.31 = {
+		holder = zuoxushi1
+		liege = d_xushi2
+	}
+}
+
+c_xu2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1549
+		liege = d_yuanshi2
+	}
+}
+
+c_xu3 = {
+	3849.12.31 = {
+		holder = han1148
+		liege = k_xuguo1
+	}
+}
+
+c_xu4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1550
+		liege = d_mushi
+	}
+}
+
+c_xu5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1551
+	}
+}
+
+c_xuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1552
+	}
+}
+
+c_xuan1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1553
+		liege = k_lituzhidi
+	}
+}
+
+c_xuan2 = {
+	3849.12.31 = {
+		holder = caozhongzhirong8
+		liege = d_xuanshi1
+	}
+}
+
+c_xuancheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1554
+	}
+}
+
+c_xuandi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1555
+	}
+}
+
+c_xuanlei = {
+	3849.12.31 = {
+		holder = han2683
+		liege = d_linqiushi1
+	}
+}
+
+c_xuanshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1556
+		liege = k_quanshi
+	}
+}
+
+c_xuanwei = {
+	3849.12.31 = {
+		holder = dm_autoholder_1557
+		liege = d_yushi3
+	}
+}
+
+c_xuanwu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1558
+		liege = d_hutushi
+	}
+}
+
+c_xucheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1559
+		liege = k_luguo
+	}
+}
+
+c_xue = {
+	3849.12.31 = {
+		holder = han961
+		liege = k_xueguo
+	}
+}
+
+c_xuehe = {
+	3849.12.31 = {
+		holder = dm_autoholder_1560
+	}
+}
+
+c_xuemen = {
+	3849.12.31 = {
+		holder = dm_autoholder_1561
+	}
+}
+
+c_xuguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1562
+		liege = d_guoshi
+	}
+}
+
+c_xuhui = {
+	3849.12.31 = {
+		holder = dm_autoholder_1563
+	}
+}
+
+c_xuju = {
+	3849.12.31 = {
+		holder = han924
+		liege = k_xujuguo
+	}
+}
+
+c_xumi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1564
+		liege = k_yangrong
+	}
+}
+
+c_xumu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1565
+	}
+}
+
+c_xun2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1566
+		liege = d_bailuanshi
+	}
+}
+
+c_xun3 = {
+	3849.12.31 = {
+		holder = jixinggengshi15
+		liege = d_linghushi
+	}
+}
+
+c_xun4 = {
+	3849.12.31 = {
+		holder = han529
+		liege = k_xunguo2
+	}
+}
+
+c_xunxiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1567
+	}
+}
+
+c_xunyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1568
+	}
+}
+
+c_xunyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1569
+	}
+}
+
+c_xunying = {
+	3849.12.31 = {
+		holder = dm_autoholder_1570
+	}
+}
+
+c_xuqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1571
+		liege = d_xiaoshishi
+	}
+}
+
+c_xutian = {
+	3849.12.31 = {
+		holder = jiangxingxuguo1
+		liege = d_hanshi5
+	}
+}
+
+c_xuwu = {
+	3849.12.31 = {
+		holder = yuwurong4
+		liege = k_yuwushi
+	}
+}
+
+c_xuwu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1572
+	}
+}
+
+c_xuyan = {
+	3849.12.31 = {
+		holder = han3008
+		liege = k_xuyanrong
+	}
+}
+
+c_yafu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1573
+	}
+}
+
+c_yamojun = {
+	3849.12.31 = {
+		holder = dm_autoholder_1574
+	}
+}
+
+c_yan = {
+	3849.12.31 = {
+		holder = gongdu3
+		liege = d_gongdushi
+	}
+}
+
+c_yan1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1575
+		liege = d_feishi3
+	}
+}
+
+c_yan10 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1576
+	}
+}
+
+c_yan11 = {
+	3849.12.31 = {
+		holder = han309
+		liege = k_yanguo1
+	}
+}
+
+c_yan2 = {
+	3849.12.31 = {
+		holder = yunxingyanshi9
+		liege = k_yanguo
+	}
+}
+
+c_yan3 = {
+	3849.12.31 = {
+		holder = han1099
+		liege = k_nanyanguo
+	}
+}
+
+c_yan4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1577
+	}
+}
+
+c_yan5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1578
+	}
+}
+
+c_yan6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1579
+	}
+}
+
+c_yan7 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1580
+		liege = d_xiuyushi
+	}
+}
+
+c_yan8 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1581
+	}
+}
+
+c_yanchi = {
+	3849.12.31 = {
+		holder = rangren9
+		liege = d_rangtushi
+	}
+}
+
+c_yandu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1582
+	}
+}
+
+c_yang = {
+	3849.12.31 = {
+		holder = yangguo15
+		liege = k_yangguo
+	}
+}
+
+c_yang1 = {
+	3849.12.31 = {
+		holder = yunxingyangrong2
+		liege = k_yangrong
+	}
+}
+
+c_yang2 = {
+	3849.12.31 = {
+		holder = han35
+		liege = k_yangguo1
+	}
+}
+
+c_yang3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1583
+		liege = d_jiushi
+	}
+}
+
+c_yang4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1584
+	}
+}
+
+c_yang5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1585
+	}
+}
+
+c_yanga = {
+	3849.12.31 = {
+		holder = dm_autoholder_1586
+		liege = k_lituzhidi
+	}
+}
+
+c_yangcheng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1587
+		liege = k_miguo
+	}
+}
+
+c_yangcheng2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1588
+	}
+}
+
+c_yangcheng3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1589
+		liege = k_darong
+	}
+}
+
+c_yangfang = {
+	3849.12.31 = {
+		holder = jixingfanzhongpu2
+		liege = k_fanguo
+	}
+}
+
+c_yanggu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1590
+		liege = k_xujuguo
+	}
+}
+
+c_yanghousai = {
+	3849.12.31 = {
+		holder = dm_autoholder_1591
+		liege = k_yangguo1
+	}
+}
+
+c_yanghu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1592
+		liege = k_duanguo
+	}
+}
+
+c_yangjiao = {
+	3849.12.31 = {
+		holder = yousongshi39
+		liege = d_yangjiaoshi
+	}
+}
+
+c_yangliang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1593
+		liege = d_yueshi1
+	}
+}
+
+c_yangling = {
+	3849.12.31 = {
+		holder = dm_autoholder_1594
+	}
+}
+
+c_yangling1 = {
+	3849.12.31 = {
+		holder = han1195
+		liege = d_zhenzishi
+	}
+}
+
+c_yanglu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1595
+	}
+}
+
+c_yangpingguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1596
+		liege = d_nanmenshi
+	}
+}
+
+c_yangqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1597
+	}
+}
+
+c_yangqiu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1598
+		liege = d_guoshi1
+	}
+}
+
+c_yangquan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1599
+	}
+}
+
+c_yangren = {
+	3849.12.31 = {
+		holder = dm_autoholder_1600
+		liege = k_luhunrong
+	}
+}
+
+c_yangsaguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1601
+		liege = d_dishi3
+	}
+}
+
+c_yangshi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1602
+		liege = d_haoshi
+	}
+}
+
+c_yanguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1603
+	}
+}
+
+c_yangxia = {
+	3849.12.31 = {
+		holder = dm_autoholder_1604
+		liege = d_qiuzishi
+	}
+}
+
+c_yangxian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1605
+	}
+}
+
+c_yangxin = {
+	3849.12.31 = {
+		holder = dm_autoholder_1606
+		liege = d_dishi
+	}
+}
+
+c_yangzhou1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1607
+		liege = d_sheyanshi
+	}
+}
+
+c_yanling = {
+	3849.12.31 = {
+		holder = dm_autoholder_1608
+		liege = k_yangguo
+	}
+}
+
+c_yanling2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1609
+	}
+}
+
+c_yanliu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1610
+		liege = d_jianrushi
+	}
+}
+
+c_yanshou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1611
+	}
+}
+
+c_yanshui1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1612
+	}
+}
+
+c_yanting = {
+	3849.12.31 = {
+		holder = dm_autoholder_1613
+		liege = d_zishi1
+	}
+}
+
+c_yanxiang = {
+	3849.12.31 = {
+		holder = yan12
+		liege = d_yanshi3
+	}
+}
+
+c_yanyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1614
+	}
+}
+
+c_yanze = {
+	3849.12.31 = {
+		holder = dm_autoholder_1615
+	}
+}
+
+c_yanzhou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1616
+	}
+}
+
+c_yao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1617
+		liege = d_xiayangshi
+	}
+}
+
+c_yaoguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1618
+		liege = k_miguo1
+	}
+}
+
+c_yaoyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1619
+	}
+}
+
+c_yazhou = {
+	3849.12.31 = {
+		holder = zuoduguo2
+		liege = d_dingzuoshi
+	}
+}
+
+c_ye1 = {
+	3849.12.31 = {
+		holder = jixingyeguo16
+		liege = k_yeguo
+	}
+}
+
+c_ye2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1620
+	}
+}
+
+c_ye3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1621
+	}
+}
+
+c_ye4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1622
+	}
+}
+
+c_yefu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1623
+	}
+}
+
+c_yehuling = {
+	3849.12.31 = {
+		holder = dm_autoholder_1624
+	}
+}
+
+c_yelu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1625
+	}
+}
+
+c_yewang = {
+	3849.12.31 = {
+		holder = han1792
+		liege = d_xingshi1
+	}
+}
+
+c_yexiangguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1626
+	}
+}
+
+c_yexu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1627
+	}
+}
+
+c_yi3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1628
+	}
+}
+
+c_yi4 = {
+	3849.12.31 = {
+		holder = jixingceguo1
+		liege = d_yishi2
+	}
+}
+
+c_yi6 = {
+	3849.12.31 = {
+		holder = yan4
+		liege = d_lvfushi
+	}
+}
+
+c_yi7 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1629
+	}
+}
+
+c_yi8 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1630
+	}
+}
+
+c_yibao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1631
+	}
+}
+
+c_yichang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1632
+	}
+}
+
+c_yicheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1633
+		liege = d_fengshi3
+	}
+}
+
+c_yicheng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1634
+	}
+}
+
+c_yicheng2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1635
+	}
+}
+
+c_yicheng4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1636
+	}
+}
+
+c_yicheng5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1637
+	}
+}
+
+c_yichuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1638
+		liege = k_luhunrong
+	}
+}
+
+c_yichun = {
+	3849.12.31 = {
+		holder = dm_autoholder_1639
+	}
+}
+
+c_yidao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1640
+	}
+}
+
+c_yidu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1641
+	}
+}
+
+c_yifan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1642
+		liege = d_yanfushi
+	}
+}
+
+c_yifu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1643
+	}
+}
+
+c_yihui = {
+	3849.12.31 = {
+		holder = dm_autoholder_1644
+	}
+}
+
+c_yiling = {
+	3849.12.31 = {
+		holder = dm_autoholder_1645
+	}
+}
+
+c_yilou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1646
+	}
+}
+
+c_yilu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1647
+		liege = d_heishi
+	}
+}
+
+c_yimen = {
+	3849.12.31 = {
+		holder = dm_autoholder_1648
+		liege = d_quanwushi
+	}
+}
+
+c_yimu = {
+	3849.12.31 = {
+		holder = lingfushi12
+		liege = d_yimushi
+	}
+}
+
+c_yin2 = {
+	3849.12.31 = {
+		holder = han1912
+		liege = k_yinguo
+	}
+}
+
+c_yin3 = {
+	3849.12.31 = {
+		holder = yunxingyinrong11
+		liege = k_yinrong
+	}
+}
+
+c_yin4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1649
+		liege = k_huoguo
+	}
+}
+
+c_yin5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1650
+		liege = d_wenshi
+	}
+}
+
+c_yin6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1651
+		liege = d_ningshi
+	}
+}
+
+c_yin7 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1652
+		liege = d_qiuwushi
+	}
+}
+
+c_yina = {
+	3849.12.31 = {
+		holder = dm_autoholder_1653
+	}
+}
+
+c_yinban = {
+	3849.12.31 = {
+		holder = dm_autoholder_1654
+	}
+}
+
+c_yincheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1655
+		liege = d_lifeishi
+	}
+}
+
+c_yincheng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1656
+		liege = k_jiangguo
+	}
+}
+
+c_yincheng2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1657
+	}
+}
+
+c_yinfan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1658
+	}
+}
+
+c_ying = {
+	3849.12.31 = {
+		holder = xianmou9
+		liege = d_xianmoushi
+	}
+}
+
+c_ying2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1659
+	}
+}
+
+c_yingai = {
+	3849.12.31 = {
+		holder = dm_autoholder_1660
+	}
+}
+
+c_yingfan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1661
+		liege = d_maoyushi
+	}
+}
+
+c_yingli = {
+	3849.12.31 = {
+		holder = dm_autoholder_1662
+		liege = d_zhuyushi
+	}
+}
+
+c_yingshang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1663
+	}
+}
+
+c_yingshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1664
+	}
+}
+
+c_yingting = {
+	3849.12.31 = {
+		holder = dm_autoholder_1665
+		liege = d_huoshi2
+	}
+}
+
+c_yinguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1666
+		liege = d_laishi2
+	}
+}
+
+c_yingwei = {
+	3849.12.31 = {
+		holder = dm_autoholder_1667
+	}
+}
+
+c_yingyuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1668
+	}
+}
+
+c_yinhancheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1669
+		liege = k_xixiashi
+	}
+}
+
+c_yinjin = {
+	3849.12.31 = {
+		holder = jixingtongguo14
+		liege = d_tongchengshi
+	}
+}
+
+c_yinling = {
+	3849.12.31 = {
+		holder = dm_autoholder_1670
+		liege = d_tushanshi
+	}
+}
+
+c_yinping1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1671
+		liege = d_baishuishi
+	}
+}
+
+c_yinping2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1672
+		liege = d_gongshi2
+	}
+}
+
+c_yinqiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1673
+	}
+}
+
+c_yinshan_3247 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1674
+		liege = d_boguanshi
+	}
+}
+
+c_yinshanguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1675
+	}
+}
+
+c_yinshanguan1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1676
+	}
+}
+
+c_yinyang = {
+	3849.12.31 = {
+		holder = weixingdaweishi6
+		liege = d_guifangshi
+	}
+}
+
+c_yinyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1677
+	}
+}
+
+c_yiqing = {
+	3849.12.31 = {
+		holder = dm_autoholder_1678
+	}
+}
+
+c_yiqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1679
+	}
+}
+
+c_yiqu = {
+	3849.12.31 = {
+		holder = han2944
+		liege = k_yiqu
+	}
+}
+
+c_yishi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1680
+		liege = k_caozhongzhirong
+	}
+}
+
+c_yishi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1681
+		liege = d_ningshi
+	}
+}
+
+c_yishiyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1682
+	}
+}
+
+c_yitai = {
+	3849.12.31 = {
+		holder = dm_autoholder_1683
+		liege = k_songguo
+	}
+}
+
+c_yixiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1684
+	}
+}
+
+c_yiyang3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1685
+	}
+}
+
+c_yiyang4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1686
+	}
+}
+
+c_yiyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1687
+		liege = k_nieguo
+	}
+}
+
+c_yiyu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1688
+	}
+}
+
+c_yizheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1689
+		liege = d_huojingshi
+	}
+}
+
+c_yizhi3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1690
+	}
+}
+
+c_yong1 = {
+	3849.12.31 = {
+		holder = han447
+		liege = k_yongguo
+	}
+}
+
+c_yongan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1691
+	}
+}
+
+c_yongan1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1692
+	}
+}
+
+c_yongcheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1693
+	}
+}
+
+c_yongchuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1694
+		liege = d_hongtashi
+	}
+}
+
+c_yonggui = {
+	3849.12.31 = {
+		holder = dm_autoholder_1695
+		liege = d_danshi2
+	}
+}
+
+c_yongliang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1696
+	}
+}
+
+c_yongmen = {
+	3849.12.31 = {
+		holder = shiwei27
+		liege = d_shiweishi
+	}
+}
+
+c_yongnu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1697
+	}
+}
+
+c_yongpu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1698
+	}
+}
+
+c_yongqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1699
+		liege = d_zhugeshi
+	}
+}
+
+c_yongshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1700
+		liege = k_tanguo1
+	}
+}
+
+c_yongshi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1701
+	}
+}
+
+c_yongyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1702
+	}
+}
+
+c_yongyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1703
+	}
+}
+
+c_yongyu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1704
+		liege = d_sunshi
+	}
+}
+
+c_you1 = {
+	3849.12.31 = {
+		holder = han242
+		liege = d_youshi2
+	}
+}
+
+c_you2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1705
+		liege = d_kangshi
+	}
+}
+
+c_you3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1706
+	}
+}
+
+c_you4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1707
+	}
+}
+
+c_you6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1708
+		liege = k_huangguo
+	}
+}
+
+c_youdu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1709
+		liege = k_jiguo4
+	}
+}
+
+c_youdu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1710
+	}
+}
+
+c_youli = {
+	3849.12.31 = {
+		holder = dm_autoholder_1711
+		liege = d_bishi2
+	}
+}
+
+c_youli1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1712
+	}
+}
+
+c_youqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1713
+		liege = d_xishi3
+	}
+}
+
+c_youquan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1714
+	}
+}
+
+c_youxiumoutun = {
+	3849.12.31 = {
+		holder = dm_autoholder_1715
+	}
+}
+
+c_yu = {
+	3849.12.31 = {
+		holder = han1048
+		liege = k_yuguo
+	}
+}
+
+c_yu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1716
+	}
+}
+
+c_yu10 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1717
+	}
+}
+
+c_yu12 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1718
+		liege = k_luzi
+	}
+}
+
+c_yu13 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1719
+		liege = d_jushi3
+	}
+}
+
+c_yu2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1720
+		liege = d_zhugeshi
+	}
+}
+
+c_yu3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1721
+		liege = d_yuanshi3
+	}
+}
+
+c_yu4 = {
+	3849.12.31 = {
+		holder = wuguan35
+		liege = d_yushi8
+	}
+}
+
+c_yu5 = {
+	3849.12.31 = {
+		holder = han583
+		liege = k_yuguo1
+	}
+}
+
+c_yu6 = {
+	3849.12.31 = {
+		holder = han1789
+		liege = k_yuguo2
+	}
+}
+
+c_yu7 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1722
+		liege = k_beitangguo
+	}
+}
+
+c_yu8 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1723
+	}
+}
+
+c_yu9 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1724
+	}
+}
+
+c_yuan = {
+	3849.12.31 = {
+		holder = han851
+		liege = d_zhukeshi
+	}
+}
+
+c_yuan2 = {
+	3849.12.31 = {
+		holder = han511
+		liege = k_yuanguo1
+	}
+}
+
+c_yuan3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1725
+		liege = d_meishi
+	}
+}
+
+c_yuanjin = {
+	3849.12.31 = {
+		holder = dm_autoholder_1726
+	}
+}
+
+c_yuanju = {
+	3849.12.31 = {
+		holder = dm_autoholder_1727
+		liege = k_caoguo
+	}
+}
+
+c_yuanli = {
+	3849.12.31 = {
+		holder = sixingyoushenshi41
+		liege = d_shenshi
+	}
+}
+
+c_yuanling1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1728
+	}
+}
+
+c_yuanling2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1729
+		liege = k_xuyanrong
+	}
+}
+
+c_yuanlou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1730
+		liege = k_qiguo
+	}
+}
+
+c_yuanqi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1731
+		liege = k_kanguo
+	}
+}
+
+c_yuanshan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1732
+	}
+}
+
+c_yuanshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1733
+		liege = k_diguo1
+	}
+}
+
+c_yuanyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1734
+		liege = k_hezongshi
+	}
+}
+
+c_yubaowubo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1735
+	}
+}
+
+c_yudou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1736
+	}
+}
+
+c_yue = {
+	3849.12.31 = {
+		holder = han2007
+		liege = d_xishi5
+	}
+}
+
+c_yue1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1737
+	}
+}
+
+c_yue2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1738
+	}
+}
+
+c_yuecheng = {
+	3849.12.31 = {
+		holder = raoguo46
+		liege = d_fudengshi
+	}
+}
+
+c_yuechi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1739
+		liege = d_luoshi1
+	}
+}
+
+c_yuehou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1740
+	}
+}
+
+c_yueqian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1741
+	}
+}
+
+c_yuer = {
+	3849.12.31 = {
+		holder = dm_autoholder_1742
+	}
+}
+
+c_yuewen = {
+	3849.12.31 = {
+		holder = dm_autoholder_1743
+		liege = d_rangshi
+	}
+}
+
+c_yuezhong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1744
+	}
+}
+
+c_yufu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1745
+	}
+}
+
+c_yuhang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1746
+	}
+}
+
+c_yuhe = {
+	3849.12.31 = {
+		holder = dm_autoholder_1747
+	}
+}
+
+c_yuhou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1748
+	}
+}
+
+c_yuhu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1749
+	}
+}
+
+c_yuhun = {
+	3849.12.31 = {
+		holder = dm_autoholder_1750
+		liege = d_qujinshi
+	}
+}
+
+c_yulin1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1751
+	}
+}
+
+c_yulou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1752
+	}
+}
+
+c_yun = {
+	3849.12.31 = {
+		holder = juguo16
+		liege = d_yunshi1
+	}
+}
+
+c_yun1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1753
+		liege = d_chuishi
+	}
+}
+
+c_yun2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1754
+	}
+}
+
+c_yunan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1755
+	}
+}
+
+c_yundu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1756
+	}
+}
+
+c_yunguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1757
+	}
+}
+
+c_yunjie = {
+	3849.12.31 = {
+		holder = huanrong9
+		liege = d_jinchengshi
+	}
+}
+
+c_yunmeng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1758
+	}
+}
+
+c_yunping = {
+	3849.12.31 = {
+		holder = dm_autoholder_1759
+		liege = d_luoleishi
+	}
+}
+
+c_yunwu = {
+	3849.12.31 = {
+		holder = dirong15
+		liege = d_yunwushi
+	}
+}
+
+c_yunyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1760
+		liege = d_bailushi
+	}
+}
+
+c_yunyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1761
+	}
+}
+
+c_yunzhong = {
+	3849.12.31 = {
+		holder = han2745
+		liege = k_hezongshi
+	}
+}
+
+c_yuqian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1762
+	}
+}
+
+c_yushan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1763
+		liege = k_xiangguo
+	}
+}
+
+c_yushe = {
+	3849.12.31 = {
+		holder = dm_autoholder_1764
+		liege = d_tongtishi
+	}
+}
+
+c_yushe1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1765
+	}
+}
+
+c_yushui = {
+	3849.12.31 = {
+		holder = xixiashi66
+		liege = d_duomashi
+	}
+}
+
+c_yuyang = {
+	3849.12.31 = {
+		holder = han2295
+		liege = d_jishi5
+	}
+}
+
+c_yuyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1766
+		liege = k_nanlvguo
+	}
+}
+
+c_yuyang2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1767
+	}
+}
+
+c_yuyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1768
+	}
+}
+
+c_yuyuqiu = {
+	3849.12.31 = {
+		holder = han1752
+		liege = k_yuyuqiuguo
+	}
+}
+
+c_yuzhi1 = {
+	3849.12.31 = {
+		holder = han2994
+		liege = k_yuzhirong
+	}
+}
+
+c_yuzhi2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1769
+	}
+}
+
+c_yuzhong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1770
+		liege = d_huanshi
+	}
+}
+
+c_yuzuoguozao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1771
+	}
+}
+
+c_zai = {
+	3849.12.31 = {
+		holder = song1286
+		liege = d_zaishi
+	}
+}
+
+c_zan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1772
+	}
+}
+
+c_zaotai = {
+	3849.12.31 = {
+		holder = dm_autoholder_1773
+		liege = k_qiangjiuru
+	}
+}
+
+c_zaoyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1774
+	}
+}
+
+c_ze1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1775
+		liege = d_xiuyushi
+	}
+}
+
+c_zeng = {
+	3849.12.31 = {
+		holder = han1019
+		liege = k_zengguo
+	}
+}
+
+c_zeng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1776
+		liege = d_gongliangshi
+	}
+}
+
+c_zeng2 = {
+	3849.12.31 = {
+		holder = xizengguo12
+		liege = k_zengguo1
+	}
+}
+
+c_zeng3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1777
+	}
+}
+
+c_zengchi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1778
+	}
+}
+
+c_zengguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1779
+	}
+}
+
+c_zengkou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1780
+		liege = d_xiangshi3
+	}
+}
+
+c_zengqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1781
+	}
+}
+
+c_zha = {
+	3849.12.31 = {
+		holder = biyangshi3
+		liege = d_bishi3
+	}
+}
+
+c_zha1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1782
+		liege = d_zongshi1
+	}
+}
+
+c_zhanban = {
+	3849.12.31 = {
+		holder = dm_autoholder_1783
+	}
+}
+
+c_zhanchan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1784
+	}
+}
+
+c_zhang = {
+	3849.12.31 = {
+		holder = han979
+		liege = k_zhangguo
+	}
+}
+
+c_zhang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1785
+		liege = k_xingguo
+	}
+}
+
+c_zhang3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1786
+	}
+}
+
+c_zhang4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1787
+	}
+}
+
+c_zhangcheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1788
+		liege = d_shushi2
+	}
+}
+
+c_zhanghuatai = {
+	3849.12.31 = {
+		holder = dm_autoholder_1789
+	}
+}
+
+c_zhangshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1790
+	}
+}
+
+c_zhangwu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1791
+		liege = d_jianrushi
+	}
+}
+
+c_zhangzi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1792
+		liege = k_liuyushi
+	}
+}
+
+c_zhanyin = {
+	3849.12.31 = {
+		holder = huanrong6
+		liege = d_tashi
+	}
+}
+
+c_zhao = {
+	3849.12.31 = {
+		holder = han415
+		liege = k_zhaoguo
+	}
+}
+
+c_zhao1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1793
+		liege = d_miaoshi
+	}
+}
+
+c_zhao2 = {
+	3849.12.31 = {
+		holder = yingxingzhaoshi11
+		liege = d_zhaoshi1
+	}
+}
+
+c_zhaoguan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1794
+	}
+}
+
+c_zhaoling = {
+	3849.12.31 = {
+		holder = dm_autoholder_1795
+	}
+}
+
+c_zhaoting = {
+	3849.12.31 = {
+		holder = dm_autoholder_1796
+	}
+}
+
+c_zhaoyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1797
+	}
+}
+
+c_zhaoyuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1798
+	}
+}
+
+c_zhe = {
+	3849.12.31 = {
+		holder = gongliangshi2
+		liege = d_gongliangshi
+	}
+}
+
+c_zhe1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1799
+	}
+}
+
+c_zhegao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1800
+	}
+}
+
+c_zhelin = {
+	3849.12.31 = {
+		holder = dm_autoholder_1801
+	}
+}
+
+c_zhen1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1802
+	}
+}
+
+c_zheng1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1803
+		liege = d_zhaoshi
+	}
+}
+
+c_zhengbo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1804
+		liege = k_yiqu
+	}
+}
+
+c_zhengye = {
+	3849.12.31 = {
+		holder = dm_autoholder_1805
+	}
+}
+
+c_zhenjian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1806
+	}
+}
+
+c_zhenlin = {
+	3849.12.31 = {
+		holder = linhuqiulinshi1
+		liege = d_qiulinshi
+	}
+}
+
+c_zhenling = {
+	3849.12.31 = {
+		holder = hezongshi6
+		liege = d_peishi
+	}
+}
+
+c_zhenxiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1807
+		liege = d_daweishi
+	}
+}
+
+c_zheqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1808
+		liege = k_chenguo
+	}
+}
+
+c_zhi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1809
+	}
+}
+
+c_zhi1 = {
+	3849.12.31 = {
+		holder = han619
+		liege = k_dongguoguo
+	}
+}
+
+c_zhi2 = {
+	3849.12.31 = {
+		holder = jixinglishi1
+		liege = d_lishi7
+	}
+}
+
+c_zhi3 = {
+	3849.12.31 = {
+		holder = huoguozhishi1
+		liege = d_zhishi1
+	}
+}
+
+c_zhi4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1810
+		liege = d_xinyuanshi
+	}
+}
+
+c_zhi5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1811
+	}
+}
+
+c_zhi6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1812
+	}
+}
+
+c_zhi7 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1813
+		liege = d_chunyushi
+	}
+}
+
+c_zhi8 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1814
+		liege = k_pengguo1
+	}
+}
+
+c_zhiduo = {
+	3849.12.31 = {
+		holder = dm_autoholder_1815
+	}
+}
+
+c_zhilu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1816
+		liege = k_diaoguo
+	}
+}
+
+c_zhinaibu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1817
+	}
+}
+
+c_zhiren = {
+	3849.12.31 = {
+		holder = jixingxiguoguo6
+		liege = d_xiayangshi
+	}
+}
+
+c_zhiyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1818
+		liege = d_huanshi
+	}
+}
+
+c_zhiyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1819
+		liege = d_nushi
+	}
+}
+
+c_zhiyuan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1820
+	}
+}
+
+c_zhizhifu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1821
+	}
+}
+
+c_zhong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1822
+	}
+}
+
+c_zhongcheng = {
+	3849.12.31 = {
+		holder = dm_autoholder_1823
+	}
+}
+
+c_zhongdu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1824
+		liege = k_jinguo
+	}
+}
+
+c_zhongdu1 = {
+	3849.12.31 = {
+		holder = han2840
+		liege = d_tangsunshi
+	}
+}
+
+c_zhonghe = {
+	3849.12.31 = {
+		holder = dm_autoholder_1825
+		liege = k_chuguo
+	}
+}
+
+c_zhongli1 = {
+	3849.12.31 = {
+		holder = han1678
+		liege = k_zhongliguo
+	}
+}
+
+c_zhonglisai = {
+	3849.12.31 = {
+		holder = dm_autoholder_1826
+	}
+}
+
+c_zhonglu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1827
+	}
+}
+
+c_zhongmou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1828
+		liege = d_jigongshi
+	}
+}
+
+c_zhongmou1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1829
+		liege = d_shishi1
+	}
+}
+
+c_zhongqiu2 = {
+	3849.12.31 = {
+		holder = genmou1
+		liege = d_genshi
+	}
+}
+
+c_zhongqiu3 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1830
+		liege = k_xingguo
+	}
+}
+
+c_zhongquan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1831
+		liege = k_chongguo
+	}
+}
+
+c_zhongren = {
+	3849.12.31 = {
+		holder = dm_autoholder_1832
+		liege = d_zuorenshi
+	}
+}
+
+c_zhongshan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1833
+	}
+}
+
+c_zhongwu = {
+	3849.12.31 = {
+		holder = han1773
+		liege = k_zhongwuguo
+	}
+}
+
+c_zhongwu1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1834
+	}
+}
+
+c_zhongyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1835
+		liege = k_jiguo2
+	}
+}
+
+c_zhongyang1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1836
+		liege = k_xiaorong
+	}
+}
+
+c_zhongyu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1837
+	}
+}
+
+c_zhongzhou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1838
+	}
+}
+
+c_zhou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1839
+		liege = d_zhukeshi
+	}
+}
+
+c_zhou1 = {
+	3849.12.31 = {
+		holder = han400
+		liege = k_zhouguo1
+	}
+}
+
+c_zhou2 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1840
+		liege = d_xingshi1
+	}
+}
+
+c_zhou3 = {
+	3849.12.31 = {
+		holder = yunxingyanshi15
+		liege = d_zhoushi2
+	}
+}
+
+c_zhou4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1841
+		liege = d_xianqiushi
+	}
+}
+
+c_zhou5 = {
+	3849.12.31 = {
+		holder = caozhongzhirong2
+		liege = k_caozhongzhirong
+	}
+}
+
+c_zhou7 = {
+	3849.12.31 = {
+		holder = wushirong1
+		liege = d_wushi2
+	}
+}
+
+c_zhoulai = {
+	3849.12.31 = {
+		holder = dm_autoholder_1842
+	}
+}
+
+c_zhoushou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1843
+		liege = d_lushi
+	}
+}
+
+c_zhouxian = {
+	3849.12.31 = {
+		holder = dm_autoholder_1844
+	}
+}
+
+c_zhu = {
+	3849.12.31 = {
+		holder = han1537
+		liege = k_zhuguo1
+	}
+}
+
+c_zhu1 = {
+	3849.12.31 = {
+		holder = zhuzao10
+		liege = k_zhuguo2
+	}
+}
+
+c_zhu2 = {
+	3849.12.31 = {
+		holder = han994
+		liege = k_zhuguo3
+	}
+}
+
+c_zhu4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1845
+		liege = k_zhengguo
+	}
+}
+
+c_zhu5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1846
+		liege = d_lushi6
+	}
+}
+
+c_zhu6 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1847
+	}
+}
+
+c_zhuan = {
+	3849.12.31 = {
+		holder = han1765
+		liege = k_zhuanguo
+	}
+}
+
+c_zhuanyu = {
+	3849.12.31 = {
+		holder = han940
+		liege = k_zhuanyuguo
+	}
+}
+
+c_zhubo1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1848
+	}
+}
+
+c_zhufang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1849
+	}
+}
+
+c_zhugao = {
+	3849.12.31 = {
+		holder = dm_autoholder_1850
+	}
+}
+
+c_zhuiqi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1851
+	}
+}
+
+c_zhuixiang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1852
+	}
+}
+
+c_zhuji = {
+	3849.12.31 = {
+		holder = dm_autoholder_1853
+	}
+}
+
+c_zhuke = {
+	3849.12.31 = {
+		holder = han845
+		liege = k_zhuguo
+	}
+}
+
+c_zhulan = {
+	3849.12.31 = {
+		holder = dm_autoholder_1854
+	}
+}
+
+c_zhulou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1855
+	}
+}
+
+c_zhuo = {
+	3849.12.31 = {
+		holder = yan19
+		liege = d_jushi3
+	}
+}
+
+c_zhuoling = {
+	3849.12.31 = {
+		holder = dm_autoholder_1856
+		liege = k_geguo1
+	}
+}
+
+c_zhuolu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1857
+		liege = k_nifang
+	}
+}
+
+c_zhuoyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1858
+		liege = k_tiaorong
+	}
+}
+
+c_zhuqi = {
+	3849.12.31 = {
+		holder = zhuqi5
+		liege = k_zhuqiguo
+	}
+}
+
+c_zhuqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1859
+		liege = d_yushi6
+	}
+}
+
+c_zhuxia = {
+	3849.12.31 = {
+		holder = han886
+		liege = d_renshi
+	}
+}
+
+c_zhuyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1860
+	}
+}
+
+c_zhuye = {
+	3849.12.31 = {
+		holder = dm_autoholder_1861
+	}
+}
+
+c_zhuyi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1862
+	}
+}
+
+c_zhuyushi = {
+	3849.12.31 = {
+		holder = zhuyushi16
+		liege = k_zhuyushi
+	}
+}
+
+c_zhuzao = {
+	3849.12.31 = {
+		holder = caoguo1
+		liege = d_yuanshi2
+	}
+}
+
+c_zhuzhong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1863
+	}
+}
+
+c_zi1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1864
+		liege = d_chunyushi
+	}
+}
+
+c_zi4 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1865
+	}
+}
+
+c_zi5 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1866
+	}
+}
+
+c_zi7 = {
+	3849.12.31 = {
+		holder = jinyunshi38
+		liege = k_jinguo
+	}
+}
+
+c_ziling = {
+	3849.12.31 = {
+		holder = dm_autoholder_1867
+	}
+}
+
+c_zilou = {
+	3849.12.31 = {
+		holder = dm_autoholder_1868
+		liege = k_zhuguo3
+	}
+}
+
+c_zilou1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1869
+		liege = d_yanshi5
+	}
+}
+
+c_ziqiu = {
+	3849.12.31 = {
+		holder = pengzu8
+		liege = d_pengzushi
+	}
+}
+
+c_zishi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1870
+		liege = k_jiangguo
+	}
+}
+
+c_zitang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1871
+	}
+}
+
+c_zitong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1872
+		liege = d_xishi1
+	}
+}
+
+c_ziwu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1873
+	}
+}
+
+c_ziwugu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1874
+	}
+}
+
+c_ziwuguan = {
+	3849.12.31 = {
+		holder = jixingrongshi14
+		liege = d_rongqishi
+	}
+}
+
+c_ziyang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1875
+		liege = d_yufushi
+	}
+}
+
+c_zong = {
+	3849.12.31 = {
+		holder = dm_autoholder_1876
+	}
+}
+
+c_zonghu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1877
+	}
+}
+
+c_zongqiu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1878
+	}
+}
+
+c_zoulu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1879
+		liege = d_yishi
+	}
+}
+
+c_zufu = {
+	3849.12.31 = {
+		holder = dm_autoholder_1880
+		liege = k_dizu
+	}
+}
+
+c_zui = {
+	3849.12.31 = {
+		holder = dm_autoholder_1881
+		liege = k_lirong
+	}
+}
+
+c_zuili = {
+	3849.12.31 = {
+		holder = dm_autoholder_1882
+	}
+}
+
+c_zuishang = {
+	3849.12.31 = {
+		holder = dm_autoholder_1883
+	}
+}
+
+c_zuli = {
+	3849.12.31 = {
+		holder = dm_autoholder_1884
+		liege = d_hunshi
+	}
+}
+
+c_zuo = {
+	3849.12.31 = {
+		holder = han1117
+		liege = k_zuoguo
+	}
+}
+
+c_zuo1 = {
+	3849.12.31 = {
+		holder = dm_autoholder_1885
+		liege = k_dongguo
+	}
+}
+
+c_zuobo = {
+	3849.12.31 = {
+		holder = qiaorushi22
+		liege = d_jianrushi
+	}
+}
+
+c_zuodu1 = {
+	3849.12.31 = {
+		holder = han5526
+		liege = k_zuoduguo
+	}
+}
+
+c_zuoren = {
+	3849.12.31 = {
+		holder = hengxinglunushi8
+		liege = d_zuorenshi
+	}
+}
+
+c_zuoshi = {
+	3849.12.31 = {
+		holder = dm_autoholder_1886
+		liege = k_caoguo
+	}
+}

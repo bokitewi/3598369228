@@ -1,0 +1,395 @@
+﻿namespace = hasan_sabbah
+
+# Ismaili Preachers
+# You meet Amira Zarrab and begin the story cycle
+# 1000
+hasan_sabbah.1000 = {
+	type = character_event
+	title = hasan_sabbah.1000.t
+	desc = hasan_sabbah.1000.desc
+	theme = learning
+	override_background = { reference = temple }
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:amira
+		animation = personality_zealous
+	}
+
+	trigger = {
+		has_ep3_dlc_trigger = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				name = amira
+				age = { 20 50 }
+				gender = male
+				trait = zealous
+				trait = gregarious
+				trait = diligent
+				trait = loyal
+				random_traits_list = {
+					count = 1
+					education_learning_3 = {}
+					education_learning_4 = {}
+				}
+				location = root.location
+				faith = faith:ismaili
+				culture = culture:persian
+				after_creation = {
+					dynasty = { set_dynasty_name = dynn_zarrab }
+					house = { set_house_name = dynn_zarrab }
+				}
+				save_scope_as = amira
+			}
+			location = { save_scope_as = location }
+		}
+	}
+
+	# You have succeeded in wounding and breaching my belief
+	option = {
+		name = hasan_sabbah.1000.a
+		flavor = begin_hasan_cycle_ismaili_tt
+		add_courtier = scope:amira
+		camp_officer_grant_effect = {
+			EMPLOYER = root
+			CANDIDATE = scope:amira
+			POS = second
+		}
+
+		set_character_faith = faith:ismaili
+		if = {
+			limit = { 
+				faith:ismaili = { has_doctrine = doctrine_monotheist }
+			}
+			custom_description_no_bullet = { text = mandala_monotheist_warning_tt }
+		}
+		custom_tooltip = {
+			text = unlock_evangelize_decision_tt
+			create_story = story_hasan
+			random_owned_story = {
+				type = story_hasan
+				set_variable = {
+					name = story_phase
+					value = 1
+				}
+			}
+			every_courtier = {
+				limit = {
+					religion = religion:islam_religion
+				}
+				set_character_faith = faith:ismaili
+			}
+		}
+		custom_tooltip = advance_to_the_assassins_tt
+		ai_chance = {
+			base = 1000 # Historically determined
+		}
+	}
+
+	# Truth cannot be sought outside the pale of Islam
+	option = {
+		name = hasan_sabbah.1000.b
+		flavor = begin_hasan_cycle_twelver_tt
+		custom_tooltip = {
+			text = unlock_evangelize_decision_tt
+			create_story = story_hasan
+			random_owned_story = {
+				type = story_hasan
+				set_variable = {
+					name = story_phase
+					value = 1
+				}
+			}
+		}
+		ai_chance = {
+			base = 0 # Historically determined
+		}
+	}
+}
+
+# Shiite Evangelism
+# You try to convert the local populace to your faith
+# 1010-1019
+hasan_sabbah.1010 = {
+	# Absent vanilla-map title links isolated: c_qazwin
+	type = character_event
+	hidden = yes
+	trigger = { always = no }
+}
+
+# Divine Calling
+# You're summoned to Egypt
+# 1020-1029
+hasan_sabbah.1020 = {
+	type = character_event
+	title = hasan_sabbah.1020.t
+	desc = hasan_sabbah.1020.desc
+	theme = learning
+	override_background = { reference = terrain }
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	lower_right_portrait = {
+		character = scope:ismaili_caliph
+		animation = personality_zealous
+	}
+
+	trigger = {
+		is_travelling = no
+		NOT = {
+			has_character_flag = had_hasan_sabah_20
+		}
+		faith:ismaili.religious_head ?= { is_landed = yes }
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_character_flag = had_hasan_sabah_20 }
+			}
+			add_character_flag = {
+				flag = had_hasan_sabah_20
+				years = 1
+			}
+		}
+		faith:ismaili.religious_head = {
+			save_scope_as = ismaili_caliph
+			capital_county = { save_scope_as = cairo }
+		}
+	}
+
+	# Let'sa go
+	option = {
+		name = hasan_sabbah.1020.a
+		custom_tooltip = hasan_sabbah.1020.a.tt
+		custom_tooltip = advance_to_the_assassins_tt
+		start_travel_plan = {
+			destination = scope:ismaili_caliph.capital_province
+			players_use_planner = yes
+			return_trip = no
+			travel_with_domicile = yes
+			on_arrival_destinations = last
+			on_arrival_event = hasan_sabbah.1022
+			on_travel_planner_cancel_event = hasan_sabbah.1020
+		}
+
+		ai_chance = {
+			base = 1000 # Historical path
+		}
+	}
+
+	# Let'sa not
+	option = {
+		name = hasan_sabbah.1020.b
+		stress_impact = {
+			zealous = medium_stress_impact_gain
+			ambitious = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# The Ismaili Caliphate
+# Arrive in Egypt, is it time to become Nizari? I think it's time to become Nizari
+# 1022
+hasan_sabbah.1022 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+
+# Death of a Caliph
+# The original caliph died, it's *definitely* time to become Nizari
+# 1030
+hasan_sabbah.1030 = {
+	type = character_event
+	hidden = yes
+	trigger = {
+		always = no
+	}
+}
+
+# The Enemy of Nizarism
+# Time to decide my ultimate enemy
+# 1031
+hasan_sabbah.1031 = {
+	type = character_event
+	title = hasan_sabbah.1031.t
+	desc = hasan_sabbah.1031.desc
+	theme = realm
+	override_background = { reference = throne_room }
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	right_portrait = {
+		character = scope:seljuk_equivalent
+		animation = personality_dishonorable
+	}
+
+	trigger = {
+		scope:location.county.holder.top_liege = {
+			faith != root.faith
+			realm_size >= 10
+			highest_held_title_tier >= tier_kingdom
+		}
+		any_owned_story = {
+			type = story_hasan
+			NOT = {
+				exists = var:ultimate_foe
+			}
+		}
+	}
+
+	immediate = {
+		scope:location.county.holder.top_liege = { save_scope_as = seljuk_equivalent }
+		random_owned_story = {
+			type = story_hasan
+			save_scope_as = story
+		}
+	}
+
+	# It's this guy
+	option = {
+		name = hasan_sabbah.1031.a
+		custom_tooltip = {
+			text = unlock_final_hasan_decisions_1_tt
+			scope:story = {
+				set_variable = {
+					name = ultimate_foe
+					value = scope:seljuk_equivalent
+				}
+			}
+		}
+		if = {
+			limit = {
+				faith = faith:nizari
+			}
+			custom_tooltip = unlock_final_hasan_decisions_2_tt
+		}
+		custom_tooltip = unlock_final_hasan_decisions_3_tt
+		set_relation_nemesis = {
+			target = scope:seljuk_equivalent
+			reason = nemesis_eternal_enemy
+		}
+
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1000
+				scope:seljuk_equivalent.house = house:house_seljuk
+			}
+		}
+	}
+
+	# This is not him
+	option = {
+		name = hasan_sabbah.1031.b
+		custom_tooltip = look_for_another_enemy_tt
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1000
+				NOT = { scope:seljuk_equivalent.house = house:house_seljuk }
+			}
+		}
+	}
+}
+
+# A Rousing Sermon
+# Agitate the populace decision event
+# 1040
+hasan_sabbah.1040 = {
+	type = character_event
+	title = hasan_sabbah.1040.t
+	desc = hasan_sabbah.1040.desc
+	theme = realm
+	override_background = { reference = terrain }
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+
+	immediate = {
+		random_owned_story = {
+			type = story_hasan
+			var:ultimate_foe = { save_scope_as = ultimate_foe }
+		}
+	}
+
+	# Make them angry
+	option = {
+		name = hasan_sabbah.1040.a
+		duel = {
+			skills = { intrigue learning }
+			value = high_skill_rating
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				modifier = {
+					add = {
+						subtract = scope:location.county.county_opinion
+					}
+				}
+				send_interface_toast = {
+					type = event_toast_effect_good
+					title = hasan_sabbah.1040.a.win
+					left_icon = root
+					scope:location.county = {
+						add_county_modifier = {
+							modifier = ep3_agitated_populace
+							years = 15
+						}
+					}
+				}
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				modifier = {
+					add = scope:location.county.county_opinion
+				}
+				send_interface_toast = {
+					type = event_toast_effect_bad
+					title = hasan_sabbah.1040.a.lose
+					left_icon = root
+					scope:location.county = {
+						add_county_modifier = {
+							modifier = tougher_to_convert
+							years = 10
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+# The Old Man of the Mountain
+# Post-war settling down event
+# 1050
+hasan_sabbah.1050 = {
+	# Absent vanilla-map title links isolated: b_alamut
+	type = character_event
+	hidden = yes
+	trigger = { always = no }
+}

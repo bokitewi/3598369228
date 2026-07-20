@@ -1,0 +1,83 @@
+﻿l_simp_chinese:
+commander_text_label:0 "中军[commander|E]\n[Army.GetCommander.GetFirstName]"
+lwleader_text_label:0 "左翼[commander]\n[Army.MakeScope.Var('embattle_left_flank_commander').Char.GetFirstName]"
+rwleader_text_label:0 "右翼[commander]\n[Army.MakeScope.Var('embattle_right_flank_commander').Char.GetFirstName]"
+pre_lwleader_text_label:0 "@warning_icon! #N $lwleader_text_label$#!"
+pre_rwleader_text_label:0 "@warning_icon! #N $rwleader_text_label$#!"
+
+embattle_side_commander_advantage_modifier:0 "[embattle_side_advantage_modifier|E]"
+MODIFIER_DEFINITION_MAIN_DESC_SIDE_ADVANTAGE: "该修正随着两翼[commander]的[martial_skill|E]增长而增长（#bold $MULTIPLIER|+=0$#!）"
+MODIFIER_DEFINITION_VALUE_PER_SIDE_ADVANTAGE: "\t#weak 随着两翼[commander]的[martial_skill|E]提高而增长#!"
+
+embattle_character_count:0 "[Army.MakeScope.ScriptValue('embattle_character_count_value')|0]名角色中的[Army.MakeScope.ScriptValue('embattle_character_count_value')|0]名"
+embattle_SELECT_CENTER_COMMANDER_HEADER:0 "选择新中军[commander|E]"
+embattle_SELECT_LEFT_FLANK_COMMANDER_HEADER:0 "选择新左翼[commander]"
+embattle_SELECT_RIGHT_FLANK_COMMANDER_HEADER:0 "选择新右翼[commander]"
+
+
+###战术###
+
+embattle_volly_tactic_modifier:0 "齐射战术"
+embattle_volly_tactic_modifier_desc:0 "该军团如雨倾般齐射，未战先挫其锐气。"
+embattle_charge_tactic_modifier:0 "冲锋战术"
+embattle_charge_tactic_modifier_desc:0 "该军团如怒涛般冲锋，不顾生死。"
+embattle_stand_fast_tactic_modifier:0 "固守战术"
+embattle_stand_fast_tactic_modifier_desc:0 "该军团如山峙般固守，寸步不让。"
+embattle_advance_tactic_modifier:0 "推进战术"
+embattle_advance_tactic_modifier_desc:0 "该军团如铁流般推进，层层压迫。"
+embattle_harass_tactic_modifier:0 "骚扰战术"
+embattle_harass_tactic_modifier_desc:0 "该军团如游蛇般骚扰，神出鬼没。"
+
+embattle_tactic_diversity_modifier:0 "战术多样性"
+embattle_tactic_diversity_modifier_desc:0 "该指挥官的战术丰富多样。"
+embattle_tactic_counter_modifier:0 "战术被克制"
+embattle_tactic_counter_modifier_desc:0 "该指挥官的战术被敌方克制。"
+
+embattle_potshots_tactic_modifier:0 "胡乱射击战术"
+embattle_potshots_tactic_modifier_desc:0 "该军团如盲弓乱发，毫无章法。"
+embattle_reckless_charge_tactic_modifier:0 "鲁莽冲锋战术"
+embattle_reckless_charge_tactic_modifier_desc:0 "该军团如失控猛兽，伤敌亦自损。"
+embattle_confused_orders_tactic_modifier:0 "军令费解战术"
+embattle_confused_orders_tactic_modifier_desc:0 "该军团如群龙无首，各自为战。"
+embattle_timid_advance_tactic_modifier:0 "胆怯推进战术"
+embattle_timid_advance_tactic_modifier_desc:0 "该军团如履薄冰，进退失据。"
+embattle_disorganised_harass_tactic_modifier:0 "无组织骚扰战术"
+embattle_disorganised_harass_tactic_modifier_desc:0 "该军团如乱蚁出巢，无序骚扰。"
+
+at_age:0 "年龄"
+at_highest_held_title_tier:0 "级别"
+at_opinion_of_root:0 "对你的好感度"
+at_martial:0 "将领能力"
+
+
+embattle_combat_tactic_mechanic_title_volly_tactic:0 "齐射战术"
+embattle_combat_tactic_mechanic_tt_volly_tactic:0 "[commander.GetName]指挥军队发动了[embattle_volly_tactic|E]"
+
+embattle_combat_tactic_mechanic_title_charge_tactic:0 "冲锋战术"
+embattle_combat_tactic_mechanic_tt_charge_tactic:0 "[commander.GetName]指挥军队发动了[embattle_charge_tactic|E]"
+
+embattle_combat_tactic_mechanic_title_stand_fast_tactic:0 "固守战术"
+embattle_combat_tactic_mechanic_tt_stand_fast_tactic:0 "[commander.GetName]指挥军队发动了[embattle_stand_fast_tactic|E]"
+
+embattle_combat_tactic_mechanic_title_advance_tactic:0 "推进战术"
+embattle_combat_tactic_mechanic_tt_advance_tactic:0 "[commander.GetName]指挥军队发动了[embattle_advance_tactic|E]"
+
+embattle_combat_tactic_mechanic_title_harass_tactic:0 "骚扰战术"
+embattle_combat_tactic_mechanic_tt_harass_tactic:0 "[commander.GetName]指挥军队发动了[embattle_harass_tactic|E]"
+
+embattle_combat_tactic_mechanic_title_potshots_tactic:0 "胡乱射击战术"
+embattle_combat_tactic_mechanic_tt_potshots_tactic:0 "[commander.GetName]的军队不听指挥发动了[embattle_potshots_tactic|E]"
+embattle_combat_tactic_mechanic_title_reckless_charge_tactic:0 "鲁莽冲锋战术"
+embattle_combat_tactic_mechanic_tt_reckless_charge_tactic:0 "[commander.GetName]的军队不听指挥发动了[embattle_reckless_charge_tactic|E]"
+embattle_combat_tactic_mechanic_title_confused_orders_tactic:0 "军令费解战术"
+embattle_combat_tactic_mechanic_tt_confused_orders_tactic:0 "[commander.GetName]的军队不听指挥发动了[embattle_confused_orders_tactic|E]"
+embattle_combat_tactic_mechanic_title_timid_advance_tactic:0 "胆怯推进战术"
+embattle_combat_tactic_mechanic_tt_timid_advance_tactic:0 "[commander.GetName]的军队不听指挥发动了[embattle_timid_advance_tactic|E]"
+embattle_combat_tactic_mechanic_title_disorganised_harass_tactic:0 "无组织骚扰战术"
+embattle_combat_tactic_mechanic_tt_disorganised_harass_tactic:0 "[commander.GetName]的军队不听指挥发动了[embattle_disorganised_harass_tactic|E]"
+
+
+test_tooltip:0 "[test2.GetName][test.GetName]"
+
+message_filter_embattle_tactic_activated:0 "@war_icon!战术发动"
+message_filter_embattle_tactic_activated_desc:0 "一名[commander|E]发动战术"

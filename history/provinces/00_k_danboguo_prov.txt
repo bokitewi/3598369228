@@ -1,0 +1,75 @@
+﻿##### d_danboshi ############################
+
+### c_danchima
+# DANCHIMA
+2947 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_gaoye
+
+
+### c_danbo1
+
+
+### c_yushe1
+# DANHOU
+2833 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_danhou
+
+
+##### d_fuzhishi ############################
+
+### c_fuzhi
+# FUZHI
+3538 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_bijiamei
+
+
+### c_helu
+
+
+##### d_santianshi ############################
+
+### c_guishan
+# GUISHAN
+3540 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_danbo
+# DANBO
+2895 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# DUOJI
+3539 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_duoji
+
+

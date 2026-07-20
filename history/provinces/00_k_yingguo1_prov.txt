@@ -1,0 +1,56 @@
+﻿##### d_yingshi1 ############################
+
+### c_meiying
+# 
+1955 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_qiepi
+# 
+1960 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_qiong
+# 
+1962 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_biyang3
+# 
+1963 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yingshi
+# 
+1964 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_boxiang
+# 
+1965 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

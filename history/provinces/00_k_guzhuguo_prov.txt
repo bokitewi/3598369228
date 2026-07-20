@@ -1,0 +1,219 @@
+﻿##### d_motaishi ############################
+
+### c_lulong
+
+
+### c_jieshi
+# JIESHI
+3494 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# LULONG
+3493 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# JIUJIANG
+3497 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# FENGRUN
+3512 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_suizhong
+# SUIZHONG
+3495 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# NINGYUAN
+3496 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# DABA
+3775 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_jiujiang
+
+
+### c_xifeng2
+# XIFENG2
+3510 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# XINGLONG
+3513 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# LUANXING
+2632 = {
+	culture = yan
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_fengrun
+
+
+### c_pingquan1
+# PINGQUAN1
+3508 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# LIPING
+3505 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# CHENGDE1
+3509 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# HALAHETAO
+2631 = {
+	culture = yan
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_chengde1
+
+
+### c_qianan
+# FUSU
+3504 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# MASHOU1
+3772 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# BAILANG
+3491 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_xinglong
+
+
+### c_keye1
+# KEYE1
+3514 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# KEDAN
+3768 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# QIANAN
+3511 = {
+	holding = none
+}
+# LINGYUAN
+3506 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_ningyuan
+
+
+### c_fusu
+
+
+### c_liping
+
+
+### c_bailang
+
+
+### c_ande1
+
+
+### c_lingyuan
+
+
+### c_kedan
+
+
+### c_luolei
+
+
+### c_hudiyu
+# ANDE1
+3503 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_shuluogan
+
+
+### c_mashou1
+
+
+### c_wencheng1
+# WENCHENG1
+3773 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# YANFU
+3774 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_yanfu
+
+
+### c_daba
+
+

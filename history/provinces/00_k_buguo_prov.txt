@@ -1,0 +1,74 @@
+﻿##### d_bushi ############################
+
+### c_xiao1
+# XIAO1
+585 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_guyang
+# GUYANG
+588 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_liancheng
+# LIANCHENG
+2365 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_gaochang
+# GAOCHANG
+2366 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_sibing
+# SIBING
+2367 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_tuoyang
+# TUOYANG
+2368 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lingbi
+# LINGBI
+2370 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_bu1
+# BU1
+2371 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

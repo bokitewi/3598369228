@@ -1,0 +1,227 @@
+﻿##### d_jinshi1 ############################
+
+### c_gouyehan
+
+
+### c_choudao
+
+
+### c_banlugu
+
+
+### c_tuilianghuo
+# MIWUXIEMA
+3401 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_mushan
+
+
+### c_nannei
+
+
+### c_jiazhao
+# YIDI
+3389 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_mali
+
+
+### c_wuyeshan
+# ZOUCAOMA
+3403 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_shanghuo
+
+
+### c_qitu
+# GOUYEHAN
+3395 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# BIANCHENJIETU
+3408 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_gupu1
+
+
+### c_xiaoduosha
+
+
+### c_shiwu
+
+
+### c_chicun
+
+
+### c_zhipinchuan
+
+
+### c_wenhuoliang
+
+
+### c_jiazhuhuo
+
+
+### c_julao
+
+
+### c_maizhenyi
+
+
+### c_jiahuoliangu
+
+
+### c_hulu
+# HULU
+3393 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhouxian
+# ZHOUXIAN
+3394 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_gongyan
+# GONGYAN
+3396 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lidong
+# LIDONG
+3397 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_banlu
+
+
+### c_miwuxiema
+
+
+### c_ganlu1
+
+
+### c_zoucaoma
+
+
+### c_anxie
+# ANXIE
+3404 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# RUKAN
+3392 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_dulu
+# DULU
+3405 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lenv
+# LENU
+3406 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# GANLU1
+3402 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# BUSI
+3390 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_qixi
+# QIXI
+3407 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yidi
+
+
+### c_busi
+
+
+### c_junmi1
+# JUNMI1
+3391 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_rukan
+
+
+### c_bianchenjietu
+
+
+### c_wumihan
+# WUMIHAN
+3409 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

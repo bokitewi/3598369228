@@ -1,0 +1,538 @@
+{
+  "schema": 1,
+  "restored": true,
+  "obedience_count": 10,
+  "embattle_count": 65,
+  "excluded": [
+    "descriptor.mod",
+    "thumbnail.png",
+    "all unrelated dirty-worktree deletions"
+  ],
+  "entries": [
+    {
+      "path": "common/casus_belli_types/zz_dm_obedience_mpo_wars.txt",
+      "source": "git:bokitewi:common/casus_belli_types/zz_dm_obedience_mpo_wars.txt",
+      "source_sha256": "ee76b5d049f3a3022bd5e9748e8f16727c8a9a87a370d7c38d1b8c6d1e3a342e",
+      "target_sha256": "ee76b5d049f3a3022bd5e9748e8f16727c8a9a87a370d7c38d1b8c6d1e3a342e",
+      "state": "restore_then_maintain"
+    },
+    {
+      "path": "common/character_interactions/09_mpo_interactions.txt",
+      "source": "git:bokitewi:common/character_interactions/09_mpo_interactions.txt",
+      "source_sha256": "854135cc9f48f4b0af81ad438d114d2af7855dc68d16fdf48a79b96fb9b03501",
+      "target_sha256": "854135cc9f48f4b0af81ad438d114d2af7855dc68d16fdf48a79b96fb9b03501",
+      "state": "restore_then_maintain"
+    },
+    {
+      "path": "common/character_interactions/zz_dm_obedience_tributary_interactions.txt",
+      "source": "git:bokitewi:common/character_interactions/zz_dm_obedience_tributary_interactions.txt",
+      "source_sha256": "e798ba315fa403a43f2057bdb21b11296c4926aa79963fdcefcf174ed850f0fc",
+      "target_sha256": "e798ba315fa403a43f2057bdb21b11296c4926aa79963fdcefcf174ed850f0fc",
+      "state": "restore_then_maintain"
+    },
+    {
+      "path": "common/governments/00_government_types.txt",
+      "source": "git:bokitewi:common/governments/00_government_types.txt",
+      "source_sha256": "dcc0c7f5a64f261a5d8d09114834b1890f07ac506573af31cd3344017e1cbffa",
+      "target_sha256": "dcc0c7f5a64f261a5d8d09114834b1890f07ac506573af31cd3344017e1cbffa",
+      "state": "restore_then_maintain"
+    },
+    {
+      "path": "common/governments/01_japan_government_types.txt",
+      "source": "git:bokitewi:common/governments/01_japan_government_types.txt",
+      "source_sha256": "97fc17eec784690eb9840e9900060a7a483b48b1201cda118447d3926748e5b4",
+      "target_sha256": "97fc17eec784690eb9840e9900060a7a483b48b1201cda118447d3926748e5b4",
+      "state": "restore_then_maintain"
+    },
+    {
+      "path": "common/governments/02_government_types_COPF.txt",
+      "source": "git:bokitewi:common/governments/02_government_types_COPF.txt",
+      "source_sha256": "5ca4d7f79a9a93ddbf656e1f215f24737f34bca9b3ee4d846fbe29bb543b1e58",
+      "target_sha256": "5ca4d7f79a9a93ddbf656e1f215f24737f34bca9b3ee4d846fbe29bb543b1e58",
+      "state": "restore_then_maintain"
+    },
+    {
+      "path": "common/script_values/dm_obedience_values.txt",
+      "source": "git:bokitewi:common/script_values/dm_obedience_values.txt",
+      "source_sha256": "78ecbace41cde4ecc54dad973b0ab3501b32d14f0d1b3c6f8ee5c8ebc94dd378",
+      "target_sha256": "78ecbace41cde4ecc54dad973b0ab3501b32d14f0d1b3c6f8ee5c8ebc94dd378",
+      "state": "restore_then_maintain"
+    },
+    {
+      "path": "common/scripted_triggers/zz_dm_obedience_semantic_triggers.txt",
+      "source": "git:bokitewi:common/scripted_triggers/zz_dm_obedience_semantic_triggers.txt",
+      "source_sha256": "9364a68eed997428fad0d90f626978109d2a096c6fe30d1df1e19c984d687544",
+      "target_sha256": "9364a68eed997428fad0d90f626978109d2a096c6fe30d1df1e19c984d687544",
+      "state": "restore_then_maintain"
+    },
+    {
+      "path": "localization/simp_chinese/replace/dm_obedience_l_simp_chinese.yml",
+      "source": "git:bokitewi:localization/simp_chinese/replace/dm_obedience_l_simp_chinese.yml",
+      "source_sha256": "9fef6dcbbd3dd751ad902cd84b9dedc5f24bb7acf716fec0fd6c265bc0c51192",
+      "target_sha256": "9fef6dcbbd3dd751ad902cd84b9dedc5f24bb7acf716fec0fd6c265bc0c51192",
+      "state": "restore_then_maintain"
+    },
+    {
+      "path": "tools/dm_audit_obedience.py",
+      "source": "git:bokitewi:tools/dm_audit_obedience.py",
+      "source_sha256": "4918295c0ea61e9b320dba5a6291e41eff3fea62efb74beb36a0e39b063b9557",
+      "target_sha256": "4918295c0ea61e9b320dba5a6291e41eff3fea62efb74beb36a0e39b063b9557",
+      "state": "restore_then_maintain"
+    },
+    {
+      "path": "common/character_interactions/debug_only_interaction.txt",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\common\\character_interactions\\debug_only_interaction.txt",
+      "source_sha256": "2313a0708e4cbe189d121ceae4740b9724ccb518e4b561536095a296c589056e",
+      "target_sha256": "2313a0708e4cbe189d121ceae4740b9724ccb518e4b561536095a296c589056e",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "common/game_concepts/embattle_game_concepts.txt",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\common\\game_concepts\\embattle_game_concepts.txt",
+      "source_sha256": "01c99e1af7313b23608def1804c8a534e0070618c22223a966350eb5a1aea945",
+      "target_sha256": "01c99e1af7313b23608def1804c8a534e0070618c22223a966350eb5a1aea945",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "common/game_rules/embattle_game_rules.txt",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\common\\game_rules\\embattle_game_rules.txt",
+      "source_sha256": "3455eab387a356bc6aedfafe21953d2300a7a7936947a7385fb6c8c2e38f8ec7",
+      "target_sha256": "3455eab387a356bc6aedfafe21953d2300a7a7936947a7385fb6c8c2e38f8ec7",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "common/message_filter_types/embattle_message_filter_types.txt",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\common\\message_filter_types\\embattle_message_filter_types.txt",
+      "source_sha256": "baa207c488241531f533397d87776bab52728a5a73ac443e7e72a3860ceb1245",
+      "target_sha256": "baa207c488241531f533397d87776bab52728a5a73ac443e7e72a3860ceb1245",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "common/messages/embattle_messages.txt",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\common\\messages\\embattle_messages.txt",
+      "source_sha256": "f337c74cb98a19042aa2f8e50166cf4fd31356ccaa6b8bb4b6a9fd106bf9d7fb",
+      "target_sha256": "f337c74cb98a19042aa2f8e50166cf4fd31356ccaa6b8bb4b6a9fd106bf9d7fb",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "common/modifiers/embattle_modifiers.txt",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\common\\modifiers\\embattle_modifiers.txt",
+      "source_sha256": "6319c4240aafe737757119ba52b8c76721666f2cc3c44c0c403f449092dceceb",
+      "target_sha256": "6319c4240aafe737757119ba52b8c76721666f2cc3c44c0c403f449092dceceb",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "common/on_action/embattle_on_action.txt",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\common\\on_action\\embattle_on_action.txt",
+      "source_sha256": "7900a42709de637ab642ff6e7151647c9144d6b04783ca9b39cdfe73f32d2bfb",
+      "target_sha256": "7900a42709de637ab642ff6e7151647c9144d6b04783ca9b39cdfe73f32d2bfb",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "common/script_values/embattle_values.txt",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\common\\script_values\\embattle_values.txt",
+      "source_sha256": "f6213837aff67a85985a2be015fda457e3cd745e3adcd767991405c2c807fd09",
+      "target_sha256": "f6213837aff67a85985a2be015fda457e3cd745e3adcd767991405c2c807fd09",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "common/scripted_effects/embattle_effects.txt",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\common\\scripted_effects\\embattle_effects.txt",
+      "source_sha256": "742201ce66fd289528e6b1abd008847ccc982c30a3353ad55526c629cd13f878",
+      "target_sha256": "742201ce66fd289528e6b1abd008847ccc982c30a3353ad55526c629cd13f878",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "common/scripted_effects/embattle_tactic_effects.txt",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\common\\scripted_effects\\embattle_tactic_effects.txt",
+      "source_sha256": "889d58c00e342945b4f02ca03cb54f721e1415cc27d8159fc8a7ed1149cd403c",
+      "target_sha256": "889d58c00e342945b4f02ca03cb54f721e1415cc27d8159fc8a7ed1149cd403c",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "common/scripted_effects/zzz_embattle_00_war_effects.txt",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\common\\scripted_effects\\zzz_embattle_00_war_effects.txt",
+      "source_sha256": "6941e5a6106de34e695a3a4f4374c1dcf357d4b064c9541ff58e7f4aecbc16aa",
+      "target_sha256": "6941e5a6106de34e695a3a4f4374c1dcf357d4b064c9541ff58e7f4aecbc16aa",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "common/scripted_guis/embattle_sgui.txt",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\common\\scripted_guis\\embattle_sgui.txt",
+      "source_sha256": "2e194ef14d68905f9d9df5f8d03c304494d1d91415bd0075b1289321ed429564",
+      "target_sha256": "2e194ef14d68905f9d9df5f8d03c304494d1d91415bd0075b1289321ed429564",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "common/scripted_guis/zzz_dt_sgui.txt",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\common\\scripted_guis\\zzz_dt_sgui.txt",
+      "source_sha256": "8204a4194de5503af29c464778a66eb571bb34f27a196692fbbedef4f52f1d80",
+      "target_sha256": "8204a4194de5503af29c464778a66eb571bb34f27a196692fbbedef4f52f1d80",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "common/scripted_triggers/embattle_triggers.txt",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\common\\scripted_triggers\\embattle_triggers.txt",
+      "source_sha256": "8308614506f1a70da772f6d53d1d3567c3d64867023a3119ff7f9205efb0a247",
+      "target_sha256": "8308614506f1a70da772f6d53d1d3567c3d64867023a3119ff7f9205efb0a247",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "common/traits/embattle_commander_traits.txt",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\common\\traits\\embattle_commander_traits.txt",
+      "source_sha256": "efed851a0d359579ae885f660392c4f0d3c2951594cb5d2b31976327323ead51",
+      "target_sha256": "efed851a0d359579ae885f660392c4f0d3c2951594cb5d2b31976327323ead51",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "events/embattle_events.txt",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\events\\embattle_events.txt",
+      "source_sha256": "80b2f7fe1d924cb7b3e0765fc5e739007d1f6b2e7caf0af122dedd3baec5fca9",
+      "target_sha256": "80b2f7fe1d924cb7b3e0765fc5e739007d1f6b2e7caf0af122dedd3baec5fca9",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_aggressive_attacker.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_aggressive_attacker.dds",
+      "source_sha256": "d597674a4412d086bb356a3104de40b68f1ac5a2614d96ee0518f80e6ea02948",
+      "target_sha256": "d597674a4412d086bb356a3104de40b68f1ac5a2614d96ee0518f80e6ea02948",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_cautious_leader.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_cautious_leader.dds",
+      "source_sha256": "cb0998bd62cd32c02193c748639866511daa04531e5843e45200aca1694b6aa8",
+      "target_sha256": "cb0998bd62cd32c02193c748639866511daa04531e5843e45200aca1694b6aa8",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_desert_warrior.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_desert_warrior.dds",
+      "source_sha256": "a3a124a1268100deea49dcd113d591ceef4d29ab7ba5413503376a8c9de80f6b",
+      "target_sha256": "a3a124a1268100deea49dcd113d591ceef4d29ab7ba5413503376a8c9de80f6b",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_flexible_leader.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_flexible_leader.dds",
+      "source_sha256": "8a417a176fae1214306a4fc61e36bba0a1b44d721ff793903c064a8e15284813",
+      "target_sha256": "8a417a176fae1214306a4fc61e36bba0a1b44d721ff793903c064a8e15284813",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_forder.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_forder.dds",
+      "source_sha256": "aa9928808c11e171fb787357243a0ccfe560a3e70922d9840f95694c674d522f",
+      "target_sha256": "aa9928808c11e171fb787357243a0ccfe560a3e70922d9840f95694c674d522f",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_forest_fighter.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_forest_fighter.dds",
+      "source_sha256": "1041995c5e5a2b4f1324184ba50f119085527bd03a5d8ec6448e9814aa9b8321",
+      "target_sha256": "1041995c5e5a2b4f1324184ba50f119085527bd03a5d8ec6448e9814aa9b8321",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_holy_warrior.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_holy_warrior.dds",
+      "source_sha256": "986402248657afe33126c6772368cca6e9cfcbe689da5fbc3bad9e35657c45be",
+      "target_sha256": "986402248657afe33126c6772368cca6e9cfcbe689da5fbc3bad9e35657c45be",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_jungle_stalker.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_jungle_stalker.dds",
+      "source_sha256": "3b43fc5b1bc92dd68a2a91096b12a07b2f1cba7520d07d85671637fe457c5513",
+      "target_sha256": "3b43fc5b1bc92dd68a2a91096b12a07b2f1cba7520d07d85671637fe457c5513",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_logistician.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_logistician.dds",
+      "source_sha256": "1fe1e1a7a8ea147b010105cb5ab25718087883c23f5025984286884e446736a1",
+      "target_sha256": "1fe1e1a7a8ea147b010105cb5ab25718087883c23f5025984286884e446736a1",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_military_engineer.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_military_engineer.dds",
+      "source_sha256": "40ccea2aaa178c6f133ac614991880d643442d7b08f321dd9521eb3f69f0e746",
+      "target_sha256": "40ccea2aaa178c6f133ac614991880d643442d7b08f321dd9521eb3f69f0e746",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_open_terrain_expert.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_open_terrain_expert.dds",
+      "source_sha256": "405dbd1f420c08e4d873ad443ccb6f02e790a642219bf18aeb801fce75770cf8",
+      "target_sha256": "405dbd1f420c08e4d873ad443ccb6f02e790a642219bf18aeb801fce75770cf8",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_organizer.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_organizer.dds",
+      "source_sha256": "14de1d42198094940f496727669363d2b94b54b457417c65cb3182593eabf1ba",
+      "target_sha256": "14de1d42198094940f496727669363d2b94b54b457417c65cb3182593eabf1ba",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_reaver.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_reaver.dds",
+      "source_sha256": "25142c7282249e1182a2b0cc1be2015caeeb3b62b342bd5b6233d38702827da1",
+      "target_sha256": "25142c7282249e1182a2b0cc1be2015caeeb3b62b342bd5b6233d38702827da1",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_reckless.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_reckless.dds",
+      "source_sha256": "56cddf8d32eba5535597ca311824fedae30032ff97f04da06831f09002c561a9",
+      "target_sha256": "56cddf8d32eba5535597ca311824fedae30032ff97f04da06831f09002c561a9",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_rough_terrain_expert.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_rough_terrain_expert.dds",
+      "source_sha256": "b52688ba173f1a355136d4e7b84e5cbd20f2a977ffc370d690c909d7419c6a5d",
+      "target_sha256": "b52688ba173f1a355136d4e7b84e5cbd20f2a977ffc370d690c909d7419c6a5d",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_sea_raider.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_sea_raider.dds",
+      "source_sha256": "9514f73b8a61a9a2a421e7c8e909b892fac47f0df62c65aa7cc503a606493b8b",
+      "target_sha256": "9514f73b8a61a9a2a421e7c8e909b892fac47f0df62c65aa7cc503a606493b8b",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_unyielding_defender.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_unyielding_defender.dds",
+      "source_sha256": "2e09e74f47bbc868259b9b971089f3278a0534d845db7574709fd450b42babd0",
+      "target_sha256": "2e09e74f47bbc868259b9b971089f3278a0534d845db7574709fd450b42babd0",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/trait_level_tracks/embattle_winter_soldier.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\trait_level_tracks\\embattle_winter_soldier.dds",
+      "source_sha256": "3de0692a3c0f21caa35c586af55d7f874290e82849694d2c82b6f38fb44d73cd",
+      "target_sha256": "3de0692a3c0f21caa35c586af55d7f874290e82849694d2c82b6f38fb44d73cd",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/acotw_obscured.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\acotw_obscured.dds",
+      "source_sha256": "1c3f8075a1dab518ba40b4e50672ac28efd583fb7cffa8a047e266830eb68e89",
+      "target_sha256": "1c3f8075a1dab518ba40b4e50672ac28efd583fb7cffa8a047e266830eb68e89",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_aggressive_attacker.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_aggressive_attacker.dds",
+      "source_sha256": "89fd50109c7531375f7506c0f67676ecb40b579b0792278a7c98a97f8cd03f98",
+      "target_sha256": "89fd50109c7531375f7506c0f67676ecb40b579b0792278a7c98a97f8cd03f98",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_cautious_leader.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_cautious_leader.dds",
+      "source_sha256": "603c344b9736cf8c60dd2999682f27fee7422288cbc2af70214be899ec2fc23b",
+      "target_sha256": "603c344b9736cf8c60dd2999682f27fee7422288cbc2af70214be899ec2fc23b",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_desert_warrior.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_desert_warrior.dds",
+      "source_sha256": "e15c64e165b4cf2c50b9f4a160ba659ef92c8dcf4331aa33a156edf9b57bd8e0",
+      "target_sha256": "e15c64e165b4cf2c50b9f4a160ba659ef92c8dcf4331aa33a156edf9b57bd8e0",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_flexible_leader.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_flexible_leader.dds",
+      "source_sha256": "36e68c07b824ace2d15bf40456cf70817eb2576032eaab8c2f938aeb57db7e27",
+      "target_sha256": "36e68c07b824ace2d15bf40456cf70817eb2576032eaab8c2f938aeb57db7e27",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_forder.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_forder.dds",
+      "source_sha256": "1e6896e4b1da5a675efdae664ce0c7c3c2ce9d6950f374931a3c5b36a7c74322",
+      "target_sha256": "1e6896e4b1da5a675efdae664ce0c7c3c2ce9d6950f374931a3c5b36a7c74322",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_forest_fighter.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_forest_fighter.dds",
+      "source_sha256": "ec4f2ad2488934ef89d04df01795345d9c04bd618f122923276b1ac4275b5311",
+      "target_sha256": "ec4f2ad2488934ef89d04df01795345d9c04bd618f122923276b1ac4275b5311",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_holy_warrior.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_holy_warrior.dds",
+      "source_sha256": "4913623f72402e14aa8c596a54cf19e307a84c51bbffe68ab9a532b8c47b524b",
+      "target_sha256": "4913623f72402e14aa8c596a54cf19e307a84c51bbffe68ab9a532b8c47b524b",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_jungle_stalker.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_jungle_stalker.dds",
+      "source_sha256": "0805a425461916a6d3b30e51237ac931e01cb2c10025b358f397c124e49995f6",
+      "target_sha256": "0805a425461916a6d3b30e51237ac931e01cb2c10025b358f397c124e49995f6",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_logistician.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_logistician.dds",
+      "source_sha256": "d4f183555cb29723d24b89d9f858742a58532d5a81c028d17043d8bcd34f4f4b",
+      "target_sha256": "d4f183555cb29723d24b89d9f858742a58532d5a81c028d17043d8bcd34f4f4b",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_military_engineer.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_military_engineer.dds",
+      "source_sha256": "3389707cb5549cbcd91d23ca6e43c147f5afde968ec84f5d6fa620e792028de4",
+      "target_sha256": "3389707cb5549cbcd91d23ca6e43c147f5afde968ec84f5d6fa620e792028de4",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_open_terrain_expert.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_open_terrain_expert.dds",
+      "source_sha256": "65dc7b98c29444bfa061355fb31c4b57ea56013e8db4417d99d4a0370ec2d7b3",
+      "target_sha256": "65dc7b98c29444bfa061355fb31c4b57ea56013e8db4417d99d4a0370ec2d7b3",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_organizer.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_organizer.dds",
+      "source_sha256": "3c63a05c59079e9607271ea31f250c2be10f48b9153d95c83900db9d6562bada",
+      "target_sha256": "3c63a05c59079e9607271ea31f250c2be10f48b9153d95c83900db9d6562bada",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_reaver.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_reaver.dds",
+      "source_sha256": "ca3fa77f9467c59d1955a37ffaaefe0ebba27418fdfe80737397062422998813",
+      "target_sha256": "ca3fa77f9467c59d1955a37ffaaefe0ebba27418fdfe80737397062422998813",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_reckless.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_reckless.dds",
+      "source_sha256": "1108a9b68f4cbc7ec04c8e88776a5bd26f42833bbc813310a494a803b2bb0f91",
+      "target_sha256": "1108a9b68f4cbc7ec04c8e88776a5bd26f42833bbc813310a494a803b2bb0f91",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_rough_terrain_expert.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_rough_terrain_expert.dds",
+      "source_sha256": "013b938b926f992ae5eaa079e59954140f05f772f9b40bb069dbda673320665d",
+      "target_sha256": "013b938b926f992ae5eaa079e59954140f05f772f9b40bb069dbda673320665d",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_sea_raider.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_sea_raider.dds",
+      "source_sha256": "7bdee91a3acbc2571cc2a4ab55becbebbd4d3e1af26923f8b2427ba0fdbc039e",
+      "target_sha256": "7bdee91a3acbc2571cc2a4ab55becbebbd4d3e1af26923f8b2427ba0fdbc039e",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_unyielding_defender.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_unyielding_defender.dds",
+      "source_sha256": "b6d517e36fa4e008936f46255f9cd1745f395ec88399fcef952d1d07c5035b07",
+      "target_sha256": "b6d517e36fa4e008936f46255f9cd1745f395ec88399fcef952d1d07c5035b07",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gfx/interface/icons/traits/embattle_winter_soldier.dds",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gfx\\interface\\icons\\traits\\embattle_winter_soldier.dds",
+      "source_sha256": "5782425e574a8e7bf24217ed2cc8ece3331221f06bf92b372c667b1d24545017",
+      "target_sha256": "5782425e574a8e7bf24217ed2cc8ece3331221f06bf92b372c667b1d24545017",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gui/gui_info/window_army_select_commander.info",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gui\\gui_info\\window_army_select_commander.info",
+      "source_sha256": "fc457b37261b021111394f2ed2e42992751e45832ceb559e044d0ce558c9dc5f",
+      "target_sha256": "fc457b37261b021111394f2ed2e42992751e45832ceb559e044d0ce558c9dc5f",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gui/gui_info/window_combat.info",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gui\\gui_info\\window_combat.info",
+      "source_sha256": "21c0a067d3617999ba59b5fb92a37ec122add22740dd8ff38e27efddadd3a531",
+      "target_sha256": "21c0a067d3617999ba59b5fb92a37ec122add22740dd8ff38e27efddadd3a531",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gui/gui_info/window_combat.ionfo",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gui\\gui_info\\window_combat.ionfo",
+      "source_sha256": "0e0e3256ad67636b702e1960c18d0cea784f96e69e9f2ccc22b77f2896110a20",
+      "target_sha256": "0e0e3256ad67636b702e1960c18d0cea784f96e69e9f2ccc22b77f2896110a20",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gui/window_army.gui",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gui\\window_army.gui",
+      "source_sha256": "019881f6a22239d5e3b7853ac882068de9509584c30b9b1252f35da24ef20bc0",
+      "target_sha256": "019881f6a22239d5e3b7853ac882068de9509584c30b9b1252f35da24ef20bc0",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gui/window_army_select_commander.gui",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gui\\window_army_select_commander.gui",
+      "source_sha256": "03bcaa733ba75036e7faa82360f070a987eec2ac533cce01d0099d71bf04228c",
+      "target_sha256": "03bcaa733ba75036e7faa82360f070a987eec2ac533cce01d0099d71bf04228c",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "gui/window_combat.gui",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\gui\\window_combat.gui",
+      "source_sha256": "2021dd7227de3f4c05224794ffb2d0f1fd56ba522864c6f52391330510eb7bb9",
+      "target_sha256": "2021dd7227de3f4c05224794ffb2d0f1fd56ba522864c6f52391330510eb7bb9",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "localization/english/embattle_system_l_english.yml",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\localization\\english\\embattle_system_l_english.yml",
+      "source_sha256": "24bdbc699639212b32c2c966420b341f90150b09dd9f52aa4e22bfee6740518a",
+      "target_sha256": "24bdbc699639212b32c2c966420b341f90150b09dd9f52aa4e22bfee6740518a",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "localization/english/embattle_traits_l_english.yml",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\localization\\english\\embattle_traits_l_english.yml",
+      "source_sha256": "a9c6d8d18e039e9ad335015bcf2901c5ac7b56410bc4e1f01c13702123a8e9a9",
+      "target_sha256": "a9c6d8d18e039e9ad335015bcf2901c5ac7b56410bc4e1f01c13702123a8e9a9",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "localization/simp_chinese/embattle_game_concepts_l_simp_chinese.yml",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\localization\\simp_chinese\\embattle_game_concepts_l_simp_chinese.yml",
+      "source_sha256": "0ef80cc6e23ecbe4ec3220d157eabcd98f382c5520eadb5c94362dbb36295705",
+      "target_sha256": "0ef80cc6e23ecbe4ec3220d157eabcd98f382c5520eadb5c94362dbb36295705",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "localization/simp_chinese/embattle_game_rule_l_simp_chinese.yml",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\localization\\simp_chinese\\embattle_game_rule_l_simp_chinese.yml",
+      "source_sha256": "058ef276b326ea94ffab94ccecce74308f89c8d99baa3e424724025d2555a655",
+      "target_sha256": "058ef276b326ea94ffab94ccecce74308f89c8d99baa3e424724025d2555a655",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "localization/simp_chinese/embattle_system_l_simp_chinese.yml",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\localization\\simp_chinese\\embattle_system_l_simp_chinese.yml",
+      "source_sha256": "efe4f97fd2c22ad28cf2caeddf4a224359c7eaa81755ed542f094bdbadffee6e",
+      "target_sha256": "efe4f97fd2c22ad28cf2caeddf4a224359c7eaa81755ed542f094bdbadffee6e",
+      "state": "restore_then_integrate"
+    },
+    {
+      "path": "localization/simp_chinese/embattle_traits_l_simp_chinese.yml",
+      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3454148607\\localization\\simp_chinese\\embattle_traits_l_simp_chinese.yml",
+      "source_sha256": "19b4af7aeaa163ca71dabc865551c2e33190e62d89d00a28e9e7d06a25ef86c6",
+      "target_sha256": "19b4af7aeaa163ca71dabc865551c2e33190e62d89d00a28e9e7d06a25ef86c6",
+      "state": "restore_then_integrate"
+    }
+  ]
+}

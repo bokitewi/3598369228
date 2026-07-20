@@ -1,0 +1,92 @@
+﻿##### d_kuishi ############################
+
+### c_xiling1
+# 
+1886 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_kui
+# 
+1887 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xinling
+# 
+1888 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zongqiu
+# 
+1889 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_danyang1
+# 
+1890 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_taiqing
+# 
+1891 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_anshu
+# 
+1885 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yichang1
+# 
+1893 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xingshan
+# 
+1894 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhuzhong
+# JUZHONG
+3681 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

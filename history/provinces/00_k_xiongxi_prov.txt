@@ -1,0 +1,130 @@
+﻿##### d_xiongzengshi ############################
+
+### c_sugu
+
+
+### c_rizhi
+# SAMO
+2818 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# YIZUO
+3527 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_luerdao
+
+
+### c_shangyecheng
+# CHUSHUI
+3526 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_zengyu
+
+
+### c_samo
+
+
+### c_shiluo
+
+
+### c_sangyuan
+# SANGYUAN
+3520 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# DAYU
+2822 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# NAKE
+3522 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# SHILUO
+3519 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_chushui
+
+
+### c_yizuo
+
+
+### c_dayu
+
+
+### c_nake
+
+
+### c_zhuye1
+
+
+### c_zhendao
+
+
+### c_meiyecuoqi
+
+
+### c_zitang
+# ZHUYE1
+3523 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_lingyi
+
+
+### c_jiuchu
+# JIUCHU
+3521 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+##### d_duomishi ############################
+
+### c_xiongmao
+# XIONGMAO
+3517 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# YUMO
+3518 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_yumo
+
+

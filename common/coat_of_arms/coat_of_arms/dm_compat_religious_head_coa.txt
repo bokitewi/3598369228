@@ -1,0 +1,5 @@
+﻿e_xiahou = {
+	pattern = "pattern_solid.dds"
+	color1 = "yellow"
+	color2 = "black"
+}

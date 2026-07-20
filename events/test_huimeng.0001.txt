@@ -1,0 +1,32 @@
+﻿namespace = test_huimeng
+
+# Console-only compatibility test retained for manual House Bloc verification.
+test_huimeng.0001 = {
+	type = character_event
+	hidden = yes
+	orphan = yes
+
+	immediate = {
+		root.house = {
+			if = {
+				limit = { NOT = { exists = house_confederation } }
+				tgp_create_house_bloc_effect = { TYPE = ceremony }
+			}
+		}
+		every_ruler = {
+			limit = {
+				highest_held_title_tier >= tier_empire
+				tgp_uses_house_blocs_trigger = yes
+				house.house_head ?= this
+				NOT = { exists = confederation }
+				house != scope:root.house
+			}
+			house = {
+				tgp_join_house_bloc_effect = {
+					INVITER = scope:root.house
+					OPINION = flag:no
+				}
+			}
+		}
+	}
+}

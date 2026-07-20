@@ -1,0 +1,74 @@
+﻿##### d_huangshi1 ############################
+
+### c_huangtuguan
+# 
+1929 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yinshanguan
+# 
+1930 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_huang6
+# 
+1938 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yiyang4
+# 
+1940 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_queling
+# 
+1941 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yinshanguan1
+# 
+1942 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yincheng2
+# 
+1945 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_anfeng
+# 
+1947 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

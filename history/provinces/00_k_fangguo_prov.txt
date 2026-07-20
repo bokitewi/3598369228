@@ -1,0 +1,56 @@
+﻿##### d_fangshi ############################
+
+### c_fang5
+# FANG5
+1658 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_quyang2
+# QUYANG2
+1659 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_chongqiu1
+# CHONGQIU1
+1660 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_wencheng
+# WENCHENG
+1661 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_wuyin
+# WUYIN
+1711 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_biyang2
+# BIYANG2
+1712 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

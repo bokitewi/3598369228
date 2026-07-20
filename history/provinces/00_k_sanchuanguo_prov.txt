@@ -1,0 +1,34 @@
+﻿##### d_sanchuangshi ############################
+
+### c_sanhe1
+
+
+### c_qingjian
+
+
+### c_jiamao1
+
+
+### c_etian1
+
+
+##### d_lingbushi ############################
+
+### c_sheye
+# SANHE1
+2842 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_baohai1
+# YUANDANHAI
+2960 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+

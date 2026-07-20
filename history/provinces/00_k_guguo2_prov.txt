@@ -1,0 +1,56 @@
+﻿##### d_gushi2 ############################
+
+### c_saicheng
+# 
+1776 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_linping
+# 
+1780 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shixi
+# 
+1783 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_gu7
+# 
+1784 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhuyang
+# 
+1785 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shandu
+# 
+1786 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

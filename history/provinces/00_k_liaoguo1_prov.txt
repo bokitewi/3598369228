@@ -1,0 +1,65 @@
+﻿##### d_liaoshi1 ############################
+
+### c_ma3
+# 
+1953 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yangquan
+# 
+1952 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_liao4
+# 
+1954 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_luorui
+# 
+1956 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_suo2
+# 
+1957 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_anfeng1
+# 
+1958 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_feiling
+# 
+1959 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

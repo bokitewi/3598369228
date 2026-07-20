@@ -1,0 +1,106 @@
+dm_government_reform_supported_government_trigger = {
+	OR = {
+		has_government = feudal_government
+		has_government = republic_government
+		has_government = theocracy_government
+		has_government = clan_government
+		has_government = tribal_government
+		has_government = wanua_government
+		has_government = administrative_government
+		has_government = feudal_admin_government
+		has_government = celestial_government
+		has_government = mandala_government
+		has_government = meritocratic_government
+		has_government = japan_administrative_government
+		has_government = japan_feudal_government
+		has_government = nomad_government
+		has_government = steppe_admin_government
+	}
+}
+
+# ROOT: reform story.
+dm_reform_is_government_reform_trigger = {
+	OR = {
+		var:dm_reform_target = flag:dm_government_reform_feudal_law
+		var:dm_reform_target = flag:dm_government_reform_republic_law
+		var:dm_reform_target = flag:dm_government_reform_theocracy_law
+		var:dm_reform_target = flag:dm_government_reform_clan_law
+		var:dm_reform_target = flag:dm_government_reform_tribal_law
+		var:dm_reform_target = flag:dm_government_reform_wanua_law
+		var:dm_reform_target = flag:dm_government_reform_administrative_law
+		var:dm_reform_target = flag:dm_government_reform_feudal_admin_law
+		var:dm_reform_target = flag:dm_government_reform_celestial_law
+		var:dm_reform_target = flag:dm_government_reform_mandala_law
+		var:dm_reform_target = flag:dm_government_reform_meritocratic_law
+		var:dm_reform_target = flag:dm_government_reform_japan_administrative_law
+		var:dm_reform_target = flag:dm_government_reform_japan_feudal_law
+		var:dm_reform_target = flag:dm_government_reform_nomad_law
+		var:dm_reform_target = flag:dm_government_reform_steppe_admin_law
+	}
+}
+
+# ROOT: reform story.
+dm_reform_government_target_matches_owner_trigger = {
+	OR = {
+		AND = {
+			var:dm_reform_target = flag:dm_government_reform_feudal_law
+			story_owner = { has_government = feudal_government }
+		}
+		AND = {
+			var:dm_reform_target = flag:dm_government_reform_republic_law
+			story_owner = { has_government = republic_government }
+		}
+		AND = {
+			var:dm_reform_target = flag:dm_government_reform_theocracy_law
+			story_owner = { has_government = theocracy_government }
+		}
+		AND = {
+			var:dm_reform_target = flag:dm_government_reform_clan_law
+			story_owner = { has_government = clan_government }
+		}
+		AND = {
+			var:dm_reform_target = flag:dm_government_reform_tribal_law
+			story_owner = { has_government = tribal_government }
+		}
+		AND = {
+			var:dm_reform_target = flag:dm_government_reform_wanua_law
+			story_owner = { has_government = wanua_government }
+		}
+		AND = {
+			var:dm_reform_target = flag:dm_government_reform_administrative_law
+			story_owner = { has_government = administrative_government }
+		}
+		AND = {
+			var:dm_reform_target = flag:dm_government_reform_feudal_admin_law
+			story_owner = { has_government = feudal_admin_government }
+		}
+		AND = {
+			var:dm_reform_target = flag:dm_government_reform_celestial_law
+			story_owner = { has_government = celestial_government }
+		}
+		AND = {
+			var:dm_reform_target = flag:dm_government_reform_mandala_law
+			story_owner = { has_government = mandala_government }
+		}
+		AND = {
+			var:dm_reform_target = flag:dm_government_reform_meritocratic_law
+			story_owner = { has_government = meritocratic_government }
+		}
+		AND = {
+			var:dm_reform_target = flag:dm_government_reform_japan_administrative_law
+			story_owner = { has_government = japan_administrative_government }
+		}
+		AND = {
+			var:dm_reform_target = flag:dm_government_reform_japan_feudal_law
+			story_owner = { has_government = japan_feudal_government }
+		}
+		AND = {
+			var:dm_reform_target = flag:dm_government_reform_nomad_law
+			story_owner = { has_government = nomad_government }
+		}
+		AND = {
+			var:dm_reform_target = flag:dm_government_reform_steppe_admin_law
+			story_owner = { has_government = steppe_admin_government }
+		}
+	}
+}

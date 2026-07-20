@@ -1,0 +1,4 @@
+﻿embattle_tactic_activated = { 
+    display = feed
+    group = battle
+}

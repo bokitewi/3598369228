@@ -1,0 +1,56 @@
+﻿##### d_youshi1 ############################
+
+### c_zhengye
+# ZHENGYE
+1723 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_chaoyang
+# CHAOYANG
+1765 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_you3
+# YOU3
+1768 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xiling
+# 
+1800 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_liqiu
+# 
+1836 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_dengqiu
+# DENGQIU
+1764 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

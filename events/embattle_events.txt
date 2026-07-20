@@ -1,0 +1,207 @@
+﻿namespace = embattle_events
+
+### root = army_owner
+### exists = scope:army
+embattle_events.0001 = {
+    hidden = yes
+
+    trigger = {
+		scope:army = { # 缺少左右翼指挥官或不合法
+			embattle_has_valid_commander_trigger = no
+		}
+	}
+    
+    immediate = {
+		
+		every_knight = {
+			limit = {
+				knight_army = scope:army
+				NOR = {
+					scope:army.var:embattle_left_flank_commander ?= this
+					scope:army.var:embattle_right_flank_commander ?= this 
+				}
+			}
+			root = {
+				add_to_variable_list = {
+					name = potential_knight_temp
+					target = prev
+				}
+			}
+		}
+
+		random_in_list = {
+			1 = {
+				set_variable = {
+					name = select_side_commander_by
+					value = select_side_commander_by_age
+				}
+			}
+			1 = {
+				set_variable = {
+					name = select_side_commander_by
+					value = select_side_commander_by_martial
+				}
+			}
+			1 = {
+				set_variable = {
+					name = select_side_commander_by
+					value = select_side_commander_by_highest_held_title_tier
+				}
+			}
+			1 = {
+				set_variable = {
+					name = select_side_commander_by
+					value = select_side_commander_by_opinion
+				}
+			}
+		}
+
+		ordered_in_list = {
+			variable = potential_knight_temp
+			order_by = {
+				if = {
+					limit = { 
+						root.var:select_side_commander_by ?= select_side_commander_by_martial
+					}
+					value = martial
+				}
+				else_if = {
+					limit = { 
+						root.var:select_side_commander_by ?= select_side_commander_by_highest_held_title_tier
+					}
+					value = highest_held_title_tier
+				}
+				else_if = {
+					limit = { 
+						root.var:select_side_commander_by ?= select_side_commander_by_opinion
+					}
+					value = "opinion(scope:army.army_commander)"
+				}
+				else_if = {
+					limit = { 
+						root.var:select_side_commander_by ?= select_side_commander_by_age
+					}
+					value = age
+				}
+				else = {
+					value = martial
+				}
+			}
+			max = 3
+			check_range_bounds = no
+
+			root = {
+				add_to_variable_list = {
+					name = potential_knight
+					target = prev
+				}
+			}
+		}
+		
+		if = {
+			limit = { # 缺少右翼指挥官或不合法
+				NOT = {
+					scope:army.var:embattle_right_flank_commander ?= {
+						is_alive = yes
+						knight_army = scope:army
+					}
+				}
+			}
+			random_in_list = {
+				variable = potential_knight
+				limit = {
+					is_commanding_army = no
+				}
+				scope:army = {
+					set_variable = {
+						name = embattle_right_flank_commander
+						value = prev
+					}
+				}
+				save_scope_as = choosen_knight
+				root = {
+					remove_list_variable = {
+						name = potential_knight
+						target = prev
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = { # 缺少左翼指挥官或不合法
+				NOT = {
+					scope:army.var:embattle_left_flank_commander ?= {
+						is_alive = yes
+						knight_army = scope:army
+					}
+				}
+			}
+			random_in_list = {
+				variable = potential_knight
+				limit = {
+					is_commanding_army = no
+					NOT = {
+						this = scope:choosen_knight
+					}
+				}
+				scope:army = {
+					set_variable = {
+						name = embattle_left_flank_commander
+						value = prev
+					}
+				}
+				root = {
+					remove_list_variable = {
+						name = potential_knight
+						target = prev
+					}
+				}
+			}
+		}
+
+		clear_variable_list = potential_knight_temp
+		clear_variable_list = potential_knight
+		remove_variable = select_side_commander_by
+
+		trigger_event = {
+			id = embattle_events.0002
+		}
+    }
+}
+
+embattle_events.0002 = {
+	hidden = yes
+	trigger = {
+		# The army owner controls access to the full system. AI armies keep the
+		# deputy assignment made by .0001, but receive no traits or battle effects.
+		root = { is_ai = no }
+	}
+
+	immediate = {
+		scope:army.army_commander ?= {
+			save_scope_as = commander
+		}
+		scope:commander ?= {
+			add_character_modifier = embattle_side_commander_advantage_modifier
+			# Religious
+			embattle_seed_commander_trait_effect = { TRAIT = holy_warrior }
+			# Attackers/Defenders
+			embattle_seed_commander_trait_effect = { TRAIT = aggressive_attacker }
+			embattle_seed_commander_trait_effect = { TRAIT = unyielding_defender }
+			# Flexible Leader
+			embattle_seed_commander_trait_effect = { TRAIT = flexible_leader }
+			# Larger Armies
+			embattle_seed_commander_trait_effect = { TRAIT = reckless }
+			embattle_seed_commander_trait_effect = { TRAIT = cautious_leader }
+			# Terrain Based
+			embattle_seed_commander_trait_effect = { TRAIT = forest_fighter }
+			embattle_seed_commander_trait_effect = { TRAIT = open_terrain_expert }
+			embattle_seed_commander_trait_effect = { TRAIT = rough_terrain_expert }
+			embattle_seed_commander_trait_effect = { TRAIT = desert_warrior }
+			embattle_seed_commander_trait_effect = { TRAIT = jungle_stalker }
+			# Seasonal
+			embattle_seed_commander_trait_effect = { TRAIT = winter_soldier }
+		}
+	}
+}

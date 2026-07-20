@@ -1,0 +1,989 @@
+﻿on_game_start = {
+	on_actions = {
+		embattle_on_game_start
+	}
+}
+embattle_on_game_start = {
+	effect = {
+		add_to_global_variable_list = {
+			name = embattle_clumsy_tactic_group
+			target = flag:embattle_potshots_tactic
+		}
+		add_to_global_variable_list = {
+			name = embattle_clumsy_tactic_group
+			target = flag:embattle_reckless_charge_tactic
+		}
+		add_to_global_variable_list = {
+			name = embattle_clumsy_tactic_group
+			target = flag:embattle_confused_orders_tactic
+		}
+		add_to_global_variable_list = {
+			name = embattle_clumsy_tactic_group
+			target = flag:embattle_timid_advance_tactic
+		}
+		add_to_global_variable_list = {
+			name = embattle_clumsy_tactic_group
+			target = flag:embattle_disorganised_harass_tactic
+		}
+	}
+}
+
+### war_on_actions ###
+# called for armies whenever they enter a province
+# root is the owner of the army
+# scope:army is the army
+on_army_enter_province = {
+	on_actions = {
+		embattle_on_army_enter_province
+		embattle_on_army_enter_province_2
+	}
+}
+embattle_on_army_enter_province = { # 战斗开始添加边路优势修正
+	trigger = {
+		trigger_if = {
+			limit = {
+				has_game_rule = embattle_acotw_compatch_enabled
+			}
+			NOR = {
+				scope:army.army_owner ?= {
+					has_trait = acotw_obscured
+				}
+				scope:army.army_owner ?= {
+					has_trait = acotw_obscured
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				scope:army.location = {
+					any_army_in_location = {
+						count >= 2
+					}
+				}
+			}
+			scope:army.location = {
+				every_army_in_location = {
+					save_scope_as = army
+					if = {
+						limit = { # 两翼指挥官不合法自动指派
+							embattle_has_valid_commander_trigger = no
+						}
+						army_owner = {
+							trigger_event = embattle_events.0001
+						}
+					}
+					else = { # 两翼指挥官合法
+						army_owner = {
+							trigger_event = embattle_events.0002
+						}
+					}
+				}
+			}
+		}
+	}
+}
+embattle_on_army_enter_province_2 = { # 副将特质经验
+	trigger = {
+		has_game_rule = embattle_side_commanders_trait_xp_enabled
+		scope:army.army_owner = { is_ai = no }
+	}
+	effect = {
+		scope:army.var:embattle_left_flank_commander ?= {
+			if = {
+				limit = {
+					has_trait = logistician
+				}
+				add_trait_xp = {
+					trait = logistician
+					value = {
+						value = 0.2
+						add = {
+							value = martial
+							divide = 20
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_trait = organizer
+				}
+				add_trait_xp = {
+					trait = organizer
+					value = {
+						value = 0.2
+						add = {
+							value = martial
+							divide = 20
+						}
+					}
+				}
+			}
+		}
+		scope:army.var:embattle_right_flank_commander ?= {
+			if = {
+				limit = {
+					has_trait = logistician
+				}
+				add_trait_xp = {
+					trait = logistician
+					value = {
+						value = 0.2
+						add = {
+							value = martial
+							divide = 20
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_trait = organizer
+				}
+				add_trait_xp = {
+					trait = organizer
+					value = {
+						value = 0.2
+						add = {
+							value = martial
+							divide = 20
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Root = Winning combat side
+# scope:wipe - Was this a wipe?
+on_combat_end_winner = {  # 战斗结束移除边路优势修正和临时特质
+	on_actions = {
+		embattle_on_combat_end_remove_modifier
+		embattle_on_combat_end_remove_traits
+	}
+}
+on_combat_end_loser = {  # 战斗结束移除边路优势修正和临时特质
+	on_actions = {
+		embattle_on_combat_end_remove_modifier
+		embattle_on_combat_end_remove_traits
+	}
+}
+embattle_on_combat_end_remove_modifier = { # 战斗结束移除边路优势修正
+	trigger = {
+		exists = side_commander
+	}
+	effect = {
+		side_commander = {
+			if = {
+				limit = {
+					has_character_modifier = embattle_side_commander_advantage_modifier
+				}
+				remove_character_modifier = embattle_side_commander_advantage_modifier
+			}
+			if = {
+				limit = {
+					has_character_modifier = embattle_tactic_diversity_modifier
+				}
+				remove_character_modifier = embattle_tactic_diversity_modifier
+			}
+		}
+	}
+}
+embattle_on_combat_end_remove_traits = { # 战斗结束移除临时特质
+	trigger = {
+		side_commander ?= {
+			has_character_flag = embattle_temp_trait_seeded
+		}
+	}
+	effect = {
+		side_commander = {
+			# Religious
+			embattle_remove_commander_trait_seeded_effect = { TRAIT = embattle_holy_warrior }
+			# Attackers/Defenders
+			embattle_remove_commander_trait_seeded_effect = { TRAIT = embattle_aggressive_attacker }
+			embattle_remove_commander_trait_seeded_effect = { TRAIT = embattle_unyielding_defender }
+			# Flexible Leader
+			embattle_remove_commander_trait_seeded_effect = { TRAIT = embattle_flexible_leader }
+			# Larger Armies
+			embattle_remove_commander_trait_seeded_effect = { TRAIT = embattle_reckless }
+			embattle_remove_commander_trait_seeded_effect = { TRAIT = embattle_cautious_leader }
+			# Terrain Based
+			embattle_remove_commander_trait_seeded_effect = { TRAIT = embattle_forest_fighter }
+			embattle_remove_commander_trait_seeded_effect = { TRAIT = embattle_open_terrain_expert }
+			embattle_remove_commander_trait_seeded_effect = { TRAIT = embattle_rough_terrain_expert }
+			embattle_remove_commander_trait_seeded_effect = { TRAIT = embattle_desert_warrior }
+			embattle_remove_commander_trait_seeded_effect = { TRAIT = embattle_jungle_stalker }
+			# Seasonal
+			embattle_remove_commander_trait_seeded_effect = { TRAIT = embattle_winter_soldier }
+			remove_character_flag = embattle_temp_trait_seeded
+		}
+	}
+}
+
+# Root = Combat
+# Executed on combat start, when all starting armies have already been added to relevant sides
+on_combat_start = { # 战斗开始添加战术修正
+	on_actions = {
+		delay = { days = 2 }
+		embattle_on_combat_start_tactic_polling
+	}
+}
+
+embattle_on_combat_start_tactic_polling = { # 战术轮询
+	trigger = {
+		exists = root
+		has_game_rule = embattle_tactic_enabled
+		OR = {
+			combat_attacker.side_commander.commanding_army.army_owner ?= {
+				is_ai = no
+			}
+			combat_defender.side_commander.commanding_army.army_owner ?= {
+				is_ai = no
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_game_rule = embattle_acotw_compatch_enabled
+			}
+			NOR = {
+				combat_attacker.side_commander.commanding_army.army_owner ?= {
+					has_trait = acotw_obscured
+				}
+				combat_defender.side_commander.commanding_army.army_owner ?= {
+					has_trait = acotw_obscured
+				}
+			}
+		}
+	}
+
+	on_actions = {
+		delay = { days = 20 }
+		embattle_on_combat_start_tactic_polling_2
+	}
+
+	effect = {
+		combat_attacker = {
+			side_commander = {
+				save_scope_as = commander
+				commanding_army = {
+					save_scope_as = army
+				}
+				if = {
+					limit = {
+						scope:army.embattle_general_tactic_count_value >= 5
+					}
+					scope:commander = {
+						add_character_modifier = {
+							modifier = embattle_tactic_diversity_modifier
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						scope:army.embattle_general_tactic_count_value = 1
+					}
+					random_in_global_list = {
+						variable = embattle_clumsy_tactic_group
+						save_scope_as = tactic
+						scope:commander = {
+							clear_variable_list = embattle_clumsy_tactic_group
+							add_to_variable_list = {
+								name = embattle_clumsy_tactic_group
+								target = prev
+							}
+						}
+					}
+
+					random_in_global_list = {
+						variable = embattle_clumsy_tactic_group
+						limit = {
+							NOT = { this = scope:tactic }
+						}
+						scope:commander = {
+							add_to_variable_list = {
+								name = embattle_clumsy_tactic_group
+								target = prev
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						scope:army.embattle_general_tactic_count_value = 2
+					}
+					random_in_global_list = {
+						variable = embattle_clumsy_tactic_group
+						save_scope_as = tactic
+						scope:commander = {
+							clear_variable_list = embattle_clumsy_tactic_group
+							add_to_variable_list = {
+								name = embattle_clumsy_tactic_group
+								target = prev
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						scope:army.embattle_general_tactic_count_value = 0
+					}
+					random_in_global_list = {
+						variable = embattle_clumsy_tactic_group
+						save_scope_as = tactic
+						scope:commander = {
+							clear_variable_list = embattle_clumsy_tactic_group
+							add_to_variable_list = {
+								name = embattle_clumsy_tactic_group
+								target = prev
+							}
+						}
+					}
+
+					random_in_global_list = {
+						variable = embattle_clumsy_tactic_group
+						limit = {
+							NOT = { this = scope:tactic }
+						}
+						save_scope_as = tactic_2
+						scope:commander = {
+							add_to_variable_list = {
+								name = embattle_clumsy_tactic_group
+								target = prev
+							}
+						}
+					}
+
+					random_in_global_list = {
+						variable = embattle_clumsy_tactic_group
+						limit = {
+							NOT = { this = scope:tactic }
+							NOT = { this = scope:tactic_2 }
+						}
+						scope:commander = {
+							add_to_variable_list = {
+								name = embattle_clumsy_tactic_group
+								target = prev
+							}
+						}
+					}
+				}
+			}
+
+			embattle_on_combat_start_tactic_polling_effect = yes
+			
+		}
+		
+		combat_defender = {
+			side_commander = {
+				save_scope_as = commander
+				commanding_army = {
+					save_scope_as = army
+				}
+				if = {
+					limit = {
+						scope:army.embattle_general_tactic_count_value >= 5
+					}
+					scope:commander = {
+						add_character_modifier = {
+							modifier = embattle_tactic_diversity_modifier
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						scope:army.embattle_general_tactic_count_value = 1
+					}
+					random_in_global_list = {
+						variable = embattle_clumsy_tactic_group
+						save_scope_as = tactic
+						scope:commander = {
+							clear_variable_list = embattle_clumsy_tactic_group
+							add_to_variable_list = {
+								name = embattle_clumsy_tactic_group
+								target = prev
+							}
+						}
+					}
+
+					random_in_global_list = {
+						variable = embattle_clumsy_tactic_group
+						limit = {
+							NOT = { this = scope:tactic }
+						}
+						scope:commander = {
+							add_to_variable_list = {
+								name = embattle_clumsy_tactic_group
+								target = prev
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						scope:army.embattle_general_tactic_count_value = 2
+					}
+					random_in_global_list = {
+						variable = embattle_clumsy_tactic_group
+						save_scope_as = tactic
+						scope:commander = {
+							clear_variable_list = embattle_clumsy_tactic_group
+							add_to_variable_list = {
+								name = embattle_clumsy_tactic_group
+								target = prev
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						scope:army.embattle_general_tactic_count_value = 0
+					}
+					random_in_global_list = {
+						variable = embattle_clumsy_tactic_group
+						save_scope_as = tactic
+						scope:commander = {
+							clear_variable_list = embattle_clumsy_tactic_group
+							add_to_variable_list = {
+								name = embattle_clumsy_tactic_group
+								target = prev
+							}
+						}
+					}
+
+					random_in_global_list = {
+						variable = embattle_clumsy_tactic_group
+						limit = {
+							NOT = { this = scope:tactic }
+						}
+						save_scope_as = tactic_2
+						scope:commander = {
+							add_to_variable_list = {
+								name = embattle_clumsy_tactic_group
+								target = prev
+							}
+						}
+					}
+
+					random_in_global_list = {
+						variable = embattle_clumsy_tactic_group
+						limit = {
+							NOT = { this = scope:tactic }
+							NOT = { this = scope:tactic_2 }
+						}
+						scope:commander = {
+							add_to_variable_list = {
+								name = embattle_clumsy_tactic_group
+								target = prev
+							}
+						}
+					}
+				}
+			}
+			embattle_on_combat_start_tactic_polling_effect = yes
+		}
+
+		if = {
+			limit = {
+				OR = {
+					AND = { # 齐射→冲锋
+						combat_attacker.side_commander ?= {
+							has_variable = volly_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = charge_tactic
+						}
+					}
+					AND = { # 冲锋→固守
+						combat_attacker.side_commander ?= {
+							has_variable = charge_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = stand_fast_tactic
+						}
+					}
+					AND = { # 固守→推进
+						combat_attacker.side_commander ?= {
+							has_variable = stand_fast_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = charge_tactic
+						}
+					}
+					AND = { # 推进→骚扰
+						combat_attacker.side_commander ?= {
+							has_variable = advance_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = harass_tactic
+						}
+					}
+					AND = { # 骚扰→齐射
+						combat_attacker.side_commander ?= {
+							has_variable = harass_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = volly_tactic
+						}
+					}
+				}
+				
+			}
+			combat_defender.side_commander = {
+				add_character_modifier = {
+					modifier = embattle_tactic_counter_modifier
+					days = 20
+				}
+			}
+		}
+		
+	}
+}
+embattle_on_combat_start_tactic_polling_2 = { # 战术轮询
+	trigger = {
+		exists = root
+	}
+
+	on_actions = {
+		delay = { days = 20 }
+		embattle_on_combat_start_tactic_polling_3
+	}
+
+	effect = {
+		combat_attacker = {
+			embattle_on_combat_start_tactic_polling_effect = yes
+		}
+		
+		combat_defender = {
+			embattle_on_combat_start_tactic_polling_effect = yes
+		}
+
+		if = {
+			limit = {
+				OR = {
+					AND = { # 齐射→冲锋
+						combat_attacker.side_commander ?= {
+							has_variable = volly_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = charge_tactic
+						}
+					}
+					AND = { # 冲锋→固守
+						combat_attacker.side_commander ?= {
+							has_variable = charge_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = stand_fast_tactic
+						}
+					}
+					AND = { # 固守→推进
+						combat_attacker.side_commander ?= {
+							has_variable = stand_fast_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = charge_tactic
+						}
+					}
+					AND = { # 推进→骚扰
+						combat_attacker.side_commander ?= {
+							has_variable = advance_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = harass_tactic
+						}
+					}
+					AND = { # 骚扰→齐射
+						combat_attacker.side_commander ?= {
+							has_variable = harass_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = volly_tactic
+						}
+					}
+				}
+				
+			}
+			combat_defender.side_commander = {
+				add_character_modifier = {
+					modifier = embattle_tactic_counter_modifier
+					days = 20
+				}
+			}
+		}
+		
+	}
+}
+embattle_on_combat_start_tactic_polling_3 = { # 战术轮询
+	trigger = {
+		exists = root
+	}
+
+	on_actions = {
+		delay = { days = 20 }
+		embattle_on_combat_start_tactic_polling_4
+	}
+
+	effect = {
+		combat_attacker = {
+			embattle_on_combat_start_tactic_polling_effect = yes
+		}
+		
+		combat_defender = {
+			embattle_on_combat_start_tactic_polling_effect = yes
+		}
+
+		if = {
+			limit = {
+				OR = {
+					AND = { # 齐射→冲锋
+						combat_attacker.side_commander ?= {
+							has_variable = volly_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = charge_tactic
+						}
+					}
+					AND = { # 冲锋→固守
+						combat_attacker.side_commander ?= {
+							has_variable = charge_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = stand_fast_tactic
+						}
+					}
+					AND = { # 固守→推进
+						combat_attacker.side_commander ?= {
+							has_variable = stand_fast_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = charge_tactic
+						}
+					}
+					AND = { # 推进→骚扰
+						combat_attacker.side_commander ?= {
+							has_variable = advance_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = harass_tactic
+						}
+					}
+					AND = { # 骚扰→齐射
+						combat_attacker.side_commander ?= {
+							has_variable = harass_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = volly_tactic
+						}
+					}
+				}
+				
+			}
+			combat_defender.side_commander = {
+				add_character_modifier = {
+					modifier = embattle_tactic_counter_modifier
+					days = 20
+				}
+			}
+		}
+		
+	}
+}
+embattle_on_combat_start_tactic_polling_4 = { # 战术轮询
+	trigger = {
+		exists = root
+	}
+
+	on_actions = {
+		delay = { days = 20 }
+		embattle_on_combat_start_tactic_polling_5
+	}
+
+	effect = {
+		combat_attacker = {
+			embattle_on_combat_start_tactic_polling_effect = yes
+		}
+		
+		combat_defender = {
+			embattle_on_combat_start_tactic_polling_effect = yes
+		}
+
+		if = {
+			limit = {
+				OR = {
+					AND = { # 齐射→冲锋
+						combat_attacker.side_commander ?= {
+							has_variable = volly_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = charge_tactic
+						}
+					}
+					AND = { # 冲锋→固守
+						combat_attacker.side_commander ?= {
+							has_variable = charge_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = stand_fast_tactic
+						}
+					}
+					AND = { # 固守→推进
+						combat_attacker.side_commander ?= {
+							has_variable = stand_fast_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = charge_tactic
+						}
+					}
+					AND = { # 推进→骚扰
+						combat_attacker.side_commander ?= {
+							has_variable = advance_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = harass_tactic
+						}
+					}
+					AND = { # 骚扰→齐射
+						combat_attacker.side_commander ?= {
+							has_variable = harass_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = volly_tactic
+						}
+					}
+				}
+				
+			}
+			combat_defender.side_commander = {
+				add_character_modifier = {
+					modifier = embattle_tactic_counter_modifier
+					days = 20
+				}
+			}
+		}
+		
+	}
+}
+embattle_on_combat_start_tactic_polling_5 = { # 战术轮询
+	trigger = {
+		exists = root
+	}
+
+	effect = {
+		combat_attacker = {
+			embattle_on_combat_start_tactic_polling_effect = yes
+		}
+		
+		combat_defender = {
+			embattle_on_combat_start_tactic_polling_effect = yes
+		}
+
+		if = {
+			limit = {
+				OR = {
+					AND = { # 齐射→冲锋
+						combat_attacker.side_commander ?= {
+							has_variable = volly_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = charge_tactic
+						}
+					}
+					AND = { # 冲锋→固守
+						combat_attacker.side_commander ?= {
+							has_variable = charge_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = stand_fast_tactic
+						}
+					}
+					AND = { # 固守→推进
+						combat_attacker.side_commander ?= {
+							has_variable = stand_fast_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = charge_tactic
+						}
+					}
+					AND = { # 推进→骚扰
+						combat_attacker.side_commander ?= {
+							has_variable = advance_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = harass_tactic
+						}
+					}
+					AND = { # 骚扰→齐射
+						combat_attacker.side_commander ?= {
+							has_variable = harass_tactic
+						}
+						combat_defender.side_commander ?= {
+							has_variable = volly_tactic
+						}
+					}
+				}
+				
+			}
+			combat_defender.side_commander = {
+				add_character_modifier = {
+					modifier = embattle_tactic_counter_modifier
+					days = 20
+				}
+			}
+		}
+		
+	}
+}
+
+on_siege_completion = {
+	on_actions = {
+		embattle_on_siege_completion
+	}
+}
+embattle_on_siege_completion = { # 副将特质经验
+	trigger = {
+		has_game_rule = embattle_side_commanders_trait_xp_enabled
+	}
+	effect = {
+		# Commander trait leveling
+		scope:barony.title_province = {
+			every_army_in_location = {
+				army_commander ?= {
+					commanding_army.var:embattle_left_flank_commander ?= {
+						if = {  
+							limit = {
+								has_trait = military_engineer
+								location.barony = scope:barony
+							}
+							add_trait_xp = {
+								trait = military_engineer
+								value = {
+									value = location.fort_level
+									divide = 2
+									min = 1
+									add = {
+										value = martial
+										divide = 20
+									}
+									divide = 2
+								}
+							}
+						}
+					}
+					commanding_army.var:embattle_right_flank_commander ?= {
+						if = {  
+							limit = {
+								has_trait = military_engineer
+								location.barony = scope:barony
+							}
+							add_trait_xp = {
+								trait = military_engineer
+								value = {
+									value = location.fort_level
+									divide = 2
+									min = 1
+									add = {
+										value = martial
+										divide = 20
+									}
+									divide = 2
+								}
+							}
+						}
+					}
+				}
+				army_commander ?= {
+					commanding_army.var:embattle_left_flank_commander ?= {
+						if = {
+							limit = {
+								has_trait = reaver
+								location.barony = scope:barony
+							}
+							add_trait_xp = {
+								trait = reaver
+								value = {
+									value = 0.2
+									add = {
+										value = martial
+										divide = 20
+									}
+									divide = 2
+								}
+							}
+						}
+					}
+					commanding_army.var:embattle_right_flank_commander ?= {
+						if = {
+							limit = {
+								has_trait = reaver
+								location.barony = scope:barony
+							}
+							add_trait_xp = {
+								trait = reaver
+								value = {
+									value = 0.2
+									add = {
+										value = martial
+										divide = 20
+									}
+									divide = 2
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+on_raid_action_completion = {
+	on_actions = {
+		embattle_on_raid_action_completion
+	}
+}
+embattle_on_raid_action_completion = { # 副将特质经验
+	trigger = {
+		has_game_rule = embattle_side_commanders_trait_xp_enabled
+	}
+	effect = {
+		# Commander trait leveling
+		root.var:embattle_left_flank_commander ?= {
+			if = {
+				limit = {
+					has_trait = reaver
+				}
+				add_trait_xp = {
+					trait = reaver
+					value = {
+						value = 0.5
+						add = {
+							value = martial
+							divide = 10
+						}
+						divide = 2
+					}
+				}
+			}
+		}
+		root.var:embattle_right_flank_commander ?= {
+			if = {
+				limit = {
+					has_trait = reaver
+				}
+				add_trait_xp = {
+					trait = reaver
+					value = {
+						value = 0.5
+						add = {
+							value = martial
+							divide = 10
+						}
+						divide = 2
+					}
+				}
+			}
+		}
+	}
+}

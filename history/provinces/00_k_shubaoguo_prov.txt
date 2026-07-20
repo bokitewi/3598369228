@@ -1,0 +1,56 @@
+﻿##### d_shubaoshi ############################
+
+### c_shubao
+# 
+2012 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_mu1
+# 
+2014 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shi6
+# 
+2015 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_hui
+# 
+2053 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lengshuiguan
+# 
+2054 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zi5
+# 
+2055 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

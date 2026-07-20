@@ -1,0 +1,41 @@
+﻿##### d_sujibushi ############################
+
+### c_zhang4
+# ZHANG4
+2922 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_danei
+
+
+### c_shengpu
+
+
+### c_suguo
+# DANEI
+3535 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_hanchuan
+
+
+### c_meima
+
+
+### c_sanye
+# HANCHUAN
+3536 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+

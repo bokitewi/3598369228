@@ -1,0 +1,35 @@
+﻿##### d_weizhangshi ############################
+
+### c_weizhang
+# WEIZHANG
+2840 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhiduo
+# ZHIDUO
+3558 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhongdaojun
+
+
+### c_yuli
+
+
+### c_danyu
+
+
+### c_nianyushi
+
+
+### c_chunbu
+
+

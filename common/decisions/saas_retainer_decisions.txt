@@ -1,0 +1,53 @@
+﻿saas_recruit_talent_decision = {
+	decision_group_type = courtier
+	title = saas_recruit_talent_decision
+	desc = saas_recruit_talent_decision_desc
+	selection_tooltip = saas_recruit_talent_decision_tooltip
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+	}
+	sort_order = 105
+
+	is_shown = {
+		saas_is_ritual_collapse_phase_trigger = yes
+		is_independent_ruler = yes
+		is_landed = yes
+		highest_held_title_tier >= tier_county
+		saas_capital_in_huaxia_trigger = yes
+	}
+
+	is_valid = {
+		is_adult = yes
+		is_at_war = no
+		NOT = { has_character_modifier = saas_recruit_talent_edict_modifier }
+	}
+
+	cooldown = { years = 10 }
+
+	cost = {
+		prestige = medium_prestige_value
+		gold = minor_gold_value
+	}
+
+	effect = {
+		add_character_modifier = {
+			modifier = saas_recruit_talent_edict_modifier
+			years = 5
+		}
+		custom_tooltip = saas_recruit_talent_decision_effect
+	}
+
+	ai_check_interval = 36
+	ai_potential = {
+		saas_is_ritual_collapse_phase_trigger = yes
+		is_independent_ruler = yes
+		gold >= 50
+	}
+	ai_will_do = {
+		base = 35
+		modifier = { add = 35 has_trait = ambitious }
+		modifier = { add = 20 has_trait = generous }
+		modifier = { add = 20 monthly_character_income >= 10 }
+		modifier = { factor = 0.1 gold < 0 }
+	}
+}

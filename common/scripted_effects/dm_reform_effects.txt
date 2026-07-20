@@ -1,0 +1,1492 @@
+dm_reform_install_reformer_effect = {
+	# ROOT: reform story. REFORMER must be a character scope that accepted.
+	set_variable = {
+		name = dm_reform_reformer
+		value = $REFORMER$
+	}
+	remove_list_variable = {
+		name = dm_reform_pending_participants
+		target = $REFORMER$
+	}
+	remove_list_variable = {
+		name = dm_reform_supporters
+		target = $REFORMER$
+	}
+	remove_list_variable = {
+		name = dm_reform_opponents
+		target = $REFORMER$
+	}
+	remove_variable = dm_reform_pending_reformer
+}
+
+dm_reform_send_counter_notification_effect = {
+	# ROOT: a potential character recipient; scope:dm_reform_story is persistent.
+	if = {
+		limit = {
+			is_ai = no
+			NOT = {
+				scope:dm_reform_story = {
+					is_target_in_variable_list = {
+						name = dm_reform_notification_recipients
+						target = root
+					}
+				}
+			}
+		}
+		scope:dm_reform_story = {
+			add_to_variable_list = {
+				name = dm_reform_notification_recipients
+				target = root
+			}
+		}
+		if = {
+			limit = {
+				scope:dm_reform_story = { var:dm_reform_notification_score > 0 }
+			}
+			send_interface_message = {
+				type = event_generic_good_text
+				title = dm_reform_counter_message_title
+				desc = dm_reform_counter_message_desc
+				left_icon = scope:dm_reform_ruler
+			}
+		}
+		else_if = {
+			limit = {
+				scope:dm_reform_story = { var:dm_reform_notification_score < 0 }
+			}
+			send_interface_message = {
+				type = event_generic_bad_text
+				title = dm_reform_counter_message_title
+				desc = dm_reform_counter_message_desc
+				left_icon = scope:dm_reform_ruler
+			}
+		}
+		else = {
+			send_interface_message = {
+				type = event_generic_neutral_text
+				title = dm_reform_counter_message_title
+				desc = dm_reform_counter_message_desc
+				left_icon = scope:dm_reform_ruler
+			}
+		}
+	}
+}
+
+dm_reform_apply_counter_change_effect = {
+	# ROOT: reform story. All progress/support mutations use this transaction.
+	save_scope_as = dm_reform_story
+	story_owner = { save_scope_as = dm_reform_ruler }
+	set_variable = {
+		name = dm_reform_old_progress_display
+		value = {
+			value = var:dm_reform_progress
+			floor = yes
+		}
+	}
+	set_variable = {
+		name = dm_reform_old_support_display
+		value = var:dm_reform_support
+	}
+	change_variable = { name = dm_reform_progress add = $PROGRESS$ }
+	change_variable = { name = dm_reform_support add = $SUPPORT$ }
+	if = {
+		limit = { var:dm_reform_progress < 0 }
+		set_variable = { name = dm_reform_progress value = 0 }
+	}
+	else_if = {
+		limit = { var:dm_reform_progress > 100 }
+		set_variable = { name = dm_reform_progress value = 100 }
+	}
+	if = {
+		limit = { var:dm_reform_support < -10 }
+		set_variable = { name = dm_reform_support value = -10 }
+	}
+	else_if = {
+		limit = { var:dm_reform_support > 10 }
+		set_variable = { name = dm_reform_support value = 10 }
+	}
+	set_variable = {
+		name = dm_reform_new_progress_display
+		value = {
+			value = var:dm_reform_progress
+			floor = yes
+		}
+	}
+	set_variable = {
+		name = dm_reform_new_support_display
+		value = var:dm_reform_support
+	}
+	set_variable = {
+		name = dm_reform_progress_display_delta
+		value = var:dm_reform_new_progress_display
+	}
+	change_variable = {
+		name = dm_reform_progress_display_delta
+		subtract = var:dm_reform_old_progress_display
+	}
+	set_variable = {
+		name = dm_reform_support_display_delta
+		value = var:dm_reform_new_support_display
+	}
+	change_variable = {
+		name = dm_reform_support_display_delta
+		subtract = var:dm_reform_old_support_display
+	}
+	set_variable = {
+		name = dm_reform_notification_score
+		value = var:dm_reform_support_display_delta
+	}
+	change_variable = { name = dm_reform_notification_score multiply = 3 }
+	change_variable = {
+		name = dm_reform_notification_score
+		add = var:dm_reform_progress_display_delta
+	}
+	set_variable = { name = dm_reform_last_result value = flag:$RESULT$ }
+	if = {
+		limit = {
+			OR = {
+				var:dm_reform_progress_display_delta != 0
+				var:dm_reform_support_display_delta != 0
+			}
+		}
+		clear_variable_list = dm_reform_notification_recipients
+		scope:dm_reform_ruler = { dm_reform_send_counter_notification_effect = yes }
+		if = {
+			limit = { dm_reform_has_reformer_trigger = yes }
+			var:dm_reform_reformer = {
+				dm_reform_send_counter_notification_effect = yes
+			}
+		}
+		every_in_list = {
+			variable = dm_reform_supporters
+			dm_reform_send_counter_notification_effect = yes
+		}
+		every_in_list = {
+			variable = dm_reform_opponents
+			dm_reform_send_counter_notification_effect = yes
+		}
+		every_in_list = {
+			variable = dm_reform_pending_participants
+			dm_reform_send_counter_notification_effect = yes
+		}
+		clear_variable_list = dm_reform_notification_recipients
+	}
+}
+
+dm_reform_ai_quick_choose_option_effect = {
+	# ROOT: reform story. Select the same four approaches as a visible entry event.
+	random_list = {
+		40 = {
+			modifier = {
+				add = 30
+				story_owner = {
+					OR = {
+						has_trait = arrogant
+						has_trait = ambitious
+						has_trait = brave
+						has_trait = stubborn
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				story_owner = {
+					OR = {
+						has_trait = humble
+						has_trait = trusting
+						has_trait = content
+					}
+				}
+			}
+			set_variable = {
+				name = dm_reform_ai_check_value
+				value = $RULER_VALUE$
+			}
+		}
+		30 = {
+			trigger = { dm_reform_has_reformer_trigger = yes }
+			modifier = {
+				add = 30
+				story_owner = {
+					OR = {
+						has_trait = trusting
+						has_trait = humble
+						has_trait = content
+					}
+				}
+			}
+			modifier = {
+				add = -30
+				story_owner = {
+					OR = {
+						has_trait = paranoid
+						has_trait = arrogant
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				story_owner = {
+					opinion = {
+						target = root.var:dm_reform_reformer
+						value >= 50
+					}
+				}
+			}
+			modifier = {
+				add = 10
+				story_owner = {
+					opinion = {
+						target = root.var:dm_reform_reformer
+						value >= 0
+					}
+					NOT = {
+						opinion = {
+							target = root.var:dm_reform_reformer
+							value >= 50
+						}
+					}
+				}
+			}
+			modifier = {
+				add = -20
+				story_owner = {
+					opinion = {
+						target = root.var:dm_reform_reformer
+						value < 0
+					}
+				}
+			}
+			set_variable = {
+				name = dm_reform_ai_check_value
+				value = $REFORMER_VALUE$
+			}
+		}
+		60 = {
+			trigger = {
+				OR = {
+					story_owner = {
+						OR = {
+							has_trait = $TRAIT_1$
+							has_trait = $TRAIT_2$
+							has_trait = $TRAIT_3$
+							has_trait = $TRAIT_4$
+						}
+					}
+					var:dm_reform_reformer ?= {
+						OR = {
+							has_trait = $TRAIT_1$
+							has_trait = $TRAIT_2$
+							has_trait = $TRAIT_3$
+							has_trait = $TRAIT_4$
+						}
+					}
+				}
+			}
+			modifier = {
+				add = 40
+				story_owner = {
+					OR = {
+						has_trait = diligent
+						has_trait = patient
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				story_owner = {
+					OR = {
+						has_trait = just
+						has_trait = honest
+					}
+				}
+			}
+			set_variable = { name = dm_reform_ai_check_value value = 0 }
+			if = {
+				limit = {
+					story_owner = {
+						OR = {
+							has_trait = $TRAIT_1$
+							has_trait = $TRAIT_2$
+							has_trait = $TRAIT_3$
+							has_trait = $TRAIT_4$
+						}
+					}
+				}
+				set_variable = {
+					name = dm_reform_ai_check_value
+					value = $RULER_VALUE$
+				}
+			}
+			if = {
+				limit = {
+					dm_reform_has_reformer_trigger = yes
+					var:dm_reform_reformer = {
+						OR = {
+							has_trait = $TRAIT_1$
+							has_trait = $TRAIT_2$
+							has_trait = $TRAIT_3$
+							has_trait = $TRAIT_4$
+						}
+					}
+					OR = {
+						story_owner = {
+							NOR = {
+								has_trait = $TRAIT_1$
+								has_trait = $TRAIT_2$
+								has_trait = $TRAIT_3$
+								has_trait = $TRAIT_4$
+							}
+						}
+						$REFORMER_VALUE$ > $RULER_VALUE$
+					}
+				}
+				set_variable = {
+					name = dm_reform_ai_check_value
+					value = $REFORMER_VALUE$
+				}
+			}
+			change_variable = { name = dm_reform_ai_check_value add = 5 }
+		}
+		20 = {
+			trigger = { story_owner = { $RESOURCE$ >= $DOUBLE_COST$ } }
+			modifier = {
+				add = 30
+				story_owner = {
+					OR = {
+						has_trait = generous
+						has_trait = ambitious
+						has_trait = diligent
+					}
+				}
+			}
+			modifier = {
+				add = $RESOURCE_POSITIVE_WEIGHT$
+				story_owner = { has_trait = $RESOURCE_POSITIVE_TRAIT$ }
+			}
+			modifier = {
+				add = $RESOURCE_NEGATIVE_WEIGHT$
+				story_owner = { has_trait = $RESOURCE_NEGATIVE_TRAIT$ }
+			}
+			story_owner = { add_$RESOURCE$ = -$COST$ }
+			set_variable = {
+				name = dm_reform_ai_check_value
+				value = $COMBINED_VALUE$
+			}
+			change_variable = { name = dm_reform_ai_check_value add = 10 }
+		}
+	}
+}
+
+dm_reform_ai_quick_choose_diplomacy_effect = {
+	dm_reform_ai_quick_choose_option_effect = {
+		RULER_VALUE = dm_reform_ruler_check_diplomacy_value
+		REFORMER_VALUE = dm_reform_reformer_check_diplomacy_value
+		COMBINED_VALUE = dm_reform_check_diplomacy_value
+		TRAIT_1 = gregarious
+		TRAIT_2 = compassionate
+		TRAIT_3 = forgiving
+		TRAIT_4 = honest
+		RESOURCE = prestige
+		COST = $COST$
+		DOUBLE_COST = $DOUBLE_COST$
+		RESOURCE_POSITIVE_WEIGHT = 20
+		RESOURCE_POSITIVE_TRAIT = arrogant
+		RESOURCE_NEGATIVE_WEIGHT = -20
+		RESOURCE_NEGATIVE_TRAIT = humble
+	}
+}
+
+dm_reform_ai_quick_choose_martial_effect = {
+	dm_reform_ai_quick_choose_option_effect = {
+		RULER_VALUE = dm_reform_ruler_check_martial_value
+		REFORMER_VALUE = dm_reform_reformer_check_martial_value
+		COMBINED_VALUE = dm_reform_check_martial_value
+		TRAIT_1 = brave
+		TRAIT_2 = wrathful
+		TRAIT_3 = ambitious
+		TRAIT_4 = stubborn
+		RESOURCE = prestige
+		COST = $COST$
+		DOUBLE_COST = $DOUBLE_COST$
+		RESOURCE_POSITIVE_WEIGHT = 20
+		RESOURCE_POSITIVE_TRAIT = brave
+		RESOURCE_NEGATIVE_WEIGHT = -20
+		RESOURCE_NEGATIVE_TRAIT = humble
+	}
+}
+
+dm_reform_ai_quick_choose_stewardship_effect = {
+	dm_reform_ai_quick_choose_option_effect = {
+		RULER_VALUE = dm_reform_ruler_check_stewardship_value
+		REFORMER_VALUE = dm_reform_reformer_check_stewardship_value
+		COMBINED_VALUE = dm_reform_check_stewardship_value
+		TRAIT_1 = diligent
+		TRAIT_2 = temperate
+		TRAIT_3 = just
+		TRAIT_4 = greedy
+		RESOURCE = gold
+		COST = $COST$
+		DOUBLE_COST = $DOUBLE_COST$
+		RESOURCE_POSITIVE_WEIGHT = 0
+		RESOURCE_POSITIVE_TRAIT = generous
+		RESOURCE_NEGATIVE_WEIGHT = -30
+		RESOURCE_NEGATIVE_TRAIT = greedy
+	}
+}
+
+dm_reform_ai_quick_choose_intrigue_effect = {
+	dm_reform_ai_quick_choose_option_effect = {
+		RULER_VALUE = dm_reform_ruler_check_intrigue_value
+		REFORMER_VALUE = dm_reform_reformer_check_intrigue_value
+		COMBINED_VALUE = dm_reform_check_intrigue_value
+		TRAIT_1 = deceitful
+		TRAIT_2 = paranoid
+		TRAIT_3 = cynical
+		TRAIT_4 = arbitrary
+		RESOURCE = gold
+		COST = $COST$
+		DOUBLE_COST = $DOUBLE_COST$
+		RESOURCE_POSITIVE_WEIGHT = 0
+		RESOURCE_POSITIVE_TRAIT = generous
+		RESOURCE_NEGATIVE_WEIGHT = -30
+		RESOURCE_NEGATIVE_TRAIT = greedy
+	}
+}
+
+dm_reform_ai_quick_choose_learning_effect = {
+	dm_reform_ai_quick_choose_option_effect = {
+		RULER_VALUE = dm_reform_ruler_check_learning_value
+		REFORMER_VALUE = dm_reform_reformer_check_learning_value
+		COMBINED_VALUE = dm_reform_check_learning_value
+		TRAIT_1 = patient
+		TRAIT_2 = zealous
+		TRAIT_3 = cynical
+		TRAIT_4 = just
+		RESOURCE = piety
+		COST = $COST$
+		DOUBLE_COST = $DOUBLE_COST$
+		RESOURCE_POSITIVE_WEIGHT = 30
+		RESOURCE_POSITIVE_TRAIT = zealous
+		RESOURCE_NEGATIVE_WEIGHT = -30
+		RESOURCE_NEGATIVE_TRAIT = cynical
+	}
+}
+
+dm_reform_ai_quick_choose_prowess_effect = {
+	dm_reform_ai_quick_choose_option_effect = {
+		RULER_VALUE = dm_reform_ruler_check_prowess_value
+		REFORMER_VALUE = dm_reform_reformer_check_prowess_value
+		COMBINED_VALUE = dm_reform_check_prowess_value
+		TRAIT_1 = brave
+		TRAIT_2 = wrathful
+		TRAIT_3 = arrogant
+		TRAIT_4 = ambitious
+		RESOURCE = prestige
+		COST = $COST$
+		DOUBLE_COST = $DOUBLE_COST$
+		RESOURCE_POSITIVE_WEIGHT = 20
+		RESOURCE_POSITIVE_TRAIT = brave
+		RESOURCE_NEGATIVE_WEIGHT = -20
+		RESOURCE_NEGATIVE_TRAIT = humble
+	}
+}
+
+dm_reform_ai_quick_resolve_effect = {
+	# ROOT: reform story. Pure-AI path: no visible event, actor, chain or cooldown.
+	if = {
+		limit = { var:dm_reform_ai_check_value <= $TIER_1$ }
+		random_list = {
+			35 = { set_variable = { name = dm_reform_ai_result value = flag:disaster } }
+			45 = { set_variable = { name = dm_reform_ai_result value = flag:failure } }
+			19 = { set_variable = { name = dm_reform_ai_result value = flag:success } }
+			1 = { set_variable = { name = dm_reform_ai_result value = flag:great_success } }
+		}
+	}
+	else_if = {
+		limit = { var:dm_reform_ai_check_value <= $TIER_2$ }
+		random_list = {
+			25 = { set_variable = { name = dm_reform_ai_result value = flag:disaster } }
+			40 = { set_variable = { name = dm_reform_ai_result value = flag:failure } }
+			30 = { set_variable = { name = dm_reform_ai_result value = flag:success } }
+			5 = { set_variable = { name = dm_reform_ai_result value = flag:great_success } }
+		}
+	}
+	else_if = {
+		limit = { var:dm_reform_ai_check_value <= $TIER_3$ }
+		random_list = {
+			15 = { set_variable = { name = dm_reform_ai_result value = flag:disaster } }
+			35 = { set_variable = { name = dm_reform_ai_result value = flag:failure } }
+			40 = { set_variable = { name = dm_reform_ai_result value = flag:success } }
+			10 = { set_variable = { name = dm_reform_ai_result value = flag:great_success } }
+		}
+	}
+	else_if = {
+		limit = { var:dm_reform_ai_check_value <= $TIER_4$ }
+		random_list = {
+			10 = { set_variable = { name = dm_reform_ai_result value = flag:disaster } }
+			25 = { set_variable = { name = dm_reform_ai_result value = flag:failure } }
+			45 = { set_variable = { name = dm_reform_ai_result value = flag:success } }
+			20 = { set_variable = { name = dm_reform_ai_result value = flag:great_success } }
+		}
+	}
+	else_if = {
+		limit = { var:dm_reform_ai_check_value <= $TIER_5$ }
+		random_list = {
+			5 = { set_variable = { name = dm_reform_ai_result value = flag:disaster } }
+			15 = { set_variable = { name = dm_reform_ai_result value = flag:failure } }
+			50 = { set_variable = { name = dm_reform_ai_result value = flag:success } }
+			30 = { set_variable = { name = dm_reform_ai_result value = flag:great_success } }
+		}
+	}
+	else = {
+		random_list = {
+			1 = { set_variable = { name = dm_reform_ai_result value = flag:disaster } }
+			9 = { set_variable = { name = dm_reform_ai_result value = flag:failure } }
+			50 = { set_variable = { name = dm_reform_ai_result value = flag:success } }
+			40 = { set_variable = { name = dm_reform_ai_result value = flag:great_success } }
+		}
+	}
+	if = {
+		limit = { var:dm_reform_ai_result = flag:disaster }
+		dm_reform_apply_counter_change_effect = {
+			PROGRESS = $DISASTER_PROGRESS$
+			SUPPORT = $DISASTER_SUPPORT$
+			RESULT = disaster
+		}
+	}
+	else_if = {
+		limit = { var:dm_reform_ai_result = flag:failure }
+		dm_reform_apply_counter_change_effect = {
+			PROGRESS = $FAILURE_PROGRESS$
+			SUPPORT = $FAILURE_SUPPORT$
+			RESULT = failure
+		}
+	}
+	else_if = {
+		limit = { var:dm_reform_ai_result = flag:success }
+		dm_reform_apply_counter_change_effect = {
+			PROGRESS = $SUCCESS_PROGRESS$
+			SUPPORT = $SUCCESS_SUPPORT$
+			RESULT = success
+		}
+	}
+	else = {
+		dm_reform_apply_counter_change_effect = {
+			PROGRESS = $GREAT_PROGRESS$
+			SUPPORT = $GREAT_SUPPORT$
+			RESULT = great_success
+		}
+	}
+	remove_variable = dm_reform_ai_result
+	remove_variable = dm_reform_ai_check_value
+}
+
+dm_reform_ai_quick_crisis_effect = {
+	random_list = {
+		1 = { dm_reform_ai_quick_choose_martial_effect = { COST = 200 DOUBLE_COST = 400 } }
+		1 = { dm_reform_ai_quick_choose_intrigue_effect = { COST = 200 DOUBLE_COST = 400 } }
+		1 = { dm_reform_ai_quick_choose_diplomacy_effect = { COST = 200 DOUBLE_COST = 400 } }
+		2 = { dm_reform_ai_quick_choose_stewardship_effect = { COST = 200 DOUBLE_COST = 400 } }
+		1 = { dm_reform_ai_quick_choose_learning_effect = { COST = 200 DOUBLE_COST = 400 } }
+		1 = { dm_reform_ai_quick_choose_prowess_effect = { COST = 200 DOUBLE_COST = 400 } }
+	}
+	dm_reform_ai_quick_resolve_effect = {
+		TIER_1 = 12 TIER_2 = 17 TIER_3 = 22 TIER_4 = 27 TIER_5 = 32
+		DISASTER_PROGRESS = -12 DISASTER_SUPPORT = -6
+		FAILURE_PROGRESS = -10 FAILURE_SUPPORT = -5
+		SUCCESS_PROGRESS = 7 SUCCESS_SUPPORT = 2
+		GREAT_PROGRESS = 9 GREAT_SUPPORT = 3
+	}
+}
+dm_reform_ai_quick_setback_effect = {
+	random_list = {
+		2 = { dm_reform_ai_quick_choose_diplomacy_effect = { COST = 150 DOUBLE_COST = 300 } }
+		1 = { dm_reform_ai_quick_choose_stewardship_effect = { COST = 150 DOUBLE_COST = 300 } }
+		1 = { dm_reform_ai_quick_choose_martial_effect = { COST = 150 DOUBLE_COST = 300 } }
+		1 = { dm_reform_ai_quick_choose_intrigue_effect = { COST = 150 DOUBLE_COST = 300 } }
+		1 = { dm_reform_ai_quick_choose_learning_effect = { COST = 150 DOUBLE_COST = 300 } }
+		1 = { dm_reform_ai_quick_choose_prowess_effect = { COST = 150 DOUBLE_COST = 300 } }
+	}
+	dm_reform_ai_quick_resolve_effect = {
+		TIER_1 = 8 TIER_2 = 13 TIER_3 = 18 TIER_4 = 23 TIER_5 = 28
+		DISASTER_PROGRESS = -7 DISASTER_SUPPORT = -3
+		FAILURE_PROGRESS = -5 FAILURE_SUPPORT = -2
+		SUCCESS_PROGRESS = 5 SUCCESS_SUPPORT = 2
+		GREAT_PROGRESS = 7 GREAT_SUPPORT = 3
+	}
+}
+dm_reform_ai_quick_calm_effect = {
+	random_list = {
+		1 = { dm_reform_ai_quick_choose_learning_effect = { COST = 100 DOUBLE_COST = 200 } }
+		1 = { dm_reform_ai_quick_choose_stewardship_effect = { COST = 100 DOUBLE_COST = 200 } }
+		1 = { dm_reform_ai_quick_choose_intrigue_effect = { COST = 100 DOUBLE_COST = 200 } }
+		1 = { dm_reform_ai_quick_choose_martial_effect = { COST = 100 DOUBLE_COST = 200 } }
+		1 = { dm_reform_ai_quick_choose_diplomacy_effect = { COST = 100 DOUBLE_COST = 200 } }
+		1 = { dm_reform_ai_quick_choose_prowess_effect = { COST = 100 DOUBLE_COST = 200 } }
+		1 = { dm_reform_ai_quick_choose_learning_effect = { COST = 100 DOUBLE_COST = 200 } }
+	}
+	dm_reform_ai_quick_resolve_effect = {
+		TIER_1 = 4 TIER_2 = 9 TIER_3 = 14 TIER_4 = 19 TIER_5 = 24
+		DISASTER_PROGRESS = -2 DISASTER_SUPPORT = 0
+		FAILURE_PROGRESS = 0 FAILURE_SUPPORT = 0
+		SUCCESS_PROGRESS = 2 SUCCESS_SUPPORT = 0
+		GREAT_PROGRESS = 4 GREAT_SUPPORT = 0
+	}
+}
+dm_reform_ai_quick_encouragement_effect = {
+	random_list = {
+		2 = { dm_reform_ai_quick_choose_diplomacy_effect = { COST = 150 DOUBLE_COST = 300 } }
+		1 = { dm_reform_ai_quick_choose_learning_effect = { COST = 150 DOUBLE_COST = 300 } }
+		1 = { dm_reform_ai_quick_choose_stewardship_effect = { COST = 150 DOUBLE_COST = 300 } }
+		1 = { dm_reform_ai_quick_choose_martial_effect = { COST = 150 DOUBLE_COST = 300 } }
+		1 = { dm_reform_ai_quick_choose_intrigue_effect = { COST = 150 DOUBLE_COST = 300 } }
+		1 = { dm_reform_ai_quick_choose_prowess_effect = { COST = 150 DOUBLE_COST = 300 } }
+	}
+	dm_reform_ai_quick_resolve_effect = {
+		TIER_1 = 8 TIER_2 = 13 TIER_3 = 18 TIER_4 = 23 TIER_5 = 28
+		DISASTER_PROGRESS = -4 DISASTER_SUPPORT = -1
+		FAILURE_PROGRESS = -2 FAILURE_SUPPORT = 0
+		SUCCESS_PROGRESS = 10 SUCCESS_SUPPORT = 2
+		GREAT_PROGRESS = 12 GREAT_SUPPORT = 3
+	}
+}
+dm_reform_ai_quick_breakthrough_effect = {
+	random_list = {
+		1 = { dm_reform_ai_quick_choose_intrigue_effect = { COST = 200 DOUBLE_COST = 400 } }
+		2 = { dm_reform_ai_quick_choose_diplomacy_effect = { COST = 200 DOUBLE_COST = 400 } }
+		1 = { dm_reform_ai_quick_choose_learning_effect = { COST = 200 DOUBLE_COST = 400 } }
+		1 = { dm_reform_ai_quick_choose_stewardship_effect = { COST = 200 DOUBLE_COST = 400 } }
+		1 = { dm_reform_ai_quick_choose_martial_effect = { COST = 200 DOUBLE_COST = 400 } }
+		1 = { dm_reform_ai_quick_choose_prowess_effect = { COST = 200 DOUBLE_COST = 400 } }
+	}
+	dm_reform_ai_quick_resolve_effect = {
+		TIER_1 = 12 TIER_2 = 17 TIER_3 = 22 TIER_4 = 27 TIER_5 = 32
+		DISASTER_PROGRESS = -7 DISASTER_SUPPORT = -3
+		FAILURE_PROGRESS = -5 FAILURE_SUPPORT = -2
+		SUCCESS_PROGRESS = 17 SUCCESS_SUPPORT = 5
+		GREAT_PROGRESS = 19 GREAT_SUPPORT = 6
+	}
+}
+
+dm_reform_ai_quick_pulse_effect = {
+	# Category weights are identical to the visible-event route.
+	if = {
+		limit = { var:dm_reform_support <= -6 }
+		random_list = {
+			35 = { trigger = { any_in_list = { variable = dm_reform_opponents always = yes } } dm_reform_ai_quick_crisis_effect = yes }
+			35 = { trigger = { any_in_list = { variable = dm_reform_opponents always = yes } } dm_reform_ai_quick_setback_effect = yes }
+			20 = { dm_reform_ai_quick_calm_effect = yes }
+			8 = { trigger = { any_in_list = { variable = dm_reform_supporters always = yes } } dm_reform_ai_quick_encouragement_effect = yes }
+			2 = { trigger = { any_in_list = { variable = dm_reform_supporters always = yes } } dm_reform_ai_quick_breakthrough_effect = yes }
+		}
+	}
+	else_if = {
+		limit = { var:dm_reform_support <= -2 }
+		random_list = {
+			20 = { trigger = { any_in_list = { variable = dm_reform_opponents always = yes } } dm_reform_ai_quick_crisis_effect = yes }
+			30 = { trigger = { any_in_list = { variable = dm_reform_opponents always = yes } } dm_reform_ai_quick_setback_effect = yes }
+			25 = { dm_reform_ai_quick_calm_effect = yes }
+			20 = { trigger = { any_in_list = { variable = dm_reform_supporters always = yes } } dm_reform_ai_quick_encouragement_effect = yes }
+			5 = { trigger = { any_in_list = { variable = dm_reform_supporters always = yes } } dm_reform_ai_quick_breakthrough_effect = yes }
+		}
+	}
+	else_if = {
+		limit = { var:dm_reform_support <= 1 }
+		random_list = {
+			10 = { trigger = { any_in_list = { variable = dm_reform_opponents always = yes } } dm_reform_ai_quick_crisis_effect = yes }
+			20 = { trigger = { any_in_list = { variable = dm_reform_opponents always = yes } } dm_reform_ai_quick_setback_effect = yes }
+			40 = { dm_reform_ai_quick_calm_effect = yes }
+			20 = { trigger = { any_in_list = { variable = dm_reform_supporters always = yes } } dm_reform_ai_quick_encouragement_effect = yes }
+			10 = { trigger = { any_in_list = { variable = dm_reform_supporters always = yes } } dm_reform_ai_quick_breakthrough_effect = yes }
+		}
+	}
+	else_if = {
+		limit = { var:dm_reform_support <= 5 }
+		random_list = {
+			5 = { trigger = { any_in_list = { variable = dm_reform_opponents always = yes } } dm_reform_ai_quick_crisis_effect = yes }
+			20 = { trigger = { any_in_list = { variable = dm_reform_opponents always = yes } } dm_reform_ai_quick_setback_effect = yes }
+			25 = { dm_reform_ai_quick_calm_effect = yes }
+			30 = { trigger = { any_in_list = { variable = dm_reform_supporters always = yes } } dm_reform_ai_quick_encouragement_effect = yes }
+			20 = { trigger = { any_in_list = { variable = dm_reform_supporters always = yes } } dm_reform_ai_quick_breakthrough_effect = yes }
+		}
+	}
+	else = {
+		random_list = {
+			2 = { trigger = { any_in_list = { variable = dm_reform_opponents always = yes } } dm_reform_ai_quick_crisis_effect = yes }
+			8 = { trigger = { any_in_list = { variable = dm_reform_opponents always = yes } } dm_reform_ai_quick_setback_effect = yes }
+			20 = { dm_reform_ai_quick_calm_effect = yes }
+			35 = { trigger = { any_in_list = { variable = dm_reform_supporters always = yes } } dm_reform_ai_quick_encouragement_effect = yes }
+			35 = { trigger = { any_in_list = { variable = dm_reform_supporters always = yes } } dm_reform_ai_quick_breakthrough_effect = yes }
+		}
+	}
+}
+
+dm_reform_begin_statements_effect = {
+	# ROOT: reform story. All eligible actors receive a real 1-7 day declaration event.
+	set_variable = { name = dm_reform_phase value = flag:statements }
+	set_variable = { name = dm_reform_statement_days value = 0 }
+	clear_variable_list = dm_reform_supporters
+	clear_variable_list = dm_reform_opponents
+	clear_variable_list = dm_reform_pending_participants
+	story_owner = { save_scope_as = dm_reform_ruler }
+	if = {
+		limit = { dm_reform_has_reformer_trigger = yes }
+		var:dm_reform_reformer = { save_scope_as = dm_reform_reformer }
+	}
+	dm_reform_refresh_roster_effect = yes
+}
+
+dm_reform_initialize_formal_effect = {
+	# ROOT: reform story. Resolve anyone who did not answer before the ten-day deadline.
+	story_owner = { save_scope_as = dm_reform_ruler }
+	if = {
+		limit = { dm_reform_has_reformer_trigger = yes }
+		var:dm_reform_reformer = { save_scope_as = dm_reform_reformer }
+	}
+	every_in_list = {
+		variable = dm_reform_pending_participants
+		save_scope_as = dm_reform_participant
+		scope:story = { dm_reform_add_participant_effect = yes }
+	}
+	clear_variable_list = dm_reform_pending_participants
+	set_variable = { name = dm_reform_phase value = flag:formal }
+	set_variable = { name = dm_reform_initial_support value = 0 }
+	every_in_list = {
+		variable = dm_reform_supporters
+		change_variable = { name = dm_reform_initial_support add = 1 }
+	}
+	every_in_list = {
+		variable = dm_reform_opponents
+		change_variable = { name = dm_reform_initial_support add = -1 }
+	}
+	if = {
+		limit = { var:dm_reform_initial_support > 5 }
+		set_variable = { name = dm_reform_initial_support value = 5 }
+	}
+	else_if = {
+		limit = { var:dm_reform_initial_support < -5 }
+		set_variable = { name = dm_reform_initial_support value = -5 }
+	}
+	dm_reform_apply_counter_change_effect = {
+		PROGRESS = 0
+		SUPPORT = var:dm_reform_initial_support
+		RESULT = initial_support
+	}
+	story_owner = {
+		trigger_event = { id = dm_reform.0002 days = 1 }
+	}
+}
+
+dm_reform_queue_participant_effect = {
+	# ROOT: reform story; scope:dm_reform_participant: candidate.
+	if = {
+		limit = {
+			scope:dm_reform_participant = {
+				is_alive = yes
+				NOT = { this = root.story_owner }
+			}
+			NOT = {
+				is_target_in_variable_list = {
+					name = dm_reform_supporters
+					target = scope:dm_reform_participant
+				}
+			}
+			NOT = {
+				is_target_in_variable_list = {
+					name = dm_reform_opponents
+					target = scope:dm_reform_participant
+				}
+			}
+			NOT = {
+				is_target_in_variable_list = {
+					name = dm_reform_pending_participants
+					target = scope:dm_reform_participant
+				}
+			}
+			NOT = { var:dm_reform_reformer = scope:dm_reform_participant }
+		}
+		add_to_variable_list = {
+			name = dm_reform_pending_participants
+			target = scope:dm_reform_participant
+		}
+		story_owner = { save_scope_as = dm_reform_ruler }
+		if = {
+			limit = { dm_reform_has_reformer_trigger = yes }
+			var:dm_reform_reformer = { save_scope_as = dm_reform_reformer }
+		}
+		save_scope_as = dm_reform_story
+		scope:dm_reform_participant = {
+			trigger_event = { id = dm_reform.0220 days = { 1 7 } }
+		}
+	}
+}
+
+dm_reform_add_participant_effect = {
+	# ROOT: reform story; scope:dm_reform_participant: candidate.
+	if = {
+		limit = {
+			scope:dm_reform_participant = {
+				is_alive = yes
+				NOT = { this = root.story_owner }
+			}
+			NOT = {
+				is_target_in_variable_list = {
+					name = dm_reform_supporters
+					target = scope:dm_reform_participant
+				}
+			}
+			NOT = {
+				is_target_in_variable_list = {
+					name = dm_reform_opponents
+					target = scope:dm_reform_participant
+				}
+			}
+			NOT = { var:dm_reform_reformer = scope:dm_reform_participant }
+		}
+		remove_list_variable = {
+			name = dm_reform_pending_participants
+			target = scope:dm_reform_participant
+		}
+		if = {
+			limit = {
+				scope:dm_reform_participant = {
+					dm_reform_participant_supports_trigger = yes
+				}
+			}
+			add_to_variable_list = {
+				name = dm_reform_supporters
+				target = scope:dm_reform_participant
+			}
+		}
+		else = {
+			add_to_variable_list = {
+				name = dm_reform_opponents
+				target = scope:dm_reform_participant
+			}
+		}
+	}
+}
+
+dm_reform_record_support_effect = {
+	# ROOT: reform story; scope:dm_reform_participant: declaring actor.
+	remove_list_variable = {
+		name = dm_reform_pending_participants
+		target = scope:dm_reform_participant
+	}
+	add_to_variable_list = {
+		name = dm_reform_supporters
+		target = scope:dm_reform_participant
+	}
+}
+
+dm_reform_record_opposition_effect = {
+	# ROOT: reform story; scope:dm_reform_participant: declaring actor.
+	remove_list_variable = {
+		name = dm_reform_pending_participants
+		target = scope:dm_reform_participant
+	}
+	add_to_variable_list = {
+		name = dm_reform_opponents
+		target = scope:dm_reform_participant
+	}
+}
+
+dm_reform_register_candidate_effect = {
+	# ROOT: reform story; scope:dm_reform_participant: current union candidate.
+	if = {
+		limit = {
+			scope:dm_reform_participant = {
+				is_alive = yes
+				top_liege = root.story_owner.top_liege
+				NOT = { this = root.story_owner }
+			}
+			NOT = { var:dm_reform_reformer = scope:dm_reform_participant }
+			NOT = {
+				is_target_in_variable_list = {
+					name = dm_reform_eligible_participants
+					target = scope:dm_reform_participant
+				}
+			}
+		}
+		add_to_variable_list = {
+			name = dm_reform_eligible_participants
+			target = scope:dm_reform_participant
+		}
+	}
+}
+
+dm_reform_add_dynastic_cycle_leaders_effect = {
+	# ROOT: reform story.
+	if = {
+		limit = {
+			story_owner = {
+				government_has_flag = government_is_celestial
+			}
+			exists = situation:dynastic_cycle
+		}
+		situation:dynastic_cycle = {
+			situation_participant_group:advancement_movement ?= {
+				if = {
+					limit = { exists = var:movement_leader }
+					var:movement_leader = { save_scope_as = dm_reform_participant }
+					scope:story = { dm_reform_register_candidate_effect = yes }
+				}
+			}
+			situation_participant_group:expansion_movement ?= {
+				if = {
+					limit = { exists = var:movement_leader }
+					var:movement_leader = { save_scope_as = dm_reform_participant }
+					scope:story = { dm_reform_register_candidate_effect = yes }
+				}
+			}
+			situation_participant_group:pro_hegemon_movement ?= {
+				if = {
+					limit = { exists = var:movement_leader }
+					var:movement_leader = { save_scope_as = dm_reform_participant }
+					scope:story = { dm_reform_register_candidate_effect = yes }
+				}
+			}
+			situation_participant_group:conservative_movement ?= {
+				if = {
+					limit = { exists = var:movement_leader }
+					var:movement_leader = { save_scope_as = dm_reform_participant }
+					scope:story = { dm_reform_register_candidate_effect = yes }
+				}
+			}
+		}
+	}
+}
+
+dm_reform_refresh_roster_effect = {
+	# ROOT: reform story. Rebuild the union and preserve existing conversions.
+	clear_variable_list = dm_reform_eligible_participants
+	story_owner = { save_scope_as = dm_reform_ruler }
+	scope:dm_reform_ruler = {
+		every_powerful_vassal = {
+			save_scope_as = dm_reform_participant
+			scope:story = { dm_reform_register_candidate_effect = yes }
+		}
+		every_councillor = {
+			save_scope_as = dm_reform_participant
+			scope:story = { dm_reform_register_candidate_effect = yes }
+		}
+		every_court_position_holder = {
+			save_scope_as = dm_reform_participant
+			scope:story = { dm_reform_register_candidate_effect = yes }
+		}
+	}
+	dm_reform_add_dynastic_cycle_leaders_effect = yes
+	every_in_list = {
+		variable = dm_reform_supporters
+		if = {
+			limit = {
+				OR = {
+					is_alive = no
+					NOT = {
+						root = {
+							is_target_in_variable_list = {
+								name = dm_reform_eligible_participants
+								target = prev
+							}
+						}
+					}
+				}
+			}
+			save_scope_as = dm_reform_invalid_participant
+			scope:story = {
+				remove_list_variable = {
+					name = dm_reform_supporters
+					target = scope:dm_reform_invalid_participant
+				}
+			}
+		}
+	}
+	every_in_list = {
+		variable = dm_reform_opponents
+		if = {
+			limit = {
+				OR = {
+					is_alive = no
+					NOT = {
+						root = {
+							is_target_in_variable_list = {
+								name = dm_reform_eligible_participants
+								target = prev
+							}
+						}
+					}
+				}
+			}
+			save_scope_as = dm_reform_invalid_participant
+			scope:story = {
+				remove_list_variable = {
+					name = dm_reform_opponents
+					target = scope:dm_reform_invalid_participant
+				}
+			}
+		}
+	}
+	every_in_list = {
+		variable = dm_reform_pending_participants
+		if = {
+			limit = {
+				OR = {
+					is_alive = no
+					NOT = {
+						root = {
+							is_target_in_variable_list = {
+								name = dm_reform_eligible_participants
+								target = prev
+							}
+						}
+					}
+				}
+			}
+			save_scope_as = dm_reform_invalid_participant
+			scope:story = {
+				remove_list_variable = {
+					name = dm_reform_pending_participants
+					target = scope:dm_reform_invalid_participant
+				}
+			}
+		}
+	}
+	every_in_list = {
+		variable = dm_reform_eligible_participants
+		save_scope_as = dm_reform_participant
+		scope:story = { dm_reform_queue_participant_effect = yes }
+	}
+}
+
+dm_reform_progress_pulse_effect = {
+	# ROOT: reform story
+	dm_reform_refresh_roster_effect = yes
+	story_owner = { save_scope_as = dm_reform_ruler }
+	if = {
+		limit = {
+			exists = var:dm_reform_reformer
+			NOT = { dm_reform_has_reformer_trigger = yes }
+		}
+		remove_variable = dm_reform_reformer
+		dm_reform_apply_counter_change_effect = {
+			PROGRESS = -5
+			SUPPORT = 0
+			RESULT = reformer_lost
+		}
+		story_owner = { trigger_event = dm_reform.0201 }
+	}
+	if = {
+		limit = { dm_reform_has_reformer_trigger = yes }
+		var:dm_reform_reformer = { save_scope_as = dm_reform_reformer }
+	}
+	dm_reform_apply_counter_change_effect = {
+		PROGRESS = dm_reform_passive_progress_value
+		SUPPORT = 0
+		RESULT = passive_progress
+	}
+}
+
+dm_reform_save_actor_story_effect = {
+	# ROOT: interaction actor. Saves the relevant story as scope:dm_reform_story.
+	if = {
+		limit = {
+			any_owned_story = {
+				type = dm_reform_story
+				dm_reform_is_formal_trigger = yes
+			}
+		}
+		random_owned_story = {
+			limit = {
+				story_type = dm_reform_story
+				dm_reform_is_formal_trigger = yes
+			}
+			save_scope_as = dm_reform_story
+		}
+	}
+	else = {
+		top_liege = {
+			random_owned_story = {
+				limit = {
+					story_type = dm_reform_story
+					dm_reform_is_formal_trigger = yes
+					var:dm_reform_reformer = root
+				}
+				save_scope_as = dm_reform_story
+			}
+		}
+	}
+}
+
+dm_reform_lobby_success_effect = {
+	# ROOT: reform story; scope:recipient: lobbied opponent.
+	remove_list_variable = {
+		name = dm_reform_opponents
+		target = scope:recipient
+	}
+	add_to_variable_list = {
+		name = dm_reform_supporters
+		target = scope:recipient
+	}
+	scope:recipient = { trigger_event = dm_reform.0301 }
+}
+
+dm_reform_lobby_failure_effect = {
+	scope:recipient = {
+		add_character_flag = {
+			flag = dm_reform_lobby_global_refusal
+			years = 3
+		}
+		add_to_variable_list = {
+			name = dm_reform_lobby_rejected_actors
+			target = scope:actor
+			years = 5
+		}
+		trigger_event = dm_reform.0302
+	}
+}
+
+dm_reform_success_effect = {
+	# ROOT: reform story
+	dm_reform_apply_target_law_effect = yes
+	if = {
+		limit = { dm_reform_is_government_reform_trigger = yes }
+		story_owner = {
+			add_character_flag = {
+				flag = dm_government_reform_cooldown
+				years = 20
+			}
+		}
+	}
+	set_variable = {
+		name = dm_reform_success_score
+		value = var:dm_reform_support
+	}
+	if = {
+		limit = { var:dm_reform_elapsed_days <= 1825 }
+		change_variable = { name = dm_reform_success_score add = 2 }
+	}
+	else_if = {
+		limit = { var:dm_reform_elapsed_days <= 3650 }
+		change_variable = { name = dm_reform_success_score add = 1 }
+	}
+	else_if = {
+		limit = { var:dm_reform_elapsed_days > 7300 }
+		change_variable = { name = dm_reform_success_score add = -1 }
+	}
+	if = {
+		limit = { var:dm_reform_success_score >= 8 }
+		story_owner = {
+			add_prestige = 1000
+			add_legitimacy = 35
+		}
+		if = {
+			limit = { dm_reform_has_reformer_trigger = yes }
+			var:dm_reform_reformer = { add_prestige = 700 }
+		}
+	}
+	else_if = {
+		limit = { var:dm_reform_success_score >= 1 }
+		story_owner = {
+			add_prestige = 600
+			add_legitimacy = 20
+		}
+		if = {
+			limit = { dm_reform_has_reformer_trigger = yes }
+			var:dm_reform_reformer = { add_prestige = 400 }
+		}
+	}
+	else = {
+		story_owner = {
+			add_prestige = 300
+			add_legitimacy = 10
+		}
+		if = {
+			limit = { dm_reform_has_reformer_trigger = yes }
+			var:dm_reform_reformer = { add_prestige = 200 }
+		}
+	}
+	story_owner = {
+		add_character_modifier = {
+			modifier = dm_reform_success_modifier
+			years = 5
+		}
+	}
+	if = {
+		limit = { var:dm_reform_elapsed_days <= 730 }
+		story_owner = {
+			add_character_modifier = {
+				modifier = dm_reform_decisive_modifier
+				years = 5
+			}
+		}
+	}
+	dm_reform_apply_theme_reward_effect = yes
+	if = {
+		limit = { dm_reform_has_reformer_trigger = yes }
+		var:dm_reform_reformer = {
+			save_scope_as = dm_reform_reformer
+		}
+	}
+	story_owner = {
+		trigger_event = dm_reform.9001
+		if = {
+			limit = { exists = scope:dm_reform_reformer }
+			trigger_event = {
+				id = dm_reform.9200
+				days = { 30 90 }
+			}
+		}
+	}
+	end_story = yes
+}
+
+dm_reform_apply_theme_reward_effect = {
+	if = {
+		limit = { var:dm_reform_theme = flag:authority }
+		story_owner = {
+			add_character_modifier = { modifier = dm_reform_theme_authority years = 5 }
+		}
+	}
+	else_if = {
+		limit = { var:dm_reform_theme = flag:succession }
+		story_owner = {
+			add_character_modifier = { modifier = dm_reform_theme_succession years = 5 }
+		}
+	}
+	else_if = {
+		limit = { var:dm_reform_theme = flag:military }
+		story_owner = {
+			add_character_modifier = { modifier = dm_reform_theme_military years = 5 }
+		}
+	}
+	else_if = {
+		limit = { var:dm_reform_theme = flag:administration }
+		story_owner = {
+			add_character_modifier = { modifier = dm_reform_theme_administration years = 5 }
+		}
+	}
+	else_if = {
+		limit = { var:dm_reform_theme = flag:finance }
+		story_owner = {
+			add_character_modifier = { modifier = dm_reform_theme_finance years = 5 }
+		}
+	}
+	else_if = {
+		limit = { var:dm_reform_theme = flag:ritual }
+		story_owner = {
+			add_character_modifier = { modifier = dm_reform_theme_ritual years = 5 }
+		}
+	}
+	else = {
+		story_owner = {
+			add_character_modifier = { modifier = dm_reform_theme_settlement years = 5 }
+		}
+	}
+}
+
+dm_reform_failure_effect = {
+	if = {
+		limit = { dm_reform_is_government_reform_trigger = yes }
+		story_owner = {
+			add_character_flag = {
+				flag = dm_government_reform_cooldown
+				years = 20
+			}
+		}
+	}
+	story_owner = {
+		if = {
+			limit = { highest_held_title_tier >= tier_empire }
+			add_prestige = -500
+		}
+		else_if = {
+			limit = { highest_held_title_tier >= tier_kingdom }
+			add_prestige = -350
+		}
+		else = { add_prestige = -200 }
+		add_legitimacy = -10
+		add_character_modifier = {
+			modifier = dm_reform_failure_modifier
+			years = 5
+		}
+		add_character_flag = {
+			flag = dm_reform_cooldown
+			years = 5
+		}
+		trigger_event = dm_reform.9002
+	}
+	end_story = yes
+}
+
+dm_reform_start_opposition_war_effect = {
+	# ROOT: reform story. Reuse the real independence faction system and real opponents.
+	story_owner = { save_scope_as = dm_reform_ruler }
+	ordered_in_list = {
+		variable = dm_reform_opponents
+		limit = {
+			is_landed = yes
+			can_create_faction = {
+				type = independence_faction
+				target = scope:dm_reform_ruler
+			}
+		}
+		order_by = current_military_strength
+		position = 0
+		save_scope_as = dm_reform_rebel_leader
+	}
+	scope:dm_reform_rebel_leader ?= {
+		create_faction = {
+			type = independence_faction
+			target = scope:dm_reform_ruler
+		}
+		joined_faction ?= { save_scope_as = dm_reform_rebel_faction }
+	}
+	if = {
+		limit = { exists = scope:dm_reform_rebel_faction }
+		every_in_list = {
+			variable = dm_reform_opponents
+			limit = {
+				is_landed = yes
+				NOT = { this = scope:dm_reform_rebel_leader }
+				can_join_faction = scope:dm_reform_rebel_faction
+			}
+			join_faction = scope:dm_reform_rebel_faction
+		}
+		scope:dm_reform_rebel_faction = {
+			add_faction_discontent = 100
+			faction_start_war = {}
+		}
+	}
+}
+
+dm_reform_extreme_failure_effect = {
+	save_scope_as = dm_reform_story
+	if = {
+		limit = { dm_reform_is_government_reform_trigger = yes }
+		story_owner = {
+			add_character_flag = {
+				flag = dm_government_reform_cooldown
+				years = 20
+			}
+		}
+	}
+	story_owner = {
+		save_scope_as = dm_reform_ruler
+		add_prestige = -500
+		add_legitimacy = -20
+		add_character_modifier = {
+			modifier = dm_reform_extreme_failure_modifier
+			years = 10
+		}
+		add_character_flag = {
+			flag = dm_reform_cooldown
+			years = 10
+		}
+	}
+	if = {
+		limit = { dm_reform_has_reformer_trigger = yes }
+		var:dm_reform_reformer = { save_scope_as = dm_reform_reformer }
+	}
+	story_owner = {
+		trigger_event = dm_reform.9100
+	}
+	end_story = yes
+}
+
+dm_reform_abort_effect = {
+	if = {
+		limit = { dm_reform_is_government_reform_trigger = yes }
+		story_owner = {
+			add_character_flag = {
+				flag = dm_government_reform_cooldown
+				years = 20
+			}
+		}
+	}
+	story_owner = {
+		if = {
+			limit = { highest_held_title_tier >= tier_empire }
+			add_prestige = -300
+		}
+		else_if = {
+			limit = { highest_held_title_tier >= tier_kingdom }
+			add_prestige = -200
+		}
+		else_if = {
+			limit = { highest_held_title_tier >= tier_duchy }
+			add_prestige = -100
+		}
+		else = { add_prestige = -50 }
+		add_legitimacy = -5
+		add_character_modifier = {
+			modifier = dm_reform_aborted_modifier
+			years = 2
+		}
+		add_character_flag = {
+			flag = dm_reform_cooldown
+			years = 2
+		}
+		trigger_event = dm_reform.9003
+	}
+	end_story = yes
+}
+
+dm_reform_neutral_end_effect = {
+	if = {
+		limit = { exists = var:dm_reform_paid_gold }
+		story_owner = {
+			add_gold = {
+				value = root.var:dm_reform_paid_gold
+				multiply = 0.5
+			}
+		}
+	}
+	if = {
+		limit = { exists = var:dm_reform_paid_prestige }
+		story_owner = {
+			add_prestige = {
+				value = root.var:dm_reform_paid_prestige
+				multiply = 0.5
+			}
+		}
+	}
+	if = {
+		limit = { exists = var:dm_reform_paid_piety }
+		story_owner = {
+			add_piety = {
+				value = root.var:dm_reform_paid_piety
+				multiply = 0.5
+			}
+		}
+	}
+	story_owner = { trigger_event = dm_reform.9004 }
+	end_story = yes
+}
+
+dm_reform_check_immediate_outcome_effect = {
+	if = {
+		limit = { var:dm_reform_progress < 0 }
+		set_variable = { name = dm_reform_progress value = 0 }
+	}
+	else_if = {
+		limit = { var:dm_reform_progress > 100 }
+		set_variable = { name = dm_reform_progress value = 100 }
+	}
+	if = {
+		limit = { var:dm_reform_support < -10 }
+		set_variable = { name = dm_reform_support value = -10 }
+	}
+	else_if = {
+		limit = { var:dm_reform_support > 10 }
+		set_variable = { name = dm_reform_support value = 10 }
+	}
+	if = {
+		limit = { var:dm_reform_support <= -10 }
+		dm_reform_extreme_failure_effect = yes
+	}
+	else_if = {
+		limit = { var:dm_reform_progress >= 100 }
+		dm_reform_success_effect = yes
+	}
+}

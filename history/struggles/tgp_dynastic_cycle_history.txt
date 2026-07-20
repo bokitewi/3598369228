@@ -1,0 +1,2 @@
+﻿# Deliberate total-conversion override.
+# Vanilla China's dynastic cycle is replaced by spring_and_autumn_situation.

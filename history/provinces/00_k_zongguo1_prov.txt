@@ -1,0 +1,119 @@
+﻿##### d_zhaibushi ############################
+
+### c_anfang
+# ANFANG
+2878 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# SHANGZONG
+2853 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# JUGONG
+2979 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_abo
+
+
+### c_zhangma
+
+
+### c_amobo
+
+
+### c_malaitian1
+
+
+### c_xiabuzuo
+# SHANGHAI
+2978 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# WUSHE
+2982 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# MA4
+2980 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_yinbo
+
+
+### c_xiangma
+
+
+### c_zuodao
+
+
+### c_kedousijia
+# MALAITIAN
+2977 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# YISHEN
+2981 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_xiazong
+
+
+### c_shangzong
+
+
+### c_xuhui
+# XUHUI
+2975 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# ABO
+2976 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_malaitian
+
+
+### c_shanghai
+
+
+### c_jugong
+
+
+### c_ma4
+
+
+### c_yishen
+
+
+### c_wushe
+
+

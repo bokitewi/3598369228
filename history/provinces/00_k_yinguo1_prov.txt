@@ -1,0 +1,38 @@
+﻿##### d_yinshi2 ############################
+
+### c_kuiying
+# KUIYING
+1760 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_luyang1
+# LUYANG1
+1763 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xiayin
+# XIAYIN
+1771 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lecheng
+# LECHENG
+1772 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

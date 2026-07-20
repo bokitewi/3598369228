@@ -1,0 +1,3 @@
+﻿# Deliberate compatibility override.
+# Situation startup is owned by saas_game_start.txt, which starts the situation
+# before dispatching character-scoped participant initialization.

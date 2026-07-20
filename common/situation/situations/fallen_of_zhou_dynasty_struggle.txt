@@ -1,0 +1,378 @@
+﻿@saas_cat_major = 500
+@saas_cat_high = 300
+@saas_cat_medium = 100
+@saas_cat_low = 50
+@saas_cat_minor = 25
+
+# Scaled from the vanilla 1.19.0.6 Iberian Struggle values while preserving
+# its 1:3:5:10:25 relative weighting. The Spring and Autumn situation uses
+# a 5,000 point takeover threshold, so the original values are multiplied by 20.
+@saas_fp2_cat_minimal = 20
+@saas_fp2_cat_minor = 60
+@saas_fp2_cat_medium = 100
+@saas_fp2_cat_major = 200
+@saas_fp2_cat_massive = 500
+@saas_fp2_cat_minimal_over_time = 20
+
+spring_and_autumn_situation = {
+	window = situation
+	is_unique = yes
+	gui_window_name = "window_spring_and_autumn_situation"
+	gui_participation_window_name = "window_situation_participation"
+	illustration = "gfx/interface/illustrations/terrain_types/mpo_season_abudant_grazing.dds"
+	icon = {
+		reference = "gfx/interface/icons/situation_types/dynastic_cycle.dds"
+	}
+	situation_group_type = major
+	map_mode = sub_regions
+	gui_tooltip_group_focused = no
+
+	sub_regions = {
+		world_huaxia = {
+			map_color = { 123 3 44 }
+			icon = "gfx/interface/icons/situations/debug_situation/steppe_west.dds"
+			geographical_regions = {
+				world_huaxia_jingzhou
+				world_huaxia_yangzhou
+				world_huaxia_qingzhou
+				world_huaxia_yuzhou
+				world_huaxia_sili
+				world_huaxia_jizhou
+				world_huaxia_yongzhou
+				world_huaxia_bingzhou
+				world_huaxia_yizhou
+			}
+		}
+
+	}
+
+	participant_groups = {
+		involve_supporters_of_zhou_dynasty = {
+			icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_pro.dds"
+			map_color = hsv{ 0.8 0.75 0.83 }
+			require_capital_in_sub_region = yes
+			is_character_valid = {
+			#	highest_held_title_tier >= tier_duchy
+				religion = religion:lijiao_religion
+				has_trait = character_involve_supporters_of_zhou_dynasty
+			}
+		}
+		involve_opponents_of_zhou_dynasty = {
+			icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_expand.dds"
+			map_color = hsv{ 0.8 0.15 0.81 }
+			require_capital_in_sub_region = yes
+			is_character_valid = {
+			#	highest_held_title_tier >= tier_duchy
+				religion = religion:lijiao_religion
+				has_trait = character_involve_opponents_of_zhou_dynasty
+			}
+		}
+		involve_neutral_of_zhou_dynasty = {
+			icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_advance.dds"
+			map_color = hsv{ 0.2 0.3 0.81 }
+			require_capital_in_sub_region = yes
+			is_character_valid = {
+			#	highest_held_title_tier >= tier_duchy
+				religion = religion:lijiao_religion
+				has_trait = character_involve_neutral_of_zhou_dynasty
+			}
+		}
+		interloper_of_zhou_dynasty = {
+			icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_independent.dds"
+			map_color = hsv{ 0.25 0.8 0.81 }
+			require_capital_in_sub_region = yes
+			is_character_valid = {
+			#	highest_held_title_tier >= tier_duchy
+				NOT = { religion = religion:lijiao_religion }
+				has_trait = character_interloper_of_zhou_dynasty
+			}
+		}
+	}
+
+	start_phase = spring_and_autumn_phase
+
+	phases = {
+		# The central phase: ritual authority survives, but can recover or collapse into total war.
+					spring_and_autumn_phase = {
+			icon = "gfx/interface/icons/situations/debug_situation/dynastic_cycle_phase_instability.dds"
+			illustration = "gfx/interface/illustrations/event_story/tgp_dynastic_cycle_corruption.dds"
+			modifier_sets = {
+				saas_collapse_wangdao = {
+					icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_pro.dds"
+					involve_supporters_of_zhou_dynasty = {
+						character_modifier = {
+						diplomacy = 1
+						monthly_prestige_gain_mult = 0.10
+							monthly_piety_gain_mult = 0.10
+							general_opinion = 5
+							ai_war_chance = -25
+						}
+					}
+				}
+				saas_collapse_badao = {
+					icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_expand.dds"
+					involve_opponents_of_zhou_dynasty = {
+						character_modifier = {
+						monthly_prestige_gain_mult = 0.15
+						monthly_influence_mult = 0.10
+						owned_personal_scheme_success_chance_add = 10
+						owned_hostile_scheme_success_chance_add = 10
+							owned_political_scheme_success_chance_add = 10
+							owned_scheme_secrecy_add = 10
+							general_opinion = 5
+							ai_war_chance = -10
+						}
+					}
+				}
+				saas_collapse_neutral = {
+					icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_advance.dds"
+					involve_neutral_of_zhou_dynasty = {
+						character_modifier = {
+						diplomacy = 1
+						stewardship = 1
+						tax_mult = 0.10
+							enemy_hostile_scheme_success_chance_add = -10
+							general_opinion = 5
+							ai_war_chance = -25
+						}
+					}
+				}
+				saas_collapse_siyi = {
+					icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_independent.dds"
+					interloper_of_zhou_dynasty = {
+						character_modifier = {
+						army_maintenance_mult = -0.10
+						men_at_arms_recruitment_cost = -0.10
+						ai_war_chance = 100
+						}
+					}
+				}
+			}
+			future_phases = {
+				zhou_reborn_phase = {
+					takeover_type = points
+					takeover_points = 5000
+					catalysts = {
+						saas_catalyst_tribute_established = @saas_cat_high
+						saas_catalyst_tianzi_victory = @saas_cat_major
+						saas_catalyst_wangdao_gains_member = @saas_cat_medium
+						saas_catalyst_lijiao_alliance = @saas_cat_medium
+						saas_catalyst_successful_huimeng = @saas_cat_high
+						saas_catalyst_long_peace = @saas_cat_low
+						# Vanilla Iberian catalysts leading to Conciliation.
+						catalyst_improve_development_vassal_diff_faith_culture = @saas_fp2_cat_minimal
+						catalyst_gift_independent_ruler = @saas_fp2_cat_minor
+						catalyst_became_friend_lover_with_character = @saas_fp2_cat_minor
+						catalyst_learned_new_language_important = @saas_fp2_cat_minor
+						catalyst_new_building_in_city = @saas_fp2_cat_minor
+						catalyst_sign_truce_outside_war = @saas_fp2_cat_minor
+						catalyst_formed_interreligious_alliance_with_important_character = @saas_fp2_cat_minor
+						catalyst_ransom_important = @saas_fp2_cat_medium
+						catalyst_grant_privilege_to_diff_faith_culture_vassal = @saas_fp2_cat_medium
+						catalyst_invite_diff_faith_culture_to_feast = @saas_fp2_cat_medium
+						catalyst_independence_from_non_dejure_vassal = @saas_fp2_cat_major
+						catalyst_grant_land_local_noble = @saas_fp2_cat_major
+						catalyst_became_best_friend_soulmate_with_very_important_character = @saas_fp2_cat_major
+						catalyst_convert_local_culture_faith = @saas_fp2_cat_major
+						catalyst_release_important = @saas_fp2_cat_massive
+					}
+				}
+				warring_states_phase = {
+					takeover_type = points
+					takeover_points = 5000
+					catalysts = {
+						saas_catalyst_lijiao_aggressive_war = @saas_cat_medium
+						saas_catalyst_title_usurped = @saas_cat_high
+						saas_catalyst_tianzi_defeat = @saas_cat_major
+						saas_catalyst_siyi_conquest = @saas_cat_high
+						saas_catalyst_adventurer_conquest = @saas_cat_high
+						# Vanilla Iberian catalysts leading to Hostility.
+						catalyst_passing_of_time = @saas_fp2_cat_minimal_over_time
+						catalyst_gain_claim_on_title_fp2 = @saas_fp2_cat_minor
+						catalyst_win_any_war_within_the_region = @saas_fp2_cat_minor
+						catalyst_new_building_in_castle = @saas_fp2_cat_minor
+						catalyst_becomes_rival_with_involved = @saas_fp2_cat_major
+						catalyst_using_a_hook_on_very_important_character = @saas_fp2_cat_medium
+						catalyst_unnatural_death_important_character = @saas_fp2_cat_medium
+						catalyst_usurp_title_fp2 = @saas_fp2_cat_major
+						catalyst_forced_conversion = @saas_fp2_cat_medium
+						catalyst_reveal_secret_important = @saas_fp2_cat_major
+						catalyst_broke_truce_against_important_character = @saas_fp2_cat_massive
+					}
+				}
+			}
+		}
+
+		# Peace, hierarchy, economic consolidation, and ritual legitimacy.
+		zhou_reborn_phase = {
+			icon = "gfx/interface/icons/situations/debug_situation/dynastic_cycle_phase_advancement.dds"
+			illustration = "gfx/interface/illustrations/event_story/tgp_dynastic_cycle_stability.dds"
+			modifier_sets = {
+				saas_restoration_wangdao = {
+					icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_pro.dds"
+					involve_supporters_of_zhou_dynasty = {
+						character_modifier = {
+						tax_mult = 0.10
+							build_gold_cost = -0.10
+							build_speed = -0.10
+							development_growth = 0.10
+						monthly_prestige_gain_mult = 0.20
+						monthly_piety_gain_mult = 0.20
+						monthly_influence_mult = 0.20
+						legitimacy_gain_mult = 0.10
+						monthly_county_control_growth_add = 0.20
+						ai_war_chance = -50
+						}
+					}
+				}
+				saas_restoration_badao = {
+					icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_expand.dds"
+					involve_opponents_of_zhou_dynasty = {
+						character_modifier = {
+							tax_mult = 0.10
+							build_gold_cost = -0.10
+							build_speed = -0.10
+							development_growth = 0.10
+						army_maintenance_mult = -0.10
+						men_at_arms_recruitment_cost = -0.10
+						monthly_county_control_growth_add = 0.10
+						owned_hostile_scheme_success_chance_add = 10
+						owned_scheme_secrecy_add = 10
+							ai_war_chance = -50
+						}
+					}
+				}
+				saas_restoration_neutral = {
+					icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_advance.dds"
+					involve_neutral_of_zhou_dynasty = {
+						character_modifier = {
+						tax_mult = 0.15
+						build_gold_cost = -0.10
+						build_speed = -0.10
+						development_growth = 0.20
+						general_opinion = 10
+						ai_war_chance = -50
+						}
+					}
+				}
+				saas_restoration_siyi = {
+					icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_independent.dds"
+					interloper_of_zhou_dynasty = {
+						character_modifier = {
+							tax_mult = 0.10
+							build_gold_cost = -0.10
+							build_speed = -0.10
+							development_growth = 0.10
+							army_maintenance_mult = -0.05
+						ai_war_chance = -50
+						}
+					}
+				}
+			}
+			future_phases = {
+				spring_and_autumn_phase = {
+					takeover_type = points
+					takeover_points = 5000
+					catalysts = {
+						saas_catalyst_refused_tribute = @saas_cat_high
+						saas_catalyst_wangdao_internal_war = @saas_cat_major
+						saas_catalyst_tianzi_defeat = @saas_cat_major
+						saas_catalyst_tributary_lost = @saas_cat_high
+						saas_catalyst_title_usurped = @saas_cat_medium
+						# Vanilla Iberian catalysts leading to Opportunity.
+						catalyst_passing_of_time = @saas_fp2_cat_minimal_over_time
+						catalyst_gain_claim_on_title_fp2 = @saas_fp2_cat_minor
+						catalyst_win_any_war_within_the_region = @saas_fp2_cat_minor
+						catalyst_new_building_in_castle = @saas_fp2_cat_minor
+						catalyst_becomes_rival_with_involved = @saas_fp2_cat_major
+						catalyst_using_a_hook_on_very_important_character = @saas_fp2_cat_medium
+						catalyst_unnatural_death_important_character = @saas_fp2_cat_medium
+						catalyst_usurp_title_fp2 = @saas_fp2_cat_major
+						catalyst_forced_conversion = @saas_fp2_cat_medium
+						catalyst_reveal_secret_important = @saas_fp2_cat_major
+						catalyst_broke_truce_against_important_character = @saas_fp2_cat_massive
+					}
+				}
+			}
+		}
+
+		# Fast conquest, mobile courts, military competition, and state destruction.
+		warring_states_phase = {
+			icon = "gfx/interface/icons/situations/debug_situation/dynastic_cycle_phase_conquest.dds"
+			illustration = "gfx/interface/illustrations/event_story/tgp_dynastic_cycle_consolidation.dds"
+			modifier_sets = {
+				saas_warring_wangdao = {
+					icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_pro.dds"
+					involve_supporters_of_zhou_dynasty = {
+						character_modifier = {
+						monthly_piety_gain_mult = 0.10
+							general_opinion = 5
+						defender_advantage = 3
+						}
+					}
+				}
+				saas_warring_badao = {
+					icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_expand.dds"
+					involve_opponents_of_zhou_dynasty = {
+						character_modifier = {
+						monthly_prestige_gain_mult = 0.20
+						men_at_arms_recruitment_cost = -0.20
+						army_maintenance_mult = -0.15
+						army_damage_mult = 0.10
+						knight_effectiveness_mult = 0.15
+						army_siege_value_mult = 0.10
+						ai_war_chance = 100
+						}
+					}
+				}
+				saas_warring_neutral = {
+					icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_advance.dds"
+					involve_neutral_of_zhou_dynasty = {
+						character_modifier = {
+						additional_fort_level = 1
+						defender_advantage = 5
+						army_maintenance_mult = -0.10
+						ai_war_chance = -25
+						}
+					}
+				}
+				saas_warring_siyi = {
+					icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_independent.dds"
+					interloper_of_zhou_dynasty = {
+						character_modifier = {
+						men_at_arms_recruitment_cost = -0.15
+						army_maintenance_mult = -0.15
+						army_damage_mult = 0.05
+						ai_war_chance = 100
+						}
+					}
+				}
+			}
+			future_phases = {
+				spring_and_autumn_phase = {
+					takeover_type = points
+					takeover_points = 5000
+					catalysts = {
+						saas_catalyst_peace_restored = @saas_cat_high
+						saas_catalyst_successful_huimeng = @saas_cat_high
+						saas_catalyst_house_restored = @saas_cat_high
+						saas_catalyst_tribute_established = @saas_cat_medium
+						saas_catalyst_long_peace = @saas_cat_low
+						# Vanilla Iberian catalysts leading to Opportunity.
+						catalyst_passing_of_time = @saas_fp2_cat_minimal_over_time
+						catalyst_gain_claim_on_title_fp2 = @saas_fp2_cat_minor
+						catalyst_win_any_war_within_the_region = @saas_fp2_cat_minor
+						catalyst_new_building_in_castle = @saas_fp2_cat_minor
+						catalyst_becomes_rival_with_involved = @saas_fp2_cat_major
+						catalyst_using_a_hook_on_very_important_character = @saas_fp2_cat_medium
+						catalyst_unnatural_death_important_character = @saas_fp2_cat_medium
+						catalyst_usurp_title_fp2 = @saas_fp2_cat_major
+						catalyst_forced_conversion = @saas_fp2_cat_medium
+						catalyst_reveal_secret_important = @saas_fp2_cat_major
+						catalyst_broke_truce_against_important_character = @saas_fp2_cat_massive
+					}
+				}
+			}
+		}
+	}
+}

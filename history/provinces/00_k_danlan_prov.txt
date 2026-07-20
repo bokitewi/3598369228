@@ -1,0 +1,182 @@
+﻿##### d_danlanshi ############################
+
+### c_gangcheng
+
+
+### c_zaoyang
+
+
+### c_qieru
+
+
+### c_yehuling
+# YEHULING
+2601 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# GANGCHENG
+1298 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# QIERU
+1340 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# ROUXUAN
+2653 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_beiyang1
+
+
+### c_dushi
+
+
+### c_yuyi
+# YUYI
+2604 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# ZAOYANG
+1300 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# KONGSANG
+2640 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_zaoyang2
+
+
+### c_luanyuan
+# LUANYUAN
+2639 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# RIXIANG
+2841 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# FANHAN
+3423 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# ZAOYANG2
+2638 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_kongsang
+
+
+### c_rouxuan
+
+
+### c_rixiang
+
+
+### c_hequan
+# HEQUAN
+2865 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# BEIYANGCHENG1
+2602 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# DUSHI
+2603 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_bupoguan
+
+
+### c_gecheng
+# GECHENG
+2914 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# YINSHAN
+3186 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# SANGANG
+3200 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# BUPOGUAN
+2897 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_yinshan
+
+
+### c_sangang
+
+
+### c_qingxi
+# LIAOSHUI
+3471 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_longan
+
+
+### c_feiwu
+
+
+### c_fanhan
+
+
+### c_liaoshui
+
+

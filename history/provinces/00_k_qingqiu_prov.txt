@@ -1,0 +1,159 @@
+﻿##### d_qingqiushi ############################
+
+### c_fuzhou
+
+
+### c_pingguo
+
+
+### c_wen1
+
+
+### c_anshi
+# ANSHI
+3462 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# WEN1
+3461 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# JILI
+3455 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_xinchang1
+
+
+### c_xiangping
+
+
+### c_jujiu
+
+
+### c_lishan
+# Kiskunhalas
+3866 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# XINCHANG1
+3463 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_liaokou
+# LIAOKOU
+3867 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# LIANYUNDAO
+3483 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# XIANGPING
+3464 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# MOFU
+3861 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_changshengdao
+
+
+### c_zhongdaoshan
+
+
+### c_qingqiuze
+# FUZHOU
+3467 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# CHANGSHENGDAO
+3868 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# BEISHA
+3457 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# PINGGUO
+3460 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_beifeng
+
+
+### c_beisha
+
+
+### c_douli
+
+
+### c_tashi
+# TASHI
+3466 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+# BEISHA
+3458 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# DOULI
+3459 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+# QINGQIUZE
+3870 = {
+	holding = none
+}
+# ZHONGDAOSHAN
+3869 = {
+	culture = zhou
+	religion = xizhouli
+	holding = none
+}
+
+
+### c_lianyun
+
+

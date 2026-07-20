@@ -1,0 +1,75 @@
+﻿embattle = {
+	parent = battle
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}
+
+embattle_side_advantage_modifier = {
+	parent = embattle
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}
+
+embattle_tactic_counter = {
+	parent = embattle
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}
+
+embattle_tactic = {
+	parent = embattle
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}
+
+embattle_general_tactic_group = {
+	parent = embattle
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}
+
+embattle_clumsy_tactic_group = {
+	parent = embattle
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}
+
+embattle_volly_tactic = {
+	parent = embattle_tactic
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}
+embattle_charge_tactic = {
+	parent = embattle_tactic
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}
+embattle_stand_fast_tactic = {
+	parent = embattle_tactic
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}
+embattle_advance_tactic = {
+	parent = embattle_tactic
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}
+embattle_harass_tactic = {
+	parent = embattle_tactic
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}
+
+embattle_potshots_tactic = {
+	parent = embattle_tactic
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}
+embattle_reckless_charge_tactic = {
+	parent = embattle_tactic
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}
+embattle_confused_orders_tactic = {
+	parent = embattle_tactic
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}
+embattle_timid_advance_tactic = {
+	parent = embattle_tactic
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}
+embattle_disorganised_harass_tactic = {
+	parent = embattle_tactic
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}
+
+a_culling_of_the_weak = {
+	texture = "gfx/interface/icons/map_icons/combat_map_icon.dds"
+}

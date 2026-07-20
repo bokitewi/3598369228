@@ -1,0 +1,469 @@
+﻿# Spring and Autumn situation settlement decisions.
+# These decisions are hidden from the normal decision list and are opened from
+# the dedicated settlement cards in window_spring_and_autumn_situation.gui.
+
+declare_new_mandate = {
+	title = declare_new_mandate_title
+	desc = declare_new_mandate_desc
+	selection_tooltip = declare_new_mandate_desc
+	confirm_text = declare_new_mandate_confirm
+
+	picture = {
+		reference = "gfx/interface/illustrations/event_story/tgp_dynastic_cycle_stability.dds"
+	}
+	extra_picture = "gfx/interface/illustrations/event_story/tgp_dynastic_cycle_stability.dds"
+	decision_group_type = major
+	is_invisible = yes
+	sort_order = 10
+
+	is_shown = {
+		exists = situation:spring_and_autumn_situation
+	}
+
+	is_valid = {
+		custom_description = {
+			text = saas_requires_warring_states_phase_tt
+			situation:spring_and_autumn_situation = {
+				situation_current_phase = warring_states_phase
+			}
+		}
+		NOT = { has_trait = character_interloper_of_zhou_dynasty }
+		custom_description = {
+			text = saas_controls_80_percent_h_huaxia_tt
+			title:h_huaxia = {
+				any_de_jure_county = {
+					percent >= 0.8
+					holder.top_liege = root
+				}
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_at_peace_adult = yes
+	}
+
+	cost = {
+		prestige = 2000
+		piety = 1000
+	}
+
+	effect = {
+		save_scope_as = saas_settlement_author
+		saas_take_huaxia_hegemony_effect = yes
+		create_legend = {
+			type = saas_new_mandate
+			quality = famed
+			chronicle = conqueror_chronicle
+			properties = {
+				ancestor = root
+				title = title:h_huaxia
+			}
+		}
+		situation:spring_and_autumn_situation ?= {
+			every_participant_group = {
+				every_situation_group_participant = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						title = declare_new_mandate_toast_title
+						left_icon = scope:saas_settlement_author
+						custom_tooltip = declare_new_mandate_toast_desc
+					}
+				}
+			}
+			end_situation = yes
+		}
+	}
+
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	ai_will_do = { base = 0 }
+}
+
+zhou_old_state_new_mandate = {
+	title = zhou_old_state_new_mandate_title
+	desc = zhou_old_state_new_mandate_desc
+	selection_tooltip = zhou_old_state_new_mandate_desc
+	confirm_text = zhou_old_state_new_mandate_confirm
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/tgp_dominance.dds"
+	}
+	extra_picture = "gfx/interface/illustrations/decisions/tgp_dominance.dds"
+	decision_group_type = major
+	is_invisible = yes
+	sort_order = 20
+
+	is_shown = {
+		exists = situation:spring_and_autumn_situation
+	}
+
+	is_valid = {
+		custom_description = {
+			text = saas_requires_zhou_reborn_phase_tt
+			situation:spring_and_autumn_situation = {
+				situation_current_phase = zhou_reborn_phase
+			}
+		}
+		has_title = title:e_huaxia
+		custom_description = {
+			text = saas_controls_60_percent_h_huaxia_tt
+			title:h_huaxia = {
+				any_de_jure_county = {
+					percent >= 0.6
+					holder.top_liege = root
+				}
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_at_peace_adult = yes
+	}
+
+	cost = {
+		prestige = 2000
+		piety = 1500
+	}
+
+	effect = {
+		save_scope_as = saas_settlement_author
+		saas_take_huaxia_hegemony_effect = yes
+		create_legend = {
+			type = saas_zhou_restoration
+			quality = famed
+			chronicle = ancestral_glory
+			properties = {
+				ancestor = root
+				title = title:h_huaxia
+			}
+		}
+		situation:spring_and_autumn_situation ?= {
+			every_participant_group = {
+				every_situation_group_participant = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						title = zhou_old_state_new_mandate_toast_title
+						left_icon = scope:saas_settlement_author
+						custom_tooltip = zhou_old_state_new_mandate_toast_desc
+					}
+				}
+			}
+			end_situation = yes
+		}
+	}
+
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	ai_will_do = { base = 0 }
+}
+
+fate_divergence = {
+	title = fate_divergence_title
+	desc = fate_divergence_desc
+	selection_tooltip = fate_divergence_desc
+	confirm_text = fate_divergence_confirm
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/tgp_debate.dds"
+	}
+	extra_picture = "gfx/interface/illustrations/decisions/tgp_debate.dds"
+	decision_group_type = major
+	is_invisible = yes
+	sort_order = 30
+
+	is_shown = {
+		exists = situation:spring_and_autumn_situation
+	}
+
+	is_valid = {
+		custom_description = {
+			text = saas_requires_zhou_reborn_phase_tt
+			situation:spring_and_autumn_situation = {
+				situation_current_phase = zhou_reborn_phase
+			}
+		}
+		NOT = { has_title = title:e_huaxia }
+		has_trait = character_involve_supporters_of_zhou_dynasty
+		exists = title:e_huaxia.holder
+		custom_description = {
+			text = saas_controls_60_percent_h_huaxia_tt
+			title:h_huaxia = {
+				any_de_jure_county = {
+					percent >= 0.6
+					holder.top_liege = root
+				}
+			}
+		}
+		title:e_huaxia = {
+			is_title_created = yes
+			exists = holder
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_at_peace_adult = yes
+	}
+
+	cost = { prestige = 1500 }
+
+	widget = {
+		gui = "decision_view_widget_option_list_generic"
+		controller = decision_option_list_controller
+		decision_to_second_step_button = "fate_divergence_choose_path"
+		show_from_start = yes
+
+		item = {
+			value = fate_divergence_restore
+			current_description = fate_divergence_option_restore_flavor
+			localization = fate_divergence_option_restore
+			icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_pro.dds"
+			is_default = yes
+			ai_chance = {
+				value = 50
+				if = { limit = { has_trait = humble } add = 30 }
+				if = { limit = { has_trait = content } add = 30 }
+				if = { limit = { has_trait = ambitious } add = -30 }
+				if = { limit = { has_trait = arrogant } add = -50 }
+			}
+		}
+		item = {
+			value = fate_divergence_usurp
+			current_description = fate_divergence_option_usurp_flavor
+			localization = fate_divergence_option_usurp
+			icon = "gfx/interface/icons/dynastic_cycle/dynastic_cycle_group_advance.dds"
+			ai_chance = {
+				value = 50
+				if = { limit = { has_trait = ambitious } add = 50 }
+				if = { limit = { has_trait = arrogant } add = 30 }
+				if = { limit = { has_trait = humble } add = -30 }
+				if = { limit = { has_trait = content } add = -30 }
+			}
+		}
+	}
+
+	effect = {
+		save_scope_as = saas_settlement_author
+		title:e_huaxia.holder = { save_scope_as = zhou_emperor }
+
+		if = {
+			limit = { scope:fate_divergence_restore = yes }
+			saas_grant_huaxia_hegemony_effect = { RECIPIENT = scope:zhou_emperor }
+			create_legend = {
+				type = saas_duke_of_zhou_reborn
+				quality = famed
+				chronicle = ancestral_glory
+				properties = {
+					ancestor = root
+					title = title:h_huaxia
+				}
+			}
+			scope:zhou_emperor = { add_character_flag = ceremonial_liege_flag }
+			add_character_flag = ceremonial_regent_flag
+			add_character_modifier = {
+				modifier = saas_supreme_regency_power_modifier
+				years = -1
+			}
+			if = {
+				limit = {
+					liege = scope:zhou_emperor
+					scope:zhou_emperor = { has_active_diarchy = no }
+				}
+				scope:zhou_emperor = {
+					try_start_diarchy = grand_secretariat
+					set_diarch = root
+					set_diarchy_swing = 100
+				}
+			}
+			situation:spring_and_autumn_situation ?= {
+				every_participant_group = {
+					every_situation_group_participant = {
+						send_interface_toast = {
+							type = event_toast_effect_good
+							title = fate_divergence_restore_toast_title
+							left_icon = scope:zhou_emperor
+							right_icon = scope:saas_settlement_author
+							custom_tooltip = fate_divergence_restore_toast_desc
+						}
+					}
+				}
+				end_situation = yes
+			}
+		}
+		else_if = {
+			limit = { scope:fate_divergence_usurp = yes }
+			create_title_and_vassal_change = {
+				type = usurped
+				save_scope_as = saas_zhou_title_change
+				add_claim_on_loss = no
+			}
+			title:e_huaxia = {
+				change_title_holder = {
+					holder = root
+					change = scope:saas_zhou_title_change
+					take_baronies = no
+				}
+			}
+			resolve_title_and_vassal_change = scope:saas_zhou_title_change
+			saas_take_huaxia_hegemony_effect = yes
+
+			create_dynamic_title = {
+				tier = empire
+				name = e_ceremonial_huaxia
+			}
+			scope:new_title = {
+				save_scope_as = saas_ceremonial_title
+				set_coa = e_ceremonial_huaxia
+				set_definitive_form = yes
+				set_variable = {
+					name = ceremonial_title
+					value = title:h_huaxia
+				}
+			}
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = saas_ceremonial_change
+				add_claim_on_loss = no
+			}
+			scope:saas_ceremonial_title = {
+				change_title_holder = {
+					holder = scope:zhou_emperor
+					change = scope:saas_ceremonial_change
+				}
+			}
+			resolve_title_and_vassal_change = scope:saas_ceremonial_change
+			title:h_huaxia = {
+				set_variable = {
+					name = administrative_ui_special_title
+					value = scope:saas_ceremonial_title
+				}
+			}
+			if = {
+				limit = {
+					scope:zhou_emperor = {
+						is_alive = yes
+						is_ruler = yes
+						liege != root
+					}
+				}
+				create_title_and_vassal_change = {
+					type = swear_fealty
+					save_scope_as = saas_vassal_change
+					add_claim_on_loss = no
+				}
+				scope:zhou_emperor = {
+					change_liege = {
+						liege = root
+						change = scope:saas_vassal_change
+					}
+				}
+				resolve_title_and_vassal_change = scope:saas_vassal_change
+			}
+			scope:zhou_emperor = { add_character_flag = ceremonial_liege_flag }
+			add_character_flag = ceremonial_regent_flag
+			create_legend = {
+				type = saas_world_savior
+				quality = famed
+				chronicle = conqueror_chronicle
+				properties = {
+					ancestor = root
+					title = title:h_huaxia
+				}
+			}
+			situation:spring_and_autumn_situation ?= {
+				every_participant_group = {
+					every_situation_group_participant = {
+						send_interface_toast = {
+							type = event_toast_effect_bad
+							title = fate_divergence_usurp_toast_title
+							left_icon = scope:saas_settlement_author
+							right_icon = scope:zhou_emperor
+							custom_tooltip = fate_divergence_usurp_toast_desc
+						}
+					}
+				}
+				end_situation = yes
+			}
+		}
+	}
+
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	ai_will_do = { base = 0 }
+}
+
+new_dynasty_conquest = {
+	title = new_dynasty_conquest_title
+	desc = new_dynasty_conquest_desc
+	selection_tooltip = new_dynasty_conquest_desc
+	confirm_text = new_dynasty_conquest_confirm
+
+	picture = {
+		reference = "gfx/interface/illustrations/event_story/tgp_dynastic_cycle_consolidation.dds"
+	}
+	extra_picture = "gfx/interface/illustrations/event_story/tgp_dynastic_cycle_consolidation.dds"
+	decision_group_type = major
+	is_invisible = yes
+	sort_order = 40
+
+	is_shown = {
+		exists = situation:spring_and_autumn_situation
+	}
+
+	is_valid = {
+		has_trait = character_interloper_of_zhou_dynasty
+		custom_description = {
+			text = saas_controls_60_percent_h_huaxia_tt
+			title:h_huaxia = {
+				any_de_jure_county = {
+					percent >= 0.6
+					holder.top_liege = root
+				}
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_at_peace_adult = yes
+	}
+
+	cost = {
+		prestige = 2000
+		piety = 500
+	}
+
+	effect = {
+		save_scope_as = saas_settlement_author
+		if = {
+			limit = { exists = title:e_huaxia.holder }
+			title:e_huaxia.holder = { destroy_title = title:e_huaxia }
+		}
+		saas_take_huaxia_hegemony_effect = yes
+		create_legend = {
+			type = saas_huaxia_conqueror
+			quality = famed
+			chronicle = conqueror_chronicle
+			properties = {
+				ancestor = root
+				title = title:h_huaxia
+			}
+		}
+		situation:spring_and_autumn_situation ?= {
+			every_participant_group = {
+				every_situation_group_participant = {
+					send_interface_toast = {
+						type = event_toast_effect_bad
+						title = new_dynasty_conquest_toast_title
+						left_icon = scope:saas_settlement_author
+						custom_tooltip = new_dynasty_conquest_toast_desc
+					}
+				}
+			}
+			end_situation = yes
+		}
+	}
+
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	ai_will_do = { base = 0 }
+}

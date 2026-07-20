@@ -1,0 +1,500 @@
+# Character scope. Preserve the old authority tier before government changes.
+dm_government_reform_save_authority_effect = {
+	set_variable = { name = dm_government_reform_saved_authority value = 0 }
+	if = {
+		limit = {
+			OR = {
+				has_realm_law = crown_authority_1
+				has_realm_law = tribal_authority_1
+				has_realm_law = imperial_bureaucracy_1
+				has_realm_law = celestial_bureaucracy_1
+				has_realm_law = meritocratic_bureaucracy_1
+				has_realm_law = japanese_bureaucracy_1
+			}
+		}
+		set_variable = { name = dm_government_reform_saved_authority value = 1 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_realm_law = crown_authority_2
+				has_realm_law = tribal_authority_2
+				has_realm_law = imperial_bureaucracy_2
+				has_realm_law = celestial_bureaucracy_2
+				has_realm_law = meritocratic_bureaucracy_2
+				has_realm_law = japanese_bureaucracy_2
+			}
+		}
+		set_variable = { name = dm_government_reform_saved_authority value = 2 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_realm_law = crown_authority_3
+				has_realm_law = tribal_authority_3
+				has_realm_law = imperial_bureaucracy_3
+				has_realm_law = celestial_bureaucracy_3
+				has_realm_law = meritocratic_bureaucracy_3
+				has_realm_law = japanese_bureaucracy_3
+			}
+		}
+		set_variable = { name = dm_government_reform_saved_authority value = 3 }
+	}
+	if = {
+		limit = { has_realm_law = nomadic_authority_1 }
+		set_variable = { name = dm_government_reform_saved_authority value = 0 }
+	}
+	else_if = {
+		limit = { has_realm_law = nomadic_authority_2 }
+		set_variable = { name = dm_government_reform_saved_authority value = 1 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_realm_law = nomadic_authority_3
+				has_realm_law = nomadic_authority_4
+			}
+		}
+		set_variable = { name = dm_government_reform_saved_authority value = 2 }
+	}
+	else_if = {
+		limit = { has_realm_law = nomadic_authority_5 }
+		set_variable = { name = dm_government_reform_saved_authority value = 3 }
+	}
+}
+
+dm_government_reform_remove_authority_effect = {
+	if = { limit = { has_realm_law = crown_authority_0 } remove_realm_law = crown_authority_0 }
+	if = { limit = { has_realm_law = crown_authority_1 } remove_realm_law = crown_authority_1 }
+	if = { limit = { has_realm_law = crown_authority_2 } remove_realm_law = crown_authority_2 }
+	if = { limit = { has_realm_law = crown_authority_3 } remove_realm_law = crown_authority_3 }
+	if = { limit = { has_realm_law = tribal_authority_0 } remove_realm_law = tribal_authority_0 }
+	if = { limit = { has_realm_law = tribal_authority_1 } remove_realm_law = tribal_authority_1 }
+	if = { limit = { has_realm_law = tribal_authority_2 } remove_realm_law = tribal_authority_2 }
+	if = { limit = { has_realm_law = tribal_authority_3 } remove_realm_law = tribal_authority_3 }
+	if = { limit = { has_realm_law = imperial_bureaucracy_0 } remove_realm_law = imperial_bureaucracy_0 }
+	if = { limit = { has_realm_law = imperial_bureaucracy_1 } remove_realm_law = imperial_bureaucracy_1 }
+	if = { limit = { has_realm_law = imperial_bureaucracy_2 } remove_realm_law = imperial_bureaucracy_2 }
+	if = { limit = { has_realm_law = imperial_bureaucracy_3 } remove_realm_law = imperial_bureaucracy_3 }
+	if = { limit = { has_realm_law = celestial_bureaucracy_0 } remove_realm_law = celestial_bureaucracy_0 }
+	if = { limit = { has_realm_law = celestial_bureaucracy_1 } remove_realm_law = celestial_bureaucracy_1 }
+	if = { limit = { has_realm_law = celestial_bureaucracy_2 } remove_realm_law = celestial_bureaucracy_2 }
+	if = { limit = { has_realm_law = celestial_bureaucracy_3 } remove_realm_law = celestial_bureaucracy_3 }
+	if = { limit = { has_realm_law = meritocratic_bureaucracy_0 } remove_realm_law = meritocratic_bureaucracy_0 }
+	if = { limit = { has_realm_law = meritocratic_bureaucracy_1 } remove_realm_law = meritocratic_bureaucracy_1 }
+	if = { limit = { has_realm_law = meritocratic_bureaucracy_2 } remove_realm_law = meritocratic_bureaucracy_2 }
+	if = { limit = { has_realm_law = meritocratic_bureaucracy_3 } remove_realm_law = meritocratic_bureaucracy_3 }
+	if = { limit = { has_realm_law = japanese_bureaucracy_0 } remove_realm_law = japanese_bureaucracy_0 }
+	if = { limit = { has_realm_law = japanese_bureaucracy_1 } remove_realm_law = japanese_bureaucracy_1 }
+	if = { limit = { has_realm_law = japanese_bureaucracy_2 } remove_realm_law = japanese_bureaucracy_2 }
+	if = { limit = { has_realm_law = japanese_bureaucracy_3 } remove_realm_law = japanese_bureaucracy_3 }
+	if = { limit = { has_realm_law = nomadic_authority_1 } remove_realm_law = nomadic_authority_1 }
+	if = { limit = { has_realm_law = nomadic_authority_2 } remove_realm_law = nomadic_authority_2 }
+	if = { limit = { has_realm_law = nomadic_authority_3 } remove_realm_law = nomadic_authority_3 }
+	if = { limit = { has_realm_law = nomadic_authority_4 } remove_realm_law = nomadic_authority_4 }
+	if = { limit = { has_realm_law = nomadic_authority_5 } remove_realm_law = nomadic_authority_5 }
+}
+
+dm_government_reform_add_four_tier_authority_effect = {
+	if = {
+		limit = { var:dm_government_reform_saved_authority <= 0 }
+		add_realm_law_skip_effects = $LAW_0$
+	}
+	else_if = {
+		limit = { var:dm_government_reform_saved_authority = 1 }
+		add_realm_law_skip_effects = $LAW_1$
+	}
+	else_if = {
+		limit = { var:dm_government_reform_saved_authority = 2 }
+		add_realm_law_skip_effects = $LAW_2$
+	}
+	else = { add_realm_law_skip_effects = $LAW_3$ }
+}
+
+dm_government_reform_apply_authority_effect = {
+	dm_government_reform_remove_authority_effect = yes
+	if = {
+		limit = {
+			OR = {
+				has_government = feudal_government
+				has_government = clan_government
+				has_government = feudal_admin_government
+			}
+		}
+		dm_government_reform_add_four_tier_authority_effect = {
+			LAW_0 = crown_authority_0
+			LAW_1 = crown_authority_1
+			LAW_2 = crown_authority_2
+			LAW_3 = crown_authority_3
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_government = tribal_government
+				has_government = wanua_government
+			}
+		}
+		dm_government_reform_add_four_tier_authority_effect = {
+			LAW_0 = tribal_authority_0
+			LAW_1 = tribal_authority_1
+			LAW_2 = tribal_authority_2
+			LAW_3 = tribal_authority_3
+		}
+	}
+	else_if = {
+		limit = { has_government = administrative_government }
+		dm_government_reform_add_four_tier_authority_effect = {
+			LAW_0 = imperial_bureaucracy_0
+			LAW_1 = imperial_bureaucracy_1
+			LAW_2 = imperial_bureaucracy_2
+			LAW_3 = imperial_bureaucracy_3
+		}
+	}
+	else_if = {
+		limit = { has_government = celestial_government }
+		dm_government_reform_add_four_tier_authority_effect = {
+			LAW_0 = celestial_bureaucracy_0
+			LAW_1 = celestial_bureaucracy_1
+			LAW_2 = celestial_bureaucracy_2
+			LAW_3 = celestial_bureaucracy_3
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_government = meritocratic_government
+				has_government = steppe_admin_government
+			}
+		}
+		dm_government_reform_add_four_tier_authority_effect = {
+			LAW_0 = meritocratic_bureaucracy_0
+			LAW_1 = meritocratic_bureaucracy_1
+			LAW_2 = meritocratic_bureaucracy_2
+			LAW_3 = meritocratic_bureaucracy_3
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_government = japan_administrative_government
+				has_government = japan_feudal_government
+			}
+		}
+		dm_government_reform_add_four_tier_authority_effect = {
+			LAW_0 = japanese_bureaucracy_0
+			LAW_1 = japanese_bureaucracy_1
+			LAW_2 = japanese_bureaucracy_2
+			LAW_3 = japanese_bureaucracy_3
+		}
+	}
+	else_if = {
+		limit = { has_government = nomad_government }
+		if = {
+			limit = { var:dm_government_reform_saved_authority <= 0 }
+			add_realm_law_skip_effects = nomadic_authority_1
+		}
+		else_if = {
+			limit = { var:dm_government_reform_saved_authority = 1 }
+			add_realm_law_skip_effects = nomadic_authority_2
+		}
+		else_if = {
+			limit = { var:dm_government_reform_saved_authority = 2 }
+			add_realm_law_skip_effects = nomadic_authority_4
+		}
+		else = { add_realm_law_skip_effects = nomadic_authority_5 }
+	}
+	else_if = {
+		limit = { has_government = mandala_government }
+		add_realm_law_skip_effects = mandala_decree_none
+	}
+	remove_variable = dm_government_reform_saved_authority
+}
+
+# Character scope. Only the ruler's own domicile/title/treasury is touched.
+dm_government_reform_leave_personal_systems_effect = {
+	if = {
+		limit = { has_government = nomad_government }
+		nomad_domicile_refund_effect = yes
+		nomad_convert_herds_to_treasury_or_gold_special_troops_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_domicile = yes
+			any_held_title = { is_noble_family_title = yes }
+		}
+		refund_noble_family_domicile_buildings_effect = yes
+	}
+	if = {
+		limit = {
+			has_treasury = yes
+			NOR = {
+				var:dm_government_reform_target_government = flag:administrative
+				var:dm_government_reform_target_government = flag:celestial
+				var:dm_government_reform_target_government = flag:meritocratic
+				var:dm_government_reform_target_government = flag:steppe_admin
+				var:dm_government_reform_target_government = flag:feudal_admin
+			}
+		}
+		add_gold = treasury
+		remove_treasury = { value = treasury }
+	}
+	if = {
+		limit = {
+			any_held_title = { is_noble_family_title = yes }
+			NOR = {
+				var:dm_government_reform_target_government = flag:administrative
+				var:dm_government_reform_target_government = flag:celestial
+				var:dm_government_reform_target_government = flag:meritocratic
+				var:dm_government_reform_target_government = flag:steppe_admin
+				var:dm_government_reform_target_government = flag:japan_administrative
+				var:dm_government_reform_target_government = flag:japan_feudal
+				var:dm_government_reform_target_government = flag:feudal_admin
+			}
+		}
+		every_held_title = {
+			limit = { is_noble_family_title = yes }
+			holder = { destroy_title = prev }
+		}
+	}
+}
+
+dm_government_reform_prepare_target_domicile_effect = {
+	if = {
+		limit = { any_held_title = { is_noble_family_title = yes } }
+		tgp_domicile_conversion_when_changing_government_type = {
+			NEW_DOMICILE_TYPE = $DOMICILE$
+			NEW_GOVERNMENT_TYPE = $GOVERNMENT$
+		}
+	}
+}
+
+dm_government_reform_ensure_noble_family_effect = {
+	if = {
+		limit = { NOT = { any_held_title = { is_noble_family_title = yes } } }
+		give_noble_family_title = {
+			name = noble_family_name
+			tier = $TIER$
+			article = DEFAULT_TITLE_NAME_ARTICLE
+			government = $GOVERNMENT$
+			save_scope_as = new_title
+		}
+		scope:new_title = { set_coa = root.house }
+	}
+	domicile ?= {
+		move_domicile = root.capital_province
+		set_up_domicile_estate_effect = yes
+	}
+}
+
+dm_government_reform_adapt_capital_effect = {
+	if = {
+		limit = { has_government = republic_government }
+		capital_province = { set_holding_type = city_holding }
+	}
+	else_if = {
+		limit = { has_government = theocracy_government }
+		capital_province = { set_holding_type = church_holding }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_government = tribal_government
+				has_government = wanua_government
+			}
+		}
+		capital_province = { set_holding_type = tribal_holding }
+	}
+	else_if = {
+		limit = {
+			has_government = mandala_government
+			capital_province = {
+				NOR = {
+					has_holding_type = temple_citadel_holding
+					has_holding_type = castle_holding
+					has_holding_type = church_holding
+				}
+			}
+		}
+		capital_province = { set_holding_type = temple_citadel_holding }
+	}
+	else_if = {
+		limit = { has_government = nomad_government }
+		capital_province = { set_holding_type = nomad_holding }
+	}
+	else_if = {
+		limit = {
+			capital_province = {
+				OR = {
+					has_holding_type = tribal_holding
+					has_holding_type = herder_holding
+					has_holding_type = nomad_holding
+					has_holding_type = temple_citadel_holding
+				}
+			}
+		}
+		capital_province = { set_holding_type = castle_holding }
+	}
+}
+
+# Called by the on_pass of a government-reform realm law.
+dm_government_reform_change_government_effect = {
+	set_variable = {
+		name = dm_government_reform_target_government
+		value = flag:$TARGET$
+	}
+	dm_government_reform_save_authority_effect = yes
+	add_character_flag = { flag = dm_government_reform_applying days = 2 }
+	dm_government_reform_leave_personal_systems_effect = yes
+	if = {
+		limit = { var:dm_government_reform_target_government = flag:administrative }
+		dm_government_reform_prepare_target_domicile_effect = {
+			DOMICILE = estate
+			GOVERNMENT = administrative_government
+		}
+	}
+	else_if = {
+		limit = { var:dm_government_reform_target_government = flag:feudal_admin }
+		dm_government_reform_prepare_target_domicile_effect = {
+			DOMICILE = estate
+			GOVERNMENT = feudal_admin_government
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:dm_government_reform_target_government = flag:celestial
+				var:dm_government_reform_target_government = flag:meritocratic
+				var:dm_government_reform_target_government = flag:steppe_admin
+			}
+		}
+		dm_government_reform_prepare_target_domicile_effect = {
+			DOMICILE = east_asian_estate
+			GOVERNMENT = $GOVERNMENT$
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				var:dm_government_reform_target_government = flag:japan_administrative
+				var:dm_government_reform_target_government = flag:japan_feudal
+			}
+		}
+		dm_government_reform_prepare_target_domicile_effect = {
+			DOMICILE = japanese_manor
+			GOVERNMENT = $GOVERNMENT$
+		}
+	}
+	change_government = $GOVERNMENT$
+	dm_government_reform_adapt_capital_effect = yes
+	if = {
+		limit = { has_government = administrative_government }
+		dm_government_reform_ensure_noble_family_effect = {
+			GOVERNMENT = administrative_government
+			TIER = duchy
+		}
+	}
+	else_if = {
+		limit = { has_government = feudal_admin_government }
+		dm_government_reform_ensure_noble_family_effect = {
+			GOVERNMENT = feudal_admin_government
+			TIER = county
+		}
+	}
+	else_if = {
+		limit = { has_government = celestial_government }
+		dm_government_reform_ensure_noble_family_effect = {
+			GOVERNMENT = celestial_government
+			TIER = county
+		}
+	}
+	else_if = {
+		limit = { has_government = meritocratic_government }
+		dm_government_reform_ensure_noble_family_effect = {
+			GOVERNMENT = meritocratic_government
+			TIER = county
+		}
+	}
+	else_if = {
+		limit = { has_government = steppe_admin_government }
+		dm_government_reform_ensure_noble_family_effect = {
+			GOVERNMENT = steppe_admin_government
+			TIER = county
+		}
+	}
+	else_if = {
+		limit = { has_government = japan_administrative_government }
+		dm_government_reform_ensure_noble_family_effect = {
+			GOVERNMENT = japan_administrative_government
+			TIER = county
+		}
+	}
+	else_if = {
+		limit = { has_government = japan_feudal_government }
+		dm_government_reform_ensure_noble_family_effect = {
+			GOVERNMENT = japan_feudal_government
+			TIER = county
+		}
+	}
+	if = {
+		limit = { has_treasury = yes }
+		add_treasury = { value = gold min = 100 }
+	}
+	dm_government_reform_apply_authority_effect = yes
+	dm_government_reform_sync_law_effect = yes
+	remove_variable = dm_government_reform_target_government
+}
+
+dm_government_reform_sync_law_effect = {
+	add_character_flag = { flag = dm_government_reform_syncing days = 2 }
+	if = { limit = { has_government = feudal_government } add_realm_law_skip_effects = dm_government_reform_feudal_law }
+	else_if = { limit = { has_government = republic_government } add_realm_law_skip_effects = dm_government_reform_republic_law }
+	else_if = { limit = { has_government = theocracy_government } add_realm_law_skip_effects = dm_government_reform_theocracy_law }
+	else_if = { limit = { has_government = clan_government } add_realm_law_skip_effects = dm_government_reform_clan_law }
+	else_if = { limit = { has_government = tribal_government } add_realm_law_skip_effects = dm_government_reform_tribal_law }
+	else_if = { limit = { has_government = wanua_government } add_realm_law_skip_effects = dm_government_reform_wanua_law }
+	else_if = { limit = { has_government = administrative_government } add_realm_law_skip_effects = dm_government_reform_administrative_law }
+	else_if = { limit = { has_government = feudal_admin_government } add_realm_law_skip_effects = dm_government_reform_feudal_admin_law }
+	else_if = { limit = { has_government = celestial_government } add_realm_law_skip_effects = dm_government_reform_celestial_law }
+	else_if = { limit = { has_government = mandala_government } add_realm_law_skip_effects = dm_government_reform_mandala_law }
+	else_if = { limit = { has_government = meritocratic_government } add_realm_law_skip_effects = dm_government_reform_meritocratic_law }
+	else_if = { limit = { has_government = japan_administrative_government } add_realm_law_skip_effects = dm_government_reform_japan_administrative_law }
+	else_if = { limit = { has_government = japan_feudal_government } add_realm_law_skip_effects = dm_government_reform_japan_feudal_law }
+	else_if = { limit = { has_government = nomad_government } add_realm_law_skip_effects = dm_government_reform_nomad_law }
+	else_if = { limit = { has_government = steppe_admin_government } add_realm_law_skip_effects = dm_government_reform_steppe_admin_law }
+}
+
+# ROOT: character changed by any script. The engine supplies scope:old_government.
+dm_government_reform_on_government_change_effect = {
+	if = {
+		limit = {
+			NOT = { has_character_flag = dm_government_reform_applying }
+		}
+		if = {
+			limit = {
+				is_landed = yes
+				dm_government_reform_supported_government_trigger = yes
+			}
+			dm_government_reform_sync_law_effect = yes
+			random_owned_story = {
+				limit = {
+					story_type = dm_reform_story
+					dm_reform_is_government_reform_trigger = yes
+				}
+				if = {
+					limit = { dm_reform_government_target_matches_owner_trigger = yes }
+					dm_reform_success_effect = yes
+				}
+			}
+		}
+		else = {
+			random_owned_story = {
+				limit = {
+					story_type = dm_reform_story
+					dm_reform_is_government_reform_trigger = yes
+				}
+				dm_reform_neutral_end_effect = yes
+			}
+		}
+	}
+}

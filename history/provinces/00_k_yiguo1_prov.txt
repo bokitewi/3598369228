@@ -1,0 +1,146 @@
+﻿##### d_yishi1 ############################
+
+### c_yandu
+# YANDU
+315 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhaoyuan
+# ZHAOYUAN
+317 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_gaoyou
+# GAOYOU
+319 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_hailing
+# HAILING
+320 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_haian
+# HAIAN
+321 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_hudou
+# HUDOU
+323 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhufang
+# 
+2085 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_dongling1
+# DONGLING1
+2258 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lanyang
+# MAULEVRIER
+2259 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_putao
+# PUTAO
+2260 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_linjiang
+# LINJIANG
+2261 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lanyang1
+# LANYANG1
+2262 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_qining
+# QINING
+2263 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_lingting
+# LINGTING
+2264 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_rugao
+# RUGAO
+2265 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_xianping
+# XIANGPING
+2266 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

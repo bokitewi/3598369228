@@ -1,0 +1,56 @@
+﻿##### d_naneshi ############################
+
+### c_wucheng5
+# WUCHENG5
+1707 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_zhi5
+# ZHI5
+1708 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_bowang1
+# BOWANG1
+1709 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_e1
+# E1
+1722 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_eryang
+# ERYANG
+1725 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_dongwu
+# DONGWU
+1728 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

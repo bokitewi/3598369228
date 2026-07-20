@@ -1,0 +1,128 @@
+﻿##### d_danshi1 ############################
+
+### c_yidao
+# 
+1883 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_hengshan
+# 
+1884 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yicheng1
+# 
+1892 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yanshui1
+# 
+1895 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yicheng4
+# YICHENG4
+3745 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_heixue
+# HEIXUE
+3746 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_chixue
+# CHIXUE
+3747 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yanyang
+# YANYANG
+3748 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_shaqu
+# SHAQU
+3749 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_jianshi
+# JIANSHI
+3750 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yexiangguan
+# YEXIANGGUAN
+3751 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_muxu
+# MUXU
+3752 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_liantianguan
+# LIANTIANGUAN
+3753 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_danxing
+# DANXING
+3762 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

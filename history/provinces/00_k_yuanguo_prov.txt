@@ -1,0 +1,56 @@
+﻿##### d_yuanshi ############################
+
+### c_changge
+# CHANGGE
+742 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_changshe
+# CHANGSHE
+744 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_wan
+# WAN
+745 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_huren
+# HUREN
+747 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_yangling
+# YANGLING
+746 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+
+### c_anmen
+# ANMEN
+748 = {
+	culture = zhou
+	religion = xizhouli
+	holding = castle_holding
+}
+
+

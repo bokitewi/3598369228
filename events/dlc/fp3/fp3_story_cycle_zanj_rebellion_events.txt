@@ -1,0 +1,182 @@
+﻿namespace = fp3_story_cycle_zanj_rebellion_events
+
+### Ali Ibn Muhammad and Zanj Rebellion Setup
+fp3_story_cycle_zanj_rebellion_events.0001 = {
+	# Absent vanilla-map title links isolated.
+	type = character_event
+	hidden = yes
+	trigger = { always = no }
+}
+
+### Ali Ibn Muhammad riling up locals in Basra
+fp3_story_cycle_zanj_rebellion_events.0002 = {
+	# Absent vanilla-map title links isolated.
+	type = character_event
+	hidden = yes
+	trigger = { always = no }
+}
+
+### Setup to find correct scope for event 0004 and check if Ali is dead or imprisoned
+fp3_story_cycle_zanj_rebellion_events.0003 = {
+	# Absent vanilla-map title links isolated.
+	type = character_event
+	hidden = yes
+	trigger = { always = no }
+}
+
+### Ali Ibn Muhammad claims divinity
+fp3_story_cycle_zanj_rebellion_events.0004 = {
+	type = character_event
+	theme = faith
+	title = fp3_story_cycle_zanj_rebellion_events.0004.t
+	desc = fp3_story_cycle_zanj_rebellion_events.0004.desc
+
+	left_portrait = {
+		character = root
+		animation = dismissal
+	}
+	right_portrait = {
+		character = scope:zanj_leader
+		animation = personality_zealous
+	}
+
+	#Contest Ali Ibn Muhammad's claims
+	option = {
+		name = fp3_story_cycle_zanj_rebellion_events.0004.a
+		duel = {
+			skill = learning
+			target = scope:zanj_leader
+			50 = {
+				# You disprove Ali's claims
+				desc = fp3_story_cycle_zanj_rebellion_events.0004.a.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+					min = -49
+				}
+				send_interface_toast = {
+					title = fp3_story_cycle_zanj_rebellion_events.0004.a.success
+					add_piety = medium_piety_gain
+					add_prestige = minor_prestige_gain
+					left_icon = root
+					right_icon = scope:zanj_leader
+				}
+			}
+			50 = {
+				# Ali Ibn Muhammad validates his claims
+				desc = fp3_story_cycle_zanj_rebellion_events.0004.a.failure
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+					min = -49
+				}
+				custom_tooltip = fp3_story_cycle_zanj_rebellion_events_cause_greatly_strengthened_tt
+				send_interface_toast = {
+					title = fp3_story_cycle_zanj_rebellion_events.0004.a.failure
+					left_icon = root
+					right_icon = scope:zanj_leader
+
+					scope:zanj_leader = {
+						add_trait = sayyid
+						add_pressed_claim = title:e_arabia
+						change_variable = {
+							name =  zanj_rebellion_strength_score
+							add = 4
+						}
+					}
+				}
+			}
+		}
+		root = {
+			progress_towards_rival_effect = {
+				REASON = fp3_zanj_rebellion_opressed_me
+				CHARACTER = scope:zanj_leader
+				OPINION = default_rival_opinion
+			}
+		}
+		stress_impact = {
+			paranoid = minor_stress_impact_loss
+			just = minor_stress_impact_loss
+			zealous = medium_stress_impact_loss
+			trusting = medium_stress_impact_gain
+			forgiving = medium_stress_impact_gain
+			cynical = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0.5
+				OR = {
+					has_trait = cynical
+					has_trait = trusting
+					has_trait = forgiving
+				}
+			}
+		}
+	}
+
+	#Ignore Ali
+	option = {
+		name = fp3_story_cycle_zanj_rebellion_events.0004.b
+		custom_tooltip = fp3_story_cycle_zanj_rebellion_events_cause_strengthened_tt
+
+		scope:zanj_leader = {
+			add_trait = sayyid
+			add_pressed_claim = title:e_arabia
+			change_variable = {
+				name =  zanj_rebellion_strength_score
+				add = 2
+			}
+		}
+		stress_impact = {
+			paranoid = minor_stress_impact_gain
+			just = minor_stress_impact_gain
+			zealous = medium_stress_impact_gain
+			trusting = minor_stress_impact_loss
+			forgiving = medium_stress_impact_loss
+			cynical = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0.5
+				OR = {
+					has_trait = paranoid
+					has_trait = just
+					has_trait = zealous
+				}
+			}
+		}
+	}
+}
+
+### Setup event to find the correct scope and check if Ali or the current Zanj Leader is dead or imprisoned
+fp3_story_cycle_zanj_rebellion_events.0005 = {
+	# Absent vanilla-map title links isolated.
+	type = character_event
+	hidden = yes
+	trigger = { always = no }
+}
+
+### A Zanj Steps Forth
+fp3_story_cycle_zanj_rebellion_events.0006 = {
+	# Absent vanilla-map title links isolated.
+	type = character_event
+	hidden = yes
+	trigger = { always = no }
+}
+
+fp3_story_cycle_zanj_rebellion_events.0007 = {
+	# Absent vanilla-map title links isolated.
+	type = character_event
+	hidden = yes
+	trigger = { always = no }
+}
+
+### The Zanj Rebellion
+fp3_story_cycle_zanj_rebellion_events.0008 = {
+	# Absent vanilla-map title links isolated.
+	type = character_event
+	hidden = yes
+	trigger = { always = no }
+}
