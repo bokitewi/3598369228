@@ -623,7 +623,7 @@ types MyRealmWindow_Laws_COPF
 			margin_top = 10
 			spacing = 18
 
-			### REALM LAWS (except the flag 'realm_law' as those are reserved for Crown Authority)
+			### REALM LAWS (the flag 'realm_law' is reserved for Crown Authority)
 			vbox_law_item = {
 				blockoverride "item_title"
 				{
@@ -632,7 +632,7 @@ types MyRealmWindow_Laws_COPF
 
 				blockoverride "show_law"
 				{
-					visible = "[And( GuiLawGroup.IsAvailable, Or( GuiLawGroup.GetLawGroup.HasFlag( 'succession_order_laws' ), Or( GuiLawGroup.GetLawGroup.HasFlag( 'succession_gender_laws' ), GuiLawGroup.GetLawGroup.HasFlag( 'imperial_policy' ) ) ) )]"
+					visible = "[And( GuiLawGroup.IsAvailable, Or( GuiLawGroup.GetLawGroup.HasFlag( 'dm_government_reform_law_group' ), Or( GuiLawGroup.GetLawGroup.HasFlag( 'succession_order_laws' ), Or( GuiLawGroup.GetLawGroup.HasFlag( 'succession_gender_laws' ), GuiLawGroup.GetLawGroup.HasFlag( 'imperial_policy' ) ) ) ) )]"
 				}
 			}
 

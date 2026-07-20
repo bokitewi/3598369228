@@ -903,6 +903,13 @@ def render_target_valid_trigger(laws: list[Law]) -> str:
 	return "\n".join(lines)
 
 
+def registry_source(path: Path) -> str:
+	try:
+		return path.relative_to(ROOT).as_posix()
+	except ValueError:
+		return str(path)
+
+
 def registry_json(laws: list[Law]) -> str:
 	payload = {
 		"schema": 1,
@@ -911,7 +918,7 @@ def registry_json(laws: list[Law]) -> str:
 			{
 				"key": law.key,
 				"group": law.group,
-				"source": str(law.source),
+				"source": registry_source(law.source),
 				"source_layer": "mod" if ROOT in law.source.parents else "vanilla",
 				"theme": law.theme,
 				"axis": law.axis,

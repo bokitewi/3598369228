@@ -281,7 +281,7 @@
     {
       "key": "crown_authority_legacy_head",
       "group": "crown_authority",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_realm_laws_M_COPF.txt",
+      "source": "common/laws/00_realm_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "authority",
       "axis": "centralization",
@@ -292,7 +292,7 @@
     {
       "key": "crown_authority_titular_liege",
       "group": "crown_authority",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_realm_laws_M_COPF.txt",
+      "source": "common/laws/00_realm_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "authority",
       "axis": "centralization",
@@ -305,7 +305,7 @@
     {
       "key": "crown_authority_0",
       "group": "crown_authority",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_realm_laws_M_COPF.txt",
+      "source": "common/laws/00_realm_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "authority",
       "axis": "centralization",
@@ -318,7 +318,7 @@
     {
       "key": "crown_authority_1",
       "group": "crown_authority",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_realm_laws_M_COPF.txt",
+      "source": "common/laws/00_realm_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "authority",
       "axis": "centralization",
@@ -331,7 +331,7 @@
     {
       "key": "crown_authority_2",
       "group": "crown_authority",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_realm_laws_M_COPF.txt",
+      "source": "common/laws/00_realm_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "authority",
       "axis": "centralization",
@@ -344,7 +344,7 @@
     {
       "key": "crown_authority_3",
       "group": "crown_authority",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_realm_laws_M_COPF.txt",
+      "source": "common/laws/00_realm_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "authority",
       "axis": "centralization",
@@ -357,7 +357,7 @@
     {
       "key": "dm_government_reform_feudal_law",
       "group": "dm_government_reform_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\dm_government_reform_laws.txt",
+      "source": "common/laws/dm_government_reform_laws.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -370,7 +370,7 @@
     {
       "key": "dm_government_reform_republic_law",
       "group": "dm_government_reform_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\dm_government_reform_laws.txt",
+      "source": "common/laws/dm_government_reform_laws.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -383,7 +383,7 @@
     {
       "key": "dm_government_reform_theocracy_law",
       "group": "dm_government_reform_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\dm_government_reform_laws.txt",
+      "source": "common/laws/dm_government_reform_laws.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -396,7 +396,7 @@
     {
       "key": "dm_government_reform_clan_law",
       "group": "dm_government_reform_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\dm_government_reform_laws.txt",
+      "source": "common/laws/dm_government_reform_laws.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -409,7 +409,7 @@
     {
       "key": "dm_government_reform_tribal_law",
       "group": "dm_government_reform_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\dm_government_reform_laws.txt",
+      "source": "common/laws/dm_government_reform_laws.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -422,7 +422,7 @@
     {
       "key": "dm_government_reform_wanua_law",
       "group": "dm_government_reform_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\dm_government_reform_laws.txt",
+      "source": "common/laws/dm_government_reform_laws.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -435,7 +435,7 @@
     {
       "key": "dm_government_reform_administrative_law",
       "group": "dm_government_reform_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\dm_government_reform_laws.txt",
+      "source": "common/laws/dm_government_reform_laws.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -448,7 +448,7 @@
     {
       "key": "dm_government_reform_feudal_admin_law",
       "group": "dm_government_reform_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\dm_government_reform_laws.txt",
+      "source": "common/laws/dm_government_reform_laws.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -461,7 +461,7 @@
     {
       "key": "dm_government_reform_celestial_law",
       "group": "dm_government_reform_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\dm_government_reform_laws.txt",
+      "source": "common/laws/dm_government_reform_laws.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -474,7 +474,7 @@
     {
       "key": "dm_government_reform_mandala_law",
       "group": "dm_government_reform_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\dm_government_reform_laws.txt",
+      "source": "common/laws/dm_government_reform_laws.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -487,7 +487,7 @@
     {
       "key": "dm_government_reform_meritocratic_law",
       "group": "dm_government_reform_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\dm_government_reform_laws.txt",
+      "source": "common/laws/dm_government_reform_laws.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -500,7 +500,7 @@
     {
       "key": "dm_government_reform_japan_administrative_law",
       "group": "dm_government_reform_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\dm_government_reform_laws.txt",
+      "source": "common/laws/dm_government_reform_laws.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -513,7 +513,7 @@
     {
       "key": "dm_government_reform_japan_feudal_law",
       "group": "dm_government_reform_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\dm_government_reform_laws.txt",
+      "source": "common/laws/dm_government_reform_laws.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -526,7 +526,7 @@
     {
       "key": "dm_government_reform_nomad_law",
       "group": "dm_government_reform_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\dm_government_reform_laws.txt",
+      "source": "common/laws/dm_government_reform_laws.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -539,7 +539,7 @@
     {
       "key": "dm_government_reform_steppe_admin_law",
       "group": "dm_government_reform_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\dm_government_reform_laws.txt",
+      "source": "common/laws/dm_government_reform_laws.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -763,7 +763,7 @@
     {
       "key": "law_candidate_preference_policy_powerful_gentry",
       "group": "law_group_candidate_preference_policy_feudal_governor",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source": "common/laws/01_1_laws_succession_rights_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "meritocracy",
@@ -776,7 +776,7 @@
     {
       "key": "law_candidate_preference_policy_local_talent",
       "group": "law_group_candidate_preference_policy_feudal_governor",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source": "common/laws/01_1_laws_succession_rights_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "meritocracy",
@@ -789,7 +789,7 @@
     {
       "key": "law_candidate_preference_policy_favor_nepotism",
       "group": "law_group_candidate_preference_policy_feudal_governor",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source": "common/laws/01_1_laws_succession_rights_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "meritocracy",
@@ -802,7 +802,7 @@
     {
       "key": "law_candidate_preference_policy_talent_only",
       "group": "law_group_candidate_preference_policy_feudal_governor",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source": "common/laws/01_1_laws_succession_rights_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "meritocracy",
@@ -815,7 +815,7 @@
     {
       "key": "law_candidate_preference_policy_bureaucrat_promotion",
       "group": "law_group_candidate_preference_policy_feudal_governor",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source": "common/laws/01_1_laws_succession_rights_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "meritocracy",
@@ -828,7 +828,7 @@
     {
       "key": "law_vassal_revoke_title_policy_prohibit_revoke",
       "group": "law_group_vassal_revoke_title_policy",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_2_laws_subject_power_policy_A_COPF.txt",
+      "source": "common/laws/01_2_laws_subject_power_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "authority",
       "axis": "centralization",
@@ -841,7 +841,7 @@
     {
       "key": "law_vassal_revoke_title_policy_allow_revoke",
       "group": "law_group_vassal_revoke_title_policy",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_2_laws_subject_power_policy_A_COPF.txt",
+      "source": "common/laws/01_2_laws_subject_power_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "authority",
       "axis": "centralization",
@@ -854,7 +854,7 @@
     {
       "key": "law_vassal_succession_rights_policy_hereditary",
       "group": "law_group_vassal_succession_rights_policy",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source": "common/laws/01_1_laws_succession_rights_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -867,7 +867,7 @@
     {
       "key": "law_vassal_succession_rights_policy_forced_partition",
       "group": "law_group_vassal_succession_rights_policy",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source": "common/laws/01_1_laws_succession_rights_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -880,7 +880,7 @@
     {
       "key": "law_vassal_succession_rights_policy_grant_recognition",
       "group": "law_group_vassal_succession_rights_policy",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source": "common/laws/01_1_laws_succession_rights_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -893,7 +893,7 @@
     {
       "key": "law_vassal_succession_rights_policy_court_supervision",
       "group": "law_group_vassal_succession_rights_policy",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source": "common/laws/01_1_laws_succession_rights_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -906,7 +906,7 @@
     {
       "key": "law_vassal_succession_rights_policy_governor_appointment",
       "group": "law_group_vassal_succession_rights_policy",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_1_laws_succession_rights_policy_A_COPF.txt",
+      "source": "common/laws/01_1_laws_succession_rights_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -919,7 +919,7 @@
     {
       "key": "law_vassal_title_leave_realm_policy_allowed",
       "group": "law_group_vassal_title_leave_realm_policy",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_2_laws_subject_power_policy_A_COPF.txt",
+      "source": "common/laws/01_2_laws_subject_power_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "authority",
       "axis": "centralization",
@@ -932,7 +932,7 @@
     {
       "key": "law_vassal_title_leave_realm_policy_restricted",
       "group": "law_group_vassal_title_leave_realm_policy",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_2_laws_subject_power_policy_A_COPF.txt",
+      "source": "common/laws/01_2_laws_subject_power_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "authority",
       "axis": "centralization",
@@ -945,7 +945,7 @@
     {
       "key": "law_vassal_war_policy_no_restriction",
       "group": "law_group_vassal_war_policy",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_2_laws_subject_power_policy_A_COPF.txt",
+      "source": "common/laws/01_2_laws_subject_power_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "military",
       "axis": "military_control",
@@ -958,7 +958,7 @@
     {
       "key": "law_vassal_war_policy_prohibit_internal_wars",
       "group": "law_group_vassal_war_policy",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_2_laws_subject_power_policy_A_COPF.txt",
+      "source": "common/laws/01_2_laws_subject_power_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "military",
       "axis": "military_control",
@@ -971,7 +971,7 @@
     {
       "key": "law_vassal_war_policy_prohibit_all_wars",
       "group": "law_group_vassal_war_policy",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_2_laws_subject_power_policy_A_COPF.txt",
+      "source": "common/laws/01_2_laws_subject_power_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "military",
       "axis": "military_control",
@@ -984,7 +984,7 @@
     {
       "key": "law_vassal_war_policy_permanent_prohibit_all_wars",
       "group": "law_group_vassal_war_policy",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\01_2_laws_subject_power_policy_A_COPF.txt",
+      "source": "common/laws/01_2_laws_subject_power_policy_A_COPF.txt",
       "source_layer": "mod",
       "theme": "military",
       "axis": "military_control",
@@ -1162,7 +1162,7 @@
     {
       "key": "province_border_law_0",
       "group": "province_border_law",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\02_admininistrative_laws_M_COPF.txt",
+      "source": "common/laws/02_admininistrative_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -1173,7 +1173,7 @@
     {
       "key": "province_border_law_1",
       "group": "province_border_law",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\02_admininistrative_laws_M_COPF.txt",
+      "source": "common/laws/02_admininistrative_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -1186,7 +1186,7 @@
     {
       "key": "province_border_law_2",
       "group": "province_border_law",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\02_admininistrative_laws_M_COPF.txt",
+      "source": "common/laws/02_admininistrative_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "administration",
       "axis": "administrative_unity",
@@ -1249,7 +1249,7 @@
     {
       "key": "saas_no_stipend_law",
       "group": "saas_courtier_stipend_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\saas_courtier_stipend_laws.txt",
+      "source": "common/laws/saas_courtier_stipend_laws.txt",
       "source_layer": "mod",
       "theme": "finance",
       "axis": "court_expenditure",
@@ -1262,7 +1262,7 @@
     {
       "key": "saas_limited_stipend_law",
       "group": "saas_courtier_stipend_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\saas_courtier_stipend_laws.txt",
+      "source": "common/laws/saas_courtier_stipend_laws.txt",
       "source_layer": "mod",
       "theme": "finance",
       "axis": "court_expenditure",
@@ -1275,7 +1275,7 @@
     {
       "key": "saas_normal_stipend_law",
       "group": "saas_courtier_stipend_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\saas_courtier_stipend_laws.txt",
+      "source": "common/laws/saas_courtier_stipend_laws.txt",
       "source_layer": "mod",
       "theme": "finance",
       "axis": "court_expenditure",
@@ -1288,7 +1288,7 @@
     {
       "key": "saas_large_stipend_law",
       "group": "saas_courtier_stipend_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\saas_courtier_stipend_laws.txt",
+      "source": "common/laws/saas_courtier_stipend_laws.txt",
       "source_layer": "mod",
       "theme": "finance",
       "axis": "court_expenditure",
@@ -1301,7 +1301,7 @@
     {
       "key": "saas_double_stipend_law",
       "group": "saas_courtier_stipend_law_group",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\saas_courtier_stipend_laws.txt",
+      "source": "common/laws/saas_courtier_stipend_laws.txt",
       "source_layer": "mod",
       "theme": "finance",
       "axis": "court_expenditure",
@@ -1379,7 +1379,7 @@
     {
       "key": "confederate_partition_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1392,7 +1392,7 @@
     {
       "key": "partition_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1405,7 +1405,7 @@
     {
       "key": "high_partition_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1418,7 +1418,7 @@
     {
       "key": "single_heir_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1432,7 +1432,7 @@
     {
       "key": "single_heir_succession_kurultai_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1443,7 +1443,7 @@
     {
       "key": "single_heir_succession_law_youngest",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1457,7 +1457,7 @@
     {
       "key": "single_heir_dynasty_house",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1471,7 +1471,7 @@
     {
       "key": "acclamation_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1484,7 +1484,7 @@
     {
       "key": "appointment_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1497,7 +1497,7 @@
     {
       "key": "landless_adventurer_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1508,7 +1508,7 @@
     {
       "key": "bishop_theocratic_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1519,7 +1519,7 @@
     {
       "key": "holy_order_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1530,7 +1530,7 @@
     {
       "key": "mercenary_company_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1541,7 +1541,7 @@
     {
       "key": "city_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1552,7 +1552,7 @@
     {
       "key": "clan_antagonistic_partition_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1563,7 +1563,7 @@
     {
       "key": "clan_competitive_partition_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1574,7 +1574,7 @@
     {
       "key": "clan_impassive_partition_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1585,7 +1585,7 @@
     {
       "key": "clan_friendly_partition_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1596,7 +1596,7 @@
     {
       "key": "clan_harmonious_partition_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1607,7 +1607,7 @@
     {
       "key": "herder_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1618,7 +1618,7 @@
     {
       "key": "celestial_appointment_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1631,7 +1631,7 @@
     {
       "key": "celestial_military_appointment_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1644,7 +1644,7 @@
     {
       "key": "japanese_regency_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1657,7 +1657,7 @@
     {
       "key": "japanese_appointment_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1670,7 +1670,7 @@
     {
       "key": "japanese_military_appointment_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1683,7 +1683,7 @@
     {
       "key": "mandala_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1694,7 +1694,7 @@
     {
       "key": "meritocratic_appointment_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1707,7 +1707,7 @@
     {
       "key": "meritocratic_military_appointment_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1720,7 +1720,7 @@
     {
       "key": "meritocratic_regency_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1733,7 +1733,7 @@
     {
       "key": "feudal_governor_appointment_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",
@@ -1744,7 +1744,7 @@
     {
       "key": "feudal_governor_promotion_succession_law",
       "group": "succession_order_laws",
-      "source": "D:\\SteamLibrary\\steamapps\\workshop\\content\\1158310\\3598369228\\common\\laws\\00_succession_laws_M_COPF.txt",
+      "source": "common/laws/00_succession_laws_M_COPF.txt",
       "source_layer": "mod",
       "theme": "succession",
       "axis": "succession_concentration",

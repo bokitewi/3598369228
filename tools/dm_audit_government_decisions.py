@@ -70,6 +70,10 @@ def check_laws() -> None:
 	group = block(text, "dm_government_reform_law_group")
 	if "@dm_government_reform_cost = 2000" not in text:
 		fail("government reform does not use the fixed 2000 prestige cost")
+	if re.search(r"(?m)^\s*flag\s*=\s*realm_law\s*$", group):
+		fail("government reform is incorrectly routed to the top Crown Authority icon row")
+	if "flag = dm_government_reform_law_group" not in group:
+		fail("government reform law group lacks its dedicated lower-list routing flag")
 	for law, government in LAW_TO_GOVERNMENT.items():
 		law_block = block(group, law)
 		for marker in (
@@ -90,6 +94,24 @@ def check_laws() -> None:
 		iblock = block(interaction, f"dm_reform_start_dm_government_reform_{risky}_law_interaction")
 		if "dm_government_reform_risk_warning" not in iblock:
 			fail(f"{risky} target lacks its red playability warning")
+
+
+def check_realm_law_gui() -> None:
+	path = ROOT / "gui/00_window_my_realm_M_COPF.gui"
+	text = check_script(path)
+	route = "GuiLawGroup.GetLawGroup.HasFlag( 'dm_government_reform_law_group' )"
+	if text.count(route) != 1:
+		fail("government reform must be routed exactly once into the lower two-column law list")
+	vanilla_realm_gui = check_script(registry.VANILLA / "gui/window_my_realm.gui")
+	if "OpenSuccessionLawChangeWindow( GuiLawGroup.Self )" not in vanilla_realm_gui:
+		fail("lower law rows no longer open the existing law-selection window")
+	change_window = check_script(ROOT / "gui/window_succession_change_law.gui")
+	for law in LAW_TO_GOVERNMENT:
+		interaction = f"dm_reform_start_{law}_interaction"
+		if change_window.count(interaction) != 2:
+			fail(f"{law}: law-selection window lacks its custom reform interaction binding")
+	if "GuiLaw.Enact" in change_window:
+		fail("government reform law-selection window can still enact a law directly")
 
 
 def check_disabled_decisions() -> None:
@@ -167,12 +189,14 @@ def check_localization() -> None:
 
 def main() -> int:
 	check_laws()
+	check_realm_law_gui()
 	check_disabled_decisions()
 	check_conversion_and_sync()
 	check_localization()
 	print(
 		"government decision audit OK: 15 reform laws, 25 hidden direct conversions, "
-		"DLC gates, authority mapping, personal-only adaptation, native sync, cooldowns"
+		"lower two-column routing, custom reform interactions, DLC gates, authority "
+		"mapping, personal-only adaptation, native sync, cooldowns"
 	)
 	return 0
 

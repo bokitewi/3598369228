@@ -3,7 +3,6 @@
 dm_government_reform_law_group = {
 	default = dm_government_reform_feudal_law
 	cumulative = no
-	flag = realm_law
 	flag = dm_government_reform_law_group
 
 	can_change_law_group = {
