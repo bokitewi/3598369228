@@ -485,6 +485,14 @@ dm_government_reform_on_government_change_effect = {
 					limit = { dm_reform_government_target_matches_owner_trigger = yes }
 					dm_reform_success_effect = yes
 				}
+				else_if = {
+					limit = {
+						story_owner = {
+							NOT = { dm_government_reform_selectable_government_trigger = yes }
+						}
+					}
+					dm_reform_neutral_end_effect = yes
+				}
 			}
 		}
 		else = {

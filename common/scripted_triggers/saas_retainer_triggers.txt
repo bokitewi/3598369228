@@ -1,10 +1,4 @@
-﻿saas_courtier_stipend_ruler_trigger = {
-	is_landed = yes
-	highest_held_title_tier >= tier_county
-	has_realm_law_flag = saas_courtier_stipend_law
-}
-
-saas_retainer_available_trigger = {
+﻿saas_retainer_available_trigger = {
 	is_alive = yes
 	is_adult = yes
 	is_ruler = no
@@ -133,21 +127,6 @@ saas_retainer_learning_candidate_trigger = {
 		has_trait = zealous
 		has_trait = patient
 		has_trait = scholar
-	}
-}
-
-saas_retainer_salary_request_candidate_trigger = {
-	saas_retainer_available_trigger = yes
-	is_courtier_of = root
-	root = { NOT = { has_realm_law = saas_no_stipend_law } }
-	NOR = {
-		has_character_modifier = saas_personal_salary_raise_modifier
-		has_character_flag = saas_salary_request_cooldown
-	}
-	OR = {
-		has_trait = greedy
-		has_trait = arrogant
-		has_trait = ambitious
 	}
 }
 

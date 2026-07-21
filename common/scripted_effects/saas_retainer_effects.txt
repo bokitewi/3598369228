@@ -1,29 +1,10 @@
-﻿saas_pay_quarterly_stipends_effect = {
-	saas_refresh_courtier_stipend_income_effect = yes
-}
-
-# The modifier scale is snapshotted on application. Refresh it every quarter so
-# both sides appear in the vanilla monthly income/expense breakdown.
-saas_refresh_courtier_stipend_income_effect = {
-	remove_character_modifier = saas_courtier_stipend_expense_modifier
-	every_courtier = {
-		remove_character_modifier = saas_courtier_stipend_income_modifier
-	}
+﻿saas_refresh_courtier_amenity_surcharge_effect = {
+	remove_variable = saas_courtier_amenity_surcharge_snapshot
 	if = {
-		limit = { saas_current_monthly_stipend_expense_value > 0 }
-		add_character_modifier = {
-			modifier = saas_courtier_stipend_expense_modifier
-			months = 4
-		}
-		every_courtier = {
-			limit = {
-				is_imprisoned = no
-				saas_current_courtier_monthly_stipend_value > 0
-			}
-			add_character_modifier = {
-				modifier = saas_courtier_stipend_income_modifier
-				months = 4
-			}
+		limit = { has_royal_court = yes }
+		set_variable = {
+			name = saas_courtier_amenity_surcharge_snapshot
+			value = saas_courtier_amenity_surcharge_value
 		}
 	}
 }
@@ -44,7 +25,6 @@ saas_accept_retainer_candidate_effect = {
 		}
 	}
 	saas_set_retainer_project_phase_effect = yes
-	saas_refresh_courtier_stipend_income_effect = yes
 }
 
 saas_decline_retainer_candidate_effect = {
@@ -98,9 +78,6 @@ saas_move_talent_to_patron_effect = {
 			visit_court_of = $PATRON$
 		}
 	}
-	$PATRON$ = {
-		saas_refresh_courtier_stipend_income_effect = yes
-	}
 }
 
 saas_compete_for_talent_effect = {
@@ -138,10 +115,6 @@ saas_compete_for_talent_effect = {
 				}
 				has_royal_court = yes
 			}
-			modifier = { add = -50 has_realm_law = saas_no_stipend_law }
-			modifier = { add = -20 has_realm_law = saas_limited_stipend_law }
-			modifier = { add = 30 has_realm_law = saas_large_stipend_law }
-			modifier = { add = 60 has_realm_law = saas_double_stipend_law }
 			modifier = {
 				add = 40
 				culture = scope:saas_migrant_talent.culture
@@ -161,11 +134,6 @@ saas_compete_for_talent_effect = {
 						has_trait = loyal
 					}
 				}
-			}
-			modifier = {
-				add = 60
-				has_realm_law = saas_double_stipend_law
-				scope:saas_migrant_talent = { has_trait = greedy }
 			}
 			modifier = {
 				add = 60
@@ -223,10 +191,6 @@ saas_send_talent_to_strong_realm_effect = {
 				}
 				has_royal_court = yes
 			}
-			modifier = { add = -50 has_realm_law = saas_no_stipend_law }
-			modifier = { add = -20 has_realm_law = saas_limited_stipend_law }
-			modifier = { add = 30 has_realm_law = saas_large_stipend_law }
-			modifier = { add = 60 has_realm_law = saas_double_stipend_law }
 			modifier = {
 				add = 40
 				culture = scope:saas_migrant_talent.culture
@@ -246,11 +210,6 @@ saas_send_talent_to_strong_realm_effect = {
 						has_trait = loyal
 					}
 				}
-			}
-			modifier = {
-				add = 60
-				has_realm_law = saas_double_stipend_law
-				scope:saas_migrant_talent = { has_trait = greedy }
 			}
 			modifier = {
 				add = 60
@@ -316,10 +275,6 @@ saas_create_global_elite_pool_character_effect = {
 				}
 				has_royal_court = yes
 			}
-			modifier = { add = -50 has_realm_law = saas_no_stipend_law }
-			modifier = { add = -20 has_realm_law = saas_limited_stipend_law }
-			modifier = { add = 30 has_realm_law = saas_large_stipend_law }
-			modifier = { add = 60 has_realm_law = saas_double_stipend_law }
 		}
 		saas_create_elite_guest_effect = yes
 	}

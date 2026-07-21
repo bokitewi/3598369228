@@ -516,12 +516,52 @@ GOVERNMENT_REFORM_LEVELS = {
 	"steppe_admin_government": 2,
 }
 
+GOVERNMENT_REFORM_CATEGORIES = {
+	"primitive": (
+		"dm_government_reform_nomad_law",
+		"dm_government_reform_tribal_law",
+		"dm_government_reform_wanua_law",
+	),
+	"feudal": (
+		"dm_government_reform_clan_law",
+		"dm_government_reform_feudal_law",
+	),
+	"administrative": (
+		"dm_government_reform_feudal_admin_law",
+		"dm_government_reform_celestial_law",
+		"dm_government_reform_meritocratic_law",
+	),
+	"special": (
+		"dm_government_reform_mandala_law",
+		"dm_government_reform_republic_law",
+	),
+}
+
+GOVERNMENT_REFORM_TARGET_ORDER = tuple(
+	law
+	for laws in GOVERNMENT_REFORM_CATEGORIES.values()
+	for law in laws
+)
+GOVERNMENT_REFORM_TARGETS = set(GOVERNMENT_REFORM_TARGET_ORDER)
+
+GOVERNMENT_REFORM_STATE_ONLY = {
+	"dm_government_reform_theocracy_law",
+	"dm_government_reform_administrative_law",
+	"dm_government_reform_japan_administrative_law",
+	"dm_government_reform_japan_feudal_law",
+	"dm_government_reform_steppe_admin_law",
+}
+
+
+def is_reform_story_target(law: Law) -> bool:
+	return not (
+		law.group == "dm_government_reform_law_group"
+		and law.key in GOVERNMENT_REFORM_STATE_ONLY
+	)
+
 
 def render_government_reform_ai(law: Law) -> str:
-	target_is_risky = law.key in {
-		"dm_government_reform_republic_law",
-		"dm_government_reform_theocracy_law",
-	}
+	target_is_risky = law.key == "dm_government_reform_republic_law"
 	lines = [
 		"\tai_will_do = {",
 		f"\t\tbase = {100 + 20 * law.level - (60 if target_is_risky else 0)}",
@@ -655,10 +695,7 @@ def render_interaction(law: Law) -> str:
 	is_government_reform = law.group == "dm_government_reform_law_group"
 	interaction_desc = (
 		"dm_government_reform_risk_warning"
-		if law.key in {
-			"dm_government_reform_republic_law",
-			"dm_government_reform_theocracy_law",
-		}
+		if law.key == "dm_government_reform_republic_law"
 		else "dm_reform_start_interaction_desc"
 	)
 	cost = interaction_cost(law)
@@ -884,7 +921,28 @@ def render_target_valid_trigger(laws: list[Law]) -> str:
 					strip_powerful_vassal_approval(law.group_conditions), 4
 				)
 			)
-		law_conditions = law_condition_text(law, ("potential", "can_have"), 4)
+		law_conditions = law_condition_text(law, ("potential",), 4)
+		can_have = first(law.block, "can_have")
+		if isinstance(can_have, list):
+			cleaned_can_have = strip_powerful_vassal_approval(can_have)
+			if law.group == "dm_government_reform_law_group":
+				# Category paths are start-only gates. Once a reform story exists,
+				# changing to another selectable government must not invalidate it.
+				cleaned_can_have = [
+					(key, value)
+					for key, value in cleaned_can_have
+					if not (
+						key is not None
+						and key.startswith("dm_government_reform_can_target_")
+					)
+				]
+			adapted_can_have = adapt_interaction_scope(cleaned_can_have)
+			assert isinstance(adapted_can_have, list)
+			if adapted_can_have:
+				can_have_text = render_block_entries(adapted_can_have, 4)
+				law_conditions = "\n".join(
+					part for part in (law_conditions, can_have_text) if part
+				)
 		if law_conditions:
 			conditions.append(law_conditions)
 		rendered_conditions = "\n".join(conditions)
@@ -924,6 +982,7 @@ def registry_json(laws: list[Law]) -> str:
 				"axis": law.axis,
 				"level": law.level,
 				"budget": law.is_budget,
+				"selectable_reform_target": is_reform_story_target(law),
 				"cost_resources": [key for key, _ in resource_cost(law) if key],
 			}
 			for law in laws
@@ -1520,6 +1579,103 @@ def render_reform_law_buttons(laws: list[Law]) -> str:
 	return "\n\n\t\t\t\t\t".join(buttons)
 
 
+def gui_or(expressions: list[str]) -> str:
+	if not expressions:
+		return "Bool(false)"
+	result = expressions[-1]
+	for expression in reversed(expressions[:-1]):
+		result = f"Or( {expression}, {result} )"
+	return result
+
+
+def government_reform_category_gui() -> str:
+	current_law = (
+		"GetPlayer.GetActiveLawInGroupWithFlag( "
+		"'dm_government_reform_law_group' ).GetKey"
+	)
+	category_sources = {
+		"primitive": GOVERNMENT_REFORM_CATEGORIES["primitive"],
+		"feudal": GOVERNMENT_REFORM_TARGET_ORDER,
+		"administrative": (
+			*GOVERNMENT_REFORM_CATEGORIES["feudal"],
+			*GOVERNMENT_REFORM_CATEGORIES["administrative"],
+			*GOVERNMENT_REFORM_CATEGORIES["special"],
+			*sorted(GOVERNMENT_REFORM_STATE_ONLY),
+		),
+		"special": (
+			*GOVERNMENT_REFORM_CATEGORIES["feudal"],
+			*GOVERNMENT_REFORM_CATEGORIES["administrative"],
+			*GOVERNMENT_REFORM_CATEGORIES["special"],
+		),
+	}
+	rows: list[str] = []
+	for category, law_keys in GOVERNMENT_REFORM_CATEGORIES.items():
+		item_filter = gui_or(
+			[f"EqualTo_string( GuiLaw.GetLaw.GetKey, '{key}' )" for key in law_keys]
+		)
+		source_filter = gui_or(
+			[f"EqualTo_string( {current_law}, '{key}' )" for key in category_sources[category]]
+		)
+		item_access_filter = source_filter
+		if category == "administrative":
+			regular_source_filter = gui_or(
+				[
+					f"EqualTo_string( {current_law}, '{key}' )"
+					for key in (
+						*GOVERNMENT_REFORM_CATEGORIES["feudal"],
+						*GOVERNMENT_REFORM_CATEGORIES["administrative"],
+						*GOVERNMENT_REFORM_CATEGORIES["special"],
+					)
+				]
+			)
+			excluded_source_filter = gui_or(
+				[
+					f"EqualTo_string( {current_law}, '{key}' )"
+					for key in sorted(GOVERNMENT_REFORM_STATE_ONLY)
+				]
+			)
+			item_access_filter = (
+				f"Or( {regular_source_filter}, And( {excluded_source_filter}, "
+				"EqualTo_string( GuiLaw.GetLaw.GetKey, "
+				"'dm_government_reform_feudal_admin_law' ) ) )"
+			)
+		rows.append(
+			f'''vbox = {{
+								layoutpolicy_horizontal = expanding
+								maximumsize = {{ -1 110 }}
+								spacing = 4
+
+								text_single = {{
+									text = "dm_government_reform_category_{category}"
+									default_format = "#high"
+								}}
+
+								hbox = {{
+									datamodel = "[SuccessionLawChangeWindow.GetOtherLaws]"
+									spacing = 10
+
+									item = {{
+										container = {{
+											visible = "[And( And( {item_filter}, {item_access_filter} ), Not( EqualTo_string( GuiLaw.GetLaw.GetKey, {current_law} ) ) )]"
+											vbox = {{
+												button_default_law_choice = {{}}
+												button_clan_law_choice = {{}}
+											}}
+										}}
+									}}
+								}}
+
+								text_multi = {{
+									visible = "[Not( {source_filter} )]"
+									text = "dm_government_reform_category_locked"
+									default_format = "#low"
+									autoresize = yes
+								}}
+							}}'''
+		)
+	return "\n\n\t\t\t\t\t\t\t".join(rows)
+
+
 def render_succession_gui(laws: list[Law]) -> str:
 	source_path = VANILLA / "gui" / "window_succession_change_law.gui"
 	text = source_path.read_text(encoding="utf-8-sig")
@@ -1578,6 +1734,68 @@ def render_succession_gui(laws: list[Law]) -> str:
 	if reformer_desc not in text:
 		raise ValueError(f"{source_path}: reformer description insertion point changed")
 	text = text.replace(reformer_desc, reformer_picker, 1)
+	other_laws = '''vbox = {
+							visible = "[DataModelHasItems(SuccessionLawChangeWindow.GetOtherLaws)]"
+							margin_left = 12
+
+							fixedgridbox = {
+								datamodel = "[SuccessionLawChangeWindow.GetOtherLaws]"
+								addcolumn = 130
+								addrow = 90
+								datamodel_wrap = 5
+								flipdirection = yes
+
+								item = {
+									container = {
+										button_default_law_choice = {}
+										button_clan_law_choice = {}
+									}
+								}
+							}
+						}'''
+	group_test = (
+		"SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetLawGroup.HasFlag( "
+		"'dm_government_reform_law_group' )"
+	)
+	current_government_law = (
+		"GetPlayer.GetActiveLawInGroupWithFlag( "
+		"'dm_government_reform_law_group' ).GetKey"
+	)
+	excluded_source_test = gui_or(
+		[
+			f"EqualTo_string( {current_government_law}, '{key}' )"
+			for key in sorted(GOVERNMENT_REFORM_STATE_ONLY)
+		]
+	)
+	government_reform_laws = f'''vbox = {{
+							visible = "[And( DataModelHasItems( SuccessionLawChangeWindow.GetOtherLaws ), {group_test} )]"
+							margin_left = 12
+							spacing = 8
+
+							text_multi = {{
+								text = "dm_government_reform_category_help"
+								default_format = "#weak"
+								autoresize = yes
+							}}
+
+							text_multi = {{
+								visible = "[{excluded_source_test}]"
+								text = "dm_government_reform_exception_help"
+								autoresize = yes
+							}}
+
+							{government_reform_category_gui()}
+
+							expand = {{}}
+						}}'''
+	ordinary_other_laws = other_laws.replace(
+		'visible = "[DataModelHasItems(SuccessionLawChangeWindow.GetOtherLaws)]"',
+		f'visible = "[And( DataModelHasItems( SuccessionLawChangeWindow.GetOtherLaws ), Not( {group_test} ) )]"',
+		1,
+	)
+	if other_laws not in text:
+		raise ValueError(f"{source_path}: other-law grid template changed")
+	text = text.replace(other_laws, ordinary_other_laws + "\n\n\t\t\t\t\t\t" + government_reform_laws, 1)
 	old_button = """button_primary = {
 						enabled = "[SuccessionLawChangeWindow.GetSelectedLaw.CanEnact]"
 						onclick = "[SuccessionLawChangeWindow.GetSelectedLaw.Enact]"
@@ -1704,13 +1922,14 @@ def render_actor_office_custom_loc() -> str:
 
 def output_files(laws: list[Law]) -> dict[Path, str]:
 	header = "# GENERATED by tools/dm_generate_reform_registry.py. DO NOT EDIT.\n\n"
+	story_laws = [law for law in laws if is_reform_story_target(law)]
 	interactions = (
 		header
-		+ "\n\n".join(render_interaction(law) for law in laws)
+		+ "\n\n".join(render_interaction(law) for law in story_laws)
 		+ "\n"
 	)
-	effects = header + render_success_effect(laws) + "\n"
-	triggers = header + render_target_valid_trigger(laws) + "\n"
+	effects = header + render_success_effect(story_laws) + "\n"
+	triggers = header + render_target_valid_trigger(story_laws) + "\n"
 	return {
 		ROOT / "generated" / "dm_reform_registry.json": registry_json(laws),
 		ROOT / "common" / "character_interactions" / "dm_reform_start_interactions_generated.txt": interactions,
@@ -1721,7 +1940,7 @@ def output_files(laws: list[Law]) -> dict[Path, str]:
 		/ "localization"
 		/ "simp_chinese"
 		/ "dm_reform_events_generated_l_simp_chinese.yml": render_event_localization(),
-		ROOT / "gui" / "window_succession_change_law.gui": render_succession_gui(laws),
+		ROOT / "gui" / "window_succession_change_law.gui": render_succession_gui(story_laws),
 		ROOT / "gui" / "window_treasury_budget_change.gui": render_treasury_budget_gui(),
 		ROOT
 		/ "common"

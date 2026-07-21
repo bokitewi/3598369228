@@ -118,10 +118,6 @@ axis = "meritocracy"
 theme = "authority"
 axis = "centralization"
 
-[groups.saas_courtier_stipend_law_group]
-theme = "finance"
-axis = "court_expenditure"
-
 [groups.dm_government_reform_law_group]
 theme = "administration"
 axis = "administrative_unity"

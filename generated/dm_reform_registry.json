@@ -11,6 +11,7 @@
       "axis": "military_control",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -22,6 +23,7 @@
       "axis": "military_control",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -33,6 +35,7 @@
       "axis": "meritocracy",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "influence",
         "treasury"
@@ -47,6 +50,7 @@
       "axis": "meritocracy",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "influence",
         "treasury"
@@ -61,6 +65,7 @@
       "axis": "military_control",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -72,6 +77,7 @@
       "axis": "military_control",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -85,6 +91,7 @@
       "axis": "military_control",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -98,6 +105,7 @@
       "axis": "military_control",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -111,6 +119,7 @@
       "axis": "military_control",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -122,6 +131,7 @@
       "axis": "military_control",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -135,6 +145,7 @@
       "axis": "military_control",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -148,6 +159,7 @@
       "axis": "military_control",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -161,6 +173,7 @@
       "axis": "ritual_legitimacy",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -172,6 +185,7 @@
       "axis": "ritual_legitimacy",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -185,6 +199,7 @@
       "axis": "ritual_legitimacy",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -198,6 +213,7 @@
       "axis": "ritual_legitimacy",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -211,6 +227,7 @@
       "axis": "meritocracy",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -224,6 +241,7 @@
       "axis": "meritocracy",
       "level": -2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -237,6 +255,7 @@
       "axis": "meritocracy",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -250,6 +269,7 @@
       "axis": "meritocracy",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -263,6 +283,7 @@
       "axis": "meritocracy",
       "level": 2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -276,6 +297,7 @@
       "axis": "meritocracy",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -287,6 +309,7 @@
       "axis": "centralization",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -298,6 +321,7 @@
       "axis": "centralization",
       "level": -2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -311,6 +335,7 @@
       "axis": "centralization",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -324,6 +349,7 @@
       "axis": "centralization",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -337,6 +363,7 @@
       "axis": "centralization",
       "level": 2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -350,6 +377,7 @@
       "axis": "centralization",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -363,6 +391,7 @@
       "axis": "administrative_unity",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -376,6 +405,7 @@
       "axis": "administrative_unity",
       "level": 0,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -389,6 +419,7 @@
       "axis": "administrative_unity",
       "level": 0,
       "budget": false,
+      "selectable_reform_target": false,
       "cost_resources": [
         "prestige"
       ]
@@ -402,6 +433,7 @@
       "axis": "administrative_unity",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -415,6 +447,7 @@
       "axis": "administrative_unity",
       "level": -2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -428,6 +461,7 @@
       "axis": "administrative_unity",
       "level": -2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -441,6 +475,7 @@
       "axis": "administrative_unity",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": false,
       "cost_resources": [
         "prestige"
       ]
@@ -454,6 +489,7 @@
       "axis": "administrative_unity",
       "level": 2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -467,6 +503,7 @@
       "axis": "administrative_unity",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -480,6 +517,7 @@
       "axis": "administrative_unity",
       "level": 0,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -493,6 +531,7 @@
       "axis": "administrative_unity",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -506,6 +545,7 @@
       "axis": "administrative_unity",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": false,
       "cost_resources": [
         "prestige"
       ]
@@ -519,6 +559,7 @@
       "axis": "administrative_unity",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": false,
       "cost_resources": [
         "prestige"
       ]
@@ -532,6 +573,7 @@
       "axis": "administrative_unity",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -545,6 +587,7 @@
       "axis": "administrative_unity",
       "level": 2,
       "budget": false,
+      "selectable_reform_target": false,
       "cost_resources": [
         "prestige"
       ]
@@ -558,6 +601,7 @@
       "axis": "administrative_unity",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -569,6 +613,7 @@
       "axis": "administrative_unity",
       "level": 0,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -580,6 +625,7 @@
       "axis": "administrative_unity",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -591,6 +637,7 @@
       "axis": "administrative_unity",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -602,6 +649,7 @@
       "axis": "administrative_unity",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -615,6 +663,7 @@
       "axis": "administrative_unity",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -628,6 +677,7 @@
       "axis": "administrative_unity",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -641,6 +691,7 @@
       "axis": "centralization",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -654,6 +705,7 @@
       "axis": "centralization",
       "level": -2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -667,6 +719,7 @@
       "axis": "centralization",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -680,6 +733,7 @@
       "axis": "centralization",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -693,6 +747,7 @@
       "axis": "centralization",
       "level": 2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -706,6 +761,7 @@
       "axis": "centralization",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -719,6 +775,7 @@
       "axis": "administrative_unity",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -730,6 +787,7 @@
       "axis": "administrative_unity",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -743,6 +801,7 @@
       "axis": "administrative_unity",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -756,6 +815,7 @@
       "axis": "administrative_unity",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -769,6 +829,7 @@
       "axis": "meritocracy",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -782,6 +843,7 @@
       "axis": "meritocracy",
       "level": -2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -795,6 +857,7 @@
       "axis": "meritocracy",
       "level": 0,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -808,6 +871,7 @@
       "axis": "meritocracy",
       "level": 2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -821,6 +885,7 @@
       "axis": "meritocracy",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -834,6 +899,7 @@
       "axis": "centralization",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -847,6 +913,7 @@
       "axis": "centralization",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -860,6 +927,7 @@
       "axis": "succession_concentration",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -873,6 +941,7 @@
       "axis": "succession_concentration",
       "level": -2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -886,6 +955,7 @@
       "axis": "succession_concentration",
       "level": 0,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -899,6 +969,7 @@
       "axis": "succession_concentration",
       "level": 2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -912,6 +983,7 @@
       "axis": "succession_concentration",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -925,6 +997,7 @@
       "axis": "centralization",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -938,6 +1011,7 @@
       "axis": "centralization",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -951,6 +1025,7 @@
       "axis": "military_control",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -964,6 +1039,7 @@
       "axis": "military_control",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -977,6 +1053,7 @@
       "axis": "military_control",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -990,6 +1067,7 @@
       "axis": "military_control",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1003,6 +1081,7 @@
       "axis": "ritual_legitimacy",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1016,6 +1095,7 @@
       "axis": "ritual_legitimacy",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1029,6 +1109,7 @@
       "axis": "ritual_legitimacy",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1042,6 +1123,7 @@
       "axis": "ritual_legitimacy",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1055,6 +1137,7 @@
       "axis": "meritocracy",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1066,6 +1149,7 @@
       "axis": "meritocracy",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1079,6 +1163,7 @@
       "axis": "meritocracy",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1092,6 +1177,7 @@
       "axis": "meritocracy",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1105,6 +1191,7 @@
       "axis": "state_settlement",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1116,6 +1203,7 @@
       "axis": "state_settlement",
       "level": -2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1129,6 +1217,7 @@
       "axis": "state_settlement",
       "level": 0,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1142,6 +1231,7 @@
       "axis": "state_settlement",
       "level": 2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1155,6 +1245,7 @@
       "axis": "state_settlement",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1168,6 +1259,7 @@
       "axis": "administrative_unity",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1179,6 +1271,7 @@
       "axis": "administrative_unity",
       "level": 0,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1192,6 +1285,7 @@
       "axis": "administrative_unity",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1205,6 +1299,7 @@
       "axis": "military_control",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1216,6 +1311,7 @@
       "axis": "military_control",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1229,6 +1325,7 @@
       "axis": "military_control",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1242,71 +1339,7 @@
       "axis": "military_control",
       "level": 3,
       "budget": false,
-      "cost_resources": [
-        "prestige"
-      ]
-    },
-    {
-      "key": "saas_no_stipend_law",
-      "group": "saas_courtier_stipend_law_group",
-      "source": "common/laws/saas_courtier_stipend_laws.txt",
-      "source_layer": "mod",
-      "theme": "finance",
-      "axis": "court_expenditure",
-      "level": -3,
-      "budget": false,
-      "cost_resources": [
-        "prestige"
-      ]
-    },
-    {
-      "key": "saas_limited_stipend_law",
-      "group": "saas_courtier_stipend_law_group",
-      "source": "common/laws/saas_courtier_stipend_laws.txt",
-      "source_layer": "mod",
-      "theme": "finance",
-      "axis": "court_expenditure",
-      "level": -2,
-      "budget": false,
-      "cost_resources": [
-        "prestige"
-      ]
-    },
-    {
-      "key": "saas_normal_stipend_law",
-      "group": "saas_courtier_stipend_law_group",
-      "source": "common/laws/saas_courtier_stipend_laws.txt",
-      "source_layer": "mod",
-      "theme": "finance",
-      "axis": "court_expenditure",
-      "level": 0,
-      "budget": false,
-      "cost_resources": [
-        "prestige"
-      ]
-    },
-    {
-      "key": "saas_large_stipend_law",
-      "group": "saas_courtier_stipend_law_group",
-      "source": "common/laws/saas_courtier_stipend_laws.txt",
-      "source_layer": "mod",
-      "theme": "finance",
-      "axis": "court_expenditure",
-      "level": 2,
-      "budget": false,
-      "cost_resources": [
-        "prestige"
-      ]
-    },
-    {
-      "key": "saas_double_stipend_law",
-      "group": "saas_courtier_stipend_law_group",
-      "source": "common/laws/saas_courtier_stipend_laws.txt",
-      "source_layer": "mod",
-      "theme": "finance",
-      "axis": "court_expenditure",
-      "level": 3,
-      "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1320,6 +1353,7 @@
       "axis": "succession_concentration",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1333,6 +1367,7 @@
       "axis": "succession_concentration",
       "level": -2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1346,6 +1381,7 @@
       "axis": "succession_concentration",
       "level": 0,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1359,6 +1395,7 @@
       "axis": "succession_concentration",
       "level": 2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1372,6 +1409,7 @@
       "axis": "succession_concentration",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1385,6 +1423,7 @@
       "axis": "succession_concentration",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1398,6 +1437,7 @@
       "axis": "succession_concentration",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1411,6 +1451,7 @@
       "axis": "succession_concentration",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1424,6 +1465,7 @@
       "axis": "succession_concentration",
       "level": -2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige",
         "piety"
@@ -1438,6 +1480,7 @@
       "axis": "succession_concentration",
       "level": -2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1449,6 +1492,7 @@
       "axis": "succession_concentration",
       "level": -2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige",
         "piety"
@@ -1463,6 +1507,7 @@
       "axis": "succession_concentration",
       "level": -2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige",
         "piety"
@@ -1477,6 +1522,7 @@
       "axis": "succession_concentration",
       "level": -2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1490,6 +1536,7 @@
       "axis": "succession_concentration",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1503,6 +1550,7 @@
       "axis": "succession_concentration",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1514,6 +1562,7 @@
       "axis": "succession_concentration",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1525,6 +1574,7 @@
       "axis": "succession_concentration",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1536,6 +1586,7 @@
       "axis": "succession_concentration",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1547,6 +1598,7 @@
       "axis": "succession_concentration",
       "level": 0,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1558,6 +1610,7 @@
       "axis": "succession_concentration",
       "level": 0,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1569,6 +1622,7 @@
       "axis": "succession_concentration",
       "level": 0,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1580,6 +1634,7 @@
       "axis": "succession_concentration",
       "level": 0,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1591,6 +1646,7 @@
       "axis": "succession_concentration",
       "level": 0,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1602,6 +1658,7 @@
       "axis": "succession_concentration",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1613,6 +1670,7 @@
       "axis": "succession_concentration",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1624,6 +1682,7 @@
       "axis": "succession_concentration",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1637,6 +1696,7 @@
       "axis": "succession_concentration",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1650,6 +1710,7 @@
       "axis": "succession_concentration",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1663,6 +1724,7 @@
       "axis": "succession_concentration",
       "level": 2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1676,6 +1738,7 @@
       "axis": "succession_concentration",
       "level": 2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1689,6 +1752,7 @@
       "axis": "succession_concentration",
       "level": 2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1700,6 +1764,7 @@
       "axis": "succession_concentration",
       "level": 2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1713,6 +1778,7 @@
       "axis": "succession_concentration",
       "level": 2,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1726,6 +1792,7 @@
       "axis": "succession_concentration",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1739,6 +1806,7 @@
       "axis": "succession_concentration",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1750,6 +1818,7 @@
       "axis": "succession_concentration",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1761,6 +1830,7 @@
       "axis": "state_settlement",
       "level": -3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": []
     },
     {
@@ -1772,6 +1842,7 @@
       "axis": "state_settlement",
       "level": -1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1785,6 +1856,7 @@
       "axis": "state_settlement",
       "level": 1,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]
@@ -1798,6 +1870,7 @@
       "axis": "state_settlement",
       "level": 3,
       "budget": false,
+      "selectable_reform_target": true,
       "cost_resources": [
         "prestige"
       ]

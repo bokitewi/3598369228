@@ -124,7 +124,7 @@ window = {
 						}
 
 						vbox = {
-							visible = "[DataModelHasItems(SuccessionLawChangeWindow.GetOtherLaws)]"
+							visible = "[And( DataModelHasItems( SuccessionLawChangeWindow.GetOtherLaws ), Not( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetLawGroup.HasFlag( 'dm_government_reform_law_group' ) ) )]"
 							margin_left = 12
 
 							fixedgridbox = {
@@ -141,6 +141,158 @@ window = {
 									}
 								}
 							}
+						}
+
+						vbox = {
+							visible = "[And( DataModelHasItems( SuccessionLawChangeWindow.GetOtherLaws ), SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetLawGroup.HasFlag( 'dm_government_reform_law_group' ) )]"
+							margin_left = 12
+							spacing = 8
+
+							text_multi = {
+								text = "dm_government_reform_category_help"
+								default_format = "#weak"
+								autoresize = yes
+							}
+
+							text_multi = {
+								visible = "[Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_administrative_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_japan_administrative_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_japan_feudal_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_steppe_admin_law' ), EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_theocracy_law' ) ) ) ) )]"
+								text = "dm_government_reform_exception_help"
+								autoresize = yes
+							}
+
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								maximumsize = { -1 110 }
+								spacing = 4
+
+								text_single = {
+									text = "dm_government_reform_category_primitive"
+									default_format = "#high"
+								}
+
+								hbox = {
+									datamodel = "[SuccessionLawChangeWindow.GetOtherLaws]"
+									spacing = 10
+
+									item = {
+										container = {
+											visible = "[And( And( Or( EqualTo_string( GuiLaw.GetLaw.GetKey, 'dm_government_reform_nomad_law' ), Or( EqualTo_string( GuiLaw.GetLaw.GetKey, 'dm_government_reform_tribal_law' ), EqualTo_string( GuiLaw.GetLaw.GetKey, 'dm_government_reform_wanua_law' ) ) ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_nomad_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_tribal_law' ), EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_wanua_law' ) ) ) ), Not( EqualTo_string( GuiLaw.GetLaw.GetKey, GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey ) ) )]"
+											vbox = {
+												button_default_law_choice = {}
+												button_clan_law_choice = {}
+											}
+										}
+									}
+								}
+
+								text_multi = {
+									visible = "[Not( Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_nomad_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_tribal_law' ), EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_wanua_law' ) ) ) )]"
+									text = "dm_government_reform_category_locked"
+									default_format = "#low"
+									autoresize = yes
+								}
+							}
+
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								maximumsize = { -1 110 }
+								spacing = 4
+
+								text_single = {
+									text = "dm_government_reform_category_feudal"
+									default_format = "#high"
+								}
+
+								hbox = {
+									datamodel = "[SuccessionLawChangeWindow.GetOtherLaws]"
+									spacing = 10
+
+									item = {
+										container = {
+											visible = "[And( And( Or( EqualTo_string( GuiLaw.GetLaw.GetKey, 'dm_government_reform_clan_law' ), EqualTo_string( GuiLaw.GetLaw.GetKey, 'dm_government_reform_feudal_law' ) ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_nomad_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_tribal_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_wanua_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_clan_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_feudal_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_feudal_admin_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_celestial_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_meritocratic_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_mandala_law' ), EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_republic_law' ) ) ) ) ) ) ) ) ) ) ), Not( EqualTo_string( GuiLaw.GetLaw.GetKey, GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey ) ) )]"
+											vbox = {
+												button_default_law_choice = {}
+												button_clan_law_choice = {}
+											}
+										}
+									}
+								}
+
+								text_multi = {
+									visible = "[Not( Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_nomad_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_tribal_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_wanua_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_clan_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_feudal_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_feudal_admin_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_celestial_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_meritocratic_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_mandala_law' ), EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_republic_law' ) ) ) ) ) ) ) ) ) ) )]"
+									text = "dm_government_reform_category_locked"
+									default_format = "#low"
+									autoresize = yes
+								}
+							}
+
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								maximumsize = { -1 110 }
+								spacing = 4
+
+								text_single = {
+									text = "dm_government_reform_category_administrative"
+									default_format = "#high"
+								}
+
+								hbox = {
+									datamodel = "[SuccessionLawChangeWindow.GetOtherLaws]"
+									spacing = 10
+
+									item = {
+										container = {
+											visible = "[And( And( Or( EqualTo_string( GuiLaw.GetLaw.GetKey, 'dm_government_reform_feudal_admin_law' ), Or( EqualTo_string( GuiLaw.GetLaw.GetKey, 'dm_government_reform_celestial_law' ), EqualTo_string( GuiLaw.GetLaw.GetKey, 'dm_government_reform_meritocratic_law' ) ) ), Or( Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_clan_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_feudal_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_feudal_admin_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_celestial_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_meritocratic_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_mandala_law' ), EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_republic_law' ) ) ) ) ) ) ), And( Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_administrative_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_japan_administrative_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_japan_feudal_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_steppe_admin_law' ), EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_theocracy_law' ) ) ) ) ), EqualTo_string( GuiLaw.GetLaw.GetKey, 'dm_government_reform_feudal_admin_law' ) ) ) ), Not( EqualTo_string( GuiLaw.GetLaw.GetKey, GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey ) ) )]"
+											vbox = {
+												button_default_law_choice = {}
+												button_clan_law_choice = {}
+											}
+										}
+									}
+								}
+
+								text_multi = {
+									visible = "[Not( Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_clan_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_feudal_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_feudal_admin_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_celestial_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_meritocratic_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_mandala_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_republic_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_administrative_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_japan_administrative_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_japan_feudal_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_steppe_admin_law' ), EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_theocracy_law' ) ) ) ) ) ) ) ) ) ) ) ) )]"
+									text = "dm_government_reform_category_locked"
+									default_format = "#low"
+									autoresize = yes
+								}
+							}
+
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								maximumsize = { -1 110 }
+								spacing = 4
+
+								text_single = {
+									text = "dm_government_reform_category_special"
+									default_format = "#high"
+								}
+
+								hbox = {
+									datamodel = "[SuccessionLawChangeWindow.GetOtherLaws]"
+									spacing = 10
+
+									item = {
+										container = {
+											visible = "[And( And( Or( EqualTo_string( GuiLaw.GetLaw.GetKey, 'dm_government_reform_mandala_law' ), EqualTo_string( GuiLaw.GetLaw.GetKey, 'dm_government_reform_republic_law' ) ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_clan_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_feudal_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_feudal_admin_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_celestial_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_meritocratic_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_mandala_law' ), EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_republic_law' ) ) ) ) ) ) ) ), Not( EqualTo_string( GuiLaw.GetLaw.GetKey, GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey ) ) )]"
+											vbox = {
+												button_default_law_choice = {}
+												button_clan_law_choice = {}
+											}
+										}
+									}
+								}
+
+								text_multi = {
+									visible = "[Not( Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_clan_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_feudal_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_feudal_admin_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_celestial_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_meritocratic_law' ), Or( EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_mandala_law' ), EqualTo_string( GetPlayer.GetActiveLawInGroupWithFlag( 'dm_government_reform_law_group' ).GetKey, 'dm_government_reform_republic_law' ) ) ) ) ) ) ) )]"
+									text = "dm_government_reform_category_locked"
+									default_format = "#low"
+									autoresize = yes
+								}
+							}
+
+							expand = {}
 						}
 
 						hbox = {
@@ -658,16 +810,6 @@ window = {
 
 					button_primary = {
 						datacontext = "[GetPlayer]"
-						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'dm_government_reform_theocracy_law' )]"
-						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_dm_government_reform_theocracy_law_interaction')]"
-						onclick = "[Character.SendPlayerInteraction('dm_reform_start_dm_government_reform_theocracy_law_interaction')]"
-						text = "dm_reform_start_button"
-						using = tooltip_above
-						tooltip = "dm_reform_start_button_tooltip"
-					}
-
-					button_primary = {
-						datacontext = "[GetPlayer]"
 						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'dm_government_reform_clan_law' )]"
 						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_dm_government_reform_clan_law_interaction')]"
 						onclick = "[Character.SendPlayerInteraction('dm_reform_start_dm_government_reform_clan_law_interaction')]"
@@ -691,16 +833,6 @@ window = {
 						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'dm_government_reform_wanua_law' )]"
 						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_dm_government_reform_wanua_law_interaction')]"
 						onclick = "[Character.SendPlayerInteraction('dm_reform_start_dm_government_reform_wanua_law_interaction')]"
-						text = "dm_reform_start_button"
-						using = tooltip_above
-						tooltip = "dm_reform_start_button_tooltip"
-					}
-
-					button_primary = {
-						datacontext = "[GetPlayer]"
-						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'dm_government_reform_administrative_law' )]"
-						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_dm_government_reform_administrative_law_interaction')]"
-						onclick = "[Character.SendPlayerInteraction('dm_reform_start_dm_government_reform_administrative_law_interaction')]"
 						text = "dm_reform_start_button"
 						using = tooltip_above
 						tooltip = "dm_reform_start_button_tooltip"
@@ -748,39 +880,9 @@ window = {
 
 					button_primary = {
 						datacontext = "[GetPlayer]"
-						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'dm_government_reform_japan_administrative_law' )]"
-						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_dm_government_reform_japan_administrative_law_interaction')]"
-						onclick = "[Character.SendPlayerInteraction('dm_reform_start_dm_government_reform_japan_administrative_law_interaction')]"
-						text = "dm_reform_start_button"
-						using = tooltip_above
-						tooltip = "dm_reform_start_button_tooltip"
-					}
-
-					button_primary = {
-						datacontext = "[GetPlayer]"
-						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'dm_government_reform_japan_feudal_law' )]"
-						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_dm_government_reform_japan_feudal_law_interaction')]"
-						onclick = "[Character.SendPlayerInteraction('dm_reform_start_dm_government_reform_japan_feudal_law_interaction')]"
-						text = "dm_reform_start_button"
-						using = tooltip_above
-						tooltip = "dm_reform_start_button_tooltip"
-					}
-
-					button_primary = {
-						datacontext = "[GetPlayer]"
 						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'dm_government_reform_nomad_law' )]"
 						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_dm_government_reform_nomad_law_interaction')]"
 						onclick = "[Character.SendPlayerInteraction('dm_reform_start_dm_government_reform_nomad_law_interaction')]"
-						text = "dm_reform_start_button"
-						using = tooltip_above
-						tooltip = "dm_reform_start_button_tooltip"
-					}
-
-					button_primary = {
-						datacontext = "[GetPlayer]"
-						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'dm_government_reform_steppe_admin_law' )]"
-						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_dm_government_reform_steppe_admin_law_interaction')]"
-						onclick = "[Character.SendPlayerInteraction('dm_reform_start_dm_government_reform_steppe_admin_law_interaction')]"
 						text = "dm_reform_start_button"
 						using = tooltip_above
 						tooltip = "dm_reform_start_button_tooltip"
@@ -1331,56 +1433,6 @@ window = {
 						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'province_war_law_3' )]"
 						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_province_war_law_3_interaction')]"
 						onclick = "[Character.SendPlayerInteraction('dm_reform_start_province_war_law_3_interaction')]"
-						text = "dm_reform_start_button"
-						using = tooltip_above
-						tooltip = "dm_reform_start_button_tooltip"
-					}
-
-					button_primary = {
-						datacontext = "[GetPlayer]"
-						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'saas_no_stipend_law' )]"
-						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_saas_no_stipend_law_interaction')]"
-						onclick = "[Character.SendPlayerInteraction('dm_reform_start_saas_no_stipend_law_interaction')]"
-						text = "dm_reform_start_button"
-						using = tooltip_above
-						tooltip = "dm_reform_start_button_tooltip"
-					}
-
-					button_primary = {
-						datacontext = "[GetPlayer]"
-						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'saas_limited_stipend_law' )]"
-						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_saas_limited_stipend_law_interaction')]"
-						onclick = "[Character.SendPlayerInteraction('dm_reform_start_saas_limited_stipend_law_interaction')]"
-						text = "dm_reform_start_button"
-						using = tooltip_above
-						tooltip = "dm_reform_start_button_tooltip"
-					}
-
-					button_primary = {
-						datacontext = "[GetPlayer]"
-						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'saas_normal_stipend_law' )]"
-						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_saas_normal_stipend_law_interaction')]"
-						onclick = "[Character.SendPlayerInteraction('dm_reform_start_saas_normal_stipend_law_interaction')]"
-						text = "dm_reform_start_button"
-						using = tooltip_above
-						tooltip = "dm_reform_start_button_tooltip"
-					}
-
-					button_primary = {
-						datacontext = "[GetPlayer]"
-						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'saas_large_stipend_law' )]"
-						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_saas_large_stipend_law_interaction')]"
-						onclick = "[Character.SendPlayerInteraction('dm_reform_start_saas_large_stipend_law_interaction')]"
-						text = "dm_reform_start_button"
-						using = tooltip_above
-						tooltip = "dm_reform_start_button_tooltip"
-					}
-
-					button_primary = {
-						datacontext = "[GetPlayer]"
-						visible = "[EqualTo_string( SuccessionLawChangeWindow.GetSelectedLaw.GetLaw.GetKey, 'saas_double_stipend_law' )]"
-						enabled = "[Character.CanSendPlayerInteraction('dm_reform_start_saas_double_stipend_law_interaction')]"
-						onclick = "[Character.SendPlayerInteraction('dm_reform_start_saas_double_stipend_law_interaction')]"
 						text = "dm_reform_start_button"
 						using = tooltip_above
 						tooltip = "dm_reform_start_button_tooltip"

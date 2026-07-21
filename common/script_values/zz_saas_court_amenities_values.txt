@@ -1,0 +1,106 @@
+# Courtier support is snapshotted on the court owner and refreshed every five years.
+saas_courtier_amenity_cost_multiplier_value = {
+	value = 1
+	if = {
+		limit = { has_variable = saas_courtier_amenity_surcharge_snapshot }
+		add = var:saas_courtier_amenity_surcharge_snapshot
+	}
+}
+
+# These are the sixteen final amenity prices referenced by code. Keeping the
+# multiplier here preserves every vanilla minimum, discount, and free-cost branch.
+court_fashion_acceptable_cost = {
+	value = court_amenities_cost_level_1_fashion
+	if = {
+		limit = { culture = { has_cultural_parameter = reduces_court_fashion_costs_parameter } }
+		multiply = 0.5
+	}
+	multiply = saas_courtier_amenity_cost_multiplier_value
+}
+
+court_fashion_decent_cost = {
+	value = court_amenities_cost_level_2_fashion
+	if = {
+		limit = { culture = { has_cultural_parameter = reduces_court_fashion_costs_parameter } }
+		multiply = 0.5
+	}
+	multiply = saas_courtier_amenity_cost_multiplier_value
+}
+
+court_fashion_good_cost = {
+	value = court_amenities_cost_level_3
+	if = {
+		limit = { culture = { has_cultural_parameter = reduces_court_fashion_costs_parameter } }
+		multiply = 0.5
+	}
+	multiply = saas_courtier_amenity_cost_multiplier_value
+}
+
+court_fashion_fantastic_cost = {
+	value = court_amenities_cost_level_4
+	if = {
+		limit = { culture = { has_cultural_parameter = reduces_court_fashion_costs_parameter } }
+		multiply = 0.5
+	}
+	multiply = saas_courtier_amenity_cost_multiplier_value
+}
+
+court_food_quality_modest_cost = {
+	value = court_amenities_cost_level_1_food
+	multiply = saas_courtier_amenity_cost_multiplier_value
+}
+
+court_food_quality_decent_cost = {
+	value = court_amenities_cost_level_2_food
+	multiply = saas_courtier_amenity_cost_multiplier_value
+}
+
+court_food_quality_lavish_cost = {
+	value = court_amenities_cost_level_3_food
+	multiply = saas_courtier_amenity_cost_multiplier_value
+}
+
+court_food_quality_exotic_cost = {
+	value = court_amenities_cost_level_4_food
+	multiply = saas_courtier_amenity_cost_multiplier_value
+}
+
+court_lodging_standards_small_cost = {
+	value = court_amenities_cost_level_1_lodgings
+	multiply = saas_courtier_amenity_cost_multiplier_value
+}
+
+court_lodging_standards_middling_cost = {
+	value = court_amenities_cost_level_2_lodgings
+	multiply = saas_courtier_amenity_cost_multiplier_value
+}
+
+court_lodging_standards_spacious_cost = {
+	value = court_amenities_cost_level_3_lodgings
+	multiply = saas_courtier_amenity_cost_multiplier_value
+}
+
+court_lodging_standards_grand_cost = {
+	value = court_amenities_cost_level_4_lodgings
+	multiply = saas_courtier_amenity_cost_multiplier_value
+}
+
+court_servants_few_cost = {
+	value = court_amenities_cost_level_1_servants
+	multiply = saas_courtier_amenity_cost_multiplier_value
+}
+
+court_court_servants_some_cost = {
+	value = court_amenities_cost_level_2_servants
+	multiply = saas_courtier_amenity_cost_multiplier_value
+}
+
+court_court_servants_many_cost = {
+	value = court_amenities_cost_level_3_servants
+	multiply = saas_courtier_amenity_cost_multiplier_value
+}
+
+court_servants_endless_cost = {
+	value = court_amenities_cost_level_4_servants
+	multiply = saas_courtier_amenity_cost_multiplier_value
+}

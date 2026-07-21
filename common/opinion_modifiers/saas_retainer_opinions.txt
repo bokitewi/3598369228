@@ -8,16 +8,6 @@ saas_retainer_rejected_opinion = {
 	years = 5
 }
 
-saas_salary_raise_granted_opinion = {
-	opinion = 20
-	years = 5
-}
-
-saas_salary_raise_refused_opinion = {
-	opinion = -20
-	years = 5
-}
-
 saas_retainer_project_success_opinion = {
 	opinion = 15
 	years = 5

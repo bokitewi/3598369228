@@ -183,8 +183,20 @@ def check_generator_and_budget_exit() -> None:
 	success_dispatch = (
 		ROOT / "common/scripted_effects/dm_reform_registry_effects_generated.txt"
 	).read_text(encoding="utf-8-sig")
-	if success_dispatch.count("limit = { NOT = { has_realm_law =") != 143:
+	manifest = registry.tomllib.loads(registry.MANIFEST.read_text(encoding="utf-8"))
+	registered_laws, _ = registry.collect_laws(manifest)
+	story_target_laws = [
+		law for law in registered_laws if registry.is_reform_story_target(law)
+	]
+	if success_dispatch.count("limit = { NOT = { has_realm_law =") != len(story_target_laws):
 		fail("success dispatch does not guard all externally pre-applied target laws")
+	for law in registered_laws:
+		if (
+			law.group == "dm_government_reform_law_group"
+			and law.key in registry.GOVERNMENT_REFORM_STATE_ONLY
+			and f"var:dm_reform_target = flag:{law.key}" in success_dispatch
+		):
+			fail(f"{law.key}: internal government-state law leaked into success dispatch")
 	treasury = (ROOT / "gui/window_treasury_budget_change.gui").read_text(
 		encoding="utf-8-sig"
 	)

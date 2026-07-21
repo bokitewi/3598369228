@@ -273,15 +273,6 @@ dm_reform_apply_target_law_effect = {
 		}
 	}
 	else_if = {
-		limit = { var:dm_reform_target = flag:dm_government_reform_theocracy_law }
-		story_owner = {
-			if = {
-				limit = { NOT = { has_realm_law = dm_government_reform_theocracy_law } }
-				add_realm_law = dm_government_reform_theocracy_law
-			}
-		}
-	}
-	else_if = {
 		limit = { var:dm_reform_target = flag:dm_government_reform_clan_law }
 		story_owner = {
 			if = {
@@ -305,15 +296,6 @@ dm_reform_apply_target_law_effect = {
 			if = {
 				limit = { NOT = { has_realm_law = dm_government_reform_wanua_law } }
 				add_realm_law = dm_government_reform_wanua_law
-			}
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:dm_government_reform_administrative_law }
-		story_owner = {
-			if = {
-				limit = { NOT = { has_realm_law = dm_government_reform_administrative_law } }
-				add_realm_law = dm_government_reform_administrative_law
 			}
 		}
 	}
@@ -354,38 +336,11 @@ dm_reform_apply_target_law_effect = {
 		}
 	}
 	else_if = {
-		limit = { var:dm_reform_target = flag:dm_government_reform_japan_administrative_law }
-		story_owner = {
-			if = {
-				limit = { NOT = { has_realm_law = dm_government_reform_japan_administrative_law } }
-				add_realm_law = dm_government_reform_japan_administrative_law
-			}
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:dm_government_reform_japan_feudal_law }
-		story_owner = {
-			if = {
-				limit = { NOT = { has_realm_law = dm_government_reform_japan_feudal_law } }
-				add_realm_law = dm_government_reform_japan_feudal_law
-			}
-		}
-	}
-	else_if = {
 		limit = { var:dm_reform_target = flag:dm_government_reform_nomad_law }
 		story_owner = {
 			if = {
 				limit = { NOT = { has_realm_law = dm_government_reform_nomad_law } }
 				add_realm_law = dm_government_reform_nomad_law
-			}
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:dm_government_reform_steppe_admin_law }
-		story_owner = {
-			if = {
-				limit = { NOT = { has_realm_law = dm_government_reform_steppe_admin_law } }
-				add_realm_law = dm_government_reform_steppe_admin_law
 			}
 		}
 	}
@@ -881,51 +836,6 @@ dm_reform_apply_target_law_effect = {
 			if = {
 				limit = { NOT = { has_realm_law = province_war_law_3 } }
 				add_realm_law = province_war_law_3
-			}
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:saas_no_stipend_law }
-		story_owner = {
-			if = {
-				limit = { NOT = { has_realm_law = saas_no_stipend_law } }
-				add_realm_law = saas_no_stipend_law
-			}
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:saas_limited_stipend_law }
-		story_owner = {
-			if = {
-				limit = { NOT = { has_realm_law = saas_limited_stipend_law } }
-				add_realm_law = saas_limited_stipend_law
-			}
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:saas_normal_stipend_law }
-		story_owner = {
-			if = {
-				limit = { NOT = { has_realm_law = saas_normal_stipend_law } }
-				add_realm_law = saas_normal_stipend_law
-			}
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:saas_large_stipend_law }
-		story_owner = {
-			if = {
-				limit = { NOT = { has_realm_law = saas_large_stipend_law } }
-				add_realm_law = saas_large_stipend_law
-			}
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:saas_double_stipend_law }
-		story_owner = {
-			if = {
-				limit = { NOT = { has_realm_law = saas_double_stipend_law } }
-				add_realm_law = saas_double_stipend_law
 			}
 		}
 	}
@@ -1902,10 +1812,6 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 0 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_theocracy_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_clan_law } }
 			set_variable = { name = dm_reform_current_level value = -1 }
 		}
@@ -1916,10 +1822,6 @@ dm_reform_capture_current_level_effect = {
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_wanua_law } }
 			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
 		}
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_admin_law } }
@@ -1938,20 +1840,8 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 1 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_nomad_law } }
 			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_steppe_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
 		}
 	}
 	else_if = {
@@ -1965,10 +1855,6 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 0 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_theocracy_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_clan_law } }
 			set_variable = { name = dm_reform_current_level value = -1 }
 		}
@@ -1979,10 +1865,6 @@ dm_reform_capture_current_level_effect = {
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_wanua_law } }
 			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
 		}
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_admin_law } }
@@ -2001,83 +1883,8 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 1 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_nomad_law } }
 			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_steppe_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:dm_government_reform_theocracy_law }
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_republic_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_theocracy_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_clan_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_tribal_law } }
-			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_wanua_law } }
-			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_celestial_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_mandala_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_meritocratic_law } }
-			set_variable = { name = dm_reform_current_level value = 1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_nomad_law } }
-			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_steppe_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
 		}
 	}
 	else_if = {
@@ -2091,10 +1898,6 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 0 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_theocracy_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_clan_law } }
 			set_variable = { name = dm_reform_current_level value = -1 }
 		}
@@ -2105,10 +1908,6 @@ dm_reform_capture_current_level_effect = {
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_wanua_law } }
 			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
 		}
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_admin_law } }
@@ -2127,20 +1926,8 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 1 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_nomad_law } }
 			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_steppe_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
 		}
 	}
 	else_if = {
@@ -2154,10 +1941,6 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 0 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_theocracy_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_clan_law } }
 			set_variable = { name = dm_reform_current_level value = -1 }
 		}
@@ -2168,10 +1951,6 @@ dm_reform_capture_current_level_effect = {
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_wanua_law } }
 			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
 		}
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_admin_law } }
@@ -2190,20 +1969,8 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 1 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_nomad_law } }
 			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_steppe_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
 		}
 	}
 	else_if = {
@@ -2217,10 +1984,6 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 0 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_theocracy_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_clan_law } }
 			set_variable = { name = dm_reform_current_level value = -1 }
 		}
@@ -2231,10 +1994,6 @@ dm_reform_capture_current_level_effect = {
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_wanua_law } }
 			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
 		}
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_admin_law } }
@@ -2253,83 +2012,8 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 1 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_nomad_law } }
 			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_steppe_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:dm_government_reform_administrative_law }
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_republic_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_theocracy_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_clan_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_tribal_law } }
-			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_wanua_law } }
-			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_celestial_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_mandala_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_meritocratic_law } }
-			set_variable = { name = dm_reform_current_level value = 1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_nomad_law } }
-			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_steppe_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
 		}
 	}
 	else_if = {
@@ -2343,10 +2027,6 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 0 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_theocracy_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_clan_law } }
 			set_variable = { name = dm_reform_current_level value = -1 }
 		}
@@ -2357,10 +2037,6 @@ dm_reform_capture_current_level_effect = {
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_wanua_law } }
 			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
 		}
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_admin_law } }
@@ -2379,20 +2055,8 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 1 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_nomad_law } }
 			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_steppe_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
 		}
 	}
 	else_if = {
@@ -2406,10 +2070,6 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 0 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_theocracy_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_clan_law } }
 			set_variable = { name = dm_reform_current_level value = -1 }
 		}
@@ -2420,10 +2080,6 @@ dm_reform_capture_current_level_effect = {
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_wanua_law } }
 			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
 		}
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_admin_law } }
@@ -2442,20 +2098,8 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 1 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_nomad_law } }
 			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_steppe_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
 		}
 	}
 	else_if = {
@@ -2469,10 +2113,6 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 0 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_theocracy_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_clan_law } }
 			set_variable = { name = dm_reform_current_level value = -1 }
 		}
@@ -2483,10 +2123,6 @@ dm_reform_capture_current_level_effect = {
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_wanua_law } }
 			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
 		}
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_admin_law } }
@@ -2505,20 +2141,8 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 1 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_nomad_law } }
 			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_steppe_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
 		}
 	}
 	else_if = {
@@ -2532,10 +2156,6 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 0 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_theocracy_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_clan_law } }
 			set_variable = { name = dm_reform_current_level value = -1 }
 		}
@@ -2546,10 +2166,6 @@ dm_reform_capture_current_level_effect = {
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_wanua_law } }
 			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
 		}
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_admin_law } }
@@ -2568,146 +2184,8 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 1 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_nomad_law } }
 			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_steppe_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:dm_government_reform_japan_administrative_law }
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_republic_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_theocracy_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_clan_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_tribal_law } }
-			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_wanua_law } }
-			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_celestial_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_mandala_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_meritocratic_law } }
-			set_variable = { name = dm_reform_current_level value = 1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_nomad_law } }
-			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_steppe_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:dm_government_reform_japan_feudal_law }
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_republic_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_theocracy_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_clan_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_tribal_law } }
-			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_wanua_law } }
-			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_celestial_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_mandala_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_meritocratic_law } }
-			set_variable = { name = dm_reform_current_level value = 1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_nomad_law } }
-			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_steppe_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
 		}
 	}
 	else_if = {
@@ -2721,10 +2199,6 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 0 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_theocracy_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_clan_law } }
 			set_variable = { name = dm_reform_current_level value = -1 }
 		}
@@ -2735,10 +2209,6 @@ dm_reform_capture_current_level_effect = {
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_wanua_law } }
 			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
 		}
 		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_admin_law } }
@@ -2757,83 +2227,8 @@ dm_reform_capture_current_level_effect = {
 			set_variable = { name = dm_reform_current_level value = 1 }
 		}
 		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
 			limit = { story_owner = { has_realm_law = dm_government_reform_nomad_law } }
 			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_steppe_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:dm_government_reform_steppe_admin_law }
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_republic_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_theocracy_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_clan_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_tribal_law } }
-			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_wanua_law } }
-			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_feudal_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_celestial_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_mandala_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_meritocratic_law } }
-			set_variable = { name = dm_reform_current_level value = 1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_administrative_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_japan_feudal_law } }
-			set_variable = { name = dm_reform_current_level value = -1 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_nomad_law } }
-			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = dm_government_reform_steppe_admin_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
 		}
 	}
 	else_if = {
@@ -3930,121 +3325,6 @@ dm_reform_capture_current_level_effect = {
 		}
 		if = {
 			limit = { story_owner = { has_realm_law = province_war_law_3 } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:saas_no_stipend_law }
-		if = {
-			limit = { story_owner = { has_realm_law = saas_no_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_limited_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_normal_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_large_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_double_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:saas_limited_stipend_law }
-		if = {
-			limit = { story_owner = { has_realm_law = saas_no_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_limited_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_normal_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_large_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_double_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:saas_normal_stipend_law }
-		if = {
-			limit = { story_owner = { has_realm_law = saas_no_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_limited_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_normal_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_large_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_double_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:saas_large_stipend_law }
-		if = {
-			limit = { story_owner = { has_realm_law = saas_no_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_limited_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_normal_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_large_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_double_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = 3 }
-		}
-	}
-	else_if = {
-		limit = { var:dm_reform_target = flag:saas_double_stipend_law }
-		if = {
-			limit = { story_owner = { has_realm_law = saas_no_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = -3 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_limited_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = -2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_normal_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = 0 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_large_stipend_law } }
-			set_variable = { name = dm_reform_current_level value = 2 }
-		}
-		if = {
-			limit = { story_owner = { has_realm_law = saas_double_stipend_law } }
 			set_variable = { name = dm_reform_current_level value = 3 }
 		}
 	}

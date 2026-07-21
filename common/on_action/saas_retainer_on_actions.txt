@@ -1,62 +1,90 @@
-﻿quarterly_playable_pulse = {
+﻿on_game_start = {
 	on_actions = {
-		saas_quarterly_stipend_pulse
+		saas_initialize_courtier_amenity_surcharges
 	}
 }
 
-saas_quarterly_stipend_pulse = {
+saas_initialize_courtier_amenity_surcharges = {
+	effect = {
+		every_ruler = {
+			limit = { has_royal_court = yes }
+			saas_refresh_courtier_amenity_surcharge_effect = yes
+		}
+	}
+}
+
+five_year_playable_pulse = {
+	on_actions = {
+		saas_courtier_amenity_five_year_pulse
+	}
+}
+
+saas_courtier_amenity_five_year_pulse = {
+	trigger = { has_royal_court = yes }
+	effect = {
+		saas_refresh_courtier_amenity_surcharge_effect = yes
+	}
+}
+
+on_title_gain = {
+	on_actions = {
+		saas_initialize_courtier_amenity_on_title_gain
+	}
+}
+
+saas_initialize_courtier_amenity_on_title_gain = {
 	trigger = {
-		saas_courtier_stipend_ruler_trigger = yes
+		has_royal_court = yes
+		NOT = { has_variable = saas_courtier_amenity_surcharge_snapshot }
 	}
 	effect = {
-		saas_pay_quarterly_stipends_effect = yes
+		saas_refresh_courtier_amenity_surcharge_effect = yes
 	}
 }
 
-on_join_court = {
+on_title_lost = {
 	on_actions = {
-		saas_stipend_join_court
+		saas_clear_courtier_amenity_after_title_loss
 	}
 }
 
-saas_stipend_join_court = {
+saas_clear_courtier_amenity_after_title_loss = {
+	trigger = {
+		has_royal_court = no
+		has_variable = saas_courtier_amenity_surcharge_snapshot
+	}
 	effect = {
-		remove_character_modifier = saas_courtier_stipend_income_modifier
-		remove_character_modifier = saas_personal_salary_raise_modifier
-		if = {
-			limit = {
-				scope:new_employer ?= {
-					saas_courtier_stipend_ruler_trigger = yes
-				}
-			}
-			scope:new_employer = {
-				saas_refresh_courtier_stipend_income_effect = yes
-			}
+		remove_variable = saas_courtier_amenity_surcharge_snapshot
+	}
+}
+
+on_government_change = {
+	on_actions = {
+		saas_initialize_courtier_amenity_on_government_change
+	}
+}
+
+saas_initialize_courtier_amenity_on_government_change = {
+	trigger = {
+		OR = {
+			has_royal_court = yes
+			has_variable = saas_courtier_amenity_surcharge_snapshot
 		}
 	}
-}
-
-on_leave_court = {
-	on_actions = {
-		saas_stipend_leave_court
+	effect = {
+		saas_refresh_courtier_amenity_surcharge_effect = yes
 	}
 }
 
-saas_stipend_leave_court = {
+on_player_royal_court_first_gained = {
+	on_actions = {
+		saas_initialize_courtier_amenity_on_first_royal_court
+	}
+}
+
+saas_initialize_courtier_amenity_on_first_royal_court = {
 	effect = {
-		remove_character_modifier = saas_courtier_stipend_income_modifier
-		remove_character_modifier = saas_personal_salary_raise_modifier
-		if = {
-			limit = {
-				scope:old_employer ?= {
-					is_alive = yes
-					saas_courtier_stipend_ruler_trigger = yes
-				}
-			}
-			scope:old_employer = {
-				saas_refresh_courtier_stipend_income_effect = yes
-			}
-		}
+		saas_refresh_courtier_amenity_surcharge_effect = yes
 	}
 }
 
@@ -68,21 +96,9 @@ on_death = {
 
 saas_retainer_death_cleanup = {
 	effect = {
-		remove_character_modifier = saas_courtier_stipend_income_modifier
-		remove_character_modifier = saas_courtier_stipend_expense_modifier
-		remove_character_modifier = saas_personal_salary_raise_modifier
 		remove_character_flag = saas_retainer_project_success
 		remove_character_flag = saas_retainer_project_invalid
 		saas_clear_retainer_project_effect = yes
-		host ?= {
-			if = {
-				limit = {
-					is_alive = yes
-					saas_courtier_stipend_ruler_trigger = yes
-				}
-				saas_refresh_courtier_stipend_income_effect = yes
-			}
-		}
 	}
 }
 
@@ -109,7 +125,6 @@ saas_retainer_yearly_pulse = {
 				saas_retainer_stewardship_candidate_trigger = yes
 				saas_retainer_intrigue_candidate_trigger = yes
 				saas_retainer_learning_candidate_trigger = yes
-				saas_retainer_salary_request_candidate_trigger = yes
 			}
 		}
 	}
@@ -140,7 +155,6 @@ saas_retainer_event_pool = {
 		100 = saas_retainer.1300
 		100 = saas_retainer.1400
 		100 = saas_retainer.1500
-		75 = saas_retainer.1600
 	}
 }
 

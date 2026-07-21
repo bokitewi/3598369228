@@ -124,10 +124,6 @@ dm_reform_target_is_not_current_trigger = {
 			story_owner = { NOT = { has_realm_law = dm_government_reform_republic_law } }
 		}
 		AND = {
-			var:dm_reform_target = flag:dm_government_reform_theocracy_law
-			story_owner = { NOT = { has_realm_law = dm_government_reform_theocracy_law } }
-		}
-		AND = {
 			var:dm_reform_target = flag:dm_government_reform_clan_law
 			story_owner = { NOT = { has_realm_law = dm_government_reform_clan_law } }
 		}
@@ -138,10 +134,6 @@ dm_reform_target_is_not_current_trigger = {
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_wanua_law
 			story_owner = { NOT = { has_realm_law = dm_government_reform_wanua_law } }
-		}
-		AND = {
-			var:dm_reform_target = flag:dm_government_reform_administrative_law
-			story_owner = { NOT = { has_realm_law = dm_government_reform_administrative_law } }
 		}
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_feudal_admin_law
@@ -160,20 +152,8 @@ dm_reform_target_is_not_current_trigger = {
 			story_owner = { NOT = { has_realm_law = dm_government_reform_meritocratic_law } }
 		}
 		AND = {
-			var:dm_reform_target = flag:dm_government_reform_japan_administrative_law
-			story_owner = { NOT = { has_realm_law = dm_government_reform_japan_administrative_law } }
-		}
-		AND = {
-			var:dm_reform_target = flag:dm_government_reform_japan_feudal_law
-			story_owner = { NOT = { has_realm_law = dm_government_reform_japan_feudal_law } }
-		}
-		AND = {
 			var:dm_reform_target = flag:dm_government_reform_nomad_law
 			story_owner = { NOT = { has_realm_law = dm_government_reform_nomad_law } }
-		}
-		AND = {
-			var:dm_reform_target = flag:dm_government_reform_steppe_admin_law
-			story_owner = { NOT = { has_realm_law = dm_government_reform_steppe_admin_law } }
 		}
 		AND = {
 			var:dm_reform_target = flag:grand_chancellor_law
@@ -394,26 +374,6 @@ dm_reform_target_is_not_current_trigger = {
 		AND = {
 			var:dm_reform_target = flag:province_war_law_3
 			story_owner = { NOT = { has_realm_law = province_war_law_3 } }
-		}
-		AND = {
-			var:dm_reform_target = flag:saas_no_stipend_law
-			story_owner = { NOT = { has_realm_law = saas_no_stipend_law } }
-		}
-		AND = {
-			var:dm_reform_target = flag:saas_limited_stipend_law
-			story_owner = { NOT = { has_realm_law = saas_limited_stipend_law } }
-		}
-		AND = {
-			var:dm_reform_target = flag:saas_normal_stipend_law
-			story_owner = { NOT = { has_realm_law = saas_normal_stipend_law } }
-		}
-		AND = {
-			var:dm_reform_target = flag:saas_large_stipend_law
-			story_owner = { NOT = { has_realm_law = saas_large_stipend_law } }
-		}
-		AND = {
-			var:dm_reform_target = flag:saas_double_stipend_law
-			story_owner = { NOT = { has_realm_law = saas_double_stipend_law } }
 		}
 		AND = {
 			var:dm_reform_target = flag:male_only_law
@@ -740,13 +700,6 @@ dm_reform_target_is_valid_trigger = {
 			}
 		}
 		AND = {
-			var:dm_reform_target = flag:dm_government_reform_theocracy_law
-			story_owner = {
-				dm_can_change_government_reform_law_group_trigger = yes
-				is_landed = yes
-			}
-		}
-		AND = {
 			var:dm_reform_target = flag:dm_government_reform_clan_law
 			story_owner = {
 				dm_can_change_government_reform_law_group_trigger = yes
@@ -762,13 +715,6 @@ dm_reform_target_is_valid_trigger = {
 		}
 		AND = {
 			var:dm_reform_target = flag:dm_government_reform_wanua_law
-			story_owner = {
-				dm_can_change_government_reform_law_group_trigger = yes
-				is_landed = yes
-			}
-		}
-		AND = {
-			var:dm_reform_target = flag:dm_government_reform_administrative_law
 			story_owner = {
 				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
@@ -803,28 +749,7 @@ dm_reform_target_is_valid_trigger = {
 			}
 		}
 		AND = {
-			var:dm_reform_target = flag:dm_government_reform_japan_administrative_law
-			story_owner = {
-				dm_can_change_government_reform_law_group_trigger = yes
-				is_landed = yes
-			}
-		}
-		AND = {
-			var:dm_reform_target = flag:dm_government_reform_japan_feudal_law
-			story_owner = {
-				dm_can_change_government_reform_law_group_trigger = yes
-				is_landed = yes
-			}
-		}
-		AND = {
 			var:dm_reform_target = flag:dm_government_reform_nomad_law
-			story_owner = {
-				dm_can_change_government_reform_law_group_trigger = yes
-				is_landed = yes
-			}
-		}
-		AND = {
-			var:dm_reform_target = flag:dm_government_reform_steppe_admin_law
 			story_owner = {
 				dm_can_change_government_reform_law_group_trigger = yes
 				is_landed = yes
@@ -1189,41 +1114,6 @@ dm_reform_target_is_valid_trigger = {
 		AND = {
 			var:dm_reform_target = flag:province_war_law_3
 			story_owner = {
-			}
-		}
-		AND = {
-			var:dm_reform_target = flag:saas_no_stipend_law
-			story_owner = {
-				is_landed = yes
-				highest_held_title_tier >= tier_county
-			}
-		}
-		AND = {
-			var:dm_reform_target = flag:saas_limited_stipend_law
-			story_owner = {
-				is_landed = yes
-				highest_held_title_tier >= tier_county
-			}
-		}
-		AND = {
-			var:dm_reform_target = flag:saas_normal_stipend_law
-			story_owner = {
-				is_landed = yes
-				highest_held_title_tier >= tier_county
-			}
-		}
-		AND = {
-			var:dm_reform_target = flag:saas_large_stipend_law
-			story_owner = {
-				is_landed = yes
-				highest_held_title_tier >= tier_county
-			}
-		}
-		AND = {
-			var:dm_reform_target = flag:saas_double_stipend_law
-			story_owner = {
-				is_landed = yes
-				highest_held_title_tier >= tier_county
 			}
 		}
 		AND = {
