@@ -29,6 +29,7 @@ d_qishi2 = {
 
 d_zishi1 = {
 3747.1.1 = {
+		liege = "k_qiguo2"
 		holder = direnqiguo8
 	}
 3789.1.1 = {

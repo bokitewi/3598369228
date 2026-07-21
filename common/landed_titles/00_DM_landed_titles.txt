@@ -27516,6 +27516,10 @@ e_huaxia = {
           province = 3763
           color = { 44 138 97 }
         }
+		b_3765_0 = {
+			province = 3765
+			color = { 13 147 69 }
+		}
       }
       c_tieguan = {
         color = { 52 148 133 }
@@ -27523,14 +27527,6 @@ e_huaxia = {
         b_3764_0 = {
           province = 3764
           color = { 52 148 133 }
-        }
-      }
-      c_duguan1 = {
-        color = { 13 147 69 }
- 
-        b_3765_0 = {
-          province = 3765
-          color = { 13 147 69 }
         }
       }
       c_juyangchuan = {

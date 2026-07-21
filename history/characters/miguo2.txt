@@ -1,0 +1,356 @@
+#############  麋国--嬴姓 #############
+#《吴楚“麇”之战战地考——兼探麋国及其地望》
+han3418={
+  name="nanming136"
+  dynasty=xin915
+	religion="yinli" 
+	culture="yongren"
+  father=han2854
+
+  3253.1.1 = {
+		birth = yes
+	}
+  3312.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3419={
+  name="kai"
+  dynasty_house=house_baijia215
+	religion="yinli" 
+	culture="yongren"
+  father=han3418
+
+  3310.1.1 = {
+		birth = yes
+	}
+  3368.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3420={
+  name="ju1"
+  dynasty_house=house_baijia215
+	religion="yinli" 
+	culture="yongren"
+  father=han3419
+
+  3345.1.1 = {
+		birth = yes
+	}
+  3400.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3421={
+  name="xi3"
+  dynasty_house=house_baijia215
+	religion="yinli" 
+	culture="yongren"
+  father=han3420
+
+  3382.1.1 = {
+		birth = yes
+	}
+  3450.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3422={
+  name="zhi1"
+  dynasty_house=house_baijia215
+	religion="yinli" 
+	culture="yongren"
+  father=han3421
+
+  3417.1.1 = {
+		birth = yes
+	}
+  3470.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3423={
+  name="nanming485"
+  dynasty_house=house_baijia215
+	religion="yinli" 
+	culture="yongren"
+  father=han3422
+
+  3445.1.1 = {
+		birth = yes
+	}
+  3517.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3424={
+  name="nanming547"
+  dynasty_house=house_baijia215
+	religion="yinli" 
+	culture="yongren"
+  father=han3423
+
+  3501.1.1 = {
+		birth = yes
+	}
+  3561.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3425={
+  name="chi"
+  dynasty_house=house_baijia215
+	religion="xizhouli" 
+	culture="yongren"
+  father=han3424
+
+  3540.1.1 = {
+		birth = yes
+	}
+  3598.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3426={
+  name="kou"
+  dynasty_house=house_baijia215
+	religion="xizhouli" 
+	culture="yongren"
+  father=han3425
+
+  3580.1.1 = {
+		birth = yes
+	}
+  3622.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3427={
+  name="pang1"
+  dynasty_house=house_baijia215
+	religion="xizhouli" 
+	culture="yongren"
+  father=han3426
+
+  3607.1.1 = {
+		birth = yes
+	}
+  3670.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3428={
+  name="nanming46"
+  dynasty_house=house_baijia215
+	religion="xizhouli" 
+	culture="yongren"
+  father=han3427
+
+  3644.1.1 = {
+		birth = yes
+	}
+  3702.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3429={
+  name="nanming33"
+  dynasty_house=house_baijia215
+	religion="xizhouli" 
+	culture="yongren"
+  father=han3428
+
+  3666.1.1 = {
+		birth = yes
+	}
+  3744.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3430={
+  name="nanming38"
+  dynasty_house=house_baijia215
+	religion="xizhouli" 
+	culture="yongren"
+  father=han3429
+
+  3710.1.1 = {
+		birth = yes
+	}
+  3768.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3431={
+  name="nanming708"
+  dynasty_house=house_baijia215
+	religion="xizhouli" 
+	culture="yongren"
+  father=han3430
+
+  3763.1.1 = {
+		birth = yes
+	}
+  3838.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+  }
+}
+han3432={
+  name="nanming430"#平王东迁时麋国君主
+  dynasty_house=house_baijia215
+	religion="xizhouli" 
+	culture="yongren"
+  father=han3431
+
+  3823.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3433={
+  name="ji8"#储君1号
+  dynasty_house=house_baijia215
+	religion="xizhouli" 
+	culture="yongren"
+  father=han3432
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3434={
+  name="nanming427"#储君2号
+  dynasty_house=house_baijia215
+	religion="xizhouli" 
+	culture="yongren"
+  father=han3432
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3435={
+  name="nanming436"#储君3号
+  dynasty_house=house_baijia215
+	religion="xizhouli" 
+	culture="yongren"
+  father=han3432
+
+  3844.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3436={
+  name="ying8"#女1
+  dynasty_house=house_baijia215
+	religion="xizhouli" 
+	culture="yongren"
+  father=han3432
+  female=yes
+
+  3845.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3437={
+  name="nvming2"#女2
+  dynasty_house=house_baijia215
+	religion="xizhouli" 
+	culture="yongren"
+  father=han3432
+  female=yes
+
+  3846.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+##################
+han3438={
+  name="fuchu"
+  dynasty_house=house_xin916
+	religion="xizhouli" 
+	culture="yongren"
+  father=han3431
+
+  3824.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3439={
+  name="nan1"
+  dynasty_house=house_xin916
+	religion="xizhouli" 
+	culture="yongren"
+  father=han3438
+
+  3842.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}
+han3440={
+  name="nvming148"
+  dynasty_house=house_xin916
+	religion="xizhouli" 
+	culture="yongren"
+  father=han3438
+  female=yes
+
+  3843.1.1 = {
+		birth = yes
+	}
+  3880.1.1 = {
+    death = yes
+  }
+}

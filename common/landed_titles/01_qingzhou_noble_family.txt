@@ -6299,3 +6299,33 @@ c_wushi4 = { # 巫氏
 
 	ai_primary_priority = { add = @never_primary_score }
 }
+
+c_mishi2 = { # 麋氏
+	color = { 100 100 100 }
+	capital = c_aoshan
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+c_xishi5 = { # 锡氏
+	color = { 100 100 100 }
+	capital = c_aoshan
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}

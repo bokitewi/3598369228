@@ -23672,6 +23672,24 @@
 			}
 			100 = "max_coa_kor_1.dds"
 		}
+		special_selection = {
+			trigger = {
+				house ?= { has_base_name = "dynn_xin913" }
+			}
+			100 = "ce_seal_name_jiang_59dc.dds"
+		}
+		special_selection = {
+			trigger = {
+				house ?= { has_base_name = "dynn_xin914" }
+			}
+			100 = "ce_seal_name_lu_76e7.dds"
+		}
+		special_selection = {
+			trigger = {
+				house ?= { has_base_name = "dynn_xin915" }
+			}
+			100 = "max_rare_coa_104.dds"
+		}
 	}
 
 	chinese_seal_vertical_pictorial = {

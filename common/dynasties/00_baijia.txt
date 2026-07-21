@@ -6547,3 +6547,13 @@ xin912 = {
 	name = "dynn_xin912"
 	culture = "baipu"
 }
+
+xin913 = {
+	name = "dynn_xin913"
+	culture = "yiluozhirong"
+}
+
+xin915 = {
+	name = "dynn_xin915"
+	culture = "yongren"
+}

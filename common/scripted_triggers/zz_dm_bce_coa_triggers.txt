@@ -3085,6 +3085,9 @@ has_recognizable_chinese_seal = {
 			has_base_name = "dynn_xin893"
 			has_base_name = "dynn_xin894"
 			has_base_name = "dynn_xin907"
+			has_base_name = "dynn_xin913"
+			has_base_name = "dynn_xin914"
+			has_base_name = "dynn_xin915"
 		}
 	}
 }

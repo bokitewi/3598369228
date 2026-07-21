@@ -2313,12 +2313,6 @@ c_duguan = {
 	}
 }
 
-c_duguan1 = {
-	3849.12.31 = {
-		holder = dm_autoholder_0286
-	}
-}
-
 c_duiqiu = {
 	3849.12.31 = {
 		holder = dm_autoholder_0287

@@ -89931,32 +89931,6 @@ c_tieguan = {
 	}
 }
 
-c_duguan1 = {
-	pattern = "pattern_solid.dds"
-	color1 = "yellow"
-	color2 = "red"
-	color3 = "black"
-	colored_emblem = {
-		color1 = white
-		color2 = yellow
-		texture = "max_coa_ornate_circle_frame_33.dds"
-		instance = {
-			position = { 0.5 0.5 }
-			scale = { 1.0 1.0 }
-		}
-	}
-	colored_emblem = {
-		color1 = red
-		color2 = black
-		texture = "max_coa_emblems_89.dds"
-		instance = {
-			position = { 0.50 0.50 }
-			scale = { 0.72 0.72 }
-			rotation = 270
-		}
-	}
-}
-
 c_juyangchuan = {
 	pattern = "pattern_solid.dds"
 	color1 = "yellow"

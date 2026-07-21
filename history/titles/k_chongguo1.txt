@@ -55,6 +55,7 @@ d_zanshi = {
 
 d_eshi = {
 3701.1.1 = {
+		liege = "k_chongguo1"
 		holder = congrencongguo16
 	}
 3752.12.31 = {

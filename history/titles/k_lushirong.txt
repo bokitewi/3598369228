@@ -1,0 +1,126 @@
+k_lushirong = {
+3493.12.12 = {
+		holder = lurong1
+	}
+3542.1.1 = {
+		holder = lurong2
+	}
+3579.1.1 = {
+		holder = lurong3
+	}
+3603.1.1 = {
+		holder = lurong4
+	}
+3629.1.1 = {
+		holder = lurong5
+	}
+3667.1.1 = {
+		holder = lurong6
+	}
+3701.1.1 = {
+		holder = lurong7
+	}
+3713.1.1 = {
+		holder = lurong8
+	}
+3745.1.1 = {
+		holder = lurong9
+	}
+3773.1.1 = {
+		holder = lurong10
+	}
+3800.1.1 = {
+		holder = lurong11
+	}
+3829.1.1 = {
+		holder = lurong12
+	}
+3849.12.31 = {
+		government = tribal_government
+		change_development_level = 28
+	}
+}
+
+d_lushi5 = {
+3493.12.12 = {
+		liege = "k_lushirong"
+		holder = lurong1
+	}
+3542.1.1 = {
+		holder = lurong2
+	}
+3579.1.1 = {
+		holder = lurong3
+	}
+3603.1.1 = {
+		holder = lurong4
+	}
+3629.1.1 = {
+		holder = lurong5
+	}
+3667.1.1 = {
+		holder = lurong6
+	}
+3701.1.1 = {
+		holder = lurong7
+	}
+3713.1.1 = {
+		holder = lurong8
+	}
+3745.1.1 = {
+		holder = lurong9
+	}
+3773.1.1 = {
+		holder = lurong10
+	}
+3800.1.1 = {
+		holder = lurong11
+	}
+3829.1.1 = {
+		holder = lurong12
+	}
+}
+
+c_liqingchuan = {
+3493.12.12 = {
+		liege = "k_lushirong"
+		holder = lurong1
+	}
+3542.1.1 = {
+		holder = lurong2
+	}
+3579.1.1 = {
+		holder = lurong3
+	}
+3603.1.1 = {
+		holder = lurong4
+	}
+3629.1.1 = {
+		holder = lurong5
+	}
+3667.1.1 = {
+		holder = lurong6
+	}
+3701.1.1 = {
+		holder = lurong7
+	}
+3713.1.1 = {
+		holder = lurong8
+	}
+3745.1.1 = {
+		holder = lurong9
+	}
+3773.1.1 = {
+		holder = lurong10
+	}
+3800.1.1 = {
+		holder = lurong11
+	}
+3829.1.1 = {
+		holder = lurong14
+	}
+3849.12.31 = {
+		government = tribal_government
+		change_development_level = 26
+	}
+}

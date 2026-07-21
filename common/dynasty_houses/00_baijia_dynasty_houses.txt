@@ -6512,3 +6512,13 @@ house_xin912 = {
 	name = "dynn_xin912"
 	dynasty = xin912
 }
+
+house_xin914 = {
+	name = "dynn_xin914"
+	dynasty = xin913
+}
+
+house_xin916 = {
+	name = "dynn_xin916"
+	dynasty = xin915
+}
